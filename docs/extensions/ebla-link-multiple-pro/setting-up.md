@@ -47,7 +47,7 @@ and <span style="color:red;">**Enable Form**.</span>
 
 ![EnableForm](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/EnableForm.png)
 
-## The Features
+ **The Features**
 
 ### **1\.** layout
 

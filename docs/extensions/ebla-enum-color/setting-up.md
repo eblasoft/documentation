@@ -12,7 +12,7 @@
 
 ### Setting up
 
-#### after installing the extension,
+ **after installing the extension,**
 
 * **[Enum Type](enum-type/enum-type.md).**
 

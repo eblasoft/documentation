@@ -20,6 +20,6 @@
 
 1. go to **Admin** -> **Entity Manager** -> **Scope** -> **Fields** -> **Add Field** -> **Rate field**.
 
-* **[Rate Field](rate-field/rate-field.md).**
+### **[Rate Field](rate-field/rate-field.md).**
 
 ![Rate Field](../../_static/images/extensions/ebla-rate/setting-up/rate-field/rate-field-res.png)

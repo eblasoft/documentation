@@ -15,20 +15,20 @@
 
 1. go to **Admin** -> **Entity Manager** -> **Scope** -> **Fields** -> **Add Field** -> **( Varchar Type )**.
 
-### The Features
+ **The Features**
 
-* **[Is Unique](is-unique/is-unique.md).**
+### **[Is Unique](is-unique/is-unique.md).**
 
 ![Is Unique](../../_static/images/extensions/ebla-varchar-plus/is-unique/is-unique-res-1.png)
 
-* **[Auto Complete](auto-complete/auto-complete.md).**
+### **[Auto Complete](auto-complete/auto-complete.md).**
 
 ![Auto Complete](../../_static/images/extensions/ebla-varchar-plus/auto-complete/auto-complete-res.png)
 
-* **[Prefix Label](prefix-label/prefix-label.md).**
+### **[Prefix Label](prefix-label/prefix-label.md).**
 
 ![Prefix Label](../../_static/images/extensions/ebla-varchar-plus/prefix-label/prefix-label-res.png)
 
-* **[Suffix Label](suffix-label/suffix-label.md).**
+### **[Suffix Label](suffix-label/suffix-label.md).**
 
 ![Suffix Label](../../_static/images/extensions/ebla-varchar-plus/suffix-label/suffix-label-res.png)

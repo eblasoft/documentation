@@ -1,6 +1,6 @@
 # Ebla Theme .
 
- **Type : Extension**
+**Type : Extension**
 
 [//]: # (#### Demo : [Demo]&#40;https://demo.eblasoft.com.tr/#Task/create&#41;)
 
@@ -13,23 +13,24 @@
 
 [//]: # (<iframe width="650" height="315" src="https://www.youtube.com/embed/ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
- **after installing the extension,**
+**after installing the extension,**
 
 1. go to **Admin** -> **User Interface** -> **Select Eblasoft Theme** .
 
 ![Ebla Theme](../../_static/images/extensions/ebla-theme/setting-up/ebla-theme.png)
 
-### The Features
+ **The Features**
 
-* **[Login Background Image](login-background-image/login-background-image.md).**
+### **[Login Background Image](login-background-image/login-background-image.md).**
 
 ![Login Background Image](../../_static/images/extensions/ebla-theme/background-image/background-res.png)
 
-* **[Favicon](favicon/favicon.md).**
+### **[Favicon](favicon/favicon.md).**
 
 ![Favicon](../../_static/images/extensions/ebla-theme/favicon/favicon-res.png)
-* **[Side Menu](side-menu/side-menu.md).**
 
-*  **[Color Customization](color-customization/color-customization.md).**
+### **[Side Menu](side-menu/side-menu.md).**
+
+### **[Color Customization](color-customization/color-customization.md).**
 
 ![Color Customization](../../_static/images/extensions/ebla-theme/color-customization/color-customization-res.png)
