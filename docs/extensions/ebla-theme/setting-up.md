@@ -21,15 +21,15 @@
 
 ### The Features
 
-1. [Login Background Image](login-background-image/login-background-image.md)
+* **[Login Background Image](login-background-image/login-background-image.md).**
 
 ![Login Background Image](../../_static/images/extensions/ebla-theme/background-image/background-res.png)
 
-2. [Favicon](favicon/favicon.md)
+* **[Favicon](favicon/favicon.md).**
 
 ![Favicon](../../_static/images/extensions/ebla-theme/favicon/favicon-res.png)
-3. [Side Menu](side-menu/side-menu.md)
+* **[Side Menu](side-menu/side-menu.md).**
 
-4. [Color Customization](color-customization/color-customization.md)
+*  **[Color Customization](color-customization/color-customization.md).**
 
 ![Color Customization](../../_static/images/extensions/ebla-theme/color-customization/color-customization-res.png)

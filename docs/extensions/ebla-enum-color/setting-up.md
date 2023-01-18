@@ -14,6 +14,6 @@
 
 #### after installing the extension,
 
-[Enum Type](enum-type/enum-type.md)
+* **[Enum Type](enum-type/enum-type.md).**
 
-[Color Picker Field](color-picker-field/color-picker-field.md)
+* **[Color Picker Field](color-picker-field/color-picker-field.md).**

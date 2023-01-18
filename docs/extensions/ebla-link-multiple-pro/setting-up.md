@@ -51,49 +51,49 @@ and <span style="color:red;">**Enable Form**.</span>
 
 ### **1\.** layout
 
-* [Custom Layout](layout/custom-layout.md).
-* [List Small Layout](layout/list-small-layout.md).
-* [List Layout](layout/list-layout.md).
+* **[Custom Layout](layout/custom-layout.md).**
+* **[List Small Layout](layout/list-small-layout.md).**
+* **[List Layout](layout/list-layout.md).**
 
 ![layout](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/layout.png)
 
 ### **2\.** Middle Link (Act As Middle Entity)
 
-* Assigned User.
-* Created By.
-* Modified By.
+* **Assigned User**.
+* **Created By**.
+* **Modified By**.
 
 ### **3\.** Readonly Fields
 
-* Make field readOnly.
+* **Make field readOnly**.
 
 ![Readonly Fields](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/readonly-fields.png)
 
 ### **4\.** Footer Sum Fields
 
-* [Makes a sum of all the fields](footer-sum/footer-sum.md).
+* **[Makes a sum of all the fields](footer-sum/footer-sum.md).**
 
 ![Footer Sum Fields](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/footer-sum-fields.png)
 
 ### **5\.** Buttons Position (Add & Select)
 
-* Select button position.
+* **Select button position**.
 
 ![Buttons Position](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/buttons-position.png)
 
 ### **6\.** Select Buttons
 
-* [Enable select button](select-buttons/select-button.md) .
-* [Enable add button](select-buttons/add-button.md) .
-* Enable add multiple button .
+* **[Enable select button](select-buttons/select-button.md).**
+* **[Enable add button](select-buttons/add-button.md).**
+* **Enable add multiple button.**
 
 ![Select Buttons](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/select-buttons.png)
 
 ### **7\.** Row Action Items
 
-* [view](row-action-items/view.md).
-* [edit](row-action-items/edit.md).
-* [remove](row-action-items/remove.md).
-* [unlink](row-action-items/unlink.md).
+* **[view](row-action-items/view.md).**
+* **[edit](row-action-items/edit.md).**
+* **[remove](row-action-items/remove.md).**
+* **[unlink](row-action-items/unlink.md).**
 
 ![Row Action Items](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/row-action-items.png)

@@ -18,12 +18,12 @@
 
 ### The Features
 
-[Nav Bar User Switch Button](nav-bar-user-switch-button/nav-bar-user-switch-button.md)
+* **[Nav Bar User Switch Button](nav-bar-user-switch-button/nav-bar-user-switch-button.md).**
 
 ![Nav Bar User Switch Button](../../_static/images/extensions/ebla-nav-switch-button/nav-bar-switch-button/nav-bar-switch-button-res.png)
 ![Nav Bar User Switch Button](../../_static/images/extensions/ebla-nav-switch-button/nav-bar-switch-button/nav-bar-switch-button-res-1.png)
 
-[Top Nav Work Log Button](top-nav-work-log-button/top-nav-work-log-button.md)
+* **[Top Nav Work Log Button](top-nav-work-log-button/top-nav-work-log-button.md).**
 
 ![Top Nav Work Log Button](../../_static/images/extensions/ebla-nav-switch-button/top-nav-work-log-button/top-nav-work-log-button-res.png)
 ![Top Nav Work Log Button](../../_static/images/extensions/ebla-nav-switch-button/top-nav-work-log-button/top-nav-work-log-button-res-1.png)

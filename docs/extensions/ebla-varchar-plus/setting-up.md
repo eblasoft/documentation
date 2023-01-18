@@ -17,18 +17,18 @@
 
 ### The Features
 
-1. [Is Unique](is-unique/is-unique.md)
+* **[Is Unique](is-unique/is-unique.md).**
 
 ![Is Unique](../../_static/images/extensions/ebla-varchar-plus/is-unique/is-unique-res-1.png)
 
-2. [Auto Complete](auto-complete/auto-complete.md)
+* **[Auto Complete](auto-complete/auto-complete.md).**
 
 ![Auto Complete](../../_static/images/extensions/ebla-varchar-plus/auto-complete/auto-complete-res.png)
 
-3. [Prefix Label](prefix-label/prefix-label.md)
+* **[Prefix Label](prefix-label/prefix-label.md).**
 
 ![Prefix Label](../../_static/images/extensions/ebla-varchar-plus/prefix-label/prefix-label-res.png)
 
-4. [Suffix Label](suffix-label/suffix-label.md)
+* **[Suffix Label](suffix-label/suffix-label.md).**
 
 ![Suffix Label](../../_static/images/extensions/ebla-varchar-plus/suffix-label/suffix-label-res.png)

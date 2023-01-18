@@ -22,15 +22,15 @@
 
 ### The Features:
 
-* [Custom link](custom-link/custom-link.md).
+* **[Custom link](custom-link/custom-link.md).**
 
 ![Custom Link](../../_static/images/extensions/ebla-nav-pro/setting-up/custom-link/custom-link-res.png)
 
-* [Separator](separator/separator.md).
+* **[Separator](separator/separator.md).**
 
 ![Separator](../../_static/images/extensions/ebla-nav-pro/setting-up/separator/separator-res.png)
 
-*[Favorite Entity](favorite-entity/favorite-entity.md).
+* **[Favorite Entity](favorite-entity/favorite-entity.md).**
 
 ![Favorite Entity](../../_static/images/extensions/ebla-nav-pro/setting-up/favorite-entity/favorite-entity-res.png)
 
