@@ -23,15 +23,17 @@ nav:
 
   - 'Extensions':
       - 'Ebla Chat': 'extensions/ebla-chat/setting-up.md'
-      - 'Ebla Enum Color':
+      - 'Ebla Enum Color': 'extensions/ebla-enum-color/setting-up.md'
           - 'Colo Picker Field': 'extensions/ebla-enum-color/color-picker-field/color-picker-field.md'
-          - 'Enum Type': 'extensions/ebla-enum-color/enum-type.md'
+          - 'Enum Type': 'extensions/ebla-enum-color/enum-type/enum-type.md'
       - 'Ebla IFrame':
+          - 'Main': 'extensions/ebla-iframe/setting-up.md'
           - 'Display Mode':
               - 'Inline IFrame': 'extensions/ebla-iframe/iframe/display-mode/inline-iframe.md'
               - 'Button And Modal': 'extensions/ebla-iframe/iframe/display-mode/button-and-modal.md'
               - 'Button And Popup Window': 'extensions/ebla-iframe/iframe/display-mode/button-and-popup-window.md'
       - 'Ebla Link Multiple Pro':
+          - 'Main': 'extensions/ebla-link-multiple-pro/setting-up.md'
           - 'Footer Sum': 'extensions/ebla-link-multiple-pro/footer-sum/footer-sum.md'
           - 'Layout':
               - 'Custom Layout': 'extensions/ebla-link-multiple-pro/layout/custom-layout.md'
@@ -46,21 +48,26 @@ nav:
               - 'Add Button': 'extensions/ebla-link-multiple-pro/select-buttons/add-button.md'
               - 'Select Button': 'extensions/ebla-link-multiple-pro/select-buttons/select-button.md'
       - 'Ebla Nav Pro':
+          - 'Main': 'extensions/ebla-nav-pro/setting-up.md'
           - 'Custom Link': 'extensions/ebla-nav-pro/custom-link/custom-link.md'
           - 'Favorite Entity': 'extensions/ebla-nav-pro/favorite-entity/favorite-entity.md'
           - 'Separator': 'extensions/ebla-nav-pro/separator/separator.md'
       -  'Ebla Navbar User Quick Switch  Button':
+             - 'Main': 'extensions/ebla-navbar-user-quick-switch-button/setting-up.md'
              - 'Nav Bar user Switch Button': 'extensions/ebla-navbar-user-quick-switch-button/nav-bar-user-switch-button/nav-bar-user-switch-button.md'
              - 'Top Nav Work Log Button': 'extensions/ebla-navbar-user-quick-switch-button/top-nav-work-log-button/top-nav-work-log-button.md'
 
       - 'Ebla Rate' :
-            -'Rate Field': 'extensions/ebla-rate/rate-field/rate-field.md'
+            - 'Main': 'extensions/ebla-rate/setting-up.md'
+            - 'Rate Field': 'extensions/ebla-rate/rate-field/rate-field.md'
       - 'Ebla Theme':
+            - 'Main': 'extensions/ebla-theme/setting-up.md'
             - 'Color Customization': 'extensions/ebla-theme/color-customization/color-customization.md'
             - 'Favicon': 'extensions/ebla-theme/favicon/favicon.md'
             - 'Login Background Image': 'extensions/ebla-theme/login-background-image/login-background-image.md'
             - 'Side Menu': 'extensions/ebla-theme/side-menu/side-menu.md'
       - 'Ebla Varchar Plus':
+            - 'Main': 'extensions/ebla-varchar-plus/setting-up.md'
             - 'Auto Complete': 'extensions/ebla-varchar-plus/auto-complete/auto-complete.md'
             - 'Is Unique': 'extensions/ebla-varchar-plus/is-unique/is-unique.md'
             - 'Prefix Label': 'extensions/ebla-varchar-plus/prefix-label/prefix-label.md'
