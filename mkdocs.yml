@@ -3,7 +3,7 @@ site_name: Eblasoft Documentation
 repo_url: https://github.com/eblasoft/documentation/
 
 markdown_extensions:
-#  - mdx_truly_sane_lists
+  #  - mdx_truly_sane_lists
   - codehilite:
       guess_lang: false
       use_pygments: true
@@ -20,96 +20,58 @@ markdown_extensions:
 
 nav:
   - 'Home': 'index.md'
-#  - 'Administration':
-#      - 'Server configuration':
-#          - 'Configuration': 'administration/server-configuration.md'
-#          - 'Apache': 'administration/apache-server-configuration.md'
-#          - 'Nginx': 'administration/nginx-server-configuration.md'
-#          - 'IIS': 'administration/iis-server-configuration.md'
-#      - 'System':
-#          - 'Installation': 'administration/installation.md'
-#          - 'Installation by script': 'administration/installation-by-script.md'
-#          - 'Upgrading': 'administration/upgrading.md'
-#          - 'Extensions': 'administration/extensions.md'
-#          - 'Jobs': 'administration/jobs.md'
-#          - 'Troubleshooting': 'administration/troubleshooting.md'
-#          - 'Console commands': 'administration/commands.md'
-#          - 'WebSocket': 'administration/websocket.md'
-#          - 'Performance tweaking': 'administration/performance-tweaking.md'
-#          - 'Backup and restore': 'administration/backup-and-restore.md'
-#          - 'Moving to another server': 'administration/moving-to-another-server.md'
-#          - 'Config parameters': 'administration/config-params.md'
-#          - 'Log': 'administration/log.md'
-#      - 'Customization':
-#          - 'Entity Manager': 'administration/entity-manager.md'
-#          - 'Fields': 'administration/fields.md'
-#          - 'Layouts': 'administration/layout-manager.md'
-#          - 'Dynamic Logic': 'administration/dynamic-logic.md'
-#      - 'Users': 'administration/users-management.md'
-#      - 'Roles management': 'administration/roles-management.md'
-#      - 'Email administration': 'administration/emails.md'
-#      - 'Formula script': 'administration/formula.md'
-#      - 'Formula functions':
-#          - 'general': 'administration/formula/general.md'
-#          - 'string': 'administration/formula/string.md'
-#          - 'datetime': 'administration/formula/datetime.md'
-#          - 'number': 'administration/formula/number.md'
-#          - 'entity': 'administration/formula/entity.md'
-#          - 'record': 'administration/formula/record.md'
-#          - 'env': 'administration/formula/env.md'
-#          - 'password': 'administration/formula/password.md'
-#          - 'array': 'administration/formula/array.md'
-#          - 'object': 'administration/formula/object.md'
-#          - 'language': 'administration/formula/language.md'
-#          - 'json': 'administration/formula/json.md'
-#          - 'ext': 'administration/formula/ext.md'
-#          - 'util': 'administration/formula/util.md'
-#      - 'Import': 'administration/import.md'
-#      - 'Portal': 'administration/portal.md'
-#      - 'Currency': 'administration/currency.md'
-#      - 'Dashboards': 'administration/dashboards.md'
-#      - 'Authentication':
-#          - '2-factor authentication': 'administration/2fa.md'
-#          - 'OpenID Connect': 'administration/oidc.md'
-#          - 'LDAP':
-#              - 'Authorization': 'administration/ldap-authorization.md'
-#              - 'Active Directory': 'administration/ldap-authorization-for-ad.md'
-#              - 'OpenLDAP': 'administration/ldap-authorization-for-openldap.md'
-#      - 'Misc':
-#          - 'Terms & naming': 'administration/terms-and-naming.md'
-#          - 'Web-to-Lead': 'administration/web-to-lead.md'
-#          - 'Webhooks': 'administration/webhooks.md'
-#          - 'Passwords': 'administration/passwords.md'
-#          - 'Maps': 'administration/maps.md'
-#          - 'B2C mode': 'administration/b2c.md'
-#          - 'Multiple assigned users': 'administration/multiple-assigned-users.md'
-#          - 'File storage': 'administration/file-storage.md'
-#          - 'SMS sending': 'administration/sms-sending.md'
-#  - 'User Guide':
-#      - 'Emails':
-#          - 'General guidelines': 'user-guide/emails.md'
-#          - 'IMAP & SMTP configuration': 'user-guide/imap-smtp-configuration.md'
-#          - 'Mass Email': 'user-guide/mass-email.md'
-#      - 'Stream': 'user-guide/stream.md'
-#      - 'Sales management': 'user-guide/sales-management.md'
-#      - 'Case management': 'user-guide/case-management.md'
-#      - 'Activities & Calendar': 'user-guide/activities-and-calendar.md'
-#      - 'Mail Merge': 'user-guide/mail-merge.md'
-#      - 'Knowledge Base': 'user-guide/knowledge-base.md'
-#      - 'Documents': 'user-guide/documents.md'
-#      - 'Export': 'user-guide/export.md'
-#      - 'Text search': 'user-guide/text-search.md'
-#      - 'Working Time Calendar': 'user-guide/working-time-calendar.md'
-#      - 'Misc':
-#          - 'Shortcut keys': 'user-guide/shortcuts.md'
-#          - 'Printing to PDF': 'user-guide/printing-to-pdf.md'
-#          - 'Markdown syntax': 'user-guide/markdown.md'
-#          - 'Browser support': 'user-guide/browser-support.md'
-#          - 'Data privacy': 'user-guide/data-privacy.md'
-#          - 'Complex expressions': 'user-guide/complex-expressions.md'
-#          - 'Optimistic concurrency control': 'user-guide/optimistic-concurrency-control.md'
-#  - 'Extensions':
-#      - 'Advanced Pack':
+
+  - 'Extensions':
+      - 'Ebla Chat': 'extensions/ebla-chat/setting-up.md'
+      - 'Ebla Enum Color':
+          - 'Colo Picker Field': 'extensions/ebla-enum-color/color-picker-field.md'
+          - 'Enum Type': 'extensions/ebla-enum-color/enum-type.md'
+      - 'Ebla IFrame':
+          - 'Display Mode':
+              - 'Inline IFrame': 'extensions/ebla-iframe/iframe/display-mode/inline-iframe.md'
+              - 'Button And Modal': 'extensions/ebla-iframe/iframe/display-mode/button-and-modal.md'
+              - 'Button And Popup Window': 'extensions/ebla-iframe/iframe/display-mode/button-and-popup-window.md'
+      - 'Ebla Link Multiple Pro':
+          - 'Footer Sum': 'extensions/ebla-link-multiple-pro/footer-sum/footer-sum.md'
+          - 'Layout':
+              - 'Custom Layout': 'extensions/ebla-link-multiple-pro/layout/custom-layout.md'
+              - 'List Layout': 'extensions/ebla-link-multiple-pro/layout/list-layout.md'
+              - 'List Small Layout': 'extensions/ebla-link-multiple-pro/layout/list-small-layout.md'
+          - 'Row Action Items':
+              - 'Edit': 'extensions/ebla-link-multiple-pro/row-action-items/edit.md'
+              - 'Remove': 'extensions/ebla-link-multiple-pro/row-action-items/remove.md'
+              - 'View': 'extensions/ebla-link-multiple-pro/row-action-items/view.md'
+              - 'Unlink': 'extensions/ebla-link-multiple-pro/row-action-items/unlink.md'
+          - 'Select Buttons':
+              - 'Add Button': 'extensions/ebla-link-multiple-pro/select-buttons/add-button.md'
+              - 'Select Button': 'extensions/ebla-link-multiple-pro/select-buttons/select-button.md'
+      - 'Ebla Nav Pro':
+          - 'Custom Link': 'extensions/ebla-nav-pro/custom-link/custom-link.md'
+          - 'Favorite Entity': 'extensions/ebla-nav-pro/favorite-entity/favorite-entity.md'
+          - 'Separator': 'extensions/ebla-nav-pro/separator/separator.md'
+      -  'Ebla Navbar User Quick Switch  Button':
+             - 'Nav Bar user Switch Button': 'extensions/ebla-navbar-user-quick-switch-button/nav-bar-user-switch-button.md'
+             - 'Top Nav Work Log Button': 'extensions/ebla-navbar-user-quick-switch-button/top-nav-work-log-button.md'
+
+      - 'Ebla Rate' :
+            -'Rate Field': 'extensions/ebla-rate/rate-field/rate-field.md'
+      - 'Ebla Theme':
+            - 'Color Customization': 'extensions/ebla-theme/color-customization/color-customization.md'
+            - 'Favicon': 'extensions/ebla-theme/favicon/favicon.md'
+            - 'Logo Background Image': 'extensions/ebla-theme/logo-background-image/logo-background-image.md'
+            - 'Side Menu': 'extensions/ebla-theme/side-menu/side-menu.md'
+      - 'Ebla Varchar Plus':
+            - 'Auto Complete': 'extensions/ebla-varchar-plus/auto-complete/auto-complete.md'
+            - 'Is Unique': 'extensions/ebla-varchar-plus/is-unique/is-unique.md'
+            - 'Prefix Label': 'extensions/ebla-varchar-plus/prefix-label/prefix-label.md'
+            - 'Suffix Label': 'extensions/ebla-varchar-plus/suffix-label/suffix-label.md'
+
+
+
+
+
+
+        #      - 'Advanced Pack':
 #          - 'Reports': 'user-guide/reports.md'
 #          - 'Workflows': 'administration/workflows.md'
 #          - 'BPM':
