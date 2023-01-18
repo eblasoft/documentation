@@ -1,4 +1,4 @@
-# [Ebla IFrame.](../setting-up.md) Button And Popup Window
+# [Ebla IFrame.](../../setting-up.md) Button And Popup Window
 
 **This feature allows you to customize the name of your link.**
 
