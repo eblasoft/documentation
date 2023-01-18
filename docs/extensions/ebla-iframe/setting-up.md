@@ -22,11 +22,11 @@ You can use it to embed videos or show links relevant to the record, the link ca
 
 ![IFrame](../../_static/images/extensions/ebla-iframe/iframe-field/iframe-field-res.png)
 
-### ### **Height***: The height of the iframe.
+###   **Height**: The height of the iframe.
 
-### ### **Max Length***: The maximum length of the iframe.
+###   **Max Length**: The maximum length of the iframe.
 
-### ### **Strip**: If enabled, the tags will be stripped from the iframe.
+###   **Strip**: If enabled, the tags will be stripped from the iframe.
 
 ### **Display Mode**
 1. [Inline Iframe](iframe/display-mode/inline-iframe.md)

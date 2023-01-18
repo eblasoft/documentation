@@ -10,10 +10,10 @@
 
 ![Ebla Enum Color](../../_static/images/extensions/ebla-enum-color/setting-up/ebla-enum-color-1.png)
 
-### Setting up
+ **Setting up**
 
  **after installing the extension,**
 
-* **[Enum Type](enum-type/enum-type.md).**
+### **[Enum Type](enum-type/enum-type.md).**
 
-* **[Color Picker Field](color-picker-field/color-picker-field.md).**
+### **[Color Picker Field](color-picker-field/color-picker-field.md).**

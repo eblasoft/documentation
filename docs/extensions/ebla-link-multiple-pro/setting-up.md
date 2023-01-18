@@ -6,9 +6,9 @@
 
 #### [Demo](https://demo.eblasoft.com.tr/#Task/create)
 
-#### This extension enhance the link multiple field with ability to show any other field just like any list view.
+ **This extension enhance the link multiple field with ability to show any other field just like any list view.**
 
-#### It is utilized across various systems that involve invoice management, including pharmacies, warehouses, companies, medical clinics, restaurants, hotels, tourism companies, and banking systems.
+ **It is utilized across various systems that involve invoice management, including pharmacies, warehouses, companies, medical clinics, restaurants, hotels, tourism companies, and banking systems.**
 
 * Order & order lines
 * Shipment & shipment lines (items)
@@ -18,7 +18,7 @@
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fvllcGJhKNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-## <span style="color:red;"> Before <span style="color:black;"> and </span> After </span> using the extension.
+ <span style="color:red;"> Before <span style="color:black;"> and </span> After </span> using the extension.
 
 ![before](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/before.jpeg)
 
@@ -26,7 +26,7 @@
 
 ![after](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/after.jpeg)
 
-## Enable Extension :
+ **Enable Extension :**
 
 ![installation](../../_static/images/extensions/ebla-link-multiple-pro/setting-up/installation.jpeg)
 
