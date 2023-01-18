@@ -57,9 +57,7 @@ nav:
              - 'Nav Bar user Switch Button': 'extensions/ebla-navbar-user-quick-switch-button/nav-bar-user-switch-button/nav-bar-user-switch-button.md'
              - 'Top Nav Work Log Button': 'extensions/ebla-navbar-user-quick-switch-button/top-nav-work-log-button/top-nav-work-log-button.md'
 
-      - 'Ebla Rate' :
-            - 'Main': 'extensions/ebla-rate/setting-up.md'
-            - 'Rate Field': 'extensions/ebla-rate/rate-field/rate-field.md'
+      - 'Ebla Rate' : 'extensions/ebla-rate/setting-up.md'
       - 'Ebla Theme':
             - 'Main': 'extensions/ebla-theme/setting-up.md'
             - 'Color Customization': 'extensions/ebla-theme/color-customization/color-customization.md'
