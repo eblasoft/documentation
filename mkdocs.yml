@@ -50,15 +50,15 @@ nav:
           - 'Favorite Entity': 'extensions/ebla-nav-pro/favorite-entity/favorite-entity.md'
           - 'Separator': 'extensions/ebla-nav-pro/separator/separator.md'
       -  'Ebla Navbar User Quick Switch  Button':
-             - 'Nav Bar user Switch Button': 'extensions/ebla-navbar-user-quick-switch-button/nav-bar-user-switch-button.md'
-             - 'Top Nav Work Log Button': 'extensions/ebla-navbar-user-quick-switch-button/top-nav-work-log-button.md'
+             - 'Nav Bar user Switch Button': 'extensions/ebla-navbar-user-quick-switch-button/nav-bar-user-switch-button/nav-bar-user-switch-button.md'
+             - 'Top Nav Work Log Button': 'extensions/ebla-navbar-user-quick-switch-button/top-nav-work-log-button/top-nav-work-log-button.md'
 
       - 'Ebla Rate' :
             -'Rate Field': 'extensions/ebla-rate/rate-field/rate-field.md'
       - 'Ebla Theme':
             - 'Color Customization': 'extensions/ebla-theme/color-customization/color-customization.md'
             - 'Favicon': 'extensions/ebla-theme/favicon/favicon.md'
-            - 'Logo Background Image': 'extensions/ebla-theme/logo-background-image/logo-background-image.md'
+            - 'Login Background Image': 'extensions/ebla-theme/login-background-image/login-background-image.md'
             - 'Side Menu': 'extensions/ebla-theme/side-menu/side-menu.md'
       - 'Ebla Varchar Plus':
             - 'Auto Complete': 'extensions/ebla-varchar-plus/auto-complete/auto-complete.md'
