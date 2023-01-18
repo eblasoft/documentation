@@ -1,6 +1,6 @@
-# Ebla IFrame . Inline IFrame
+# [Ebla IFrame.](../setting-up.md) Inline IFrame
 
-#### This feature allows you to seamlessly integrate an iframe within the detail view , ensuring that it is displayed in line with the other fields.
+ **This feature allows you to seamlessly integrate an iframe within the detail view , ensuring that it is displayed in line with the other fields.**
 
 ### How to use it
 

@@ -1,6 +1,6 @@
-# Ebla IFrame . Button And Model
+# [Ebla IFrame.](../setting-up.md) . Button And Model
 
-#### This feature allows you to customize the name of your link. This can make it more user-friendly and easier to remember.
+ **This feature allows you to customize the name of your link. This can make it more user-friendly and easier to remember.**
 
 ### How to use it
 

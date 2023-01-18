@@ -1,6 +1,6 @@
-# Ebla Enum Color. Color Picker Field
+# [Ebla Enum Color](../setting-up.md). Color Picker Field
 
-#### this feature enables you to add a field color picker.
+**this feature enables you to add a field color picker.**
 
 ### How to use it
 

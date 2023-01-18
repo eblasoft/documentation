@@ -2,11 +2,11 @@
 
 #### Type: Extension
 
-#### This add-on offers convenient access to crucial links within your system while also enhancing its aesthetic appeal.
+ **This add-on offers convenient access to crucial links within your system while also enhancing its aesthetic appeal.**
 
-#### It streamlines navigation and improves the overall user experience by making it simple to find and utilize important resources.
+ **It streamlines navigation and improves the overall user experience by making it simple to find and utilize important resources.**
 
-#### The added cosmetic touch also elevates the visual appeal of the system, making it more visually pleasing and user-friendly.
+ **The added cosmetic touch also elevates the visual appeal of the system, making it more visually pleasing and user-friendly.**
 
 [//]: # (Demo)
 
@@ -16,9 +16,9 @@
 
 [//]: # (<iframe width="650" height="315" src="https://www.youtube.com/embed/id-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
-### Setting up
+ **Setting up**
 
-#### after installing the extension,
+ **after installing the extension,**
 
 ### The Features:
 

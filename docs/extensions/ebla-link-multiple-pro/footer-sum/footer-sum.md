@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. Footer Sum
+# [Ebla Link Multiple Pro.](../setting-up.md) Footer Sum
 
-This feature allows you to choose the fields on which you want to perform the sum operation.
+**This feature allows you to choose the fields on which you want to perform the sum operation.**
 
 ## How to use it
 

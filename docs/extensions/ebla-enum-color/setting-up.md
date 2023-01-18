@@ -1,6 +1,6 @@
 # Ebla Enum Color .
 
-### This extension enables you to add a field color picker and add colors to option fields.
+ **This extension enables you to add a field color picker and add colors to option fields.**
 
 [//]: # ( [Demo]&#40;https://demo.eblasoft.com.tr/#Task/create&#41;)
 

@@ -1,6 +1,6 @@
-# Ebla Theme . Color Customization
+# [Ebla Theme.](../setting-up.md) Color Customization
 
-## This extension allows you to customize the colors of the **EspoCRM**.
+ **This extension allows you to customize the colors of the **EspoCRM**.**
 
 ### How to use
 

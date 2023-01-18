@@ -1,6 +1,6 @@
-# Ebla VarChar Plus . suffix Label
+# [Ebla VarChar Plus.](../setting-up.md) suffix Label
 
-## This addition allows adding details at the end of the field .
+ **This addition allows adding details at the end of the field .**
 
 ### How to use
 

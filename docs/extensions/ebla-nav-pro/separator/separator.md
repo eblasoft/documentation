@@ -1,6 +1,6 @@
-# Ebla Nav Pro. Separator
+# [Ebla Nav Pro.](../setting-up.md) Separator
 
-#### this feature  add a separator in Nav Bar.
+ **this feature  add a separator in Nav Bar.**
 
 ### How to use it
 

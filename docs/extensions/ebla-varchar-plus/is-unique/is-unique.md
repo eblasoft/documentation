@@ -1,6 +1,6 @@
-# Ebla VarChar Plus . Is Unique
+# [Ebla VarChar Plus.](../setting-up.md) Is Unique
 
-## The Feature facilitates the checking of duplicate items within the database.
+ **The Feature facilitates the checking of duplicate items within the database.**
 
 ### How to use
 

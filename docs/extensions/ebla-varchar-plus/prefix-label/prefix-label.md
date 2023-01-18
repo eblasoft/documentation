@@ -1,6 +1,6 @@
-# Ebla VarChar Plus . Prefix Label
+# [Ebla VarChar Plus.](../setting-up.md) Prefix Label
 
-## This addition allows adding details at the beginning of the field .
+ **This addition allows adding details at the beginning of the field .**
 
 ### How to use
 

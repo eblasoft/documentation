@@ -1,6 +1,6 @@
-# Ebla Nav Pro. Custom Link
+# [Ebla Nav Pro.](../setting-up.md) Custom Link
 
-#### this feature enables you to add a custom link .
+ **this feature enables you to add a custom link .**
 
 ### How to use it
 

@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. List Small Layout
+# [Ebla Link Multiple Pro.](../setting-up.md) List Small Layout
 
-This feature enables you to pick the list small  displayed in the list view.
+**This feature enables you to pick the list small  displayed in the list view.**
 
 ## How to use it
 

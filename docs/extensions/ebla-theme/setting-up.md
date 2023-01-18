@@ -1,6 +1,6 @@
 # Ebla Theme .
 
-#### Type : Extension
+ **Type : Extension**
 
 [//]: # (#### Demo : [Demo]&#40;https://demo.eblasoft.com.tr/#Task/create&#41;)
 
@@ -13,7 +13,7 @@
 
 [//]: # (<iframe width="650" height="315" src="https://www.youtube.com/embed/ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
-#### after installing the extension,
+ **after installing the extension,**
 
 1. go to **Admin** -> **User Interface** -> **Select Eblasoft Theme** .
 

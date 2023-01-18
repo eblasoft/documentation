@@ -1,8 +1,8 @@
 # Ebla Rate.
 
-#### Type: Extension
+ **Type: Extension**
 
-#### Safe Upgrade
+** Safe Upgrade**
 
 [//]: # (Demo: https://demo.espocrm.com/)
 
@@ -14,9 +14,9 @@
 [//]: # (change with)
 <iframe width="650" height="315" src="https://www.youtube.com/embed/C505B7OBZmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Setting up
+ **Setting up**
 
-#### after installing the extension,
+ **after installing the extension,**
 
 1. go to **Admin** -> **Entity Manager** -> **Scope** -> **Fields** -> **Add Field** -> **Rate field**.
 

@@ -1,6 +1,6 @@
-# Ebla IFrame Field .
+# [Ebla IFrame.](../setting-up.md) Iframe Field
 
-#### this feature enables you to add a field IFrame .
+ **this feature enables you to add a field IFrame .**
 
 ### How to use it
 

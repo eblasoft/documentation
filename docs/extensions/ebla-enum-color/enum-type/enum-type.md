@@ -1,6 +1,6 @@
-# Ebla Enum Color. Enum Type
+# [Ebla Enum Color.](../setting-up.md) Enum Type
 
-#### This feature enables you to add colors to option fields .
+ **This feature enables you to add colors to option fields .**
 
 ## How to use it
 

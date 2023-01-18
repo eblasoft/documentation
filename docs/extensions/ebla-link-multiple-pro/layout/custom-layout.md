@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. Custom Layout
+# [Ebla Link Multiple Pro.](../setting-up.md) Custom Layout
 
-This feature enables you to pick the fields that will be displayed in the list view.
+**This feature enables you to pick the fields that will be displayed in the list view.**
 
 ## How to use it
 

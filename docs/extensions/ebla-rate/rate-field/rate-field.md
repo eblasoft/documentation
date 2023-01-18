@@ -1,6 +1,6 @@
-# Rate Field
+# [Rate Field.](../setting-up.md). Rate Field
 
-#### this feature enables you to add a field rate .
+ **this feature enables you to add a field rate .**
 
 ### How to use it
 

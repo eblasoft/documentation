@@ -1,10 +1,10 @@
-# Ebla IFrame . Button And Popup Window
+# [Ebla IFrame.](../setting-up.md) Button And Popup Window
 
-#### This feature allows you to customize the name of your link.
+**This feature allows you to customize the name of your link.**
 
-#### This can make it more user-friendly and easier to remember.
+**This can make it more user-friendly and easier to remember.**
 
-#### Displayed by popup Window.
+ **Displayed by popup Window.**
 
 ### How to use it
 

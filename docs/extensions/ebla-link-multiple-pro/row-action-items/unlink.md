@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. Unlink
+# [Ebla Link Multiple Pro.](../setting-up.md) Unlink
 
-This feature enables you to unlink a row record.
+**This feature enables you to unlink a row record.**
 
 ## How to use it
 

@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro . Add Button
+# [Ebla Link Multiple Pro.](../setting-up.md) Add Button
 
-This feature enables you to add an "Add" button to add row  record.
+**This feature enables you to add an "Add" button to add row  record.**
 
 ## How to use it
 

@@ -1,6 +1,6 @@
-# Ebla VarChar Plus . Auto Complete
+# [Ebla VarChar Plus.](../setting-up.md) Auto Complete
 
-## The Feature allows for the automatic completion of chosen fields.
+ **The Feature allows for the automatic completion of chosen fields.**
 
 ### How to use
 

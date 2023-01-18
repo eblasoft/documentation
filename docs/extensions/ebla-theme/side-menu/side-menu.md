@@ -1,6 +1,6 @@
-# Ebla Theme . Side Menu
+# [Ebla Theme.](../setting-up.md) Side Menu
 
-## This extension includes the feature of opening the side menu on hover, allowing for convenient navigation.
+ **This extension includes the feature of opening the side menu on hover, allowing for convenient navigation.**
 
 ### How to use
 

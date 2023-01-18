@@ -1,6 +1,6 @@
-# Ebla Theme . Login Background Image
+# [Ebla Theme.](../setting-up.md) Login Background Image
 
-## This extension provides an enhanced user experience by enabling users to personalize their**EspoCRM** login screen with a custom background image of their choice.
+ **This extension provides an enhanced user experience by enabling users to personalize their**EspoCRM** login screen with a custom background image of their choice.**
 
 ### How to use
 

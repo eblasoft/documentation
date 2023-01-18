@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. Remove
+# [Ebla Link Multiple Pro.](../setting-up.md) Remove
 
-This feature enables you to remove a row record.
+**This feature enables you to remove a row record.**
 
 ## How to use it
 

@@ -1,6 +1,6 @@
-# Ebla Nav Pro. Favorite Entity
+# [Ebla Nav Pro.](../setting-up.md) Favorite Entity
 
-#### this feature enables you to add a favorite entity in Nav Bar.
+ **this feature enables you to add a favorite entity in Nav Bar.**
 
 ### How to use it
 

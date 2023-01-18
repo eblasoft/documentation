@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. List Layout
+# [Ebla Link Multiple Pro.](../setting-up.md) List Layout
 
-This feature enables you to pick the list  displayed in the list view.
+**This feature enables you to pick the list  displayed in the list view.**
 
 ## How to use it
 

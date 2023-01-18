@@ -1,6 +1,6 @@
-# Ebla Nav USer Switch Button . Top Nav Work Log Button
+# [Ebla Nav USer Quick Switch Button.](../setting-up.md) Top Nav Work Log Button
 
-### This feature calculates the number of working hours per day.
+ **This feature calculates the number of working hours per day.**
 
 ### How to use
 

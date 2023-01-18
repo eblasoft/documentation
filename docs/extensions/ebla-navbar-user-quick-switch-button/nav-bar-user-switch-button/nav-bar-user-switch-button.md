@@ -1,6 +1,6 @@
-# Ebla Nav USer Switch Button . Nav Bar User Switch Button
+# [Ebla Nav USer Quick Switch Button.](../setting-up.md) Nav Bar User Switch Button
 
-### This feature facilitates the addition of a toggle button on the top navigation bar, allowing for the switching of a boolean field within the user's entity (Online - Offline).
+ **This feature facilitates the addition of a toggle button on the top navigation bar, allowing for the switching of a boolean field within the user's entity (Online - Offline).**
 
 ### How to use
 

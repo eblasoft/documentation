@@ -1,6 +1,6 @@
-# Ebla Theme . Favicon
+# [Ebla Theme.](../setting-up.md) Favicon
 
-## the ability to upload a personalized favicon, which adds a unique, professional touch to the **EspoCRM**.
+ **the ability to upload a personalized favicon, which adds a unique, professional touch to the **EspoCRM**.**
 
 ### How to use
 

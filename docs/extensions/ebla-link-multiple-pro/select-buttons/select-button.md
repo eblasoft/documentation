@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro . Select Button
+# [Ebla Link Multiple Pro.](../setting-up.md) Select Button
 
-This feature enables you to add a "Select" button to select multiple records.
+**This feature enables you to add a "Select" button to select multiple records.**
 
 ## How to use it
 1. Enable the "Select Button".

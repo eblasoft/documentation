@@ -1,6 +1,6 @@
-# Ebla Link Multiple Pro. View
+# [Ebla Link Multiple Pro.](../setting-up.md) View
 
-This feature enables you to choose the item detail display in small detail view.
+**This feature enables you to choose the item detail display in small detail view.**
 
 ## How to use it
 

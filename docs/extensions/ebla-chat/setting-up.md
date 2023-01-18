@@ -1,6 +1,6 @@
 # Ebla Chat .
 
-### This is to facilitate the process of communication among the company's employees within the company's system without the need for external programs.
+ **This is to facilitate the process of communication among the company's employees within the company's system without the need for external programs.**
 
 ![Ebla Chat](../../_static/images/extensions/ebla-chat/setting-up/ebla-chat.png)
 
