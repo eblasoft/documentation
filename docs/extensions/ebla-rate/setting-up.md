@@ -22,4 +22,4 @@
 
 [Rate Field](rate-field/rate-field.md)
 
-![Rate Field](../../_static/images/extensions/ebla-rate/setting-up/rate-field/img.png)
+![Rate Field](../../_static/images/extensions/ebla-rate/setting-up/rate-field/rate-field-res.png)
