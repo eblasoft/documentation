@@ -1,28 +1,20 @@
 # Ebla IFrame.
 
-#### Type: Extension
+Type: **Extension**
 
-#### Safe Upgrade
+Safe Upgrade: **100%**
 
 [//]: # (Demo: https://demo.espocrm.com/)
 
-* This allows you to seamlessly integrate external content such as videos, maps, and other types of media into your
-  website.
+This extension adds new field **IFrame**, this is similar to url field but allow you to render the link in iframe, it comes with some options to control the way iframe looks like.
 
-* With an iframe, you can easily add dynamic and interactive elements to your **EspoCrrm** without having to navigate away from the main content.
-
-* This feature is particularly useful for **EspoCRM**, which can leverage iframes to add external functionality and
-  resources to their platform.
+## Usage:
+You can use it to embed videos or show links relevant to the record, the link can be processed in formula as any other field.
 
 [//]: # (change with)
 
 [//]: # (<iframe width="650" height="315" src="https://www.youtube.com/embed/C505B7OBZmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
-### Setting up
-
-#### after installing the extension,
-
-1. go to **Admin** -> **Entity Manager** -> **Scope** -> **Fields** -> **Add Field** -> **IFrame**.
 
 ### The Features
 
