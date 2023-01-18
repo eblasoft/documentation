@@ -38,6 +38,6 @@
 
 * ### **Display Mode**
 
-1. **[Inline Iframe](iframe/display-mode/inline-iframe.md)**
-2. **[Button And Modal](iframe/display-mode/button-and-modal.md)**
-3. **[Button And Popup Window](iframe/display-mode/button-and-popup-window.md)**
+1. [Inline Iframe](iframe/display-mode/inline-iframe.md)
+2. [Button And Modal](iframe/display-mode/button-and-modal.md)
+3. [Button And Popup Window](iframe/display-mode/button-and-popup-window.md)
