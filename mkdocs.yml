@@ -24,7 +24,7 @@ nav:
   - 'Extensions':
       - 'Ebla Chat': 'extensions/ebla-chat/setting-up.md'
       - 'Ebla Enum Color':
-          - 'Colo Picker Field': 'extensions/ebla-enum-color/color-picker-field.md'
+          - 'Colo Picker Field': 'extensions/ebla-enum-color/color-picker-field/color-picker-field.md'
           - 'Enum Type': 'extensions/ebla-enum-color/enum-type.md'
       - 'Ebla IFrame':
           - 'Display Mode':
