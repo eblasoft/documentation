@@ -1,4 +1,4 @@
-# Ebla Switch. Display As Toggle. No Icon
+# [Ebla Switch.](../../setting-up.md) Display As Toggle. No Icon
 
 This feature allows you to customize the icon of the toggle when the value is false.
 

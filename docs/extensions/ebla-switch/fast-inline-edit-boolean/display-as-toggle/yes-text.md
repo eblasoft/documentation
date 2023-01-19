@@ -1,4 +1,4 @@
-# Ebla Switch. Display As Toggle. Yes Text
+# [Ebla Switch.](../../setting-up.md) Display As Toggle. Yes Text
 
 This feature allows you to customize the text of the toggle when the value is true.
 

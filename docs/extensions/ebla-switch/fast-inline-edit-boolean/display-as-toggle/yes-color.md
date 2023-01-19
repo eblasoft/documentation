@@ -1,4 +1,4 @@
-# Ebla Switch. Display As Toggle. Yes Color
+# [Ebla Switch.](../../setting-up.md) Display As Toggle. Yes Color
 
 This feature allows you to customize the color of the toggle when the value is true.
 

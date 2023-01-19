@@ -1,4 +1,4 @@
-# Ebla SWitch . Fast Inline Edit Boolean
+# [Ebla Switch.](../setting-up.md) Fast Inline Edit Boolean
 
 * The Features allow you to edit the field directly from the detail view.
 

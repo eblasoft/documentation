@@ -1,4 +1,4 @@
-# Ebla Switch. Display As Toggle. Height
+# [Ebla Switch.](../../setting-up.md) Display As Toggle. Height
 
 This feature allows you to customize the height of the toggle.
 

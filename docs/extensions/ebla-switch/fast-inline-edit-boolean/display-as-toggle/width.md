@@ -1,4 +1,4 @@
-# Ebla Switch. Display As Toggle. Width
+# [Ebla Switch.](../../setting-up.md) Display As Toggle. Width
 
 This feature allows you to customize the width of the toggle.
 
