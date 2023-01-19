@@ -6,6 +6,7 @@
 * [Ebla Rate](extensions/ebla-rate/setting-up.md)
 * [Ebla Enum Color](extensions/ebla-enum-color/setting-up.md)
 * [Ebla IFrame](extensions/ebla-iframe/setting-up.md)
+* [Ebla Switch](extensions/ebla-switch/setting-up.md)
 * [Ebla Link Multiple Pro](extensions/ebla-link-multiple-pro/setting-up.md)
 * [Ebla Nav Pro](extensions/ebla-nav-pro/setting-up.md)
 * [Ebla Rate](extensions/ebla-rate/setting-up.md)

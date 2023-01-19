@@ -31,6 +31,7 @@ nav:
       - 'Ebla Rate': 'extensions/ebla-rate/setting-up.md'
       - 'Ebla Theme': 'extensions/ebla-theme/setting-up.md'
       - 'Ebla Varchar Plus': 'extensions/ebla-varchar-plus/setting-up.md'
+      - 'Ebla Nav Bar Quick Switch button': 'extensions/ebla-nav-bar-quick-switch-button/setting-up.md'
 
         #      - 'Advanced Pack':
 #  - 'Extensions':
