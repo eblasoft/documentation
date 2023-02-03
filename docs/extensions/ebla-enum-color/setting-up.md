@@ -16,6 +16,8 @@
 
 ### **[Enum Type](enum-type/enum-type.md).**
 
+### **[Multi Enum](multi-enum/multi-enum.md).**
+
 ### **[Color Picker Field](color-picker-field/color-picker-field.md).**
 
 ### **[Kanban View](kanban-view/kanban-view.md).**
