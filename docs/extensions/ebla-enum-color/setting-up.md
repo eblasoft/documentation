@@ -17,3 +17,7 @@
 ### **[Enum Type](enum-type/enum-type.md).**
 
 ### **[Color Picker Field](color-picker-field/color-picker-field.md).**
+
+### **[Kanban View](kanban-view/kanban-view.md).**
+
+### **[Calendar](calender/calender.md).**
