@@ -1,12 +1,20 @@
-# Espocrm Stream Post Update ModifiedAt Extension {docsify-ignore-all}
+### Espocrm Stream Post Update ModifiedAt Extension {docsify-ignore-all}
 
 ---
 
 <font size="1"> Version: 1.1.1 </font>
 
+<font size="1"> Type: free </font>
 
-### **Update the <font color="blue"> *Modified At* </font> of the Parent Entity upon Posting on the Stream**
 
-> With this extension, the **Modified At** timestamp of the parent entity will be automatically updated to the current time when a user posts on the stream
+#### Description
+> With this extension:
+> Trigger: A user posted on a stream
+> Action: The entity's **modified at** field will be updated to the current time.
+
+#### Use Cases
+- This is useful when you want to know when was the last time a user posted on the stream
+- This is also useful when you want to know when was the last time a user interacted with the parent entity
+- This is also useful when you want to order the parent entity by the last time a user interacted with it
 
 ![Stream Modified At](../../images/extensions/ebla-stream-modified-at/ebla-stream-modified-at-1.jpg)
