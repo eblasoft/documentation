@@ -1,4 +1,16 @@
 :root {
     --primary: #0f5d9c;
-    --pirmary-dark: #0a4677;    
+    --pirmary-dark: #0a4677;
+  }
+
+  .font1 {
+    font-size:14px;
+    color: gray;
+    font-style: italic;
+    margin-left: 5%;
+  }
+
+  .changelog {
+    font-size: 14px;
+    color: gray;
   }
