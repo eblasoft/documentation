@@ -1,15 +1,12 @@
-# Espocrm Stream Post Update ModifiedAt Extension {docsify-ignore-all}
+# Espocrm Stream Post Update ModifiedAt Extension
 
 ---
 
-<font size="1"> Version: 1.1.1 </font>
+<ins class= "font1" > Version:</ins>  1.1.1
 
-<font size="1"> Type: free </font>
+<ins class= "font1" > Type:</ins> free
 
-
-### Description
-
----
+## Description
 
 > With this extension:
 > Trigger: A user posted on a stream
@@ -17,14 +14,12 @@
 
 ![Stream Modified At](../../images/extensions/ebla-stream-modified-at/ebla-stream-modified-at-1.jpg)
 
-### Use Cases
-
----
+## Use Cases
 
 - This is useful when you want to know when was the last time a user posted on the stream
 - This is also useful when you want to know when was the last time a user interacted with the parent entity
 - This is also useful when you want to order the parent entity by the last time a user interacted with it
 
-### How to Install
----
+## How to Install
+
 You can install this extension following the steps in [EspoCRM Documentation](https://docs.espocrm.com/administration/extensions/).
