@@ -14,46 +14,39 @@
  layout manager entry specifically for this purpose. By utilizing the new layout manager, you can take advantage of the 12-column
  feature provided by Bootstrap's grid system or the Tabs layout to create more complex layouts. If you would like to have a quick look you are welcomed to watch this <font color="Blue">[Youtube Short Video](https://www.youtube.com/watch?v=gqRNCmqEfV4) </font>.
 
-
- ![Description](../../images/extensions/ebla-layout-pro/description-1.jpg)
-
 ## Features
 
-* ***Two Layout Options:*** The layout manager supports two layouts for panels:
+***1. Two Layout Options:*** The layout manager supports two layouts for panels:
 
-    **1. "Tabs"** where panels are displayed as tabs.
-    ![Main Settings](../../images/extensions/ebla-layout-pro/layout-pro-tabs-3.jpg)
-    ![Main Settings](../../images/extensions/ebla-layout-pro/layout-pro-tabs-4.jpg)
-    **2.  "Grid"** where panels are displayed as cells in a 12-column grid.
-    ![Main Settings](../../images/extensions/ebla-layout-pro/layout-pro-grid-2.jpg)   
+ * ***"Tabs"*** where panels are displayed as tabs.
+    ![Tab Example](../../images/extensions/ebla-layout-pro/tabs-example-1.jpg)
+* ***"Grid"*** where panels are displayed as cells in a 12-column grid. 
+    ![Grid Example](../../images/extensions/ebla-layout-pro/grids-example-1.jpg)
 
-* ***Responsive Design:*** The layout manager supports different panel and cell column sizes based on screen sizes. These sizes include:
-    - **"xs"** for phones (screens < 768px wide)
-    - **"sm"** for tablets (screens >= 768px wide)
-    - **"md"** for small laptops (screens >= 992px wide)
-    - **"lg"** for laptops and desktops (screens >= 1200px wide).
+***2. Responsive Design:*** The layout manager supports different panel and cell column sizes based on screen sizes. These sizes include **"xs"** for phones (screens < 768px wide), **"sm"** for tablets (screens >= 768px wide), **"md"** for small laptops (screens >= 992px wide), and **"lg"** for laptops and desktops (screens >= 1200px wide).
 
-* ***12-Column Grid:*** The layout manager supports a 12-column grid, allowing for more flexible panel and cell arrangements compared to the standard 4-column grid used in the "espo" CRM.
+***3. 12-Column Grid:*** The layout manager supports a 12-column grid, allowing for more flexible panel and cell arrangements compared to the standard 4-column grid used in the "espo" CRM when using the **Grid** layout type.
 
-* ***Variable Cell Sizes:*** Unlike the standard "espo" CRM, the layout manager supports different cell sizes within the grid layout, providing more flexibility in arranging and sizing the panels.
+![Grid Example](../../images/extensions/ebla-layout-pro/grids-example-2.jpg)
 
-![Main Settings](../../images/extensions/ebla-layout-pro/layout-pro-main-settings-1.jpg)
+***4. Variable Cell Sizes:*** Unlike the standard "espo" CRM, the layout manager supports different cell sizes within the grid layout, providing more flexibility in arranging and sizing the panels.
 
-* ***List and Detail Layouts:*** The layout manager introduces new list and detail layouts for entities. Additionally, there is an option called **"isWide"** that allows for a full-width detail layout. This option can be set at the CRM level and overridden at the layout level.
+***5. Wide Views:*** The layout manager introduces option called **"isWide"** that allows for a full-width detail layout (It can be set globally or on a per-view basis). This option allows for swapping the side panel to the bottom, enabling a wider and more expansive view.
+* **Before** "is wide" Enabled:
+ ![Before Is Wide Enabled](../../images/extensions/ebla-layout-pro/is-wide-1.jpg)
 
-* ***Different Layout Types:*** The layout manager allows for setting different layout types for each layout separately, providing customization options for different views.
+* **After** "is wide" Enabled: 
+ ![After Is Wide Enabled](../../images/extensions/ebla-layout-pro/is-wide-2.jpg)
 
-* ***Different List Layout for Bottom Relationships:*** The layout manager supports setting a different list layout specifically for bottom relationships, enabling distinct display options for these relationships.
+***6. List and Detail Layouts:*** The layout manager introduces adding **new layout** which can be of type **"list"** or **"detail"** for entities.
 
-* ***Font Color for Fields:*** The layout manager includes the ability to set font colors for fields, allowing for customized text appearance.
+***7. Different Layout Types:*** The layout manager allows for setting different layout types for each layout separately, providing customization options for different views.
 
-* ***Font Bold for Fields:*** In addition to font color, the layout manager supports setting the font weight to bold for fields, providing emphasis and visual distinction.
+***8. Different List Layout for Bottom Relationships:*** The layout manager supports setting a different list layout specifically for bottom relationships, enabling distinct display options for these relationships.
 
-* ***Wide Views:*** The layout manager introduces a "Wide Views" option that can be set globally or on a per-view basis. This option allows for swapping the side panel to the bottom, enabling a wider and more expansive view.
+***9. Font Color for Fields***
 
-* ***Relationship Panel Shortcuts:*** Shortcut links for relationship panels are added to the top of the detail view, providing convenient access to related information.
-
-* ***Layout Manager Enhancements:*** The layout manager includes a new button that allows for copying a layout from a full-width view to a smaller-sized view. This simplifies the process of adapting layouts across different screen sizes.
+***10. Font Bold for Fields***
 
 ## Use Cases
 
@@ -64,9 +57,25 @@
 
 You can install this extension following the steps in [EspoCRM Documentation](https://docs.espocrm.com/administration/extensions/).
 
-After installing the extension, you will notice a new section in the administration panel called "Ebla Extension." This section is specifically dedicated to managing the features and settings related to the extension.
+## How To Use
 
-![New Section](../../images/extensions/ebla-layout-pro/how-to-install-1.jpg)
+By following these steps, you will be able to navigate to the entity manager, utilize the layout extension, and customize the layout for your selected entity:
+
+**1.** Go to the **Administration->Entity Manager** section of your application.
+
+**2.** Once you are in the Entity Manager, select the entity you want to work with. 
+
+**3.** After selecting the entity, you should notice a new button called **"Layout Pro (Ebla)"** that has been added. Click on it to access the layout pro extension properties.
+
+![New Button Showed](../../images/extensions/ebla-layout-pro/how-to-use-1.jpg)
+
+**4.** Within the layout pro extension, you have the option to add a new layout or edit the detail layout of the selected entity.
+
+![Layout Properties](../../images/extensions/ebla-layout-pro/how-to-use-2.jpg)
+
+> **Important Note:** The extension provides a more advanced and flexible layout management system compared to the old layout manager, But if you have detail views that **don't** require complex layouts, you can still use the old layout manager for those views.
+
+
 
 ## CHANGELOG
 <font class="changelog">
