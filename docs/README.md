@@ -1,4 +1,5 @@
 ## Extensions Documentation {docsify-ignore-all}
 
-- [Espocrm Stream Post Update ModifiedAt Extension](extensions/ebla-stream-modified-at/README.md)
-- [Espocrm Layout Pro Extension](extensions/ebla-layout-pro/README.md)
+- [Espocrm Layout Pro](extensions/ebla-layout-pro/README.md)
+- [Espocrm Link Multiple Pro](extensions/ebla-layout-pro/README.md)
+- [Espocrm Stream Post Update ModifiedAt](extensions/ebla-stream-modified-at/README.md)
