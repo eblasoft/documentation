@@ -71,7 +71,7 @@ By following these steps, you will be able to navigate to the entity manager, ut
 
 **4.** Within the layout pro extension, you have the option to add a new layout or edit the detail layout of the selected entity.
 
-![Layout Properties](../../images/extensions/ebla-layout-pro/how-to-use-2.jpg)
+![Layout Properties](../../images/extensions/ebla-layout-pro/How-to-use-2.jpg)
 
 > **Important Note:** The extension provides a more advanced and flexible layout management system compared to the old layout manager, But if you have detail views that **don't** require complex layouts, you can still use the old layout manager for those views.
 
