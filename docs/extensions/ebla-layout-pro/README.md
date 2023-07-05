@@ -12,7 +12,9 @@
 
 > This extension is designed to integrate the power of the Bootstrap grid system into the detail view of EspoCRM. It introduces a new
  layout manager entry specifically for this purpose. By utilizing the new layout manager, you can take advantage of the 12-column
- feature provided by Bootstrap's grid system or the Tabs layout to create more complex layouts. If you would like to have a quick look you are welcomed to watch this <font color="Blue">[Youtube Short Video](https://www.youtube.com/watch?v=gqRNCmqEfV4) </font>.
+ feature provided by Bootstrap's grid system or the Tabs layout to create more complex layouts.
+
+[Ebla Layout Pro](https://www.youtube.com/embed/gqRNCmqEfV4 ':include :type=iframe width=100% height=400px')
 
 ## Features
 
