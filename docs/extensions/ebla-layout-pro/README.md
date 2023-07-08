@@ -16,38 +16,15 @@ It enhances layouts with more [features](/extensions/ebla-layout-pro/README?id=f
 
 ## Features
 
-***1. Two Layout Options:*** The layout manager supports two layouts for panels:
-
- * ***"Tabs"*** where panels are displayed as tabs.
-    ![Tab Example](../../images/extensions/ebla-layout-pro/tabs-example-1.jpg)
-* ***"Grid"*** where panels are displayed as cells in a 12-column grid. 
-    ![Grid Example](../../images/extensions/ebla-layout-pro/grids-example-1.jpg)
-
-***2. Responsive Design:*** The layout manager supports different panel and cell column sizes based on screen sizes. These sizes include **"xs"** for phones (screens < 768px wide), **"sm"** for tablets (screens >= 768px wide), **"md"** for small laptops (screens >= 992px wide), and **"lg"** for laptops and desktops (screens >= 1200px wide).
-
-***3. 12-Column Grid:*** The layout manager supports a 12-column grid, allowing for more flexible panel and cell arrangements compared to the standard 4-column grid used in the "espo" CRM when using the **Grid** layout type.
-
-![Grid Example](../../images/extensions/ebla-layout-pro/grids-example-2.jpg)
-
-***4. Variable Cell Sizes:*** Unlike the standard "espo" CRM, the layout manager supports different cell sizes within the grid layout, providing more flexibility in arranging and sizing the panels.
-
-***5. Wide Views:*** The layout manager introduces option called **"isWide"** that allows for a full-width detail layout (It can be set globally or on a per-view basis). This option allows for swapping the side panel to the bottom, enabling a wider and more expansive view.
-* **Before** "is wide" Enabled:
- ![Before Is Wide Enabled](../../images/extensions/ebla-layout-pro/is-wide-1.jpg)
-
-* **After** "is wide" Enabled: 
- ![After Is Wide Enabled](../../images/extensions/ebla-layout-pro/is-wide-2.jpg)
-
-***6. List and Detail Layouts:*** The layout manager introduces adding **new layout** which can be of type **"list"** or **"detail"** for entities.
-
-***7. Different Layout Types:*** The layout manager allows for setting different layout types for each layout separately, providing customization options for different views.
-
-***8. Different List Layout for Bottom Relationships:*** The layout manager supports setting a different list layout specifically for bottom relationships, enabling distinct display options for these relationships.
-
-***9. Font Color for Fields***
-
-***10. Font Bold for Fields***
-
+1. [Tabs Layout](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-features.md).
+2. [Grid Layout](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-features.md).
+3. Ability to set different sizes for different screen sizes
+4. 12 columns (Espocrm support maximum 4 equals cells per row)
+5. Wide Detail View
+6. Ability to create additional layouts for details & lists
+7. Field font color
+8. Field font bold
+9. Ability to set custom layouts for Bottom Relationships individually
 
 ## How to Install
 
