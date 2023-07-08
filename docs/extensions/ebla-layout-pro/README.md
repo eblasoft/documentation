@@ -38,4 +38,4 @@ By following [these steps](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-ho
 
 ---
 
-### [CHANGELOG](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-changelog.md) {docsify-ignore}
+### <font color=gray> [CHANGELOG](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-changelog.md) </font> {docsify-ignore}
