@@ -48,10 +48,6 @@ It enhances layouts with more [features](/extensions/ebla-layout-pro/README?id=f
 
 ***10. Font Bold for Fields***
 
-## Use Cases
-
-- This Layout Pro Tool is very helpful to show and to use more datafeeds.
-- this is also very helpful for design of sides and the daily work to arrange complex information with Espo.
 
 ## How to Install
 
