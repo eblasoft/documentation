@@ -6,7 +6,7 @@
 
 <ins class= "font1" > Type:</ins> free
 
-## Description
+## Overview
 
 > With this extension:
 > Trigger: A user posted on a stream
