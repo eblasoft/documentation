@@ -1,4 +1,4 @@
-# Espocrm Layout Pro Extension 
+# Espocrm Layout Pro
 
 ---
 
