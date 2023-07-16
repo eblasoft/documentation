@@ -30,7 +30,7 @@ This extension allows you to show any field from the linked entity in the detail
 
 ***3.*** Ability to have **different layouts** for edit and detail modes.
 
-For more features details follow the link [Features](extensions/ebla-link-pro/espocrm-ebla-link-pro-features.md) 
+For more features details follow the link [Features](extensions/ebla-link-pro/espocrm-ebla-link-pro-features.md?id=features) 
 
 ## Use Cases
 - Invoice items on invoice entity

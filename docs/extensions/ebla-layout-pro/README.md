@@ -26,7 +26,7 @@ It enhances layouts with more [features](/extensions/ebla-layout-pro/README?id=f
 8. Field font bold
 9. Ability to set custom layouts for Bottom Relationships individually
 
-For more features details follow the link [Layout Pro Features](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-features.md)
+For more features details follow the link [Layout Pro Features](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-features.md?id=features)
 
 ## How to Install
 

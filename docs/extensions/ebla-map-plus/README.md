@@ -14,15 +14,15 @@
 
 ## Features
 
-1. **Latitude and Longitude:** The existing **Address** field type now includes two additional inputs, latitude and longitude.
+1. **[Latitude and Longitude:](/extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=latitude-and-longitude)** The existing **Address** field type now includes two additional inputs, latitude and longitude.
 
-2. **Search:** The existing field of type **Address** now includes a search ability using Google services.
+2. **[Search:](/extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=search)** The existing field of type **Address** now includes a search ability using [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview).
 
-3. **Map Route:** Drow the **route** between two or more addresses.
+3. **[Map Route:](/extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=map-route)** Drow the **route** between two or more addresses.
 
-4. **Duration & Distance:** Calculate the duration & distance between several addresses.
+4. **[Duration and Distance:](/extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=duration-and-distance)** Calculate the duration & distance between several addresses.
 
-For more features details follow the link [Map Plus Features](extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md)
+For more features details follow the link [Map Plus Features](extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=features)
 
 ## Use Cases
 
