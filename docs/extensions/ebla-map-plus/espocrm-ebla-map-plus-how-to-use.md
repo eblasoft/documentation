@@ -1,6 +1,6 @@
 ## How To Use
 
-Once you have successfully installed the **Map Plus** extension, you can take advantage of its enhanced mapping features. Here's a step-by-step guide on how to use it effectively:
+Once you have successfully added your **integrations** and installed the **Map Plus** extension, you can take advantage of its enhanced mapping features. Here's a step-by-step guide on how to use it effectively:
 
 **1. Accessing the "Map Route" Field Type:**
 After installing the extension, a new field type called "Map Route" will become available in your application's entity manager when adding new field to your entity. This field type allows you to create interactive map routes.

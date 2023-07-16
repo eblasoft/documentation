@@ -22,8 +22,6 @@
 
 4. **[Duration and Distance:](/extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=duration-and-distance)** Calculate the duration & distance between several addresses.
 
-For more features details follow the link [Map Plus Features](extensions/ebla-map-plus/espocrm-ebla-map-plus-features.md?id=features)
-
 ## Use Cases
 
 - This extension provides valuable information for planning trips or routes, navigation, estimating travel times, visualizing distances between locations, or optimizing logistics.
@@ -31,6 +29,10 @@ For more features details follow the link [Map Plus Features](extensions/ebla-ma
 ## How to Install
 
 You can install this extension following the steps in [EspoCRM Documentation](https://docs.espocrm.com/administration/extensions/).
+
+## Setup
+
+You need to follow [these steps](/extensions/ebla-map-plus/espocrm-ebla-map-plus-setup.md) to enable Google Maps API key to get all work properly.
 
 ## How To Use
 
