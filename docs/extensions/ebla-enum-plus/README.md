@@ -8,7 +8,7 @@
 
 ## Overview
 
-> This extension enhances the existing **Enum** field type in espocrm. It gives you the ability to select extra colors for your options, shows them as buttons, and other more [features](/extensions/ebla-map-plus/README?id=features).
+> This extension enhances the existing **Enum** field type in espocrm. It gives you the ability to select extra colors for your options, shows them as buttons, and other more [features](/extensions/ebla-enum-plus/README?id=features).
 
 ![Overview](../../images/extensions/ebla-enum-plus/overview.jpg)
 
