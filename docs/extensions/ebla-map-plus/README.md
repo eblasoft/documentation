@@ -40,4 +40,4 @@ By following [these steps](extensions/ebla-map-plus/espocrm-ebla-map-plus-how-to
 
 ---
 
-### <font color=gray> [CHANGELOG](extensions/ebla-layout-pro/espocrm-ebla-layout-pro-changelog.md) </font> {docsify-ignore}
+### <font color=gray> [CHANGELOG](extensions/ebla-map-plus/espocrm-ebla-map-plus-changelog.md) </font> {docsify-ignore}
