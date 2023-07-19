@@ -10,11 +10,13 @@ Define enum options in **"Enum Sources List"** globally to be reused anywhere.
 
 Enjoy unlimited colors for options.
 
+![Extra Colors](../../images/extensions/ebla-enum-plus/enum-source-settings.jpg ':size=600')
+
 ### Color picker field type:
 
 Can be added to entities from entity manager.
 
-![Color Picker](../../images/extensions/ebla-enum-plus/enum-source-settings.jpg ':size=600')
+![Color Picker](../../images/extensions/ebla-enum-plus/color-picker.jpg ':size=600')
 
 ### Enum as buttons:
 
