@@ -1,4 +1,4 @@
-# Espocrm Layout Pro
+# Espocrm Switch
 
 ---
 
