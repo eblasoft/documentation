@@ -2,13 +2,13 @@
 
 ---
 
-<ins class= "font1" > Version:</ins> 4.2.1
+<ins class= "font1" > Version:</ins> 4.3.1
 <ins class= "font1" > Supported EspoCRM Versions:</ins> >=5.6.0
 <ins class= "font1" > Type:</ins> paid
 
 ## Overview
 
-> This extension extend Espocrm layout manager with more power of the **[Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic)** into the detail view of EspoCRM.
+> This extension extend Espocrm layout manager with more power of the [Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic) into the detail view of EspoCRM.
 It enhances layouts with more [features](/extensions/ebla-layout-pro/README?id=features).
 
 
