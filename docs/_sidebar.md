@@ -3,3 +3,4 @@
 * [Link Multiple Pro](extensions/ebla-link-pro/README.md)
 * [Map Plus](extensions/ebla-map-plus/README.md)
 * [Enum Plus](extensions/ebla-enum-plus/README.md)
+* [Switch](extensions/ebla-switch/README.md)

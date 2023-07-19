@@ -8,7 +8,7 @@
 
 ## Overview
 
-This extension extend Espocrm layout manager with more power of the **[Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic)** into the detail view of EspoCRM.
+> This extension extend Espocrm layout manager with more power of the **[Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic)** into the detail view of EspoCRM.
 It enhances layouts with more [features](/extensions/ebla-layout-pro/README?id=features).
 
 
