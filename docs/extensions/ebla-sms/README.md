@@ -8,7 +8,7 @@
 
 ## Overview
 
-> This extension enables **SMS Entity**. See it's [features](/extensions/ebla-sms/README?id=features).
+> This extension enables **SMS Entity**. You can read more about **SMS Sending** in [EspoCRM SMS Sending](https://docs.espocrm.com/administration/sms-sending/). See this extension's [features](/extensions/ebla-sms/README?id=features).
 
 ![Overview](../../images/extensions/ebla-sms/overview.jpg ':size=600')
 
