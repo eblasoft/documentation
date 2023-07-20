@@ -4,3 +4,4 @@
 * [Map Plus](extensions/ebla-map-plus/README.md)
 * [Enum Plus](extensions/ebla-enum-plus/README.md)
 * [Switch](extensions/ebla-switch/README.md)
+* [SMS](extensions/ebla-sms/README.md)
