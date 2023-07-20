@@ -44,7 +44,7 @@ You need to follow these steps to get all work properly:
 
     ![Integration](../../images/extensions/ebla-sms/integration.jpg ':size=600')
 
-> ### Supported SMS Providers:
+> ### Supported SMS Providers: {docsify-ignore}
 > - Twilio
 > - Spryng
 > - sms77
