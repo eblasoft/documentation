@@ -6,3 +6,4 @@
 - [Espocrm Map Plus](extensions/ebla-map-plus/README.md)
 - [Espocrm Enum Plus](extensions/ebla-enum-plus/README.md)
 - [Espocrm Switch](extensions/ebla-switch/README.md)
+- [Espocrm SMS](extensions/ebla-sms/README.md)
