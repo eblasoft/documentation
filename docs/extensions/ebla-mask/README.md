@@ -34,4 +34,4 @@ By following [these steps](extensions/ebla-mask/espocrm-ebla-mask-how-to-use.md?
 
 ---
 
-### <font color=gray> [CHANGELOG](extensions/ebla-sms/espocrm-ebla-sms-changelog.md) </font> {docsify-ignore}
+### <font color=gray> [CHANGELOG](extensions/ebla-mask/espocrm-ebla-mask-changelog.md) </font> {docsify-ignore}
