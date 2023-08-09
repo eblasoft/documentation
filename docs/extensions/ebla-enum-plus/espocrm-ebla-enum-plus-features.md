@@ -21,3 +21,15 @@ Can be added to entities from entity manager.
 Enum options will be rendered as buttons (support enum & m. enum).
 
 ![Enum as Buttons](../../images/extensions/ebla-enum-plus/show-as-button.jpg ':size=600')
+
+### Kanban status bar:
+
+Kanban status bar enable on detail view.
+
+Edit Scope: Enable / Disable Kanban Status Bar in Detail View 
+
+![Kanban status bar](../../images/extensions/ebla-enum-plus/Espocrm-Ebla-enum-plus-5.png ':size=600')
+
+Detail view :
+
+![Kanban status bar](../../images/extensions/ebla-enum-plus/Espocrm-Ebla-enum-plus-12.png ':size=600')

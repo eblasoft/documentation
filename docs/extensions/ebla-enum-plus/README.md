@@ -2,7 +2,7 @@
 
 ---
 
-<ins class= "font1" > Version:</ins> 2.1.0
+<ins class= "font1" > Version:</ins> 2.1.6
 <ins class= "font1" > Supported EspoCRM Versions:</ins> >=7.5.0
 <ins class= "font1" > Type:</ins> paid
 
@@ -21,6 +21,8 @@
 3. **[Color picker field type:](/extensions/ebla-enum-plus/espocrm-ebla-enum-plus-features.md?id=color-picker-field-type)** can be added to entities from entity manager.
 
 4. **[Enum as buttons:](/extensions/ebla-enum-plus/espocrm-ebla-enum-plus-features.md?id=enum-as-buttons)** enum options will be rendered as buttons (support enum & m. enum).
+
+5. **[Kanban status bar:](/extensions/ebla-enum-plus/espocrm-ebla-enum-plus-features.md?id=kanban-status-bar)** enable on detail view.
 
 ## How to Install
 
