@@ -2,7 +2,7 @@
 
 ---
 
-<ins class= "font1" > Version:</ins> 3.36.6 
+<ins class= "font1" > Version:</ins> 3.39.0 
 <ins class= "font1" > Supported EspoCRM Versions:</ins> >=7.0.8 , <=7.4.20
 <ins class= "font1" > Type:</ins> paid
 
