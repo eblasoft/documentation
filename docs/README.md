@@ -15,3 +15,5 @@
 - [Espocrm SMS](extensions/ebla-sms/README.md)
 
 - [Espocrm Mask](extensions/ebla-mask/README.md)
+
+- [Espocrm Nav Pro](extensions/ebla-nav-pro/README.md)
