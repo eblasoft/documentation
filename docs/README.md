@@ -17,3 +17,5 @@
 - [Espocrm Mask](extensions/ebla-mask/README.md)
 
 - [Espocrm Nav Pro](extensions/ebla-nav-pro/README.md)
+
+- [Espocrm Admin Pro](extensions/ebla-admin-pro/README.md)

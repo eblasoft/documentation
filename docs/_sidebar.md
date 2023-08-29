@@ -7,3 +7,4 @@
 * [SMS](extensions/ebla-sms/README.md)
 * [Mask](extensions/ebla-mask/README.md)
 * [Nav Pro](extensions/ebla-nav-pro/README.md)
+* [Admin Pro](extensions/ebla-admin-pro/README.md)
