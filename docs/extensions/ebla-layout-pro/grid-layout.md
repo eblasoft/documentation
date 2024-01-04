@@ -10,7 +10,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/ROrpILorBZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Another Features
+### Features
 
 * [12 columns](#12-columns)
 * [Panel Customisation](#Panel-customisation)
