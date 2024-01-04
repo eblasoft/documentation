@@ -2,13 +2,13 @@
 
 ---
 
-> This extension extend Espocrm layout manager with more power of
+> This extension extend EspoCRM layout manager with more power of
 > the [Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic) into the detail view
 > of
 > EspoCRM.
-
-
-[Ebla Layout Pro](https://www.youtube.com/embed/ROrpILorBZk ':include :type=iframe width=100% height=400px')
+>
+>
+[![Ebla Layout Pro](https://markdown-videos-api.jorgenkh.no/youtube/ROrpILorBZk)](https://youtu.be/ROrpILorBZk)
 
 ### Another Features
 
@@ -18,7 +18,6 @@
 * [Bottom Panels Customisation](#bottom-panels-customisation)
 * [Wide Detail View](#wide-detail-view)
 * [Create Additional Layout (detail , list)](#create-additional-layout-detail--list)
-* Ability to set custom layouts for Bottom Relationships individually
 
 ### 12 Columns
 
@@ -26,8 +25,7 @@
 
 !!! note
 
-    Espocrm support maximum 4 equals cells per row.
-
+    EspoCRM support maximum 4 equals cells per row by default.
 
 ![12](../../_static/images/extensions/ebla-layout-pro/12-columns.png)
 
@@ -45,6 +43,9 @@
 
 ---
 
+1. CSS Classes
+2. Header Background Color
+3. Header Font Color
 
 ![bottom](../../_static/images/extensions/ebla-layout-pro/bottom-panels-customisation.png)
 
@@ -67,7 +68,7 @@
 Administration-> Entity Manager-> **entityType**-> Edit
 
 * Full Detail is Wide
-* Small Detail is Wide  
+* Small Detail is Wide
 
 ### Create Additional Layout (detail , list)
 
@@ -75,7 +76,7 @@ Administration-> Entity Manager-> **entityType**-> Edit
 
 !!! note
 
-    Espocrm just support list layout.
+    EspoCRM just support list layout by default.
 
 ![additional](../../_static/images/extensions/ebla-layout-pro/additional-layout.png)
 
