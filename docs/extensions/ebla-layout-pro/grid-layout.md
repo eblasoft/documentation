@@ -6,8 +6,10 @@
 > the [Bootstrap 12-column grid system](https://getbootstrap.com/docs/3.3/css/#grid-example-basic) into the detail view
 > of
 > EspoCRM.
->
->
+
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/ROrpILorBZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [![Ebla Layout Pro](https://markdown-videos-api.jorgenkh.no/youtube/ROrpILorBZk)](https://youtu.be/ROrpILorBZk)
 
 ### Another Features
