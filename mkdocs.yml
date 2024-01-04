@@ -1,9 +1,13 @@
 site_name: Eblasoft Documentation
 
 repo_url: https://github.com/eblasoft/documentation/
+edit_uri: edit/master/docs/
 
 markdown_extensions:
-#  - mdx_truly_sane_lists
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - mdx_truly_sane_lists
   - codehilite:
       guess_lang: false
       use_pygments: true
@@ -11,12 +15,16 @@ markdown_extensions:
       permalink: true
       toc_depth: 4
 
-#theme:
-#  name: material
-#  highlightjs: true
-#  palette:
-#    primary: blue grey
-#    accent: blue grey
+theme:
+  name: material
+  highlightjs: true
+  features:
+    - content.action.edit
+  icon:
+    edit: material/pencil
+  palette:
+    primary: blue grey
+    accent: blue grey
 
 nav:
   - 'Home': 'index.md'
