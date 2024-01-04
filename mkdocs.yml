@@ -29,7 +29,7 @@ theme:
 nav:
   - 'Extensions':
       - 'Layout Pro':
-          - 'Grid Layout': 'extensions/layout-pro/grid-layout.md'
+          - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
 #  - 'Administration':
 #      - 'Server configuration':
 #          - 'Configuration': 'administration/server-configuration.md'
