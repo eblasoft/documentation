@@ -30,6 +30,3 @@ nav:
   - 'Extensions':
       - 'Layout Pro':
         - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
-
-      - 'Advanced Pack':
-          - 'Reports': 'user-guide/reports.md'
