@@ -81,9 +81,4 @@ Administration-> Entity Manager-> **entityType**-> Edit
 ![additional](../../_static/images/extensions/ebla-layout-pro/additional-layout.png)
 
 
-### <font color=gray> [CHANGELOG](changelog.md) </font> {docsify-ignore}
-
-
-
-
-
+### <font color=gray> [CHANGELOG](changelog.md) </font>

@@ -1,7 +1,5 @@
 ## CHANGELOG
 
-<font class="changelog">
-
 layout-pro-v2.0.0: (12.10.2019)
 100% safe upgrade
 
@@ -167,5 +165,3 @@ layout-pro-v4.3.0: (02.04.2023)
 layout-pro-v4.3.1: (10.04.2023)
 
 - fix layout options not show
-
-      </font>
