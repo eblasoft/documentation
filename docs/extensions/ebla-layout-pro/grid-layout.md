@@ -1,5 +1,7 @@
 # Grid Layout
 
+Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-layout-pro).
+
 ---
 
 > This extension enhances the capabilities of EspoCRM's layout manager by incorporating the
@@ -78,6 +80,8 @@ Administration-> Entity Manager-> **entityType**-> Edit
 
 ![additional](../../_static/images/extensions/ebla-layout-pro/additional-layout.png)
 
+
+### <font color=gray> [CHANGELOG](changelog.md) </font> {docsify-ignore}
 
 
 
