@@ -27,7 +27,9 @@ theme:
     accent: blue grey
 
 nav:
-  - 'Home': 'index.md'
+  - 'Extensions':
+      - 'Layout Pro':
+          - 'Gird': 'extensions/layout-pro/grid.md'
 #  - 'Administration':
 #      - 'Server configuration':
 #          - 'Configuration': 'administration/server-configuration.md'
