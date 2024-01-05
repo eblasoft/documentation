@@ -1,6 +1,6 @@
 # Overview
 
-Enhancing (enum multi-enum) field functionality with additional features.
+Enhancing (Enum Multi-Enum) field functionality with additional features.
 
 ---
 
