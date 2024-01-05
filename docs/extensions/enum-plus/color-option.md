@@ -10,3 +10,7 @@ Color Option is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm
 ---
 
 ![Color Option](../../_static/images/extensions/enum-plus/color-option.jpg)
+
+<br>
+
+**<font color=gray> [Changelog](changelog.md) </font>**

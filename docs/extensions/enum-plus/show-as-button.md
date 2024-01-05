@@ -17,3 +17,7 @@ Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields*
 Enable the toggle buttons group even on the view mode.
 
 ![Always Force Edit Mode](../../_static/images/extensions/enum-plus/always-force-edit-mode.png)
+
+<br>
+
+**<font color=gray> [Changelog](changelog.md) </font>**

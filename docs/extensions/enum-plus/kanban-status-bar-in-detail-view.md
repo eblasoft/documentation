@@ -14,3 +14,6 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ka
 
 Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
+<br>
+
+**<font color=gray> [Changelog](changelog.md) </font>**
