@@ -21,3 +21,7 @@ Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields*
 <br>
 
 ![Enable Force Edit on List View](../../_static/images/extensions/enum-plus/options.png)
+
+!!! note
+
+    Enum as buttons merged from the deprecated extension "Espocrm Plus".

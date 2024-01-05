@@ -74,6 +74,3 @@ Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
     EspoCRM just support list layout by default.
 
 ![additional](../../_static/images/extensions/ebla-layout-pro/additional-layout.png)
-
-
-### <font color=gray> [CHANGELOG](changelog.md) </font>
