@@ -12,6 +12,4 @@ Force Edit on List View is available in [Ebla Eum Plus](https://www.eblasoft.com
 
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 
-<br>
-
-**<font color=gray> [Changelog](changelog.md) </font>**
+![Enable Force Edit on List View](../../_static/images/extensions/enum-plus/options.png)

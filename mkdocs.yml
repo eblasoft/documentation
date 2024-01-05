@@ -46,11 +46,12 @@ theme:
 nav:
   - 'Extensions':
       - 'Layout Pro':
+        - Overview: 'extensions/ebla-layout-pro/overview.md'
         - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
         - 'Custom CSS': 'extensions/ebla-layout-pro/custom-css.md'
       - 'Enum Plus':
+        - 'Overview': 'extensions/enum-plus/overview.md'
         - 'Color Option': 'extensions/enum-plus/color-option.md'
         - 'Show As Button ': 'extensions/enum-plus/show-as-button.md'
-        - 'Show As Button1 ': 'extensions/enum-plus/force-edit-on-list-view.md'
         - 'Force Edit On List View': 'extensions/enum-plus/force-edit-on-list-view.md'
         - 'Kanban Status Bar in Detail View': 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
