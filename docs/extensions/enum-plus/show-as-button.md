@@ -11,3 +11,9 @@ Show As Button is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espoc
 ### Enable Show As Button
 
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
+
+### Always Force Edit Mode
+
+Enable the toggle buttons group even on the view mode.
+
+![Always Force Edit Mode](../../_static/images/extensions/enum-plus/always-force-edit-mode.png)
