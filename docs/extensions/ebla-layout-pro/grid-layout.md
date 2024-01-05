@@ -65,7 +65,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-Administration-> Entity Manager-> **entityType**-> Edit
+Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
 * Full Detail is Wide
 * Small Detail is Wide
