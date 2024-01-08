@@ -55,3 +55,8 @@ nav:
         - 'Show As Button ': 'extensions/enum-plus/show-as-button.md'
         - 'Force Edit On List View': 'extensions/enum-plus/force-edit-on-list-view.md'
         - 'Kanban Status Bar in Detail View': 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+      - 'Map Plus':
+        - 'Overview': 'extensions/map-plus/overview.md'
+        - 'Map Route': 'extensions/map-plus/map-route.md'
+        - 'Latitude and Longitude': 'extensions/map-plus/latitude-and-longitude.md'
+        - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
