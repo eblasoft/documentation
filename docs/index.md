@@ -1,6 +1,5 @@
 # Eblasoft Documentation
 
----
 ## Extensions
 
 * Ebla Layout Pro
