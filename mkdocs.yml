@@ -76,3 +76,4 @@ nav:
         - 'Separator': 'extensions/nav-pro/separator.md'
         - 'Favorite Entities': 'extensions/nav-pro/favorite-entities.md'
         - 'Favorite List': 'extensions/nav-pro/favorite-list.md'
+        - 'ChangeLog': 'extensions/nav-pro/changelog.md'

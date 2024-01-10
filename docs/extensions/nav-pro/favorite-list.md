@@ -4,4 +4,4 @@
 
 ---
 
-![Favorite](../../_static/images/extensions/nav-pro/favorite.png)
+![Favourite](../../_static/images/extensions/nav-pro/favourites.png)
