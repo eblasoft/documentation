@@ -92,4 +92,4 @@ nav:
         - 'ChangeLog': 'extensions/event-plus/changelog.md'
       - 'Theme':
         - 'Ebla Theme': 'extensions/theme/ebla-theme.md'
-        - 'Changelog': 'extensions/event-plus/changelog.md'
+        - 'Changelog': 'extensions/theme/changelog.md'
