@@ -13,6 +13,22 @@
 
 ## EspoCRM Mask
 
+![mask field](../../_static/images/extensions/mask-field/mask-field.png)
+
+
+
+---
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields(Varchar & Phone)**.
+
+![mask field op](../../_static/images/extensions/mask-field/mask-field-op.png)
+
+
+<br>
+
+### <font color=gray> [ChangeLog](changelog.md) </font>
+
+
+
+
 
 

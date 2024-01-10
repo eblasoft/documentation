@@ -64,3 +64,5 @@ nav:
       - 'Ebla Link Multiple Pro':
         - 'Overview': 'extensions/link-multiple-pro/overview.md'
         - 'Features': 'extensions/link-multiple-pro/features.md'
+      - 'Ebla Mask Field':
+        - 'Overview': 'extensions/mask-field/overview.md'
