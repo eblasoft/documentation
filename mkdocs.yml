@@ -64,10 +64,15 @@ nav:
         - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
         - 'Polygon Map': 'extensions/map-plus/polygon-map.md'
         - 'ChangeLog': 'extensions/map-plus/changelog.md'
-      - 'Ebla Link Multiple Pro':
+      - 'Link Multiple Pro':
         - 'Overview': 'extensions/link-multiple-pro/overview.md'
         - 'Features': 'extensions/link-multiple-pro/features.md'
         - 'ChangeLog': 'extensions/link-multiple-pro/changelog.md'
-      - 'Ebla Mask Field':
+      - 'Mask Field':
         - 'Overview': 'extensions/mask-field/overview.md'
         - 'ChangeLog': 'extensions/mask-field/changelog.md'
+      - 'Navigation Pro':
+        - 'Custom Links With Tabs': 'extensions/nav-pro/custom-links-with-tabs.md'
+        - 'Separator': 'extensions/nav-pro/separator.md'
+        - 'Favorite Entities': 'extensions/nav-pro/favorite-entities.md'
+        - 'Favorite List': 'extensions/nav-pro/favorite-list.md'
