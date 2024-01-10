@@ -47,4 +47,8 @@
   * [Work Log Button](extensions/work-log/work-log-button.md)
   * [Online / Offline](extensions/work-log/online-offline.md)
   * [ChangeLog](extensions/work-log/changelog.md)
+
+* Ebla Event Plus
+  * [Entity Event Plus](extensions/event-plus/event-plus.md)
+  * [ChangeLog](extensions/event-plus/changelog.md)
 ---
