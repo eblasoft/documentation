@@ -49,20 +49,25 @@ nav:
         - Overview: 'extensions/ebla-layout-pro/overview.md'
         - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
         - 'Custom CSS': 'extensions/ebla-layout-pro/custom-css.md'
+        - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
       - 'Enum Plus':
         - 'Overview': 'extensions/enum-plus/overview.md'
         - 'Color Option': 'extensions/enum-plus/color-option.md'
         - 'Show As Button ': 'extensions/enum-plus/show-as-button.md'
         - 'Force Edit On List View': 'extensions/enum-plus/force-edit-on-list-view.md'
         - 'Kanban Status Bar in Detail View': 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+        - 'ChangeLog': 'extensions/enum-plus/changelog.md'
       - 'Map Plus':
         - 'Overview': 'extensions/map-plus/overview.md'
         - 'Map Route': 'extensions/map-plus/map-route.md'
         - 'Latitude and Longitude': 'extensions/map-plus/latitude-and-longitude.md'
         - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
         - 'Polygon Map': 'extensions/map-plus/polygon-map.md'
+        - 'ChangeLog': 'extensions/map-plus/changelog.md'
       - 'Ebla Link Multiple Pro':
         - 'Overview': 'extensions/link-multiple-pro/overview.md'
         - 'Features': 'extensions/link-multiple-pro/features.md'
+        - 'ChangeLog': 'extensions/link-multiple-pro/changelog.md'
       - 'Ebla Mask Field':
         - 'Overview': 'extensions/mask-field/overview.md'
+        - 'ChangeLog': 'extensions/mask-field/changelog.md'
