@@ -61,3 +61,6 @@ nav:
         - 'Latitude and Longitude': 'extensions/map-plus/latitude-and-longitude.md'
         - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
         - 'Polygon Map': 'extensions/map-plus/polygon-map.md'
+      - 'Ebla Link Multiple Pro':
+        - 'Overview': 'extensions/link-multiple-pro/overview.md'
+        -'Features': 'extensions/link-multiple-pro/features.md'
