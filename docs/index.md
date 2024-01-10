@@ -21,6 +21,7 @@
   * [Map Route](extensions/map-plus/map-route.md)
   * [Latitude and Longitude](extensions/map-plus/latitude-and-longitude.md)
   * [Search Place Autocomplete](extensions/map-plus/search-place-autocomplete.md)
+  * [Polygon Map](extensions/map-plus/polygon-map.md)
 
 * [Ebla Chat](extensions/ebla-chat/setting-up.md)
 * [Ebla Rate](extensions/ebla-rate/setting-up.md)
