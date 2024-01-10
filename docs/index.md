@@ -58,4 +58,8 @@
 * Ebla Event Plus
   * [Entity Event Plus](extensions/event-plus/event-plus.md)
   * [ChangeLog](extensions/event-plus/changelog.md)
+
+* Ebla Theme
+  * [Ebla Theme](extensions/theme/ebla-theme.md)
+  * [ChangeLog](extensions/theme/changelog.md)
 ---

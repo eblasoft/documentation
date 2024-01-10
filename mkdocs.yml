@@ -90,3 +90,6 @@ nav:
       - 'Event Plus':
         - 'Entity Event Plus': 'extensions/event-plus/event-plus.md'
         - 'ChangeLog': 'extensions/event-plus/changelog.md'
+      - 'Theme':
+        - 'Ebla Theme': 'extensions/theme/ebla-theme.md'
+        - 'Changelog': 'extensions/event-plus/changelog.md'
