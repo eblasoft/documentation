@@ -42,4 +42,9 @@
   * [Iframe Field](extensions/number-pro/number-pro-field.md)
   * [ChangeLog](extensions/number-pro/changelog.md)
 
+* Ebla WorkLog
+  * [Overview](extensions/work-log/overview.md)
+  * [Work Log Button](extensions/work-log/work-log-button.md)
+  * [Online / Offline](extensions/work-log/online-offline.md)
+  * [ChangeLog](extensions/work-log/changelog.md)
 ---
