@@ -38,4 +38,8 @@
   * [Iframe Field](extensions/iframe/iframe-field.md)
   * [ChangeLog](extensions/iframe/changelog.md)
 
+* Ebla Number Pro Field
+  * [Iframe Field](extensions/number-pro/number-pro-field.md)
+  * [ChangeLog](extensions/number-pro/changelog.md)
+
 ---

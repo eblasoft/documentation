@@ -80,3 +80,6 @@ nav:
       - 'Iframe':
         - 'Iframe Field': 'extensions/iframe/iframe-field.md'
         - 'ChangeLog': 'extensions/iframe/changelog.md'
+      - 'Auto Increment (Number Pro)':
+        - 'Number Pro Field': 'extensions/number-pro/number-pro-field.md'
+        - 'ChangeLog': 'extensions/number-pro/changelog.md'
