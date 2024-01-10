@@ -5,7 +5,7 @@
 
 ---
 
-[Ebla Link Multiple Pro](https://www.youtube.com/embed/fvllcGJhKNg ':include :type=iframe width=100% height=400px')
+<iframe width="650" height="315" src="https://www.youtube.com/embed/fvllcGJhKNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

@@ -25,8 +25,8 @@
   * [Overview](extensions/link-multiple-pro/overview.md)
   * [Features](extensions/link-multiple-pro/features.md)
 
-* [Ebla Chat](extensions/ebla-chat/setting-up.md)
-* [Ebla Rate](extensions/ebla-rate/setting-up.md)
-* [Ebla Enum Color](extensions/ebla-enum-color/setting-up.md)
+* Ebla Mask Field
+  * [Overview](extensions/mask-field/overview.md)
+  * [Features](extensions/link-multiple-pro/features.md)
 
 ---
