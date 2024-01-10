@@ -77,3 +77,6 @@ nav:
         - 'Favorite Entities': 'extensions/nav-pro/favorite-entities.md'
         - 'Favorite List': 'extensions/nav-pro/favorite-list.md'
         - 'ChangeLog': 'extensions/nav-pro/changelog.md'
+      - 'Iframe':
+        - 'Iframe Field': 'extensions/iframe/iframe-field.md'
+        - 'ChangeLog': 'extensions/iframe/changelog.md'

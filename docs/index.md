@@ -34,4 +34,8 @@
   * [Features](extensions/link-multiple-pro/features.md)
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
+* Ebla Iframe
+  * [Iframe Field](extensions/iframe/iframe-field.md)
+  * [ChangeLog](extensions/iframe/changelog.md)
+
 ---
