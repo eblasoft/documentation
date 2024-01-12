@@ -100,3 +100,6 @@ nav:
         - 'Hide system scopes from admin UI': 'extensions/admin-pro/max-allowed-logins.md'
         - 'Show permissions for specific (**user role**) calculated': 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
         - 'Changelog': 'extensions/admin-pro/changelog.md'
+      - 'Generic Filter':
+        - 'Overview': 'extensions/generic-filter/overview.md'
+        - 'Changelog': 'extensions/admin-pro/changelog.md'
