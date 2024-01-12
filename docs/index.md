@@ -74,4 +74,10 @@
 * Ebla Generic Filter
   * [Generic Filter](extensions/generic-filter/generic-filter.md)
   * [ChangeLog](extensions/generic-filter/changelog.md)
+
+* Ebla Labels Cells 
+  * [Overview](extensions/labels-cells/overview.md)
+  * [Header Text](extensions/labels-cells/header-text.md)
+  * [Rich Text Label](extensions/labels-cells/rich-text-label.md)
+  * [ChangeLog](extensions/labels-cells/changelog.md)
 ---
