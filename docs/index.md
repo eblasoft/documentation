@@ -62,4 +62,13 @@
 * Ebla Theme
   * [Ebla Theme](extensions/theme/ebla-theme.md)
   * [ChangeLog](extensions/theme/changelog.md)
+
+* Ebla Admin Pro
+  * [Overview](extensions/admin-pro/overview.md)
+  * [Limit admin user permissions](extensions/admin-pro/limit-admin-user-permissions.md)
+  * [Max allowed logins](extensions/admin-pro/max-allowed-logins.md)
+  * [Hide system scopes from admin UI](extensions/admin-pro/hide-system-scopes-from-admin-ui.md)
+  * [Show permissions for specific (**user role**) calculated](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
+  * [ChangeLog](extensions/admin-pro/changelog.md)
+
 ---
