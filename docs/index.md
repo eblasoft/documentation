@@ -71,4 +71,7 @@
   * [Show permissions for specific (**user role**) calculated](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
   * [ChangeLog](extensions/admin-pro/changelog.md)
 
+* Ebla Generic Filter
+  * [Generic Filter](extensions/generic-filter/generic-filter.md)
+  * [ChangeLog](extensions/generic-filter/changelog.md)
 ---

@@ -101,5 +101,5 @@ nav:
         - 'Show permissions for specific (**user role**) calculated': 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
         - 'Changelog': 'extensions/admin-pro/changelog.md'
       - 'Generic Filter':
-        - 'Overview': 'extensions/generic-filter/overview.md'
-        - 'Changelog': 'extensions/admin-pro/changelog.md'
+        - 'Generic Filter': 'extensions/generic-filter/generic-filter.md'
+        - 'Changelog': 'extensions/generic-filter/changelog.md'
