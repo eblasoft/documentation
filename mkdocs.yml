@@ -108,3 +108,6 @@ nav:
         - 'Header Text': 'extensions/labels-cells/header-text.md'
         - 'Rich Text Label': 'extensions/labels-cells/rich-text-label.md'
         - 'changelog': 'extensions/labels-cells/changelog.md'
+      - 'Chat':
+        - 'Overview': 'extensions/chat/overview.md'
+        - 'changelog': 'extensions/chat/changelog.md'

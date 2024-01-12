@@ -80,4 +80,8 @@
   * [Header Text](extensions/labels-cells/header-text.md)
   * [Rich Text Label](extensions/labels-cells/rich-text-label.md)
   * [ChangeLog](extensions/labels-cells/changelog.md)
+
+* Ebla Chat 
+  * [Overview](extensions/chat/overview.md)
+  * [ChangeLog](extensions/chat/changelog.md)
 ---
