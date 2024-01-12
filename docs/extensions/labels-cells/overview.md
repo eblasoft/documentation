@@ -10,9 +10,9 @@
 
 2- [**Rich Text Label**](rich-text-label.md).
 
-!! note "Note"
+!!! note "Note"
 
-    > Those fields are **not storable**, means that no database space will losed.
+        Those fields are **not storable**, means that no database space will losed.
 
 
 <br>
