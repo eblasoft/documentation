@@ -111,3 +111,6 @@ nav:
       - 'Chat':
         - 'Overview': 'extensions/chat/overview.md'
         - 'changelog': 'extensions/chat/changelog.md'
+      - 'Rate':
+        - 'Overview': 'extensions/chat/overview.md'
+        - 'changelog': 'extensions/chat/changelog.md'

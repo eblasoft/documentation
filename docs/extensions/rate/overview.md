@@ -13,4 +13,8 @@
 1. go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
 
 
-![Rate Field](../../_static/images/extensions/ebla-rate/setting-up/rate-field/img.png)
+![Rate Field](../../_static/images/extensions/ebla-rate/rate-op.png)
+
+<br>
+
+### <font color=gray> [ChangeLog](changelog.md) </font>

@@ -84,4 +84,8 @@
 * Ebla Chat 
   * [Overview](extensions/chat/overview.md)
   * [ChangeLog](extensions/chat/changelog.md)
+
+* Ebla Rate 
+  * [Overview](extensions/rate/overview.md)
+  * [ChangeLog](extensions/rate/changelog.md)
 ---
