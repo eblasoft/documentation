@@ -44,7 +44,6 @@ theme:
         name: Switch to light mode
 
 nav:
-    - 'Layout Pro':extensions/ebla-layout-pro/overview.md
     - 'Layout Pro':
       - Overview: extensions/ebla-layout-pro/overview.md
       - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
