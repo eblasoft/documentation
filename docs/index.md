@@ -2,14 +2,14 @@
 
 ## Extensions
 
-* Ebla Layout Pro
-  * [Overview](extensions/ebla-layout-pro/overview.md)
+* [Ebla Layout Pro](extensions/ebla-layout-pro/overview.md)
+  * [Layout Pro](extensions/ebla-layout-pro/overview.md)
   * [Grid Layout](extensions/ebla-layout-pro/grid-layout.md)
   * [Custom CSS](extensions/ebla-layout-pro/custom-css.md)
   * [ChangeLog](extensions/ebla-layout-pro/changelog.md)
 
 * Ebla Enum Plus
-  * [Overview](extensions/enum-plus/overview.md)
+  * [Enum Plus](extensions/enum-plus/overview.md)
   * [Color Option](extensions/enum-plus/color-option.md)
   * [Show As Button](extensions/enum-plus/show-as-button.md)
   * [Force Edit on List View](extensions/enum-plus/force-edit-on-list-view.md)
@@ -17,7 +17,7 @@
   * [ChangeLog](extensions/enum-plus/changelog.md)
 
 * Ebla Map Plus
-  * [Overview](extensions/map-plus/overview.md)
+  * [Map Plus](extensions/map-plus/overview.md)
   * [Map Route](extensions/map-plus/map-route.md)
   * [Latitude and Longitude](extensions/map-plus/latitude-and-longitude.md)
   * [Search Place Autocomplete](extensions/map-plus/search-place-autocomplete.md)
@@ -25,12 +25,12 @@
   * [ChangeLog](extensions/map-plus/changelog.md)
 
 * Ebla Link Multiple Pro
-  * [Overview](extensions/link-multiple-pro/overview.md)
+  * [Link Multiple Pro](extensions/link-multiple-pro/overview.md)
   * [Features](extensions/link-multiple-pro/features.md)
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
 * Ebla Mask Field
-  * [Overview](extensions/mask-field/overview.md)
+  * [Mask Field](extensions/mask-field/overview.md)
   * [Features](extensions/link-multiple-pro/features.md)
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
@@ -45,8 +45,7 @@
   * [Iframe Field](extensions/iframe/iframe-field.md)
   * [ChangeLog](extensions/iframe/changelog.md)
 
-* Ebla Number Pro Field
-  * [Iframe Field](extensions/number-pro/number-pro-field.md)
+* [Ebla Number Pro Field](extensions/number-pro/overview.md)
   * [ChangeLog](extensions/number-pro/changelog.md)
 
 * Ebla WorkLog
