@@ -112,5 +112,6 @@ nav:
         - 'Overview': 'extensions/chat/overview.md'
         - 'changelog': 'extensions/chat/changelog.md'
       - 'Rate':
-        - 'Overview': 'extensions/rate/overview.md'
-        - 'changelog': 'extensions/rate/changelog.md'
+      - 'Public Form':
+        - 'Overview': 'extensions/ebla-form/overview.md'
+        - 'changelog': 'extensions/ebla-form/changelog.md'

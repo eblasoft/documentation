@@ -88,4 +88,8 @@
 * Ebla Rate 
   * [Overview](extensions/rate/overview.md)
   * [ChangeLog](extensions/rate/changelog.md)
+
+* Ebla Public Form 
+  * [Overview](extensions/ebla-form/overview.md)
+  * [ChangeLog](extensions/ebla-form/changelog.md)
 ---
