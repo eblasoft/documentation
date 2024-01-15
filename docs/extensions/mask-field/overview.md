@@ -1,6 +1,6 @@
 # Mask Field
 
-> Ability set mask input for any existing varchar field (Phone & Varchar) in addition to the new fields.
+> Ability set mask input for any existing varchar field (Phone & Varchar) in addition to the new fields in EspoCRM.
 
 ---
 

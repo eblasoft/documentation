@@ -1,4 +1,4 @@
-**1.** Ability to **Inline edit** directly from the inline list.
+**1.** Ability to **Inline edit** directly from the inline list in EspoCRM.
 
 ![how To Use](../../_static/images/extensions/link-multiple-pro/edit-view-1.jpg)
 

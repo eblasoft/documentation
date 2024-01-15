@@ -1,6 +1,6 @@
 # Favorite Entities
 
-> The Favorite Entities extension allows you to add a favorite button to your entities. This button will allow you to
+> The Favorite Entities extension allows you to add a favorite button to your entities in EspoCRM. This button will allow you to
 > quickly access your favorite entities from the navigation drawer.
 > Is available in [Ebla Navigation Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-navigation-pro).
 

@@ -1,4 +1,4 @@
-# Overview
+# Admin Pro
 
 > Limit admin user permissions is available
 > in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).

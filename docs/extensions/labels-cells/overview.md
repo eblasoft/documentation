@@ -1,4 +1,4 @@
-# Overview
+# Labels Cells
 
 > add 2 new types of fields to the field manager **Header Text** and **Rich Text Label** in EspoCRM.
 

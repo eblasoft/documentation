@@ -1,6 +1,6 @@
 # Stream Plus
 
-> Ability to define custom fields for stream from entity manager is available
+> Ability to define custom fields for stream from entity manager in EspoCRM is available
 > in [Ebla Stream Plus](https://www.eblasoft.com.tr/espocrm-extension-page/stream-plus).
 >
 

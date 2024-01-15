@@ -1,8 +1,9 @@
 # Force Edit on List View
 
-Ability edit options on the list view.
+Ability edit options on the list view in EspoCRM.
 
-Force Edit on List View is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-enum-plus).
+Force Edit on List View is available
+in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-enum-plus).
 
 ---
 
