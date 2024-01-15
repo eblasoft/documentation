@@ -92,4 +92,8 @@
 * Ebla Public Form 
   * [Overview](extensions/ebla-form/overview.md)
   * [ChangeLog](extensions/ebla-form/changelog.md)
+
+* Ebla Stream Plus 
+  * [Overview](extensions/ebla-stream-plus/overview.md)
+  * [ChangeLog](extensions/ebla-stream-plus/changelog.md)
 ---

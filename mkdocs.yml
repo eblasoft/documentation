@@ -117,3 +117,6 @@ nav:
       - 'Public Form':
           - 'Overview': 'extensions/ebla-form/overview.md'
           - 'changelog': 'extensions/ebla-form/changelog.md'
+      - 'Stream Plus':
+          - 'Overview': 'extensions/ebla-stream-plus/overview.md'
+          - 'changelog': 'extensions/ebla-stream-plus/changelog.md'
