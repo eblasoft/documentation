@@ -61,7 +61,6 @@
   * [ChangeLog](extensions/admin-pro/changelog.md)
 
 * [Ebla Generic Filter](extensions/generic-filter/generic-filter.md)
-  * [Generic Filter](extensions/generic-filter/generic-filter.md)
   * [ChangeLog](extensions/generic-filter/changelog.md)
 
 * [Ebla Labels Cells](extensions/labels-cells/overview.md)

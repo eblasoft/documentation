@@ -44,80 +44,79 @@ theme:
         name: Switch to light mode
 
 nav:
-  - 'Extensions':
-      - 'Layout Pro': 'extensions/ebla-layout-pro/overview.md',
-        - Overview: 'extensions/ebla-layout-pro/overview.md'
-        - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
-        - 'Custom CSS': 'extensions/ebla-layout-pro/custom-css.md'
-        - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
-      - 'Enum Plus':
-        - 'Overview': 'extensions/enum-plus/overview.md'
-        - 'Color Option': 'extensions/enum-plus/color-option.md'
-        - 'Show As Button ': 'extensions/enum-plus/show-as-button.md'
-        - 'Force Edit On List View': 'extensions/enum-plus/force-edit-on-list-view.md'
-        - 'Kanban Status Bar in Detail View': 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
-        - 'ChangeLog': 'extensions/enum-plus/changelog.md'
-      - 'Map Plus':
-        - 'Overview': 'extensions/map-plus/overview.md'
-        - 'Map Route': 'extensions/map-plus/map-route.md'
-        - 'Latitude and Longitude': 'extensions/map-plus/latitude-and-longitude.md'
-        - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
-        - 'Polygon Map': 'extensions/map-plus/polygon-map.md'
-        - 'ChangeLog': 'extensions/map-plus/changelog.md'
-      - 'Link Multiple Pro':
-        - 'Overview': 'extensions/link-multiple-pro/overview.md'
-        - 'Features': 'extensions/link-multiple-pro/features.md'
-        - 'ChangeLog': 'extensions/link-multiple-pro/changelog.md'
-      - 'Mask Field':
-        - 'Overview': 'extensions/mask-field/overview.md'
-        - 'ChangeLog': 'extensions/mask-field/changelog.md'
-      - 'Navigation Pro':
-        - 'Custom Links With Tabs': 'extensions/nav-pro/custom-links-with-tabs.md'
-        - 'Separator': 'extensions/nav-pro/separator.md'
-        - 'Favorite Entities': 'extensions/nav-pro/favorite-entities.md'
-        - 'Favorite List': 'extensions/nav-pro/favorite-list.md'
-        - 'ChangeLog': 'extensions/nav-pro/changelog.md'
-      - 'Iframe':
-        - 'Iframe Field': 'extensions/iframe/iframe-field.md'
-        - 'ChangeLog': 'extensions/iframe/changelog.md'
-      - 'Auto Increment (Number Pro)':
-        - 'Number Pro Field': 'extensions/number-pro/number-pro-field.md'
-        - 'ChangeLog': 'extensions/number-pro/changelog.md'
-      - 'Work Log':
-        - 'Overview': 'extensions/work-log/overview.md'
-        - 'Work Log Button': 'extensions/work-log/work-log-button.md'
-        - 'Online / Offline': 'extensions/work-log/online-offline.md'
-        - 'ChangeLog': 'extensions/work-log/changelog.md'
-      - 'Event Plus':
-        - 'Entity Event Plus': 'extensions/event-plus/event-plus.md'
-        - 'ChangeLog': 'extensions/event-plus/changelog.md'
-      - 'Theme':
-        - 'Ebla Theme': 'extensions/theme/ebla-theme.md'
-        - 'Changelog': 'extensions/theme/changelog.md'
-      - 'Admin Pro':
-        - 'Overview': 'extensions/admin-pro/overview.md'
-        - 'Limit admin user permissions': 'extensions/admin-pro/limit-admin-user-permissions.md'
-        - 'Max allowed logins': 'extensions/admin-pro/max-allowed-logins.md'
-        - 'Hide system scopes from admin UI': 'extensions/admin-pro/max-allowed-logins.md'
-        - 'Show permissions for specific (user role) calculated': 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
-        - 'Changelog': 'extensions/admin-pro/changelog.md'
-      - 'Generic Filter':
-        - 'Generic Filter': 'extensions/generic-filter/generic-filter.md'
-        - 'Changelog': 'extensions/generic-filter/changelog.md'
-      - 'Labels':
-        - 'Overview': 'extensions/labels-cells/overview.md'
-        - 'Header Text': 'extensions/labels-cells/header-text.md'
-        - 'Rich Text Label': 'extensions/labels-cells/rich-text-label.md'
-        - 'changelog': 'extensions/labels-cells/changelog.md'
-      - 'Chat':
-        - 'Overview': 'extensions/chat/overview.md'
-        - 'changelog': 'extensions/chat/changelog.md'
-      - 'Rate':
-        - 'Overview': 'extensions/rate/overview.md'
-        - 'changelog': 'extensions/rate/changelog.md'
-      - 'Public Form':
-          - 'Overview': 'extensions/ebla-form/overview.md'
-          - 'changelog': 'extensions/ebla-form/changelog.md'
-      - 'Stream Plus':
-          - 'Overview': 'extensions/ebla-stream-plus/overview.md'
-          - 'changelog': 'extensions/ebla-stream-plus/changelog.md'
+    - 'Layout Pro':
+      - Overview: 'extensions/ebla-layout-pro/overview.md'
+      - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
+      - 'Custom CSS': 'extensions/ebla-layout-pro/custom-css.md'
+      - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
+    - 'Enum Plus':
+      - 'Overview': 'extensions/enum-plus/overview.md'
+      - 'Color Option': 'extensions/enum-plus/color-option.md'
+      - 'Show As Button ': 'extensions/enum-plus/show-as-button.md'
+      - 'Force Edit On List View': 'extensions/enum-plus/force-edit-on-list-view.md'
+      - 'Kanban Status Bar in Detail View': 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+      - 'ChangeLog': 'extensions/enum-plus/changelog.md'
+    - 'Map Plus':
+      - 'Overview': 'extensions/map-plus/overview.md'
+      - 'Map Route': 'extensions/map-plus/map-route.md'
+      - 'Latitude and Longitude': 'extensions/map-plus/latitude-and-longitude.md'
+      - 'Search Place Autocomplete': 'extensions/map-plus/search-place-autocomplete.md'
+      - 'Polygon Map': 'extensions/map-plus/polygon-map.md'
+      - 'ChangeLog': 'extensions/map-plus/changelog.md'
+    - 'Link Multiple Pro':
+      - 'Overview': 'extensions/link-multiple-pro/overview.md'
+      - 'Features': 'extensions/link-multiple-pro/features.md'
+      - 'ChangeLog': 'extensions/link-multiple-pro/changelog.md'
+    - 'Mask Field':
+      - 'Overview': 'extensions/mask-field/overview.md'
+      - 'ChangeLog': 'extensions/mask-field/changelog.md'
+    - 'Navigation Pro':
+      - 'Custom Links With Tabs': 'extensions/nav-pro/custom-links-with-tabs.md'
+      - 'Separator': 'extensions/nav-pro/separator.md'
+      - 'Favorite Entities': 'extensions/nav-pro/favorite-entities.md'
+      - 'Favorite List': 'extensions/nav-pro/favorite-list.md'
+      - 'ChangeLog': 'extensions/nav-pro/changelog.md'
+    - 'Iframe':
+      - 'Iframe Field': 'extensions/iframe/iframe-field.md'
+      - 'ChangeLog': 'extensions/iframe/changelog.md'
+    - 'Auto Increment (Number Pro)':
+      - 'Number Pro Field': 'extensions/number-pro/number-pro-field.md'
+      - 'ChangeLog': 'extensions/number-pro/changelog.md'
+    - 'Work Log':
+      - 'Overview': 'extensions/work-log/overview.md'
+      - 'Work Log Button': 'extensions/work-log/work-log-button.md'
+      - 'Online / Offline': 'extensions/work-log/online-offline.md'
+      - 'ChangeLog': 'extensions/work-log/changelog.md'
+    - 'Event Plus':
+      - 'Entity Event Plus': 'extensions/event-plus/event-plus.md'
+      - 'ChangeLog': 'extensions/event-plus/changelog.md'
+    - 'Theme':
+      - 'Ebla Theme': 'extensions/theme/ebla-theme.md'
+      - 'Changelog': 'extensions/theme/changelog.md'
+    - 'Admin Pro':
+      - 'Overview': 'extensions/admin-pro/overview.md'
+      - 'Limit admin user permissions': 'extensions/admin-pro/limit-admin-user-permissions.md'
+      - 'Max allowed logins': 'extensions/admin-pro/max-allowed-logins.md'
+      - 'Hide system scopes from admin UI': 'extensions/admin-pro/max-allowed-logins.md'
+      - 'Show permissions for specific (user role) calculated': 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
+      - 'Changelog': 'extensions/admin-pro/changelog.md'
+    - 'Generic Filter':
+      - 'Generic Filter': 'extensions/generic-filter/generic-filter.md'
+      - 'Changelog': 'extensions/generic-filter/changelog.md'
+    - 'Labels':
+      - 'Overview': 'extensions/labels-cells/overview.md'
+      - 'Header Text': 'extensions/labels-cells/header-text.md'
+      - 'Rich Text Label': 'extensions/labels-cells/rich-text-label.md'
+      - 'changelog': 'extensions/labels-cells/changelog.md'
+    - 'Chat':
+      - 'Overview': 'extensions/chat/overview.md'
+      - 'changelog': 'extensions/chat/changelog.md'
+    - 'Rate':
+      - 'Overview': 'extensions/rate/overview.md'
+      - 'changelog': 'extensions/rate/changelog.md'
+    - 'Public Form':
+        - 'Overview': 'extensions/ebla-form/overview.md'
+        - 'changelog': 'extensions/ebla-form/changelog.md'
+    - 'Stream Plus':
+        - 'Overview': 'extensions/ebla-stream-plus/overview.md'
+        - 'changelog': 'extensions/ebla-stream-plus/changelog.md'
