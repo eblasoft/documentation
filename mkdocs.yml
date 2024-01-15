@@ -1,7 +1,7 @@
 site_name: Eblasoft Documentation
 
 repo_url: https://github.com/eblasoft/documentation/
-edit_uri: edit/master/docs/
+edit_uri: edit/main/docs/
 
 extra_javascript: [js/extra.js]
 
