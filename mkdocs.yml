@@ -25,6 +25,7 @@ theme:
   highlightjs: true
   features:
     - content.action.edit
+    - navigation.sections
   icon:
     edit: material/pencil
   palette:
@@ -44,8 +45,9 @@ theme:
         name: Switch to light mode
 
 nav:
+    - extensions/ebla-layout-pro/overview.md
     - 'Layout Pro':
-      - Overview: 'extensions/ebla-layout-pro/overview.md'
+      - Overview: extensions/ebla-layout-pro/overview.md
       - 'Grid Layout': 'extensions/ebla-layout-pro/grid-layout.md'
       - 'Custom CSS': 'extensions/ebla-layout-pro/custom-css.md'
       - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'

@@ -1,7 +1,5 @@
 # Eblasoft Documentation
 
-## Extensions
-
 * [Ebla Layout Pro](extensions/ebla-layout-pro/overview.md)
   * [Grid Layout](extensions/ebla-layout-pro/grid-layout.md)
   * [Custom CSS](extensions/ebla-layout-pro/custom-css.md)
