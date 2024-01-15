@@ -32,7 +32,7 @@
 
 **v2.3.3**: (21.06.2020)
 
-    - respect espo columns > 2 by default
+    - respect EspoCRM columns > 2 by default
 
 **v2.4.0**: (5.08.2020)
 
@@ -84,7 +84,7 @@
 
 **v3.0.0**: (02.10.2020)
 
-    - espo-v6.0.0 compatibility.
+    - EspoCRM-v6.0.0 compatibility.
 
 **v3.0.2**: (14.10.2020)
 
@@ -102,7 +102,7 @@
 
 **v3.2.2**: (09.02.2021)
 
-    - make it work for espo-v5.6.* and above
+    - make it work for EspoCRM-v5.6.* and above
     - minor improvements
     - fix layout manage not open scope after first load
 
@@ -117,7 +117,7 @@
 
 **v3.6.3**: (14.02.2022)
 
-    - Espo 7 upgrade
+    - EspoCRM 7 upgrade
     - Fix panel label not save
 
 **v3.7.0**: (22.08.2022)
@@ -130,7 +130,7 @@
 
 **v3.9.0**: (28.09.2022)
 
-    - Espo 7.2.* compatibility
+    - EspoCRM 7.2.* compatibility
 
 **v4.0.0**: (11.10.2022)
 
@@ -153,7 +153,7 @@
 
 **v4.2.0**: (03.02.2023)
 
-    - compatibility with Espo 7.3.0
+    - compatibility with EspoCRM 7.3.0
     - fix "add layout" action
 
 **v4.2.1**: (29.03.2023)
@@ -164,7 +164,7 @@
 **v4.3.0**: (02.04.2023)
 
     - edit 'Layout Set' using layout pro
-    - compatibility with Espo 7.4.*
+    - compatibility with EspoCRM 7.4.*
 
 **v4.3.1**: (10.04.2023)
 

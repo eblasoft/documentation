@@ -12,11 +12,11 @@
 > headers
 
 **2.0.0**: (07.09.2022)
-> update to Espo 7.2
+> update to EspoCRM 7.2
 > move all logic to backend
 
 **2.1.0**: (26.07.2023)
-> update to Espo 7.5
+> update to EspoCRM 7.5
 
 **2.2.0**: (21.08.2023)
 > add search bar to generic filter items

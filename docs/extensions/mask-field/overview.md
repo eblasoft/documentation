@@ -1,4 +1,3 @@
-
 > Ability set mask input for any existing varchar field (Phone & Varchar) in addition to the new fields.
 
 ---
@@ -17,6 +16,7 @@
 
 
 ---
+
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields(Varchar & Phone)**.
 
 ![mask field op](../../_static/images/extensions/mask-field/mask-field-op.png)

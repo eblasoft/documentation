@@ -5,11 +5,11 @@
 > send message on enter
 
 **1.2.1**: (25.10.2021)
-> Espo 7 compatibility
+> EspoCRM 7 compatibility
 > fix rendering issue, was affecting normal posts on streams
 
 **1.4.0**: (07.09.2022)
-> compatibility with espo 7.2.*
+> compatibility with EspoCRM 7.2.*
 
 **1.5.0**: (03.12.2022)
 > Add voice recorder

@@ -8,6 +8,8 @@ Show As Button is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espoc
 
 ![Show As Button](../../_static/images/extensions/enum-plus/show-as-button.png)
 
+---
+
 ### Always Force Edit Mode
 
 Enable the toggle buttons group even on the view mode.
@@ -15,6 +17,8 @@ Enable the toggle buttons group even on the view mode.
 ![Always Force Edit Mode](../../_static/images/extensions/enum-plus/always-force-edit-mode.png)
 
 <br>
+
+---
 
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 

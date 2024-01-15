@@ -7,6 +7,7 @@
 
 ![separator](../../_static/images/extensions/nav-pro/separator.png )
 
+---
 go to **Administration** -> **User Interface** -> **Navbar** -> **Add Separator** .
 
 ![separator op](../../_static/images/extensions/nav-pro/separator-op.png )

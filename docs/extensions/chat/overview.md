@@ -9,6 +9,8 @@
 
 ![Ebla Chat](../../_static/images/extensions/ebla-chat/setting-up/ebla-chat.png)
 
+---
+
 go to **Roles** -> enable access to **Dialog**  .
 
 ![role](../../_static/images/extensions/ebla-chat/setting-up/role.png)

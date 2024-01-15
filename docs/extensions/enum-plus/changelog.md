@@ -30,7 +30,7 @@
 
 **2.0.0**: (12.05.2023)
 
-    - use espo core options reference
+    - use EspoCRM core options reference
     - merge enum colors with enum plus
     - enum as buttons
 

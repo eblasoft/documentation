@@ -11,6 +11,8 @@
 
 <br>
 
+---
+
 ## Features
 
 * New theme (**Eblasoft**)

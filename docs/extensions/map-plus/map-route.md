@@ -10,6 +10,7 @@ Map Route is available in [Ebla Map Plus](https://www.eblasoft.com.tr/espocrm-ex
 
 ![Map Route](../../_static/images/extensions/map-plus/map-route.jpg)
 
+---
 
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 2. Create a new field with type **Map Route**.

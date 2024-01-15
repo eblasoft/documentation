@@ -6,6 +6,7 @@
 
 ![hide-system-scopes](../../_static/images/extensions/admin-pro/active-scope.png)
 
+---
 
 1- go to **Administration > Admin Pro settings** .
 

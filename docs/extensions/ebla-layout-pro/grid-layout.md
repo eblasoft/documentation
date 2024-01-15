@@ -4,7 +4,6 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-
 ### Features
 
 * [12 columns](#12-columns)
@@ -24,9 +23,9 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ![12](../../_static/images/extensions/ebla-layout-pro/12-columns.png)
 
-### Panel Customisation
-
 ---
+
+### Panel Customisation
 
 1. CSS Classes
 2. Header Background Color
@@ -34,9 +33,9 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ![panel](../../_static/images/extensions/ebla-layout-pro/panel-customisation.png)
 
-### Bottom Panels Customisation
-
 ---
+
+### Bottom Panels Customisation
 
 1. CSS Classes
 2. Header Background Color
@@ -44,9 +43,9 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ![bottom](../../_static/images/extensions/ebla-layout-pro/bottom-panels-customisation.png)
 
-### Field Customisation
-
 ---
+
+### Field Customisation
 
 1. No Label
 2. Custom Label
@@ -56,18 +55,18 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ![field](../../_static/images/extensions/ebla-layout-pro/field-customisation.png)
 
-### Wide Detail View
-
 ---
+
+### Wide Detail View
 
 Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
 * Full Detail is Wide
 * Small Detail is Wide
 
-### Create Additional Layout (detail , list)
-
 ---
+
+### Create Additional Layout (detail , list)
 
 !!! note
 

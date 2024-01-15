@@ -65,7 +65,7 @@
 **4.0.2**: (05.10.2022)
 
     - rename ext to ebla-plus
-    - Espo 7.2.* compatibility
+    - EspoCRM 7.2.* compatibility
     - show coordinates fields when option is enabled
     - fix issue with coordinates not clearable
 

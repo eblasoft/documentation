@@ -2,7 +2,7 @@
 > First Release
 
 **1.1.0**: (08.10.2021)
-> Espo 7 fix
+> EspoCRM 7 fix
 
 **1.2.0**: (29.12.2021)
 > Add Separator feature
@@ -20,7 +20,7 @@
 > headers
 
 **1.6.0**: (18.09.2022)
-> Espo 7.2 fix
+> EspoCRM 7.2 fix
 > change name
 
 **1.6.2**: (18.09.2022)

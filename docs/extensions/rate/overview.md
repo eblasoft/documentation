@@ -10,8 +10,9 @@
 ![Rate Field](../../_static/images/extensions/ebla-rate/rate.png)
 
 
-1. go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
+---
 
+1. go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
 
 ![Rate Field](../../_static/images/extensions/ebla-rate/rate-op.png)
 

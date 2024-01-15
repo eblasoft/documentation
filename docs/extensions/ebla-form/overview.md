@@ -8,6 +8,7 @@
 
 ![Public Forms](../../_static/images/extensions/ebla-form/ebla-form.png)
 
+---
 
 1. go to **Administration** -> **Ebla Public Form Defs** -> **Create Ebla Public Form**.
 

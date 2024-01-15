@@ -137,7 +137,7 @@
 
 **3.18.2:** (14.10.2021)
 
-> Espo 7 compatibility
+> EspoCRM 7 compatibility
 
 **3.19.2:** (25.10.2021)
 
@@ -190,7 +190,7 @@
 
 > fix duplicating function
 > update parent entity in case a formula applied by the linked entity
-> fix duplicate not working after upgrading to Espo 7.1
+> fix duplicate not working after upgrading to EspoCRM 7.1
 
 **3.28.0:** (07.09.2022)
 
@@ -228,8 +228,8 @@
 **3.34.5:** (27.04.2023)
 
 > footer sum 2 decimal places
-> fix bug when user dont have access
-> fix compatibility with Espo 7.4
+> fix bug when user don't have access
+> fix compatibility with EspoCRM 7.4
 
 **3.35.1:** (17.05.2023)
 
@@ -252,7 +252,7 @@
 **3.36.7:** (06.07.2023)
 
 > Fix quick create when empty
-> Compatibility with Espo 7.5
+> Compatibility with EspoCRM 7.5
 
 **3.37.1:** (15.07.2023)
 
@@ -289,4 +289,4 @@
 
 **3.41.3:** (10.09.2023)
 
-> compatibility with Espo 8.0
+> compatibility with EspoCRM 8.0

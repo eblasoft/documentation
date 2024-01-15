@@ -10,6 +10,8 @@ ___
 
 ![Lat & Long](../../_static/images/extensions/map-plus/latitude-and-longitude.jpg)
 
+---
+
 Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 
 <br>

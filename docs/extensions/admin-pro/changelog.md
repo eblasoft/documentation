@@ -4,7 +4,7 @@
 > Ability to hide unused scopes for cleaner admin UI
 
 **1.1.0**: (16.08.2023)
-> Compatibility with Espo 8
+> Compatibility with EspoCRM 8
 > Max allowed logins to crm
 > Fixes & improvements
 > Admin-pro-v1.1.0

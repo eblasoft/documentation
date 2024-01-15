@@ -22,12 +22,12 @@
 
 **7.6.1**: (08.10.2021)
 
-> Espo 7 compatibility
+> EspoCRM 7 compatibility
 > Body max width 2400px
 
 **7.6.2**: (08.10.2021)
 
-> Espo 7 compatibility
+> EspoCRM 7 compatibility
 > Body max width 2400px
 
 **7.7.0**: (29.11.2021)
@@ -72,7 +72,7 @@
 
 **8.7.1**: (31.01.2023)
 
-> compatibility with Espo 7.3.*
+> compatibility with EspoCRM 7.3.*
 > add sidebar tab link color to editor
 > installer: setting colors only if first install
 

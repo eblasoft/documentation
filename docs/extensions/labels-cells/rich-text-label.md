@@ -6,9 +6,14 @@
 
 ![rich-text-label](../../_static/images/extensions/labels-cells/rich-text-label.png)
 
+
+---
+
 1- go to **Administration** -> **Ebla Labels**.
 
 ![rich-text-label](../../_static/images/extensions/labels-cells/rich-text-label-op.png)
+
+---
 
 2- Create a new **Rich Text Label**.
 

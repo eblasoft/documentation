@@ -8,6 +8,7 @@
 
 ![Number Pro Field](../../_static/images/extensions/number-pro/number-pro-field.png)
 
+---
 
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 2. Create a new field with type **Number Pro**.

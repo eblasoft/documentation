@@ -8,6 +8,7 @@
 1- show permissions for Users .
 ![show-permissions-for-specific-user](../../_static/images/extensions/admin-pro/show-user-per.png)
 
+---
 2- show permissions for Roles .
 
 ![show-permissions-for-specific-user](../../_static/images/extensions/admin-pro/show-role-per.png)

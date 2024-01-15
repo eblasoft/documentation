@@ -2,7 +2,7 @@
 > First Release
 
 **1.1.1** (24.10.2022)
-> Espo 7.2 compatibility
+> EspoCRM 7.2 compatibility
 > code clean
 
 **1.1.4** (09.12.2022)
