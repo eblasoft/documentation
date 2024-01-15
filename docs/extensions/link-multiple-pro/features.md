@@ -1,5 +1,3 @@
-## Features
-
 **1.** Ability to **Inline edit** directly from the inline list.
 
 ![how To Use](../../_static/images/extensions/link-multiple-pro/edit-view-1.jpg)

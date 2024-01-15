@@ -1,3 +1,5 @@
+# Mask Field
+
 > Ability set mask input for any existing varchar field (Phone & Varchar) in addition to the new fields.
 
 ---
@@ -9,7 +11,6 @@
 
 **<font color=gray> [Changelog](changelog.md) </font>**
 
-## EspoCRM Mask
 
 ![mask field](../../_static/images/extensions/mask-field/mask-field.png)
 

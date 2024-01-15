@@ -1,5 +1,3 @@
-# Overview
-
 > With features such as an additional global filter and a dropdown switch on the navbar,
 > you can easily filter records based on user's link items.
 > You can switch to different Project, Organisation, Team or whatever in one click.
