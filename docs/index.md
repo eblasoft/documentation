@@ -83,4 +83,7 @@
 
 * [Quick Assign](extensions/quick-assign/overview.md)
   * [ChangeLog](extensions/quick-assign/changelog.md)
+
+* [DashPro](extensions/dashlet-pro/overview.md)
+  * [ChangeLog](extensions/dashlet-pro/changelog.md)
 ---
