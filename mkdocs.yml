@@ -133,5 +133,5 @@ nav:
         - 'Progress Bar': 'extensions/progress-bar/overview.md'
         - 'changelog': 'extensions/progress-bar/changelog.md'
     - 'Switch':
-        - 'Progress Bar': 'extensions/progress-bar/overview.md'
-        - 'changelog': 'extensions/progress-bar/changelog.md'
+        - 'Progress Bar': 'extensions/switch/overview.md'
+        - 'changelog': 'extensions/switch/changelog.md'

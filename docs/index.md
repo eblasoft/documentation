@@ -95,4 +95,7 @@
 
 * [Progress bar](extensions/progress-bar/overview.md)
   * [ChangeLog](extensions/progress-bar/changelog.md)
+
+* [Switch](extensions/switch/overview.md)
+  * [ChangeLog](extensions/switch/changelog.md)
 ---
