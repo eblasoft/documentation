@@ -1,6 +1,6 @@
 # Switch
 
-> Bool fields as toggle buttons is available in [Ebla Switch](https://www.eblasoft.com.tr/espocrm-extension-page/switch).
+> Bool fields as toggle buttons in EspoCRM is available in [Ebla Switch](https://www.eblasoft.com.tr/espocrm-extension-page/switch).
 
 ---
 

@@ -1,4 +1,4 @@
-> Links must be empty before remove parent record.
+> Links must be empty before remove parent record in EspoCRM.
 > is available in [Ebla Dynamic Logic Plus](https://www.eblasoft.com.tr/espocrm-extension-page/dynamic-logic-plus).
 
 

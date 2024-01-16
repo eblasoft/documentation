@@ -1,5 +1,5 @@
 
-> Automatically remove children from a parent when the parent is removed.
+> Automatically remove children from a parent when the parent is removed in EspoCRM.
 > is available in [Ebla Dynamic Logic Plus](https://www.eblasoft.com.tr/espocrm-extension-page/dynamic-logic-plus).
 
 ---
