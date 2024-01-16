@@ -106,4 +106,9 @@
   * [Auto-Filtering When Parent is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
   * [Autocomplete Fields when child is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
   * [ChangeLog](extensions/dynamic-logic-plus/changelog.md)
+
+* [Reactions](extensions/reactions/overview.md)
+  * [Voting Only](extensions/reactions/voting-only.md)
+  * [ChangeLog](extensions/reactions/changelog.md)
+    
 ---
