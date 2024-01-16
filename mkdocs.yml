@@ -123,3 +123,6 @@ nav:
     - 'Category Tree':
         - 'Category Tree': 'extensions/category-tree/overview.md'
         - 'changelog': 'extensions/category-tree/changelog.md'
+    - 'Quick Assign':
+        - 'Category Tree': 'extensions/quick-assign/overview.md'
+        - 'changelog': 'extensions/quick-assign/changelog.md'
