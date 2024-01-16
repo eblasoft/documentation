@@ -99,11 +99,11 @@
 * [Switch](extensions/switch/overview.md)
   * [ChangeLog](extensions/switch/changelog.md)
 
-* [Dynamic Logic Plus](extensions/ebla-dynamic-logic-plus/overview.md)
-  * [Select the Link to Automatically Recalculate Formula After Field Change](extensions/ebla-dynamic-logic-plus/automatically-recalculate.md)
-  * [Automatic Removal of Children upon Record Deletion!](extensions/ebla-dynamic-logic-plus/removal-of-children.md).
-  * [links Must Be Empty Before Remove](extensions/ebla-dynamic-logic-plus/links-must-be-empty-before-remove.md).
-  * [Auto-Filtering When Parent is Selected](extensions/ebla-dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
-  * [Autocomplete Fields when child is Selected](extensions/ebla-dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
-  * [ChangeLog](extensions/ebla-dynamic-logic-plus/changelog.md)
+* [Dynamic Logic Plus](extensions/dynamic-logic-plus/overview.md)
+  * [Select the Link to Automatically Recalculate Formula After Field Change](extensions/dynamic-logic-plus/automatically-recalculate.md)
+  * [Automatic Removal of Children upon Record Deletion!](extensions/dynamic-logic-plus/removal-of-children.md).
+  * [links Must Be Empty Before Remove](extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md).
+  * [Auto-Filtering When Parent is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
+  * [Autocomplete Fields when child is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
+  * [ChangeLog](extensions/dynamic-logic-plus/changelog.md)
 ---
