@@ -86,4 +86,10 @@
 
 * [DashPro](extensions/dashlet-pro/overview.md)
   * [ChangeLog](extensions/dashlet-pro/changelog.md)
+
+* [DashPro](extensions/dashlet-pro/overview.md)
+  * [ChangeLog](extensions/dashlet-pro/changelog.md)
+
+* [Infinity Scroll](extensions/infinity-scroll/overview.md)
+  * [ChangeLog](extensions/infinity-scroll/changelog.md)
 ---
