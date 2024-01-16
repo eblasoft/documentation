@@ -1,6 +1,6 @@
 # Max Allowed Logins
 
-> Max allowed logins is a feature
+> Max allowed logins is a feature in EspoCRM
 > of [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro) extension.
 
 ___

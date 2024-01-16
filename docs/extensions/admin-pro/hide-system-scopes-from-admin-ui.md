@@ -1,6 +1,6 @@
 # Hide system scopes from admin UI
 
-> Hide system scopes from admin UI is available in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).
+> Hide system scopes from admin UI in EspoCRM is available in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).
 
 ---
 

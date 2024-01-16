@@ -77,4 +77,7 @@
 
 * [Ebla Stream Plus](extensions/ebla-stream-plus/overview.md)
   * [ChangeLog](extensions/ebla-stream-plus/changelog.md)
+
+* [Ebla Category Tree](extensions/category-tree/overview.md)
+  * [ChangeLog](extensions/category-tree/changelog.md)
 ---

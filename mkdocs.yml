@@ -120,3 +120,6 @@ nav:
     - 'Stream Plus':
         - 'Stream Plus': 'extensions/ebla-stream-plus/overview.md'
         - 'changelog': 'extensions/ebla-stream-plus/changelog.md'
+    - 'Category Tree':
+        - 'Category Tree': 'extensions/category-tree/overview.md'
+        - 'changelog': 'extensions/category-tree/changelog.md'
