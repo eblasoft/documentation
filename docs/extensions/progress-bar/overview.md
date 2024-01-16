@@ -1,6 +1,6 @@
 # Progress Bar
 
-> Progress bar is a simple extension that allows you to display a progress bar in your fields type(**Inter , Float ,
+> Progress bar is a simple extension that allows you to display a progress bar in your fields type(**Integer , Float ,
 > Currency**) in the (**List Detail**)  view is available
 > in [Ebla Progress Bar](https://www.eblasoft.com.tr/espocrm-extension-page/progress-bar).
 
@@ -10,7 +10,7 @@
 
 ---
 
-1. Go to **Administration** -> **Entity Manager** -> **Select Entity** -> **Fields** -> **Create Field type (Inter ,
+1. Go to **Administration** -> **Entity Manager** -> **Select Entity** -> **Fields** -> **Create Field type (Integer ,
    Float , Currency)** -> **Display As Progress Bar**.
 
 ![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar-op.png)
