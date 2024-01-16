@@ -129,3 +129,6 @@ nav:
     - 'Dash Pro':
         - 'Dash Pro': 'extensions/dashlet-pro/overview.md'
         - 'changelog': 'extensions/dashlet-pro/changelog.md'
+    - 'Progress bar':
+        - 'Progress bar': 'extensions/progress-bar/overview.md'
+        - 'changelog': 'extensions/progress-bar/changelog.md'

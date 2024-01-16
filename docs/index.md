@@ -92,4 +92,7 @@
 
 * [Infinity Scroll](extensions/infinity-scroll/overview.md)
   * [ChangeLog](extensions/infinity-scroll/changelog.md)
+
+* [Progress bar](extensions/progress-bar/overview.md)
+  * [ChangeLog](extensions/progress-bar/changelog.md)
 ---
