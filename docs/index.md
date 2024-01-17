@@ -108,7 +108,7 @@
   * [ChangeLog](extensions/dynamic-logic-plus/changelog.md)
 
 * [Reactions](extensions/reactions/overview.md)
-  * [Voting Only](extensions/reactions/voting-only.md)
+  * [Voting Field](extensions/reactions/voting-only.md)
   * [ChangeLog](extensions/reactions/changelog.md)
     
 ---

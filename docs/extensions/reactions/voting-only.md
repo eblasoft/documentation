@@ -1,4 +1,7 @@
-> Voting Only is available in [Ebla Reactions](https://www.eblasoft.com.tr/espocrm-extension-page/reactions).
+# Voting Field
+
+> It is new field in EspoCRM is available
+> in [Ebla Reactions](https://www.eblasoft.com.tr/espocrm-extension-page/reactions).
 
 ---
 
@@ -6,11 +9,9 @@
 
 ---
 
-
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type Reactions(
    emoji)**.
 2. Select **type** as **Voting Only**.
-
 
 ---
 
