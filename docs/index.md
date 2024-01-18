@@ -45,6 +45,9 @@ Here is the list sorted alphabetically:
 * [Generic Filter](extensions/generic-filter/generic-filter.md)
   * [ChangeLog](extensions/generic-filter/changelog.md)
 
+* [Gantt View](extensions/gantt/overview.md)
+  * [ChangeLog](extensions/gantt/changelog.md)
+
 * [Iframe](extensions/iframe/iframe-field.md)
   * [ChangeLog](extensions/iframe/changelog.md)
 
