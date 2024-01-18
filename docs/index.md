@@ -110,5 +110,8 @@
 * [Reactions](extensions/reactions/overview.md)
   * [Voting Field](extensions/reactions/voting-only.md)
   * [ChangeLog](extensions/reactions/changelog.md)
+  
+* [Welcome](extensions/welcome/overview.md)
+  * [ChangeLog](extensions/welcome/changelog.md)
     
 ---
