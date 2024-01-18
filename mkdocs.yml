@@ -159,6 +159,10 @@ nav:
         - Voting Field: 'extensions/reactions/voting-only.md'
         - Changelog: 'extensions/reactions/changelog.md'
 
+    - Sms:
+        - Sms: 'extensions/sms/overview.md'
+        - Changelog: 'extensions/sms/changelog.md'
+
     - Stream Plus:
         - Stream Plus: 'extensions/ebla-stream-plus/overview.md'
         - Changelog: 'extensions/ebla-stream-plus/changelog.md'

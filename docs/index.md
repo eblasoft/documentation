@@ -99,6 +99,9 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/reactions/changelog.md)
   * [Voting Field](extensions/reactions/voting-only.md)
 
+* [Sms](extensions/sms/overview.md)
+  * [ChangeLog](extensions/sms/changelog.md)
+
 * [Stream Plus](extensions/ebla-stream-plus/overview.md)
   * [ChangeLog](extensions/ebla-stream-plus/changelog.md)
 
