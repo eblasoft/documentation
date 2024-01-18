@@ -97,6 +97,10 @@ nav:
         - Generic Filter: 'extensions/generic-filter/generic-filter.md'
         - Changelog: 'extensions/generic-filter/changelog.md'
 
+    - Gantt:
+        - Gantt View: 'extensions/gantt/overview.md'
+        - Changelog: 'extensions/gantt/changelog.md'
+
     - Iframe:
         - Iframe Field: 'extensions/iframe/iframe-field.md'
         - Changelog: 'extensions/iframe/changelog.md'
