@@ -9,6 +9,9 @@ Here is the list sorted alphabetically:
   * [Show permissions for specific (user role) calculated](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
   * [ChangeLog](extensions/admin-pro/changelog.md)
 
+* [Number Pro Field](extensions/number-pro/number-pro-field.md)
+  * [ChangeLog](extensions/number-pro/changelog.md)
+
 * [Category Tree](extensions/category-tree/overview.md)
   * [ChangeLog](extensions/category-tree/changelog.md)
 
@@ -48,10 +51,9 @@ Here is the list sorted alphabetically:
 * [Infinity Scroll](extensions/infinity-scroll/overview.md)
   * [ChangeLog](extensions/infinity-scroll/changelog.md)
 
-* [Labels Cells](extensions/labels-cells/overview.md)
-  * [Header Text](extensions/labels-cells/header-text.md)
-  * [Rich Text Label](extensions/labels-cells/rich-text-label.md)
-  * [ChangeLog](extensions/labels-cells/changelog.md)
+* [Kanban Multiple](extensions/kanban-multiple/overview.md)
+  * [ChangeLog](extensions/kanban-multiple/changelog.md)
+
 
 * [Layout Pro](extensions/ebla-layout-pro/overview.md)
   * [ChangeLog](extensions/ebla-layout-pro/changelog.md)
@@ -65,6 +67,11 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
   * [Features](extensions/link-multiple-pro/features.md)
 
+* [Labels Cells](extensions/labels-cells/overview.md)
+  * [Header Text](extensions/labels-cells/header-text.md)
+  * [Rich Text Label](extensions/labels-cells/rich-text-label.md)
+  * [ChangeLog](extensions/labels-cells/changelog.md)
+  
 * [Map Plus](extensions/map-plus/overview.md)
   * [ChangeLog](extensions/map-plus/changelog.md)
   * [Latitude and Longitude](extensions/map-plus/latitude-and-longitude.md)
@@ -82,9 +89,6 @@ Here is the list sorted alphabetically:
   * [Favorite Entities](extensions/nav-pro/favorite-entities.md)
   * [Favorite List](extensions/nav-pro/favorite-list.md)
   * [Separator](extensions/nav-pro/separator.md)
-
-* [Number Pro Field](extensions/number-pro/number-pro-field.md)
-  * [ChangeLog](extensions/number-pro/changelog.md)
 
 * [Print](extensions/print/overview.md)
   * [ChangeLog](extensions/print/changelog.md)
