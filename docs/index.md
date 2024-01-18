@@ -18,6 +18,9 @@ Here is the list sorted alphabetically:
 * [DashPro](extensions/dashlet-pro/overview.md)
   * [ChangeLog](extensions/dashlet-pro/changelog.md)
 
+* [Date Pro](extensions/date-pro/overview.md)
+  * [ChangeLog](extensions/date-pro/changelog.md)
+
 * [Dynamic Logic Plus](extensions/dynamic-logic-plus/overview.md)
   * [Auto-Filtering When Parent is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
   * [Autocomplete Fields when child is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
@@ -82,6 +85,9 @@ Here is the list sorted alphabetically:
 
 * [Number Pro Field](extensions/number-pro/number-pro-field.md)
   * [ChangeLog](extensions/number-pro/changelog.md)
+
+* [Print](extensions/print/overview.md)
+  * [ChangeLog](extensions/print/changelog.md)
 
 * [Progress bar](extensions/progress-bar/overview.md)
   * [ChangeLog](extensions/progress-bar/changelog.md)

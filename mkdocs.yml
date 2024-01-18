@@ -68,6 +68,10 @@ nav:
         - Dash Pro: 'extensions/dashlet-pro/overview.md'
         - Changelog: 'extensions/dashlet-pro/changelog.md'
 
+    - Date Pro:
+        - Date Pro: 'extensions/date-pro/overview.md'
+        - Changelog: 'extensions/date-pro/changelog.md'
+
     - Dynamic Logic Plus:
         - Dynamic Logic Plus: 'extensions/dynamic-logic-plus/overview.md'
         - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
@@ -96,6 +100,16 @@ nav:
     - Iframe:
         - Iframe Field: 'extensions/iframe/iframe-field.md'
         - Changelog: 'extensions/iframe/changelog.md'
+
+
+    - Infinity:
+        - Iframe Field: 'extensions/infinity-scroll/overview.md'
+        - Changelog: 'extensions/infinity-scroll/changelog.md'
+
+
+    - Kanban Multiple:
+        - Kanban Multiple View: 'extensions/kanban-multiple/overview.md'
+        - Changelog: 'extensions/kanban-multiple/changelog.md'
 
     - Layout Pro:
         - Layout Pro: 'extensions/ebla-layout-pro/overview.md'
@@ -137,6 +151,10 @@ nav:
         - Favorite Entities: 'extensions/nav-pro/favorite-entities.md'
         - Favorite List: 'extensions/nav-pro/favorite-list.md'
         - ChangeLog: 'extensions/nav-pro/changelog.md'
+
+    - Print:
+        - Print: 'extensions/print/overview.md'
+        - Changelog: 'extensions/print/changelog.md'
 
     - Progress Bar:
         - Progress Bar: 'extensions/progress-bar/overview.md'
