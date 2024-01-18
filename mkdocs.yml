@@ -103,6 +103,10 @@ nav:
         - Grid Layout: 'extensions/ebla-layout-pro/grid-layout.md'
         - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
 
+    - Last Login:
+        - Last Login: 'extensions/last-login/overview.md'
+        - changelog: 'extensions/last-login/changelog.md'
+
     - Link Multiple Pro:
         - Link Multiple Pro: 'extensions/link-multiple-pro/overview.md'
         - Features: 'extensions/link-multiple-pro/features.md'

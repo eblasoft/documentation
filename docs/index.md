@@ -55,6 +55,9 @@ Here is the list sorted alphabetically:
   * [Custom CSS](extensions/ebla-layout-pro/custom-css.md)
   * [Grid Layout](extensions/ebla-layout-pro/grid-layout.md)
 
+* [Last Login](extensions/last-login/overview.md)
+  * [ChangeLog](extensions/last-login/changelog.md)
+
 * [Link Multiple Pro](extensions/link-multiple-pro/overview.md)
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
   * [Features](extensions/link-multiple-pro/features.md)
