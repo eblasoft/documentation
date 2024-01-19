@@ -26,7 +26,7 @@
     const data = await response.json();
     
     const {version} = data;
-    const badgeUrl = `https://img.shields.io/badge/'version'-${version}-green`;
+    const badgeUrl = `https://img.shields.io/badge/version-${version}-green`;
     
     const badgeImg = document.createElement("img");
     badgeImg.src = badgeUrl;
