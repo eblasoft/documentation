@@ -21,7 +21,7 @@
 
 <script>
     async function fetchData() {
-    const url = 'https://mekantravel.app/api/v1/Docs?id=659d103e143ca2219';
+    const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=636514b37aee0f43f';
     const response = await fetch(url);
     const data = await response.json();
     

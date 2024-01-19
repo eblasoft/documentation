@@ -1,4 +1,4 @@
-# Link Multiple Pro
+# Link Multiple Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-pro" target="_blank" id="ext-version"></a>
 
 > Basically this extension allows you to render link multiple fields in the list view in EspoCRM.
 > Invoice items on invoice entity
@@ -39,3 +39,24 @@ should be able to see the changes you have made and interact with the multiple l
 <br>
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
+
+
+<script>
+async function fetchData() {
+const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=63495a03a945d438f';
+const response = await fetch(url);
+const data = await response.json();
+
+    const {version} = data;
+    const badgeUrl = `https://img.shields.io/badge/version-${version}-green`;
+    
+    const badgeImg = document.createElement("img");
+    badgeImg.src = badgeUrl;
+    badgeImg.style = "height: 22px; margin-left: 10px;";
+
+
+    document.getElementById("ext-version").appendChild(badgeImg);
+}
+fetchData();
+
+</script>
