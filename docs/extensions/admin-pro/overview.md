@@ -1,4 +1,4 @@
-# Admin Pro <span id="ext-version"></span>
+# Admin Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro" target="_blank" id="ext-version"></a>
 
 > Limit admin user permissions is available
 > in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).
@@ -30,7 +30,7 @@
     
     const badgeImg = document.createElement("img");
     badgeImg.src = badgeUrl;
-badgeImg.setAttribute("href", "https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro");
+    badgeImg.style = "height: 22px; margin-left: 10px;";
 
 
     document.getElementById("ext-version").appendChild(badgeImg);
