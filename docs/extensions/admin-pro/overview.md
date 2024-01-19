@@ -1,4 +1,4 @@
-# Admin Pro
+# Admin Pro <h1 id ='ext-version'> </h1>
 
 > Limit admin user permissions is available
 > in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).
@@ -18,3 +18,22 @@
 <br>
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
+
+
+<script>
+    async function fetchData() {
+    const url = 'https://mekantravel.app/api/v1/Docs?id=659d103e143ca2219';
+    const response = await fetch(url);
+    const data = await response.json();
+    
+    const {name,version} = data;
+    const badgeUrl = `https://img.shields.io/badge/${name}-${version}-geen`;
+    
+    const badgeImg = document.createElement("img");
+    badgeImg.src = badgeUrl;
+
+    document.getElementById("ext-version").appendChild(badgeImg);
+}
+    fetchData();
+
+</script>
