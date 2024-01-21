@@ -1,4 +1,1 @@
-**0.0.1**: (20.07.2023)
-> Ability to create reports on Stream note entity using Advanced pack
-> Ability to define custom fields for stream from entity manager
-> Safe upgrade
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=63495a03a3a8bfd09" allowfullscreen></iframe>

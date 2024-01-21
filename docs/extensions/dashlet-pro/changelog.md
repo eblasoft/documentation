@@ -1,2 +1,1 @@
-**1.0.0**: (17.08.2023)
-> New dashlet, html free wysiwyg content
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=64be3b2a63390fb0a" allowfullscreen></iframe>

@@ -1,3 +1,3 @@
-<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=65487e0be0f573008" allowfullscreen></iframe>
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=636514b37aee0f43f" allowfullscreen></iframe>
 
 

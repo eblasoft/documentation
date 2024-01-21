@@ -1,4 +1,1 @@
-**1.0.3**: (26.07.2023)
-> new field type number pro
-> add separator param
-> support number & barcode as prefix field
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=64c26b6e0a7a7f3f7" allowfullscreen></iframe>

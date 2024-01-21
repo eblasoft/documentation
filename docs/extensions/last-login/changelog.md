@@ -1,2 +1,1 @@
-**0.0.1**: (30.08.2023)
-> User last login field
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=64ef04e1cce6f0281" allowfullscreen></iframe>

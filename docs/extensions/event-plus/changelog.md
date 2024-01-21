@@ -1,5 +1,1 @@
-**1.0.0**: (03.03.2022)
-> first release
-
-**1.1.0**: (07.09.2022)
-> headers
+<iframe src="https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=638eecaa872b85729" allowfullscreen></iframe>
