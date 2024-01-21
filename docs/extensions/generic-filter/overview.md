@@ -1,4 +1,4 @@
-<a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-generic-filter" target="_blank" id="ext-version"></a>
+# Generic Filter <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-generic-filter" target="_blank" id="ext-version"></a>
 
 
 > With features such as an additional global filter and a dropdown switch on the navbar in EspoCRM,

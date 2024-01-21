@@ -94,7 +94,7 @@ nav:
         - Changelog: 'extensions/event-plus/changelog.md'
 
     - Generic Filter:
-        - Overview: 'extensions/generic-filter/generic-filter.md'
+        - Overview: 'extensions/generic-filter/overview.md'
         - Changelog: 'extensions/generic-filter/changelog.md'
 
     - Gantt:

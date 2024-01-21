@@ -1,4 +1,4 @@
-# Print <a href="https://www.espocrm.com/extensions/print/" target="_blank"><img src="../../../docs/assets/extension.png" height="20px;" /></a>
+# Print  <a href="https://www.espocrm.com/extensions/print" target="_blank" id="ext-version"></a>
 
 > A new PDF print engine with [gotenberg](https://gotenberg.dev/) in EspoCRM is available
 > in [Ebla Print](https://www.eblasoft.com.tr/espocrm-extension-page/print).

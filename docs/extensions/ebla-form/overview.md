@@ -1,4 +1,4 @@
-#  Public Forms
+#  Public Forms <a href="https://www.eblasoft.com.tr/espocrm-extension-page/feedback-forms" target="_blank" id="ext-version"></a>
 
 > Public forms for EspoCRM can be embedded in IFrames to your website or sent as links via emails.
 > is available in [Ebla Public Forms](https://www.eblasoft.com.tr/espocrm-extension-page/feedback-forms).

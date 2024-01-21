@@ -42,7 +42,7 @@ Here is the list sorted alphabetically:
 * [Event Plus](extensions/event-plus/event-plus.md)
   * [ChangeLog](extensions/event-plus/changelog.md)
 
-* [Generic Filter](extensions/generic-filter/generic-filter.md)
+* [Generic Filter](extensions/generic-filter/overview.md)
   * [ChangeLog](extensions/generic-filter/changelog.md)
 
 * [Gantt View](extensions/gantt/overview.md)
