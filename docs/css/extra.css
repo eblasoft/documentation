@@ -86,3 +86,7 @@ a.md-nav__link:not(.md-nav__container):hover {
 .md-nav__list {
     user-select: none;
 }
+
+.changelog {
+    width: -webkit-fill-available;
+}
