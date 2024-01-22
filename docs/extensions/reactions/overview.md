@@ -19,4 +19,10 @@
 
 <br>
 
+## Features
+
+### [Reactions](overview.md)
+
+### [Voting Only](voting-only.md)
+
 **<font color=gray> [Changelog](changelog.md) </font>**

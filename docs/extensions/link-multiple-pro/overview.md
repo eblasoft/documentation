@@ -36,4 +36,19 @@ should be able to see the changes you have made and interact with the multiple l
 
 <br>
 
+## Features
+
+### [Inline Edit](features.md)
+
+### [Additional List Layouts](features.md)
+
+### [Different Layouts](features.md)
+
+### [Middle Link](features.md)
+
+### [No Child Edit Access Required for Link/Unlink](features.md)
+
+### [Footer Sum Fields](features.md)
+
+
 ### <font color=gray> [ChangeLog](changelog.md) </font>

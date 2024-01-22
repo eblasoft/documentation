@@ -19,4 +19,10 @@
 
 <br>
 
+## Features
+
+### [Header Text](header-text.md)
+
+### [Rich Text Label](rich-text-label.md)
+
 **<font color=gray> [Changelog](changelog.md) </font>**

@@ -46,10 +46,6 @@ theme:
 nav:
     - Admin Pro:
         - Overview: 'extensions/admin-pro/overview.md'
-        - Hide system scopes from admin UI: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
-        - Limit admin user permissions: 'extensions/admin-pro/limit-admin-user-permissions.md'
-        - Max allowed logins: 'extensions/admin-pro/max-allowed-logins.md'
-        - Show permissions for specific (user role) calculated: 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
         - Changelog: 'extensions/admin-pro/changelog.md'
 
     - Auto Increment (Number Pro):
@@ -74,19 +70,10 @@ nav:
 
     - Dynamic Logic Plus:
         - Overview: 'extensions/dynamic-logic-plus/overview.md'
-        - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-        - Autocomplete Fields when child is Selected.: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-        - Automatic Removal of Children upon Record Deletion!: 'extensions/dynamic-logic-plus/removal-of-children.md'
-        - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
-        - Select the Link to Automatically Recalculate Formula After Field Change: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
         - Changelog: 'extensions/dynamic-logic-plus/changelog.md'
 
     - Enum Plus:
         - Overview: 'extensions/enum-plus/overview.md'
-        - Color Option: 'extensions/enum-plus/color-option.md'
-        - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
-        - Kanban Status Bar in Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
-        - Show As Button: 'extensions/enum-plus/show-as-button.md'
         - Changelog: 'extensions/enum-plus/changelog.md'
 
     - Event Plus:
@@ -117,8 +104,6 @@ nav:
 
     - Layout Pro:
         - Overview: 'extensions/ebla-layout-pro/overview.md'
-        - Custom CSS: 'extensions/ebla-layout-pro/custom-css.md'
-        - Grid Layout: 'extensions/ebla-layout-pro/grid-layout.md'
         - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
 
     - Last Login:
@@ -127,33 +112,22 @@ nav:
 
     - Link Multiple Pro:
         - Overview: 'extensions/link-multiple-pro/overview.md'
-        - Features: 'extensions/link-multiple-pro/features.md'
         - Changelog: 'extensions/link-multiple-pro/changelog.md'
 
     - Labels:
         - Overview: 'extensions/labels-cells/overview.md'
-        - Header Text: 'extensions/labels-cells/header-text.md'
-        - Rich Text Label: 'extensions/labels-cells/rich-text-label.md'
         - changelog: 'extensions/labels-cells/changelog.md'
 
     - Map Plus:
         - Overview: 'extensions/map-plus/overview.md'
-        - Latitude and Longitude: 'extensions/map-plus/latitude-and-longitude.md'
-        - Map Route: 'extensions/map-plus/map-route.md'
-        - Polygon Map: 'extensions/map-plus/polygon-map.md'
-        - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
         - ChangeLog: 'extensions/map-plus/changelog.md'
 
     - Mask Field:
         - Overview: 'extensions/mask-field/overview.md'
-        - Features: 'extensions/link-multiple-pro/features.md'
         - ChangeLog: 'extensions/link-multiple-pro/changelog.md'
 
     - Navigation Pro:
-        - Custom Links With Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
-        - Separator: 'extensions/nav-pro/separator.md'
-        - Favorite Entities: 'extensions/nav-pro/favorite-entities.md'
-        - Favorite List: 'extensions/nav-pro/favorite-list.md'
+        - Overview: 'extensions/nav-pro/custom-links-with-tabs.md'
         - ChangeLog: 'extensions/nav-pro/changelog.md'
 
     - Print:
@@ -203,6 +177,4 @@ nav:
 
     - Work Log:
         - Overview: 'extensions/work-log/overview.md'
-        - Work Log Button: 'extensions/work-log/work-log-button.md'
-        - Online / Offline: 'extensions/work-log/online-offline.md'
         - Changelog: 'extensions/work-log/changelog.md'
