@@ -23,7 +23,7 @@ markdown_extensions:
 theme:
   name: material
   highlightjs: true
-  favicon: docs/_static/images/docs/icon.png
+  favicon: _static/images/docs/icon.png
   features:
     - content.action.edit
   icon:
