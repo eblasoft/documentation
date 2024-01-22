@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     loadNavpane();
 });
 
@@ -20,8 +20,11 @@ function loadNavpane() {
 }
 
 async function fetchData() {
-    console.log("fetching data");
-    const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=636514b37aee0f43f';
+    const $extVersion = document.getElementById("ext-version");
+
+    // get id from  $extVersion
+    const id = $extVersion.getAttribute("data-id");
+    const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=' + id;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -33,7 +36,7 @@ async function fetchData() {
     badgeImg.style = "height: 22px; margin-left: 10px;";
 
 
-    document.getElementById("ext-version").appendChild(badgeImg);
+    $extVersion.appendChild(badgeImg);
 }
 
 fetchData();
