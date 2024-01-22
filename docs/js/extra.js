@@ -21,10 +21,7 @@ function loadNavpane() {
 
 async function fetchData() {
     const $extVersion = document.getElementById("ext-version");
-
-    // get id from  $extVersion
     const id = $extVersion.getAttribute("data-id");
-    console.log($extVersion);
     const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=' + id;
     const response = await fetch(url);
     const data = await response.json();
