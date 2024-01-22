@@ -11,7 +11,7 @@
 
 <br>
 
-## Features
+**Features**
 
 ### [Work Log Button](work-log-button.md)
 

@@ -15,7 +15,7 @@ go to **Administration** -> **User Interface** -> **Navbar** -> **Add Custom Lin
 
 <br>
 
-## Features
+**Features**
 
 ### [Custom Links](custom-links-with-tabs.md)
 

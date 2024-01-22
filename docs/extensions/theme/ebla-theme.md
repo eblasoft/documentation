@@ -11,7 +11,7 @@
 
 <br>
 
-## Features
+**Features**
 
 * New theme (**Eblasoft**)
 * Add login Background Image.

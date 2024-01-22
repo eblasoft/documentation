@@ -6,7 +6,7 @@
 
 ---
 
-## Features
+**Features**
 
 ### [Select the Link to Automatically Recalculate Formula After Field Change](automatically-recalculate.md)
 ### [Automatic Removal of Children upon Record Deletion!](removal-of-children.md).

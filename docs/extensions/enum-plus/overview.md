@@ -8,7 +8,7 @@ Enhancing (Enum Multi-Enum) field functionality with additional features in Espo
 
 <br>
 
-## Features
+**Features**
 
 ### [Color Option](color-option.md)
 

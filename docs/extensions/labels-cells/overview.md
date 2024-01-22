@@ -19,7 +19,7 @@
 
 <br>
 
-## Features
+**Features**
 
 ### [Header Text](header-text.md)
 

@@ -8,7 +8,7 @@
 
 <br>
 
-## Features
+**Features**
 
 ### [Limit admin user permissions.](limit-admin-user-permissions.md)
 ### [Max allowed logins.](max-allowed-logins.md)

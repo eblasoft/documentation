@@ -19,7 +19,7 @@
 
 <br>
 
-## Features
+**Features**
 
 ### [Reactions](overview.md)
 

@@ -20,7 +20,7 @@
 
 <br>
 
-## Features
+**Features**
 
 ### [Map Route](map-route.md)
 
