@@ -1,4 +1,4 @@
-# Dynamic Logic Plus  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/dynamic-logic-plus" target="_blank" id="ext-version"></a>
+# Dynamic Logic Plus  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
 
 
 > Ability to add records dynamic easily and more effectively in EspoCRM is available
@@ -20,24 +20,3 @@
 <br>
 
 **<font color=gray> [Changelog](changelog.md) </font>**
-
-
-<script>
-    async function fetchData() {
-    const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=637e00a0087ede84b';
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    const {version} = data;
-    const badgeUrl = `https://img.shields.io/badge/version-${version}-green`;
-    
-    const badgeImg = document.createElement("img");
-    badgeImg.src = badgeUrl;
-    badgeImg.style = "height: 22px; margin-left: 10px;";
-
-
-    document.getElementById("ext-version").appendChild(badgeImg);
-}
-    fetchData();
-
-</script>

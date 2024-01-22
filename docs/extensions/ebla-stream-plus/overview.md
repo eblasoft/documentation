@@ -1,4 +1,4 @@
-# Stream Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/stream-plus" target="_blank" id="ext-version"></a>
+# Stream Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/stream-plus" target="_blank" id="ext-version" data-id="63495a03a3a8bfd09"></a>
 
 > Ability to define custom fields for stream from entity manager in EspoCRM is available
 > in [Ebla Stream Plus](https://www.eblasoft.com.tr/espocrm-extension-page/stream-plus).

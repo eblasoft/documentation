@@ -1,4 +1,4 @@
-# Generic Filter <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-generic-filter" target="_blank" id="ext-version"></a>
+# Generic Filter <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-generic-filter" target="_blank" id="ext-version" data-id="6389ec830c9c306d3"></a>
 
 
 > With features such as an additional global filter and a dropdown switch on the navbar in EspoCRM,
@@ -26,24 +26,3 @@ go to **Administration** > **Generic Filter Settings** > **Generic Filter** > **
 ![generic-filter](../../_static/images/extensions/generic-filter/generic-filter-op.png)
 
 **<font color=gray> [Changelog](changelog.md) </font>**
-
-
-<script>
-    async function fetchData() {
-    const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=6389ec830c9c306d3';
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    const {version} = data;
-    const badgeUrl = `https://img.shields.io/badge/version-${version}-green`;
-    
-    const badgeImg = document.createElement("img");
-    badgeImg.src = badgeUrl;
-    badgeImg.style = "height: 22px; margin-left: 10px;";
-
-
-    document.getElementById("ext-version").appendChild(badgeImg);
-}
-    fetchData();
-
-</script>
