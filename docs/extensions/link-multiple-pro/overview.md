@@ -38,7 +38,7 @@ should be able to see the changes you have made and interact with the multiple l
 
 ## Features
 
-### [Inline Edit](features.md)
+### Inline Edit  [Inline Edit](features.md)
 
 ### [Additional List Layouts](features.md)
 
