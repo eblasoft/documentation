@@ -24,6 +24,7 @@ async function fetchData() {
 
     // get id from  $extVersion
     const id = $extVersion.getAttribute("data-id");
+    console.log($extVersion);
     const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=' + id;
     const response = await fetch(url);
     const data = await response.json();
