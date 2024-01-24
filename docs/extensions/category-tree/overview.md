@@ -11,7 +11,7 @@
 
 ---
 
-1. Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Category Tree**.
+Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type (Category Tree)**.
 
 ![Category Tree](../../_static/images/extensions/category-tree/category-tree-op.png)
 

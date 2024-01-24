@@ -13,7 +13,7 @@
 
 ---
 
-go to **Roles** -> enable access to **Dialog**  .
+Go to  **Administration** -> **Roles** -> enable access to **Dialog**  .
 
 ![role](../../_static/images/extensions/ebla-chat/setting-up/role.png)
 

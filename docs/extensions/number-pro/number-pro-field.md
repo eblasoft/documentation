@@ -13,3 +13,6 @@
 2. Create a new field with type **Number Pro**.
 
 ![Number Pro Field](../../_static/images/extensions/number-pro/number-pro-field-op.png)
+
+
+**<font color=gray> [Changelog](changelog.md) </font>**
