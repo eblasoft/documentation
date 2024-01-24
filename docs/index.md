@@ -9,7 +9,7 @@ Here is the list sorted alphabetically:
   * [Show permissions for specific (user role) calculated](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
   * [ChangeLog](extensions/admin-pro/changelog.md)
 
-* [Number Pro Field](extensions/number-pro/number-pro-field.md)
+* [Number Pro (Auto Increment)](extensions/number-pro/number-pro-field.md)
   * [ChangeLog](extensions/number-pro/changelog.md)
 
 * [Category Tree](extensions/category-tree/overview.md)
@@ -18,7 +18,7 @@ Here is the list sorted alphabetically:
 * [Chat](extensions/chat/overview.md)
   * [ChangeLog](extensions/chat/changelog.md)
 
-* [DashPro](extensions/dashlet-pro/overview.md)
+* [Dash Pro](extensions/dashlet-pro/overview.md)
   * [ChangeLog](extensions/dashlet-pro/changelog.md)
 
 * [Date Pro](extensions/date-pro/overview.md)
@@ -96,7 +96,7 @@ Here is the list sorted alphabetically:
 * [Print](extensions/print/overview.md)
   * [ChangeLog](extensions/print/changelog.md)
 
-* [Progress bar](extensions/progress-bar/overview.md)
+* [Progress Bar](extensions/progress-bar/overview.md)
   * [ChangeLog](extensions/progress-bar/changelog.md)
 
 * [Public Form](extensions/ebla-form/overview.md)
@@ -127,7 +127,7 @@ Here is the list sorted alphabetically:
 * [Welcome](extensions/welcome/overview.md)
   * [ChangeLog](extensions/welcome/changelog.md)
 
-* [WorkLog](extensions/work-log/overview.md)
+* [Work Log](extensions/work-log/overview.md)
   * [ChangeLog](extensions/work-log/changelog.md)
   * [Online / Offline](extensions/work-log/online-offline.md)
   * [Work Log Button](extensions/work-log/work-log-button.md)

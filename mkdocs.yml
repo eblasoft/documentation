@@ -54,7 +54,7 @@ nav:
             - Max Allowed Logins:  'extensions/admin-pro/max-allowed-logins.md'
             - Show Permissions For Users:  'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
-    - Auto Increment (Number Pro): 'extensions/number-pro/number-pro-field.md'
+    - Number Pro (Auto Increment): 'extensions/number-pro/number-pro-field.md'
 
     - Category Tree: 'extensions/category-tree/overview.md'
 
@@ -84,11 +84,11 @@ nav:
 
     - Generic Filter: 'extensions/generic-filter/overview.md'
 
-    - Gantt: 'extensions/gantt/overview.md'
+    - Gantt View: 'extensions/gantt/overview.md'
 
     - Iframe: 'extensions/iframe/iframe-field.md'
 
-    - Infinity: 'extensions/infinity-scroll/overview.md'
+    - Infinity Scroll: 'extensions/infinity-scroll/overview.md'
 
     - Kanban Multiple: 'extensions/kanban-multiple/overview.md'
 
@@ -104,7 +104,7 @@ nav:
         - Overview: 'extensions/link-multiple-pro/overview.md'
         - Changelog: 'extensions/link-multiple-pro/changelog.md'
 
-    - Labels:
+    - Labels Cells:
         - Overview: 'extensions/labels-cells/overview.md'
         - Features:
             - Header Text: 'extensions/labels-cells/header-text.md'
