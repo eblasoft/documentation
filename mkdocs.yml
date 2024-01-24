@@ -22,6 +22,7 @@ markdown_extensions:
 
 theme:
   name: material
+  logo: _static/images/docs/icon.png
   highlightjs: true
   favicon: _static/images/docs/icon.png
   features:
