@@ -9,8 +9,10 @@
 
 <br>
 
+<figure markdown>
 ![Dash Pro](../../_static/images/extensions/dashlet-pro/dash-pro-op.png){ width="210" }
-
+  <figcaption>Image caption</figcaption>
+</figure>
 
 <br>
 
