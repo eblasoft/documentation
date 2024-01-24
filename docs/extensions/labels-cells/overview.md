@@ -9,20 +9,16 @@
 
 ---
 
-1- [**Header Text**](header-text.md) .
+**Features**
 
-2- [**Rich Text Label**](rich-text-label.md).
+### [Header Text](header-text.md)
+
+### [Rich Text Label](rich-text-label.md)
 
 !!! note "Note"
 
         Those fields are **not storable**, means that no database space will losed.
 
 <br>
-
-**Features**
-
-### [Header Text](header-text.md)
-
-### [Rich Text Label](rich-text-label.md)
 
 **<font color=gray> [Changelog](changelog.md) </font>**

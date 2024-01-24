@@ -50,69 +50,55 @@ nav:
         - Overview: 'extensions/admin-pro/overview.md'
         - Features:
             - Hied System Scopes: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
-            - Limit Admin:  'limit-admin-user-permissions.md'
+            - Limit Admin:  'extensions/admin-pro/limit-admin-user-permissions.md'
+            - Max Allowed Logins:  'extensions/admin-pro/max-allowed-logins.md'
+            - Show Permissions For Users:  'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
-    - Auto Increment (Number Pro):
-        - Overview: 'extensions/number-pro/number-pro-field.md'
-        - Changelog: 'extensions/number-pro/changelog.md'
+    - Auto Increment (Number Pro): 'extensions/number-pro/number-pro-field.md'
 
-    - Category Tree:
-        - Overview: 'extensions/category-tree/overview.md'
-        - Changelog: 'extensions/category-tree/changelog.md'
+    - Category Tree: 'extensions/category-tree/overview.md'
 
-    - Chat:
-        - Overview: 'extensions/chat/overview.md'
-        - Changelog: 'extensions/chat/changelog.md'
+    - Chat: 'extensions/chat/overview.md'
 
-    - Dash Pro:
-        - Overview: 'extensions/dashlet-pro/overview.md'
-        - Changelog: 'extensions/dashlet-pro/changelog.md'
+    - Dash Pro: 'extensions/dashlet-pro/overview.md'
 
-    - Date Pro:
-        - Overview: 'extensions/date-pro/overview.md'
-        - Changelog: 'extensions/date-pro/changelog.md'
+    - Date Pro: 'extensions/date-pro/overview.md'
 
     - Dynamic Logic Plus:
         - Overview: 'extensions/dynamic-logic-plus/overview.md'
-        - Changelog: 'extensions/dynamic-logic-plus/changelog.md'
+        - Features:
+            - Auto Recalculate Formula: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
+            - Auto Remove Children upon Record Deletion: 'extensions/dynamic-logic-plus/removal-of-children.md'
+            - Auto-Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
+            - Autocomplete Fields when child is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
+            - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
 
     - Enum Plus:
         - Overview: 'extensions/enum-plus/overview.md'
-        - Changelog: 'extensions/enum-plus/changelog.md'
+        - Features:
+            - Color Option: 'extensions/enum-plus/color-option.md'
+            - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
+            - Kanban Status Bar In Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
 
-    - Event Plus:
-        - Overview: 'extensions/event-plus/event-plus.md'
-        - Changelog: 'extensions/event-plus/changelog.md'
+    - Event Plus: 'extensions/event-plus/event-plus.md'
 
-    - Generic Filter:
-        - Overview: 'extensions/generic-filter/overview.md'
-        - Changelog: 'extensions/generic-filter/changelog.md'
+    - Generic Filter: 'extensions/generic-filter/overview.md'
 
-    - Gantt:
-        - Overview: 'extensions/gantt/overview.md'
-        - Changelog: 'extensions/gantt/changelog.md'
+    - Gantt: 'extensions/gantt/overview.md'
 
-    - Iframe:
-        - Overview: 'extensions/iframe/iframe-field.md'
-        - Changelog: 'extensions/iframe/changelog.md'
+    - Iframe: 'extensions/iframe/iframe-field.md'
 
+    - Infinity: 'extensions/infinity-scroll/overview.md'
 
-    - Infinity:
-        - Overview: 'extensions/infinity-scroll/overview.md'
-        - Changelog: 'extensions/infinity-scroll/changelog.md'
-
-
-    - Kanban Multiple:
-        - Overview: 'extensions/kanban-multiple/overview.md'
-        - Changelog: 'extensions/kanban-multiple/changelog.md'
+    - Kanban Multiple: 'extensions/kanban-multiple/overview.md'
 
     - Layout Pro:
-        - Overview: 'extensions/ebla-layout-pro/overview.md'
-        - ChangeLog: 'extensions/ebla-layout-pro/changelog.md'
+        - Overview: 'extensions/layout-pro/overview.md'
+        - Features :
+            - Custom CSS: 'extensions/layout-pro/custom-css.md'
+            - Grid Layout: 'extensions/layout-pro/grid-layout.md'
 
-    - Last Login:
-        - Overview: 'extensions/last-login/overview.md'
-        - changelog: 'extensions/last-login/changelog.md'
+    - Last Login: 'extensions/last-login/overview.md'
 
     - Link Multiple Pro:
         - Overview: 'extensions/link-multiple-pro/overview.md'
@@ -120,65 +106,49 @@ nav:
 
     - Labels:
         - Overview: 'extensions/labels-cells/overview.md'
-        - changelog: 'extensions/labels-cells/changelog.md'
+        - Features:
+            - Header Text: 'extensions/labels-cells/header-text.md'
+            - Rich Text Label: 'extensions/labels-cells/rich-text-label.md'
 
     - Map Plus:
         - Overview: 'extensions/map-plus/overview.md'
-        - ChangeLog: 'extensions/map-plus/changelog.md'
+        - Features:
+            - Map Route: 'extensions/map-plus/map-route.md'
+            - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
+            - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
+            - Polygon Map: 'extensions/map-plus/polygon-map.md'
 
-    - Mask Field:
-        - Overview: 'extensions/mask-field/overview.md'
-        - ChangeLog: 'extensions/link-multiple-pro/changelog.md'
+    - Mask Field: 'extensions/mask-field/overview.md'
 
     - Navigation Pro:
         - Overview: 'extensions/nav-pro/custom-links-with-tabs.md'
-        - ChangeLog: 'extensions/nav-pro/changelog.md'
+        - Features:
+            - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
 
-    - Print:
-        - Overview: 'extensions/print/overview.md'
-        - Changelog: 'extensions/print/changelog.md'
+    - Print: 'extensions/print/overview.md'
 
-    - Progress Bar:
-        - Overview: 'extensions/progress-bar/overview.md'
-        - Changelog: 'extensions/progress-bar/changelog.md'
+    - Progress Bar: 'extensions/progress-bar/overview.md'
 
-    - Public Form:
-        - Overview: 'extensions/ebla-form/overview.md'
-        - Changelog: 'extensions/ebla-form/changelog.md'
+    - Public Form:  'extensions/ebla-form/overview.md'
 
-    - Quick Assign:
-        - Overview: 'extensions/quick-assign/overview.md'
-        - Changelog: 'extensions/quick-assign/changelog.md'
+    - Quick Assign: 'extensions/quick-assign/overview.md'
 
-    - Rate:
-        - Overview: 'extensions/rate/overview.md'
-        - Changelog: 'extensions/rate/changelog.md'
+    - Rate:  'extensions/rate/overview.md'
 
-    - Reactions:
-        - Overview: 'extensions/reactions/overview.md'
-        - Voting Field: 'extensions/reactions/voting-only.md'
-        - Changelog: 'extensions/reactions/changelog.md'
+    - Reactions: 'extensions/reactions/overview.md'
 
-    - Sms:
-        - Overview: 'extensions/sms/overview.md'
-        - Changelog: 'extensions/sms/changelog.md'
+    - Sms:  'extensions/sms/overview.md'
 
-    - Stream Plus:
-        - Overview: 'extensions/ebla-stream-plus/overview.md'
-        - Changelog: 'extensions/ebla-stream-plus/changelog.md'
+    - Stream Plus:  'extensions/ebla-stream-plus/overview.md'
 
-    - Switch:
-        - Overview: 'extensions/switch/overview.md'
-        - Changelog: 'extensions/switch/changelog.md'
+    - Switch:  'extensions/switch/overview.md'
 
-    - Theme:
-        - Overview: 'extensions/theme/ebla-theme.md'
-        - Changelog: 'extensions/theme/changelog.md'
+    - Theme: 'extensions/theme/ebla-theme.md'
 
-    - Welcome:
-        - Overview: 'extensions/welcome/overview.md'
-        - Changelog: 'extensions/welcome/changelog.md'
+    - Welcome: 'extensions/welcome/overview.md'
 
     - Work Log:
         - Overview: 'extensions/work-log/overview.md'
-        - Changelog: 'extensions/work-log/changelog.md'
+        - Features:
+            - Work Log Button: 'extensions/work-log/work-log-button.md'
+            - Online/Offline Status: 'extensions/work-log/online-offline.md'

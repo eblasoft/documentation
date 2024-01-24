@@ -58,10 +58,10 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/kanban-multiple/changelog.md)
 
 
-* [Layout Pro](extensions/ebla-layout-pro/overview.md)
-  * [ChangeLog](extensions/ebla-layout-pro/changelog.md)
-  * [Custom CSS](extensions/ebla-layout-pro/custom-css.md)
-  * [Grid Layout](extensions/ebla-layout-pro/grid-layout.md)
+* [Layout Pro](extensions/layout-pro/overview.md)
+  * [ChangeLog](extensions/layout-pro/changelog.md)
+  * [Custom CSS](extensions/layout-pro/custom-css.md)
+  * [Grid Layout](extensions/layout-pro/grid-layout.md)
 
 * [Last Login](extensions/last-login/overview.md)
   * [ChangeLog](extensions/last-login/changelog.md)
