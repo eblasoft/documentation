@@ -71,6 +71,10 @@ a.md-nav__link:not(.md-nav__container):hover {
     margin-top: 1.2rem;
 }
 
+.md-typeset img {
+    max-width: 81%;
+}
+
 .md-nav--primary .md-nav__title {
     display: none;
 }

@@ -124,6 +124,9 @@ nav:
         - Overview: 'extensions/nav-pro/custom-links-with-tabs.md'
         - Features:
             - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
+            - Favorite Entities : 'extensions/nav-pro/favorite-entities.md'
+            - Favorite Records : 'extensions/nav-pro/favorite-records.md'
+            - Separator: 'extensions/nav-pro/separator.md'
 
     - Print: 'extensions/print/overview.md'
 
