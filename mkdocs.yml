@@ -48,7 +48,9 @@ theme:
 nav:
     - Admin Pro:
         - Overview: 'extensions/admin-pro/overview.md'
-        - Changelog: 'extensions/admin-pro/changelog.md'
+        - Features:
+            - Hied System Scopes: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
+            - Limit Admin:  'limit-admin-user-permissions.md'
 
     - Auto Increment (Number Pro):
         - Overview: 'extensions/number-pro/number-pro-field.md'
