@@ -8,12 +8,12 @@
 
 <br>
 
-**Features**
+**Features:**
 
-### [Limit admin user permissions.](limit-admin-user-permissions.md)
-### [Max allowed logins.](max-allowed-logins.md)
-### [Hide system scopes from admin UI.](hide-system-scopes-from-admin-ui.md)
-### [Show permissions for specific (**user role**) calculated.](show-permissions-for-specific-user-calculated.md)
+* ### [Limit admin user permissions.](limit-admin-user-permissions.md)
+* ### [Max allowed logins.](max-allowed-logins.md)
+* ### [Hide system scopes from admin UI.](hide-system-scopes-from-admin-ui.md)
+* ### [Show permissions for specific (**user role**) calculated.](show-permissions-for-specific-user-calculated.md)
 
 <br>
 
