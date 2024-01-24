@@ -9,7 +9,7 @@
 
 <br>
 
-![Dash Pro](../../_static/images/extensions/dashlet-pro/dash-pro-op.png){ width=210px }
+![Dash Pro](../../_static/images/extensions/dashlet-pro/dash-pro-op.png){ width="210" }
 
 
 <br>
