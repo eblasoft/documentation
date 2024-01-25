@@ -9,45 +9,55 @@
 
 ---
 
-**1.** Create a relationship between two entities of type one-to-many. Make sure to enable the "link multiple field"
-option to enable this extension.
+![how To Use](../../_static/images/extensions/link-multiple-pro/link-pro.png)
 
-![how To Use](../../_static/images/extensions/link-multiple-pro/how-to-use-1.jpg)
+1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Relationships** -> **Link Multiple Field**.
 
----
+![how To Use](../../_static/images/extensions/link-multiple-pro/link-multiple.png)
 
-**2.** After enabling the "link multiple field" option, a new field of type "link multiple" will be added to the fields
-of the parent entity. You can find this field in the entity manager.
+2. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Field Type (Link Multiple)
+   ** -> **Enable Form** .
 
-![how To Use](../../_static/images/extensions/link-multiple-pro/how-to-use-2.jpg)
-
----
-
-**3.** Edit the properties of the newly added multiple link field check the "enable form" option.
-
-![how To Use](../../_static/images/extensions/link-multiple-pro/how-to-use-3.jpg)
+![how To Use](../../_static/images/extensions/link-multiple-pro/link-pro-op.png)
 
 ---
-
-**4.** To verify your configuration, view the detail record of the parent entity that has this multiple link field. You
-should be able to see the changes you have made and interact with the multiple link field accordingly.
-
-![how To Use](../../_static/images/extensions/link-multiple-pro/how-to-use-4.jpg)
 
 <br>
 
-Features
+Additional Features:
 
-### [Inline Edit](features.md)
+### Additional list layouts for the linked entity.
 
-### [Additional List Layouts](features.md)
+- Create a new list layout for the linked entity and add it to the link multiple field.
 
-### [Different Layouts](features.md)
+![Additional List Layouts](../../_static/images/extensions/link-multiple-pro/add-layout.png)
 
-### [Middle Link](features.md)
+### Different layouts for edit and detail modes.
 
-### [No Child Edit Access Required for Link/Unlink](features.md)
+- select the layout for edit and detail modes.
 
-### [Footer Sum Fields](features.md)
+![Different Layouts](../../_static/images/extensions/link-multiple-pro/select-layout.png)
+
+### Enable Select Button
+
+![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/select-button.png)
+
+<br>
+
+![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/select-button-op.png)
+
+### Sum Footer Fields.
+
+![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/sum-footer.png)
+
+### Enable Add Multiple Button.
+
+![Add Multiple Button](../../_static/images/extensions/link-multiple-pro/add-multiple.png)
+
+!!! note
+
+    For  <font color="red" > "Many To Many" </font> usage cases please consider to read [this article](https://www.eblasoft.com.tr/post/link-multiple-pro-many-to-many).
+
+<br>
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
