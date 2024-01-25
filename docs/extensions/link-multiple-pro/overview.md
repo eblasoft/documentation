@@ -11,14 +11,13 @@
 
 ![how To Use](../../_static/images/extensions/link-multiple-pro/link-pro.png)
 
-1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Relationships** -> **Link Multiple Field**.
+- Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Relationships** -> **Link Multiple Field**.
 
 ![how To Use](../../_static/images/extensions/link-multiple-pro/link-multiple.png)
 
-2. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Field Type (Link Multiple)
-   ** -> **Enable Form** .
+- Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Field Type (Link Multiple)** -> **Enable Form** .
 
-![how To Use](../../_static/images/extensions/link-multiple-pro/link-pro-op.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/link-multiple-pro/link-pro-op.png" alt="drawing" style="width:200px;"/>
 
 ---
 
@@ -44,7 +43,7 @@ Additional Features:
 
 <br>
 
-![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/select-button-op.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/link-multiple-pro/select-button-op.png" alt="drawing" style="width:200px;"/>
 
 ### Sum Footer Fields.
 
