@@ -3,10 +3,10 @@
 Here is the list sorted alphabetically:
 
 * [Admin Pro](extensions/admin-pro/overview.md)
-  * [Hide system scopes from admin UI](extensions/admin-pro/hide-system-scopes-from-admin-ui.md)
-  * [Limit admin user permissions](extensions/admin-pro/limit-admin-user-permissions.md)
-  * [Max allowed logins](extensions/admin-pro/max-allowed-logins.md)
-  * [Show permissions for specific (user role) calculated](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
+  * [Hied System Scopes](extensions/admin-pro/hide-system-scopes-from-admin-ui.md)
+  * [Limit Admin](extensions/admin-pro/limit-admin-user-permissions.md)
+  * [Max Allowed Logins](extensions/admin-pro/max-allowed-logins.md)
+  * [Show Permissions For Users](extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
   * [ChangeLog](extensions/admin-pro/changelog.md)
 
 * [Number Pro (Auto Increment)](extensions/number-pro/number-pro-field.md)

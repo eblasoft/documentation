@@ -153,5 +153,5 @@ nav:
     - Work Log:
         - Overview: 'extensions/work-log/overview.md'
         - Features:
-            - Online/Offline Status: 'extensions/work-log/online-offline.md'
+            - Online / Offline Status: 'extensions/work-log/online-offline.md'
             - Work Log Button: 'extensions/work-log/work-log-button.md'
