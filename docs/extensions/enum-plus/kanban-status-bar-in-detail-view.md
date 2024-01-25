@@ -17,7 +17,7 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ka
 <br>
 
 
-Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
 
 <br>

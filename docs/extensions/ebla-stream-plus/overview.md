@@ -12,8 +12,7 @@
 
 
 ---
-
-1. go to **Admin** -> **Entity Manager** -> **Note** ->
+**-** Go to **Admin** -> **Entity Manager** -> **Note** ->
 
 ![Stream Plus](../../_static/images/extensions/ebla-stream-plus/stream-plus-op.png)
 

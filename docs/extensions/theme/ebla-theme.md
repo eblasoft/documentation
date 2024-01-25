@@ -7,11 +7,15 @@
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/UJX262flBZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Ebla Theme](../../_static/images/extensions/theme/theme.png)
+---
+
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/theme/theme.png" alt="drawing" style="width:200px;"/>
 
 <br>
 
-**Features**
+*-* Go to **Administration** -> **Ebla Theme**
+
+**Features:**
 
 * New theme (**Eblasoft**)
 * Add login Background Image.
@@ -30,11 +34,10 @@
     - Brand Warning
     - Brand Primary
 
-go to **Administration** -> **Ebla Theme**
 
 ![Ebla Theme](../../_static/images/extensions/theme/theme-set.png)
 
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

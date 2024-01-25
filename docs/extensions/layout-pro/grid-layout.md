@@ -4,14 +4,14 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-**Features**
+**Features:**
 
 * [12 columns](#12-columns)
-* [Panel Customisation](#Panel-customisation)
+* [Panel Customisation](#panel-customisation)
 * [Field Customisation](#field-customisation)
 * [Bottom Panels Customisation](#bottom-panels-customisation)
 * [Wide Detail View](#wide-detail-view)
-* [Create Additional Layout (detail , list)](#create-additional-layout-detail--list)
+* [Create Additional Layout (detail , list)](#create-additional-layout-detail-list)
 
 ### 12 Columns
 
@@ -25,7 +25,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-### Panel Customisation
+### Panel Customisation:
 
 1. CSS Classes
 2. Header Background Color
@@ -35,7 +35,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-### Bottom Panels Customisation
+### Bottom Panels Customisation:
 
 1. CSS Classes
 2. Header Background Color
@@ -45,7 +45,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-### Field Customisation
+### Field Customisation:
 
 1. No Label
 2. Custom Label
@@ -57,16 +57,16 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
 ---
 
-### Wide Detail View
+### Wide Detail View:
 
-Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
+**-** Go to **Administration**-> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
 * Full Detail is Wide
 * Small Detail is Wide
 
 ---
 
-### Create Additional Layout (detail , list)
+### Create Additional Layout (detail , list):
 
 !!! note
 

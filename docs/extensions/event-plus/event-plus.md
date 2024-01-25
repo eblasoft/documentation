@@ -9,10 +9,10 @@
 
 ---
 
-1. Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Event Plus**.
+**-** Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type {Event Plus}**.
 
 ![Event Plus](../../_static/images/extensions/event-plus/event-plus-op.png)
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

@@ -9,8 +9,8 @@
 
 ---
 
-1. go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Kanban Status Fields** .
+**-** Go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Kanban Status Fields** .
 
 ![Kanban Multiple](../../_static/images/extensions/kanban-multiple/kanban-op.png)
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

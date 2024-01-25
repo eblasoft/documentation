@@ -15,4 +15,4 @@ For edit welcome message go to **Administration** -> **Label Manager** -> **Glob
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

@@ -11,9 +11,9 @@
 
 ---
 
-1. go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
+**-** Go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
 
-![Rate Field](../../_static/images/extensions/ebla-rate/rate-op.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/ebla-rate/rate-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 

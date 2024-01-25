@@ -9,20 +9,20 @@ in [Ebla Navigation Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espo
 
 ---
 
-go to **Administration** -> **User Interface** -> **Navbar** -> **Add Custom Link** .
+**-** Go to **Administration** -> **User Interface** -> **Navbar** -> **Add Custom Link** .
 
 ![custom link op](../../_static/images/extensions/nav-pro/custom-link-op.png)
 
 <br>
 
-**Features**
+**Features:**
 
-### [Custom Links](custom-links-with-tabs.md)
+- ### [Custom Links](custom-links-with-tabs.md)
 
-### [Favorite Entities](favorite-entities.md)
+- ### [Favorite Entities](favorite-entities.md)
 
-### [Favorite Records](favorite-records.md)
+- ### [Favorite Records](favorite-records.md)
 
-### [Separator](separator.md)
+- ### [Separator](separator.md)
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

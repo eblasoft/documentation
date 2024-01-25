@@ -69,8 +69,7 @@ nav:
         - Features:
             - Auto Recalculate Formula: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
             - Auto Remove Children upon Record Deletion: 'extensions/dynamic-logic-plus/removal-of-children.md'
-            - Auto-Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-            - Autocomplete Fields when child is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
+            - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
             - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
 
     - Enum Plus:
@@ -79,6 +78,7 @@ nav:
             - Color Option: 'extensions/enum-plus/color-option.md'
             - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
             - Kanban Status Bar In Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+            - Show As Button: 'extensions/enum-plus/show-as-button.md'
 
     - Event Plus: 'extensions/event-plus/event-plus.md'
 

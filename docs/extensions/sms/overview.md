@@ -10,8 +10,8 @@
 
 1. **Enable** SMS Entity.
 2. **Mass** SMS sending.
-3. SMS **templates**.
-4. Add SMS in **Activity panel**.
+3. SMS **Templates**.
+4. Add SMS in **Activity Panel**.
 
 ---
 
@@ -20,7 +20,7 @@
 ![Features](../../_static/images/extensions/sms/activity-panel.jpg )
 
 1. **Administration -> Integration** open the needed SMS provider and entered required credentials.
-2. go to **Administration -> SMS** select the needed SMS provider. Specify **From Number** (if needed).
+2. Go to **Administration -> SMS** select the needed SMS provider. Specify **From Number** (if needed).
 
 ![SMS Provider](../../_static/images/extensions/sms/sms-provider.png )
 
@@ -34,6 +34,6 @@ Supported SMS Providers:
 
 ---
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>
 
 

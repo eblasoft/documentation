@@ -11,7 +11,7 @@
 
 ---
 
-*  go to **Administration** -> **User Interface** -> **Navbar** -> **Add** -> **__FAVORITES_SECTION__**.
-* add **__FAVORITES_SECTION__** to **Tab List**.
+1. Go to **Administration** -> **User Interface** -> **Navbar** -> **Add** -> **__FAVORITES_SECTION__**.
+2. Add **__FAVORITES_SECTION__** to **Tab List**.
 
 ![Favorite Entities](../../_static/images/extensions/nav-pro/favorite-entities-op.png)

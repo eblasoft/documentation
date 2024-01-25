@@ -12,7 +12,7 @@ ___
 
 ---
 
-Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 
 <br>
 

@@ -9,11 +9,11 @@
 
 ---
 
-**Features**
+**Features:**
 
-### [Header Text](header-text.md)
+- ### [Header Text](header-text.md)
 
-### [Rich Text Label](rich-text-label.md)
+- ### [Rich Text Label](rich-text-label.md)
 
 !!! note "Note"
 
@@ -21,4 +21,4 @@
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

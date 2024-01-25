@@ -21,8 +21,8 @@
 ---
 
 
-go to **Administration** > **Generic Filter Settings** > **Generic Filter** > **Settings**.
+**-** Go to **Administration** > **Generic Filter Settings** > **Generic Filter** > **Settings**.
 
 ![generic-filter](../../_static/images/extensions/generic-filter/generic-filter-op.png)
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

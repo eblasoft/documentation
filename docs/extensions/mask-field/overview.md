@@ -9,13 +9,13 @@
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>
 
 ![mask field](../../_static/images/extensions/mask-field/mask-field.png)
 
 ---
 
-Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields(Varchar & Phone)**.
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields(Varchar & Phone)**.
 
 ![mask field op](../../_static/images/extensions/mask-field/mask-field-op.png)
 

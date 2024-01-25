@@ -8,10 +8,12 @@
 
 <br>
 
-**Features**
+**Features:**
 
-### [Custom Css](custom-css.md)
+- ### [Custom Css](custom-css.md)
 
-### [Grid Layout](grid-layout.md)
+- ### [Grid Layout](grid-layout.md)
+
+<br>
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

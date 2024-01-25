@@ -13,6 +13,6 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-en
 
 ### Enable Force Edit on List View
 
-Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 
-![Enable Force Edit on List View](../../_static/images/extensions/enum-plus/options.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>

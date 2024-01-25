@@ -11,10 +11,10 @@
 
 <br>
 
-**Features**
+**Features:**
 
-### [Work Log Button](work-log-button.md)
+- ### [Work Log Button](work-log-button.md)
 
-### [Online/Offline Status](online-offline.md)
+- ### [Online/Offline Status](online-offline.md)
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+- ### <font color=gray> [ChangeLog](changelog.md) </font>

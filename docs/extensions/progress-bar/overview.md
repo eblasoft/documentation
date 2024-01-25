@@ -10,11 +10,11 @@
 
 ---
 
-1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Integer ,
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Integer ,
    Float , Currency)** -> **Display As Progress Bar**.
 
 ![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar-op.png)
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

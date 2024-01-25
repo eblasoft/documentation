@@ -1,6 +1,6 @@
 # Admin Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro" target="_blank" id="ext-version" data-id = "636514b37aee0f43f"></a>
 
-> Limit admin user permissions is available
+> Limit admin user permissions in EspoCEM is available
 > in [Ebla Admin Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-admin-pro).
 
 ---

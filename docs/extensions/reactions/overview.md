@@ -5,7 +5,7 @@
 
 ---
 
-![Reactions](../../_static/images/extensions/reactions/reactions.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/reactions/reactions.png" alt="drawing" style="width:200px;"/>
 
 ---
 
@@ -19,10 +19,8 @@
 
 <br>
 
-**Features**
+**Features:**
 
-### [Reactions](overview.md)
+- ### [Voting Only](voting-only.md)
 
-### [Voting Only](voting-only.md)
-
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

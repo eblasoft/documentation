@@ -10,7 +10,7 @@
 
 ---
 
-1. go to **Administration** -> **Ebla Public Form Defs** -> **Create Ebla Public Form**.
+**-** Go to **Administration** -> **Ebla Public Form Defs** -> **Create Ebla Public Form**.
 
 ![Public Forms](../../_static/images/extensions/ebla-form/ebla-form-op.png)
 

@@ -11,5 +11,8 @@
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 2. Create a new field with type **Iframe**.
 
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/iframe/iframe-field-op.png" alt="drawing" style="width:200px;"/>
 
-![Iframe Field](../../_static/images/extensions/iframe/iframe-field-op.png)
+<br>
+
+### <font color=gray> [ChangeLog](changelog.md) </font>

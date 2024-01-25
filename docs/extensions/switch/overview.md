@@ -8,10 +8,10 @@
 
 ---
 
-1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Bool)** -> **Display As Switch**.
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Bool)** -> **Display As Switch**.
 
-![Switch](../../_static/images/extensions/switch/switch-op.png)
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/switch/switch-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

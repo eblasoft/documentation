@@ -11,10 +11,10 @@
 
 ---
 
-Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type (Category Tree)**.
+**-** Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type (Category Tree)**.
 
 ![Category Tree](../../_static/images/extensions/category-tree/category-tree-op.png)
 
 <br>
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>

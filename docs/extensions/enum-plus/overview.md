@@ -8,13 +8,17 @@ Enhancing (Enum Multi-Enum) field functionality with additional features in Espo
 
 <br>
 
-**Features**
+**Features:**
 
-### [Color Option](color-option.md)
+- ### [Color Option](color-option.md)
 
-### [Force Edit On List View](force-edit-on-list-view.md)
+- ### [Force Edit On List View](force-edit-on-list-view.md)
 
-### [Kanban Status Bar In Detail View](kanban-status-bar-in-detail-view.md)
+- ### [Kanban Status Bar In Detail View](kanban-status-bar-in-detail-view.md)
+
+- ### [ٍShow As Button](show-as-button.md)
+
+---
 
 
-**<font color=gray> [Changelog](changelog.md) </font>**
+### <font color=gray> [ChangeLog](changelog.md) </font>
