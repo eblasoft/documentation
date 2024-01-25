@@ -20,18 +20,14 @@
 
 <br>
 
-**Features**
-
-### [Map Route](map-route.md)
+**Features:**
 
 ### [Latitude Longitude](latitude-and-longitude.md)
 
-### [Search Place Autocomplete](search-place-autocomplete.md)
+### [Map Route](map-route.md)
 
 ### [Polygon Map](polygon-map.md)
 
-
-
-
+### [Search Place Autocomplete](search-place-autocomplete.md)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

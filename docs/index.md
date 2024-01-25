@@ -25,11 +25,10 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/date-pro/changelog.md)
 
 * [Dynamic Logic Plus](extensions/dynamic-logic-plus/overview.md)
-  * [Auto-Filtering When Parent is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
-  * [Autocomplete Fields when child is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
-  * [Automatic Removal of Children upon Record Deletion!](extensions/dynamic-logic-plus/removal-of-children.md)
+  * [Auto Recalculate Formula](extensions/dynamic-logic-plus/automatically-recalculate.md)
+  * [Auto Remove Children upon Record Deletion](extensions/dynamic-logic-plus/removal-of-children.md)
+  * [Auto Filtering When Parent is Selected](extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
   * [links Must Be Empty Before Remove](extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md)
-  * [Select the Link to Automatically Recalculate Formula After Field Change](extensions/dynamic-logic-plus/automatically-recalculate.md)
   * [ChangeLog](extensions/dynamic-logic-plus/changelog.md)
 
 * [Enum Plus](extensions/enum-plus/overview.md)
@@ -59,16 +58,16 @@ Here is the list sorted alphabetically:
 
 
 * [Layout Pro](extensions/layout-pro/overview.md)
-  * [ChangeLog](extensions/layout-pro/changelog.md)
   * [Custom CSS](extensions/layout-pro/custom-css.md)
   * [Grid Layout](extensions/layout-pro/grid-layout.md)
+  * [ChangeLog](extensions/layout-pro/changelog.md)
 
 * [Last Login](extensions/last-login/overview.md)
   * [ChangeLog](extensions/last-login/changelog.md)
 
 * [Link Multiple Pro](extensions/link-multiple-pro/overview.md)
-  * [ChangeLog](extensions/link-multiple-pro/changelog.md)
   * [Features](extensions/link-multiple-pro/features.md)
+  * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
 * [Labels Cells](extensions/labels-cells/overview.md)
   * [Header Text](extensions/labels-cells/header-text.md)
@@ -76,22 +75,22 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/labels-cells/changelog.md)
   
 * [Map Plus](extensions/map-plus/overview.md)
-  * [ChangeLog](extensions/map-plus/changelog.md)
   * [Latitude and Longitude](extensions/map-plus/latitude-and-longitude.md)
   * [Map Route](extensions/map-plus/map-route.md)
   * [Polygon Map](extensions/map-plus/polygon-map.md)
   * [Search Place Autocomplete](extensions/map-plus/search-place-autocomplete.md)
+  * [ChangeLog](extensions/map-plus/changelog.md)
 
 * [Mask Field](extensions/mask-field/overview.md)
-  * [ChangeLog](extensions/link-multiple-pro/changelog.md)
   * [Features](extensions/link-multiple-pro/features.md)
+  * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
 * [Navigation Pro](extensions/nav-pro/custom-links-with-tabs.md)
-  * [ChangeLog](extensions/nav-pro/changelog.md)
   * [Custom Links With Tabs](extensions/nav-pro/custom-links-with-tabs.md)
   * [Favorite Entities](extensions/nav-pro/favorite-entities.md)
-  * [Favorite List](extensions/nav-pro/favorite-list.md)
+  * [Favorite Records](extensions/nav-pro/favorite-list.md)
   * [Separator](extensions/nav-pro/separator.md)
+  * [ChangeLog](extensions/nav-pro/changelog.md)
 
 * [Print](extensions/print/overview.md)
   * [ChangeLog](extensions/print/changelog.md)
@@ -110,7 +109,6 @@ Here is the list sorted alphabetically:
 
 * [Reactions](extensions/reactions/overview.md)
   * [ChangeLog](extensions/reactions/changelog.md)
-  * [Voting Field](extensions/reactions/voting-only.md)
 
 * [Sms](extensions/sms/overview.md)
   * [ChangeLog](extensions/sms/changelog.md)
@@ -128,8 +126,8 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/welcome/changelog.md)
 
 * [Work Log](extensions/work-log/overview.md)
-  * [ChangeLog](extensions/work-log/changelog.md)
   * [Online / Offline](extensions/work-log/online-offline.md)
   * [Work Log Button](extensions/work-log/work-log-button.md)
+  * [ChangeLog](extensions/work-log/changelog.md)
     
 ---

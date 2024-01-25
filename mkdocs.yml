@@ -113,10 +113,10 @@ nav:
     - Map Plus:
         - Overview: 'extensions/map-plus/overview.md'
         - Features:
-            - Map Route: 'extensions/map-plus/map-route.md'
             - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
-            - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
+            - Map Route: 'extensions/map-plus/map-route.md'
             - Polygon Map: 'extensions/map-plus/polygon-map.md'
+            - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
 
     - Mask Field: 'extensions/mask-field/overview.md'
 
@@ -153,5 +153,5 @@ nav:
     - Work Log:
         - Overview: 'extensions/work-log/overview.md'
         - Features:
-            - Work Log Button: 'extensions/work-log/work-log-button.md'
             - Online/Offline Status: 'extensions/work-log/online-offline.md'
+            - Work Log Button: 'extensions/work-log/work-log-button.md'

@@ -8,11 +8,10 @@
 
 **Features:**
 
-- ### [Select the Link to Automatically Recalculate Formula After Field Change](automatically-recalculate.md)
-- ### [Automatic Removal of Children upon Record Deletion!](removal-of-children.md).
+- ### [Auto Recalculate Formula](automatically-recalculate.md)
+- ### [Auto Remove Children upon Record Deletion](removal-of-children.md).
+- ### [Auto Filtering When Parent is Selected](auto-filtering-when-parent-is-selected.md)
 - ### [links Must Be Empty Before Remove](links-must-be-empty-before-remove.md).
-- ### [Auto-Filtering When Parent is Selected](auto-filtering-when-parent-is-selected.md)
-- ### [Autocomplete Fields when child is Selected.](auto-filtering-when-parent-is-selected.md)
 
 ---
 

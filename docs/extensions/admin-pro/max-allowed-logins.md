@@ -12,6 +12,6 @@ ___
 
 !!! note
 
-        If empty or 0, no limitation will be applied
-        When the number of logins exceeds the limit, the oldest login will be logged out
+    If empty or 0, no limitation will be applied 
+    When the number of logins exceeds the limit, the oldest login will be logged out
 

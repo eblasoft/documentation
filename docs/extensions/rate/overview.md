@@ -1,6 +1,6 @@
 # Ebla Rate. <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field" target="_blank" id="ext-version" data-id="63495a03a877d5a9a"></a>
 
-> adding new field type **Rate Field**, to allow EspoCRM users easily seat and read rates,
+> Adding new field type **Rate Field**, to allow EspoCRM users easily seat and read rates,
 > is available in [Ebla Rate](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field).
 
 ---
@@ -11,7 +11,7 @@
 
 ---
 
-**-** Go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
 
 <img src="https://eblasoft.github.io/documentation/_static/images/extensions/ebla-rate/rate-op.png" alt="drawing" style="width:200px;"/>
 

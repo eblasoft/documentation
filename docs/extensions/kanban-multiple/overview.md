@@ -9,7 +9,7 @@
 
 ---
 
-**-** Go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Kanban Status Fields** .
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Kanban Status Fields** .
 
 ![Kanban Multiple](../../_static/images/extensions/kanban-multiple/kanban-op.png)
 

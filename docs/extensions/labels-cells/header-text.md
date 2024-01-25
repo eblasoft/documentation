@@ -9,6 +9,6 @@ in  [Ebla Labels](https://www.eblasoft.com.tr/espocrm-extension-page/labels-cell
 ![header-text](../../_static/images/extensions/labels-cells/header-text.png)
 
 ---
-**-** Go to **Admin** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Header Text**.
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Header Text**.
 
 ![header-text](../../_static/images/extensions/labels-cells/header-text-op.png)

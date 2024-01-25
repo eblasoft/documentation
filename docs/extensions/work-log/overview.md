@@ -13,8 +13,8 @@
 
 **Features:**
 
-- ### [Work Log Button](work-log-button.md)
-
 - ### [Online/Offline Status](online-offline.md)
+
+- ### [Work Log Button](work-log-button.md)
 
 - ### <font color=gray> [ChangeLog](changelog.md) </font>

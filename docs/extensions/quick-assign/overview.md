@@ -1,6 +1,6 @@
 # Quick Assign <a href="https://www.eblasoft.com.tr/espocrm-extension-page/quick-assign" target="_blank" id="ext-version" data-id="64be50a26090b021e"></a>
 
-> It is a tool that allows you to assign multiple record to a user in one click.
+> It is a tool that allows you to assign multiple record to a user in EspoCRM in one click.
 > Quick Assign It is available in [Ebla Quick Assign](https://www.eblasoft.com.tr/espocrm-extension-page/quick-assign).
 
 ---

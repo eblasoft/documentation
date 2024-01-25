@@ -1,6 +1,6 @@
 # Labels Cells  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/labels-cells" target="_blank" id="ext-version" data-id="63495a03a2759db51"></a>
 
-> add 2 new types of fields to the field manager **Header Text** and **Rich Text Label** in EspoCRM.
+> Add 2 new types of fields to the field manager **Header Text** and **Rich Text Label** in EspoCRM.
 > Is available in [Ebla Labels Cells](https://www.eblasoft.com.tr/espocrm-extension-page/labels-cells).
 
 ---
@@ -17,7 +17,7 @@
 
 !!! note "Note"
 
-        Those fields are **not storable**, means that no database space will losed.
+    Those fields are **not storable**, means that no database space will losed.
 
 <br>
 
