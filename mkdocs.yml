@@ -132,7 +132,7 @@ nav:
 
     - Progress Bar: 'extensions/progress-bar/overview.md'
 
-    - Public Form:  'extensions/ebla-form/overview.md'
+    - Public Form:  'extensions/form/overview.md'
 
     - Quick Assign: 'extensions/quick-assign/overview.md'
 
@@ -142,11 +142,11 @@ nav:
 
     - Sms:  'extensions/sms/overview.md'
 
-    - Stream Plus:  'extensions/ebla-stream-plus/overview.md'
+    - Stream Plus:  'extensions/stream-plus/overview.md'
 
     - Switch:  'extensions/switch/overview.md'
 
-    - Theme: 'extensions/theme/ebla-theme.md'
+    - Theme: 'extensions/theme/theme.md'
 
     - Welcome: 'extensions/welcome/overview.md'
 

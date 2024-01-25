@@ -8,13 +8,13 @@
 ---
 
 
-![Stream Plus](../../_static/images/extensions/ebla-stream-plus/stream-plus.png)
+![Stream Plus](../../_static/images/extensions/stream-plus/stream-plus.png)
 
 
 ---
 **-** Go to **Admin** -> **Entity Manager** -> **Note** ->
 
-![Stream Plus](../../_static/images/extensions/ebla-stream-plus/stream-plus-op.png)
+![Stream Plus](../../_static/images/extensions/stream-plus/stream-plus-op.png)
 
 !!! note
 

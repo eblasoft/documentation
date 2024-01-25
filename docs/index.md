@@ -98,8 +98,8 @@ Here is the list sorted alphabetically:
 * [Progress Bar](extensions/progress-bar/overview.md)
   * [ChangeLog](extensions/progress-bar/changelog.md)
 
-* [Public Form](extensions/ebla-form/overview.md)
-  * [ChangeLog](extensions/ebla-form/changelog.md)
+* [Public Form](extensions/form/overview.md)
+  * [ChangeLog](extensions/form/changelog.md)
 
 * [Quick Assign](extensions/quick-assign/overview.md)
   * [ChangeLog](extensions/quick-assign/changelog.md)
@@ -113,13 +113,13 @@ Here is the list sorted alphabetically:
 * [Sms](extensions/sms/overview.md)
   * [ChangeLog](extensions/sms/changelog.md)
 
-* [Stream Plus](extensions/ebla-stream-plus/overview.md)
-  * [ChangeLog](extensions/ebla-stream-plus/changelog.md)
+* [Stream Plus](extensions/stream-plus/overview.md)
+  * [ChangeLog](extensions/stream-plus/changelog.md)
 
 * [Switch](extensions/switch/overview.md)
   * [ChangeLog](extensions/switch/changelog.md)
 
-* [Theme](extensions/theme/ebla-theme.md)
+* [Theme](extensions/theme/theme.md)
   * [ChangeLog](extensions/theme/changelog.md)
 
 * [Welcome](extensions/welcome/overview.md)

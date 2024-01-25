@@ -6,13 +6,13 @@
 
 ---
 
-![Public Forms](../../_static/images/extensions/ebla-form/ebla-form.png)
+![Public Forms](../../_static/images/extensions/form/form.png)
 
 ---
 
 **-** Go to **Administration** -> **Ebla Public Form Defs** -> **Create Ebla Public Form**.
 
-![Public Forms](../../_static/images/extensions/ebla-form/ebla-form-op.png)
+![Public Forms](../../_static/images/extensions/form/form-op.png)
 
 
 <br>

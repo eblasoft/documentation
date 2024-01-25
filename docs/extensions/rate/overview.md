@@ -7,13 +7,13 @@
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/C505B7OBZmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Rate Field](../../_static/images/extensions/ebla-rate/rate.png)
+![Rate Field](../../_static/images/extensions/rate/rate.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field**.
 
-<img src="https://eblasoft.github.io/documentation/_static/images/extensions/ebla-rate/rate-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/rate/rate-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 
