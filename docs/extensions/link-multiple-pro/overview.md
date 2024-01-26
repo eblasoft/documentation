@@ -1,4 +1,4 @@
-# Link Multiple Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-pro" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
+# Link Multiple Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-inline-form" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
 
 > Basically this extension allows you to render link multiple fields in the list view in EspoCRM.
 > Invoice items on invoice entity

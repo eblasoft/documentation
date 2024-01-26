@@ -1,4 +1,4 @@
-# SMS <a href="https://www.eblasoft.com.tr/espocrm-extension-page/sms" target="_blank" id="ext-version" data-id="64a6d717d1ec80e20"></a>
+# SMS <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-sms" target="_blank" id="ext-version" data-id="64a6d717d1ec80e20"></a>
 
 > This extension enables SMS Entity.
 > Read more about SMS [EspoCRM SMS Sending](https://docs.espocrm.com/administration/sms-sending/).

@@ -1,4 +1,4 @@
-# Progress Bar <a href="https://www.eblasoft.com.tr/espocrm-extension-page/progress-bar" target="_blank" id="ext-version" data-id="644bee41b754077c2"></a>
+# Progress Bar <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-progress-bar" target="_blank" id="ext-version" data-id="644bee41b754077c2"></a>
 
 > Progress bar is a simple extension that allows you to display a progress bar in your fields type(**Integer , Float ,
 > Currency**) in the (**List, Detail**)  view in EspoCRM is available

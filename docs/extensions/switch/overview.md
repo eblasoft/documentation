@@ -1,4 +1,4 @@
-# Switch <a href="https://www.eblasoft.com.tr/espocrm-extension-page/switch" target="_blank" id="ext-version" data-id="63903277397107cc5"></a>
+# Switch <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-switch" target="_blank" id="ext-version" data-id="63903277397107cc5"></a>
 
 > Bool fields as toggle buttons in EspoCRM is available in [Ebla Switch](https://www.eblasoft.com.tr/espocrm-extension-page/switch).
 

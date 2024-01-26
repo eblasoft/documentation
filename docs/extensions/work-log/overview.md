@@ -1,4 +1,4 @@
-# Work Log  <a href="https://www.eblasoft.com.tr/espocrm-extension-page//work-log" target="_blank" id="ext-version" data-id="64a5599f1767c748d"></a>
+# Work Log  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-worklog" target="_blank" id="ext-version" data-id="64a5599f1767c748d"></a>
 
 > Recording the user's daily working hours in EspoCRM.
 > Modify user status to online/offline.
