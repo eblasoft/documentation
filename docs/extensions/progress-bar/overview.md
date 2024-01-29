@@ -6,7 +6,7 @@
 
 ---
 
-![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar.png)
+![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar-op.jpg)
 
 ---
 
