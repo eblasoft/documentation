@@ -22,6 +22,8 @@
 
 **Features:**
 
+### [Map View](map-view.md)
+
 ### [Latitude Longitude](latitude-and-longitude.md)
 
 ### [Map Route](map-route.md)

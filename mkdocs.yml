@@ -113,6 +113,7 @@ nav:
     - Map Plus:
         - Overview: 'extensions/map-plus/overview.md'
         - Features:
+            - Map View: 'extensions/map-plus/map-view.md'
             - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
             - Map Route: 'extensions/map-plus/map-route.md'
             - Polygon Map: 'extensions/map-plus/polygon-map.md'

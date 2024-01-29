@@ -75,6 +75,7 @@ Here is the list sorted alphabetically:
   * [ChangeLog](extensions/labels-cells/changelog.md)
   
 * [Map Plus](extensions/map-plus/overview.md)
+  * [Map View](extensions/map-plus/map-view.md)
   * [Latitude and Longitude](extensions/map-plus/latitude-and-longitude.md)
   * [Map Route](extensions/map-plus/map-route.md)
   * [Polygon Map](extensions/map-plus/polygon-map.md)
