@@ -12,6 +12,6 @@ Map View is available in [Ebla Map Plus](https://www.eblasoft.com.tr/espocrm-ext
 ---
 
 
-1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Edit** .
+**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
 ![Map View](../../_static/images/extensions/map-plus/map-view-op.png)
