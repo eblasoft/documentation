@@ -1,5 +1,5 @@
 :root {
-    //--md-link-color: #537898;
+/ / --md-link-color: #537898;
     --md-accent-fg-color: #af4d73;
     --md-accent-fg-color-light: #cc95aa;
 }
@@ -32,6 +32,7 @@ a.md-nav__link:not(.md-nav__container):hover {
     border-bottom: 1px solid var(--md-default-fg-color--lightest);
     padding-bottom: 0.14em;
 }
+
 .md-typeset h2 {
     font-weight: 400 !important;
     border-bottom: 1px solid var(--md-default-fg-color--lightest);
@@ -91,6 +92,9 @@ a.md-nav__link:not(.md-nav__container):hover {
     user-select: none;
 }
 
-.changelog {
-    width: -webkit-fill-available;
+iframe.changelog {
+    width: 100%;
+    height: calc(100% - 260px);
+    border: none;
+    position: absolute;
 }
