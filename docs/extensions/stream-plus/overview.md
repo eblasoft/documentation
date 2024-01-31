@@ -12,7 +12,7 @@
 
 
 ---
-**-** Go to **Admin** -> **Entity Manager** -> **Note** ->
+**-** Go to **Administration** -> **Entity Manager** -> **Note.**
 
 ![Stream Plus](../../_static/images/extensions/stream-plus/stream-plus-op.png)
 
