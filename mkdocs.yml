@@ -143,7 +143,9 @@ nav:
 
     - Sms:  'extensions/sms/overview.md'
 
-    - Stream Plus:  'extensions/stream-plus/overview.md'
+    - Stream Plus:
+      - Overview: 'extensions/stream-plus/overview.md'
+      - ChangeLog: 'extensions/stream-plus/changelog.md'
 
     - Switch:  'extensions/switch/overview.md'
 
