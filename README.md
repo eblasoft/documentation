@@ -15,8 +15,11 @@ Install the packages:
 2. `pip install mdx_truly_sane_lists`
 3. `pip install mkdocs-material`
 
+Command to serve:
+```
+mkdocs serve
+```
 Command to build:
-
 ```
 mkdocs build
 ```
