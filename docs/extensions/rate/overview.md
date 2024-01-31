@@ -1,4 +1,4 @@
-# Rate <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field" target="_blank" id="ext-version" data-id="63495a03a877d5a9a"></a>
+# Rate Star Field <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field" target="_blank" id="ext-version" data-id="63495a03a877d5a9a"></a>
 
 > Adding new field type **Rate Field**, to allow EspoCRM users easily seat and read rates,
 > is available in [Ebla Rate](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field).

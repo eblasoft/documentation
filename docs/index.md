@@ -105,7 +105,7 @@ Here is the list sorted alphabetically:
 * [Quick Assign](extensions/quick-assign/overview.md)
   * [ChangeLog](extensions/quick-assign/changelog.md)
 
-* [Rate](extensions/rate/overview.md)
+* [Rate Star Field](extensions/rate/overview.md)
   * [ChangeLog](extensions/rate/changelog.md)
 
 * [Reactions](extensions/reactions/overview.md)

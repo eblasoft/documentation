@@ -1,4 +1,4 @@
-# Map <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension" target="_blank" id="ext-version" data-id="636c9732e830bebeb"></a>
+# Map Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension" target="_blank" id="ext-version" data-id="636c9732e830bebeb"></a>
 
 > This extension enhances the existing **address** field type in EspoCRM.
 > is available in [Ebla Map Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension).
