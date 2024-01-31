@@ -1,12 +1,8 @@
 # Polygon  Map
 
-Polygon Map is available in [Ebla Map Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension).
-
----
-
-
-> The new **[Polygon Map](https://developers.google.com/maps/documentation/javascript/examples/polygon-simple)**  in 
-**Map Filed** type in EspoCRM allows users to plot a polygon on a map.
+> The new **[Polygon Map](https://developers.google.com/maps/documentation/javascript/examples/polygon-simple)**  in
+> **Map Filed** type in EspoCRM allows users to plot a polygon on a map.
+> Polygon Map is available in [Ebla Map Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension).
 
 ![Polygon Map](../../_static/images/extensions/map-plus/polygon-map.png)
 
