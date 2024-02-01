@@ -27,6 +27,7 @@ theme:
   favicon: _static/images/docs/icon.png
   features:
     - content.action.edit
+    - navigation.prune
   icon:
     edit: material/pencil
   palette:
@@ -122,7 +123,6 @@ nav:
     - Mask Field: 'extensions/mask-field/overview.md'
 
     - Navigation Pro:
-        - Overview: 'extensions/nav-pro/custom-links-with-tabs.md'
         - Features:
             - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
             - Favorite Entities : 'extensions/nav-pro/favorite-entities.md'
