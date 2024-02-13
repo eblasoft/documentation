@@ -1,8 +1,11 @@
 # Mobile App <a href="YOUR_MOBILE_APP_EXTENSION_LINK" target="_blank" id="ext-version" data-id="YOUR_EXTENSION_ID"></a>
 
-> This extension empowers EspoCRM with Progressive Web App (PWA) support and advanced notification features, including
+> With this module, you can now enable EspoCRM mobile and desktop applications using PWA (Progressive Web App)
+> technology, allowing for seamless integration and access to your CRM on-the-go.
+> With the added benefit of push notifications, you can stay updated on important activities, leads, and opportunities
+> in real-time, ensuring that you never miss a beat.
 > Push Notifications and Telegram integration.
-> is available
+> This module available
 > in [Ebla Mobile App](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-mobile-app-push-notifications-pwa).
 
 <br>
