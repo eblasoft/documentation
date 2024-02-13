@@ -123,6 +123,10 @@ nav:
 
   - Mobile App:
       - Overview: 'extensions/mobile-app/overview.md'
+      - Features:
+          - PWA: 'extensions/mobile-app/pwa.md'
+          - Push Notifications: 'extensions/mobile-app/push-notifications.md'
+          - Telegram Notifications: 'extensions/mobile-app/telegram.md'
       - Providers:
           - WebPush:
               - Overview: 'extensions/mobile-app/providers/webpush/overview.md'

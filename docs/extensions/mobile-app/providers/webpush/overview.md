@@ -1,44 +1,42 @@
-# WebPush Provider Overview
+# Push Notification Feature with WebPush
 
-The WebPush provider in the Mobile App extension for EspoCRM allows you to leverage WebPush technology to send real-time
-push notifications to users, enhancing their experience and keeping them informed.
+The Push Notification feature in the Mobile App extension for EspoCRM leverages the WebPush library to provide real-time
+notifications to users. This feature supports both Progressive Web App (PWA) environments and native web browsers,
+enhancing user engagement and keeping users informed about important events within EspoCRM.
+
+## What is WebPush?
+
+WebPush is a web platform feature that enables websites and web applications to send real-time push notifications to
+users' devices, even when the website is not open. It provides a standardized way for web applications to engage users
+with timely updates and alerts.
+
+![img.jpg](../../../../_static/images/extensions/mobile-app/webpush/img_2.jpg)
 
 ![img.png](../../../../_static/images/extensions/mobile-app/webpush/img.png)
 <br>
 ![img.png](../../../../_static/images/extensions/mobile-app/webpush/img_1.png)
 
-## What is WebPush?
-
-WebPush is a browser-based technology that enables websites and web applications to send push notifications to users,
-even when the website or application is not open. With WebPush, users can receive timely updates, alerts, and messages
-directly on their devices, contributing to a more engaging and dynamic user experience.
-
 ## Key Features
 
-### 1. Real-Time Notifications
+### 1. Cross-Browser Compatibility
 
-- Instantly notify users about important events or updates, ensuring they stay informed without actively using the
-  EspoCRM application.
+- WebPush notifications are supported in both PWA environments and native web browsers, ensuring a consistent experience
+  across different platforms.
 
-### 2. VAPID Support
+### 2. Real-Time Updates
 
-- Utilize the Voluntary Application Server Identification (VAPID) protocol for secure and authenticated communication
-  between the server and the push service.
+- Users receive instant notifications about essential events, tasks, or updates within EspoCRM, enhancing user awareness
+  and engagement.
 
-### 3. User Permission Management
+### 3. Personalized Notification Preferences
 
-- Ensure users have control over their notification preferences. They can grant or deny permission to receive push
-  notifications, providing a personalized experience.
+- Users have control over their notification preferences.
 
-### 4. Configuration Flexibility
+### 4. Easy Integration with WebPush Library
 
-- Easily configure and manage the WebPush provider settings, including VAPID keys and other parameters, through the
-  EspoCRM administration panel.
+- The WebPush library simplifies the integration process, making it straightforward for administrators to set up and
+  manage push notifications.
 
-### 5. Mark as Read
+## Setting Up Push Notifications with WebPush
 
-- Users can mark notifications as read from the notification list.
-
-## Getting Started with WebPush
-
-To enable WebPush for your EspoCRM instance, go to [setup](setup.md) and follow steps.
+Follow these [steps](providers/webpush/setup.md) to set up Push Notifications with the WebPush library:

@@ -6,6 +6,8 @@ notifications directly through their Telegram accounts.
 
 ![img.png](../../../../_static/images/extensions/mobile-app/telegram/img.png)
 
+![img.jpg](../../../../_static/images/extensions/mobile-app/webpush/img_2.jpg)
+
 ## What is Telegram Integration?
 
 Telegram Integration allows EspoCRM to seamlessly connect with Telegram, a popular messaging platform known for its
