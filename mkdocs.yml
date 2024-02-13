@@ -3,7 +3,7 @@ site_name: Eblasoft Documentation
 repo_url: https://github.com/eblasoft/documentation/
 edit_uri: edit/main/docs/
 
-extra_javascript: [js/extra.js]
+extra_javascript: [ js/extra.js ]
 
 extra_css:
   - css/extra.css
@@ -22,12 +22,11 @@ markdown_extensions:
 
 theme:
   name: material
-#  logo: _static/images/docs/logo.png todo:  fixed for dark mode
+  #  logo: _static/images/docs/logo.png todo:  fixed for dark mode
   highlightjs: true
   favicon: _static/images/docs/icon.png
   features:
     - content.action.edit
-    - navigation.prune
   icon:
     edit: material/pencil
   palette:
@@ -47,114 +46,124 @@ theme:
         name: Switch to light mode
 
 nav:
-    - Admin Pro:
-        - Overview: 'extensions/admin-pro/overview.md'
-        - Features:
-            - Hied System Scopes: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
-            - Limit Admin:  'extensions/admin-pro/limit-admin-user-permissions.md'
-            - Max Allowed Logins:  'extensions/admin-pro/max-allowed-logins.md'
-            - Show Permissions For Users:  'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
+  - Admin Pro:
+      - Overview: 'extensions/admin-pro/overview.md'
+      - Features:
+          - Hied System Scopes: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
+          - Limit Admin: 'extensions/admin-pro/limit-admin-user-permissions.md'
+          - Max Allowed Logins: 'extensions/admin-pro/max-allowed-logins.md'
+          - Show Permissions For Users: 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
-    - Number Pro (Auto Increment): 'extensions/number-pro/number-pro-field.md'
+  - Number Pro (Auto Increment): 'extensions/number-pro/number-pro-field.md'
 
-    - Category Tree: 'extensions/category-tree/overview.md'
+  - Category Tree: 'extensions/category-tree/overview.md'
 
-    - Chat: 'extensions/chat/overview.md'
+  - Chat: 'extensions/chat/overview.md'
 
-    - Dash Pro: 'extensions/dashlet-pro/overview.md'
+  - Dash Pro: 'extensions/dashlet-pro/overview.md'
 
-    - Date Pro: 'extensions/date-pro/overview.md'
+  - Date Pro: 'extensions/date-pro/overview.md'
 
-    - Dynamic Logic Plus:
-        - Overview: 'extensions/dynamic-logic-plus/overview.md'
-        - Features:
-            - Auto Recalculate Formula: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
-            - Auto Remove Children upon Record Deletion: 'extensions/dynamic-logic-plus/removal-of-children.md'
-            - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-            - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
+  - Dynamic Logic Plus:
+      - Overview: 'extensions/dynamic-logic-plus/overview.md'
+      - Features:
+          - Auto Recalculate Formula: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
+          - Auto Remove Children upon Record Deletion: 'extensions/dynamic-logic-plus/removal-of-children.md'
+          - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
+          - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
 
-    - Enum Plus:
-        - Overview: 'extensions/enum-plus/overview.md'
-        - Features:
-            - Color Option: 'extensions/enum-plus/color-option.md'
-            - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
-            - Kanban Status Bar In Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
-            - Show As Button: 'extensions/enum-plus/show-as-button.md'
+  - Enum Plus:
+      - Overview: 'extensions/enum-plus/overview.md'
+      - Features:
+          - Color Option: 'extensions/enum-plus/color-option.md'
+          - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
+          - Kanban Status Bar In Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+          - Show As Button: 'extensions/enum-plus/show-as-button.md'
 
-    - Event Plus: 'extensions/event-plus/event-plus.md'
+  - Event Plus: 'extensions/event-plus/event-plus.md'
 
-    - Generic Filter: 'extensions/generic-filter/overview.md'
+  - Generic Filter: 'extensions/generic-filter/overview.md'
 
-    - Gantt View: 'extensions/gantt/overview.md'
+  - Gantt View: 'extensions/gantt/overview.md'
 
-    - Iframe: 'extensions/iframe/iframe-field.md'
+  - Iframe: 'extensions/iframe/iframe-field.md'
 
-    - Infinity Scroll: 'extensions/infinity-scroll/overview.md'
+  - Infinity Scroll: 'extensions/infinity-scroll/overview.md'
 
-    - Kanban Multiple: 'extensions/kanban-multiple/overview.md'
+  - Kanban Multiple: 'extensions/kanban-multiple/overview.md'
 
-    - Layout Pro:
-        - Overview: 'extensions/layout-pro/overview.md'
-        - Features :
-            - Custom CSS: 'extensions/layout-pro/custom-css.md'
-            - Grid Layout: 'extensions/layout-pro/grid-layout.md'
+  - Layout Pro:
+      - Overview: 'extensions/layout-pro/overview.md'
+      - Features:
+          - Custom CSS: 'extensions/layout-pro/custom-css.md'
+          - Grid Layout: 'extensions/layout-pro/grid-layout.md'
 
-    - Last Login: 'extensions/last-login/overview.md'
+  - Last Login: 'extensions/last-login/overview.md'
 
-    - Link Multiple Pro:
-        - Overview: 'extensions/link-multiple-pro/overview.md'
-        - Changelog: 'extensions/link-multiple-pro/changelog.md'
+  - Link Multiple Pro:
+      - Overview: 'extensions/link-multiple-pro/overview.md'
+      - Changelog: 'extensions/link-multiple-pro/changelog.md'
 
-    - Labels Cells:
-        - Overview: 'extensions/labels-cells/overview.md'
-        - Features:
-            - Header Text: 'extensions/labels-cells/header-text.md'
-            - Rich Text Label: 'extensions/labels-cells/rich-text-label.md'
+  - Labels Cells:
+      - Overview: 'extensions/labels-cells/overview.md'
+      - Features:
+          - Header Text: 'extensions/labels-cells/header-text.md'
+          - Rich Text Label: 'extensions/labels-cells/rich-text-label.md'
 
-    - Map Plus:
-        - Overview: 'extensions/map-plus/overview.md'
-        - Features:
-            - Map View: 'extensions/map-plus/map-view.md'
-            - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
-            - Map Route: 'extensions/map-plus/map-route.md'
-            - Polygon Map: 'extensions/map-plus/polygon-map.md'
-            - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
+  - Map Plus:
+      - Overview: 'extensions/map-plus/overview.md'
+      - Features:
+          - Map View: 'extensions/map-plus/map-view.md'
+          - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
+          - Map Route: 'extensions/map-plus/map-route.md'
+          - Polygon Map: 'extensions/map-plus/polygon-map.md'
+          - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
 
-    - Mask Field: 'extensions/mask-field/overview.md'
+  - Mask Field: 'extensions/mask-field/overview.md'
 
-    - Navigation Pro:
-        - Features:
-            - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
-            - Favorite Entities : 'extensions/nav-pro/favorite-entities.md'
-            - Favorite Records : 'extensions/nav-pro/favorite-records.md'
-            - Separator: 'extensions/nav-pro/separator.md'
+  - Mobile App:
+      - Overview: 'extensions/mobile-app/overview.md'
+      - Providers:
+          - WebPush:
+              - Overview: 'extensions/mobile-app/providers/webpush/overview.md'
+              - Setup: 'extensions/mobile-app/providers/webpush/setup.md'
+          - Telegram:
+              - Overview: 'extensions/mobile-app/providers/telegram/overview.md'
+              - Setup: 'extensions/mobile-app/providers/telegram/setup.md'
 
-    - Print: 'extensions/print/overview.md'
+  - Navigation Pro:
+      - Features:
+          - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
+          - Favorite Entities: 'extensions/nav-pro/favorite-entities.md'
+          - Favorite Records: 'extensions/nav-pro/favorite-records.md'
+          - Separator: 'extensions/nav-pro/separator.md'
 
-    - Progress Bar: 'extensions/progress-bar/overview.md'
+  - Print: 'extensions/print/overview.md'
 
-    - Public Form:  'extensions/form/overview.md'
+  - Progress Bar: 'extensions/progress-bar/overview.md'
 
-    - Quick Assign: 'extensions/quick-assign/overview.md'
+  - Public Form: 'extensions/form/overview.md'
 
-    - Rate Star Field:  'extensions/rate/overview.md'
+  - Quick Assign: 'extensions/quick-assign/overview.md'
 
-    - Reactions: 'extensions/reactions/overview.md'
+  - Rate Star Field: 'extensions/rate/overview.md'
 
-    - Sms:  'extensions/sms/overview.md'
+  - Reactions: 'extensions/reactions/overview.md'
 
-    - Stream Plus:
+  - Sms: 'extensions/sms/overview.md'
+
+  - Stream Plus:
       - Overview: 'extensions/stream-plus/overview.md'
       - ChangeLog: 'extensions/stream-plus/changelog.md'
 
-    - Switch:  'extensions/switch/overview.md'
+  - Switch: 'extensions/switch/overview.md'
 
-    - Theme: 'extensions/theme/theme.md'
+  - Theme: 'extensions/theme/theme.md'
 
-    - Welcome: 'extensions/welcome/overview.md'
+  - Welcome: 'extensions/welcome/overview.md'
 
-    - Work Log:
-        - Overview: 'extensions/work-log/overview.md'
-        - Features:
-            - Online / Offline Status: 'extensions/work-log/online-offline.md'
-            - Work Log Button: 'extensions/work-log/work-log-button.md'
+  - Work Log:
+      - Overview: 'extensions/work-log/overview.md'
+      - Features:
+          - Online / Offline Status: 'extensions/work-log/online-offline.md'
+          - Work Log Button: 'extensions/work-log/work-log-button.md'

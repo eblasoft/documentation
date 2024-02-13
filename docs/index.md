@@ -86,6 +86,16 @@ Here is the list sorted alphabetically:
   * [Features](extensions/link-multiple-pro/features.md)
   * [ChangeLog](extensions/link-multiple-pro/changelog.md)
 
+* [Mobile App](extensions/mobile-app/overview.md)
+  * Providers
+    * [WebPush](extensions/mobile-app/providers/webpush/setup.md)
+    * [Telegram](extensions/mobile-app/providers/telegram/setup.md)
+    * Whatsapp (Coming Soon)
+    * Slack (Coming Soon)
+    * Rocket.Chat (Coming Soon)
+  * [Features](extensions/mobile-app/overview.md)
+  * [ChangeLog](extensions/mobile-app/changelog.md)
+
 * [Navigation Pro](extensions/nav-pro/custom-links-with-tabs.md)
   * [Custom Links With Tabs](extensions/nav-pro/custom-links-with-tabs.md)
   * [Favorite Entities](extensions/nav-pro/favorite-entities.md)
