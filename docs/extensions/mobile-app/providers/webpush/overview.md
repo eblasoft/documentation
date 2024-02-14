@@ -39,4 +39,4 @@ with timely updates and alerts.
 
 ## Setting Up Push Notifications with WebPush
 
-Follow these [steps](providers/webpush/setup.md) to set up Push Notifications with the WebPush library:
+Follow these [steps](setup.md) to set up Push Notifications with the WebPush library:
