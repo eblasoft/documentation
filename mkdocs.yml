@@ -8,6 +8,11 @@ extra_javascript: [ js/extra.js ]
 extra_css:
   - css/extra.css
 
+extra:
+  analytics:
+    provider: google
+    property: G-ZBGS3K1JEH
+
 markdown_extensions:
   - admonition
   - pymdownx.details
