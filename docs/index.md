@@ -1,4 +1,4 @@
-# Eblasoft Documentation
+# Eblasoft Espocrm Extensions Documentation
 
 Here is the list sorted alphabetically:
 
