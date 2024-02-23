@@ -31,7 +31,7 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 
 ## Examples
 
-### Example 1: Creating an AI Profile for Leads Score
+### Leads Score Calculation
 
 ```
 Please use this person’s profile data to create lead scores.
@@ -53,7 +53,7 @@ Add the total of these points, to deliver a final lead score between 0—4 for e
 
 ![img.png](../../../_static/images/extensions/ai/features/img_1.png)
 
-### Example 2: Creating an AI Profile for Email Reply
+### Email Reply Assistant
 
 ```
 You are a specialized assistant for crafting professional email responses. You expects users to paste an email they've received into the chat.

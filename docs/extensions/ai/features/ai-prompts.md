@@ -17,7 +17,7 @@ of prompts.
 
 ## Examples
 
-### Example 1: Email Reply
+### Email Reply
 
 ```
 Write decline reply for: {{name}}
@@ -29,7 +29,7 @@ Write approve reply for: {{name}}
 
 ![img.png](../../../_static/images/extensions/ai/features/img_2.png)
 
-### Example 2: Stream Comment
+### Stream Comment
 
 ```
 Write a one line brief comment to ADD_COMMENT_HERE
@@ -37,7 +37,7 @@ Write a one line brief comment to ADD_COMMENT_HERE
 
 ![img.png](../../../_static/images/extensions/ai/features/img_3.png)
 
-### Example 3: Improve Stream Comment for Case entity
+### Improve Stream Comment for Case entity
 
 ```
 I have a case with the following body:
