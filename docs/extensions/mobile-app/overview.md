@@ -1,4 +1,4 @@
-# Mobile App <a href="YOUR_MOBILE_APP_EXTENSION_LINK" target="_blank" id="ext-version" data-id="YOUR_EXTENSION_ID"></a>
+# Mobile App <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-mobile-app-push-notifications-pwa" target="_blank" id="ext-version" data-id="65c5dc38694d1da71"></a>
 
 > With this module, you can now enable EspoCRM mobile and desktop applications using PWA (Progressive Web App)
 > technology, allowing for seamless integration and access to your CRM on-the-go.
