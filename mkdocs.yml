@@ -59,6 +59,19 @@ nav:
           - Max Allowed Logins: 'extensions/admin-pro/max-allowed-logins.md'
           - Show Permissions For Users: 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
+  - Ai:
+      - Overview: 'extensions/ai/overview.md'
+      - Setup:
+          - OpenAI: 'extensions/ai/providers/openai-setup.md'
+          - Google Gemini: 'extensions/ai/providers/gemini-setup.md'
+      - Features:
+          - AI Profiles: 'extensions/ai/features/ai-profiles.md'
+          - AI Prompts: 'extensions/ai/features/ai-prompts.md'
+          - Email Reply: 'extensions/ai/features/email-reply.md'
+          - Stream Comment: 'extensions/ai/features/stream-comment.md'
+          - Formula: 'extensions/ai/features/formula.md'
+          - Sandbox: 'extensions/ai/features/sandbox.md'
+
   - Number Pro (Auto Increment): 'extensions/number-pro/number-pro-field.md'
 
   - Category Tree: 'extensions/category-tree/overview.md'
