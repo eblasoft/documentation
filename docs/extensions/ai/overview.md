@@ -20,12 +20,12 @@
 
 ### Features
 
-- [AI Profiles](features/ai-profiles.md)
-- [AI Prompts](features/ai-prompts.md)
-- [Email Reply](features/email-reply.md)
-- [Stream Comment](features/stream-comment.md)
-- [Formula](features/formula.md)
-- [Sandbox](features/sandbox.md)
+- [AI Profiles Management](features/ai-profiles.md)
+- [AI Prompts Management](features/ai-prompts.md)
+- [AI Email Generated](features/email-reply.md)
+- [AI Stream Comment Generation](features/stream-comment.md)
+- [AI Formula Functions](features/formula.md)
+- [AI Sandbox](features/sandbox.md)
 
 <br>
 
