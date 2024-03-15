@@ -25,10 +25,6 @@ Enhances communication, lead management, and workflow automation.
 
 ### Setup and Configuration
 
-<<<<<<< Updated upstream
-### <font color=gray> [ChangeLog](changelog.md) </font>
-=======
 - [Setup OpenAI](providers/openai-setup.md)
 - [Setup Gemini](providers/gemini-setup.md)
 - [Access control](features/access-control.md)
->>>>>>> Stashed changes

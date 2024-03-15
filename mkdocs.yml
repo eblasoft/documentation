@@ -66,141 +66,141 @@ theme:
 
 nav:
   - Admin Pro:
-      - Overview: 'extensions/admin-pro/overview.md'
+      - Overview: 'espocrm-extensions/admin-pro/overview.md'
       - Features:
-          - Hied System Scopes: 'extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
-          - Limit Admin: 'extensions/admin-pro/limit-admin-user-permissions.md'
-          - Max Allowed Logins: 'extensions/admin-pro/max-allowed-logins.md'
-          - Show Permissions For Users: 'extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
+          - Hied System Scopes: 'espocrm-extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
+          - Limit Admin: 'espocrm-extensions/admin-pro/limit-admin-user-permissions.md'
+          - Max Allowed Logins: 'espocrm-extensions/admin-pro/max-allowed-logins.md'
+          - Show Permissions For Users: 'espocrm-extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
   - Ai:
-      - Overview: 'extensions/ai/overview.md'
+      - Overview: 'espocrm-extensions/ai/overview.md'
       - Setup:
-          - OpenAI: 'extensions/ai/providers/openai-setup.md'
-          - Google Gemini: 'extensions/ai/providers/gemini-setup.md'
-          - Access Control: 'extensions/ai/features/access-control.md'
+          - OpenAI: 'espocrm-extensions/ai/providers/openai-setup.md'
+          - Google Gemini: 'espocrm-extensions/ai/providers/gemini-setup.md'
+          - Access Control: 'espocrm-extensions/ai/features/access-control.md'
       - Features:
-          - AI Profiles: 'extensions/ai/features/ai-profiles.md'
-          - AI Prompts: 'extensions/ai/features/ai-prompts.md'
-          - Email Reply: 'extensions/ai/features/email-reply.md'
-          - Stream Comment: 'extensions/ai/features/stream-comment.md'
-          - Formula: 'extensions/ai/features/formula.md'
-          - Sandbox: 'extensions/ai/features/sandbox.md'
+          - AI Profiles: 'espocrm-extensions/ai/features/ai-profiles.md'
+          - AI Prompts: 'espocrm-extensions/ai/features/ai-prompts.md'
+          - Email Reply: 'espocrm-extensions/ai/features/email-reply.md'
+          - Stream Comment: 'espocrm-extensions/ai/features/stream-comment.md'
+          - Formula: 'espocrm-extensions/ai/features/formula.md'
+          - Sandbox: 'espocrm-extensions/ai/features/sandbox.md'
 
-  - Number Pro (Auto Increment): 'extensions/number-pro/number-pro-field.md'
+  - Number Pro (Auto Increment): 'espocrm-extensions/number-pro/number-pro-field.md'
 
-  - Category Tree: 'extensions/category-tree/overview.md'
+  - Category Tree: 'espocrm-extensions/category-tree/overview.md'
 
-  - Chat: 'extensions/chat/overview.md'
+  - Chat: 'espocrm-extensions/chat/overview.md'
 
-  - Dash Pro: 'extensions/dashlet-pro/overview.md'
+  - Dash Pro: 'espocrm-extensions/dashlet-pro/overview.md'
 
-  - Date Pro: 'extensions/date-pro/overview.md'
+  - Date Pro: 'espocrm-extensions/date-pro/overview.md'
 
   - Dynamic Logic Plus:
-      - Overview: 'extensions/dynamic-logic-plus/overview.md'
+      - Overview: 'espocrm-extensions/dynamic-logic-plus/overview.md'
       - Features:
-          - Auto Recalculate Formula: 'extensions/dynamic-logic-plus/automatically-recalculate.md'
-          - Auto Remove Children upon Record Deletion: 'extensions/dynamic-logic-plus/removal-of-children.md'
-          - Auto Filtering When Parent is Selected: 'extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-          - links Must Be Empty Before Remove: 'extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
+          - Auto Recalculate Formula: 'espocrm-extensions/dynamic-logic-plus/automatically-recalculate.md'
+          - Auto Remove Children upon Record Deletion: 'espocrm-extensions/dynamic-logic-plus/removal-of-children.md'
+          - Auto Filtering When Parent is Selected: 'espocrm-extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
+          - links Must Be Empty Before Remove: 'espocrm-extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
 
   - Enum Plus:
-      - Overview: 'extensions/enum-plus/overview.md'
+      - Overview: 'espocrm-extensions/enum-plus/overview.md'
       - Features:
-          - Color Option: 'extensions/enum-plus/color-option.md'
-          - Force Edit On List View: 'extensions/enum-plus/force-edit-on-list-view.md'
-          - Kanban Status Bar In Detail View: 'extensions/enum-plus/kanban-status-bar-in-detail-view.md'
-          - Show As Button: 'extensions/enum-plus/show-as-button.md'
+          - Color Option: 'espocrm-extensions/enum-plus/color-option.md'
+          - Force Edit On List View: 'espocrm-extensions/enum-plus/force-edit-on-list-view.md'
+          - Kanban Status Bar In Detail View: 'espocrm-extensions/enum-plus/kanban-status-bar-in-detail-view.md'
+          - Show As Button: 'espocrm-extensions/enum-plus/show-as-button.md'
 
-  - Event Plus: 'extensions/event-plus/event-plus.md'
+  - Event Plus: 'espocrm-extensions/event-plus/event-plus.md'
 
-  - Generic Filter: 'extensions/generic-filter/overview.md'
+  - Generic Filter: 'espocrm-extensions/generic-filter/overview.md'
 
-  - Gantt View: 'extensions/gantt/overview.md'
+  - Gantt View: 'espocrm-extensions/gantt/overview.md'
 
-  - Iframe: 'extensions/iframe/iframe-field.md'
+  - Iframe: 'espocrm-extensions/iframe/iframe-field.md'
 
-  - Infinity Scroll: 'extensions/infinity-scroll/overview.md'
+  - Infinity Scroll: 'espocrm-extensions/infinity-scroll/overview.md'
 
-  - Kanban Multiple: 'extensions/kanban-multiple/overview.md'
+  - Kanban Multiple: 'espocrm-extensions/kanban-multiple/overview.md'
 
   - Layout Pro:
-      - Overview: 'extensions/layout-pro/overview.md'
+      - Overview: 'espocrm-extensions/layout-pro/overview.md'
       - Features:
-          - Custom CSS: 'extensions/layout-pro/custom-css.md'
-          - Grid Layout: 'extensions/layout-pro/grid-layout.md'
+          - Custom CSS: 'espocrm-extensions/layout-pro/custom-css.md'
+          - Grid Layout: 'espocrm-extensions/layout-pro/grid-layout.md'
 
-  - Last Login: 'extensions/last-login/overview.md'
+  - Last Login: 'espocrm-extensions/last-login/overview.md'
 
   - Link Multiple Pro:
-      - Overview: 'extensions/link-multiple-pro/overview.md'
-      - Changelog: 'extensions/link-multiple-pro/changelog.md'
+      - Overview: 'espocrm-extensions/link-multiple-pro/overview.md'
+      - Changelog: 'espocrm-extensions/link-multiple-pro/changelog.md'
 
   - Labels Cells:
-      - Overview: 'extensions/labels-cells/overview.md'
+      - Overview: 'espocrm-extensions/labels-cells/overview.md'
       - Features:
-          - Header Text: 'extensions/labels-cells/header-text.md'
-          - Rich Text Label: 'extensions/labels-cells/rich-text-label.md'
+          - Header Text: 'espocrm-extensions/labels-cells/header-text.md'
+          - Rich Text Label: 'espocrm-extensions/labels-cells/rich-text-label.md'
 
   - Map Plus:
-      - Overview: 'extensions/map-plus/overview.md'
+      - Overview: 'espocrm-extensions/map-plus/overview.md'
       - Features:
-          - Map View: 'extensions/map-plus/map-view.md'
-          - Latitude Longitude: 'extensions/map-plus/latitude-and-longitude.md'
-          - Map Route: 'extensions/map-plus/map-route.md'
-          - Polygon Map: 'extensions/map-plus/polygon-map.md'
-          - Search Place Autocomplete: 'extensions/map-plus/search-place-autocomplete.md'
+          - Map View: 'espocrm-extensions/map-plus/map-view.md'
+          - Latitude Longitude: 'espocrm-extensions/map-plus/latitude-and-longitude.md'
+          - Map Route: 'espocrm-extensions/map-plus/map-route.md'
+          - Polygon Map: 'espocrm-extensions/map-plus/polygon-map.md'
+          - Search Place Autocomplete: 'espocrm-extensions/map-plus/search-place-autocomplete.md'
 
-  - Mask Field: 'extensions/mask-field/overview.md'
+  - Mask Field: 'espocrm-extensions/mask-field/overview.md'
 
   - Mobile App:
-      - Overview: 'extensions/mobile-app/overview.md'
+      - Overview: 'espocrm-extensions/mobile-app/overview.md'
       - Features:
-          - PWA: 'extensions/mobile-app/pwa.md'
-          - Push Notifications: 'extensions/mobile-app/push-notifications.md'
-          - Telegram Notifications: 'extensions/mobile-app/telegram.md'
+          - PWA: 'espocrm-extensions/mobile-app/pwa.md'
+          - Push Notifications: 'espocrm-extensions/mobile-app/push-notifications.md'
+          - Telegram Notifications: 'espocrm-extensions/mobile-app/telegram.md'
       - Providers:
           - WebPush:
-              - Overview: 'extensions/mobile-app/providers/webpush/overview.md'
-              - Setup: 'extensions/mobile-app/providers/webpush/setup.md'
+              - Overview: 'espocrm-extensions/mobile-app/providers/webpush/overview.md'
+              - Setup: 'espocrm-extensions/mobile-app/providers/webpush/setup.md'
           - Telegram:
-              - Overview: 'extensions/mobile-app/providers/telegram/overview.md'
-              - Setup: 'extensions/mobile-app/providers/telegram/setup.md'
+              - Overview: 'espocrm-extensions/mobile-app/providers/telegram/overview.md'
+              - Setup: 'espocrm-extensions/mobile-app/providers/telegram/setup.md'
 
   - Navigation Pro:
       - Features:
-          - Custom Links with Tabs: 'extensions/nav-pro/custom-links-with-tabs.md'
-          - Favorite Entities: 'extensions/nav-pro/favorite-entities.md'
-          - Favorite Records: 'extensions/nav-pro/favorite-records.md'
-          - Separator: 'extensions/nav-pro/separator.md'
+          - Custom Links with Tabs: 'espocrm-extensions/nav-pro/custom-links-with-tabs.md'
+          - Favorite Entities: 'espocrm-extensions/nav-pro/favorite-entities.md'
+          - Favorite Records: 'espocrm-extensions/nav-pro/favorite-records.md'
+          - Separator: 'espocrm-extensions/nav-pro/separator.md'
 
-  - Print: 'extensions/print/overview.md'
+  - Print: 'espocrm-extensions/print/overview.md'
 
-  - Progress Bar: 'extensions/progress-bar/overview.md'
+  - Progress Bar: 'espocrm-extensions/progress-bar/overview.md'
 
-  - Public Form: 'extensions/form/overview.md'
+  - Public Form: 'espocrm-extensions/form/overview.md'
 
-  - Quick Assign: 'extensions/quick-assign/overview.md'
+  - Quick Assign: 'espocrm-extensions/quick-assign/overview.md'
 
-  - Rate Star Field: 'extensions/rate/overview.md'
+  - Rate Star Field: 'espocrm-extensions/rate/overview.md'
 
-  - Reactions: 'extensions/reactions/overview.md'
+  - Reactions: 'espocrm-extensions/reactions/overview.md'
 
-  - Sms: 'extensions/sms/overview.md'
+  - Sms: 'espocrm-extensions/sms/overview.md'
 
   - Stream Plus:
-      - Overview: 'extensions/stream-plus/overview.md'
-      - ChangeLog: 'extensions/stream-plus/changelog.md'
+      - Overview: 'espocrm-extensions/stream-plus/overview.md'
+      - ChangeLog: 'espocrm-extensions/stream-plus/changelog.md'
 
-  - Switch: 'extensions/switch/overview.md'
+  - Switch: 'espocrm-extensions/switch/overview.md'
 
-  - Theme: 'extensions/theme/theme.md'
+  - Theme: 'espocrm-extensions/theme/theme.md'
 
-  - Welcome: 'extensions/welcome/overview.md'
+  - Welcome: 'espocrm-extensions/welcome/overview.md'
 
   - Work Log:
-      - Overview: 'extensions/work-log/overview.md'
+      - Overview: 'espocrm-extensions/work-log/overview.md'
       - Features:
-          - Online / Offline Status: 'extensions/work-log/online-offline.md'
-          - Work Log Button: 'extensions/work-log/work-log-button.md'
+          - Online / Offline Status: 'espocrm-extensions/work-log/online-offline.md'
+          - Work Log Button: 'espocrm-extensions/work-log/work-log-button.md'
