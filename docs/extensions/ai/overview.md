@@ -1,22 +1,18 @@
-# Overview <a href="YOUR_MOBILE_APP_EXTENSION_LINK" target="_blank" id="ext-version" data-id="65b0a98839f5ca186"></a>
+# Ebla AI Documentation
 
-> Ebla AI is an advanced module for EspoCRM that harnesses the power of artificial intelligence to enhance user
-> productivity and streamline workflows. With features like email message generation, lead scoring, and custom formula
-> functions, Ebla AI offers a comprehensive suite of tools to optimize CRM operations.
+## Overview <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-ai-for-espocrm" target="_blank" id="ext-version" data-id="65b0a98839f5ca186"></a>
 
+**Ebla AI** supports both of Gemini and OpenAI, a step to bring the power of AI to your EspoCRM.
+Ebla AI provides a range of AI-driven features, like generating email messages, stream comments suggestions and custom formula functions.
+Enhances communication, lead management, and workflow automation.
 
-<br>
+[See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/ebla-ai-for-espocrm){:target="_blank" .md-button }
+
+## Extension video
 
 <iframe width="750" height="350" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>
-
 ---
-
-#### Providers Setup
-
-- [OpenAI](providers/openai-setup.md)
-- [Gemini](providers/gemini-setup.md)
 
 ### Features
 
@@ -27,17 +23,12 @@
 - [AI Formula Functions](features/formula.md)
 - [AI Sandbox](features/sandbox.md)
 
-<br>
+### Setup and Configuration
 
-## Access control
-
-**Important**: By default, regular and portal users don’t have access to AI features. Administrator needs to enable access
-in Roles.
-
-![img.png](../../_static/images/extensions/ai/features/img_10.png)
-
-!!! warning
-
-    AI Sandbox feature is only available for Admin users
-
+<<<<<<< Updated upstream
 ### <font color=gray> [ChangeLog](changelog.md) </font>
+=======
+- [Setup OpenAI](providers/openai-setup.md)
+- [Setup Gemini](providers/gemini-setup.md)
+- [Access control](features/access-control.md)
+>>>>>>> Stashed changes
