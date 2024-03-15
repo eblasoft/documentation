@@ -1,5 +1,7 @@
 site_name: Eblasoft Documentation
 
+site_url: https://docs.eblasoft.com.tr/
+
 repo_url: https://github.com/eblasoft/documentation/
 edit_uri: edit/main/docs/
 
@@ -14,6 +16,8 @@ extra:
     property: G-ZBGS3K1JEH
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -24,6 +28,10 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 4
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 
 theme:
   name: material
@@ -31,7 +39,13 @@ theme:
   highlightjs: true
   favicon: _static/images/docs/icon.png
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
     - content.action.edit
+    - toc.integrate
+    - navigation.top
   icon:
     edit: material/pencil
   palette:
@@ -64,6 +78,7 @@ nav:
       - Setup:
           - OpenAI: 'extensions/ai/providers/openai-setup.md'
           - Google Gemini: 'extensions/ai/providers/gemini-setup.md'
+          - Access Control: 'extensions/ai/features/access-control.md'
       - Features:
           - AI Profiles: 'extensions/ai/features/ai-profiles.md'
           - AI Prompts: 'extensions/ai/features/ai-prompts.md'
