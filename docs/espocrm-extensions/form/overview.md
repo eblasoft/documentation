@@ -20,4 +20,9 @@
 
 <br>
 
+### Configuration
+
+- **eblaFormClientPath**: default is `../../` (relative path to EspoCRM root directory). you can change it to `../` if you have EspoCRM installed in a subdirectory.
+- **allowEblaFormUploads**: default is `false`. If you want to allow file uploads, set it to `true`.
+
 ### <font color=gray> [ChangeLog](changelog.md) </font>
