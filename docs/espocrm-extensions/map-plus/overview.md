@@ -16,7 +16,7 @@
 
 2. Go to **Administration** -> **Integrations** -> **Google Maps**.
 
-![API Key](../../_static/images/extensions/map-plus/api-key.png)
+![API Key](../../_static/images/espocrm-extensions/map-plus/api-key.png)
 
 <br>
 

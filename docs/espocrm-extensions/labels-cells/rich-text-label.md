@@ -4,14 +4,14 @@
 > in  [Ebla Labels](https://www.eblasoft.com.tr/espocrm-extension-page/labels-cells).
 ---
 
-![rich-text-label](../../_static/images/extensions/labels-cells/rich-text-label.png)
+![rich-text-label](../../_static/images/espocrm-extensions/labels-cells/rich-text-label.png)
 
 
 ---
 
 1- Go to **Administration** -> **Ebla Labels**.
 
-![rich-text-label](../../_static/images/extensions/labels-cells/rich-text-label-op.png)
+![rich-text-label](../../_static/images/espocrm-extensions/labels-cells/rich-text-label-op.png)
 
 ---
 
@@ -21,4 +21,4 @@
 
 4- Select the **Rich Text Label**.
 
-![rich-text-label](../../_static/images/extensions/labels-cells/rich-text-label-op2.png)
+![rich-text-label](../../_static/images/espocrm-extensions/labels-cells/rich-text-label-op2.png)

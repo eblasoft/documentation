@@ -5,13 +5,13 @@ in [Ebla Navigation Pro](https://www.eblasoft.com.tr/espocrm-extension-page/espo
 
 ---
 
-![custom-link](../../_static/images/extensions/nav-pro/custom-link.png)
+![custom-link](../../_static/images/espocrm-extensions/nav-pro/custom-link.png)
 
 ---
 
 **-** Go to **Administration** -> **User Interface** -> **Navbar** -> **Add Custom Link** .
 
-![custom link op](../../_static/images/extensions/nav-pro/custom-link-op.png)
+![custom link op](../../_static/images/espocrm-extensions/nav-pro/custom-link-op.png)
 
 <br>
 

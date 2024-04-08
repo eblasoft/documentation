@@ -3,11 +3,11 @@
 
 ---
 
-![Auto Filter When Parent is Selected](../../_static/images/extensions/dynamic-logic-plus/auto-filter.png)
+![Auto Filter When Parent is Selected](../../_static/images/espocrm-extensions/dynamic-logic-plus/auto-filter.png)
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields Operations**.
 
-![Auto Filter When Parent is Selected](../../_static/images/extensions/dynamic-logic-plus/auto-filter-op.png)
+![Auto Filter When Parent is Selected](../../_static/images/espocrm-extensions/dynamic-logic-plus/auto-filter-op.png)
 
 <br>
 

@@ -10,7 +10,7 @@ Show As Button is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espoc
 
 Enable the toggle buttons group even on the view mode.
 
-![Always Force Edit Mode](../../_static/images/extensions/enum-plus/always-force-edit-mode.png)
+![Always Force Edit Mode](../../_static/images/espocrm-extensions/enum-plus/always-force-edit-mode.png)
 
 <br>
 
@@ -20,7 +20,7 @@ Enable the toggle buttons group even on the view mode.
 
 <br>
 
-<img src="https://eblasoft.github.io/documentation/_static/images/extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>
 
 
 !!! note

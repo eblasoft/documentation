@@ -7,7 +7,7 @@
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields Operations**.
 2. Select the **Cascade Remove Links**.
 
-![removal-of-children](../../_static/images/extensions/dynamic-logic-plus/removal-of-children.png)
+![removal-of-children](../../_static/images/espocrm-extensions/dynamic-logic-plus/removal-of-children.png)
 
 <br>
 

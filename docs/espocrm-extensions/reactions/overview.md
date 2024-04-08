@@ -9,7 +9,7 @@
 
 ---
 
-<img src="https://eblasoft.github.io/documentation/_static/images/extensions/reactions/reactions.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/reactions/reactions.png" alt="drawing" style="width:200px;"/>
 
 ---
 
@@ -19,13 +19,13 @@
 
 ---
 
-![Reactions](../../_static/images/extensions/reactions/reactions-op.png)
+![Reactions](../../_static/images/espocrm-extensions/reactions/reactions-op.png)
 
 <br>
 
 ## Voting Only
 
-![Voting Only](../../_static/images/extensions/reactions/voting-only.png)
+![Voting Only](../../_static/images/espocrm-extensions/reactions/voting-only.png)
 
 <br>
 

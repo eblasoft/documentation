@@ -2,27 +2,27 @@
 
 1. Navigate to **Integrations** -> **Web Push**.
 
-   ![Web Push](../../../../_static/images/extensions/mobile-app/webpush/setup-0.png)
+   ![Web Push](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-0.png)
 
 2. Add VAPID (Voluntary Application Server Identification) public and private keys. If you don't have keys, you can
    press the "Generate" button to create them.
 
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-1.png)
+   ![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-1.png)
 
 3. Go to **Administration** -> **Mobile App** -> **Push Notifications Configuration**.
 
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-2.png)
+   ![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-2.png)
 
 4. In the Push Notifications Configuration, find the "Default Provider" setting and change it to "WebPush."
 
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-3.png)
+   ![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-3.png)
 
 5. Setup Notification Icon and Badge by uploading a PNG images.
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-4.png)
+   ![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-4.png)
 
 6. Users can subscribe and unsubscribe to push notifications from **Push Notification Preferences**.
 
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-5.png)
+   ![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-5.png)
 
 > Now, your EspoCRM instance is configured to use WebPush for push notifications.
 
@@ -34,7 +34,7 @@
 
 <br>
 
-![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-6.png)
+![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/setup-6.png)
 
 ### Troubleshooting:
 
