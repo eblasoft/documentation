@@ -18,7 +18,15 @@
    ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-3.png)
 
 5. Setup Notification Icon and Badge by uploading a PNG images.
-   ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-4.png)
+    ![img.png](../../../../_static/images/extensions/mobile-app/webpush/setup-4.png)
+
+!!! warning "For Chrome 53+ on Android 6.0+, the badge replaces the Chrome browser icon that appears on the notification tray and above the title. In this example, a custom badge for the app replaces the Chrome browser icon"
+
+|**Note**       |   Must use an HTTPS URL                                                                                                                                                     |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Color**     | **Alpha** channel only <br> Not supported: RGB channels. Badges use alpha channels because they must appear on both light and dark backgrounds. |
+| **Resolution** | `72x72` or larger                                                                                                                                      |
+| **Filetype**  | `png`, `gif`, `webp`, `ico`, `cur`, `bmp` Not supported: `svg`                                        
 
 6. Users can subscribe and unsubscribe to push notifications from **Push Notification Preferences**.
 
