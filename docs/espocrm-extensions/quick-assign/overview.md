@@ -5,18 +5,18 @@
 
 ---
 
-![Quick Assign](../../_static/images/espocrm-extensions/quick-assign/quick-assign.png)
+![Quick Assign](../../_static/images/extensions/quick-assign/quick-assign.png)
 
 <br>
 
-![Quick Assign](../../_static/images/espocrm-extensions/quick-assign/quick-assign-1.png)
+![Quick Assign](../../_static/images/extensions/quick-assign/quick-assign-1.png)
 
 ---
 
 1. new action **Assign to User**.
 2. new action **Assign to Me**.
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/quick-assign/quick-assign-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/quick-assign/quick-assign-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 

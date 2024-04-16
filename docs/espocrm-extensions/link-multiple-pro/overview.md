@@ -9,15 +9,15 @@
 
 ---
 
-![how To Use](../../_static/images/espocrm-extensions/link-multiple-pro/link-pro.png)
+![how To Use](../../_static/images/extensions/link-multiple-pro/link-pro.png)
 
 - Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Relationships** -> **Link Multiple Field**.
 
-![how To Use](../../_static/images/espocrm-extensions/link-multiple-pro/link-multiple.png)
+![how To Use](../../_static/images/extensions/link-multiple-pro/link-multiple.png)
 
 - Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Field Type (Link Multiple)** -> **Enable Form** .
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-multiple-pro/link-pro-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/link-multiple-pro/link-pro-op.png" alt="drawing" style="width:200px;"/>
 
 ---
 
@@ -29,29 +29,29 @@ Additional Features:
 
 - Create a new list layout for the linked entity and add it to the link multiple field.
 
-![Additional List Layouts](../../_static/images/espocrm-extensions/link-multiple-pro/add-layout.png)
+![Additional List Layouts](../../_static/images/extensions/link-multiple-pro/add-layout.png)
 
 ### Different layouts for edit and detail modes.
 
 - select the layout for edit and detail modes.
 
-![Different Layouts](../../_static/images/espocrm-extensions/link-multiple-pro/select-layout.png)
+![Different Layouts](../../_static/images/extensions/link-multiple-pro/select-layout.png)
 
 ### Enable Select Button
 
-![Footer Sum Fields](../../_static/images/espocrm-extensions/link-multiple-pro/select-button.png)
+![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/select-button.png)
 
 <br>
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-multiple-pro/select-button-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/link-multiple-pro/select-button-op.png" alt="drawing" style="width:200px;"/>
 
 ### Sum Footer Fields.
 
-![Footer Sum Fields](../../_static/images/espocrm-extensions/link-multiple-pro/sum-footer.png)
+![Footer Sum Fields](../../_static/images/extensions/link-multiple-pro/sum-footer.png)
 
 ### Enable Add Multiple Button.
 
-![Add Multiple Button](../../_static/images/espocrm-extensions/link-multiple-pro/add-multiple.png)
+![Add Multiple Button](../../_static/images/extensions/link-multiple-pro/add-multiple.png)
 
 !!! note
 

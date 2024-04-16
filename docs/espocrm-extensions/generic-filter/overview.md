@@ -14,15 +14,15 @@
 
 --- 
 
-![generic-filter](../../_static/images/espocrm-extensions/generic-filter/generic-filter.png)
+![generic-filter](../../_static/images/extensions/generic-filter/generic-filter.png)
 
-![generic-filter](../../_static/images/espocrm-extensions/generic-filter/generic-filter-set.png)
+![generic-filter](../../_static/images/extensions/generic-filter/generic-filter-set.png)
 
 ---
 
 
 **-** Go to **Administration** > **Generic Filter Settings** > **Generic Filter** > **Settings**.
 
-![generic-filter](../../_static/images/espocrm-extensions/generic-filter/generic-filter-op.png)
+![generic-filter](../../_static/images/extensions/generic-filter/generic-filter-op.png)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

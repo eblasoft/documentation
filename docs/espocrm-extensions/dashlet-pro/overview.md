@@ -5,11 +5,11 @@
 
 ---
 
-![Dash Pro](../../_static/images/espocrm-extensions/dashlet-pro/dash-pro.png)
+![Dash Pro](../../_static/images/extensions/dashlet-pro/dash-pro.png)
 
 <br>
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/dashlet-pro/dash-pro-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/dashlet-pro/dash-pro-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 

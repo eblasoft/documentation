@@ -5,13 +5,13 @@
 
 ---
 
-![Event Plus](../../_static/images/espocrm-extensions/event-plus/event-plus.png)
+![Event Plus](../../_static/images/extensions/event-plus/event-plus.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type {Event Plus}**.
 
-![Event Plus](../../_static/images/espocrm-extensions/event-plus/event-plus-op.png)
+![Event Plus](../../_static/images/extensions/event-plus/event-plus-op.png)
 
 <br>
 

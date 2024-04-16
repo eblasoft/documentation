@@ -6,7 +6,7 @@
 
 <br>
 
-![Lat & Long](../../_static/images/espocrm-extensions/map-plus/latitude-and-longitude.jpg)
+![Lat & Long](../../_static/images/extensions/map-plus/latitude-and-longitude.jpg)
 
 ---
 
@@ -14,4 +14,4 @@
 
 <br>
 
-![Lat & Long](../../_static/images/espocrm-extensions/map-plus/latitude-and-longitude-options.png)
+![Lat & Long](../../_static/images/extensions/map-plus/latitude-and-longitude-options.png)

@@ -10,11 +10,11 @@ WebPush is a web platform feature that enables websites and web applications to 
 users' devices, even when the website is not open. It provides a standardized way for web applications to engage users
 with timely updates and alerts.
 
-![img.jpg](../../../../_static/images/espocrm-extensions/mobile-app/webpush/img_2.jpg)
+![img.jpg](../../../../_static/images/extensions/mobile-app/webpush/img_2.jpg)
 
-![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/img.png)
+![img.png](../../../../_static/images/extensions/mobile-app/webpush/img.png)
 <br>
-![img.png](../../../../_static/images/espocrm-extensions/mobile-app/webpush/img_1.png)
+![img.png](../../../../_static/images/extensions/mobile-app/webpush/img_1.png)
 
 ## Key Features
 

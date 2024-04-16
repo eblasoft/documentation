@@ -7,11 +7,11 @@
 
 ---
 
-![Favorite Entities](../../_static/images/espocrm-extensions/nav-pro/favorite-entities.png)
+![Favorite Entities](../../_static/images/extensions/nav-pro/favorite-entities.png)
 
 ---
 
 1. Go to **Administration** -> **User Interface** -> **Navbar** -> **Add** -> **__FAVORITES_SECTION__**.
 2. Add **__FAVORITES_SECTION__** to **Tab List**.
 
-![Favorite Entities](../../_static/images/espocrm-extensions/nav-pro/favorite-entities-op.png)
+![Favorite Entities](../../_static/images/extensions/nav-pro/favorite-entities-op.png)

@@ -4,10 +4,10 @@
 
 ---
 
-![limit-admin](../../_static/images/espocrm-extensions/admin-pro/admin-limit.png)
+![limit-admin](../../_static/images/extensions/admin-pro/admin-limit.png)
 
 ---
 
 **-** Go to **Administration -> Users -> {user} -> Edit**. (**User must be admin**)
 
-![limit-admin](../../_static/images/espocrm-extensions/admin-pro/admin-limit-op.png)
+![limit-admin](../../_static/images/extensions/admin-pro/admin-limit-op.png)

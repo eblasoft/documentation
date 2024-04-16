@@ -5,6 +5,6 @@
 
 ---
 
-![Gantt View](../../_static/images/espocrm-extensions/gantt/gantt.png)
+![Gantt View](../../_static/images/extensions/gantt/gantt.png)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

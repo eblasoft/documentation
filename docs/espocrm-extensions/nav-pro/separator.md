@@ -5,9 +5,9 @@
 
 ---
 
-![separator](../../_static/images/espocrm-extensions/nav-pro/separator.png )
+![separator](../../_static/images/extensions/nav-pro/separator.png )
 
 ---
 **-** Go to **Administration** -> **User Interface** -> **Navbar** -> **Add Separator** .
 
-![separator op](../../_static/images/espocrm-extensions/nav-pro/separator-op.png )
+![separator op](../../_static/images/extensions/nav-pro/separator-op.png )

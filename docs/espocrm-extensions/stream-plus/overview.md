@@ -8,13 +8,13 @@
 ---
 
 
-![Stream Plus](../../_static/images/espocrm-extensions/stream-plus/stream-plus.png)
+![Stream Plus](../../_static/images/extensions/stream-plus/stream-plus.png)
 
 
 ---
 **-** Go to **Administration** -> **Entity Manager** -> **Note.**
 
-![Stream Plus](../../_static/images/espocrm-extensions/stream-plus/stream-plus-op.png)
+![Stream Plus](../../_static/images/extensions/stream-plus/stream-plus-op.png)
 
 !!! note
 

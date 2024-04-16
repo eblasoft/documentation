@@ -4,4 +4,4 @@
 
 ---
 
-![Favourite](../../_static/images/espocrm-extensions/nav-pro/favourites.png)
+![Favourite](../../_static/images/extensions/nav-pro/favourites.png)

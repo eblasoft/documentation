@@ -51,7 +51,7 @@ Please assign 1 point to profiles that have enterprise email.
 Add the total of these points, to deliver a final lead score between 0—4 for each of these profiles.
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_1.png)
+![img.png](../../../_static/images/extensions/ai/features/img_1.png)
 
 ### Email Reply Assistant
 
@@ -63,4 +63,4 @@ If the email's intent is unclear, the assistant response with 'Provided Emails n
 The aim is to create succinct, relevant, and courteous email replies that convey the necessary information and maintain the decorum expected in professional correspondence. The email subject is {{subject}} and the email body is {{bodyPlain}}.
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img.png)
+![img.png](../../../_static/images/extensions/ai/features/img.png)

@@ -5,7 +5,7 @@
 
 ---
 
-![Online / Offline](../../_static/images/espocrm-extensions/work-log/online-offline.png)
+![Online / Offline](../../_static/images/extensions/work-log/online-offline.png)
 
 ---
 
@@ -13,4 +13,4 @@
 2. Create field type **Boolean**.
 3. select field type **Boolean**.
 
-![Online / Offline](../../_static/images/espocrm-extensions/work-log/online-offline-op.png)
+![Online / Offline](../../_static/images/extensions/work-log/online-offline-op.png)

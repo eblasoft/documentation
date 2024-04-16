@@ -5,6 +5,6 @@
 
 ---
 
-![Infinity Scroll](../../_static/images/espocrm-extensions/infinity-scroll/infinity-scroll.png)
+![Infinity Scroll](../../_static/images/extensions/infinity-scroll/infinity-scroll.png)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

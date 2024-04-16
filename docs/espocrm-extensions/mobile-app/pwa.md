@@ -11,7 +11,7 @@ app-like experience to users. PWAs offer features such as offline access, push n
 access, all while being accessible through a web browser. They provide a responsive and engaging user experience,
 similar to that of native mobile apps.
 
-![img.jpg](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-0.jpg)
+![img.jpg](../../_static/images/extensions/mobile-app/pwa/pwa-0.jpg)
 
 ## Key Features of PWA Integration
 
@@ -38,7 +38,7 @@ similar to that of native mobile apps.
 - Configure the quick create list for the PWA, allowing users to easily access and create records directly from the PWA
   interface.
 
-  ![img.jpg](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-1.jpg)
+  ![img.jpg](../../_static/images/extensions/mobile-app/pwa/pwa-1.jpg)
 
 ## Setting Up the Progressive Web App (PWA)
 
@@ -48,7 +48,7 @@ To set up the Progressive Web App (PWA) feature in EspoCRM, follow the steps bel
 
 - Setup Mobile App theme & preferences as per your requirements.
 
-  ![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/setup-0.png)
+  ![img.png](../../_static/images/extensions/mobile-app/pwa/setup-0.png)
 
 ### Settings
 
@@ -72,8 +72,8 @@ Once the PWA feature is set up, users can access the PWA by following the steps 
 
 - Click on the `Install App` option in the browser menu to add the PWA to your device.
 
-![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-2.jpg)
+![img.png](../../_static/images/extensions/mobile-app/pwa/pwa-2.jpg)
 
 - The PWA will be added to your device's home screen, allowing you to access EspoCRM as a native-like app.
 
-![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-3.jpg)
+![img.png](../../_static/images/extensions/mobile-app/pwa/pwa-3.jpg)

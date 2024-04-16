@@ -8,7 +8,7 @@ ___
 
 **-** Go to **Administration -> Admin Pro settings** .
 
-![max-allowed-logins](../../_static/images/espocrm-extensions/admin-pro/max-allowed.png)
+![max-allowed-logins](../../_static/images/extensions/admin-pro/max-allowed.png)
 
 !!! note
 

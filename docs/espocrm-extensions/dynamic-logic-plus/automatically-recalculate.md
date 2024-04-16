@@ -9,7 +9,7 @@
 
 <br>
 
-![Color Option](../../_static/images/espocrm-extensions/dynamic-logic-plus/automatically-recalculate.png)
+![Color Option](../../_static/images/extensions/dynamic-logic-plus/automatically-recalculate.png)
 
 
 <br>

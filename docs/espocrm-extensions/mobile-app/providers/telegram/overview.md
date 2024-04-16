@@ -4,9 +4,9 @@ The Telegram Integration in the Mobile App extension for EspoCRM enhances commun
 leveraging the Telegram messaging platform. With this integration, users can receive real-time updates, alerts, and
 notifications directly through their Telegram accounts.
 
-![img.png](../../../../_static/images/espocrm-extensions/mobile-app/telegram/img.png)
+![img.png](../../../../_static/images/extensions/mobile-app/telegram/img.png)
 
-![img.jpg](../../../../_static/images/espocrm-extensions/mobile-app/webpush/img_2.jpg)
+![img.jpg](../../../../_static/images/extensions/mobile-app/webpush/img_2.jpg)
 
 ## What is Telegram Integration?
 

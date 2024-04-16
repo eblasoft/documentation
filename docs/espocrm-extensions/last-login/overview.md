@@ -5,7 +5,7 @@
  
 ---
 
-![Last Login](../../_static/images/espocrm-extensions/last-login/last-login.png)
+![Last Login](../../_static/images/extensions/last-login/last-login.png)
 
 <br>
 

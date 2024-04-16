@@ -11,13 +11,13 @@
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
 
-![mask field](../../_static/images/espocrm-extensions/mask-field/mask-field.png)
+![mask field](../../_static/images/extensions/mask-field/mask-field.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields(Varchar & Phone)**.
 
-![mask field op](../../_static/images/espocrm-extensions/mask-field/mask-field-op.png)
+![mask field op](../../_static/images/extensions/mask-field/mask-field-op.png)
 
 <br>
 

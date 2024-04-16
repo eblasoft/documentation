@@ -27,7 +27,7 @@ Write decline reply for: {{name}}
 Write approve reply for: {{name}}
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_2.png)
+![img.png](../../../_static/images/extensions/ai/features/img_2.png)
 
 ### Stream Comment
 
@@ -35,7 +35,7 @@ Write approve reply for: {{name}}
 Write a one line brief comment to ADD_COMMENT_HERE
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_3.png)
+![img.png](../../../_static/images/extensions/ai/features/img_3.png)
 
 ### Improve Stream Comment for Case entity
 
@@ -50,4 +50,4 @@ MY_REPLAY
 Improve my reply above
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_4.png)
+![img.png](../../../_static/images/extensions/ai/features/img_4.png)

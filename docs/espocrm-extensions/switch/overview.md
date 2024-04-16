@@ -4,13 +4,13 @@
 
 ---
 
-![Switch](../../_static/images/espocrm-extensions/switch/switch.png)
+![Switch](../../_static/images/extensions/switch/switch.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Bool)** -> **Display As Switch**.
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/switch/switch-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/switch/switch-op.png" alt="drawing" style="width:200px;"/>
 
 <br>
 

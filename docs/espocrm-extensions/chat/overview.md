@@ -9,13 +9,13 @@
 
 ---
 
-![Ebla Chat](../../_static/images/espocrm-extensions/chat/setting-up/chat.png)
+![Ebla Chat](../../_static/images/extensions/chat/setting-up/chat.png)
 
 ---
 
 **-** Go to  **Administration** -> **Roles** -> enable access to **Dialog**  .
 
-![role](../../_static/images/espocrm-extensions/chat/setting-up/role.png)
+![role](../../_static/images/extensions/chat/setting-up/role.png)
 
 <br>
 

@@ -8,16 +8,16 @@ context and the prompt you provide.
 1. Navigate to the Email you want to reply to it.
 2. Click **Reply**.
 
-   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_5.png)
+   ![img.png](../../../_static/images/extensions/ai/features/img_5.png)
 
 3. Click **AI Generate**.
 
-   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_6.png)
+   ![img.png](../../../_static/images/extensions/ai/features/img_6.png)
 
 4. Select Profile "Email Reply Assistant".
 5. Enter the prompt context or select it from predefined prompts.
 
-   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_7.png)
+   ![img.png](../../../_static/images/extensions/ai/features/img_7.png)
 
 6. Click **Send**.
 7. The AI will generate a reply based on the context and the prompt you provided.

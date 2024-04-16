@@ -7,7 +7,7 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-en
 
 ---
 
-![Show As Button](../../_static/images/espocrm-extensions/enum-plus/force-edit-on-list-view.png)
+![Show As Button](../../_static/images/extensions/enum-plus/force-edit-on-list-view.png)
 
 ---
 
@@ -15,4 +15,4 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-en
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** .
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>

@@ -7,13 +7,13 @@
 
 ---
 
-![Category Tree](../../_static/images/espocrm-extensions/category-tree/category-tree.png)
+![Category Tree](../../_static/images/extensions/category-tree/category-tree.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **Create Entity** -> **Type (Category Tree)**.
 
-![Category Tree](../../_static/images/espocrm-extensions/category-tree/category-tree-op.png)
+![Category Tree](../../_static/images/extensions/category-tree/category-tree-op.png)
 
 <br>
 

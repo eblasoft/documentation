@@ -5,13 +5,13 @@
 
 ---
 
-![Welcome Message](../../_static/images/espocrm-extensions/welcome/welcome.png)
+![Welcome Message](../../_static/images/extensions/welcome/welcome.png)
 
 ---
 For edit welcome message go to **Administration** -> **Label Manager** -> **Global** -> **labels** -> **welcomeMessage**.
 
 ---
-![Welcome Message](../../_static/images/espocrm-extensions/welcome/welcome-op.png)
+![Welcome Message](../../_static/images/extensions/welcome/welcome-op.png)
 
 <br>
 

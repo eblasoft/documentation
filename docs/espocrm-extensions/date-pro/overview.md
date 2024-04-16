@@ -5,14 +5,14 @@
 
 ---
 
-![Date Pro](../../_static/images/espocrm-extensions/date-pro/time-zone.png)
+![Date Pro](../../_static/images/extensions/date-pro/time-zone.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Date-Time with
    Timezone**.
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/date-pro/time-zone-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/extensions/date-pro/time-zone-op.png" alt="drawing" style="width:200px;"/>
 
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
