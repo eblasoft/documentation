@@ -5,12 +5,12 @@
 
 ---
 
-![Kanban Multiple](../../_static/images/extensions/kanban-multiple/kanban.png)
+![Kanban Multiple](../../_static/images/espocrm-extensions/kanban-multiple/kanban.png)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Kanban Status Fields** .
 
-![Kanban Multiple](../../_static/images/extensions/kanban-multiple/kanban-op.png)
+![Kanban Multiple](../../_static/images/espocrm-extensions/kanban-multiple/kanban-op.png)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

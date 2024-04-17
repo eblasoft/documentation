@@ -5,7 +5,7 @@
 
 <iframe width="650" height="315" src=" https://www.youtube.com/embed/gc3Sxb4rPWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Map Route](../../_static/images/extensions/map-plus/map-route.jpg)
+![Map Route](../../_static/images/espocrm-extensions/map-plus/map-route.jpg)
 
 ---
 
@@ -13,5 +13,5 @@
 2. Create a new field with type **Map Route**.
 3. Set **Address Field** to the field that contains the address.
 
-![Map Route](../../_static/images/extensions/map-plus/map-route-op.png)
+![Map Route](../../_static/images/espocrm-extensions/map-plus/map-route-op.png)
 

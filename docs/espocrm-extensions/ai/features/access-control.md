@@ -4,7 +4,7 @@
 
 
 
-![img.png](../../../_static/images/extensions/ai/features/img_10.png)
+![img.png](../../../_static/images/espocrm-extensions/ai/features/img_10.png)
 
 !!! Note
 

@@ -9,7 +9,7 @@ on the previous comments and the prompt you provide.
 2. Click on Stream section on **Write your comment here**.
 3. Press on the bolt icon button.
 
-   ![img.png](../../../_static/images/extensions/ai/features/img_8.png)
+   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_8.png)
 
 4. Select Profile. (Optional)
 5. Enter the prompt context or select it from predefined prompts.

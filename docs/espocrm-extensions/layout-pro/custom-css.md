@@ -7,4 +7,4 @@ Custom Css is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocrm
 
 Ability edit any Css style class for EspoCRM.
 
-![custom-css](../../_static/images/extensions/layout-pro/custom-css.png)
+![custom-css](../../_static/images/espocrm-extensions/layout-pro/custom-css.png)

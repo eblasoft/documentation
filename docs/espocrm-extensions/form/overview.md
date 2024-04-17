@@ -65,7 +65,7 @@ After installing the "Ebla Public Form" extension, you can start creating forms 
 - **allowEblaFormUploads**: <br>
   default is `false`. If you want to allow file uploads, set it to `true`.
 
-![Public Forms](../../_static/images/extensions/form/form-op.png)
+![Public Forms](../../_static/images/espocrm-extensions/form/form-op.png)
 
 
 ## Support and Feedback

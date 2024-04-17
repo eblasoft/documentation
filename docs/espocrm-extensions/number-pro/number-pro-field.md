@@ -5,14 +5,14 @@
 
 ---
 
-![Number Pro Field](../../_static/images/extensions/number-pro/number-pro-field.png)
+![Number Pro Field](../../_static/images/espocrm-extensions/number-pro/number-pro-field.png)
 
 ---
 
 1. Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields**.
 2. Create a new field with type **Number Pro**.
 
-![Number Pro Field](../../_static/images/extensions/number-pro/number-pro-field-op.png)
+![Number Pro Field](../../_static/images/espocrm-extensions/number-pro/number-pro-field-op.png)
 
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>

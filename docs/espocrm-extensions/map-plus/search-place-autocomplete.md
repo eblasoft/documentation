@@ -8,4 +8,4 @@
 
 <br>
 
-![search](../../_static/images/extensions/map-plus/search-place-auto.png)
+![search](../../_static/images/espocrm-extensions/map-plus/search-place-auto.png)

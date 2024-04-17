@@ -6,11 +6,11 @@
 
 ---
 
-![Map View](../../_static/images/extensions/map-plus/map-view.jpg)
+![Map View](../../_static/images/espocrm-extensions/map-plus/map-view.jpg)
 
 ---
 
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Edit** .
 
-![Map View](../../_static/images/extensions/map-plus/map-view-op.png)
+![Map View](../../_static/images/espocrm-extensions/map-plus/map-view-op.png)

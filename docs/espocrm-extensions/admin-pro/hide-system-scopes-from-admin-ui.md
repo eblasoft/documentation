@@ -5,10 +5,10 @@
 
 ---
 
-![hide-system-scopes](../../_static/images/extensions/admin-pro/active-scope.png)
+![hide-system-scopes](../../_static/images/espocrm-extensions/admin-pro/active-scope.png)
 
 ---
 
 **-** Go to **Administration -> Admin Pro settings** .
 
-![hide-system-scopes](../../_static/images/extensions/admin-pro/active-scope-op.png)
+![hide-system-scopes](../../_static/images/espocrm-extensions/admin-pro/active-scope-op.png)

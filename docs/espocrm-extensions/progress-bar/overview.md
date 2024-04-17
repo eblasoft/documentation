@@ -6,14 +6,14 @@
 
 ---
 
-![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar-op.jpg)
+![Progress Bar](../../_static/images/espocrm-extensions/progress-bar/progress-bar-op.jpg)
 
 ---
 
 **-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Create Field type (Integer ,
    Float , Currency)** -> **Display As Progress Bar**.
 
-![Progress Bar](../../_static/images/extensions/progress-bar/progress-bar-op.png)
+![Progress Bar](../../_static/images/espocrm-extensions/progress-bar/progress-bar-op.png)
 
 <br>
 

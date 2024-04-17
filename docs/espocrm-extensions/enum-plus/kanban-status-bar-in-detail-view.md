@@ -8,7 +8,7 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ka
 
 ---
 
-![Kanban Status Bar in Detail View](../../_static/images/extensions/enum-plus/kanban-status-bar-in-detail-view.png)
+![Kanban Status Bar in Detail View](../../_static/images/espocrm-extensions/enum-plus/kanban-status-bar-in-detail-view.png)
 
 ---
 
@@ -22,4 +22,4 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ka
 
 <br>
 
-![Enable Kanban Status Bar in Detail View](../../_static/images/extensions/enum-plus/entity-param.png)
+![Enable Kanban Status Bar in Detail View](../../_static/images/espocrm-extensions/enum-plus/entity-param.png)

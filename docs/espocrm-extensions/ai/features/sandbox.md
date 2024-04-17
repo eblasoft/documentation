@@ -12,4 +12,4 @@ Sandbox is a safe environment where you can test your AI prompts and formula fun
 
 ___
 
-![img.png](../../../_static/images/extensions/ai/features/img_9.png)
+![img.png](../../../_static/images/espocrm-extensions/ai/features/img_9.png)

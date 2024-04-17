@@ -21,7 +21,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
     EspoCRM support maximum 4 equals cells per row by default.
 
-![12](../../_static/images/extensions/layout-pro/12-columns.png)
+![12](../../_static/images/espocrm-extensions/layout-pro/12-columns.png)
 
 ---
 
@@ -31,7 +31,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 2. Header Background Color
 3. Header Font Color
 
-![panel](../../_static/images/extensions/layout-pro/panel-customisation.png)
+![panel](../../_static/images/espocrm-extensions/layout-pro/panel-customisation.png)
 
 ---
 
@@ -41,7 +41,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 2. Header Background Color
 3. Header Font Color
 
-![bottom](../../_static/images/extensions/layout-pro/bottom-panels-customisation.png)
+![bottom](../../_static/images/espocrm-extensions/layout-pro/bottom-panels-customisation.png)
 
 ---
 
@@ -53,7 +53,7 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 4. Font Bold
 5. Css Class
 
-![field](../../_static/images/extensions/layout-pro/field-customisation.png)
+![field](../../_static/images/espocrm-extensions/layout-pro/field-customisation.png)
 
 ---
 
@@ -72,4 +72,4 @@ Gird Layout is available in [Ebla Layout Pro](https://www.eblasoft.com.tr/espocr
 
     EspoCRM just support list layout by default.
 
-![additional](../../_static/images/extensions/layout-pro/additional-layout.png)
+![additional](../../_static/images/espocrm-extensions/layout-pro/additional-layout.png)
