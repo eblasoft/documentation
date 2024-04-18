@@ -1,6 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     loadNavpane();
+    loadChangeLog();
+    fetchData();
 });
+
+function loadChangeLog() {
+    const $changeLogWrapper = document.querySelector('div.change-log-wrapper');
+    if (!$changeLogWrapper) {
+        return;
+    }
+
+    const extId = $changeLogWrapper.getAttribute("data-id");
+    const remoteUrl = `https://crm.eblasoft.com.tr/?entryPoint=changeLog&exId=${extId}`;
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', remoteUrl, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            $changeLogWrapper.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+}
 
 function loadNavpane() {
     var width = window.innerWidth;
@@ -21,6 +42,11 @@ function loadNavpane() {
 
 async function fetchData() {
     const $extVersion = document.getElementById("ext-version");
+
+    if (!$extVersion) {
+        return;
+    }
+
     const id = $extVersion.getAttribute("data-id");
     const url = 'https://crm.eblasoft.com.tr/api/v1/Docs?id=' + id;
     const response = await fetch(url);
@@ -31,10 +57,7 @@ async function fetchData() {
 
     const badgeImg = document.createElement("img");
     badgeImg.src = badgeUrl;
-    badgeImg.style = "height: 22px; margin-left: 10px;";
-
+    badgeImg.classList.add('ext-badge');
 
     $extVersion.appendChild(badgeImg);
 }
-
-fetchData();

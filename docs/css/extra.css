@@ -96,5 +96,60 @@ iframe.changelog {
     width: 100%;
     height: calc(100% - 260px);
     border: none;
-    position: absolute;
+}
+
+/* change log table */
+.change-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.change-log-table th,
+.change-log-table td {
+    padding: 8px;
+    border: 1px solid #dee2e6; /* Border color for table cells */
+}
+
+.change-log-table th {
+    background-color: #00000008; /* Header background color */
+    font-weight: bold;
+    text-align: left;
+}
+
+.change-log-table tbody tr:nth-of-type(odd) {
+    background-color: #0000000f; /* Stripe color for odd rows */
+}
+
+.change-log-table td ul {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .change-log-table thead {
+        display: none;
+    }
+
+    .change-log-table tr {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .change-log-table td {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        font-size: 14px;
+    }
+
+    .change-log-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+/* badges */
+img.ext-badge {
+    height: 22px;
 }
