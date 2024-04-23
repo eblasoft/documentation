@@ -96,12 +96,7 @@ Here is the list sorted alphabetically:
   * [Features](espocrm-extensions/mobile-app/overview.md)
   * [ChangeLog](espocrm-extensions/mobile-app/changelog.md)
 
-* [Navigation Pro](espocrm-extensions/nav-pro/custom-links-with-tabs.md)
-  * [Custom Links With Tabs](espocrm-extensions/nav-pro/custom-links-with-tabs.md)
-  * [Favorite Entities](espocrm-extensions/nav-pro/favorite-entities.md)
-  * [Favorite Records](espocrm-extensions/nav-pro/favorite-list.md)
-  * [Separator](espocrm-extensions/nav-pro/separator.md)
-  * [ChangeLog](espocrm-extensions/nav-pro/changelog.md)
+* [Nav Pro](espocrm-extensions/nav-pro/overview.md)
 
 * [Print](espocrm-extensions/print/overview.md)
   * [ChangeLog](espocrm-extensions/print/changelog.md)

@@ -153,3 +153,13 @@ iframe.changelog {
 img.ext-badge {
     height: 22px;
 }
+
+/* general */
+h2 {
+    clear: both;
+}
+
+a.glightbox img {
+    padding: 4px;
+    border: 1px solid #ccc;
+}

@@ -15,6 +15,9 @@ extra:
     provider: google
     property: G-ZBGS3K1JEH
 
+plugins:
+  - glightbox
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -168,12 +171,7 @@ nav:
               - Overview: 'espocrm-extensions/mobile-app/providers/telegram/overview.md'
               - Setup: 'espocrm-extensions/mobile-app/providers/telegram/setup.md'
 
-  - Navigation Pro:
-      - Features:
-          - Custom Links with Tabs: 'espocrm-extensions/nav-pro/custom-links-with-tabs.md'
-          - Favorite Entities: 'espocrm-extensions/nav-pro/favorite-entities.md'
-          - Favorite Records: 'espocrm-extensions/nav-pro/favorite-records.md'
-          - Separator: 'espocrm-extensions/nav-pro/separator.md'
+  - Nav Pro: 'espocrm-extensions/nav-pro/overview.md'
 
   - Print: 'espocrm-extensions/print/overview.md'
 
