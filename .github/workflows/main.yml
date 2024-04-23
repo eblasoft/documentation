@@ -28,5 +28,5 @@ jobs:
       - run: pip install install mkdocs
       - run: pip install mdx_truly_sane_lists
       - run: pip install mkdocs-material
-      - run: pip install -r glightbox
+      - run: pip install mkdocs-glightbox
       - run: mkdocs gh-deploy --force
