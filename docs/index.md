@@ -66,7 +66,6 @@ Here is the list sorted alphabetically:
   * [ChangeLog](espocrm-extensions/last-login/changelog.md)
 
 * [Link Multiple Pro](espocrm-extensions/link-multiple-pro/overview.md)
-  * [Features](espocrm-extensions/link-multiple-pro/features.md)
   * [ChangeLog](espocrm-extensions/link-multiple-pro/changelog.md)
 
 * [Labels Cells](espocrm-extensions/labels-cells/overview.md)
@@ -83,7 +82,6 @@ Here is the list sorted alphabetically:
   * [ChangeLog](espocrm-extensions/map-plus/changelog.md)
 
 * [Mask Field](espocrm-extensions/mask-field/overview.md)
-  * [Features](espocrm-extensions/link-multiple-pro/features.md)
   * [ChangeLog](espocrm-extensions/link-multiple-pro/changelog.md)
 
 * [Mobile App](espocrm-extensions/mobile-app/overview.md)

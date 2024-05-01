@@ -5,13 +5,13 @@ Ebla Nav Pro is an extension for EspoCRM that enhances the navigation experience
 
 [See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-navigation-pro){:target="_blank" .md-button }
 
-- Quick add buttons.
-- Custom links.
-- Mouse hover open sub-menu.
-- Favorites menu
-- Favorites tabs section
-- Menu separator line.
-- Clear cache on user menu.
+- [Quick add buttons](#1-quick-add-buttons).
+- [Custom links](#2-open-in-new-tab).
+- [Mouse hover open sub-menu](#3-mouse-hover-sub-menu).
+- [Favorites menu](#4-favourite-menu-on-top-navigation-bar)
+- [Favorites tabs section](#5-favourites-tabs-section)
+- [Menu separator line.](#6-menu-separator-line)
+- [Clear cache on user menu.](#7-clear-cache-on-user-menu)
 
 These features aim to streamline the navigation process, improve user productivity, and provide a more intuitive and efficient user experience within EspoCRM.
 
