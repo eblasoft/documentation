@@ -163,8 +163,6 @@ nav:
       - Overview: 'espocrm-extensions/mobile-app/overview.md'
       - Features:
           - PWA: 'espocrm-extensions/mobile-app/pwa.md'
-          - Push Notifications: 'espocrm-extensions/mobile-app/push-notifications.md'
-          - Telegram Notifications: 'espocrm-extensions/mobile-app/telegram.md'
       - Providers:
           - WebPush:
               - Overview: 'espocrm-extensions/mobile-app/providers/webpush/overview.md'
