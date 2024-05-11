@@ -2,6 +2,8 @@
 
 Here is the list sorted alphabetically:
 
+* [Shared Filter](espocrm-extensions/shared-filter/overview.md)
+
 * [Admin Pro](espocrm-extensions/admin-pro/overview.md)
   * [Hied System Scopes](espocrm-extensions/admin-pro/hide-system-scopes-from-admin-ui.md)
   * [Limit Admin](espocrm-extensions/admin-pro/limit-admin-user-permissions.md)

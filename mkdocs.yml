@@ -68,6 +68,8 @@ theme:
         name: Switch to light mode
 
 nav:
+  - Shared Filter: 'espocrm-extensions/shared-filter/overview.md'
+
   - Admin Pro:
       - Overview: 'espocrm-extensions/admin-pro/overview.md'
       - Features:
