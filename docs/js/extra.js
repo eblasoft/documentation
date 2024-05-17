@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadNavpane();
     loadChangeLog();
     fetchData();
+    iframeClass();
 });
 
 function loadChangeLog() {
@@ -60,4 +61,11 @@ async function fetchData() {
     badgeImg.classList.add('ext-badge');
 
     $extVersion.appendChild(badgeImg);
+}
+
+function iframeClass() {
+    // Check if the page is in an iframe, add class to body
+    if (window.self !== window.top) {
+        document.body.classList.add('in-iframe');
+    }
 }
