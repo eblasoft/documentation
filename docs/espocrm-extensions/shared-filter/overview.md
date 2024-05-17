@@ -1,7 +1,7 @@
 # EspoCRM Shared Filter Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-shared-filter" target="_blank" id="ext-version" data-id="65f1ab569c0f22833"></a>
 
 ## Overview
-Ability to share filters with other users in EspoCRM. can also feed data to external software via API.  
+Manage filters & share with users on Espocrm. Also, can share data with external software via API.
 
 [See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-shared-filter){:target="_blank" .md-button }
 
