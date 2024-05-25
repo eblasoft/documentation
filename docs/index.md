@@ -15,7 +15,7 @@ Here is the list sorted alphabetically:
   * [Show Permissions For Users](espocrm-extensions/admin-pro/show-permissions-for-specific-user-calculated.md)
   * [ChangeLog](espocrm-extensions/admin-pro/changelog.md)
 
-* [Number Pro (Auto Increment)](espocrm-extensions/number-pro/number-pro-field.md)
+* [Number Pro](espocrm-extensions/number-pro/number-pro-field.md)
   * [ChangeLog](espocrm-extensions/number-pro/changelog.md)
 
 * [Category Tree](espocrm-extensions/category-tree/overview.md)
