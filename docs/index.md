@@ -108,8 +108,7 @@ Here is the list sorted alphabetically:
 * [Progress Bar](espocrm-extensions/progress-bar/overview.md)
   * [ChangeLog](espocrm-extensions/progress-bar/changelog.md)
 
-* [Public Form](espocrm-extensions/form/overview.md)
-  * [ChangeLog](espocrm-extensions/form/changelog.md)
+* [Public Form](espocrm-extensions/public-form/overview.md)
 
 * [Quick Assign](espocrm-extensions/quick-assign/overview.md)
   * [ChangeLog](espocrm-extensions/quick-assign/changelog.md)
