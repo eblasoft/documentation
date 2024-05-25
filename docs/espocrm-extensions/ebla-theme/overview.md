@@ -9,7 +9,7 @@
 
 ---
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/theme/theme.png" alt="drawing" style="width:200px;"/>
+![Ebla Theme](../../_static/images/espocrm-extensions/ebla-theme/theme.png)
 
 <br>
 
@@ -34,8 +34,7 @@
     - Brand Warning
     - Brand Primary
 
-
-![Ebla Theme](../../_static/images/espocrm-extensions/theme/theme-set.png)
+![Ebla Theme](../../_static/images/espocrm-extensions/ebla-theme/theme-set.png)
 
 
 <br>

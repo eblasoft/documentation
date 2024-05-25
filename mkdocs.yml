@@ -70,6 +70,8 @@ theme:
 nav:
   - Shared Filter: 'espocrm-extensions/shared-filter/overview.md'
 
+  - Theme: 'espocrm-extensions/ebla-theme/overview.md'
+
   - Admin Pro:
       - Overview: 'espocrm-extensions/admin-pro/overview.md'
       - Features:
@@ -192,8 +194,6 @@ nav:
       - ChangeLog: 'espocrm-extensions/stream-plus/changelog.md'
 
   - Switch: 'espocrm-extensions/switch/overview.md'
-
-  - Theme: 'espocrm-extensions/theme/theme.md'
 
   - Welcome: 'espocrm-extensions/welcome/overview.md'
 

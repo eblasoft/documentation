@@ -4,6 +4,8 @@ Here is the list sorted alphabetically:
 
 * [Shared Filter](espocrm-extensions/shared-filter/overview.md)
 
+* [Theme](espocrm-extensions/ebla-theme/overview.md)
+
 * [Admin Pro](espocrm-extensions/admin-pro/overview.md)
   * [Hied System Scopes](espocrm-extensions/admin-pro/hide-system-scopes-from-admin-ui.md)
   * [Limit Admin](espocrm-extensions/admin-pro/limit-admin-user-permissions.md)
@@ -124,9 +126,6 @@ Here is the list sorted alphabetically:
 
 * [Switch](espocrm-extensions/switch/overview.md)
   * [ChangeLog](espocrm-extensions/switch/changelog.md)
-
-* [Theme](espocrm-extensions/theme/theme.md)
-  * [ChangeLog](espocrm-extensions/theme/changelog.md)
 
 * [Welcome](espocrm-extensions/welcome/overview.md)
   * [ChangeLog](espocrm-extensions/welcome/changelog.md)
