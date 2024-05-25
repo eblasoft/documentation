@@ -5,6 +5,8 @@ Here is the list sorted alphabetically:
 * [Shared Filter](espocrm-extensions/shared-filter/overview.md)
 
 * [Theme](espocrm-extensions/ebla-theme/overview.md)
+* 
+* [AI](espocrm-extensions/espocrm-ai/overview.md)
 
 * [Admin Pro](espocrm-extensions/admin-pro/overview.md)
   * [Hied System Scopes](espocrm-extensions/admin-pro/hide-system-scopes-from-admin-ui.md)

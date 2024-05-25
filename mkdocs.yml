@@ -81,18 +81,18 @@ nav:
           - Show Permissions For Users: 'espocrm-extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
 
   - Ai:
-      - Overview: 'espocrm-extensions/ai/overview.md'
+      - Overview: 'espocrm-extensions/espocrm-ai/overview.md'
       - Setup:
-          - OpenAI: 'espocrm-extensions/ai/providers/openai-setup.md'
-          - Google Gemini: 'espocrm-extensions/ai/providers/gemini-setup.md'
-          - Access Control: 'espocrm-extensions/ai/features/access-control.md'
+          - OpenAI: 'espocrm-extensions/espocrm-ai/providers/openai-setup.md'
+          - Google Gemini: 'espocrm-extensions/espocrm-ai/providers/gemini-setup.md'
+          - Access Control: 'espocrm-extensions/espocrm-ai/features/access-control.md'
       - Features:
-          - AI Profiles: 'espocrm-extensions/ai/features/ai-profiles.md'
-          - AI Prompts: 'espocrm-extensions/ai/features/ai-prompts.md'
-          - Email Reply: 'espocrm-extensions/ai/features/email-reply.md'
-          - Stream Comment: 'espocrm-extensions/ai/features/stream-comment.md'
-          - Formula: 'espocrm-extensions/ai/features/formula.md'
-          - Sandbox: 'espocrm-extensions/ai/features/sandbox.md'
+          - AI Profiles: 'espocrm-extensions/espocrm-ai/features/ai-profiles.md'
+          - AI Prompts: 'espocrm-extensions/espocrm-ai/features/ai-prompts.md'
+          - Email Reply: 'espocrm-extensions/espocrm-ai/features/email-reply.md'
+          - Stream Comment: 'espocrm-extensions/espocrm-ai/features/stream-comment.md'
+          - Formula: 'espocrm-extensions/espocrm-ai/features/formula.md'
+          - Sandbox: 'espocrm-extensions/espocrm-ai/features/sandbox.md'
 
   - Number Pro (Auto Increment): 'espocrm-extensions/number-pro/number-pro-field.md'
 
