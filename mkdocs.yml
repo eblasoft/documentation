@@ -68,6 +68,8 @@ theme:
         name: Switch to light mode
 
 nav:
+  - Gantt View: 'espocrm-extensions/gantt/overview.md'
+
   - Shared Filter: 'espocrm-extensions/shared-filter/overview.md'
 
   - Admin Pro:
@@ -121,8 +123,6 @@ nav:
   - Event Plus: 'espocrm-extensions/event-plus/event-plus.md'
 
   - Generic Filter: 'espocrm-extensions/generic-filter/overview.md'
-
-  - Gantt View: 'espocrm-extensions/gantt/overview.md'
 
   - Iframe: 'espocrm-extensions/iframe/iframe-field.md'
 

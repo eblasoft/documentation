@@ -2,6 +2,9 @@
 
 Here is the list sorted alphabetically:
 
+* [Gantt View](espocrm-extensions/gantt/overview.md)
+  * [ChangeLog](espocrm-extensions/gantt/changelog.md)
+
 * [Shared Filter](espocrm-extensions/shared-filter/overview.md)
 
 * [Admin Pro](espocrm-extensions/admin-pro/overview.md)
@@ -45,9 +48,6 @@ Here is the list sorted alphabetically:
 
 * [Generic Filter](espocrm-extensions/generic-filter/overview.md)
   * [ChangeLog](espocrm-extensions/generic-filter/changelog.md)
-
-* [Gantt View](espocrm-extensions/gantt/overview.md)
-  * [ChangeLog](espocrm-extensions/gantt/changelog.md)
 
 * [Iframe](espocrm-extensions/iframe/iframe-field.md)
   * [ChangeLog](espocrm-extensions/iframe/changelog.md)
