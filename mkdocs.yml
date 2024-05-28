@@ -23,8 +23,17 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
 
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ebla-soft/
+
 plugins:
   - glightbox
+  - search
+  #- social
+  #- tags
+
+copyright: Copyright &copy; 2016 - 2024 Eblasoft Bilişim Ltd.
 
 markdown_extensions:
   - attr_list
@@ -50,6 +59,7 @@ theme:
   highlightjs: true
   favicon: _static/images/docs/blue-logo.png
   features:
+    # Navigation features
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
@@ -58,9 +68,17 @@ theme:
     #- navigation.path
     - navigation.indexes
     - navigation.prune
-    - content.action.edit
-    - toc.integrate
     - navigation.top
+    - navigation.footer
+
+    - header.autohide
+
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+    #- toc.integrate
+    - toc.follow
   icon:
     edit: material/pencil
 
