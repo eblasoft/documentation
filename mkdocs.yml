@@ -154,12 +154,6 @@ nav:
   - Date Pro: 'espocrm-extensions/date-pro/index.md'
 
   - Dynamic Logic Plus:
-      - Overview: 'espocrm-extensions/dynamic-logic-plus/index.md'
-      - Features:
-          - Auto Recalculate Formula: 'espocrm-extensions/dynamic-logic-plus/automatically-recalculate.md'
-          - Auto Remove Children upon Record Deletion: 'espocrm-extensions/dynamic-logic-plus/removal-of-children.md'
-          - Auto Filtering When Parent is Selected: 'espocrm-extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md'
-          - links Must Be Empty Before Remove: 'espocrm-extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md'
 
   - Enum Plus:
       - Overview: 'espocrm-extensions/enum-plus/index.md'
