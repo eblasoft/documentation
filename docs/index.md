@@ -1,6 +1,10 @@
-# Eblasoft Espocrm Extensions Documentation
+# Ebla Extensions Documentation
 
-Here is the list sorted alphabetically:
+Welcome to the Eblasoft documentation site. Here, you'll find comprehensive guides and documentation to help you get started with Eblasoft extensions as quickly as possible, as well as support if you get stuck. Let's jump right in!
+
+## Table of Contents
+
+
 
 * [Mobile App](espocrm-extensions/mobile-app/index.md)
   * Providers
@@ -41,11 +45,6 @@ Here is the list sorted alphabetically:
   * [ChangeLog](espocrm-extensions/date-pro/changelog.md)
 
 * [Dynamic Logic Plus](espocrm-extensions/dynamic-logic-plus/index.md)
-  * [Auto Recalculate Formula](espocrm-extensions/dynamic-logic-plus/automatically-recalculate.md)
-  * [Auto Remove Children upon Record Deletion](espocrm-extensions/dynamic-logic-plus/removal-of-children.md)
-  * [Auto Filtering When Parent is Selected](espocrm-extensions/dynamic-logic-plus/auto-filtering-when-parent-is-selected.md)
-  * [links Must Be Empty Before Remove](espocrm-extensions/dynamic-logic-plus/links-must-be-empty-before-remove.md)
-  * [ChangeLog](espocrm-extensions/dynamic-logic-plus/changelog.md)
 
 * [Enum Plus](espocrm-extensions/enum-plus/index.md)
   * [Color Option](espocrm-extensions/enum-plus/color-option.md)
