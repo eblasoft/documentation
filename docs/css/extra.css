@@ -159,3 +159,20 @@ a.glightbox img {
     padding: 4px;
     border: 1px solid #ccc;
 }
+
+.see-in-website-btn {
+    margin-bottom: 15px;
+    background: #E65100;
+    padding: 15px 30px;
+    display: block;
+    font-weight: bold;
+    color: #fff !important;
+    text-align: center;
+    transition: opacity 1s;
+    opacity: 0;
+    font-size: 1.4em;
+}
+
+.see-in-website-btn.enabled {
+    opacity: 1;
+}

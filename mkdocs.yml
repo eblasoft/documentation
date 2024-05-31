@@ -61,7 +61,7 @@ theme:
   favicon: _static/images/docs/blue-logo.png
   features:
     # Navigation features
-    - navigation.instant
+    #- navigation.instant
     - navigation.instant.progress
     - navigation.tracking
     #- navigation.sections

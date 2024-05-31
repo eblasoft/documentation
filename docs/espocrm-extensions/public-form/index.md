@@ -4,8 +4,6 @@
 
 The "Ebla Public Form" extension for EspoCRM provides a solution for creating, managing, and **embedding Espocrm forms publicly on websites**.
 
-[See on website](https://www.eblasoft.com.tr/espocrm-extension-page/feedback-forms){:target="_blank" .md-button }
-
 ## Use Cases
 
 1. **Collect Feedbacks from Clients** <br>

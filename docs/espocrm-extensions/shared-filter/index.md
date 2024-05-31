@@ -3,8 +3,6 @@
 ## Overview
 Manage filters & share with users on Espocrm. Also, can share data with external software via API.
 
-[See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-shared-filter){:target="_blank" .md-button }
-
 ## Extension video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/n7S4V7DdW-8?si=AHFPXmzNcPKR_Y2C" title="Eblasoft | Espocrm Shared Filter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
