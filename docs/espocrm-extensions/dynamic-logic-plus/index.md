@@ -1,4 +1,4 @@
-# Ebla Dynamic Logic Plus Documentation   <a href="https://www.eblasoft.com.tr/espocrm-extension-page/dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
+# Ebla Dynamic Logic Plus Documentation   <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
 
 ## Overview
 
