@@ -62,8 +62,7 @@ Welcome to the Eblasoft documentation site. Here, you'll find comprehensive guid
 * [Gantt View](espocrm-extensions/gantt/index.md)
   * [ChangeLog](espocrm-extensions/gantt/changelog.md)
 
-* [Iframe](espocrm-extensions/iframe/index.md)
-  * [ChangeLog](espocrm-extensions/iframe/changelog.md)
+* [Iframe Field](espocrm-extensions/iframe-field/index.md)
 
 * [Infinity Scroll](espocrm-extensions/infinity-scroll/index.md)
   * [ChangeLog](espocrm-extensions/infinity-scroll/changelog.md)
