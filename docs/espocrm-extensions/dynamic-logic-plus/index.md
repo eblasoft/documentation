@@ -6,8 +6,8 @@
 
 - **[Associated Links](#associated-links)**
 - **[Cascade Remove](#cascade-remove)**
-- **[Cascade Updaters](#cascade-updaters)**
 - **[Links Must Be Empty Before Remove](#links-must-be-empty-before-remove)**
+- **[Cascade Updaters](#cascade-updaters)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5ilvA1BPRok?si=zDZlAAa2jVbZGc-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -24,7 +24,7 @@ See this [example](./dynamic-logic-plus-example.md) for a detailed explanation o
 
 ## Features
 
-### 1. Associated Links
+### 1. Associated Links {#associated-links}
 
 With Ebla Dynamic Logic Plus, you can define relation conditions for links between entities. For example, you can establish a relationship between Contacts and Accounts so that
 selecting a contact automatically fills in the associated account. Additionally, you have the option to hide these filters for a seamless user experience.
@@ -34,14 +34,14 @@ selecting a contact automatically fills in the associated account. Additionally,
 !!! note "Note"
     You can make those filters hidden for a seamless user experience.
 
-### 2. Cascade Remove
+### 2. Cascade Remove {#cascade-remove}
 
 This feature allows you to automatically remove linked items when the parent entity is deleted. For instance, suppose you have a parent entity "Project" with linked child
 entities "Tasks." Enabling cascade remove ensures that when a project is deleted, all associated tasks are also removed, preventing orphaned data.
 
 ![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-remove.png)
 
-### 3. Links Must Be Empty Before Remove
+### 3. Links Must Be Empty Before Remove {#links-must-be-empty-before-remove}
 
 This feature prevents the deletion of specific records if they have linked items from designated relationships. For instance, if you don't want to delete an Account that has
 associated Contacts, you can enforce that the Contacts must be removed manually before the Account can be deleted. This ensures data integrity and prevents accidental deletion of
@@ -49,7 +49,7 @@ important records.
 
 ![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-links-must-be-empty-before-remove.png)
 
-### 4. Cascade Updaters
+### 4. Cascade Updaters {#cascade-updaters}
 
 Cascade Updaters are invaluable for recalculating linked entities based on changes in child entities. 
 
