@@ -18,6 +18,8 @@ Enhancing (Enum Multi-Enum) field functionality with additional features in Espo
 
 - ### [ٍShow As Button](show-as-button.md)
 
+- ### [Formula Functions](formula-functions.md)
+
 ---
 
 
