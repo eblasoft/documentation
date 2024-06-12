@@ -51,6 +51,7 @@ Welcome to the Eblasoft documentation site. Here, you'll find comprehensive guid
   * [Force Edit on List View](espocrm-extensions/enum-plus/force-edit-on-list-view.md)
   * [Kanban Status Bar in Detail View](espocrm-extensions/enum-plus/kanban-status-bar-in-detail-view.md)
   * [Show As Button](espocrm-extensions/enum-plus/show-as-button.md)
+  * [Formula Functions](espocrm-extensions/enum-plus/formula-functions.md)
   * [ChangeLog](espocrm-extensions/enum-plus/changelog.md)
 
 * [Event Plus](espocrm-extensions/event-plus/index.md)

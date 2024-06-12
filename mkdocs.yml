@@ -162,6 +162,7 @@ nav:
           - Force Edit On List View: 'espocrm-extensions/enum-plus/force-edit-on-list-view.md'
           - Kanban Status Bar In Detail View: 'espocrm-extensions/enum-plus/kanban-status-bar-in-detail-view.md'
           - Show As Button: 'espocrm-extensions/enum-plus/show-as-button.md'
+          - Formula Functions: 'espocrm-extensions/enum-plus/formula-functions.md'
 
   - Event Plus: 'espocrm-extensions/event-plus/index.md'
 
