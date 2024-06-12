@@ -37,9 +37,11 @@ The "Ebla Public Form" extension for EspoCRM provides a solution for creating, m
     Populate fields with values from the URL. This allows for pre-filling fields with data from the URL.
     Use case: Pre-fill the contact id and ticket id in the form URL to use on formula script later.
 
-            Example URL:
-            This will fill the field "website" with "eblasoft.com.tr" value.
-            https://your-crm.com/ebla-form/xxxxxxxx?website=eblasoft.com.tr
+    ``` title="Example:"
+    Add ?website=eblasoft.com.tr to the form URL to pre-fill the website field.
+   
+    https://your-crm.com/ebla-form/xxxxxxxx?website=eblasoft.com.tr
+    ```
 
 6. **Custom Detail Layout** <br>
     You can create a custom detail layout for the form entity to show the form fields in a specific order.

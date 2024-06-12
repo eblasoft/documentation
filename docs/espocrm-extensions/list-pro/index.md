@@ -21,8 +21,10 @@ Modify field values directly within the list view. Simply hover over a field, an
 
 ### Escape and Save Shortcuts
 Quickly discard or save your changes using keyboard shortcuts.
-Press `Escape` to discard any changes made within the inline edit.
-Press `Ctrl + Enter` to confirm your edits and save the updated data.
+
+- Press ++esc++ to discard any changes made within the inline edit.
+- Press ++ctrl+enter++ to save your changes.
+
 
 ### Entity-Level Disabling
 Disable inline editing for specific entities by adding `"inlineEditListDisabled": true` within the corresponding JSON file located at `Resources/metadata/clientDefs/{YourEntityName}.json`.
