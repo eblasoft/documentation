@@ -16,7 +16,7 @@ function updateWebLink() {
         'espocrm-ai': 'espocrm-ai-extension',
         'layout-pro': 'espocrm-layout-pro',
         'public-form': 'public-espocrm-forms',
-        //'ebla-list-pro': 'ebla-list-pro',
+        'list-pro': 'ebla-list-pro',
         'map-plus': 'espocrm-map-plus',
         // 'ebla-image-plus': 'ebla-image-plus',
         'nav-pro': 'espocrm-navigation-pro',

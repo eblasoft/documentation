@@ -27,6 +27,11 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/ebla-soft/
 
+  status:
+    new: New Extension
+    deprecated: Deprecated
+    featured: Popular Extension, Recommended
+
 plugins:
   - glightbox
   - search
@@ -117,6 +122,8 @@ nav:
 
   - Shared Filter: 'espocrm-extensions/shared-filter/index.md'
 
+  - List Pro: 'espocrm-extensions/list-pro/index.md'
+
   - Theme: 'espocrm-extensions/ebla-theme/index.md'
 
   - Admin Pro:
@@ -184,9 +191,7 @@ nav:
 
   - Last Login: 'espocrm-extensions/last-login/index.md'
 
-  - Link Multiple Pro:
-      - Overview: 'espocrm-extensions/link-multiple-pro/index.md'
-      - Changelog: 'espocrm-extensions/link-multiple-pro/changelog.md'
+  - Link Multiple Pro: 'espocrm-extensions/link-multiple-pro/index.md'
 
   - Labels Cells:
       - Overview: 'espocrm-extensions/labels-cells/index.md'
@@ -219,9 +224,7 @@ nav:
 
   - Sms: 'espocrm-extensions/sms/index.md'
 
-  - Stream Plus:
-      - Overview: 'espocrm-extensions/stream-plus/index.md'
-      - ChangeLog: 'espocrm-extensions/stream-plus/changelog.md'
+  - Stream Plus: 'espocrm-extensions/stream-plus/index.md'
 
   - Switch: 'espocrm-extensions/switch/index.md'
 

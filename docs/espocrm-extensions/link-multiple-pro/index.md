@@ -1,3 +1,10 @@
+---
+status: featured
+icon: material/link-box-variant
+title: Espocrm Link Multiple Pro Documentation
+description: Ebla Link Multiple Pro for Espocrm allows you to render link multiple fields in the list view in EspoCRM. Invoice items on invoice entity.
+---
+
 # Link Multiple Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-inline-form" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
 
 > Basically this extension allows you to render link multiple fields in the list view in EspoCRM.
@@ -57,6 +64,7 @@ Additional Features:
 
     For  <font color="red" > "Many To Many" </font> usage cases please consider to read [this article](https://www.eblasoft.com.tr/post/link-multiple-pro-many-to-many).
 
-<br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## Changelog <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-pro" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
+
+<div class="change-log-wrapper" data-id="63495a03a945d438f"></div>
