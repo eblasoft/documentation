@@ -1,3 +1,10 @@
+---
+status: featured
+icon: material/palette
+title: Espocrm | Ebla Theme Documentation
+description: Ebla Theme is a new theme for EspoCRM. Change colors, add background images, and custom css. 
+---
+
 # Ebla Theme <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-theme" target="_blank" id="ext-version" data-id="63903277397107cc5"></a>
 
 > Add new theme to EspoCRM.

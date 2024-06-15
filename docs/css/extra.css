@@ -187,5 +187,5 @@ a.glightbox img {
 .md-status--featured:after {
     -webkit-mask-image: var(--md-status--featured);
     mask-image: var(--md-status--featured);
-    background-color: #E91E63;
+    background-color: #f579a3;
 }
