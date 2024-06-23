@@ -15,6 +15,14 @@ This extension provides a simple and efficient way to collect data, feedback, an
 
 ![Public Forms](../../_static/images/espocrm-extensions/public-form/espocrm-public-form-admin.png)
 
+!!! note
+    If you need to embed forms on your website using iframe, you need to enable `clientXFrameOptionsHeaderDisabled` in EspoCRM configuration.
+   
+    ```php
+      // config.php
+      'clientXFrameOptionsHeaderDisabled' => true,
+    ```
+
 ## Use Cases
 
 1. **Collect Feedbacks from Clients** <br>
