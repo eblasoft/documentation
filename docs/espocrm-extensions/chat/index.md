@@ -12,6 +12,11 @@ description: Internal chat between users in EspoCRM
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pq1S3DeC3ME" title="Espocrm | Ebla Chat Extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+!!! note
+    You can see chats as standars list view from `#Dialog`, you can add it to menu for quick access.
+    
+    ![Ebla Chats List](../../_static/images/espocrm-extensions/chat/espocrm-chats-list.png)
+
 ## Features
 
 ### Stream Posts: 
