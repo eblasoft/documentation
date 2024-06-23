@@ -23,6 +23,9 @@ This extension provides a simple and efficient way to collect data, feedback, an
       'clientXFrameOptionsHeaderDisabled' => true,
     ```
 
+!!! warning
+    **Ebla Public Form** doesn't support link field for security reasons. You can only pass link id via url, example: `https://your-crm.com/ebla-form/xxxxxxxx?contactId=xxxxx`.
+
 ## Use Cases
 
 1. **Collect Feedbacks from Clients** <br>
