@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Ebla AI** supports both of Gemini and OpenAI, a step to bring the power of AI to your EspoCRM.
+**Ebla AI** supports both of Ollama, Gemini and OpenAI, a step to bring the power of AI to your EspoCRM.
 Ebla AI provides a range of AI-driven features, like generating email messages, stream comments suggestions and custom formula functions.
 Enhances communication, lead management, and workflow automation.
 
@@ -25,4 +25,5 @@ Enhances communication, lead management, and workflow automation.
 
 - [Setup OpenAI](providers/openai-setup.md)
 - [Setup Gemini](providers/gemini-setup.md)
+- [Setup Ollama](providers/ollama-setup.md)
 - [Access control](features/access-control.md)
