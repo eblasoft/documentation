@@ -18,6 +18,7 @@ Enhances communication, lead management, and workflow automation.
 - [AI Prompts Management](features/ai-prompts.md)
 - [AI Email Generated](features/email-reply.md)
 - [AI Stream Comment Generation](features/stream-comment.md)
+- [AI Field Text Generation](features/field-text-generation.md)
 - [AI Formula Functions](features/formula.md)
 - [AI Sandbox](features/sandbox.md)
 
