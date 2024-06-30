@@ -217,6 +217,8 @@ nav:
 
   - Progress Bar: 'espocrm-extensions/progress-bar/index.md'
 
+  - Quick List Icons: 'espocrm-extensions/quick-list-icons/overview.md'
+
   - Quick Assign: 'espocrm-extensions/quick-assign/index.md'
 
   - Rate Star Field: 'espocrm-extensions/rate/index.md'
