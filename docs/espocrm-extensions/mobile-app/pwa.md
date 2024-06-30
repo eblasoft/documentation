@@ -63,6 +63,12 @@ To set up the Progressive Web App (PWA) feature in EspoCRM, follow the steps bel
 - **Quick Create List**: Configure the quick create list for the PWA.
 - **PWA Logo**: Upload custom logos for the PWA in different sizes (196x196 and 512x512).
 
+## Requirements Checklist
+
+To help you check if you have met all the requirements for setting up the Progressive Web App (PWA) feature, you can see the checklist panel
+It will show you the status of each requirement.
+
+![img.png](../../_static/images/espocrm-extensions/mobile-app/check-list-panel.png)
 
 ## Accessing the Progressive Web App (PWA)
 
