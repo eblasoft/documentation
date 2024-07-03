@@ -15,6 +15,7 @@
 
 1. Navigate to **Administration** -> **Integrations** -> **Ollama**.
 2. Paste the API Base URL.
+3. Choose the default model you want to use.
 
    ![setup-0.png](../../../_static/images/espocrm-extensions/ai/providers/ollama/setup-0.png)
    

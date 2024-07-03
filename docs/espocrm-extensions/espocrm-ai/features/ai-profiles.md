@@ -9,7 +9,7 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 1. Navigate to **Administration** -> **AI Profiles**.
 2. Click **Create**.
 3. Enter a name for the AI profile.
-4. Select the provider (Gemini - OpenAI - Ollama). (Optional)
+4. Select the provider (Gemini - OpenAI - Ollama - Anthropic). (Optional)
 5. Enter the context to be sent to the AI before the prompt is sent.
 
 ### Parameters:
