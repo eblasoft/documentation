@@ -12,5 +12,6 @@
 
 1. Navigate to **Administration** -> **Integrations** -> **Gemini**.
 2. Paste the API key obtained from Gemini into API Key field.
+3. Choose the default model you want to use.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/providers/gemini/setup-1.png)

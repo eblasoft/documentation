@@ -12,5 +12,6 @@
 
 1. Navigate to **Administration** -> **Integrations** -> **OpenAI**.
 2. Paste the API key obtained from OpenAI into API Key field.
+3. Choose the default model you want to use.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/providers/openai/setup-0.png)
