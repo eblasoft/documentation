@@ -21,6 +21,7 @@
 - [Progressive Web App (PWA)](pwa.md)
 - [Push Notifications](providers/webpush/overview.md)
 - [Telegram Notifications (using bot)](providers/telegram/overview.md)
+- [Support push notifications for reminders](#support-push-notifications-for-reminders)
 
 <br>
 
@@ -33,5 +34,9 @@
 - Rocket.Chat (Coming Soon)
 
 <br>
+
+#### Support push notifications for reminders
+
+![reminder](../../_static/images/espocrm-extensions/mobile-app/ebla-mobile-push-notifications-for-reminders.png)
 
 ### <font color=gray> [ChangeLog](changelog.md) </font>
