@@ -98,6 +98,16 @@ This extension provides a simple and efficient way to collect data, feedback, an
 For any inquiries, support, or feedback regarding the "Ebla Public Forms" extension, please reach out to our portal create a ticket. We are committed to ensuring a seamless
 experience and are here to assist you with any questions or concerns you may have.
 
+## Nginx Configuration
+
+If you are using Nginx, you need to add the following configuration to your server block:
+
+```nginx
+location /ebla-form {
+    try_files $uri $uri/ /ebla-form/index.php?$args;
+}
+```
+
 ## Conclusion
 
 With the "Ebla Public Forms" extension, EspoCRM users can get the full benefits of Espocrm forms by embedding them on websites. This extension provides a simple and efficient way
