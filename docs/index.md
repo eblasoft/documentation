@@ -33,6 +33,7 @@ Welcome to the Eblasoft documentation site. Here, you'll find comprehensive guid
 * [Kanban Multiple](espocrm-extensions/kanban-multiple/index.md)
 * [Layout Pro](espocrm-extensions/layout-pro/index.md)
 * [Last Login](espocrm-extensions/last-login/index.md)
+* [Public & Internal Case](espocrm-extensions/internal-public-case/index.md)
 * [Link Multiple Pro](espocrm-extensions/link-multiple-pro/index.md)
 * [Labels Cells](espocrm-extensions/labels-cells/index.md)
 * [Map Plus](espocrm-extensions/map-plus/index.md)
