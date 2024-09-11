@@ -11,7 +11,7 @@
 ## EspoCRM Setup
 
 1. Navigate to **Administration** -> **Integrations** -> **Anthropic**.
-2. Paste the API key obtained from OpenAI into API Key field.
+2. Paste the API key obtained from Anthropic into API Key field.
 3. Choose the default model you want to use.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/providers/anthropic/setup-2.png)

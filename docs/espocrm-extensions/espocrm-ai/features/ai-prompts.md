@@ -11,6 +11,8 @@ of prompts.
 4. Select Entity Type.
 5. Enter the prompt context.
 
+![img.png](../../../_static/images/espocrm-extensions/ai/features/img_15.png)
+
 !!! important
 
     If output is not as expected, you can click on **Send** button to regenerate the output.
