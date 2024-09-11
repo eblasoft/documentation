@@ -9,7 +9,7 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 1. Navigate to **Administration** -> **AI Profiles**.
 2. Click **Create**.
 3. Enter a name for the AI profile.
-4. Select the provider (Gemini - OpenAI - Ollama - Anthropic). (Optional)
+4. Select the provider (Gemini - OpenAI - Ollama - Anthropic - OpenRouter). (Optional)
 5. Enter the context to be sent to the AI before the prompt is sent.
 
 ### Parameters:
@@ -28,6 +28,16 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 !!! important
 
     If output is not as expected, you can click on **Send** button to regenerate the output.
+
+### Select default profile per Entity Type
+
+1. Navigate to **Administration** -> **Entity Manager** -> **Select Entity Type**.
+2. In the **AI Profile** field, select the AI profile you want to use for the entity type.
+3. Click **Save**.
+
+!!! important
+
+    The selected AI profile will be used by default for the entity type.
 
 ## Examples
 
