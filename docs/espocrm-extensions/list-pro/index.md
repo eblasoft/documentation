@@ -42,6 +42,21 @@ Deactivate inline editing for individual fields by toggling the "inline edit" op
 !!! warning "Warning"
     Inline editing is not supported for fields that have dynamic logic.
 
+### List Card View
+Switch between the list view and card view to display records in a more visually appealing format.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-list-card-view.png)
+
+### Real Estate Custom Advanced Card Style
+Customize the card view to display additional fields and information.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-real-estate-custom-advanced-card-style.png)
+
+### Propert Card No-İmage Place Holder
+Set a default image to display when no image is available for a record.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-property-card-no-image-placeholder.png)
+
 ## To Do
 
 ### Intuitive Keyboard Navigation
