@@ -1,13 +1,12 @@
 # Progressive Web App (PWA) Overview
 
 The Progressive Web App (PWA) feature in the Mobile App extension for EspoCRM enhances user experience by enabling the
-application to function as a native-like app on supported devices. PWAs offer a seamless, reliable, and fast experience,
-providing users with the ability to access EspoCRM even when offline.
+application to function as a native-like app on supported devices.
 
 ## What is a Progressive Web App (PWA)?
 
 A Progressive Web App (PWA) is a type of web application that utilizes modern web technologies to provide a native
-app-like experience to users. PWAs offer features such as offline access, push notifications, and device hardware
+app-like experience to users. PWAs offer features such as offline access (not implemented), push notifications, and device hardware
 access, all while being accessible through a web browser. They provide a responsive and engaging user experience,
 similar to that of native mobile apps.
 
