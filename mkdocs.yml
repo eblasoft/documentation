@@ -127,6 +127,7 @@ nav:
 
   - Theme: 'espocrm-extensions/ebla-theme/index.md'
 
+  - Email Plus: 'espocrm-extensions/email-plus/index.md'
   - Admin Pro:
       - Overview: 'espocrm-extensions/admin-pro/index.md'
       - Features:
