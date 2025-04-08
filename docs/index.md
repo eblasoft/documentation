@@ -18,6 +18,7 @@ Welcome to the Eblasoft documentation site. Here, you'll find comprehensive guid
 * [Theme](espocrm-extensions/ebla-theme/index.md) 
 * [AI](espocrm-extensions/espocrm-ai/index.md)
 * [Admin Pro](espocrm-extensions/admin-pro/index.md)
+* [Admin Pro](espocrm-extensions/email-plus/index.md)
 * [Number Pro](espocrm-extensions/number-pro/index.md)
 * [Category Tree](espocrm-extensions/category-tree/index.md)
 * [Chat](espocrm-extensions/chat/index.md)
