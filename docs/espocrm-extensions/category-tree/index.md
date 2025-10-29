@@ -11,13 +11,9 @@ description: Create hierarchical category trees with parent-child relationships 
 
 ## Overview
 
-**Category Tree** is a template entity type that enables you to create hierarchical category structures with unlimited
-parent-child relationships in EspoCRM. When you create a Category Tree entity, the extension automatically generates two
-linked entities: a category entity with tree capabilities and an associated item entity, streamlining the setup of
-organized, categorized data.
+**Category Tree** is a template entity type that enables you to simply create Category entity + Category Item entity just like Espo has with Knowledge Base & Knowledge Base Category.
 
-This extension is ideal for organizing products, documents, support tickets, or any other entity type that benefits from
-hierarchical classification.
+This extension is ideal for any organizing entities type that benefits from hierarchical classification.
 <!-- DOC:OVERVIEW END -->
 
 ![Category Tree View](../../_static/images/espocrm-extensions/category-tree/category-tree.png)
@@ -26,10 +22,7 @@ hierarchical classification.
 
 ## Key Features
 
-- **Automatic Entity Pair Creation**: Creates both category and item entities automatically when you define a new
-  Category Tree type.
-- **Hierarchical Tree Structure**: Build unlimited levels of parent-child category relationships.
-- **Visual Tree Navigation**: Navigate through categories using an intuitive tree interface in list views.
+- **Category Tree Entity Template**: Creates both category and item entities automatically when you define a new Category Tree type.
 - **Automatic Relationship Setup**: Pre-configured relationships between categories and their associated items.
 - **Flexible Layout Integration**: Automatically adds category fields to list and detail layouts for easy access.
 
@@ -39,12 +32,10 @@ hierarchical classification.
 
 ## Use Cases
 
-1. **Product Categorization** – Organize products into hierarchical categories and subcategories (Electronics →
-   Computers → Laptops).
+1. **Product Categorization** – Organize products into hierarchical categories and subcategories (Electronics →  Computers → Laptops).
 2. **Document Management** – Structure documents by department, project, or document type with multiple levels.
-3. **Knowledge Base Organization** – Create a hierarchical structure for help articles and documentation.
-4. **Support Ticket Classification** – Categorize tickets by issue type, department, or priority levels.
-5. **Multi-level Classification** – Any scenario requiring organized, nested categorization of records.
+3. **Support Ticket Classification** – Categorize tickets by issue type, department, or priority levels.
+4. **Multi-level Classification** – Any scenario requiring organized, nested categorization of records.
 
 <!-- DOC:USE-CASES END -->
 
