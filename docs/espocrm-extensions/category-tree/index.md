@@ -122,6 +122,6 @@ When you create a Category Tree entity, the extension automatically:
 
 For assistance:
 
-- Open a support ticket through the [Eblasoft customer portal](https://www.eblasoft.com.tr)
+- Open a support ticket through the [Eblasoft customer portal](https://portal.eblasoft.com.tr)
 - Email: support@eblasoft.com.tr
-- For documentation improvements, open a GitHub issue
+- For documentation improvements, open a [GitHub issue](https://github.com/eblasoft/documentation/issues)
