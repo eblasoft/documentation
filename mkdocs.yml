@@ -236,8 +236,4 @@ nav:
 
   - Welcome: 'espocrm-extensions/welcome/index.md'
 
-  - Work Log:
-      - Overview: 'espocrm-extensions/work-log/index.md'
-      - Features:
-          - Online / Offline Status: 'espocrm-extensions/work-log/online-offline.md'
-          - Work Log Button: 'espocrm-extensions/work-log/work-log-button.md'
+  - Work Log: 'espocrm-extensions/work-log/index.md'
