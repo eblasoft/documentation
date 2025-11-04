@@ -75,7 +75,6 @@ Open **Administration → Settings → Work Log Configuration** to switch featur
 
    ![Create online/offline field](../../_static/images/espocrm-extensions/work-log/online-offline.png)
 
-   ![Boolean field options](../../_static/images/espocrm-extensions/work-log/online-offline-op.png)
 
 2. In Work Log settings, assign that field to the availability toggle and choose the colours that mark online and offline.
 3. Users click the navbar button to switch between states; the label and colour update immediately to show availability.
@@ -83,11 +82,14 @@ Open **Administration → Settings → Work Log Configuration** to switch featur
 ### Navbar work timer
 
 1. Enable the navigation timer in Work Log settings so the stopwatch button appears.
+
+   ![Navbar work log button preview](../../_static/images/espocrm-extensions/work-log/enable-timer.png)
+
+
 2. The button counts elapsed time in real time. Clicking it opens the My Open Work Logs panel without leaving the current page.
 
-   ![Navbar work log button preview](../../_static/images/espocrm-extensions/work-log/log.png)
+   ![Work log button options](../../_static/images/espocrm-extensions/work-log/my-open-work-logs-item.png)
 
-   ![Work log button options](../../_static/images/espocrm-extensions/work-log/log-op.png)
 
 3. Use the panel to view your active logs, open parent records in a new tab, or pause/stop entries directly.
 
