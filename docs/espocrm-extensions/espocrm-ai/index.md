@@ -2,9 +2,19 @@
 
 ## Overview
 
-**Ebla AI** supports both of Ollama, Gemini, Anthropic, OpenRouter and OpenAI, a step to bring the power of AI to your EspoCRM.
-Ebla AI provides a range of AI-driven features, like generating email messages, stream comments suggestions and custom formula functions.
-Enhances communication, lead management, and workflow automation.
+**Ebla AI** supports multiple AI providers (Ollama, Gemini, Anthropic, OpenRouter, and OpenAI), bringing powerful AI capabilities to your EspoCRM.
+
+Ebla AI provides a comprehensive range of AI-driven features including:
+
+- **Email Translation** - Instantly translate emails to your preferred language
+- **Smart Paste** - Extract structured data from unstructured text
+- **Email Reply Generation** - Generate contextual email responses
+- **Stream Comments** - AI-powered comment suggestions
+- **Field Text Generation** - Generate content for text fields
+- **Formula Functions** - Automate workflows with AI
+- **Sandbox Testing** - Test AI interactions safely
+
+Enhances communication, lead management, and workflow automation across your organization.
 
 ## Extension video
 
@@ -16,7 +26,9 @@ Enhances communication, lead management, and workflow automation.
 
 - [AI Profiles Management](features/ai-profiles.md)
 - [AI Prompts Management](features/ai-prompts.md)
-- [AI Email Generated](features/email-reply.md)
+- [AI Email Reply Generation](features/email-reply.md)
+- [Email Translation](features/email-translation.md)
+- [Smart Paste](features/smart-paste.md)
 - [AI Stream Comment Generation](features/stream-comment.md)
 - [AI Field Text Generation](features/field-text-generation.md)
 - [AI Formula Functions](features/formula.md)
