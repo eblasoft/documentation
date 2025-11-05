@@ -83,12 +83,12 @@ Open **Administration → Settings → Work Log Configuration** to switch featur
 
 1. Enable the navigation timer in Work Log settings so the stopwatch button appears.
 
-   ![Navbar work log button preview](../../_static/images/espocrm-extensions/work-log/enable-timer.png)
+   ![Navbar navigation timer preview](../../_static/images/espocrm-extensions/work-log/enable-timer.png)
 
 
 2. The button counts elapsed time in real time. Clicking it opens the My Open Work Logs panel without leaving the current page.
 
-   ![Work log button options](../../_static/images/espocrm-extensions/work-log/my-open-work-logs-item.png)
+   ![My Open Work Logs panel](../../_static/images/espocrm-extensions/work-log/my-open-work-logs-item.png)
 
 
 3. Use the panel to view your active logs, open parent records in a new tab, or pause/stop entries directly.
