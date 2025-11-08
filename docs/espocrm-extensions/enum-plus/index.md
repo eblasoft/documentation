@@ -1,3 +1,9 @@
+---
+icon: material/format-list-checks
+title: Ebla Enum Plus - EspoCRM
+description: Color palette, Show Enum as button, Enum status bar for detail records, enum dropdown in list for fast update and more.
+---
+
 # Enum Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-enum-plus" target="_blank" id="ext-version" data-id="638999ce6d3bbcd76"></a>
 
 Enhancing (Enum Multi-Enum) field functionality with additional features in EspoCRM.
@@ -23,4 +29,6 @@ Enhancing (Enum Multi-Enum) field functionality with additional features in Espo
 ---
 
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="638999ce6d3bbcd76"></div>

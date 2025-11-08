@@ -1,3 +1,9 @@
+---
+icon: material/star
+title: Ebla Rate Star Field - EspoCRM
+description: Add rating fields using star icons for customer satisfaction, priority scoring, feedback reviews, and more.
+---
+
 # Rate Star Field <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field" target="_blank" id="ext-version" data-id="63495a03a877d5a9a"></a>
 
 > Adding new field type **Rate Field**, to allow EspoCRM users easily seat and read rates,
@@ -19,4 +25,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="63495a03a877d5a9a"></div>

@@ -1,3 +1,9 @@
+---
+icon: material/filter-menu
+title: Ebla Generic Filter - EspoCRM
+description: A powerful filter in navbar that apply to whole Espocrm records, useful when have projects or organizations based data.
+---
+
 # Generic Filter <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-generic-filter" target="_blank" id="ext-version" data-id="6389ec830c9c306d3"></a>
 
 
@@ -25,4 +31,6 @@
 
 ![generic-filter](../../_static/images/espocrm-extensions/generic-filter/generic-filter-op.png)
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="6389ec830c9c306d3"></div>

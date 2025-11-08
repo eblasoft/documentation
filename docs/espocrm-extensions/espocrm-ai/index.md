@@ -1,3 +1,9 @@
+---
+icon: material/robot
+title: Ebla AI - EspoCRM
+description: AI-powered automations, suggestions, formula, and smart record paste for EspoCRM. Support Ollama, Gemini, Anthropic, OpenRouter and OpenAI.
+---
+
 # Ebla AI Documentation  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-ai-for-espocrm" target="_blank" id="ext-version" data-id="65b0a98839f5ca186"></a>
 
 ## Overview
@@ -30,3 +36,7 @@ Enhances communication, lead management, and workflow automation.
 - [Setup Anthropic](providers/anthropic-setup.md)
 - [Setup OpenRouter](providers/open-router-setup.md)
 - [Access control](features/access-control.md)
+
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="65b0a98839f5ca186"></div>

@@ -36,7 +36,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-star: **[Ebla Rate Star Field](espocrm-extensions/rate/index.md)**
 - :material-function-variant: **[Ebla Dynamic Logic Plus](espocrm-extensions/dynamic-logic-plus/index.md)**
 - :material-format-list-checks: **[Ebla Enum Plus](espocrm-extensions/enum-plus/index.md)**
-- :material-link-variant: **[Ebla Link Pro](espocrm-extensions/link-multiple-pro/index.md)**
+- :material-link-variant: **[Ebla Link Pro](espocrm-extensions/link-pro/index.md)**
 - :material-map: **[Ebla Map Plus](espocrm-extensions/map-plus/index.md)**
 - :fontawesome-regular-window-maximize: **[Ebla Iframe Field](espocrm-extensions/iframe-field/index.md)**
 - :material-progress-clock: **[Ebla Progress Bar](espocrm-extensions/progress-bar/index.md)**

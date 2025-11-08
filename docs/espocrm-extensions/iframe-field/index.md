@@ -1,7 +1,13 @@
+---
+icon: fontawesome/regular/window-maximize
+title: Ebla Iframe Field - EspoCRM
+description: Embed external pages, dashboards, widgets, and internal tools directly inside record detail views.
+---
+
 # Espocrm Iframe Documentation <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-i-frame-field" target="_blank" id="ext-version" data-id="636cc88fe277a3f69"></a>
 
 ## Overview
-**Ebla Iframe** adds new field type to EspoCRM "Iframe Field". It allows you to embed external web content into EspoCRM.
+**Ebla Iframe** adds new field type to EspoCRM "Iframe Field". It allows you to embed external web content into EspoCRM detail views.
 
 ![Iframe Field](../../_static/images/espocrm-extensions/iframe/espocrm-iframe-field-type.png)
 

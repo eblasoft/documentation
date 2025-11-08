@@ -1,8 +1,8 @@
 ---
 status: featured
 icon: material/link-box-variant
-title: Espocrm Link Multiple Pro Documentation
-description: Ebla Link Multiple Pro for Espocrm allows you to render link multiple fields in the list view in EspoCRM. Invoice items on invoice entity.
+title: Ebla Link Pro - EspoCRM
+description: Ebla Link Pro for Espocrm to let link multiple fields show as full inline list view in detail views. make your custom Invoice entity easily.
 ---
 
 # Link Multiple Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-inline-form" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
@@ -16,15 +16,15 @@ description: Ebla Link Multiple Pro for Espocrm allows you to render link multip
 
 ---
 
-![how To Use](../../_static/images/espocrm-extensions/link-multiple-pro/link-pro.png)
+![how To Use](../../_static/images/espocrm-extensions/link-pro/link-pro.png)
 
 - Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Relationships** -> **Link Multiple Field**.
 
-![how To Use](../../_static/images/espocrm-extensions/link-multiple-pro/link-multiple.png)
+![how To Use](../../_static/images/espocrm-extensions/link-pro/link-multiple.png)
 
 - Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Field Type (Link Multiple)** -> **Enable Form** .
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-multiple-pro/link-pro-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-pro/link-pro-op.png" alt="drawing" style="width:200px;"/>
 
 ---
 
@@ -36,29 +36,29 @@ Additional Features:
 
 - Create a new list layout for the linked entity and add it to the link multiple field.
 
-![Additional List Layouts](../../_static/images/espocrm-extensions/link-multiple-pro/add-layout.png)
+![Additional List Layouts](../../_static/images/espocrm-extensions/link-pro/add-layout.png)
 
 ### Different layouts for edit and detail modes.
 
 - select the layout for edit and detail modes.
 
-![Different Layouts](../../_static/images/espocrm-extensions/link-multiple-pro/select-layout.png)
+![Different Layouts](../../_static/images/espocrm-extensions/link-pro/select-layout.png)
 
 ### Enable Select Button
 
-![Footer Sum Fields](../../_static/images/espocrm-extensions/link-multiple-pro/select-button.png)
+![Footer Sum Fields](../../_static/images/espocrm-extensions/link-pro/select-button.png)
 
 <br>
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-multiple-pro/select-button-op.png" alt="drawing" style="width:200px;"/>
+<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/link-pro/select-button-op.png" alt="drawing" style="width:200px;"/>
 
 ### Sum Footer Fields.
 
-![Footer Sum Fields](../../_static/images/espocrm-extensions/link-multiple-pro/sum-footer.png)
+![Footer Sum Fields](../../_static/images/espocrm-extensions/link-pro/sum-footer.png)
 
 ### Enable Add Multiple Button.
 
-![Add Multiple Button](../../_static/images/espocrm-extensions/link-multiple-pro/add-multiple.png)
+![Add Multiple Button](../../_static/images/espocrm-extensions/link-pro/add-multiple.png)
 
 !!! note
 

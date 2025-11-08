@@ -1,8 +1,8 @@
 ---
 status: featured
-icon: material/web
-title: Espocrm | Ebla Public Form Documentation
-description: Ebla Public Form for EspoCRM allows publishing EspoCRM forms publicly on websites. 
+icon: material/form-select
+title: Ebla Public Form - EspoCRM
+description: Generate shareable embeddable public forms that feed submissions directly into EspoCRM records and workflows, good for feedback forms, CVs, etc. 
 ---
 
 # Ebla Public Form

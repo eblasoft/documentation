@@ -1,7 +1,8 @@
 ---
 status: new
-title: Espocrm Progress Bar Documentation
-description: Ebla Progress Bar for EspoCRM enhances visualization by displaying progress bars for integer, float, and currency fields in both list and detail views.
+icon: material/progress-clock
+title: Ebla Progress Bar - EspoCRM
+description: Display dynamic progress indicators based on field values or calculated logic for better visual tracking.
 ---
 
 # Espocrm Progress Bar <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-progress-bar" target="_blank" id="ext-version" data-id="644bee41b754077c2"></a>

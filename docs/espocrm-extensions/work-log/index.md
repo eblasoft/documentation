@@ -1,3 +1,9 @@
+---
+icon: material/clipboard-text-clock
+title: Ebla Work Log - EspoCRM
+description: Track and record time spent on tasks, tickets, and customer requests directly from the record interface.
+---
+
 # Work Log  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-worklog" target="_blank" id="ext-version" data-id="64a5599f1767c748d"></a>
 
 > Recording the user's daily working hours in EspoCRM.
@@ -17,4 +23,6 @@
 
 - ### [Work Log Button](work-log-button.md)
 
-- ### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="64a5599f1767c748d"></div>
