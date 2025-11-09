@@ -13,8 +13,11 @@ description: Display dynamic progress indicators based on field values or calcul
 !!! note "Note"
     Edit views will never be affected and only detail & list views will be affected. 
 
-
+#### Detail view screen
 ![Progress Bar](../../_static/images/espocrm-extensions/progress-bar/espocrm-progress-bar-overview.png)
+
+#### List view screen
+![Progress Bar](../../_static/images/espocrm-extensions/progress-bar/espocrm-progress-bar-list-view.png)
 
 ## Field Options:
 In field manager options of **Integer, Float, and Currency** fields you will see new options like in the screenshot:
