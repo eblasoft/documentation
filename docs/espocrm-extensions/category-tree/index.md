@@ -1,8 +1,8 @@
 ---
 status: featured
 icon: material/file-tree
-title: Espocrm | Category Tree Documentation
-description: Create hierarchical category trees with parent-child relationships for any entity in EspoCRM.
+title: Espocrm | Ebla Category Tree Documentation
+description: New Category Tree entity type template for EspoCRM to create hierarchical category and item entities.
 ---
 
 # Category Tree <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-category-tree" target="_blank" id="ext-version" data-id="65487e0be0f573008"></a>
@@ -11,12 +11,14 @@ description: Create hierarchical category trees with parent-child relationships 
 
 ## Overview
 
-**Category Tree** is a template entity type that enables you to simply create Category entity + Category Item entity just like Espo has with Knowledge Base & Knowledge Base Category.
+**Category Tree** is a new entity template that simply create Category entity + Category Item entity just like Espo has with Knowledge Base & Knowledge Base Category.
 
 This extension is ideal for any organizing entities type that benefits from hierarchical classification.
+
 <!-- DOC:OVERVIEW END -->
 
-![Category Tree View](../../_static/images/espocrm-extensions/category-tree/category-tree.png)
+![Category Tree View](../../_static/images/espocrm-extensions/category-tree/espocrm-category-tree-item.png)
+![Category Tree View](../../_static/images/espocrm-extensions/category-tree/espocrm-category-tree-category.png)
 
 <!-- DOC:FEATURES START -->
 
@@ -49,7 +51,8 @@ This extension is ideal for any organizing entities type that benefits from hier
 4. Clear cache and rebuild the system when prompted.
 
 !!! note
-Requires EspoCRM 8.0.0 or higher. Compatible up to version 9.2.x.
+    Requires EspoCRM 8.0.0 or higher. Compatible up to version 9.2.x.
+
 <!-- DOC:INSTALLATION END -->
 
 <!-- DOC:USAGE START -->
@@ -63,14 +66,14 @@ Requires EspoCRM 8.0.0 or higher. Compatible up to version 9.2.x.
     - **Label Singular**: The singular name (e.g., "Product")
     - **Label Plural**: The plural name (e.g., "Products")
 3. Select **Type**: Choose **Category Tree** from the dropdown.
-
-![Create Category Tree Entity](../../_static/images/espocrm-extensions/category-tree/category-tree-op.png)
-
 4. Click **Save**.
 
+![Create Category Tree Entity](../../_static/images/espocrm-extensions/category-tree/espocrm-category-tree-entity-template.png)
+
+
 !!! tip
-When you create a Category Tree with name "Product", the extension automatically creates two entities: "
-ProductCategory" (for the tree structure) and "Product" (for the actual items).
+    When you create a Category Tree with name "Product", the extension automatically creates two entities: "
+    ProductCategory" (for the tree structure) and "Product" (for the actual items).
 
 ### What Gets Created Automatically
 
