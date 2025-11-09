@@ -1,3 +1,9 @@
+---
+icon: material/calendar
+title: Ebla Event Plus - EspoCRM
+description: New Entity Template "Event Plus" that have Event and BasePlus features together in one place.
+---
+
 # Event Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-event-plus" target="_blank" id="ext-version" data-id="638eecaa872b85729"></a>
 
 > New Entity Template "Event Plus" that have Event and BasePlus features together is available
@@ -15,4 +21,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="638eecaa872b85729"></div>

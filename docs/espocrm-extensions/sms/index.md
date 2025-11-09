@@ -1,3 +1,9 @@
+---
+icon: material/message-processing
+title: Ebla SMS - EspoCRM
+description: Send SMS messages directly from records detail & list views using integrated SMS gateways and more.
+---
+
 # SMS <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-sms" target="_blank" id="ext-version" data-id="64a6d717d1ec80e20"></a>
 
 > This extension enables SMS Entity.
@@ -34,6 +40,8 @@ Supported SMS Providers:
 
 ---
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="64a6d717d1ec80e20"></div>
 
 

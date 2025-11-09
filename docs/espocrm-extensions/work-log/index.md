@@ -1,8 +1,8 @@
 ---
 status: featured
-icon: material/clock-time-eight-outline
-title: EspoCRM | Ebla Work Log Documentation
-description: Monitor team availability and log work in real time from the EspoCRM navigation bar.
+icon: material/clipboard-text-clock
+title: Ebla Work Log - EspoCRM
+description: Track and record time spent on tasks, tickets, and customer requests directly from the record interface.
 ---
 
 # Ebla Work Log <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-worklog" target="_blank" id="ext-version" data-id="64a5599f1767c748d"></a>

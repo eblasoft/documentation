@@ -11,21 +11,16 @@ Assuming you have *python* and *pip* installed.
 
 Install the packages:
 
-1. `pip install mkdocs`
-2. `pip install mdx_truly_sane_lists`
-3. `pip install mkdocs-material`
-4. `pip install mkdocs-glightbox`
+1. `pip3 install mkdocs`
+2. `pip3 install mdx_truly_sane_lists`
+3. `pip3 install mkdocs-material`
+4. `pip3 install mkdocs-glightbox`
 
 Command to serve:
 ```
-mkdocs serve
+python3 -m mkdocs serve
 ```
 Command to build:
 ```
-mkdocs build
-```
-
-On Windows:
-```
-python -m mkdocs build
+python3 -m mkdocs build
 ```

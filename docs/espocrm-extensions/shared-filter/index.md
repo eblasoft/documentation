@@ -1,3 +1,9 @@
+---
+icon: material/filter
+title: Ebla Shared Filter - EspoCRM
+description: Share saved list filters across teams to improve collaboration and ensure consistent data views.
+---
+
 # EspoCRM Shared Filter Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-shared-filter" target="_blank" id="ext-version" data-id="65f1ab569c0f22833"></a>
 
 ## Overview
