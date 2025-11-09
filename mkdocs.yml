@@ -149,3 +149,5 @@ nav:
   - Ebla Print: 'espocrm-extensions/print/index.md'
   - Ebla Last Login: 'espocrm-extensions/last-login/index.md'
   - Ebla Welcome: 'espocrm-extensions/welcome/index.md'
+
+  - Ebla Internal & Public Case: 'espocrm-extensions/internal-public-case/index.md'

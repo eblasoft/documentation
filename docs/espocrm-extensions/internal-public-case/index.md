@@ -1,11 +1,15 @@
 ---
-status: new
+status: deprecated
 icon: material/briefcase-minus
 title: Espocrm List Pro Documentation
 description: Ebla List Pro for Espocrm makes editing your fields quicker, easier. With it, you can update fields directly in the list view, without needing to open separate pages for each item. This saves you clicks and time!
 ---
 
 # Ebla Internal & Public Case Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-internal-public-case" target="_blank" id="ext-version" data-id="66dc326746fd3523a"></a>
+
+!!! Deprecated "This extension is deprecated"
+
+    This extension is deprecated and is no longer maintained or supported. Users are advised to seek alternative solutions or extensions that provide similar functionality.
 
 ## Overview
 
