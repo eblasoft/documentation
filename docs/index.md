@@ -77,4 +77,5 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-printer: **[Ebla Print](espocrm-extensions/print/index.md)**
 - :material-login: **[Ebla Last Login](espocrm-extensions/last-login/index.md)**
 - :material-handshake: **[Ebla Welcome](espocrm-extensions/welcome/index.md)**
+- :material-file-tree:: **[Ebla Category Tree](espocrm-extensions/category-tree/index.md)**
 </div>
