@@ -13,7 +13,7 @@ description: Track and record time spent on tasks, tickets, and customer request
 
 Once configured, the extension adds start/pause/stop actions to selected entities, records precise time intervals, captures IP addresses, and raises alerts when work extends beyond scheduled hours—giving managers trustworthy insight into where effort is spent.
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/kg95tBnObAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/JdAg8tvQ1KQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
