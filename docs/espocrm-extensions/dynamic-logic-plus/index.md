@@ -15,7 +15,7 @@ description: Associated links for auto fill & filtering, Cascade remove links, p
 - **[Links Must Be Empty Before Remove](#links-must-be-empty-before-remove)**
 - **[Cascade Updaters](#cascade-updaters)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5ilvA1BPRok?si=zDZlAAa2jVbZGc-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bkz9Wwbsh7c?si=CzitRzJtPzl7G7ZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Installation & Setup
 
