@@ -47,12 +47,12 @@ Switch between the list view and card view to display records in a more visually
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-list-card-view.png)
 
-### Recent Updates Indicator
+### Has Updates Highlight
 Call attention to records that have new activity since the user last visited them.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
 
-- **Per-entity toggle**: In `Administration → Entity Manager → {Entity} → Edit`, enable **"Enable Recent Updates Highlight"** to start tracking.
+- **Per-entity toggle**: In `Administration → Entity Manager → {Entity} → Edit`, enable **"Enable Has Updates Highlight"** to start tracking.
 - **Accurate read tracking**: List Pro compares a user’s last record read timestamp with the entity’s `Stream Updated At`, `Modified At`, or `Created At` dates. Any newer activity keeps the row highlighted until the user opens the record again.
 - **Immediate feedback**: Highlighted rows render with a bold label and subtle light-gray background, and clicking the record marks it as reviewed instantly so you’re never unsure whether you’ve covered the latest changes.
 
