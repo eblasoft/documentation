@@ -1,3 +1,9 @@
+---
+icon: material/view-grid-plus
+title: Ebla Layout Pro - EspoCRM
+description: Up to 12 cells per row & custom css classes to cells & panels + ready to use css classes.
+---
+
 # Layout Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-layout-pro" target="_blank" id="ext-version" data-id="63495a03a8d5865fe"></a>
 
 > This extension enhances the capabilities of EspoCRM's layout manager by incorporating the
@@ -16,4 +22,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="63495a03a8d5865fe"></div>

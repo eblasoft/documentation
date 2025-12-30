@@ -1,3 +1,9 @@
+---
+icon: material/dots-grid
+title: Ebla Nav Pro - EspoCRM
+description: Hover open sub menu & more.
+---
+
 # Espocrm Nav Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-navigation-pro" target="_blank" id="ext-version" data-id="6368dc68d112fabca"></a>
 
 ## Overview

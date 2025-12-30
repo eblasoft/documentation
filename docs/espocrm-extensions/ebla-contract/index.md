@@ -5,7 +5,7 @@ title: EspoCRM | Ebla Contract Documentation
 description: Ebla Contract for EspoCRM streamlines contract management with online signatures, real-time tracking, and secure e-signature capabilities.
 ---
 
-# Ebla Contract <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-contract" target="_blank" id="ext-version" data-id="TBD"></a>
+# Ebla Contract <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-contract" target="_blank" id="ext-version" data-id="6708e4d44dc00c037"></a>
 
 ## Overview
 
@@ -521,4 +521,4 @@ concerns.
 
 ## Changelog
 
-<div class="change-log-wrapper" data-id="TBD"></div>
+<div class="change-log-wrapper" data-id="6708e4d44dc00c037"></div>

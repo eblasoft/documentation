@@ -1,3 +1,9 @@
+---
+icon: material/function-variant
+title: Ebla Dynamic Logic Plus - EspoCRM
+description: Associated links for auto fill & filtering, Cascade remove links, prevent delete entities when some link not empty & after save run formula.
+---
+
 # Ebla Dynamic Logic Plus Documentation   <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
 
 ## Overview
@@ -9,7 +15,7 @@
 - **[Links Must Be Empty Before Remove](#links-must-be-empty-before-remove)**
 - **[Cascade Updaters](#cascade-updaters)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5ilvA1BPRok?si=zDZlAAa2jVbZGc-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bkz9Wwbsh7c?si=CzitRzJtPzl7G7ZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Installation & Setup
 
@@ -59,11 +65,11 @@ If Quantity, Unit Price or Line Total are modified => Recalculate the Order enti
 
 ![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-updaters.png)
 
-## ChangeLog
-
-<div class="change-log-wrapper" data-id="637e00a0087ede84b"></div>
-
 ## Support
 
 As always, we appreciate your feedback and are here to help with any questions or issues you may encounter. Please reach out to us on our [portal](https://portal.eblasoft.com.tr/).
 You can log a ticket, or email us at support@eblasoft.com.tr.
+
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="637e00a0087ede84b"></div>

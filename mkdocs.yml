@@ -38,7 +38,7 @@ plugins:
   #- social
   #- tags
 
-copyright: Copyright &copy; 2016 - 2024 Eblasoft Bilişim Ltd.
+copyright: Copyright &copy; 2016 - 2026 Eblasoft Bilişim Ltd.
 
 markdown_extensions:
   - attr_list
@@ -109,135 +109,47 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Mobile App:
-      - Overview: 'espocrm-extensions/mobile-app/index.md'
-      - Features:
-          - PWA: 'espocrm-extensions/mobile-app/pwa.md'
-      - Providers:
-          - WebPush:
-              - Overview: 'espocrm-extensions/mobile-app/providers/webpush/index.md'
-              - Setup: 'espocrm-extensions/mobile-app/providers/webpush/setup.md'
-          - Telegram:
-              - Overview: 'espocrm-extensions/mobile-app/providers/telegram/index.md'
-              - Setup: 'espocrm-extensions/mobile-app/providers/telegram/setup.md'
+  - Mobile PWA: 'espocrm-extensions/mobile-app/index.md'
+  - Ebla Theme: 'espocrm-extensions/ebla-theme/index.md'
+  - Ebla Nav Pro: 'espocrm-extensions/nav-pro/index.md'
+  - Ebla Dash Pro: 'espocrm-extensions/dashlet-pro/index.md'
+  - Ebla List Pro: 'espocrm-extensions/list-pro/index.md'
+  - Ebla Labels: 'espocrm-extensions/labels-cells/index.md'
+  - Ebla Switch: 'espocrm-extensions/switch/index.md'
+  - Ebla Infinity Scroll: 'espocrm-extensions/infinity-scroll/index.md'
+  - Ebla Layout Pro: 'espocrm-extensions/layout-pro/index.md'
+  - Ebla Kanban Multiple: 'espocrm-extensions/kanban-multiple/index.md'
+  - Ebla Gantt: 'espocrm-extensions/gantt/index.md'
 
-  - Shared Filter: 'espocrm-extensions/shared-filter/index.md'
+  - Ebla Number Pro: 'espocrm-extensions/number-pro/index.md'
+  - Ebla Mask Field: 'espocrm-extensions/mask-field/index.md'
+  - Ebla Rate Star Field: 'espocrm-extensions/rate/index.md'
+  - Ebla Dynamic Logic Plus: 'espocrm-extensions/dynamic-logic-plus/index.md'
+  - Ebla Enum Plus: 'espocrm-extensions/enum-plus/index.md'
+  - Ebla Link Pro: 'espocrm-extensions/link-multiple-pro/index.md'
+  - Ebla Map Plus: 'espocrm-extensions/map-plus/index.md'
+  - Ebla Iframe Field: 'espocrm-extensions/iframe-field/index.md'
+  - Ebla Progress Bar: 'espocrm-extensions/progress-bar/index.md'
+  - Ebla Date Pro: 'espocrm-extensions/date-pro/index.md'
 
-  - List Pro: 'espocrm-extensions/list-pro/index.md'
+  - Ebla Public Form: 'espocrm-extensions/public-form/index.md'
+  - Ebla Work Log: 'espocrm-extensions/work-log/index.md'
+  - Ebla Contract: 'espocrm-extensions/ebla-contract/index.md'
+  - Ebla Quick Assign: 'espocrm-extensions/quick-assign/index.md'
+  - Ebla Shared Filter: 'espocrm-extensions/shared-filter/index.md'
+  - Ebla Event Plus: 'espocrm-extensions/event-plus/index.md'
+  - Ebla Generic Filter: 'espocrm-extensions/generic-filter/index.md'
 
-  - Theme: 'espocrm-extensions/ebla-theme/index.md'
+  - Ebla Chat: 'espocrm-extensions/chat/index.md'
+  - Ebla Sms: 'espocrm-extensions/sms/index.md'
+  - Ebla Stream Plus: 'espocrm-extensions/stream-plus/index.md'
+  - Ebla Reactions: 'espocrm-extensions/reactions/index.md'
 
-  - Email Plus: 'espocrm-extensions/email-plus/index.md'
-  - Admin Pro:
-      - Overview: 'espocrm-extensions/admin-pro/index.md'
-      - Features:
-          - Hied System Scopes: 'espocrm-extensions/admin-pro/hide-system-scopes-from-admin-ui.md'
-          - Limit Admin: 'espocrm-extensions/admin-pro/limit-admin-user-permissions.md'
-          - Max Allowed Logins: 'espocrm-extensions/admin-pro/max-allowed-logins.md'
-          - Show Permissions For Users: 'espocrm-extensions/admin-pro/show-permissions-for-specific-user-calculated.md'
+  - Ebla AI: 'espocrm-extensions/espocrm-ai/index.md'
+  - Ebla Admin Pro: 'espocrm-extensions/admin-pro/index.md'
+  - Ebla Print: 'espocrm-extensions/print/index.md'
+  - Ebla Category Tree: 'espocrm-extensions/category-tree/index.md'
+  - Ebla Last Login: 'espocrm-extensions/last-login/index.md'
+  - Ebla Welcome: 'espocrm-extensions/welcome/index.md'
 
-  - Ai:
-      - Overview: 'espocrm-extensions/espocrm-ai/index.md'
-      - Setup:
-          - OpenAI: 'espocrm-extensions/espocrm-ai/providers/openai-setup.md'
-          - Google Gemini: 'espocrm-extensions/espocrm-ai/providers/gemini-setup.md'
-          - Access Control: 'espocrm-extensions/espocrm-ai/features/access-control.md'
-      - Features:
-          - AI Profiles: 'espocrm-extensions/espocrm-ai/features/ai-profiles.md'
-          - AI Prompts: 'espocrm-extensions/espocrm-ai/features/ai-prompts.md'
-          - Email Reply: 'espocrm-extensions/espocrm-ai/features/email-reply.md'
-          - Stream Comment: 'espocrm-extensions/espocrm-ai/features/stream-comment.md'
-          - Formula: 'espocrm-extensions/espocrm-ai/features/formula.md'
-          - Sandbox: 'espocrm-extensions/espocrm-ai/features/sandbox.md'
-
-  - Public Form: 'espocrm-extensions/public-form/index.md'
-
-  - Number Pro: 'espocrm-extensions/number-pro/index.md'
-
-  - Category Tree: 'espocrm-extensions/category-tree/index.md'
-
-  - Chat: 'espocrm-extensions/chat/index.md'
-
-  - Dash Pro: 'espocrm-extensions/dashlet-pro/index.md'
-
-  - Date Pro: 'espocrm-extensions/date-pro/index.md'
-
-  - Dynamic Logic Plus: 'espocrm-extensions/dynamic-logic-plus/index.md'
-
-  - Enum Plus:
-      - Overview: 'espocrm-extensions/enum-plus/index.md'
-      - Features:
-          - Color Option: 'espocrm-extensions/enum-plus/color-option.md'
-          - Force Edit On List View: 'espocrm-extensions/enum-plus/force-edit-on-list-view.md'
-          - Kanban Status Bar In Detail View: 'espocrm-extensions/enum-plus/kanban-status-bar-in-detail-view.md'
-          - Show As Button: 'espocrm-extensions/enum-plus/show-as-button.md'
-          - Formula Functions: 'espocrm-extensions/enum-plus/formula-functions.md'
-
-  - Event Plus: 'espocrm-extensions/event-plus/index.md'
-
-  - Generic Filter: 'espocrm-extensions/generic-filter/index.md'
-
-  - Gantt View: 'espocrm-extensions/gantt/index.md'
-
-  - Iframe: 'espocrm-extensions/iframe-field/index.md'
-
-  - Infinity Scroll: 'espocrm-extensions/infinity-scroll/index.md'
-
-  - Kanban Multiple: 'espocrm-extensions/kanban-multiple/index.md'
-
-  - Layout Pro:
-      - Overview: 'espocrm-extensions/layout-pro/index.md'
-      - Features:
-          - Custom CSS: 'espocrm-extensions/layout-pro/custom-css.md'
-          - Grid Layout: 'espocrm-extensions/layout-pro/grid-layout.md'
-
-  - Last Login: 'espocrm-extensions/last-login/index.md'
-
-  - Internal & Public Case: 'espocrm-extensions/internal-public-case/index.md'
-
-  - Link Multiple Pro: 'espocrm-extensions/link-multiple-pro/index.md'
-
-  - Labels Cells:
-      - Overview: 'espocrm-extensions/labels-cells/index.md'
-      - Features:
-          - Header Text: 'espocrm-extensions/labels-cells/header-text.md'
-          - Rich Text Label: 'espocrm-extensions/labels-cells/rich-text-label.md'
-
-  - Map Plus:
-      - Overview: 'espocrm-extensions/map-plus/index.md'
-      - Features:
-          - Map View: 'espocrm-extensions/map-plus/map-view.md'
-          - Latitude Longitude: 'espocrm-extensions/map-plus/latitude-and-longitude.md'
-          - Map Route: 'espocrm-extensions/map-plus/map-route.md'
-          - Polygon Map: 'espocrm-extensions/map-plus/polygon-map.md'
-          - Search Place Autocomplete: 'espocrm-extensions/map-plus/search-place-autocomplete.md'
-
-  - Mask Field: 'espocrm-extensions/mask-field/index.md'
-
-  - Nav Pro: 'espocrm-extensions/nav-pro/index.md'
-
-  - Print: 'espocrm-extensions/print/index.md'
-
-  - Progress Bar: 'espocrm-extensions/progress-bar/index.md'
-
-  - Quick List Icons: 'espocrm-extensions/quick-list-icons/overview.md'
-
-  - Quick Assign: 'espocrm-extensions/quick-assign/index.md'
-
-  - Rate Star Field: 'espocrm-extensions/rate/index.md'
-
-  - Reactions: 'espocrm-extensions/reactions/index.md'
-
-  - Sms: 'espocrm-extensions/sms/index.md'
-
-  - Stream Plus: 'espocrm-extensions/stream-plus/index.md'
-
-  - Switch: 'espocrm-extensions/switch/index.md'
-
-  - Welcome: 'espocrm-extensions/welcome/index.md'
-
-  - Work Log:
-      - Overview: 'espocrm-extensions/work-log/index.md'
-      - Features:
-          - Online / Offline Status: 'espocrm-extensions/work-log/online-offline.md'
-          - Work Log Button: 'espocrm-extensions/work-log/work-log-button.md'
+  - Ebla Internal & Public Case: 'espocrm-extensions/internal-public-case/index.md'

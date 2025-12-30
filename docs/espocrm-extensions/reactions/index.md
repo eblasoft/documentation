@@ -1,3 +1,9 @@
+---
+icon: material/emoticon-happy
+title: Ebla Reactions - EspoCRM
+description: Allow users to react to stream posts and comments, improving engagement and collaboration.
+---
+
 # Reactions  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-reactions" target="_blank" id="ext-version" data-id="636ce5a5c0c107e82"></a>
 
 > Reactions field is new field type for EspoCRM is available
@@ -29,4 +35,6 @@
 
 <br>
 
-## <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="636ce5a5c0c107e82"></div>

@@ -1,7 +1,7 @@
 ---
 icon: material/chat
-title: Ebla Documentation | Ebla Chat
-description: Internal chat between users in EspoCRM
+title: Ebla Chat - EspoCRM
+description: Internal real-time chat system embedded inside EspoCRM for faster communication between users.
 ---
 
 # Ebla Chat  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-chat" target="_blank" id="ext-version" data-id = "63495a03a58d3019b"></a>
