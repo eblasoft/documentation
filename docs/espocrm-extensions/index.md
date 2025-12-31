@@ -54,6 +54,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-filter: **[Ebla Shared Filter](espocrm-extensions/shared-filter/index.md)**
 - :material-calendar: **[Ebla Event Plus](espocrm-extensions/event-plus/index.md)**
 - :material-filter-menu: **[Ebla Generic Filter](espocrm-extensions/generic-filter/index.md)**
+- :material-filter-menu: **[Ebla Contract](espocrm-extensions/ebla-contract/index.md)**
 </div>
 
 ---

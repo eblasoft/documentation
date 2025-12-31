@@ -38,7 +38,7 @@ plugins:
   #- social
   #- tags
 
-copyright: Copyright &copy; 2016 - 2024 Eblasoft Bilişim Ltd.
+copyright: Copyright &copy; 2016 - 2026 Eblasoft Bilişim Ltd.
 
 markdown_extensions:
   - attr_list
@@ -134,6 +134,7 @@ nav:
 
   - Ebla Public Form: 'espocrm-extensions/public-form/index.md'
   - Ebla Work Log: 'espocrm-extensions/work-log/index.md'
+  - Ebla Contract: 'espocrm-extensions/ebla-contract/index.md'
   - Ebla Quick Assign: 'espocrm-extensions/quick-assign/index.md'
   - Ebla Shared Filter: 'espocrm-extensions/shared-filter/index.md'
   - Ebla Event Plus: 'espocrm-extensions/event-plus/index.md'
