@@ -15,8 +15,6 @@ from creation to signing. It provides powerful e-signature capabilities, contrac
 With support for both built-in signing and PandaDoc integration, Ebla Contract offers flexible solutions for businesses of
 all sizes to digitize their contract processes.
 
-![Ebla Contract Overview](../../_static/images/espocrm-extensions/ebla-contract/overview.png)
-
 ---
 
 ## Extension Video
@@ -89,10 +87,10 @@ Manage non-disclosure agreements, partnership agreements, and other legal docume
 2. Click **Create Template** and select **EblaContract** as the entity type.
 3. Design your contract using the rich text editor.
 4. Add template placeholders for dynamic content:
-   - `{{contractSign role="Signer"}}` - Signature placeholder
-   - `{{contractSignName role="Signer"}}` - Signer name
-   - `{{contractSignDate role="Signer"}}` - Signing date
-   - `{{contractSignParty role="Signer"}}` - Party details
+   - `{{contractSign "Signer"}}` - Signature placeholder
+   - `{{contractSignName "Signer"}}` - Signer name
+   - `{{contractSignDate "Signer"}}` - Signing date
+   - `{{contractSignParty "Signer" "Field"}}` - Party Filed 
 
 ![Contract Template](../../_static/images/espocrm-extensions/ebla-contract/template-creation.png)
 
@@ -143,6 +141,8 @@ Manage non-disclosure agreements, partnership agreements, and other legal docume
 3. Review the contract and use the signature pad to sign.
 4. System captures IP address and timestamp automatically.
 
+![Signature Link](../../_static/images/espocrm-extensions/ebla-contract/signature-link.png)
+
 ![Signature Pad](../../_static/images/espocrm-extensions/ebla-contract/signature-pad.png)
 
 ---
@@ -160,8 +160,6 @@ Navigate to **Administration** → **Settings** → **Contract Settings**.
   Options:
   - `Ebla` - Built-in signature provider (no external dependencies)
   - `PandaDoc` - Integration with PandaDoc service (requires separate extension)
-
-![Provider Settings](../../_static/images/espocrm-extensions/ebla-contract/provider-settings.png)
 
 ---
 
@@ -182,8 +180,6 @@ Customize the signature ink color using the color picker.
 - **Default**: `#000000` (Black)
 - **Use Case**: Brand consistency, document requirements
 
-![Pen Color](../../_static/images/espocrm-extensions/ebla-contract/pen-color.png)
-
 #### Dot Size
 
 Control the thickness of signature strokes for better legibility and appearance.
@@ -202,8 +198,6 @@ Set a background color for the signature canvas area.
 - **Type**: Color Picker
 - **Default**: None (transparent)
 - **Use Case**: Contrast enhancement, document design requirements
-
-![Background Color](../../_static/images/espocrm-extensions/ebla-contract/bg-color.png)
 
 #### Read Only Options
 
@@ -243,7 +237,7 @@ Displays the signature for a specific role.
 
 **Syntax:**
 ```handlebars
-{{contractSign role="Signer"}}
+{{contractSign "Signer"}}
 ```
 
 **Parameters:**
@@ -251,8 +245,8 @@ Displays the signature for a specific role.
 
 **Example:**
 ```handlebars
-Landlord Signature: {{contractSign role="Landlord"}}
-Tenant Signature: {{contractSign role="Tenant"}}
+Landlord Signature: {{contractSign "Landlord"}}
+Tenant Signature: {{contractSign "Tenant"}}
 ```
 
 #### 3. Contract Sign Name
@@ -261,12 +255,12 @@ Displays the name of the person who signed for a specific role.
 
 **Syntax:**
 ```handlebars
-{{contractSignName role="Signer"}}
+{{contractSignName "Signer"}}
 ```
 
 **Example:**
 ```handlebars
-Signed by: {{contractSignName role="Client"}}
+Signed by: {{contractSignName "Client"}}
 ```
 
 #### 4. Contract Sign Date
@@ -275,12 +269,12 @@ Displays the date when the contract was signed for a specific role.
 
 **Syntax:**
 ```handlebars
-{{contractSignDate role="Signer"}}
+{{contractSignDate "Signer"}}
 ```
 
 **Example:**
 ```handlebars
-Date Signed: {{contractSignDate role="Vendor"}}
+Date Signed: {{contractSignDate "Vendor"}}
 ```
 
 #### 5. Contract Sign Party
@@ -289,7 +283,7 @@ Displays detailed party information including name, role, and signing details.
 
 **Syntax:**
 ```handlebars
-{{contractSignParty role="Signer"}}
+{{contractSignParty "Signer" "fieldName"}}
 ```
 
 **Example Template:**
@@ -301,12 +295,14 @@ Displays detailed party information including name, role, and signing details.
 
 <div style="margin: 20px 0;">
   <strong>Service Provider:</strong><br>
-  {{contractSignParty role="Provider"}}
+    Name : {{contractSignName "Provider"}}
+    Email Address : {{contractSignParty "Provider" "emailAddress"}}
 </div>
 
 <div style="margin: 20px 0;">
   <strong>Client:</strong><br>
-  {{contractSignParty role="Client"}}
+    Name : {{contractSignName "Client"}}
+    Email Address : {{contractSignParty "Client" "emailAddress"}}
 </div>
 
 <div style="margin-top: 40px;">
@@ -314,24 +310,20 @@ Displays detailed party information including name, role, and signing details.
     <tr>
       <td width="50%">
         <strong>Provider Signature:</strong><br>
-        {{contractSign role="Provider"}}<br>
-        Name: {{contractSignName role="Provider"}}<br>
-        Date: {{contractSignDate role="Provider"}}
+        {{contractSign "Provider"}}<br>
+        Name: {{contractSignName "Provider"}}<br>
+        Date: {{contractSignDate "Provider"}}
       </td>
       <td width="50%">
         <strong>Client Signature:</strong><br>
-        {{contractSign role="Client"}}<br>
-        Name: {{contractSignName role="Client"}}<br>
-        Date: {{contractSignDate role="Client"}}
+        {{contractSign "Client"}}<br>
+        Name: {{contractSignName "Client"}}<br>
+        Date: {{contractSignDate "Client"}}
       </td>
     </tr>
   </table>
 </div>
 ```
-
-![Template Example](../../_static/images/espocrm-extensions/ebla-contract/template-example.png)
-
----
 
 ## Contract Workflow
 
