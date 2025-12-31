@@ -19,17 +19,22 @@ Modify field values directly within the list view. Simply hover over a field, an
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-inline-edit.png)
 
+#### Enabling Inline Editing for a Field
+
+To enable inline editing for a field within a list:
+
+1. Go to **Administration → Entity Manager → EntityType → Layouts**.
+2. Select the list layout where you want to enable editing for the field (list, listSmall, or customList).
+3. Click the **Edit** button next to the field.
+4. A new option **Enable Inline Edit** will appear.
+5. Activate it and save the changes.
+
 ### Escape and Save Shortcuts
 Quickly discard or save your changes using keyboard shortcuts.
 
 - Press ++esc++ to discard any changes made within the inline edit.
 - Press ++ctrl+enter++ to save your changes.
 
-
-### Entity-Level Disabling
-Disable inline editing for specific entities by adding `"inlineEditListDisabled": true` within the corresponding JSON file located at `Resources/metadata/clientDefs/{YourEntityName}.json`.
-
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-disabling.png)
 
 ### Field-Level Disabling
 Deactivate inline editing for individual fields by toggling the "inline edit" option within the field manager configuration.
