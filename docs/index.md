@@ -38,6 +38,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-format-list-checks: **[Ebla Enum Plus](espocrm-extensions/enum-plus/index.md)**
 - :material-link-variant: **[Ebla Link Pro](espocrm-extensions/link-pro/index.md)**
 - :material-map: **[Ebla Map Plus](espocrm-extensions/map-plus/index.md)**
+- :material-map-outline: **[Ebla Open Street Map](espocrm-extensions/ebla-open-street-map/index.md)**
 - :fontawesome-regular-window-maximize: **[Ebla Iframe Field](espocrm-extensions/iframe-field/index.md)**
 - :material-progress-clock: **[Ebla Progress Bar](espocrm-extensions/progress-bar/index.md)**
 - :material-calendar-clock: **[Ebla Date Pro](espocrm-extensions/date-pro/index.md)**
