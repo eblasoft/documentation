@@ -35,6 +35,8 @@ Quickly discard or save your changes using keyboard shortcuts.
 - Press ++esc++ to discard any changes made within the inline edit.
 - Press ++ctrl+enter++ to save your changes.
 
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-1.png)
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-2.png)
 
 ### Field-Level Disabling
 Deactivate inline editing for individual fields by toggling the "inline edit" option within the field manager configuration.
