@@ -19,17 +19,24 @@ Modify field values directly within the list view. Simply hover over a field, an
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-inline-edit.png)
 
+#### Enabling Inline Editing for a Field
+
+To enable inline editing for a field within a list:
+
+1. Go to **Administration → Entity Manager → EntityType → Layouts**.
+2. Select the list layout where you want to enable editing for the field (list, listSmall, or customList).
+3. Click the **Edit** button next to the field.
+4. A new option **Enable Inline Edit** will appear.
+5. Activate it and save the changes.
+
 ### Escape and Save Shortcuts
 Quickly discard or save your changes using keyboard shortcuts.
 
 - Press ++esc++ to discard any changes made within the inline edit.
 - Press ++ctrl+enter++ to save your changes.
 
-
-### Entity-Level Disabling
-Disable inline editing for specific entities by adding `"inlineEditListDisabled": true` within the corresponding JSON file located at `Resources/metadata/clientDefs/{YourEntityName}.json`.
-
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-disabling.png)
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-1.png)
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-2.png)
 
 ### Field-Level Disabling
 Deactivate inline editing for individual fields by toggling the "inline edit" option within the field manager configuration.
@@ -46,6 +53,15 @@ Deactivate inline editing for individual fields by toggling the "inline edit" op
 Switch between the list view and card view to display records in a more visually appealing format.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-list-card-view.png)
+
+### Has Updates Highlight
+Call attention to records that have new activity since the user last visited them.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
+
+- **Per-entity toggle**: In `Administration → Entity Manager → {Entity} → Edit`, enable **"Enable Has Updates Highlight"** to start tracking.
+- **Accurate read tracking**: List Pro compares a user’s last record read timestamp with the entity’s `Stream Updated At`, `Modified At`, or `Created At` dates. Any newer activity keeps the row highlighted until the user opens the record again.
+- **Immediate feedback**: Highlighted rows render with a bold label and subtle light-gray background, and clicking the record marks it as reviewed instantly so you’re never unsure whether you’ve covered the latest changes.
 
 ### Real Estate Custom Advanced Card Style
 Customize the card view to display additional fields and information.
