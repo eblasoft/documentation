@@ -128,14 +128,6 @@ Manage non-disclosure agreements, partnership agreements, and other legal docume
 
 ### Step 5: Sign the Contract
 
-**For Internal Users:**
-
-1. Open the Contract Party record.
-2. Use the signature pad to draw your signature.
-3. Click **Confirm Signature**.
-
-**For External Parties:**
-
 1. Parties receive an email with a unique signing link or QR code.
 2. They open the link (no login required).
 3. Review the contract and use the signature pad to sign.
@@ -360,8 +352,6 @@ The system automatically updates statuses based on actions:
 - All parties signed: Contract → "Completed"
 - Removing signature: Party → "Sent", Contract → "Pending"
 
-![Workflow Diagram](../../_static/images/espocrm-extensions/ebla-contract/workflow.png)
-
 ---
 
 ## Public Signing
@@ -393,8 +383,6 @@ Public signing allows external parties to sign contracts without CRM access thro
 4. Use signature pad to sign
 5. Click **Confirm Signature**
 
-![QR Code](../../_static/images/espocrm-extensions/ebla-contract/qr-code.png)
-
 **Entry Point URL Structure:**
 ```
 https://your-crm.com/?entryPoint=EContract&id={sessionId}
@@ -423,8 +411,6 @@ Every signature event captures the signer's IP address automatically:
 - **Capture Time**: When signature is confirmed
 - **Use Cases**: Compliance, fraud prevention, audit trails
 - **Display**: Visible in party detail view for authorized users
-
-![IP Tracking](../../_static/images/espocrm-extensions/ebla-contract/ip-tracking.png)
 
 ### Remove Signature
 
