@@ -52,8 +52,7 @@ all sizes to digitize their contract processes.
 - **Contract Types**: Pre-configured contract types including Lease Agreement, Sales Agreement, Service Contract,
   Maintenance Contract, and more. Fully customizable.
 
-- **Status Workflow**: Automated status transitions from New → Ready for Send → Pending → Completed with customizable
-  workflows.
+- **Status Workflow**: Automated status transitions from New → Ready for Send → Pending → Completed.
 
 ---
 
@@ -146,55 +145,10 @@ Manage non-disclosure agreements, partnership agreements, and other legal docume
 Navigate to **Administration** → **Settings** → **Contract Settings**.
 
 #### Default E-Signature Provider
-
-- **defaultContractsProvider** (default: `Ebla`): Choose between built-in Ebla provider or PandaDoc integration.
-  
+ 
   Options:
-  - `Ebla` - Built-in signature provider (no external dependencies)
+  - `Ebla` - Built-in signature provider (no external dependencies - default)
   - `PandaDoc` - Integration with PandaDoc service (requires separate extension)
-
----
-
-## Signature Field Configuration
-
-The signature field offers extensive customization options to match your branding and document requirements.
-
-### Field Parameters
-
-Access these settings via **Administration** → **Entity Manager** → **EblaContractParty** → **Fields** → **Sign**.
-
-#### Pen Color
-
-Customize the signature ink color using the color picker.
-
-- **Parameter**: `color`
-- **Type**: Color Picker
-- **Default**: `#000000` (Black)
-- **Use Case**: Brand consistency, document requirements
-
-#### Dot Size
-
-Control the thickness of signature strokes for better legibility and appearance.
-
-- **Parameter**: `dotSize`
-- **Type**: Float (0.5 - 5.0)
-- **Default**: `1.0`
-- **Use Case**: High-resolution displays, print quality optimization
-- **Tip**: Higher values create bolder signatures; lower values provide finer detail
-
-#### Background Color
-
-Set a background color for the signature canvas area.
-
-- **Parameter**: `backgroundColor`
-- **Type**: Color Picker
-- **Default**: None (transparent)
-- **Use Case**: Contrast enhancement, document design requirements
-
-#### Read Only Options
-
-- **readOnly** (default: `false`): Prevent signature modification
-- **readOnlyAfterCreate** (default: `false`): Lock signature after initial creation
 
 ---
 
@@ -214,7 +168,7 @@ Embeds the signature as an inline image in the document.
 ```
 
 **Parameters:**
-- `sign` - The signature field data
+- `sign` - The signature field name
 - `width` - Image width in pixels
 - `height` - Image height in pixels
 
@@ -225,7 +179,7 @@ Signature: {{signatureImage contractParty.sign width="250" height="80"}}
 
 #### 2. Contract Sign
 
-Displays the signature for a specific role.
+Displays the signature pad for a specific role.
 
 **Syntax:**
 ```handlebars
@@ -243,7 +197,7 @@ Tenant Signature: {{contractSign "Tenant"}}
 
 #### 3. Contract Sign Name
 
-Displays the name of the person who signed for a specific role.
+Displays the name of the party for a specific role.
 
 **Syntax:**
 ```handlebars
@@ -271,7 +225,7 @@ Date Signed: {{contractSignDate "Vendor"}}
 
 #### 5. Contract Sign Party
 
-Displays detailed party information including name, role, and signing details.
+Displays any party field.
 
 **Syntax:**
 ```handlebars
@@ -323,120 +277,19 @@ Displays detailed party information including name, role, and signing details.
 
 The contract lifecycle follows these statuses:
 
-1. **New**: Initial state when contract is created
-2. **Ready for Send**: Document created from template and ready for distribution
+1. **New**: Initial state when a contract is created
+2. **Ready for Send**: Document created from a template and ready for distribution
 3. **Pending**: Document sent to parties, awaiting signatures
 4. **Completed**: All parties have signed the contract
 5. **Canceled**: Contract was canceled before completion
-
-Additional statuses for calendar integration:
-- **Planned**: Scheduled for future execution
-- **Held**: Contract meeting/event completed
-- **Not Held**: Scheduled event did not occur
 
 ### Party Statuses
 
 Contract parties progress through these statuses:
 
-1. **Draft**: Party added but document not created
-2. **Sent**: Signing link sent to party
+1. **Draft**: Party added but a document not created
+2. **Sent**: A signing link sent to party
 3. **Signed**: Party completed signature
-
-### Automated Status Transitions
-
-The system automatically updates statuses based on actions:
-
-- Creating document: Contract → "Ready for Send"
-- Sending document: Contract → "Pending", All ready parties → "Sent"
-- Signing: Party → "Signed"
-- All parties signed: Contract → "Completed"
-- Removing signature: Party → "Sent", Contract → "Pending"
-
----
-
-## Public Signing
-
-### How It Works
-
-Public signing allows external parties to sign contracts without CRM access through secure, tokenized URLs.
-
-1. System generates a unique session ID for each contract party
-2. Public URL is created: `https://your-crm.com/?entryPoint=EContract&id={sessionId}`
-3. QR code is automatically generated for mobile-friendly access
-4. Link can be sent via email or shared directly
-
-### Security Features
-
-- **No Authentication Required**: Parties sign without creating CRM accounts
-- **Unique Session Tokens**: Each signing link is unique and non-transferable
-- **IP Address Logging**: System captures signer's IP for audit trail
-- **Timestamp Recording**: Exact signing time is recorded
-- **Preview Mode**: Option to preview contracts without signing capability
-
-### Accessing Public Signing Page
-
-**For Contract Parties:**
-
-1. Check the **QR Code** field on the party record
-2. Scan with mobile device or click the generated link
-3. Review the contract document
-4. Use signature pad to sign
-5. Click **Confirm Signature**
-
-**Entry Point URL Structure:**
-```
-https://your-crm.com/?entryPoint=EContract&id={sessionId}
-https://your-crm.com/?entryPoint=EContract&id={sessionId}&preview=true
-```
-
----
-
-## Advanced Features
-
-### Signature Preservation
-
-The signature field intelligently handles existing signatures:
-
-- **Initial Signature**: Loaded automatically when editing a party record
-- **New Strokes**: System tracks when new signature strokes are added
-- **Hybrid Mode**: Combines existing signature with new strokes seamlessly
-- **Canvas Resizing**: Preserves signature content during window resize
-- **Undo Support**: Remove last stroke without losing entire signature
-
-### IP Address Tracking
-
-Every signature event captures the signer's IP address automatically:
-
-- **Field**: `ipAddress` on EblaContractParty
-- **Capture Time**: When signature is confirmed
-- **Use Cases**: Compliance, fraud prevention, audit trails
-- **Display**: Visible in party detail view for authorized users
-
-### Remove Signature
-
-Authorized users can remove signatures when needed:
-
-1. Open the Contract Party record
-2. Click **Remove Signature** action in the dropdown menu
-3. Confirm the action
-4. System resets:
-   - Signature field cleared
-   - Status changed back to "Sent"
-   - Signed timestamp removed
-   - IP address retained for audit
-   - Contract status reverted to "Pending"
-
-!!! warning
-    Removing a signature is a sensitive action. Ensure proper permissions are configured via ACL settings.
-
-### Calendar Integration
-
-Contracts integrate seamlessly with EspoCRM calendar:
-
-- **Activity View**: Contracts appear as calendar events
-- **Date Range**: Based on Date Start and Date End fields
-- **Color Coding**: Status-based color indicators
-- **Filtering**: Filter by contract status in calendar view
 
 ---
 
@@ -468,8 +321,6 @@ PandaDoc's platform.
    - **Callback URL**: Automatically populated
 5. Click **Connect** to authorize
 6. Set **Default Contracts Provider** to "PandaDoc" in settings
-
-![PandaDoc Setup](../../_static/images/espocrm-extensions/ebla-contract/pandadoc-setup.png)
 
 ### Webhook Configuration
 
