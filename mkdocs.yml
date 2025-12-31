@@ -135,6 +135,7 @@ nav:
   - Ebla Public Form: 'espocrm-extensions/public-form/index.md'
   - Ebla Work Log: 'espocrm-extensions/work-log/index.md'
   - Ebla Contract: 'espocrm-extensions/ebla-contract/index.md'
+  - Ebla Follow Up: 'espocrm-extensions/ebla-follow-up/index.md'
   - Ebla Quick Assign: 'espocrm-extensions/quick-assign/index.md'
   - Ebla Shared Filter: 'espocrm-extensions/shared-filter/index.md'
   - Ebla Event Plus: 'espocrm-extensions/event-plus/index.md'
