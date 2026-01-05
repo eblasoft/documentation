@@ -31,6 +31,9 @@ After installation, configure OpenStreetMap as your default map provider:
 2. Under **Map Provider**, select **OpenStreetMap**
 3. Click **Save**
 
+![Map Provider](../../_static/images/espocrm-extensions/ebla-open-street-map/setting-map-provider.png)
+
+
 All address fields will now use OpenStreetMap instead of Google Maps.
 
 
@@ -44,6 +47,8 @@ To display entity records on a map:
 4. Select **Map Address Field** (which address field to use for markers)
 5. Select **Map Layout** (which layout to use for list display)
 6. Click **Save**
+
+![Enable Map List](../../_static/images/espocrm-extensions/ebla-open-street-map/enable-map-list.png)
 
 Users can now toggle to Map View when viewing the entity list.
 
@@ -75,6 +80,8 @@ When viewing a record with an address field:
 2. A marker shows the geocoded location
 3. Previously saved polygons (if any) are displayed
 4. Map includes OpenStreetMap attribution
+
+![View Map](../../_static/images/espocrm-extensions/ebla-open-street-map/view-map.png)
 
 ### Automatic Geocoding
 
@@ -121,12 +128,14 @@ If marker dragging is enabled:
 
 If map list view is enabled for an entity:
 
-1. Navigate to the entity list (e.g., **Accounts**)
+1. Navigate to the entity list (e.g., **Leads**)
 2. Toggle view mode to **Map** (icon in top-right)
 3. All records with valid coordinates appear as markers
 4. Hover over a marker to see the record name
 5. Click a marker to navigate to that record's detail view
 6. Map auto-zooms to fit all visible markers
+
+![Map List](../../_static/images/espocrm-extensions/ebla-open-street-map/map-list.png)
 
 ## Comparison: Google Maps vs OpenStreetMap
 
