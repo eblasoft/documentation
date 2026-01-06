@@ -72,6 +72,8 @@ Use the `eblaFollowUp\createLink()` formula function to generate a unique link f
 $linkId = eblaFollowUp\createLink('contacts', '+7 days');
 ```
 
+![Follow Up CreateLink](../../_static/images/espocrm-extensions/follow-up/create-link.png)
+
 ### 2. Link Distribution
 
 Send the link to intended recipients using the `send()` formula function:
@@ -84,6 +86,8 @@ eblaFollowUp\send('john@example.com', 'template-id');
 eblaFollowUp\send();
 ```
 
+![Link Distribution](../../_static/images/espocrm-extensions/follow-up/link-distribution.png)
+
 ### 3. Public Access
 
 Recipients receive an email with a unique URL in the format:
@@ -91,6 +95,9 @@ Recipients receive an email with a unique URL in the format:
 ```
 https://your-crm.com/?entryPoint=FollowUp&uuid=unique-identifier
 ```
+
+![Link](../../_static/images/espocrm-extensions/follow-up/link.png)
+
 
 ### 4. Link Management
 
@@ -103,6 +110,9 @@ eblaFollowUp\setTerminateAt('+3 days');
 // Set specific expiration date
 eblaFollowUp\setTerminateAt('2025-12-31 23:59:59');
 ```
+
+![TerminateAt](../../_static/images/espocrm-extensions/follow-up/link-terminate-at.png)
+
 
 ## Formula Functions
 
