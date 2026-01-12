@@ -18,6 +18,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-dots-grid: **[Ebla Nav Pro](espocrm-extensions/nav-pro/index.md)**
 - :material-view-dashboard: **[Ebla Dash Pro](espocrm-extensions/dashlet-pro/index.md)**
 - :material-format-list-bulleted: **[Ebla List Pro](espocrm-extensions/list-pro/index.md)**
+- :material-image-multiple: **[Ebla Image Plus](espocrm-extensions/image-plus/index.md)**
 - :material-label: **[Ebla Labels](espocrm-extensions/labels-cells/index.md)**
 - :fontawesome-solid-toggle-off: **[Ebla Switch](espocrm-extensions/switch/index.md)**
 - :material-autorenew: **[Ebla Infinity Scroll](espocrm-extensions/infinity-scroll/index.md)**
