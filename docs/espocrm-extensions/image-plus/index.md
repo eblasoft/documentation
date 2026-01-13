@@ -39,6 +39,19 @@ This allows you to understand your image data without leaving EspoCRM.
 
 ---
 
+### Metadata Write-back & Field Mapping
+Take full control of your image properties by linking EspoCRM fields directly to image metadata.
+
+Two-Way Synchronization: Map your custom EspoCRM fields to specific EXIF or IPTC tags.
+
+Automatic Updates: When you edit a mapped field within EspoCRM, the extension automatically updates the metadata inside the image file itself.
+
+Data Integrity: Ensures that your image files carry the most up-to-date information (like descriptions, copyright, or tags) even when downloaded or shared outside the CRM.
+
+![Ebla Image Plus](../../_static/images/espocrm-extensions/image-plus/metadata-mapping.png)
+
+---
+
 ### Human-Readable EXIF Labels
 Technical EXIF keys are translated into clear, user-friendly labels.
 
