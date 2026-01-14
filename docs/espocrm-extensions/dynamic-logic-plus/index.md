@@ -1,75 +1,97 @@
 ---
 icon: material/function-variant
 title: Ebla Dynamic Logic Plus - EspoCRM
-description: Associated links for auto fill & filtering, Cascade remove links, prevent delete entities when some link not empty & after save run formula.
+description: Associated links for auto-fill & filtering, cascade remove links, prevent deletion when links not empty, and automatic formula recalculation.
 ---
 
-# Ebla Dynamic Logic Plus Documentation   <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
+# Ebla Dynamic Logic Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-dynamic-logic-plus" target="_blank" id="ext-version" data-id="637e00a0087ede84b"></a>
+
+> Advanced relationship logic and data integrity controls for EspoCRM
+
+<!-- DOC:OVERVIEW START -->
 
 ## Overview
 
-**Ebla Dynamic Logic Plus** is a powerful extension for EspoCRM designed to enhance your EspoCRM experience by making data input more easy and efficient.
+**Ebla Dynamic Logic Plus** extends EspoCRM's relationship management capabilities with intelligent auto-fill, cascade operations, deletion protection, and automatic formula recalculation. Define sophisticated relationship rules without custom code, ensuring data consistency and improving user productivity through automated workflows.
 
-- **[Associated Links](#associated-links)**
-- **[Cascade Remove](#cascade-remove)**
-- **[Links Must Be Empty Before Remove](#links-must-be-empty-before-remove)**
-- **[Cascade Updaters](#cascade-updaters)**
+<!-- DOC:OVERVIEW END -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bkz9Wwbsh7c?si=CzitRzJtPzl7G7ZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Installation & Setup
+<!-- DOC:USE-CASES START -->
 
-Refer to [the installation guide](../../getting-started/installation-guide.md) for Ebla extensions.
+## Use Cases
 
-Here is a screenshot of the new button on entity manager which leads to the configuration page of the extension:
+1. **Automated Account Filling** – Select a Contact and automatically populate the related Account field, reducing data entry time.
+
+2. **Project Data Cleanup** – Delete a Project and automatically remove all linked Tasks, preventing orphaned records.
+
+3. **Data Integrity Protection** – Prevent deletion of Accounts with active Contacts, ensuring critical relationships aren't accidentally broken.
+
+4. **Order Total Recalculation** – Update an Order Item's quantity and automatically recalculate the parent Order's total through formula execution.
+
+5. **Customer Hierarchy Management** – Filter Opportunities by selected Account's parent company, maintaining proper organizational structure.
+
+6. **Invoice Processing** – Delete a parent Invoice and cascade remove all associated Line Items and Payment records automatically.
+
+<!-- DOC:USE-CASES END -->
+
+<!-- DOC:FEATURES START -->
+
+## Key Features
+
+- **Associated Links**: Define relationship conditions that auto-fill related fields based on link selections, with optional hidden filters for seamless UX.
+- **Cascade Remove**: Automatically delete linked child records when parent entities are removed, maintaining database cleanliness.
+- **Deletion Protection**: Enforce data integrity by preventing record deletion when specific relationships contain linked items.
+- **Cascade Updaters**: Trigger automatic formula recalculation on parent entities when child entity fields are modified.
+
+<!-- DOC:FEATURES END -->
+
+## Configuration
+
+Access Dynamic Logic Plus settings via **Administration** → **Entity Manager** → select entity → **Dynamic Logic Plus** button.
 
 ![Dynamic Logic Plus Configuration](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-button.png)
 
-### Example
-See this [example](./dynamic-logic-plus-example.md) for a detailed explanation of how to configure the extension.
+### Associated Links
 
-## Features
+Define relationship conditions to auto-populate fields based on link selections. When selecting a Contact, automatically fill the Account field with the Contact's associated Account.
 
-### 1. Associated Links {#associated-links}
+![Associated Links Configuration](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-associated-links.png)
 
-With Ebla Dynamic Logic Plus, you can define relation conditions for links between entities. For example, you can establish a relationship between Contacts and Accounts so that
-selecting a contact automatically fills in the associated account. Additionally, you have the option to hide these filters for a seamless user experience.
+!!! note
+    Enable "Hidden Filter" option to auto-fill without showing filter UI to users.
 
-![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-associated-links.png)
+### Cascade Remove
 
-!!! note "Note"
-    You can make those filters hidden for a seamless user experience.
+Configure automatic deletion of child records when parent entities are removed. When a Project is deleted, all linked Tasks are automatically removed.
 
-### 2. Cascade Remove {#cascade-remove}
+![Cascade Remove Configuration](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-remove.png)
 
-This feature allows you to automatically remove linked items when the parent entity is deleted. For instance, suppose you have a parent entity "Project" with linked child
-entities "Tasks." Enabling cascade remove ensures that when a project is deleted, all associated tasks are also removed, preventing orphaned data.
+### Deletion Protection
 
-![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-remove.png)
+Prevent entity deletion when specified relationships contain linked records. Block Account deletion if any Contacts are still linked.
 
-### 3. Links Must Be Empty Before Remove {#links-must-be-empty-before-remove}
+![Links Must Be Empty Configuration](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-links-must-be-empty-before-remove.png)
 
-This feature prevents the deletion of specific records if they have linked items from designated relationships. For instance, if you don't want to delete an Account that has
-associated Contacts, you can enforce that the Contacts must be removed manually before the Account can be deleted. This ensures data integrity and prevents accidental deletion of
-important records.
+### Cascade Updaters
 
-![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-links-must-be-empty-before-remove.png)
+Trigger parent entity formula recalculation when child records change. When Order Item quantity changes, automatically recalculate the Order total.
 
-### 4. Cascade Updaters {#cascade-updaters}
+![Cascade Updaters Configuration](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-updaters.png)
 
-Cascade Updaters are invaluable for recalculating linked entities based on changes in child entities. 
+**Example**: Order entity has a `total` formula field that sums linked Order Items. Configure Cascade Updater to recalculate Order formula when Order Item's `quantity`, `unitPrice`, or `lineTotal` fields are modified.
 
-For example, imagine you have an entity called "Order" with a calculated field `Total` that sums linked items in the "Order Item" entity. 
+See [detailed configuration example](./dynamic-logic-plus-example.md) for step-by-step setup instructions.
 
-If Quantity, Unit Price or Line Total are modified => Recalculate the Order entity formula.
+---
 
-![Dynamic Logic Plus Example](../../_static/images/espocrm-extensions/dynamic-logic-plus/dynamic-logic-plus-cascade-updaters.png)
+## Support and Feedback
 
-## Support
+Need assistance or have suggestions? Contact us through our [support portal](https://portal.eblasoft.com.tr/) or email support@eblasoft.com.tr.
 
-As always, we appreciate your feedback and are here to help with any questions or issues you may encounter. Please reach out to us on our [portal](https://portal.eblasoft.com.tr/).
-You can log a ticket, or email us at support@eblasoft.com.tr.
+---
 
-## ChangeLog
+## Changelog <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-dynamic-logic-plus#changelog" target="_blank"></a>
 
 <div class="change-log-wrapper" data-id="637e00a0087ede84b"></div>
