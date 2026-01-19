@@ -54,6 +54,9 @@ all sizes to digitize their contract processes.
 
 - **Status Workflow**: Automated status transitions from New → Ready for Send → Pending → Completed.
 
+- **Resend Signing Link (Per Party)**:  
+  Easily resend the signing document to individual contract parties directly from the Parties panel using a row action. Ideal for handling missed emails or reminders without regenerating the document.
+
 ---
 
 ## Use Cases
