@@ -4,7 +4,7 @@ title: Ebla Reference Numbers
 description: Auto-generate unique reference codes and link them across EspoCRM.
 ---
 
-# Ebla Reference Numbers <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-references" data-id="ebla-references"></a>
+# Ebla Reference Numbers <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-references" data-id="64e5a806785a95000"></a>
 
 > Create custom auto-generated reference numbers for any entity and link them automatically when mentioned.
 
@@ -13,6 +13,15 @@ The **Ebla Reference Numbers** extension allows you to generate unique, readable
 
 Beyond generation, the extension integrates these references into the stream. When a reference number is mentioned in a post (e.g., "Regarding #REF-1234"), it is automatically converted into a link to the related record.
 <!-- DOC:OVERVIEW END -->
+
+---
+
+## Extension Video
+
+<!-- TODO: Add video when available -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/acb5MjPdz8Y" title="Ebla References for EspoCRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+---
 
 <!-- DOC:USE-CASES START -->
 ## Use Cases
@@ -54,12 +63,20 @@ To start using reference numbers, you need to add the special field to an entity
 6. Click **Save**.
 7. Add the new field to the entity's **Layouts** (Detail and List views).
 
+![Reference Field](../../_static/images/espocrm-extensions/ebla-references/reference-field.png)
+
 ### Using References
 
 - **Generation**: A unique number is automatically generated when a new record is saved.
 - **Mentioning**: In a Stream Post, type `#` followed by the prefix or number to search references.
 - **Linking**: Posting a comment containing a reference number will automatically link that post to the referenced record.
 - **Viewing Related Posts**: Click on any reference number in the stream (e.g. `[#REF-1234]`) to open a modal showing all stream posts mentioning that reference.
+
+![Mentioning](../../_static/images/espocrm-extensions/ebla-references/mentioning.png)
+
+
+![Viewing Related Posts](../../_static/images/espocrm-extensions/ebla-references/viewing-related-posts.png)
+
 <!-- DOC:CONFIGURATION END -->
 
 ---
