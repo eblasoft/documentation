@@ -45,12 +45,12 @@ To start using reference numbers, you need to add the special field to an entity
 3. Click **Fields** and then **Add Field**.
 4. Select **NumberPlus** as the type.
 5. Configure the field parameters:
-   - **Prefix**: The string to appear before the number (e.g., `ABC-`).
-   - **Pad Length**: The number of characters for the random part (e.g., `4` results in `0123`).
-   - **Pattern**: Choose the character set for the random part:
-     - `0-9` (Digits only)
-     - `A-Z` (Letters only)
-   - **Copy to clipboard**: Enable to show a copy button next to the field value.
+    - **Prefix**: The string to appear before the number (e.g., `ABC-`).
+    - **Pad Length**: The number of characters for the random part (e.g., `4` results in `0123`).
+    - **Pattern**: Choose the character set for the random part:
+        - `0-9` (Digits only)
+        - `A-Z` (Letters only)
+    - **Copy to clipboard**: Enable to show a copy button next to the field value.
 6. Click **Save**.
 7. Add the new field to the entity's **Layouts** (Detail and List views).
 
@@ -59,6 +59,7 @@ To start using reference numbers, you need to add the special field to an entity
 - **Generation**: A unique number is automatically generated when a new record is saved.
 - **Mentioning**: In a Stream Post, type `#` followed by the prefix or number to search references.
 - **Linking**: Posting a comment containing a reference number will automatically link that post to the referenced record.
+- **Viewing Related Posts**: Click on any reference number in the stream (e.g. `[#REF-1234]`) to open a modal showing all stream posts mentioning that reference.
 <!-- DOC:CONFIGURATION END -->
 
 ---
