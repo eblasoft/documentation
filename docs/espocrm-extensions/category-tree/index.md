@@ -15,6 +15,8 @@ description: New Category Tree entity type template for EspoCRM to create hierar
 
 This extension is ideal for any organizing entities type that benefits from hierarchical classification.
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/2ChcJ-JQwQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <!-- DOC:OVERVIEW END -->
 
 ![Category Tree View](../../_static/images/espocrm-extensions/category-tree/espocrm-category-tree-item.png)
