@@ -16,7 +16,7 @@ Unlike Google Maps which requires API keys and has usage limits, OpenStreetMap i
 
 ## Extension Video
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OgxLuARS5U4" title="Ebla Open Street Map for EspoCRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+<iframe width="650" height="315" src="https://www.youtube.com/embed/OgxLuARS5U4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
