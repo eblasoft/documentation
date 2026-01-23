@@ -16,9 +16,17 @@ Ebla Nav Pro is an extension for EspoCRM that enhances the navigation experience
 - [Favorites tabs section](#5-favourites-tabs-section)
 - [Menu separator line.](#6-menu-separator-line)
 - [Clear cache on user menu.](#7-clear-cache-on-user-menu)
+- [Role-Based Menu Visibility](#8-role-based-menu-visibility).
+- [Dynamic URL Placeholders](#9-dynamic-url-placeholders).
+- [Global Search Scope Synchronization](#10-global-search-scope-synchronization).
 
 These features aim to streamline the navigation process, improve user productivity, and provide a more intuitive and efficient user experience within EspoCRM.
 
+---
+## Extension video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CXgz0IZOd1c" title="Eblasoft | Espocrm Nav Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ## 1. Quick Add Buttons
 
 Ebla Nav Pro introduces quick add buttons for creating new group, url & divider directly from the tab list field.
@@ -68,6 +76,55 @@ This is only for side menu.
 
 ## 7. Clear Cache on User Menu
 ![nav-pro-menu-separator-line](../../_static/images/espocrm-extensions/nav-pro/nav-pro-clear-cache.png){ width=500px }
+
+## 8. Role-Based Menu Visibility
+
+Control the visibility of navigation menu items based on user roles for both internal users and portal users.
+
+**Ebla Nav Pro** allows administrators to define which navigation **tabs**, **groups**, or **custom links** are visible to specific **User Roles**. This ensures that users only see the menu items relevant to their responsibilities, improving usability and security.
+
+* **Role-Based Control**:
+Restrict access to menu items based on directly assigned roles or roles inherited through Teams.
+
+* **Portal Role Support**:
+Define menu visibility for Portal users based on their Portal Roles, allowing precise control over the Portal navigation tabs list.
+
+![nav-pro-role-based-menu-visibility](../../_static/images/espocrm-extensions/nav-pro/nav-pro-role-based-menu-visibility.png)
+![nav-pro-role-based-menu-visibility-2](../../_static/images/espocrm-extensions/nav-pro/nav-pro-portal-role-based-menu-visibility.png)
+
+---
+## 9. Dynamic URL Placeholders
+
+Use dynamic placeholders in Custom Links to pass user-specific data automatically.
+
+When creating Custom Links in the navigation menu, you can include dynamic **placeholders** that are replaced at runtime with attributes of the currently logged-in user.
+
+**Syntax**: {attribute}
+
+**Behavior**:
+Each placeholder is automatically replaced with the corresponding user field value.
+
+**Example**:
+````
+https://external-app.com?uid={id}&name={userName}
+````
+**In this example**:
+
+**{id}** is replaced with the current user’s ID.
+
+**{userName}** is replaced with the current user’s username.
+
+**Use Case**:
+Seamlessly integrate external systems by passing user context without manual configuration.
+
+---
+
+## 10. Global Search Scope Synchronization
+
+For non-admin users, the extension automatically synchronizes the Global Search entity scope with the user's available navigation tabs. Entities that are hidden or not present in   
+the user's navigation bar will be filtered out of the Global Search dropdown list, ensuring a cleaner and more relevant search experience consistent with their navigation access.
+
+
 
 ## Support
 For any questions, issues, or feedback regarding Ebla Nav Pro extension, please contact us to eymen@eblasoft.com.tr or refer to the official Eblasoft support portal to log a ticket.
