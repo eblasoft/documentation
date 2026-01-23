@@ -31,6 +31,8 @@ The defined colors are applied consistently across all areas where Enum colors a
 
 - ### [Formula Functions](formula-functions.md)
 
+- ### [Row Coloring Based on Enum Fields](row-coloring-based-on-enum-fields.md)
+
 ---
 
 
