@@ -1,9 +1,12 @@
-# Kanban Status Bar in Detail View
+### Kanban Status Bar in Detail View
 
-Ability to show kanban Status Field view in detail view in EspoCRM.
+Visualize the progress of a record (like a sales stage or support ticket status) directly in the Detail View.
 
-Kanban Status Bar in Detail View is available
-in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-kanban-board).
+- **Display:** Renders the Enum field (typically "Status" or "Stage") as a chevron-style process bar.
+
+- **Configuration:** Enable in `Entity Manager` > `{Entity}` > `Edit` (Entity definitions).
+
+- **Interaction:** Users can clearly see the current stage and the progression flow.
 
 
 ---
@@ -23,3 +26,4 @@ in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ka
 <br>
 
 ![Enable Kanban Status Bar in Detail View](../../_static/images/espocrm-extensions/enum-plus/entity-param.png)
+
