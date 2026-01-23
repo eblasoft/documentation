@@ -27,7 +27,7 @@ Based on the [mode](#modes) you selected, the iframe will be displayed in differ
 ## Modes
 See this video for a quick overview of the modes:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n7S4V7DdW-8?si=sHcA15zTk9A" title="Eblasoft | Espocrm Shared Filter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B6QMm-zptI4" title="Eblasoft | Espocrm Ebla Iframe Field" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Inline
 Display the iframe directly in the detail view.
