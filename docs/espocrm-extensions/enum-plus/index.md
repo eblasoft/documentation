@@ -6,17 +6,22 @@ description: Color palette, Show Enum as button, Enum status bar for detail reco
 
 # Enum Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-enum-plus" target="_blank" id="ext-version" data-id="638999ce6d3bbcd76"></a>
 
-Enhancing (Enum Multi-Enum) field functionality with additional features in EspoCRM.
+## Overview
+**Ebla Enum Plus** is a comprehensive extension for EspoCRM that significantly enhances the capabilities of Enum and Multi-Enum fields. It introduces visual customizations, improved user interface elements, and global management of option lists, making data entry and status tracking more intuitive and efficient.
+
+The defined colors are applied consistently across all areas where Enum colors are displayed, including **Kanban View**, **Calendar**, **List View**, and **Detail View**, ensuring a unified and visually coherent user experience.
 
 ---
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/v4LZkH17A2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/2AnzIkMbtJY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
+---
+
 **Features:**
 
-- ### [Color Option](color-option.md)
+- ### [Additional Colors](additional-colors.md)
 
 - ### [Force Edit On List View](force-edit-on-list-view.md)
 

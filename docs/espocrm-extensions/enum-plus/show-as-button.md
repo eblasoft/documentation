@@ -1,16 +1,18 @@
-# Show As Button
+### Show As Button (Button Group)
 
-Ability to transform options into buttons in EspoCRM .
+Render Enum options as an interactive button group instead of a standard dropdown.
 
-Show As Button is available in [Ebla Eum Plus](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-enum-plus).
+- **Display:** Options are displayed as a horizontal row of buttons.
+
+- **Always Force Edit Mode:** Option to keep the buttons interactive even in the read-only Detail View, allowing for one-click updates.
 
 ---
 
-### Always Force Edit Mode
+### Show As Button
 
 Enable the toggle buttons group even on the view mode.
 
-![Always Force Edit Mode](../../_static/images/espocrm-extensions/enum-plus/always-force-edit-mode.png)
+![Show As Button](../../_static/images/espocrm-extensions/enum-plus/show-as-button.png)
 
 <br>
 
@@ -20,8 +22,7 @@ Enable the toggle buttons group even on the view mode.
 
 <br>
 
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/enum-plus/options.png" alt="drawing" style="width:200px;"/>
-
+![Show As Button Option](../../_static/images/espocrm-extensions/enum-plus/show-as-button-option.png)
 
 !!! note
 
