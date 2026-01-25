@@ -142,6 +142,7 @@ nav:
   - Ebla Shared Filter: 'espocrm-extensions/shared-filter/index.md'
   - Ebla Event Plus: 'espocrm-extensions/event-plus/index.md'
   - Ebla Generic Filter: 'espocrm-extensions/generic-filter/index.md'
+  - Ebla References: 'espocrm-extensions/ebla-references/index.md'
 
   - Ebla Chat: 'espocrm-extensions/chat/index.md'
   - Ebla Sms: 'espocrm-extensions/sms/index.md'

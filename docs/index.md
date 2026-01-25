@@ -58,6 +58,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-filter-menu: **[Ebla Generic Filter](espocrm-extensions/generic-filter/index.md)**
 - :material-pen: **[Ebla Contract](espocrm-extensions/ebla-contract/index.md)**
 - :material-account-file-text-outline: **[Ebla Follow Up](espocrm-extensions/ebla-follow-up/index.md)**
+- :material-tag: **[Ebla References](espocrm-extensions/ebla-references/index.md)**
 </div>
 
 ---

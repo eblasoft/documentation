@@ -1,17 +1,17 @@
 ---
-icon: fa-hashtag
-title: Ebla Reference Numbers
-description: Auto-generate unique reference codes and link them across EspoCRM.
+icon: material/tag
+title: Ebla References - Tag
+description: Auto-generate unique reference codes that can be mentioned and linked in EspoCRM streams.
 ---
 
-# Ebla Reference Numbers <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-references" data-id="64e5a806785a95000"></a>
+# Ebla References <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-references" data-id="64e5a806785a95000"></a>
 
 > Create custom auto-generated reference numbers for any entity and link them automatically when mentioned.
 
 <!-- DOC:OVERVIEW START -->
-The **Ebla Reference Numbers** extension allows you to generate unique, readable reference codes (e.g., `REF-1234`) for any entity in EspoCRM. These codes serve as identifiers that are easier to communicate than standard database IDs.
+The **Ebla References Numbers** extension allows you to generate unique, readable reference codes (e.g., `PRJ-1234`) for any entity in EspoCRM.
 
-Beyond generation, the extension integrates these references into the stream. When a reference number is mentioned in a post (e.g., "Regarding #REF-1234"), it is automatically converted into a link to the related record.
+Those references can be tagged into the stream. When a reference number is mentioned in a post (e.g., "Regarding #PRJ-1234"), it is automatically converted into a link to the related record.
 <!-- DOC:OVERVIEW END -->
 
 ---
@@ -19,7 +19,7 @@ Beyond generation, the extension integrates these references into the stream. Wh
 ## Extension Video
 
 <!-- TODO: Add video when available -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/acb5MjPdz8Y" title="Ebla References for EspoCRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/acb5MjPdz8Y?si=Oltfm61MxDpfLyCY" title="Ebla References for EspoCRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -27,32 +27,36 @@ Beyond generation, the extension integrates these references into the stream. Wh
 ## Use Cases
 
 1. **Support Tickets** – Generate ticket IDs (e.g., `TKT-001`) to easily reference customer issues in emails and chats.
-2. **Project Task Codes** – Assign short codes to tasks for quick reference during meetings.
+2. **Project IDs** – Assign unique project codes for better communication among team members tasks tracking.
 3. **Internal Documents** – Tag documents with unique IDs to cross-reference them in notes and discussions.
-4. **Order Tracking** – Create human-readable order numbers for sales processing.
+4. **Event Registrations** – Assign registration codes to attendees for easy check-in and follow-up.
+5. **Marketing Campaigns** – Track campaign elements with unique codes for better organization.
+6. **Custom Workflows** – Use reference numbers in custom workflows to link related records seamlessly.
 <!-- DOC:USE-CASES END -->
 
 <!-- DOC:FEATURES START -->
 ## Key Features
 
-- **Custom Reference Field**: Adds a new `NumberPlus` field type to Entity Manager.
+- **New Field (Number Plus)**: Adds a new `NumberPlus` field type to Entity Manager, can be added to any entity.
 - **Flexible Formatting**: Configure prefix, length, and character patterns (Digits, Letters, or Mixed).
-- **Auto-Linking**: Automatically detects reference numbers mentioned in Stream posts, converting them to links.
 - **Autocomplete**: Type `#` in Stream to search and insert reference numbers.
-- **Copy to Clipboard**: One-click copy button next to the reference number in detail views.
+  ![Mentioning](../../_static/images/espocrm-extensions/ebla-references/mentioning.png)
+- **Show Related Posts**: Click on a reference number in the stream to view all posts mentioning it.
+  ![Viewing Related Posts](../../_static/images/espocrm-extensions/ebla-references/viewing-related-posts.png)
+
 <!-- DOC:FEATURES END -->
 
 <!-- DOC:CONFIGURATION START -->
 ## Configuration
 
-To start using reference numbers, you need to add the special field to an entity layout.
+To start using reference numbers, you need to add `NumberPlus` field to an entity in field manager. Codes will be generated automatically when a new record is created. Then you can mention those references in stream posts.
 
 ### Adding a Reference Field
 
 1. Go to **Administration** > **Entity Manager**.
-2. Select the entity you want to add a reference to (e.g., *Case* or *Task*).
+2. Select the entity you want to add a reference to (e.g., *Case* or *Project*).
 3. Click **Fields** and then **Add Field**.
-4. Select **NumberPlus** as the type.
+4. Select `NumberPlus` as the type.
 5. Configure the field parameters:
     - **Prefix**: The string to appear before the number (e.g., `ABC-`).
     - **Pad Length**: The number of characters for the random part (e.g., `4` results in `0123`).
@@ -72,11 +76,6 @@ To start using reference numbers, you need to add the special field to an entity
 - **Linking**: Posting a comment containing a reference number will automatically link that post to the referenced record.
 - **Viewing Related Posts**: Click on any reference number in the stream (e.g. `[#REF-1234]`) to open a modal showing all stream posts mentioning that reference.
 
-![Mentioning](../../_static/images/espocrm-extensions/ebla-references/mentioning.png)
-
-
-![Viewing Related Posts](../../_static/images/espocrm-extensions/ebla-references/viewing-related-posts.png)
-
 <!-- DOC:CONFIGURATION END -->
 
 ---
@@ -87,4 +86,4 @@ If you need help with this extension, please contact Eblasoft Support.
 
 ## Changelog
 
-<div class="change-log-wrapper" data-id="ebla-references"></div>
+<div class="change-log-wrapper" data-id="64e5a806785a95000"></div>
