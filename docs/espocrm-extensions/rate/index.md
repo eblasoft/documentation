@@ -12,13 +12,17 @@ description: Add rating fields using star icons for customer satisfaction, prior
 ---
 
 ## Overview
-The Ebla Rate extension adds a sophisticated rating field to EspoCRM, allowing users to rate records based on single or multiple criteria. It supports weighted averages, visual customization, and various display modes.
+Ebla Rate extension adds a new field type `Rate` to EspoCRM field manager, allowing users to rate records based on single or multiple criteria.
+Can be added directly to target records such as Accounts, Contacts, Leads, Opportunities, or any custom entity.
+You also can create a new custom entity specifically for ratings and link it to other entities.
+It is ideal for scenarios like customer satisfaction surveys, product reviews, service quality assessments, and performance evaluations.
+In database, the ratings are stored as JSON objects and result as float values representing the average score.
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/INpxxBnxpWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-## Features
+## Options & Features
 *   **Star Rating**: Interactive star rating interface.
 *   **Multiple Criteria**: Define custom criteria (e.g., Quality, Service, Price) for granular ratings.
 *   **Weighted Average**: Automatically calculates and displays the average rating across all criteria.
