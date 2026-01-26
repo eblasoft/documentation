@@ -3,7 +3,19 @@
 > Rich Text Label is a new type of field in EspoCRM is available
 > in  [Ebla Labels](https://www.eblasoft.com.tr/espocrm-extension-page/labels-cells).
 ---
+**Placeholder Support**
 
+Rich Text Labels support dynamic placeholders, allowing you to display entity data dynamically inside the label content.
+
+**Syntax**: {fieldName}
+
+**Behavior**:
+Placeholders are automatically replaced with the corresponding field values from the current record.
+
+**Example**:
+Using {name} or {status} inside the Rich Text Label will display the record’s name or status dynamically.
+
+---
 ![rich-text-label](../../_static/images/espocrm-extensions/labels-cells/rich-text-label.png)
 
 

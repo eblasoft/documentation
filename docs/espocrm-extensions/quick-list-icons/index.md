@@ -17,6 +17,7 @@ to the do quick action to records.
 - [Delete](#delete-button)
 - [Follow](#follow-button)
 - [Stream](#stream-button)
+- [Star](#star-button)
 
 ### Setup
 
@@ -45,8 +46,8 @@ When you click the delete button, it will delete the record.
 ![quick-list-icons-5.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons-5.png)
 
 ### Follow Button
-Star icon that shows the following status.
-When you click the star icon, if the record is not followed, it will follow the record.
+follow icon that shows the following status.
+When you click the follow icon, if the record is not followed, it will follow the record.
 If the record is followed, it will unfollow the record.
 
 ![quick-list-icons-6.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons-6.png)
@@ -57,6 +58,13 @@ When you click the stream button, it will open the entity and scroll to the stre
 
 ![quick-list-icons-7.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons-7.png)
 
+### Star Button
+
+Star icon that shows whether a record is starred (favorited).
+When you click the star icon, if the record is not starred, it will mark it as starred.
+If the record is already starred, it will unstar the record.
+
+![quick-list-icons-8.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons-8.png)
 ## ChangeLog
 
 <div class="change-log-wrapper" data-id="63906034501216d10"></div>
