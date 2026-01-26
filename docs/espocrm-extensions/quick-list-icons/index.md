@@ -5,7 +5,7 @@
 Ebla Quick List Icons is an extension for EspoCRM that enhances the list experience by introducing several new buttons
 to the do quick action to records.
 
-[See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-quick-list-icons){:target="_blank" .md-button }
+[See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-quick-list-icons){:target="_blank" .md-button }
 
 
 ![quick-list-icons.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons.png)
