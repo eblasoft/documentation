@@ -27,6 +27,8 @@ description: Internal real-time chat system embedded inside EspoCRM for faster c
 
 - **Real-Time Updates**: Instant message delivery via WebSocket when enabled, with polling fallback every 15 seconds when WebSocket is disabled.
 
+- **Contextual Side Panel Integration** : Automatically display the chat interface within the side panel of specific records. By linking an entity to the Dialog, conversations are tied directly to that record for focused collaboration.
+
 - **Stream Integration**: Uses EspoCRM's native stream post system for messages, ensuring full compatibility with existing features and excellent performance.
 
 - **Popup Notifications**: Automatic desktop-style popup notifications when new messages arrive, even when you're working in other areas of EspoCRM.
@@ -47,6 +49,14 @@ description: Internal real-time chat system embedded inside EspoCRM for faster c
 
 ## How It Works
 
+### Contextual & Side Panel Access
+**New!** The extension allows for context-aware conversations. When a specific entity (e.g., a Case, Opportunity, or Task) is linked via the Parent relationship to a Dialog:
+
+The specific Chat Dialog will appear automatically in the Side Panel of that entity's Detail View.
+
+This links the conversation directly to the record, ensuring all discussions related to that entity are easily accessible while viewing the record itself.
+
+![Ebla Chat Side Panel](../../_static/images/espocrm-extensions/chat/espocrm-chat-side-panel.png)
 ### Real-Time Communication
 
 Ebla Chat supports two modes of real-time communication:
@@ -103,6 +113,15 @@ Chat respects all EspoCRM access control settings:
 ![Ebla Chat Permissions](../../_static/images/espocrm-extensions/chat/espocrm-chat-permissions.png)
 
 ## Configuration
+
+### Side Panel Integration Setup
+To enable the chat panel to appear inside a specific entity (like Case, Task, etc.), you must define the relationship:
+
+1. Navigate to Administration → Entity Manager.
+2. Select Dialog.
+3. Click on Relationships.
+4. Create or ensure a relationship exists with your target entity (e.g., linking Dialog to Case).
+5. Once the relationship is established, chats linked to that parent record will automatically render in the side panel.
 
 ### WebSocket Setup
 
