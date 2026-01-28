@@ -7,6 +7,10 @@ to the do quick action to records.
 
 [See it on website](https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-quick-list-icons){:target="_blank" .md-button }
 
+---
+<iframe width="650" height="315" src="https://www.youtube.com/embed/jKYGJKMZ8dQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 ![quick-list-icons.png](../../_static/images/espocrm-extensions/quick-list-icons/quick-list-icons.png)
 
