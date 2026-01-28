@@ -1,58 +1,57 @@
 ---
 icon: material/message-processing
-title: Ebla SMS - EspoCRM
+title: EspoCRM SMS - Ebla SMS Documentation 
 description: Send SMS messages directly from records detail & list views using integrated SMS gateways and more.
 ---
 
-# SMS <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-sms" target="_blank" id="ext-version" data-id="64a6d717d1ec80e20"></a>
+# Ebla SMS for EspoCRM <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-sms" target="_blank" id="ext-version" data-id="64a6d717d1ec80e20"></a>
 
-> This extension enables SMS Entity.
-> Read more about SMS [EspoCRM SMS Sending](https://docs.espocrm.com/administration/sms-sending/).
-> is available in [Ebla SMS](https://www.eblasoft.com.tr/espocrm-extension-page/sms).
+## Overview
+**Ebla SMS** is an extension for EspoCRM that allows users to send SMS messages from record detail and list views, manage SMS communications, and create SMS campaigns using various supported SMS gateways.
 
----
+!!! note
+    Read more about [EspoCRM SMS Sending](https://docs.espocrm.com/administration/sms-sending/).
+
+
 ## Features
 
-1. **Enable SMS Entity** – Activate the SMS Entity to manage messages directly in EspoCRM.
-2. **Mass SMS sending** – Send messages to multiple contacts, leads, or accounts at once using the mass action feature.
-3. **SMS Templates** – Create reusable message templates to save time and ensure consistency.
-4. **Add SMS in Activity Panel** – Track all SMS communications in the Activity panel for better visibility.
-5. **View SMS messages in History panel** – Access sent and received messages from the record’s History panel.
-6. **Directly replace placeholders within message body** – Automatically replace dynamic fields (like contact name) in your messages.
-7. **“Create Sms” button in SMS entity** – Quickly send a new SMS to a specific number from the SMS record view.
-8. **Create campaigns of type “Message”** – Launch SMS campaigns targeting a selected target list.
-9. **Schedule jobs to send messages to target lists** – Automate sending messages to a target list within SMS campaigns at specified times.
-10. **Reply button for incoming messages** – Easily respond to received SMS directly from the SMS record view.
-
----
+### Enable SMS Entity
+Ability to manage SMS entity within EspoCRM entity manager. Some projects may require customizations or additional relationships.
 
 ### Mass SMS Sending
+Mass action on list views to send SMS messages to multiple records at once (Contacts, Leads, Accounts, etc.).
 
-![Mass SMS](../../_static/images/espocrm-extensions/sms/mass-sms.png )
+![Mass SMS Send](../../_static/images/espocrm-extensions/sms/mass-sms.png )
 
----
+### SMS Templates
+Same as Email Templates, you can create SMS templates to reuse them while sending messages.
 
-### Add SMS in Activity & History Panel
+### Add SMS in Activity Panel
+Ability to send SMS in the Activity panel of records. Similar to calls and emails.
 
-![Activity Panel](../../_static/images/espocrm-extensions/sms/activity-panel.png )
+![SMS Activity Panel](../../_static/images/espocrm-extensions/sms/activity-panel.png )
 
----
+### View SMS messages in History panel
 
-### Create Sms Button
+![SMS History Panel](../../_static/images/espocrm-extensions/sms/history-panel.png )
 
-![Create SMS](../../_static/images/espocrm-extensions/sms/create-sms-button.png )
+### Create Sms Button in SMS Entity
+Enables a "Create Sms" button in the SMS list view to quickly send a new SMS to a specific number.
 
----
-### SMS Campaign
+![Create SMS Button](../../_static/images/espocrm-extensions/sms/create-sms-button.png )
+
+### Campaigns of type "Message"
+Ability to create campaigns of type "Message" to send SMS messages to a target list And schedule jobs to send messages to target lists within SMS campaigns.
 
 ![SMS Campaign](../../_static/images/espocrm-extensions/sms/sms-campaign.png )
 
----
-### Reply Button
+### Reply Button for Incoming Messages
+A "Reply" button is available for incoming messages in the SMS entity, allowing users to respond directly from the SMS record view.
 
-![Reply Button](../../_static/images/espocrm-extensions/sms/reply-button.png )
+![SMS Reply Button](../../_static/images/espocrm-extensions/sms/reply-button.png )
 
----
+
+## Installation
 1. **Administration -> Integration** – Configure your SMS provider by entering required credentials.
 2. Go to **Administration -> SMS** – Select the SMS provider and specify the **From Number** if needed.
 
@@ -66,7 +65,6 @@ Supported SMS Providers:
 > - SerwerSms
 > - Verimor
 
----
 
 ## ChangeLog
 
