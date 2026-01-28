@@ -26,12 +26,13 @@ Mass action on list views to send SMS messages to multiple records at once (Cont
 ### SMS Templates
 Same as Email Templates, you can create SMS templates to reuse them while sending messages.
 
-### Add SMS in Activity Panel
+### View SMS in Activity Panel
 Ability to send SMS in the Activity panel of records. Similar to calls and emails.
 
 ![SMS Activity Panel](../../_static/images/espocrm-extensions/sms/activity-panel.png )
 
 ### View SMS messages in History panel
+Ability to view sent and received SMS messages in the History panel of records.
 
 ![SMS History Panel](../../_static/images/espocrm-extensions/sms/history-panel.png )
 
