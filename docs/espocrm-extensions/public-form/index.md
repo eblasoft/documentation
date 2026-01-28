@@ -11,7 +11,7 @@ description: Generate shareable embeddable public forms that feed submissions di
 
 **Ebla Public Form** for EspoCRM allows publishing EspoCRM forms publicly on websites.
 
-This extension provides a simple and efficient way to collect data, feedback, and more.
+This extension provides a simple and efficient way to collect data, feedback, and more by generating public-facing forms that feed directly into your CRM entities.
 
 ---
 <iframe width="650" height="315" src="https://www.youtube.com/embed/wS2jND4ck48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -37,7 +37,7 @@ This extension provides a simple and efficient way to collect data, feedback, an
    Utilize star rate extension for enhanced feedback collection.
 
 2. **Collect CVs** <br>
-   Gather resumes or CVs directly through custom forms.
+   Gather resumes or CVs directly through custom forms using file/attachment upload fields.
 
 3. **Receive Tickets to Case Entity** <br>
    Streamline the process of submitting tickets by allowing users to fill out forms directly.
@@ -45,67 +45,91 @@ This extension provides a simple and efficient way to collect data, feedback, an
 4. **Registration for Portal Users** <br>
    Enable seamless registration for portal users with customizable forms.
 
-## Existing Features
+5. **Language Switching** <br>
+   You can control the form language by adding `lang` parameter to the form URL.
 
-1. ### Welcome & Thank You Messages
-   Customize welcome and thank you messages for users filling out forms.
+## Features
 
-2. ### reCaptcha
-   Ensure the security of your forms with reCaptcha integration.
+### 1. Welcome & Thank You Messages
+Customize welcome and thank you messages for users filling out forms. You can guide users before they start and confirm their submission at the end.
 
-3. ### Control Form Design
-    1. Options for showing/hiding the logo, changing the background color, and more. <br>
-    2. Ability to write custom CSS for further customization.
+![Welcome and Thank You Messages Frontend](../../_static/images/espocrm-extensions/public-form/form-frontend-messages.png)
 
-4. ### Default Fields
-   Predefined fields like name, email, phone, and message for quick form creation.
+![Welcome and Thank You Messages](../../_static/images/espocrm-extensions/public-form/espocrm-public-form-messages.png)
 
-5. ### Url Field Value
-   Populate fields with values from the URL. This allows for pre-filling fields with data from the URL.
-   Use case: Pre-fill the contact id and ticket id in the form URL to use on formula script later.
+### 2. reCaptcha Integration
+Ensure the security of your forms with Google reCaptcha integration. 
+*   Supports reCaptcha v3.
+*   Configure site key and secret key in EspoCRM integration settings.
+*   Protects against spam and bot submissions.
 
-    ``` title="Example:"
-    Field Name: website
-    Value: eblasoft.com.tr
-    URL: https://your-crm.com/ebla-form/xxxxxxxx?website=eblasoft.com.tr
-    ```
+![reCaptcha Integration](../../_static/images/espocrm-extensions/public-form/form-recaptcha.png)
+### 3. Customizable Design
+*   **Logo:** Options to show/hide the company logo and change basic styling.
+*   **Custom CSS:** Ability to inject custom CSS to match your brand's look and feel perfectly.
+*   **Custom Scripts:** Support for custom JavaScript to add advanced behaviors to your forms.
 
-6. ### Custom Detail Layout
-   You can create a custom detail layout for the form entity to show the form fields in a specific order.
+![Custom CSS](../../_static/images/espocrm-extensions/public-form/form-custom-css.png)
 
-7. ### Support all Scopes
-   Support all scopes for any entity type, Lead, Contact, Account, Case, etc. Plus custom entities.
+### 4. Default Field values
+*   **Default Values:** Set default values for any field to be pre-filled when the form loads.
 
-8. ### Easy Link Distribution via Email Templates
-   Send form links effortlessly using pre-designed email templates.
-   You can fill fields dynamically in the email template using the url field value feature.
+### 5. Advanced Layout Configuration
+*   **Custom Detail Layouts:** Create unique layouts for your public forms separate from your internal CRM views.
+*   **Layout Creation:** You can create new layouts directly from the Ebla Form configuration or select existing detail layouts.
 
-9. ### Embeddable Forms
-   Seamlessly integrate forms into your website using IFrames.
+### 6. File & Attachment Support
+*   **File Uploads:** Allow users to upload files and attachments directly through the form.
+*   *Note:* Requires `allowEblaFormUpload` configuration to be set to `true`.
 
-10. ### Support for Espo Dynamic Logic
-   You can use EspoCRM dynamic logic to show/hide fields based on conditions.
+### 7. Entity Support
+*   **Multi-Scope Support:** Create forms for any entity type: Lead, Contact, Account, Case, and Custom Entities.
+*   **Scope Filtering:** The extension automatically filters available scopes based on your system configuration.
 
-11. ### Security
-   For enhanced security, all requests are separated from EspoCRM standard API requests. This ensures that all checks and validations are performed especially for public forms.
+### 8. Multi-Language Support (Form Language Switching)
+Ebla Public Form supports changing the form language dynamically using a URL parameter.
+
+*   **Language Parameter:** Pass the desired language using `lang` parameter.
+*   **Uses EspoCRM Translations:** The form will load translations based on the selected EspoCRM language.
+*   **Fallback:** If the provided language is not available, the system default language will be used.
+
+**Example:**
+```
+https://your-crm.com/ebla-form/xxxxxxxx??lang=de_DE
+```
+### 9. Security
+*   **Isolated API:** All public form requests are handled via a separated API endpoint (`EblaForm/save/...`) ensuring strict validation and separation from standard CRM API access.
+*   **Validation:** Built-in validation ensures data integrity before creating records.
 
 ## Configuration
 
-- **eblaFormClientPath**: <br>
-  default is `../../` (relative path to EspoCRM root directory). you can change it to `../` if you have EspoCRM installed in a subdirectory.
-- **allowEblaFormUpload**: <br>
-  default is `false`. If you want to allow file uploads, set it to `true`.
+To configure the extension, go to the **Ebla Public Form** entity in your EspoCRM administration.
 
-![Public Forms](../../_static/images/espocrm-extensions/public-form/form-op.png)
+### General Settings
+*   **Name:** Internal name for your form.
+*   **Entity:** The target entity type (e.g., Lead, Contact).
+*   **Layout:** Select the specific layout to render.
+*   **Welcome Message:** Text to display at the top of the form.
+*   **Thanks Message:** Text to display after successful submission.
+*   **Show Logo:** Toggle company logo visibility.
+*   **reCaptcha:** Enable/Disable Google reCaptcha.
 
-## Support and Feedback
+### Advanced Configuration (config.php)
+You can add these parameters to `data/config.php`:
 
-For any inquiries, support, or feedback regarding the "Ebla Public Forms" extension, please reach out to our portal create a ticket. We are committed to ensuring a seamless
-experience and are here to assist you with any questions or concerns you may have.
+*   **allowEblaFormUpload**:
+    *   Default is `false`. Set to `true` to enable file/attachment uploads.
+
+```php
+// data/config.php
+{
+    "allowEblaFormUpload": true
+}
+```
 
 ## Nginx Configuration
 
-If you are using Nginx, you need to add the following configuration to your server block:
+If you are using Nginx, you need to add the following configuration to your server block to handle the public form routes correctly:
 
 ```nginx
 location /ebla-form {
@@ -113,10 +137,16 @@ location /ebla-form {
 }
 ```
 
+## Support and Feedback
+
+For any inquiries, support, or feedback regarding the "Ebla Public Forms" extension, please reach out to our portal create a ticket. We are committed to ensuring a seamless experience and are here to assist you with any questions or concerns you may have.
+
 ## Conclusion
 
-With the "Ebla Public Forms" extension, EspoCRM users can get the full benefits of Espocrm forms by embedding them on websites. This extension provides a simple and efficient way
-to collect data, feedback, and more from users, streamlining the process and enhancing user experience.
+With the "Ebla Public Forms" extension,
+EspoCRM users can get the full benefits of EspoCRM forms by embedding them on websites,
+supporting file uploads, custom layouts, security validation,
+and multi-language public forms, providing a powerful and flexible data collection solution.
 
 ## Change Log
 
