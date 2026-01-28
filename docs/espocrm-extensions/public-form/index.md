@@ -13,6 +13,11 @@ description: Generate shareable embeddable public forms that feed submissions di
 
 This extension provides a simple and efficient way to collect data, feedback, and more.
 
+---
+<iframe width="650" height="315" src="https://www.youtube.com/embed/wS2jND4ck48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ![Public Forms](../../_static/images/espocrm-extensions/public-form/espocrm-public-form-admin.png)
 
 !!! note
