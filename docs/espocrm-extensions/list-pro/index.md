@@ -14,56 +14,46 @@ description: Inline fields editing from list views in espocrm makes editing your
 
 ## Key Features
 
-### Inline Editing
-Modify field values directly within the list view. Simply hover over a field, and a pencil icon will appear, prompting you to initiate the edit. Click on the pencil to activate editing.
+### 1. Inline Editing
 
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-inline-edit.png)
-
-#### Enabling Inline Editing for a Field
-
-To enable inline editing for a field within a list:
-
-1. Go to **Administration → Entity Manager → EntityType → Layouts**.
-2. Select the list layout where you want to enable editing for the field (list, listSmall, or customList).
-3. Click the **Edit** button next to the field.
-4. A new option **Enable Inline Edit** will appear.
-5. Activate it and save the changes.
-
-### Escape and Save Shortcuts
-Quickly discard or save your changes using keyboard shortcuts.
-
-- Press ++esc++ to discard any changes made within the inline edit.
-- Press ++ctrl+enter++ to save your changes.
+Modify field values directly within the list view.
+- **Usage**: Hover over a field to see the pencil icon. Click to edit.
+- **Shortcuts**:
+    - `Esc`: Discard changes.
+    - `Ctrl + Enter`: Save changes.
+- **Configuration**:
+    - Enable per-list in `Administration > Entity Manager > [Entity] > Layouts > List > Inline Edit`.
+- **Note**: Respects field permissions. Not supported for fields with dynamic logic.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-1.png)
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-2.png)
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-inline-edit.png)
 
-### Field-Level Disabling
-Deactivate inline editing for individual fields by toggling the "inline edit" option within the field manager configuration.
 
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-field-level-disabling.png)
-
-!!! note "Note"
-    Inline editing respects field permissions and will not work for fields that are read-only or have restricted access.
-
-!!! warning "Warning"
-    Inline editing is not supported for fields that have dynamic logic.
-
-### List Card View
+### 2. List Card View
 Switch between the list view and card view to display records in a more visually appealing format.
+
+- **Enable from**:
+`Administration → Entity Manager→ {entityType} → Edit → Enable Card List View`
+
+- **Set card view as default using**: Default View Mode As Card
+
+- **Create a custom layout named**: *listCard* to control which fields appear inside each card.
+
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-list-card-view.png)
 
-### Has Updates Highlight
+### 3. Has Updates Highlight
 Call attention to records that have new activity since the user last visited them.
-
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
 
 - **Per-entity toggle**: In `Administration → Entity Manager → {Entity} → Edit`, enable **"Enable Has Updates Highlight"** to start tracking.
 - **Accurate read tracking**: List Pro compares a user’s last record read timestamp with the entity’s `Stream Updated At`, `Modified At`, or `Created At` dates. Any newer activity keeps the row highlighted until the user opens the record again.
 - **Immediate feedback**: Highlighted rows render with a bold label and subtle light-gray background, and clicking the record marks it as reviewed instantly so you’re never unsure whether you’ve covered the latest changes.
 
-### Real Estate Custom Advanced Card Style
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
+
+
+### 4. Real Estate Custom Advanced Card Style
 Customize the card view to display additional fields and information.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-real-estate-custom-advanced-card-style.png)
