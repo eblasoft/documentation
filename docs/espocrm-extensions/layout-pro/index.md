@@ -10,6 +10,10 @@ description: Up to 12 cells per row & custom css classes to cells & panels + rea
 > robust [Bootstrap 12-column](https://getbootstrap.com/docs/3.3/css/#grid-example-basic) grid system
 > into the detail view.
 
+# Overview
+Ebla Layout Pro is an EspoCRM extension that lets you fully customize your CRM interface. It features a 12-column grid system, custom panel and field styles, new layout types like Detail, and the ability to add global CSS and scripts—all without coding.
+
+---
 <iframe width="650" height="315" src="https://www.youtube.com/embed/ROrpILorBZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
@@ -19,6 +23,10 @@ description: Up to 12 cells per row & custom css classes to cells & panels + rea
 - ### [Custom Css](custom-css.md)
 
 - ### [Grid Layout](grid-layout.md)
+
+- ### [Portal Css & Script](portal-css-script.md)
+
+- ### [Sticky Detail Header] coming soon...
 
 <br>
 
