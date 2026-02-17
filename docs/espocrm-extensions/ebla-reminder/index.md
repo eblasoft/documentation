@@ -4,14 +4,10 @@ title: Ebla Reminder Extension - EspoCRM
 description: Add advanced reminders directly to Calendar, Activities, and entities with flexible user notifications and seamless management.
 ---
 
-# Ebla Reminder Extension <a href="https://www.eblasoft.com.tr" target="_blank" id="ext-version"></a>
-
-> Ebla Reminder extension enhances EspoCRM by introducing a powerful reminder system fully integrated with the **Calendar** and **Activity Panel**, allowing users to easily create, manage, and track reminders linked to records such as Tasks, Cases, and other entities.
-
----
+# Ebla Reminder Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-reminder" target="_blank" id="ext-version"  data-id="636df4b4b479deb42"></a>
 
 ## Overview
-Ebla Reminder extension adds a dedicated **Reminder entity** and deep integration with the EspoCRM Calendar and Activities.
+Ebla Reminder extension adds a dedicated **Reminder entity** to EspoCRM Calendar and Activities.
 Users can create reminders directly from the Calendar or from the Reminder entity itself, associate them with specific records, and define who should receive notifications.
 
 Reminders can trigger popup and/or email notifications, making sure important actions are never missed.
@@ -78,4 +74,4 @@ After installation, the Reminder entity and Calendar integration become availabl
 
 ---
 
-Copyright (c) Eblasoft Bilişim Ltd.
+<div class="change-log-wrapper" data-id="636df4b4b479deb42"></div>
