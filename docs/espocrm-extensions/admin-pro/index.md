@@ -122,6 +122,19 @@ This feature allows Limited Admin users to read (view) Real Admin users, which i
 
 ---
 
+### 7. Check Work Time
+
+This feature determines the user’s working time based on the Working Time Calendar.
+
+*   **Description**: Restrict user login to defined working hours.
+*   **Usage**:
+    1.  Go to **Administration > Admin Pro settings**.
+    2.  Enable **Enable Login Limitation**.
+
+* ### [Check work time.](check-work-time.md)
+
+---
+
 ## ChangeLog
 
 <div class="change-log-wrapper" data-id="636514b37aee0f43f"></div>
