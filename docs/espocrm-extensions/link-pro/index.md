@@ -66,7 +66,13 @@ The extension adapts its features based on the link type:
 
 * **Custom Columns:** Define which fields appear in the list.
 * **Row Actions:** Configure actions (`view`, `edit`, `unlink`, `remove`) for each row.
-* **Display Modes:** Inline list, modal popup, or full-page list.
+* **List Display Mode:** Choose how to display link-multiple fields in list view:
+  * **(Empty):** Default behavior — shows linked record names as simple labels
+  * **Modal List:** Displays a link that opens the related records in a modal popup list
+  * **Full Page List:** Displays a link that navigates to a full filtered list page of the related records
+
+![link-pro-list-display-mode-params](../../_static/images/espocrm-extensions/link-pro/list-display-mode-params.png)
+![link-pro-list-display-mode-2](../../_static/images/espocrm-extensions/link-pro/list-display-mode.png)
 
 ### Direct Record Creation & Selection
 
