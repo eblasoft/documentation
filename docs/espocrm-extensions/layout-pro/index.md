@@ -26,7 +26,7 @@ Ebla Layout Pro is an EspoCRM extension that lets you fully customize your CRM i
 
 - ### [Portal Css & Script](portal-css-script.md)
 
-- ### [Sticky Detail Header] coming soon...
+- ### [Sticky Detail Header](sticky-detail-header.md)
 
 <br>
 
