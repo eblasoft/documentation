@@ -63,17 +63,6 @@ At the address field level, the extension adds:
 
 ---
 
-## Manual Geocoding
-
-If **Geocode Button** is enabled and the user has edit permission, the address field shows a manual geocode action in read mode.
-
-- If the field already has coordinates, the user is asked to confirm before refreshing them.
-- The action calls the extension API and updates the record with fresh geocode data.
-
-This is especially useful after data imports or when a saved address was corrected manually.
-
----
-
 ## Mass Geocoding
 
 List views for entities that contain at least one address field receive the **Get Coordinates & Place Data** mass action.

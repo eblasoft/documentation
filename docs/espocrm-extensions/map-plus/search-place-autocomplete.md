@@ -90,10 +90,10 @@ If **Restrict Country Selection** is enabled, users can only save country values
 
 ## Additional Address Actions
 
-- **Locate Current Position**: Uses browser geolocation to fill the address from the user's current location.
-- **Pull from Google**: When coordinates already exist, the field can pull address components back from Google and overwrite the current street, city, state, country, and postal code values.
+- **Locate Current Position**: This action uses the browser’s geolocation feature to detect the user’s current physical location. It retrieves the device’s latitude and longitude, saves them in the address field, and then sends them to Google Maps for reverse geocoding. Google returns the related address details, such as street, city, state, country, and postal code. This makes it easy to create an address directly from the user’s real-time location instead of entering it manually, which is especially useful for mobile users, field teams, and on-site activities.
+- **Pull from Google**: This action is used when the record already contains saved coordinates. It sends the stored latitude and longitude to Google Maps and asks for the address linked to that location. The returned values are then written back into the address field, updating details like street, city, state, country, and postal code. This is helpful when the coordinates are correct but the text address is missing, inconsistent, outdated, or needs to be standardized.
 
----
+![Additional address actions in the address field](../../_static/images/espocrm-extensions/map-plus/address-field-actions.png)
 
 ## See Also
 
