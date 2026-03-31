@@ -16,15 +16,15 @@ The **Polygon Map** field type lets users draw, edit, and store polygon shapes d
 
 In addition to standard field options such as read-only or audited, Polygon Map supports these map-specific parameters:
 
-| Parameter | Description |
-| --- | --- |
-| `mapCenter` | Default center of the map in the format `latitude|longitude`, for example `40.40|34.50`. |
-| `enableSearch` | Shows a Google Places search box so users can move the map to a searched place before drawing. |
-| `strokeColor` | Polygon border color. |
-| `fillColor` | Polygon fill color. |
-| `strokeOpacity` | Polygon border opacity. |
-| `fillOpacity` | Polygon fill opacity. |
-| `strokeWeight` | Polygon border width in pixels. |
+| Parameter        | Description |
+|------------------| --- |
+| `Map Center`     | Default center of the map in the format `latitude|longitude`, for example `40.40|34.50`. |
+| `Enable Search`  | Shows a Google Places search box so users can move the map to a searched place before drawing. |
+| `Stroke Color`   | Polygon border color. |
+| `Fill Color`     | Polygon fill color. |
+| `Stroke Opacity` | Polygon border opacity. |
+| `Fill Opacity`   | Polygon fill opacity. |
+| `Stroke Weight`  | Polygon border width in pixels. |
 
 ---
 
@@ -38,26 +38,7 @@ In edit mode, users can:
 - Drag polygons after drawing them
 - Remove vertices with right-click
 
-When no polygon exists yet, the map centers on `mapCenter` and shows a marker at that starting point.
-
----
-
-## Stored Data Format
-
-The field stores polygon data in JSON format like this:
-
-```json
-{
-  "polygons": [
-    [
-      {"lat": 40.1, "lng": 29.9},
-      {"lat": 40.2, "lng": 29.8}
-    ]
-  ]
-}
-```
-
-This structure can be used later in exports, custom logic, or integrations.
+When no polygon exists yet, the map centers on `Map Center` and shows a marker at that starting point.
 
 ---
 

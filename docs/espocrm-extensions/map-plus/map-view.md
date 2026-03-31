@@ -16,11 +16,11 @@ Map View adds an interactive Google Map mode to entity list views. Records are s
 
 At the entity level, Ebla Map Plus adds these options:
 
-| Parameter | Description |
-| --- | --- |
-| `listMapViewEnabled` | Enables the map mode in list view. |
-| `listMapAddressField` | Chooses which address field is used for marker placement. |
-| `listMapLayout` | Chooses the layout used beside the map list and for the map mode record rendering. |
+| Parameter                | Description |
+|--------------------------| --- |
+| `List Map View Enabled`  | Enables the map mode in list view. |
+| `List Map Address Field` | Chooses which address field is used for marker placement. |
+| `List Map Layout`        | Chooses the layout used beside the map list and for the map mode record rendering. |
 
 ---
 
@@ -43,7 +43,7 @@ Map View is more flexible than a coordinates-only map:
 
 - If latitude and longitude exist, the record is placed directly on the map.
 - If coordinates are missing but the chosen address contains enough text data, the browser geocoder can still place the marker from the address.
-- Markers are clustered automatically for large result sets.
+- Markers are **clustered** automatically for large result sets.
 - Hovering a marker shows a popup layout with record details.
 - Clicking a marker opens the record in a quick-view modal.
 
@@ -53,8 +53,8 @@ Map View is more flexible than a coordinates-only map:
 
 For marker popups, the extension uses:
 
-- `mapMarkerList` additional layout if the target entity defines it
-- Otherwise `listSmall`
+- `Map Marker List` additional layout if the target entity defines it
+- Otherwise `List Small`
 
 This lets you control which fields appear when users hover over a marker.
 
@@ -65,7 +65,6 @@ This lets you control which fields appear when users hover over a marker.
 The global Google Maps integration also affects Map View:
 
 - **Scroll Wheel** controls mouse-wheel zooming on the map.
-- The Google API key is loaded in the browser for the map view.
 
 ---
 

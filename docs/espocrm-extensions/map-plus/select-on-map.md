@@ -18,12 +18,12 @@ This is useful for assigning the nearest branch, location, warehouse, partner, o
 
 The feature adds these parameters to link fields:
 
-| Parameter | Description |
-| --- | --- |
-| `enableMapSelection` | Enables the **Select on Map** button for the link field. |
-| `localAddressField` | Address field on the current entity used as the map origin. |
-| `linkedAddressField` | Address field on the linked entity used to place candidate records on the map. |
-| `mapSelectFilter` | Optional preset filter applied to the linked entity collection before rendering the map. |
+| Parameter              | Description |
+|------------------------| --- |
+| `Enable Map Selection` | Enables the **Select on Map** button for the link field. |
+| `Local Address Field`  | Address field on the current entity used as the map origin. |
+| `Linked Address Field` | Address field on the linked entity used to place candidate records on the map. |
+| `Map Select Filter`    | Optional preset filter applied to the linked entity collection before rendering the map. |
 
 When **Enable Map Selection** is turned on, the other three parameters become visible in the field editor.
 
@@ -35,8 +35,8 @@ When **Enable Map Selection** is turned on, the other three parameters become vi
 
 1. The user opens a record in edit mode.
 2. The link field shows a map-marker button.
-3. Clicking it opens a map modal centered on the current record's `localAddressField` coordinates.
-4. Records from the linked entity are plotted using `linkedAddressField`.
+3. Clicking it opens a map modal centered on the current record's `Local Address Field` coordinates.
+4. Records from the linked entity are plotted using `Linked Address Field`.
 5. The user selects a record from the map and the link field is filled automatically.
 
 If the current record does not have latitude and longitude on the chosen local address field, the map selector cannot open.
@@ -54,16 +54,6 @@ The map selection modal includes several behaviors that are not available in the
 - Clicking a marker opens a detail modal where the user can review the record, select it, or open it in a new tab.
 
 Distance display follows the global **Measurement Format** option in the Google Maps integration.
-
----
-
-## Configuration Notes
-
-- `localAddressField` lists address fields from the current entity.
-- `linkedAddressField` lists address fields from the linked entity.
-- `mapSelectFilter` uses the linked entity's available preset filters.
-
-This means the feature can be configured differently for different link fields on the same entity.
 
 ---
 
