@@ -16,12 +16,11 @@ Ebla Map Plus extends standard EspoCRM address fields with geocoding-related sub
 
 Each enhanced address field can store these extra values:
 
-| Sub-field | Description |
-| --- | --- |
-| `latitude` | Numeric latitude value. |
-| `longitude` | Numeric longitude value. |
-| `data` | Raw geocode or place data returned by Google. |
-| `geocodeType` | Indicates the quality of the result, such as `Exact` or `Approximate`. |
+| Sub-field      | Description |
+|----------------| --- |
+| `Latitude`     | Numeric latitude value. |
+| `Longitude`    | Numeric longitude value. |
+| `Geocode Type` | Indicates the quality of the result, such as `Exact` or `Approximate`. |
 
 ---
 
@@ -33,7 +32,7 @@ When auto-geocoding is enabled for an entity:
 2. The extension checks every address field on the entity.
 3. Geocoding runs when the field is new or when street, city, state, country, or postal code changes.
 4. The request is skipped when the address does not contain at least a city or postal code.
-5. The extension writes back `latitude`, `longitude`, `data`, and `geocodeType`.
+5. The extension writes back `latitude`, `longitude` and `geocodeType`.
 
 Auto-geocoding is skipped for silent save operations such as imports and some mass updates.
 
@@ -43,9 +42,9 @@ Auto-geocoding is skipped for silent save operations such as imports and some ma
 
 At the entity level, the extension adds:
 
-| Parameter | Description |
-| --- | --- |
-| `autoGeocode` | Automatically geocodes address fields when records are created or when address values change. |
+| Parameter                | Description |
+|--------------------------| --- |
+| `Auto Geocode Addresses` | Automatically geocodes address fields when records are created or when address values change. |
 
 Configure it in **Administration** -> **Entity Manager** -> open the entity -> **Edit**.
 
@@ -56,11 +55,11 @@ Configure it in **Administration** -> **Entity Manager** -> open the entity -> *
 
 At the address field level, the extension adds:
 
-| Parameter | Description |
-| --- | --- |
-| `showCoordinates` | Displays latitude and longitude inputs and shows coordinates in read mode. |
-| `geocodeButton` | Adds a button in read mode for manually fetching or refreshing geocoded data. |
-| `placesApiDisabled` | Disables the Places-based autocomplete layer for that address field. |
+| Parameter             | Description |
+|-----------------------| --- |
+| `Show Coordinates`    | Displays latitude and longitude inputs and shows coordinates in read mode. |
+| `Geocode Button`      | Adds a button in read mode for manually fetching or refreshing geocoded data. |
+| `Places Api Disabled` | Disables the Places-based autocomplete layer for that address field. |
 
 ---
 
@@ -99,19 +98,13 @@ The second argument forces an update even if coordinates already exist.
 
 ---
 
-## Embedded Address Map Options
+## Address Map Field Options
 
 The address map view also includes additional map behavior that is not limited to plain coordinate storage:
 
-| Parameter | Description |
-| --- | --- |
-| `markerDraggable` | Lets users drag the address marker in edit mode. After save, the extension can offer to update street, city, and state from the new marker position. |
-| `enablePolygon` | Enables polygon drawing on the address map. |
-| `strokeOpacity` | Polygon border opacity. |
-| `strokeWeight` | Polygon border width in pixels. |
-| `strokeColor` | Polygon border color. |
-| `fillColor` | Polygon fill color. |
-| `fillOpacity` | Polygon fill opacity. |
+| Parameter          | Description |
+|--------------------| --- |
+| `Marker Draggable` | Lets users drag the address marker in edit mode. After save, the extension can offer to update street, city, and state from the new marker position. |
 
 ![Map field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/map-field-params.png)
 
