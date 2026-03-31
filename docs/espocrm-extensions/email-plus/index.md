@@ -75,10 +75,6 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
    - The email history panel on entity detail views displays an icon indicating the open status of each email — red if the email has not been opened, and green if it has been opened — alongside date, status, and attachment indicators
 ![Enhanced Activity History](../../_static/images/espocrm-extensions/email-plus/activity_history.png)
 
-10. ### Enhanced Folder Sidebar
-   - Hierarchical folder sidebar with child folders (e.g., sub-accounts under a parent folder)
-   - Unread count badges displayed per folder
-
 ## Admin Configuration
 
 All extension settings are accessible via **Administration → Ebla Extensions → Ebla Email Plus**.
