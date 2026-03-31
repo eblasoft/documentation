@@ -1,3 +1,9 @@
+---
+icon: fontawesome/solid/toggle-off
+title: Ebla Switch - EspoCRM
+description: Replace standard YES/NO enum and boolean fields with elegant toggle switches for a clearer and more intuitive interface.
+---
+
 # Switch <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-switch" target="_blank" id="ext-version" data-id="63903277397107cc5"></a>
 
 > Bool fields as toggle buttons in EspoCRM is available in [Ebla Switch](https://www.eblasoft.com.tr/espocrm-extension-page/switch).
@@ -14,4 +20,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="63903277397107cc5"></div>

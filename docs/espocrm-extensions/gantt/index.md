@@ -1,3 +1,9 @@
+---
+icon: fontawesome/solid/chart-gantt
+title: Ebla Gantt - EspoCRM
+description: Visualize timelines, schedules, and dependencies through interactive Gantt charts directly inside EspoCRM.
+---
+
 # Gantt View  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-ebla-gantt" target="_blank" id="ext-version" data-id="6368dba15027d0a2b"></a>
 
 # Ebla Gantt

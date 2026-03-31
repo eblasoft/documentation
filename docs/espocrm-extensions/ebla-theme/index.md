@@ -46,4 +46,4 @@ description: Ebla Theme is a new theme for EspoCRM. Change colors, add backgroun
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+<div class="change-log-wrapper" data-id="638ddc55b0205017c"></div>

@@ -1,3 +1,9 @@
+---
+icon: material/cellphone
+title: Mobile PWA & Push Notifications - EspoCRM
+description: Access EspoCRM from your phone with a native-like PWA experience. Receive real-time push notifications and stay connected anywhere, anytime.
+---
+
 # Mobile App <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-mobile-app-push-notifications-pwa" target="_blank" id="ext-version" data-id="65c5dc38694d1da71"></a>
 
 > With this module, you can now enable EspoCRM mobile and desktop applications using PWA (Progressive Web App)
@@ -39,4 +45,6 @@
 
 ![reminder](../../_static/images/espocrm-extensions/mobile-app/ebla-mobile-push-notifications-for-reminders.png)
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## Change Log
+
+<div class="change-log-wrapper" data-id="65c5dc38694d1da71"></div>

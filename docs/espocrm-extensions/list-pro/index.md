@@ -1,8 +1,8 @@
 ---
 status: new
-icon: material/list-box
+icon: material/format-list-bulleted
 title: Espocrm List Pro Documentation
-description: Ebla List Pro for Espocrm makes editing your fields quicker, easier. With it, you can update fields directly in the list view, without needing to open separate pages for each item. This saves you clicks and time!
+description: Inline fields editing from list views in espocrm makes editing your fields quicker, easier. With it, you can update fields directly in the list view, without needing to open separate pages for each item. This saves you clicks and time!
 ---
 
 # Espocrm List Pro Documentation <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-list-pro" target="_blank" id="ext-version" data-id="65eab79bd308f0633"></a>
@@ -10,44 +10,50 @@ description: Ebla List Pro for Espocrm makes editing your fields quicker, easier
 ## Overview
 **Ebla List Pro** for Espocrm makes editing your fields quicker & easier. With it, you can update fields directly in the list view, without needing to open separate pages for each item. This saves you clicks and time!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4ucBksByszA" title="Eblasoft | Espocrm Shared Filter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VyTKrOHXMJQ" title="Eblasoft | Espocrm List Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Key Features
 
-### Inline Editing
-Modify field values directly within the list view. Simply hover over a field, and a pencil icon will appear, prompting you to initiate the edit. Click on the pencil to activate editing.
+### 1. Inline Editing
 
+Modify field values directly within the list view.
+- **Usage**: Hover over a field to see the pencil icon. Click to edit.
+- **Shortcuts**:
+    - `Esc`: Discard changes.
+    - `Ctrl + Enter`: Save changes.
+- **Configuration**:
+    - Enable per-list in `Administration > Entity Manager > [Entity] > Layouts > List > Inline Edit`.
+- **Note**: Respects field permissions. Not supported for fields with dynamic logic.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-1.png)
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-enable-2.png)
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-inline-edit.png)
 
-### Escape and Save Shortcuts
-Quickly discard or save your changes using keyboard shortcuts.
 
-- Press ++esc++ to discard any changes made within the inline edit.
-- Press ++ctrl+enter++ to save your changes.
-
-
-### Entity-Level Disabling
-Disable inline editing for specific entities by adding `"inlineEditListDisabled": true` within the corresponding JSON file located at `Resources/metadata/clientDefs/{YourEntityName}.json`.
-
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-entity-level-disabling.png)
-
-### Field-Level Disabling
-Deactivate inline editing for individual fields by toggling the "inline edit" option within the field manager configuration.
-
-![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-field-level-disabling.png)
-
-!!! note "Note"
-    Inline editing respects field permissions and will not work for fields that are read-only or have restricted access.
-
-!!! warning "Warning"
-    Inline editing is not supported for fields that have dynamic logic.
-
-### List Card View
+### 2. List Card View
 Switch between the list view and card view to display records in a more visually appealing format.
+
+- **Enable from**:
+`Administration → Entity Manager→ {entityType} → Edit → Enable Card List View`
+
+- **Set card view as default using**: Default View Mode As Card
+
+- **Create a custom layout named**: *listCard* to control which fields appear inside each card.
+
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-list-card-view.png)
 
-### Real Estate Custom Advanced Card Style
+### 3. Has Updates Highlight
+Call attention to records that have new activity since the user last visited them.
+
+- **Per-entity toggle**: In `Administration → Entity Manager → {Entity} → Edit`, enable **"Enable Has Updates Highlight"** to start tracking.
+- **Accurate read tracking**: List Pro compares a user’s last record read timestamp with the entity’s `Stream Updated At`, `Modified At`, or `Created At` dates. Any newer activity keeps the row highlighted until the user opens the record again.
+- **Immediate feedback**: Highlighted rows render with a bold label and subtle light-gray background, and clicking the record marks it as reviewed instantly so you’re never unsure whether you’ve covered the latest changes.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
+
+
+### 4. Real Estate Custom Advanced Card Style
 Customize the card view to display additional fields and information.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-real-estate-custom-advanced-card-style.png)

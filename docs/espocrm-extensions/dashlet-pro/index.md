@@ -1,3 +1,9 @@
+---
+icon: material/view-dashboard
+title: Ebla Dash Pro - EspoCRM
+description: Useful new dashlets to enhance EspoCRM dashboards.
+---
+
 # Dash Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-dash-pro" target="_blank" id="ext-version" data-id="64be3b2a63390fb0a"></a>
 
 > It is a new Dashlet in EspoCRM **Wysiwyg  (free html)**
@@ -13,4 +19,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## Changelog
+
+<div class="change-log-wrapper" data-id="64be3b2a63390fb0a"></div>

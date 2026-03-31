@@ -1,3 +1,9 @@
+---
+icon: material/login
+title: Ebla Last Login - EspoCRM
+description: Add date-time column to user entity show last login time.
+---
+
 # Last Login  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-last-login" target="_blank" id="ext-version" data-id="64ef04e1cce6f0281"></a>
 
 > Add date-time column to user entity show last login time in EspoCRM is available
@@ -9,4 +15,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="64ef04e1cce6f0281"></div>

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateWebLink() {
     const linkMap = {
         'dynamic-logic-plus': 'espocrm-dynamic-logic-plus',
-        'link-multiple-pro': 'espocrm-link-multiple-inline-form',
+        'link-pro': 'espocrm-link-multiple-inline-form',
         'shared-filter': 'espocrm-shared-filter',
         'ebla-theme': 'espocrm-ebla-theme',
         'mobile-app': 'espocrm-mobile-app-push-notifications-pwa',

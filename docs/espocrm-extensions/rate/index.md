@@ -1,3 +1,9 @@
+---
+icon: material/star
+title: Ebla Rate Star Field - EspoCRM
+description: Add rating fields using star icons for customer satisfaction, priority scoring, feedback reviews, and more.
+---
+
 # Rate Star Field <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-rate-field" target="_blank" id="ext-version" data-id="63495a03a877d5a9a"></a>
 
 > Adding new field type **Rate Field**, to allow EspoCRM users easily seat and read rates,
@@ -5,18 +11,63 @@
 
 ---
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/C505B7OBZmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Overview
+Ebla Rate extension adds a new field type `Rate` to EspoCRM field manager, allowing users to rate records based on single or multiple criteria.
+Can be added directly to target records such as Accounts, Contacts, Leads, Opportunities, or any custom entity.
+You also can create a new custom entity specifically for ratings and link it to other entities.
+It is ideal for scenarios like customer satisfaction surveys, product reviews, service quality assessments, and performance evaluations.
+In database, the ratings are stored as JSON objects and result as float values representing the average score.
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/INpxxBnxpWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/rate/rate.png" alt="drawing" style="width:55%;"/>
+
+## Options & Features
+*   **Star Rating**: Interactive star rating interface.
+*   **Multiple Criteria**: Define custom criteria (e.g., Quality, Service, Price) for granular ratings.
+*   **Weighted Average**: Automatically calculates and displays the average rating across all criteria.
+*   **Visual Customization**:
+    *   Configurable star colors.
+    *   Adjustable star widths for different views (List, Detail, Edit).
+    *   Color mapping to change star colors based on score thresholds.
+*   **Display Modes**:
+    *   **Standard**: Shows all criteria and average.
+    *   **One Option**: Simplified mode acting as a single rating value.
+    *   **Read-Only One Star**: Compact display showing a single star icon in read mode.
+*   **Inline Editing**: Support for fast inline editing in list and detail views.
+
+![Star Rating](../../_static/images/espocrm-extensions/rate/rate.png)
+
+
+## Configuration
+After installation, you can configure the Rate field in the Entity Manager.
+
+### Field Parameters
+*   **Required**: Make the rating mandatory.
+*   **Number of Stars**: Set the scale (default is 5, max 30).
+*   **Criteria**: Add multiple rating criteria.
+*   **Star Color**: Set the default color for stars.
+*   **Color Map**: Define specific colors for different rating values (e.g., 1-2 stars: Red, 4-5 stars: Green).
+*   **One Option**: Treat as a single value field instead of multi-criteria.
+*   **Fast Edit**: Enable/Disable inline editing.
+*   **Ignore Empty Criteria**: If checked, unrated criteria won't affect the average calculation.
+*   **Disable Rating Counter**: Hide the numerical counter.
+
+
+![Field Parameters](../../_static/images/espocrm-extensions/rate/rate-op.png)
+
+
+## Installation
+1.  Navigate to **Administration > Extensions**.
+2.  Upload the extension package.
+3.  Install and rebuild the system.
+
+## Usage
+1.  Go to **Administration > Entity Manager**.
+2.  Select the entity you want to add a rating to (e.g., Account, Contact).
+3.  Create a new field of type **Rate**.
+4.  Configure the criteria and display options.
+5.  Add the field to your layouts.
 
 ---
-
-**-** Go to **Administration** -> **Entity Manager** -> **{Entity Type}** -> **Fields** -> **Add Field** -> **Rate field
-**.
-
-<img src="https://eblasoft.github.io/documentation/_static/images/espocrm-extensions/rate/rate-op.png" alt="drawing" style="width:200px;"/>
-
-<br>
-
-### <font color=gray> [ChangeLog](changelog.md) </font>
+*Copyright (c) Eblasoft Bilişim Ltd.*

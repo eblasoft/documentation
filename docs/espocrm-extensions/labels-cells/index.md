@@ -1,3 +1,9 @@
+---
+icon: material/label
+title: Ebla Labels - EspoCRM
+description: Add headers & paragraphs to detail views from metadata, not storable to save your database space.
+---
+
 # Labels Cells  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/labels-cells" target="_blank" id="ext-version" data-id="63495a03a2759db51"></a>
 
 > Add 2 new types of fields to the field manager **Header Text** and **Rich Text Label** in EspoCRM.
@@ -5,7 +11,7 @@
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WNv7JVXK_tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TfinEst0j0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 
@@ -21,4 +27,6 @@
 
 <br>
 
-### <font color=gray> [ChangeLog](changelog.md) </font>
+## ChangeLog
+
+<div class="change-log-wrapper" data-id="63495a03a2759db51"></div>

@@ -45,6 +45,7 @@ Ebla AI provides a comprehensive range of AI-driven features including smart ema
 - [Setup Ollama](providers/ollama-setup.md)
 - [Setup Anthropic](providers/anthropic-setup.md)
 - [Setup OpenRouter](providers/open-router-setup.md)
+- [Access control](features/access-control.md)
 
 ## ChangeLog
 

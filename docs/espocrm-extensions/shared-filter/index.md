@@ -1,10 +1,16 @@
+---
+icon: material/filter
+title: Ebla Shared Filter - EspoCRM
+description: Share saved list filters across teams to improve collaboration and ensure consistent data views.
+---
+
 # EspoCRM Shared Filter Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-shared-filter" target="_blank" id="ext-version" data-id="65f1ab569c0f22833"></a>
 
 ## Overview
 Manage filters & share with users on Espocrm. Also, can share data with external software via API.
 
 ## Extension video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n7S4V7DdW-8?si=AHFPXmzNcPKR_Y2C" title="Eblasoft | Espocrm Shared Filter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OUKyyudPYc" title="Eblasoft | Espocrm Shared Filter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -16,6 +22,10 @@ Manage filters & share with users on Espocrm. Also, can share data with external
 - Shared filters can pick up by other users on the fly.
 - Users can save shared filters to their own presets.
 - Filter owner can update the filter.
+- **Optional** Record Select Integration : Enable shared filters inside the record select modal by adding the following line to your config file:
+```php
+'shareFilterSupportModel' => true,
+```
 
 ### Access Levels
 - Shared filters come with customizable access levels to control visibility and usage.
@@ -25,6 +35,13 @@ Manage filters & share with users on Espocrm. Also, can share data with external
     - **Is Portal Only**: Accessible only in the portal.
     - **Is Admin Only**: Filter is restricted to system administrators.
 
+---
+![Save Filter](../../_static/images/espocrm-extensions/shared-filter/save-filter.png)
+
+![Save Shared Filter](../../_static/images/espocrm-extensions/shared-filter/save-shared-filter.png)
+
+
+---
 ### Enhanced Integration
 - By enabling the API access, users can generate links to feed filtered data into external systems such as AI, BI, and more.
 - This feature opens up possibilities for advanced analytics, reporting, and automation beyond EspoCRM.
