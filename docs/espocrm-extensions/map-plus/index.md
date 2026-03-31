@@ -2,7 +2,7 @@
 status: featured
 icon: material/map
 title: EspoCRM | Ebla Map Plus Documentation
-description: Add Google Maps integration to EspoCRM address fields with geocoding, place search autocomplete, map views, route planning, and polygon drawing.
+description: Add Google Maps integration to EspoCRM address, link, list, and route fields with geocoding, map-based record selection, Places data sync, and polygon drawing.
 ---
 
 # Map Plus <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-map-extension" target="_blank" id="ext-version" data-id="636c9732e830bebeb"></a>
@@ -11,9 +11,7 @@ description: Add Google Maps integration to EspoCRM address fields with geocodin
 
 ## Overview
 
-**Ebla Map Plus** extends EspoCRM's native address field with a full suite of Google Maps capabilities. Once installed, every address field in your CRM gains geocoding, place search autocomplete, interactive map display, and advanced routing — without replacing or rebuilding any existing data.
-
-The extension also introduces two new custom field types (**Map Route** and **Polygon Map**) and a dedicated **Location** entity for managing Google Places data directly inside EspoCRM.
+**Ebla Map Plus** extends EspoCRM with Google Maps features across multiple field types and UI areas. It enhances standard **address** fields with autocomplete, geocoding, map actions, country restrictions, and coordinates, extends **link** fields with **Select on Map**, adds **Map Route** and **Polygon Map** field types, and introduces a dedicated **Location** and **Review** data model for Google Places data.
 
 <!-- DOC:OVERVIEW END -->
 
@@ -29,21 +27,15 @@ The extension also introduces two new custom field types (**Map Route** and **Po
 
 ## Key Features
 
-- **Automatic Geocoding**: Converts address fields to latitude/longitude coordinates automatically on save. Supports manual geocoding and works across all entity types.
-
-- **Place Search Autocomplete**: Address fields gain a Google Places-powered search input. Selecting a result fills all address components (street, city, country, postal code) and stores coordinates instantly.
-
-- **Map View**: Display entity records as pins on an interactive Google Map from the list view. Configurable per entity type with custom marker clustering.
-
-- **Map Route Field**: A new field type that plots a route between multiple address fields, showing distance and estimated travel time updated via the Directions API.
-
-- **Polygon Map Field**: A new field type that lets users draw custom polygon shapes on a map and store the coordinates on the record.
-
-- **Location Entity**: A full EspoCRM entity backed by Google Places data — stores name, address, rating, photos, opening hours, street view, and reviews. Supports automated sync via a scheduled job.
-
-- **Formula Function**: Trigger geocoding from EspoCRM workflow formulas using `ext\eblaMapPlus\geocode(addressField, forceUpdate)`.
-
-- **Country as Dropdown**: Optional setting that converts the country field in address edit mode from a text autocomplete into a structured dropdown.
+- **Address Field Enhancements**: Standard EspoCRM address fields gain Google Places autocomplete, latitude/longitude storage, geocode type, place data storage, current-location lookup, and map actions.
+- **Automatic and Manual Geocoding**: Geocode on create or address change, trigger geocoding manually from the field, run it from formulas, or launch it as a mass action from list view.
+- **Map List View**: Show entity records on a dedicated map view with clustered markers, configurable marker popup layouts, and a configurable address source field.
+- **Select on Map for Link Fields**: Add a map button to link fields so users can select related records directly from a map centered around the current record.
+- **Map Route Field**: Build routes from fixed coordinates, current location, local address fields, and manually selected related records. Store calculated distance and duration on the record.
+- **Polygon Map Field**: Draw and edit polygons with configurable map center, search, and styling options.
+- **Address Map Controls**: Use draggable markers, route-out buttons, current-location controls, and optional polygon overlays on map-enabled address views.
+- **Location and Review Entities**: Store Google Places records, photos, reviews, opening hours, business status, rating history, plus codes, and street view inside EspoCRM.
+- **Scheduled Google Places Sync**: Keep saved Location records updated automatically through the `GooglePlacesCrawler` scheduled job.
 
 <!-- DOC:FEATURES END -->
 
@@ -54,19 +46,22 @@ The extension also introduces two new custom field types (**Map Route** and **Po
 ## Use Cases
 
 ### 1. Field Sales Team Routing
-Sales reps visit multiple clients per day. Use the Map Route field on Accounts or Contacts to calculate driving distances and plan efficient visit routes directly from the CRM record.
+Sales reps visit multiple clients per day. Use the **Map Route** field to combine the rep's current location, company offices, and customer stops in one route and store distance and duration on the record.
 
-### 2. Real Estate Portfolio Mapping
-Agents manage properties with address fields. Enable Map View on the Property entity to see all listings on a single interactive map. Zoom and click markers to open records.
+### 2. Map-Based Related Record Selection
+When a record needs a nearby branch, warehouse, technician, or parent location, **Select on Map** lets the user choose the related record visually instead of searching through a long dropdown.
 
-### 3. Service Area Management
-Operations teams define delivery zones or service coverage areas using Polygon Map fields. Draw boundaries on a record and use the stored coordinates in workflows or exports.
+### 3. Real Estate Portfolio Mapping
+Enable **Map List View** on properties, leads, or accounts to plot records on a clustered map and open quick detail popups directly from markers.
 
-### 4. Lead & Account Geocoding
-Marketing needs clean lat/lng data for mapping campaigns. Auto-geocode runs silently on every address save, ensuring all records always have accurate coordinates without manual effort.
+### 4. Address Data Quality and Enrichment
+Use autocomplete, auto-geocoding, mass geocoding, and the manual geocode button to enrich existing records with coordinates and place data.
 
-### 5. Location Intelligence with Google Places
-Businesses track competitor locations, partner offices, or points of interest. The Location entity pulls live data from Google Places — ratings, photos, opening hours — and keeps it updated automatically.
+### 5. Service Area Management
+Use **Polygon Map** fields to define service zones, sales territories, or operational boundaries and store the polygon JSON on the record.
+
+### 6. Location Intelligence with Google Places
+Use the **Location** entity to manage stores, competitors, branches, or points of interest together with reviews, photos, price level, business status, and scheduled data refresh.
 
 <!-- DOC:USE-CASES END -->
 
@@ -77,12 +72,12 @@ Businesses track competitor locations, partner offices, or points of interest. T
 ## Installation
 
 1. Obtain the Ebla Map Plus extension package from the [Eblasoft customer portal](https://portal.eblasoft.com.tr).
-2. Navigate to **Administration** → **Extensions**.
+2. Navigate to **Administration** -> **Extensions**.
 3. Upload the `.zip` package and click **Install**.
 4. Clear cache and rebuild when prompted.
 
 !!! note
-    Requires EspoCRM 8.0.0 or higher.
+    The current package manifest supports EspoCRM versions `>=9.0.0 <9.4.0`.
 
 <!-- DOC:INSTALLATION END -->
 
@@ -94,16 +89,17 @@ Businesses track competitor locations, partner offices, or points of interest. T
 
 ### Google Maps API Key
 
-All features require a valid Google Maps API key with the following APIs enabled in your Google Cloud project:
+All features require a valid Google Maps API key with the relevant Google services enabled for your use case.
 
-- Maps JavaScript API
-- Places API
-- Geocoding API
-- Directions API
+- **Maps JavaScript API** for map rendering
+- **Places API** for autocomplete and Location data
+- **Geocoding API** for converting addresses to coordinates
+- **Directions API** for Map Route
+- **Routes API** if you want travel distance and duration overlays in **Select on Map**
 
 **To configure:**
 
-1. Navigate to **Administration** → **Integrations** → **Google Maps**.
+1. Navigate to **Administration** -> **Integrations** -> **Google Maps**.
 2. Paste your API key into the **API Key** field.
 3. Save.
 
@@ -111,15 +107,17 @@ All features require a valid Google Maps API key with the following APIs enabled
 
 ### Available Settings
 
-- **API Key**: Your Google Cloud API key. Required for all features.
-- **Country Restrictions**: Comma-separated list of ISO 3166-1 alpha-2 country codes to restrict autocomplete results (e.g. `tr,us,gb`). Leave empty for global search.
-- **Country Format**: Controls whether country values are stored in short (`TR`) or long (`Turkey`) format.
-- **State Format**: Controls whether state values are stored in short or long format.
-- **City Format**: Controls whether city values are stored in short or long format.
-- **Country as Dropdown** (default: `false`): When enabled, the country field in address edit mode displays as a structured dropdown instead of a text autocomplete input. Detail and list views are not affected.
+- **Language**: Forces the Google Maps and Places response language.
+- **Autocomplete Restricted Countries**: Limits autocomplete suggestions to the selected ISO country codes.
+- **Country Name (Long/Short)**: Controls how country values are stored in address fields.
+- **State Name (Long/Short)**: Controls how state values are stored.
+- **City Name (Long/Short)**: Controls how city values are stored.
+- **Scroll Wheel**: Enables or disables mouse-wheel zooming on extension map views.
+- **Measurement Format**: Displays route distances in kilometers or miles.
+- **Restrict Country Selection**: Validates address country values against the configured autocomplete country list.
 
 !!! tip
-    Restrict autocomplete to your target countries to reduce irrelevant suggestions and minimize API quota usage.
+    Restricting autocomplete to your target countries can improve data quality and reduce irrelevant Places suggestions.
 
 <!-- DOC:CONFIGURATION END -->
 
@@ -131,23 +129,27 @@ All features require a valid Google Maps API key with the following APIs enabled
 
 ### [Place Search Autocomplete](search-place-autocomplete.md)
 
-Address fields display a search input powered by the Google Places API. Start typing a location name or street address and select from the dropdown. All address components fill automatically.
+Google Places search for address fields, with configurable language, restricted countries, country validation, and stored place data.
 
 ### [Latitude and Longitude (Geocoding)](latitude-and-longitude.md)
 
-Address fields gain latitude and longitude inputs. Geocoding runs automatically when an address is saved. Coordinates can also be triggered manually from the field or via formula.
+Automatic geocoding, mass geocoding, manual geocode actions, and address sub-fields such as `latitude`, `longitude`, `data`, and `geocodeType`.
 
 ### [Map View](map-view.md)
 
-Display entity records as interactive map pins from the list view. Enable per entity type from the Entity Manager and configure which address field to use for pin placement.
+Entity-level list map view with configurable address source field, layout, clustered markers, and quick record popups.
 
 ### [Map Route](map-route.md)
 
-A custom field type that plots a route between addresses. Add a Map Route field to any entity, link it to address fields, and the extension calculates distance and duration via the Directions API.
+A route field that can combine current location, fixed coordinates, default local addresses, and manually selected related addresses.
 
 ### [Polygon Map](polygon-map.md)
 
-A custom field type for drawing polygon shapes on a map. Users draw boundaries directly on the record and the coordinates are stored for use in workflows or integrations.
+Draw and store polygons with configurable search, default center, and fill or stroke styling.
+
+### [Select on Map](select-on-map.md)
+
+Extends link fields with a map button so users can select nearby related records directly from a map.
 
 <!-- DOC:USAGE END -->
 
@@ -160,41 +162,36 @@ A custom field type for drawing polygon shapes on a map. Users draw boundaries d
 Use the geocode formula function to trigger geocoding from EspoCRM workflows, BPM processes, or formula scripts.
 
 **Syntax:**
-```
+```text
 ext\eblaMapPlus\geocode(addressField)
 ext\eblaMapPlus\geocode(addressField, forceUpdate)
 ```
 
 **Parameters:**
 
-- `addressField` — The name of the address field to geocode (e.g. `'billingAddress'`).
-- `forceUpdate` *(optional, default: `false`)* — When `true`, re-geocodes even if coordinates already exist.
+- `addressField` - The address field name, for example `'billingAddress'`.
+- `forceUpdate` - Optional. When `true`, existing coordinates are replaced.
 
 **Examples:**
 
-```
-// Geocode the billing address field
+```text
 ext\eblaMapPlus\geocode('billingAddress')
-
-// Force re-geocode (overwrite existing coordinates)
 ext\eblaMapPlus\geocode('billingAddress', true)
 ```
 
-!!! note
-    The formula function respects the same validation rules as auto-geocoding: the address must include at least a city or postal code to trigger a geocode request.
+## Mass Geocoding
+
+Entities that have at least one address field automatically receive the **Get Coordinates & Place Data** mass action in list view. Users can geocode multiple records at once and choose whether existing coordinates should be overwritten or skipped.
 
 ## Location Entity
 
-The **Location** entity stores rich Google Places data inside EspoCRM. Each record maps to a real-world place and can hold:
+The **Location** entity stores Google Places records inside EspoCRM. Besides the standard address and coordinates, it can keep:
 
-- Name, address, website, email, phone
-- Google rating and rating history
-- Photos gallery
-- Opening hours
-- Street view
-- Customer reviews (via related Review entity)
-
-A scheduled job (**GooglePlacesCrawler**) can automatically pull updated data from the Places API to keep records current.
+- Place name, Google Place ID, website, phone numbers, URL, CID, and UTC offset
+- Business status, price level, types, user ratings total, and rating history
+- Photos, opening hours, street view, raw address data, and plus codes
+- Related **Review** records with author data, text, profile photo, written date, and rating
+- Automatic synchronization through the `GooglePlacesCrawler` scheduled job when **Auto Update Location Data** is enabled
 
 <!-- DOC:ADVANCED END -->
 
@@ -205,10 +202,10 @@ A scheduled job (**GooglePlacesCrawler**) can automatically pull updated data fr
 ## Limitations & Security Notes
 
 !!! warning
-    The Google Maps API key is included in the page source when loading map-enabled views. Restrict your API key in the Google Cloud Console to your CRM's domain to prevent unauthorized usage.
+    Google Maps requests are made from the browser in multiple views. Restrict your API key to your CRM domain and enable only the Google services you actually use.
 
 !!! note
-    Auto-geocoding is skipped during silent operations such as mass updates and imports (`skipAutoGeocode` option). Trigger geocoding manually or via formula after bulk data loads.
+    Auto-geocoding is skipped during silent save operations such as imports and some mass updates. Use the formula function or the mass action when you need to geocode existing data in bulk.
 
 <!-- DOC:SECURITY END -->
 
@@ -218,7 +215,7 @@ A scheduled job (**GooglePlacesCrawler**) can automatically pull updated data fr
 
 ## Support and Feedback
 
-For any inquiries, support, or feedback regarding the **Ebla Map Plus** extension, please reach out through our portal and create a ticket. We are committed to ensuring a seamless experience and are here to assist you with any questions or concerns.
+For any inquiries, support, or feedback regarding the **Ebla Map Plus** extension, please reach out through our portal and create a ticket.
 
 **Support Portal:** [https://portal.eblasoft.com.tr](https://portal.eblasoft.com.tr)
 

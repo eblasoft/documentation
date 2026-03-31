@@ -1,12 +1,12 @@
 ---
 icon: material/routes
 title: Map Route - Ebla Map Plus
-description: Add a route planning field to EspoCRM entities to calculate driving distance and travel time between address fields.
+description: Add a route planning field to EspoCRM entities to calculate travel distance and duration from fixed points, current location, local address fields, and selected related records.
 ---
 
 # Map Route
 
-The **Map Route** field type plots a route between multiple address fields on a record and displays the calculated driving distance and estimated travel time. Route metrics are fetched from the Google Directions API and stored on the record.
+The **Map Route** field type plots a route between multiple points and stores the calculated **distance** and **duration** on the record. It is designed to work with local address fields, fixed coordinates, the user's current location, and manually selected related records.
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/gc3Sxb4rPWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -14,51 +14,106 @@ The **Map Route** field type plots a route between multiple address fields on a 
 
 ---
 
-## Prerequisites
+## Generated Sub-Fields
 
-- A valid Google Maps API key with the **Directions API** enabled.
-- The address fields used as waypoints must have valid geocoded coordinates (see [Latitude and Longitude](latitude-and-longitude.md)).
+Every **Map Route** field automatically creates these related fields:
+
+| Sub-field | Description |
+| --- | --- |
+| `distance` | Stored route distance. Displayed in kilometers or miles according to the global measurement format setting. |
+| `duration` | Stored route duration shown in `HH:MM:SS` format. |
+| `pickList` | Internal list of manually selected route waypoints. |
+
+---
+
+## Field Parameters
+
+The route field includes the following map-specific parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `addressFields` | Defines which address fields from any entity types can be selected manually as extra route waypoints. |
+| `defaultAddressFieldList` | Adds local address fields from the current entity to the route automatically. Can also include `currentLocation`. |
+| `displayAsSeparatedButtons` | Shows separate add buttons for configured address sources instead of a single generic add action. |
+| `defaultLatitude` | Fixed default latitude that can act as a route point. |
+| `defaultLongitude` | Fixed default longitude paired with `defaultLatitude`. |
+| `routePreference` | Route mode: `Fastest` or `Shortest`. |
+
+---
+
+## How the Route Is Built
+
+When the field renders, the route can be assembled from several sources in this order:
+
+1. **Current Location**, when `currentLocation` is included in `defaultAddressFieldList`
+2. **Fixed default coordinates**, when `defaultLatitude` and `defaultLongitude` are set
+3. **Local address fields** from the current record, based on `defaultAddressFieldList`
+4. **Manually selected related records** stored in `pickList`
+
+If the final route has fewer than two valid points, no route is drawn.
+
+---
+
+## Selecting Additional Waypoints
+
+The `addressFields` parameter lets you select addresses from multiple entity types. The add dialog shows entries in the format:
+
+```text
+EntityType.addressField
+```
+
+For each selected record:
+
+- The chosen address field must contain latitude and longitude.
+- Duplicate locations are prevented.
+- The selected location is stored in the route `pickList`.
+
+---
+
+## Route Preferences
+
+The `routePreference` parameter changes how Google directions are requested:
+
+- **Fastest** uses driving options with live traffic-aware timing.
+- **Shortest** optimizes waypoints and avoids ferries and tolls where possible.
+
+The global **Measurement Format** integration setting controls whether route distance is shown in kilometers or miles.
+
+---
+
+## Map Actions
+
+The route view includes extra controls beyond static route drawing:
+
+- It recalculates automatically when the `pickList` changes.
+- It writes changed `distance` and `duration` values back to the record through the extension API.
+- It adds a **Directions** button that opens the current route in Google Maps navigation mode.
 
 ---
 
 ## Adding a Map Route Field
 
-1. Navigate to **Administration** → **Entity Manager**.
-2. Select the entity type where you want to add routing (e.g. Account, Lead).
-3. Click **Fields** → **Add Field**.
+1. Navigate to **Administration** -> **Entity Manager**.
+2. Select the entity type where you want to add routing.
+3. Click **Fields** -> **Add Field**.
 4. Set **Type** to **Map Route**.
-5. Enter a **Name** and **Label** for the field (e.g. `routeToOffice` / "Route to Office").
-6. In the **Address Field** setting, select the address field to use as the destination (e.g. `billingAddress`).
-7. Click **Save**.
-8. Add the new field to the entity's **Detail** and **Edit** layouts via **Layout Manager**.
-9. Clear cache.
+5. Configure the route parameters described above.
+6. Save the field.
+7. Add the route field to the entity layout.
+8. Clear cache if needed.
 
 ![Map Route field configuration in Entity Manager](../../_static/images/espocrm-extensions/map-plus/map-route-op.png)
 
 ---
 
-## Using Map Route
-
-1. Open a record that has the Map Route field.
-2. In the Map Route field panel, click **Add** to add waypoints.
-3. Select address records (from Location or other entities) to add as stops.
-4. The extension validates that each waypoint has latitude/longitude before adding.
-5. Click **Calculate Route** (or save the record) to request directions from Google.
-6. The field displays the total **distance** and **duration** for the calculated route.
-
-!!! note
-    Route metrics (distance and duration) are stored on the record after calculation. They are not recalculated automatically — click **Update Metrics** on the field to refresh after changing waypoints.
-
----
-
 ## Permissions
 
-Access to update route metrics respects EspoCRM's ACL. Users need edit permission on the record to trigger a route calculation.
+Users need edit access to the record for the extension to persist updated distance and duration values.
 
 ---
 
 ## See Also
 
-- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md) — required for route waypoints
-- [Place Search Autocomplete](search-place-autocomplete.md) — quickly add address data with coordinates
-- [Polygon Map](polygon-map.md) — draw geographic boundaries on a map field
+- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md)
+- [Place Search Autocomplete](search-place-autocomplete.md)
+- [Select on Map](select-on-map.md)

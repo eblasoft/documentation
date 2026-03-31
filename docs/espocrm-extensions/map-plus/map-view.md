@@ -1,56 +1,76 @@
 ---
 icon: material/map-marker-multiple
 title: Map View - Ebla Map Plus
-description: Display EspoCRM entity records as interactive map pins from the list view using Ebla Map Plus.
+description: Display EspoCRM entity records as interactive map pins from the list view with configurable address fields, layouts, and clustered markers.
 ---
 
 # Map View
 
-Map View adds an interactive Google Map to the list view of any entity type. Records with geocoded addresses appear as clickable map pins. Clicking a pin opens the record's detail view.
+Map View adds an interactive Google Map mode to entity list views. Records are shown as markers, grouped with clustering, and can be opened through quick detail popups directly from the map.
 
 ![Map View](../../_static/images/espocrm-extensions/map-plus/map-view.jpg)
 
 ---
 
-## Prerequisites
+## Entity Parameters
 
-- Ebla Map Plus installed and configured with a valid Google Maps API key.
-- The target entity must have an address field with latitude/longitude enabled (see [Latitude and Longitude](latitude-and-longitude.md)).
-- Records must have geocoded coordinates for pins to appear on the map.
+At the entity level, Ebla Map Plus adds these options:
+
+| Parameter | Description |
+| --- | --- |
+| `listMapViewEnabled` | Enables the map mode in list view. |
+| `listMapAddressField` | Chooses which address field is used for marker placement. |
+| `listMapLayout` | Chooses the layout used beside the map list and for the map mode record rendering. |
 
 ---
 
 ## Enable Map View for an Entity
 
-1. Navigate to **Administration** → **Entity Manager**.
-2. Select the entity type (e.g. Account, Contact, Lead).
-3. Click **Edit**.
-4. Enable the **Map View** option.
-5. Set the **Map Layout** field to the address field to use for pin placement (e.g. `billingAddress`).
-6. Click **Save**.
-7. Clear cache: **Administration** → **Clear Cache**.
+1. Navigate to **Administration** -> **Entity Manager**.
+2. Open the entity you want to map.
+3. Enable **Enable Map List View**.
+4. Set **Address Field on Map List**.
+5. Optionally set **Layout of Map List**.
+6. Save and clear cache if needed.
 
 ![Map View Entity Manager Options](../../_static/images/espocrm-extensions/map-plus/map-view-op.png)
 
-!!! tip
-    After enabling, a **Map** button or tab appears on the entity's list view. Use it to toggle between the standard list and the map display.
+---
+
+## Marker Rendering Behavior
+
+Map View is more flexible than a coordinates-only map:
+
+- If latitude and longitude exist, the record is placed directly on the map.
+- If coordinates are missing but the chosen address contains enough text data, the browser geocoder can still place the marker from the address.
+- Markers are clustered automatically for large result sets.
+- Hovering a marker shows a popup layout with record details.
+- Clicking a marker opens the record in a quick-view modal.
 
 ---
 
-## Using Map View
+## Marker Popup Layouts
 
-1. Open the list view of the entity (e.g. **Accounts**).
-2. Click the **Map** view toggle in the top-right of the list.
-3. The map loads, displaying all records with valid coordinates as pins.
-4. Click any pin to open a popup with the record name.
-5. Click the record name in the popup to navigate to the detail view.
+For marker popups, the extension uses:
 
-!!! note
-    Records without geocoded addresses do not appear on the map. Run geocoding on existing records if pins are missing.
+- `mapMarkerList` additional layout if the target entity defines it
+- Otherwise `listSmall`
+
+This lets you control which fields appear when users hover over a marker.
+
+---
+
+## Global Map Behavior
+
+The global Google Maps integration also affects Map View:
+
+- **Scroll Wheel** controls mouse-wheel zooming on the map.
+- The Google API key is loaded in the browser for the map view.
 
 ---
 
 ## See Also
 
-- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md) — enable coordinates on address fields
-- [Place Search Autocomplete](search-place-autocomplete.md) — populate addresses faster
+- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md)
+- [Place Search Autocomplete](search-place-autocomplete.md)
+- [Select on Map](select-on-map.md)

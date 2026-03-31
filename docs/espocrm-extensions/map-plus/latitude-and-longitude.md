@@ -1,71 +1,126 @@
 ---
 icon: material/crosshairs-gps
 title: Geocoding (Latitude & Longitude) - Ebla Map Plus
-description: Automatically convert EspoCRM address fields to latitude and longitude coordinates using Ebla Map Plus geocoding.
+description: Automatically convert EspoCRM address fields to latitude and longitude coordinates with auto-geocoding, manual geocode actions, and mass geocoding.
 ---
 
 # Latitude and Longitude (Geocoding)
 
-Ebla Map Plus extends every address field with latitude and longitude inputs. When a record is saved with a valid address, the extension automatically calls the Google Geocoding API and stores the coordinates — no manual action required.
+Ebla Map Plus extends standard EspoCRM address fields with geocoding-related sub-fields and actions. In addition to `latitude` and `longitude`, the extension stores raw geocode data and a geocode type value that indicates whether the result is exact or approximate.
 
 ![Address field with latitude and longitude inputs](../../_static/images/espocrm-extensions/map-plus/latitude-and-longitude.jpg)
 
 ---
 
-## How Auto-Geocoding Works
+## Stored Address Sub-Fields
 
-When a record is saved:
+Each enhanced address field can store these extra values:
 
-1. The extension detects whether the address has changed since the last save.
-2. If changed (and the address includes at least a city or postal code), a request is sent to the Google Geocoding API.
-3. The returned coordinates are stored in the address field's `latitude` and `longitude` sub-fields.
-4. Additional geocoding metadata (`geocodeType`, `addressData`) is also stored for reference.
-
-Auto-geocoding is skipped in silent operations such as mass updates and imports. Use the [formula function](index.md#formula-function) to geocode after bulk data loads.
+| Sub-field | Description |
+| --- | --- |
+| `latitude` | Numeric latitude value. |
+| `longitude` | Numeric longitude value. |
+| `data` | Raw geocode or place data returned by Google. |
+| `geocodeType` | Indicates the quality of the result, such as `Exact` or `Approximate`. |
 
 ---
 
-## Enable Latitude/Longitude on an Address Field
+## How Auto-Geocoding Works
 
-By default, the latitude and longitude inputs are hidden. Enable them per field in the Entity Manager:
+When auto-geocoding is enabled for an entity:
 
-1. Navigate to **Administration** → **Entity Manager**.
-2. Select the entity type (e.g. Account).
-3. Click **Fields**.
-4. Find the address field (e.g. `billingAddress`) and click **Edit**.
-5. Enable the **Latitude** and **Longitude** options.
-6. Click **Save**.
-7. Clear cache: **Administration** → **Clear Cache**.
+1. A new record or changed address triggers the geocode hook before save.
+2. The extension checks every address field on the entity.
+3. Geocoding runs when the field is new or when street, city, state, country, or postal code changes.
+4. The request is skipped when the address does not contain at least a city or postal code.
+5. The extension writes back `latitude`, `longitude`, `data`, and `geocodeType`.
 
-![Address field geocoding options in Entity Manager](../../_static/images/espocrm-extensions/map-plus/latitude-and-longitude-options.png)
+Auto-geocoding is skipped for silent save operations such as imports and some mass updates.
 
-!!! note
-    Latitude and longitude values are stored as sub-fields of the address field. They appear in the edit and detail views when enabled, and are available in list layouts and formula.
+---
+
+## Entity-Level Parameter
+
+At the entity level, the extension adds:
+
+| Parameter | Description |
+| --- | --- |
+| `autoGeocode` | Automatically geocodes address fields when records are created or when address values change. |
+
+Configure it in **Administration** -> **Entity Manager** -> open the entity -> **Edit**.
+
+---
+
+## Address Field Parameters
+
+At the address field level, the extension adds:
+
+| Parameter | Description |
+| --- | --- |
+| `showCoordinates` | Displays latitude and longitude inputs and shows coordinates in read mode. |
+| `geocodeButton` | Adds a button in read mode for manually fetching or refreshing geocoded data. |
+| `placesApiDisabled` | Disables the Places-based autocomplete layer for that address field. |
 
 ---
 
 ## Manual Geocoding
 
-If auto-geocoding did not run (e.g. after a bulk import), you can trigger geocoding manually:
+If **Geocode Button** is enabled and the user has edit permission, the address field shows a manual geocode action in read mode.
 
-- Open the record's edit view.
-- Click **Get Coordinates** (or the map icon next to the address field).
-- The extension calls the Geocoding API and fills in the coordinates.
-- Save the record to persist the values.
+- If the field already has coordinates, the user is asked to confirm before refreshing them.
+- The action calls the extension API and updates the record with fresh geocode data.
+
+This is especially useful after data imports or when a saved address was corrected manually.
 
 ---
 
-## Disabling Auto-Geocode per Entity
+## Mass Geocoding
 
-To disable auto-geocoding on a specific entity type (while keeping geocoding available via formula):
+List views for entities that contain at least one address field receive the **Get Coordinates & Place Data** mass action.
 
-- In the Entity Manager, edit the entity.
-- Disable the **Auto Geocode** option.
+- Users can select multiple records and geocode them in one request.
+- The action asks whether existing coordinate values should be overwritten or skipped.
+- The backend geocodes all address fields on the selected records.
+
+---
+
+## Formula Function
+
+Use the formula function when geocoding should be triggered from workflows or BPM scripts:
+
+```text
+ext\eblaMapPlus\geocode('billingAddress')
+ext\eblaMapPlus\geocode('billingAddress', true)
+```
+
+The second argument forces an update even if coordinates already exist.
+
+---
+
+## Embedded Address Map Options
+
+The address map view also includes additional map behavior that is not limited to plain coordinate storage:
+
+| Parameter | Description |
+| --- | --- |
+| `markerDraggable` | Lets users drag the address marker in edit mode. After save, the extension can offer to update street, city, and state from the new marker position. |
+| `enablePolygon` | Enables polygon drawing on the address map. |
+| `strokeOpacity` | Polygon border opacity. |
+| `strokeWeight` | Polygon border width in pixels. |
+| `strokeColor` | Polygon border color. |
+| `fillColor` | Polygon fill color. |
+| `fillOpacity` | Polygon fill opacity. |
+
+Additional address map behaviors:
+
+- Approximate geocode results are displayed as a circle instead of a precise marker.
+- A **Directions** button opens Google Maps navigation to the address.
+- A **Your Location** button can place the user's current position on the map.
 
 ---
 
 ## See Also
 
-- [Place Search Autocomplete](search-place-autocomplete.md) — populate address fields and coordinates simultaneously
-- [Map View](map-view.md) — display geocoded records on an interactive map
-- [Formula Function](index.md#formula-function) — trigger geocoding from workflows
+- [Place Search Autocomplete](search-place-autocomplete.md)
+- [Map View](map-view.md)
+- [Map Route](map-route.md)

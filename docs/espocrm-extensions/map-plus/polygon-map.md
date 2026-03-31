@@ -1,56 +1,80 @@
 ---
 icon: material/vector-polygon
 title: Polygon Map - Ebla Map Plus
-description: Draw and store polygon shapes on a map directly within EspoCRM records using the Ebla Map Plus polygon field type.
+description: Draw and store polygon shapes on a map directly within EspoCRM records using configurable search, center, and styling options.
 ---
 
 # Polygon Map
 
-The **Polygon Map** field type lets users draw a custom polygon shape directly on a Google Map inside an EspoCRM record. The polygon coordinates are stored on the record and can be used in workflows, exports, or integrations.
+The **Polygon Map** field type lets users draw, edit, and store polygon shapes directly on an EspoCRM record. The field stores polygon data as JSON and supports configurable default center coordinates, search, and fill or stroke styling.
 
 ![Polygon drawn on a map inside an EspoCRM record](../../_static/images/espocrm-extensions/map-plus/polygon-map.png)
 
 ---
 
-## Use Cases
+## Field Parameters
 
-- Define delivery zones or service coverage areas on a customer record.
-- Mark geographic territories for sales regions.
-- Capture property boundaries on a real estate record.
+In addition to standard field options such as read-only or audited, Polygon Map supports these map-specific parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `mapCenter` | Default center of the map in the format `latitude|longitude`, for example `40.40|34.50`. |
+| `enableSearch` | Shows a Google Places search box so users can move the map to a searched place before drawing. |
+| `strokeColor` | Polygon border color. |
+| `fillColor` | Polygon fill color. |
+| `strokeOpacity` | Polygon border opacity. |
+| `fillOpacity` | Polygon fill opacity. |
+| `strokeWeight` | Polygon border width in pixels. |
+
+---
+
+## User Actions
+
+In edit mode, users can:
+
+- Search for a place and recenter the map
+- Use the current-location button to move the map to the user's position
+- Draw polygons directly on the map
+- Drag polygons after drawing them
+- Remove vertices with right-click
+
+When no polygon exists yet, the map centers on `mapCenter` and shows a marker at that starting point.
+
+---
+
+## Stored Data Format
+
+The field stores polygon data in JSON format like this:
+
+```json
+{
+  "polygons": [
+    [
+      {"lat": 40.1, "lng": 29.9},
+      {"lat": 40.2, "lng": 29.8}
+    ]
+  ]
+}
+```
+
+This structure can be used later in exports, custom logic, or integrations.
 
 ---
 
 ## Adding a Polygon Map Field
 
-1. Navigate to **Administration** → **Entity Manager**.
-2. Select the entity type (e.g. Account, Territory).
-3. Click **Fields** → **Add Field**.
-4. Set **Type** to **Map** (the polygon map field type).
-5. Enter a **Name** and **Label** (e.g. `serviceArea` / "Service Area").
-6. Click **Save**.
-7. Add the field to the entity's **Detail** and **Edit** layouts via **Layout Manager**.
-8. Clear cache.
+1. Navigate to **Administration** -> **Entity Manager**.
+2. Open the target entity.
+3. Click **Fields** -> **Add Field**.
+4. Set **Type** to **Polygon Map**.
+5. Configure the field parameters.
+6. Save the field and add it to the layout.
 
 ![Polygon Map field configuration in Entity Manager](../../_static/images/espocrm-extensions/map-plus/polygon-map-op.png)
 
 ---
 
-## Drawing a Polygon
-
-1. Open a record in edit mode.
-2. The Polygon Map field displays an interactive Google Map.
-3. Use the drawing toolbar to draw a polygon:
-   - Click on the map to place each vertex of the polygon.
-   - Close the shape by clicking the first point again, or double-clicking the last point.
-4. Adjust the shape by dragging vertices.
-5. Save the record to persist the polygon coordinates.
-
-!!! tip
-    To redraw a polygon, delete the existing shape using the remove button on the field, then draw a new one.
-
----
-
 ## See Also
 
-- [Map Route](map-route.md) — calculate routes between address fields
-- [Map View](map-view.md) — display records as pins on an interactive map
+- [Map Route](map-route.md)
+- [Map View](map-view.md)

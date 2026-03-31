@@ -1,12 +1,12 @@
 ---
 icon: material/map-search
 title: Place Search Autocomplete - Ebla Map Plus
-description: Search for addresses using Google Places autocomplete in EspoCRM address fields, with automatic field population and coordinate capture.
+description: Search for addresses using Google Places autocomplete in EspoCRM address fields, with configurable country restrictions, language, and stored place data.
 ---
 
 # Place Search Autocomplete
 
-Address fields in EspoCRM gain a Google Places-powered search input. Start typing a location name or street address, select from the suggestions, and all address components fill in automatically — including latitude and longitude.
+Address fields in EspoCRM gain a Google Places-powered search input. Start typing a place name or street address, select a suggestion, and the extension fills the address components automatically while also storing coordinates and place data.
 
 ![Place search autocomplete in an EspoCRM address field](../../_static/images/espocrm-extensions/map-plus/search-place-auto.png)
 
@@ -15,28 +15,63 @@ Address fields in EspoCRM gain a Google Places-powered search input. Start typin
 ## Prerequisites
 
 - Ebla Map Plus installed with a valid Google Maps API key.
-- **Places API** enabled in your Google Cloud project.
-- Latitude/longitude enabled on the address field (see [Latitude and Longitude](latitude-and-longitude.md)) if you want coordinates stored on selection.
+- **Maps JavaScript API** and **Places API** enabled in Google Cloud.
+- The address field must not have **Places API Disabled** enabled.
+
+---
+
+## What Gets Filled Automatically
+
+When a user selects a Google Places suggestion, the extension can populate:
+
+- Street
+- City
+- State / Province
+- Country
+- Postal Code
+- Latitude
+- Longitude
+- Address `data` JSON with Google place details
+- `geocodeType` as exact place data from the Places response
 
 ---
 
 ## How It Works
 
-1. In any record's edit view, click into an address field.
-2. A search input appears above the standard address fields.
-3. Type a place name, street, or city. Google Places suggestions appear in a dropdown.
-4. Select a result.
-5. The extension fills in:
-   - Street address
-   - City
-   - State / Province
-   - Country
-   - Postal code
-   - Latitude and longitude (if enabled on the field)
-6. You can adjust any field manually before saving.
+1. Open any record in edit mode.
+2. Focus the address field and use the search bar shown above the address inputs.
+3. Type a place name, street, or establishment.
+4. Select a suggestion from Google Places.
+5. Review the populated values and save the record.
 
-!!! note
-    The "Pull from Google" button on the address field lets you re-fetch place data from Google for the currently stored address, overwriting the existing field values with the latest data from Google Places.
+The extension can also use the browser's geolocation API through the location button to detect the user's current position and reverse-fill the address field.
+
+---
+
+## Address Field Parameters
+
+The enhanced address field includes these extension-specific parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `placesApiDisabled` | Disables the autocomplete and Google Places enhancements for that address field. |
+| `showCoordinates` | Shows the latitude and longitude inputs directly in the address editor and in read mode. |
+| `geocodeButton` | Adds a manual geocode button in read mode so users can fetch or refresh geocoded data for that address. |
+
+---
+
+## Google Maps Integration Settings
+
+These global integration options directly affect autocomplete behavior:
+
+| Setting | Description |
+| --- | --- |
+| `language` | Forces the response language for Places and other Google requests. |
+| `autocompleteRestrictedCountries` | Limits autocomplete results to specific ISO country codes. |
+| `countryName` | Stores country values in short or long format. |
+| `stateName` | Stores state values in short or long format. |
+| `cityName` | Stores city values in short or long format. |
+| `restrictCountrySelection` | Validates the selected country against the configured country restriction list. |
 
 ---
 
@@ -44,35 +79,23 @@ Address fields in EspoCRM gain a Google Places-powered search input. Start typin
 
 To limit suggestions to specific countries:
 
-1. Navigate to **Administration** → **Integrations** → **Google Maps**.
-2. Enter ISO 3166-1 alpha-2 country codes in the **Country Restrictions** field, separated by commas (e.g. `tr,us,de`).
-3. Save. The autocomplete will now only show results from those countries.
+1. Navigate to **Administration** -> **Integrations** -> **Google Maps**.
+2. Set **Autocomplete Restricted Countries** to the ISO 3166-1 alpha-2 country codes you want to allow, for example `tr`, `us`, or `de`.
+3. Save.
+
+If **Restrict Country Selection** is enabled, users can only save country values that belong to this allowed list.
 
 ---
 
-## Address Format Settings
+## Additional Address Actions
 
-Control how country, state, and city values are stored:
-
-- **Country Format**: `short` stores the 2-letter code (`TR`); `long` stores the full name (`Turkey`).
-- **State Format**: `short` stores the abbreviation; `long` stores the full name.
-- **City Format**: `short` or `long` format for city names where applicable.
-
-Configure these in **Administration** → **Integrations** → **Google Maps**.
-
----
-
-## Country as Dropdown
-
-When the **Country as Dropdown** setting is enabled, the country sub-field within the address edit view displays as a structured dropdown populated from EspoCRM's countries list — instead of the Google autocomplete text input.
-
-This is useful when you want users to select from a controlled list rather than free-typing.
-
-Enable it in **Administration** → **Integrations** → **Google Maps** → **Country as Dropdown**.
+- **Locate Current Position**: Uses browser geolocation to fill the address from the user's current location.
+- **Pull from Google**: When coordinates already exist, the field can pull address components back from Google and overwrite the current street, city, state, country, and postal code values.
 
 ---
 
 ## See Also
 
-- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md) — auto-populate coordinates when saving
-- [Map View](map-view.md) — show geocoded records on an interactive map
+- [Latitude and Longitude (Geocoding)](latitude-and-longitude.md)
+- [Map View](map-view.md)
+- [Select on Map](select-on-map.md)
