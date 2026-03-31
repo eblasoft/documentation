@@ -102,7 +102,7 @@ Additional address map behaviors:
 - Approximate geocode results are displayed as a circle instead of a precise marker.
 - A **Directions** button opens Google Maps navigation to the address.
 - A **Your Location** button can place the user's current position on the map.
-- 
+
 ![Address map with directions and location buttons](../../_static/images/espocrm-extensions/map-plus/address-map-buttons.png)
 ---
 
