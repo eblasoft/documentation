@@ -92,8 +92,10 @@ If **Restrict Country Selection** is enabled, users can only save country values
 
 - **Locate Current Position**: This action uses the browser’s geolocation feature to detect the user’s current physical location. It retrieves the device’s latitude and longitude, saves them in the address field, and then sends them to Google Maps for reverse geocoding. Google returns the related address details, such as street, city, state, country, and postal code. This makes it easy to create an address directly from the user’s real-time location instead of entering it manually, which is especially useful for mobile users, field teams, and on-site activities.
 - **Pull from Google**: This action is used when the record already contains saved coordinates. It sends the stored latitude and longitude to Google Maps and asks for the address linked to that location. The returned values are then written back into the address field, updating details like street, city, state, country, and postal code. This is helpful when the coordinates are correct but the text address is missing, inconsistent, outdated, or needs to be standardized.
+- **Get Geocoded Data**: manually refreshes an address field’s map data from Google. It updates values such as latitude, longitude, geocode data, and geocode type, and asks for confirmation before replacing existing coordinates. This is useful when map data is missing, outdated, or needs to be corrected without waiting for automatic geocoding.
 
 ![Additional address actions in the address field](../../_static/images/espocrm-extensions/map-plus/address-field-actions.png)
+![Get geocoded data](../../_static/images/espocrm-extensions/map-plus/get-geocoded-data.png)
 
 ## See Also
 
