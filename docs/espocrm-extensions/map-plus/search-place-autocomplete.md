@@ -9,7 +9,7 @@ description: Search for addresses using Google Places autocomplete in EspoCRM ad
 Address fields in EspoCRM gain a Google Places-powered search input. Start typing a place name or street address, select a suggestion, and the extension fills the address components automatically while also storing coordinates and place data.
 
 ![Place search autocomplete in an EspoCRM address field](../../_static/images/espocrm-extensions/map-plus/search-place-auto.png)
-
+![address field new options](../../_static/images/espocrm-extensions/map-plus/address-field-new-options.png)
 ---
 
 ## Prerequisites
@@ -58,6 +58,7 @@ The enhanced address field includes these extension-specific parameters:
 | `showCoordinates` | Shows the latitude and longitude inputs directly in the address editor and in read mode. |
 | `geocodeButton` | Adds a manual geocode button in read mode so users can fetch or refresh geocoded data for that address. |
 
+![Address field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/adress-field-params.png)
 ---
 
 ## Google Maps Integration Settings

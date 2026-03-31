@@ -10,6 +10,8 @@ description: Extend EspoCRM link fields with a map button so users can choose re
 
 This is useful for assigning the nearest branch, location, warehouse, partner, or parent record.
 
+![Select on Map button](../../_static/images/espocrm-extensions/map-plus/select-on-map-button.png)
+![Select on Map modal](../../_static/images/espocrm-extensions/map-plus/select-on-map-modal.png)
 ---
 
 ## Supported Field Parameters
@@ -24,6 +26,8 @@ The feature adds these parameters to link fields:
 | `mapSelectFilter` | Optional preset filter applied to the linked entity collection before rendering the map. |
 
 When **Enable Map Selection** is turned on, the other three parameters become visible in the field editor.
+
+![Select on Map field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/select-on-map-field-params.png)
 
 ---
 

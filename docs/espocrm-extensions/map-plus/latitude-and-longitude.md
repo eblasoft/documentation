@@ -49,6 +49,7 @@ At the entity level, the extension adds:
 
 Configure it in **Administration** -> **Entity Manager** -> open the entity -> **Edit**.
 
+![Auto-geocode entity parameter in the entity editor](../../_static/images/espocrm-extensions/map-plus/auto-geocode-entity-param.png)
 ---
 
 ## Address Field Parameters
@@ -82,6 +83,7 @@ List views for entities that contain at least one address field receive the **Ge
 - The action asks whether existing coordinate values should be overwritten or skipped.
 - The backend geocodes all address fields on the selected records.
 
+![Mass geocoding action in the list view](../../_static/images/espocrm-extensions/map-plus/mass-geocode-action.png)
 ---
 
 ## Formula Function
@@ -111,12 +113,15 @@ The address map view also includes additional map behavior that is not limited t
 | `fillColor` | Polygon fill color. |
 | `fillOpacity` | Polygon fill opacity. |
 
+![Map field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/map-field-params.png)
+
 Additional address map behaviors:
 
 - Approximate geocode results are displayed as a circle instead of a precise marker.
 - A **Directions** button opens Google Maps navigation to the address.
 - A **Your Location** button can place the user's current position on the map.
-
+- 
+![Address map with directions and location buttons](../../_static/images/espocrm-extensions/map-plus/address-map-buttons.png)
 ---
 
 ## See Also

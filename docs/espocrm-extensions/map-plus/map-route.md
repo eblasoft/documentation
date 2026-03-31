@@ -10,7 +10,7 @@ The **Map Route** field type plots a route between multiple points and stores th
 
 <iframe width="650" height="315" src="https://www.youtube.com/embed/gc3Sxb4rPWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Map Route field displaying a route with distance and duration](../../_static/images/espocrm-extensions/map-plus/map-route.jpg)
+![Map Route field displaying a route with distance and duration](../../_static/images/espocrm-extensions/map-plus/map-route.png)
 
 ---
 
@@ -39,6 +39,7 @@ The route field includes the following map-specific parameters:
 | `defaultLongitude` | Fixed default longitude paired with `defaultLatitude`. |
 | `routePreference` | Route mode: `Fastest` or `Shortest`. |
 
+![Map Route field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/map-route-field-params.png)
 ---
 
 ## How the Route Is Built
@@ -79,6 +80,7 @@ The `routePreference` parameter changes how Google directions are requested:
 
 The global **Measurement Format** integration setting controls whether route distance is shown in kilometers or miles.
 
+![Route Measurement Format](../../_static/images/espocrm-extensions/map-plus/route-measurement-format.png)
 ---
 
 ## Map Actions
@@ -100,9 +102,6 @@ The route view includes extra controls beyond static route drawing:
 5. Configure the route parameters described above.
 6. Save the field.
 7. Add the route field to the entity layout.
-8. Clear cache if needed.
-
-![Map Route field configuration in Entity Manager](../../_static/images/espocrm-extensions/map-plus/map-route-op.png)
 
 ---
 
