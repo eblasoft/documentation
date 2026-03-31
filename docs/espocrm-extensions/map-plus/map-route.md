@@ -18,11 +18,11 @@ The **Map Route** field type plots a route between multiple points and stores th
 
 Every **Map Route** field automatically creates these related fields:
 
-| Sub-field | Description |
-| --- | --- |
-| `distance` | Stored route distance. Displayed in kilometers or miles according to the global measurement format setting. |
-| `duration` | Stored route duration shown in `HH:MM:SS` format. |
-| `pickList` | Internal list of manually selected route waypoints. |
+| Sub-field   | Description |
+|-------------| --- |
+| `Distance`  | Stored route distance. Displayed in kilometers or miles according to the global measurement format setting. |
+| `Duration`  | Stored route duration shown in `HH:MM:SS` format. |
+| `Pick List` | Internal list of manually selected route waypoints. |
 
 ---
 
@@ -30,14 +30,14 @@ Every **Map Route** field automatically creates these related fields:
 
 The route field includes the following map-specific parameters:
 
-| Parameter | Description |
-| --- | --- |
-| `addressFields` | Defines which address fields from any entity types can be selected manually as extra route waypoints. |
-| `defaultAddressFieldList` | Adds local address fields from the current entity to the route automatically. Can also include `currentLocation`. |
-| `displayAsSeparatedButtons` | Shows separate add buttons for configured address sources instead of a single generic add action. |
-| `defaultLatitude` | Fixed default latitude that can act as a route point. |
-| `defaultLongitude` | Fixed default longitude paired with `defaultLatitude`. |
-| `routePreference` | Route mode: `Fastest` or `Shortest`. |
+| Parameter                      | Description                                                                                                        |
+|--------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `Address Fields`               | Defines which address fields from any entity types can be selected manually as extra route waypoints.              |
+| `Default Address Field List`   | Adds local address fields from the current entity to the route automatically. Can also include `Current Location`. |
+| `Display As Separated Buttons` | Shows separate add buttons for configured address sources instead of a single generic add action.                  |
+| `Default Latitude`             | Fixed default latitude that can act as a route point.                                                              |
+| `Default Longitude`            | Fixed default longitude paired with `Default Latitude`.                                                            |
+| `Route Preference`             | Route mode: `Fastest` or `Shortest`.                                                                               |
 
 ![Map Route field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/map-route-field-params.png)
 ---
@@ -46,10 +46,10 @@ The route field includes the following map-specific parameters:
 
 When the field renders, the route can be assembled from several sources in this order:
 
-1. **Current Location**, when `currentLocation` is included in `defaultAddressFieldList`
-2. **Fixed default coordinates**, when `defaultLatitude` and `defaultLongitude` are set
-3. **Local address fields** from the current record, based on `defaultAddressFieldList`
-4. **Manually selected related records** stored in `pickList`
+1. **Current Location**, when `Current Location` is included in `Default Address Field List`
+2. **Fixed default coordinates**, when `Default Latitude` and `Default Longitude` are set
+3. **Local address fields** from the current record, based on `Default Address Field List`
+4. **Manually selected related records** stored in `Pick List`
 
 If the final route has fewer than two valid points, no route is drawn.
 
@@ -57,7 +57,7 @@ If the final route has fewer than two valid points, no route is drawn.
 
 ## Selecting Additional Waypoints
 
-The `addressFields` parameter lets you select addresses from multiple entity types. The add dialog shows entries in the format:
+The `Address Fields` parameter lets you select addresses from multiple entity types. The add dialog shows entries in the format:
 
 ```text
 EntityType.addressField
@@ -67,13 +67,13 @@ For each selected record:
 
 - The chosen address field must contain latitude and longitude.
 - Duplicate locations are prevented.
-- The selected location is stored in the route `pickList`.
+- The selected location is stored in the route `Pick List`.
 
 ---
 
 ## Route Preferences
 
-The `routePreference` parameter changes how Google directions are requested:
+The `Route Preference` parameter changes how Google directions are requested:
 
 - **Fastest** uses driving options with live traffic-aware timing.
 - **Shortest** optimizes waypoints and avoids ferries and tolls where possible.
@@ -87,8 +87,8 @@ The global **Measurement Format** integration setting controls whether route dis
 
 The route view includes extra controls beyond static route drawing:
 
-- It recalculates automatically when the `pickList` changes.
-- It writes changed `distance` and `duration` values back to the record through the extension API.
+- It recalculates automatically when the `Pick List` changes.
+- It writes changed `Distance` and `Duration` values back to the record through the extension API.
 - It adds a **Directions** button that opens the current route in Google Maps navigation mode.
 
 ---
