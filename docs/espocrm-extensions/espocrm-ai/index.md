@@ -28,10 +28,13 @@ Ebla AI provides a comprehensive range of AI-driven features including smart ema
 - [Email Thread Analysis](features/email-thread-analysis.md)
 - [Email Composer AI Toolbar](features/email-composer.md)
 - [AI Email Reply](features/email-reply.md)
+- [Email Template Generator](features/email-template-generator.md)
 - [Email Translation](features/email-translation.md)
+- [Image & Attachment Analysis](features/image-analysis.md)
 - [Smart Paste](features/smart-paste.md)
 - [AI Stream Comment](features/stream-comment.md)
 - [Formula Functions](features/formula.md)
+- [Token Usage Statistics](features/token-usage.md)
 - [AI Sandbox](features/sandbox.md)
 - [Access Control](features/access-control.md)
 

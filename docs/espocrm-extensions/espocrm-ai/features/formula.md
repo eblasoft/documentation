@@ -66,3 +66,49 @@ Runs a saved **AI Prompt Template** by its ID. Variables in the template are res
 !!! important
 
     If output is not as expected, review the prompt template in **Administration** → **AI Prompts** and adjust the context or variables.
+
+---
+
+## `eblaAi\analyzeImage`
+
+Analyzes an image or file attachment using a vision-capable AI model. Returns a detailed description or analysis of the image.
+
+**Format:** `eblaAi\analyzeImage(attachmentId, prompt, profileId)`
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `attachmentId` | string | Yes | The ID of the Attachment record to analyze |
+| `prompt` | string | No | Custom instruction for the analysis. Uses a default describe prompt if omitted. |
+| `profileId` | string | No | ID of the AI Profile to use. Uses system default if omitted. |
+
+**Returns:** The AI's analysis as a string. Returns a string starting with `"Error:"` on failure (safe for formula use).
+
+!!! warning "Vision-capable providers only"
+
+    This function requires a vision-capable AI provider. Supported: **OpenAI** (GPT-4o, GPT-4V), **Anthropic** (Claude 3.x), **Google Gemini**.
+    If the configured profile's provider does not support vision, the function returns `"Error: Selected provider does not support image analysis."`.
+
+!!! warning "Supported file types"
+
+    Only image files are supported: **JPEG, PNG, GIF, WebP**. Other file types return an error string.
+
+!!! example "Extract text from an image"
+
+    ```
+    $attachmentId = attachmentField;
+
+    $result = eblaAi\analyzeImage($attachmentId, 'Extract all text visible in this image.');
+
+    if (string\startsWith($result, 'Error:')) {
+        description = 'Image analysis failed';
+    } else {
+        description = $result;
+    }
+    ```
+
+!!! example "Auto-describe a product image"
+
+    ```
+    $description = eblaAi\analyzeImage(productImage, 'Describe this product for an e-commerce listing. Be concise.');
+    productDescription = $description;
+    ```
