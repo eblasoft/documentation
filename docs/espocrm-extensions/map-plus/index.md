@@ -65,24 +65,6 @@ Use the **Location** entity to manage stores, competitors, branches, or points o
 
 <!-- DOC:USE-CASES END -->
 
----
-
-<!-- DOC:INSTALLATION START -->
-
-## Installation
-
-1. Obtain the Ebla Map Plus extension package from the [Eblasoft customer portal](https://portal.eblasoft.com.tr).
-2. Navigate to **Administration** -> **Extensions**.
-3. Upload the `.zip` package and click **Install**.
-4. Clear cache and rebuild when prompted.
-
-!!! note
-    The current package manifest supports EspoCRM versions `>=9.0.0 <9.4.0`.
-
-<!-- DOC:INSTALLATION END -->
-
----
-
 <!-- DOC:CONFIGURATION START -->
 
 ## Configuration

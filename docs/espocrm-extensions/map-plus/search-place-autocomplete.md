@@ -52,11 +52,11 @@ The extension can also use the browser's geolocation API through the location bu
 
 The enhanced address field includes these extension-specific parameters:
 
-| Parameter | Description |
-| --- | --- |
-| `placesApiDisabled` | Disables the autocomplete and Google Places enhancements for that address field. |
-| `showCoordinates` | Shows the latitude and longitude inputs directly in the address editor and in read mode. |
-| `geocodeButton` | Adds a manual geocode button in read mode so users can fetch or refresh geocoded data for that address. |
+| Parameter             | Description |
+|-----------------------| --- |
+| `Places Api Disabled` | Disables the autocomplete and Google Places enhancements for that address field. |
+| `Show Coordinates`    | Shows the latitude and longitude inputs directly in the address editor and in read mode. |
+| `Geocode Button`      | Adds a manual geocode button in read mode so users can fetch or refresh geocoded data for that address. |
 
 ![Address field parameters in the field editor](../../_static/images/espocrm-extensions/map-plus/adress-field-params.png)
 ---
@@ -65,14 +65,14 @@ The enhanced address field includes these extension-specific parameters:
 
 These global integration options directly affect autocomplete behavior:
 
-| Setting | Description |
-| --- | --- |
-| `language` | Forces the response language for Places and other Google requests. |
-| `autocompleteRestrictedCountries` | Limits autocomplete results to specific ISO country codes. |
-| `countryName` | Stores country values in short or long format. |
-| `stateName` | Stores state values in short or long format. |
-| `cityName` | Stores city values in short or long format. |
-| `restrictCountrySelection` | Validates the selected country against the configured country restriction list. |
+| Setting                             | Description |
+|-------------------------------------| --- |
+| `Language`                          | Forces the response language for Places and other Google requests. |
+| `Autocomplete Restricted Countries` | Limits autocomplete results to specific ISO country codes. |
+| `Country Name`                      | Stores country values in short or long format. |
+| `State Name`                        | Stores state values in short or long format. |
+| `City Name`                         | Stores city values in short or long format. |
+| `Restrict Country Selection`        | Validates the selected country against the configured country restriction list. |
 
 ---
 
