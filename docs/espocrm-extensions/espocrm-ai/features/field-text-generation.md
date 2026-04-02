@@ -1,60 +1,58 @@
 # Field Text Generation
 
-Enable AI-powered actions on any text or varchar field. When enabled, a ⚡ bolt button appears on the field in edit mode — clicking it opens a dropdown menu with multiple AI actions.
+By using this feature you can generate text for a field based on the context you provide.
 
 ## Enable Field Text Generation
 
-1. Navigate to **Administration** → **Entity Manager** → select your entity type → **Fields** → select a field.
-2. Check the **Enable AI Generate** option.
-3. (Optional) Select a **Quick Prompt** to add a one-click shortcut to the dropdown.
+1. Navigate to Administration -> Entity Manager -> {Scope} -> fields -> {field}.
+2. Check **Enable AI text generation** option.
+3. (Optional) Select predefined prompt to enable Quick Text Generation.
 
-   ![Enable AI Generate](../../../_static/images/espocrm-extensions/ai/features/img_11.png)
+   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_11.png)
 
 4. Save.
 
-## Using the AI Dropdown
+## Generate Text
 
-1. Navigate to a record and click the field's edit icon.
-2. A ⚡ bolt button appears:
-   - On **text fields** (textarea): bottom-right corner of the field
-   - On **varchar fields** (single-line input): appended to the right of the input
-3. Click the ⚡ bolt button to open the dropdown menu.
+1. Navigate to the record view of the entity.
+2. Click on field edit icon.
+3. Click on **Generate** icon button.
 
-   ![AI dropdown](../../../_static/images/espocrm-extensions/ai/features/img_12.png)
+   ![img_12.png](../../../_static/images/espocrm-extensions/ai/features/img_12.png)
+   ![img_14.png](../../../_static/images/espocrm-extensions/ai/features/img_14.png)
+4. If you have predefined prompt selected, the text will be generated automatically, otherwise AI Generate Modal will be
+   appearing.
+5. Enter prompt text or select predefined prompt and click send.
 
-While the AI is processing, the bolt icon changes to a ⏳ spinner. No other loading notification is shown.
+   ![img_13.png](../../../_static/images/espocrm-extensions/ai/features/img_13.png)
 
-## Dropdown Menu Actions
+6. Click Insert to insert generated text into field.
 
-| Action | Description |
-|--------|-------------|
-| ↩ **Undo Last Change** | Reverts the field to its previous value. Only appears after an AI action has been performed. |
-| ⚡ **Quick Prompt** | Runs the configured prompt template and fills the field instantly. Only shown if a Quick Prompt is set. |
-| 🤖 **Generate from Context** | Generates content based on the other fields in the record. Works even when the field is empty. |
-| ✨ **Improve Writing** | Makes the existing text more professional and clear. |
-| ✓ **Fix Grammar** | Fixes grammar and spelling errors only — does not change meaning or style. |
-| ↕ **Make Shorter** | Condenses the text while preserving key meaning. |
-| ↕ **Make Longer** | Expands the text with more relevant detail. *(Text fields only)* |
-| 🌐 **Translate To** | Translates the content to English, Arabic, French, Spanish, or German. |
-| 💬 **Custom Prompt...** | Opens the full AI Generate modal for a custom prompt. |
+!!! important
 
-!!! note
+    If output is not as expected, you can click on **Send** button to regenerate the output.
 
-    **Generate from Context** is the only action that works on an empty field. All other actions require the field to have existing content.
+## Multi-Level Undo
 
-!!! tip
+Every AI action performed on a field (improve, grammar, shorter, longer, translate, generate) saves the previous field value before applying changes. This allows you to step back through multiple AI edits.
 
-    After any AI action, **Undo Last Change** appears at the top of the dropdown. Click it to instantly revert to the previous value if the result is not what you expected.
+### Using Undo
 
-## Custom Prompt Modal
+- After the first AI action, an **Undo** button appears with a count label, for example: "Undo (2 steps)".
+- Click the button to restore the previous value.
+- Continue clicking to step back through all saved versions.
+- The count in the label decreases with each undo until there are no more steps.
 
-Selecting **Custom Prompt...** opens the AI Generate modal where you can:
+### Notes
 
-- Write a custom prompt
-- Select a predefined prompt from your library
-- Choose a specific AI profile
-- Preview the output before inserting
+- The undo stack supports unlimited steps — every AI action adds a new entry.
+- The undo button is hidden until at least one AI action has been performed.
+- The undo stack is only available during the current editing session and is not persisted across page refreshes.
 
-   ![AI Generate modal](../../../_static/images/espocrm-extensions/ai/features/img_13.png)
+## Translate Behavior
 
-Click **Insert** to apply the result to the field, or **Copy** to copy it to the clipboard.
+The Translate option adapts its appearance based on how many languages are configured in the AI settings:
+
+- **0 languages configured** — the Translate option is hidden entirely from the AI actions menu.
+- **1 language configured** — a single **Translate** button is shown directly in the menu. Clicking it translates the field content immediately without a submenu.
+- **2 or more languages configured** — a **Translate** sub-menu appears. Hover or click it to expand the list of available languages and select the target language.

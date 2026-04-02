@@ -1,114 +1,100 @@
-# Formula Functions
+# Formula
 
-Ebla AI provides formula functions that can be used in workflows, BPM processes, and formula fields to run AI operations automatically.
+The Formula feature in Ebla AI allows you to create custom formula functions that can be used in various parts of the
+CRM. These functions can be used to perform calculations, manipulate data, and automate tasks. Which enables you to
+create complex and intelligent formulas that can be used to enhance your CRM operations.
 
-## `eblaAi\textGenerate`
+## Using Formula
 
-Generates text using AI based on a prompt. Useful for automating content generation in workflows.
-
-**Format:** `eblaAi\textGenerate(prompt, profileId)`
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `prompt` | string | Yes | The prompt to send to the AI |
-| `profileId` | string | No | ID of the AI Profile to use. Uses system default if omitted. |
-
-**Returns:** The AI-generated text as a string.
+Format of function use: `eblaAi\textGenerate([propmt], profileId)`.
 
 !!! example
 
     ```
-    $prompt = string\concatenate(
-        'Calculate score of this profile,',
+        $prompt = string\concatenate('Calculate score of this profile,',
         ' name is: ', name,
         ' email is: ', emailAddress,
         ' industry is: ', industry,
-        ' source is: ', source,
-        ' country is: ', addressCountry,
-        '. Provide result as number between 0-4 without explanations'
-    );
-
-    $profileId = '65d6f98d3d0f9f5f9';
-
-    score = eblaAi\textGenerate($prompt, $profileId);
+        ' source is: ' , source,
+        ' country is: ' , addressCountry,
+        '. Provide result as number between 0-4 without explainations'
+        );
+        
+        $profileId = '65d6f98d3d0f9f5f9';
+        
+        score = eblaAi\textGenerate($prompt, $profileId);
     ```
 
----
-
-## `eblaAi\runPrompt`
-
-Runs a saved **AI Prompt Template** by its ID. Variables in the template are resolved from the current entity context automatically.
-
-**Format:** `eblaAi\runPrompt(promptId)`
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `promptId` | string | Yes | The ID of the AI Prompt record to execute |
-
-**Returns:** The AI-generated text as a string. If an error occurs, returns a string starting with `"Error:"`.
-
-!!! tip
-
-    To find a Prompt ID: navigate to **Administration** → **AI Prompts** → open the prompt → copy the ID from the URL.
-
-!!! example
-
-    ```
-    $result = eblaAi\runPrompt('6720abc123def456');
-
-    if (string\startsWith($result, 'Error:')) {
-        description = 'Generation failed';
-    } else {
-        description = $result;
-    }
-    ```
+`Output Example: Calculate score of this profile, name is: Marry Coch email is: marry@gmail.com industry is: Banking source is: Web Site country is: Germany. Provide result as number between 0-4 without explainations`
 
 !!! important
 
-    If output is not as expected, review the prompt template in **Administration** → **AI Prompts** and adjust the context or variables.
+    If output is not as expected, you can click on **Send** button to regenerate the output.
 
 ---
 
-## `eblaAi\analyzeImage`
+## eblaAi\getPrompt
 
-Analyzes an image or file attachment using a vision-capable AI model. Returns a detailed description or analysis of the image.
+`eblaAi\getPrompt` fetches an AI Prompt record by its ID and renders its template with field values substituted in. This is useful in workflows, before-save hooks, and other formula contexts where you want to dynamically build a prompt from a saved template rather than constructing the string manually.
 
-**Format:** `eblaAi\analyzeImage(attachmentId, prompt, profileId)`
+### Syntax
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `attachmentId` | string | Yes | The ID of the Attachment record to analyze |
-| `prompt` | string | No | Custom instruction for the analysis. Uses a default describe prompt if omitted. |
-| `profileId` | string | No | ID of the AI Profile to use. Uses system default if omitted. |
+```
+eblaAi\getPrompt(PROMPT_ID)
+```
 
-**Returns:** The AI's analysis as a string. Returns a string starting with `"Error:"` on failure (safe for formula use).
+Renders the prompt template using the field values of the **current record** (the record the formula is running on).
 
-!!! warning "Vision-capable providers only"
+```
+eblaAi\getPrompt(PROMPT_ID, SCOPE, RECORD_ID)
+```
 
-    This function requires a vision-capable AI provider. Supported: **OpenAI** (GPT-4o, GPT-4V), **Anthropic** (Claude 3.x), **Google Gemini**.
-    If the configured profile's provider does not support vision, the function returns `"Error: Selected provider does not support image analysis."`.
+Renders the prompt template using the field values of a **specific record** identified by its entity type and ID.
 
-!!! warning "Supported file types"
+### Placeholder Formats
 
-    Only image files are supported: **JPEG, PNG, GIF, WebP**. Other file types return an error string.
+The AI Prompt template supports two placeholder formats — both are supported and can be mixed:
 
-!!! example "Extract text from an image"
+- `{{fieldName}}` — double curly braces
+- `{fieldName}` — single curly braces
+
+Each placeholder is replaced with the actual value of the corresponding field from the target record.
+
+### Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `PROMPT_ID` | The ID of the AiPrompt record to use |
+| `SCOPE` | The entity type of the target record (e.g. `'Contact'`) |
+| `RECORD_ID` | The ID of the target record |
+
+### Example
+
+!!! example
+
+    Fetch a prompt template and use it as input to `eblaAi\textGenerate` in a before-save formula:
 
     ```
-    $attachmentId = attachmentField;
+    $promptId = '65d6f98d3d0f9f5f9';
 
-    $result = eblaAi\analyzeImage($attachmentId, 'Extract all text visible in this image.');
+    $prompt = eblaAi\getPrompt($promptId);
 
-    if (string\startsWith($result, 'Error:')) {
-        description = 'Image analysis failed';
-    } else {
-        description = $result;
-    }
+    description = eblaAi\textGenerate($prompt, $profileId);
     ```
 
-!!! example "Auto-describe a product image"
+!!! example
+
+    Use the three-argument form to render a prompt against a related record:
 
     ```
-    $description = eblaAi\analyzeImage(productImage, 'Describe this product for an e-commerce listing. Be concise.');
-    productDescription = $description;
+    $promptId = '65d6f98d3d0f9f5f9';
+    $relatedId = relatedContactId;
+
+    $prompt = eblaAi\getPrompt($promptId, 'Contact', $relatedId);
+
+    notes = eblaAi\textGenerate($prompt, $profileId);
     ```
+
+!!! note
+
+    `eblaAi\getPrompt` only renders the prompt text — it does not call the AI. Pass the result to `eblaAi\textGenerate` to get an AI response.

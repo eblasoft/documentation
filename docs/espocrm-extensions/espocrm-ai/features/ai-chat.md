@@ -1,59 +1,81 @@
 # AI Chat Panel
 
-The AI Chat panel allows you to have a real-time conversation with AI about any CRM record. The AI has full context of the current record and can answer questions, help analyze data, and assist with tasks — all without leaving the record view.
+The AI Chat Panel provides an interactive assistant directly on any entity detail view. You can ask questions in natural language and the AI will respond with access to your CRM data, making it possible to query records, count results, and explore relationships without leaving the page.
 
-## Enable AI Chat on an Entity
+## Enabling AI Chat for an Entity
 
-1. Navigate to **Administration** → **Entity Manager** → select your entity type.
-2. In the **Panels** section, enable the **AI Chat** panel.
-3. Save.
+To show the AI Chat panel on a specific entity:
 
-The AI Chat panel will now appear on the record detail view sidebar for that entity type.
-
-## Starting a Conversation
-
-1. Open a record (Contact, Lead, Opportunity, etc.).
-2. Find the **AI Chat** panel in the sidebar.
-3. Type your message in the input box at the bottom.
-4. Press **Enter** or click the **Send** button.
-
-   ![AI Chat panel](../../../_static/images/espocrm-extensions/ai/features/img_20.png)
-
-The AI will respond with context-aware answers based on the current record's data.
-
-!!! tip
-
-    You can ask questions like:
-    - "Summarize this contact's recent activity"
-    - "What is the next best action for this lead?"
-    - "Draft a follow-up email based on this deal"
-
-## Conversation History
-
-Conversations are saved per user per record. When you return to the same record, the previous conversation is loaded automatically, allowing you to continue where you left off.
-
-![Conversation history](../../../_static/images/espocrm-extensions/ai/features/img_21.png)
-
-## Copying a Message
-
-Click the **copy** icon on any AI response to copy the text to your clipboard.
-
-## Clearing the Conversation
-
-1. Click the **Clear** button at the top of the chat panel.
-2. A confirmation dialog will appear — click **Clear** to confirm.
-
-!!! important
-
-    Clearing the conversation is permanent. All previous messages for this record will be deleted.
-
-## Selecting an AI Profile
-
-If multiple AI profiles are configured, you can select which profile to use for the conversation. The selected profile controls the AI model, tone, and behavior.
-
-1. Click the **profile selector** at the top of the chat panel.
-2. Select the desired profile from the list.
+1. Navigate to **Administration** -> **Entity Manager** -> select the entity.
+2. Ensure the entity has `aiChat` enabled in its scope configuration.
 
 !!! note
 
-    If no profile is selected, the system default AI profile is used.
+    This is typically configured by your administrator or during extension setup. Once enabled, the panel appears automatically on the entity's detail view.
+
+## Using the AI Chat Panel
+
+1. Open any record detail view for an entity that has AI Chat enabled.
+2. Locate the **AI Chat** panel on the side of the record.
+3. Type your message in the input field at the bottom of the panel.
+4. Press **Send** or hit Enter to submit your message.
+5. The AI will respond below your message, using live CRM data where relevant.
+
+### Context Awareness
+
+When you open the AI Chat panel on a record, the AI automatically knows:
+
+- The current entity type (e.g. Contact, Lead, Account)
+- The record ID
+- The record name
+
+You do not need to tell the AI which record you are looking at — it already has that context.
+
+### Multi-Turn Conversations
+
+The AI Chat panel maintains full conversation history across multiple messages. You can ask follow-up questions and the AI will remember what was said earlier in the same conversation.
+
+Conversation history is stored per user per record and persists across page refreshes. When you return to a record, the previous conversation is automatically loaded.
+
+### Clearing the Conversation
+
+Click the **Clear** (trash) button in the panel header to remove all messages from the current conversation. This cannot be undone.
+
+## What the AI Can Access
+
+The AI has read access to your CRM data and can answer questions such as:
+
+- "How many open opportunities does this account have?"
+- "What was the last activity on this contact?"
+- "List the related cases for this record."
+- "How many leads came from the Web Site source this month?"
+
+The level of data access is controlled by the **Tool Tier** setting on the AI Profile assigned to the entity. A tier of `read` or higher is required for the AI to query records.
+
+### Available Tools
+
+The AI can use the following data tools internally to answer your questions:
+
+| Tool | Description |
+|------|-------------|
+| `record__count` | Count records matching a filter |
+| `record__findOne` | Find a single record by filter |
+| `record__findMany` | Find multiple records by filter |
+| `record__attribute` | Read a specific field value from a record |
+| `record__fetch` | Fetch a full record by ID |
+| `record__findRelatedOne` | Find one related record |
+| `record__findRelatedMany` | Find multiple related records |
+| `entity__attribute` | Read entity-level metadata |
+| `entity__countRelated` | Count related records |
+| `metadata__entityFields` | Inspect entity field definitions |
+| `metadata__scopes` | Inspect available entity types |
+
+!!! important
+
+    The AI uses these tools automatically based on your question. You do not need to reference them directly.
+
+## Configuration Notes
+
+- The AI Profile assigned to the entity determines the model, temperature, and tool access level.
+- Conversation history is stored as JSON files on the server under `data/ebla-ai/conversations/`.
+- History is scoped per user per record — different users have separate conversation threads for the same record.
