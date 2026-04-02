@@ -1,8 +1,8 @@
 ---
 status: deprecated
 icon: material/briefcase-minus
-title: Espocrm List Pro Documentation
-description: Ebla List Pro for Espocrm makes editing your fields quicker, easier. With it, you can update fields directly in the list view, without needing to open separate pages for each item. This saves you clicks and time!
+title: EspoCRM Internal & Public Case Documentation
+description: Ebla Internal & Public Case for EspoCRM allows you to mark cases as internal or public, hide internal cases from portal users, and manage them using preset filters.
 ---
 
 # Ebla Internal & Public Case Extension <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-internal-public-case" target="_blank" id="ext-version" data-id="66dc326746fd3523a"></a>
