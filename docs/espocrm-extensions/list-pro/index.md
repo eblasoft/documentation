@@ -53,7 +53,22 @@ Call attention to records that have new activity since the user last visited the
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-recent-update-indicator.png)
 
 
-### 4. Real Estate Custom Advanced Card Style
+### 4. Persistent Selection
+Keep selected records checked even when the visible list changes.
+
+- **What it does**: When `enablePersistentSelection` is enabled, selected records remain preserved while users perform new searches or work with updated result sets.
+- **Selected counter**: A live counter appears near the list actions and shows how many records are currently selected.
+- **Review all selections**: Clicking the counter opens a **Selected Records** modal so users can quickly review the full list of selected records in one place.
+- **Clear selections**: A clear (`×`) action next to the counter lets users remove all current selections at once.
+- **Configuration**: Enable it for an entity with `Administration → Entity Manager → {Entity} → Edit` Enable Persistent Selection: true.
+
+This is especially useful when users need to collect records across multiple searches without losing their previous selections.
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-persistent-selection.png)
+
+![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-persistent-selection-modal.png)
+
+### 5. Real Estate Custom Advanced Card Style
 Customize the card view to display additional fields and information.
 
 ![Ebla List Pro](../../_static/images/espocrm-extensions/list-pro/espocrm-list-pro-real-estate-custom-advanced-card-style.png)
