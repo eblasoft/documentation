@@ -4,6 +4,22 @@ AI Profiles is a feature of Ebla AI that allows users to create and manage AI pr
 the behavior of the AI engine when generating content for a specific entity type. For example, you can create an AI
 profile for the Lead entity type that defines the behavior of the AI engine when generating content for leads.
 
+
+## Default Profile Templates
+
+Upon installation, Ebla AI automatically creates seven pre-configured profile templates optimized for common use cases:
+
+1. **Email Reply Assistant** - Crafts professional email responses matching sender's tone
+2. **Professional Translator** - Accurate business and technical translation
+3. **Technical Documentation Writer** - Clear, precise technical content
+4. **Sales & Marketing Writer** - Persuasive, engaging copy with compelling CTAs
+5. **Legal & Formal Correspondence** - Precise legal language for official documents
+6. **Customer Support Assistant** - Friendly, helpful customer service responses
+7. **Data Extraction Specialist** - Accurate data extraction for Smart Paste operations
+
+These templates provide a solid starting point and demonstrate best practices for creating custom profiles. You can use them as-is or duplicate and modify them for your specific needs.
+
+
 ## Creating an AI Profile
 
 1. Navigate to **Administration** -> **AI Profiles**.
@@ -24,6 +40,26 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 - **Temperature**: Controls randomness: Lowering results in less random completions.
   As the temperature approaches zero, the model will become deterministic and repetitive.
 - **Top K**: Controls diversity via nucleus sampling: 0.5 means half of all likelihood-weighted options are considered.
+
+
+### Temperature Guidelines
+
+The default profile templates use optimized temperature settings for their use cases:
+
+- **0.2 - 0.3** (Low) - For formal, factual content requiring precision
+  - Legal & Formal Correspondence (0.2)
+  - Professional Translator (0.3)
+  - Data Extraction Specialist (0.3)
+
+- **0.4 - 0.6** (Medium) - For balanced, professional content
+  - Technical Documentation Writer (0.4)
+  - Customer Support Assistant (0.6)
+
+- **0.7 - 0.8** (High) - For creative, engaging content
+  - Email Reply Assistant (0.7)
+  - Sales & Marketing Writer (0.8)
+
+Adjust temperature based on your needs: lower for consistency, higher for creativity.
 
 !!! important
 

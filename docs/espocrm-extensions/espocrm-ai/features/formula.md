@@ -30,3 +30,71 @@ Format of function use: `eblaAi\textGenerate([propmt], profileId)`.
 !!! important
 
     If output is not as expected, you can click on **Send** button to regenerate the output.
+
+---
+
+## eblaAi\getPrompt
+
+`eblaAi\getPrompt` fetches an AI Prompt record by its ID and renders its template with field values substituted in. This is useful in workflows, before-save hooks, and other formula contexts where you want to dynamically build a prompt from a saved template rather than constructing the string manually.
+
+### Syntax
+
+```
+eblaAi\getPrompt(PROMPT_ID)
+```
+
+Renders the prompt template using the field values of the **current record** (the record the formula is running on).
+
+```
+eblaAi\getPrompt(PROMPT_ID, SCOPE, RECORD_ID)
+```
+
+Renders the prompt template using the field values of a **specific record** identified by its entity type and ID.
+
+### Placeholder Formats
+
+The AI Prompt template supports two placeholder formats — both are supported and can be mixed:
+
+- `{{fieldName}}` — double curly braces
+- `{fieldName}` — single curly braces
+
+Each placeholder is replaced with the actual value of the corresponding field from the target record.
+
+### Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `PROMPT_ID` | The ID of the AiPrompt record to use |
+| `SCOPE` | The entity type of the target record (e.g. `'Contact'`) |
+| `RECORD_ID` | The ID of the target record |
+
+### Example
+
+!!! example
+
+    Fetch a prompt template and use it as input to `eblaAi\textGenerate` in a before-save formula:
+
+    ```
+    $promptId = '65d6f98d3d0f9f5f9';
+
+    $prompt = eblaAi\getPrompt($promptId);
+
+    description = eblaAi\textGenerate($prompt, $profileId);
+    ```
+
+!!! example
+
+    Use the three-argument form to render a prompt against a related record:
+
+    ```
+    $promptId = '65d6f98d3d0f9f5f9';
+    $relatedId = relatedContactId;
+
+    $prompt = eblaAi\getPrompt($promptId, 'Contact', $relatedId);
+
+    notes = eblaAi\textGenerate($prompt, $profileId);
+    ```
+
+!!! note
+
+    `eblaAi\getPrompt` only renders the prompt text — it does not call the AI. Pass the result to `eblaAi\textGenerate` to get an AI response.

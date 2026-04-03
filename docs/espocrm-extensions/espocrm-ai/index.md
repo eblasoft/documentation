@@ -22,9 +22,14 @@ Enhances communication, lead management, and workflow automation.
 
 - [AI Profiles Management](features/ai-profiles.md)
 - [AI Prompts Management](features/ai-prompts.md)
-- [AI Email Generated](features/email-reply.md)
+- [AI Email Composer](features/email-reply.md)
+- [AI Email Template Generation](features/email-template.md)
+- [AI Email Analysis Panel](features/email-analysis.md)
 - [AI Stream Comment Generation](features/stream-comment.md)
 - [AI Field Text Generation](features/field-text-generation.md)
+- [AI Chat Panel](features/ai-chat.md)
+- [AI Summary Panel](features/ai-summary.md)
+- [AI Create from List View](features/ai-create.md)
 - [AI Formula Functions](features/formula.md)
 - [AI Sandbox](features/sandbox.md)
 
@@ -35,7 +40,8 @@ Enhances communication, lead management, and workflow automation.
 - [Setup Ollama](providers/ollama-setup.md)
 - [Setup Anthropic](providers/anthropic-setup.md)
 - [Setup OpenRouter](providers/open-router-setup.md)
-- [Access control](features/access-control.md)
+- [Access Control](features/access-control.md)
+- [Admin Settings](features/admin-settings.md)
 
 ## ChangeLog
 
