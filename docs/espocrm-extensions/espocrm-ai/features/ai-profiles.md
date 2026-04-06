@@ -28,6 +28,7 @@ These templates provide a solid starting point and demonstrate best practices fo
 4. Select the provider (Gemini - OpenAI - Ollama - Anthropic - OpenRouter). (Optional)
 5. Enter the context to be sent to the AI before the prompt is sent.
 
+![Create AI Profile](../../../_static/images/espocrm-extensions/ai/setup/create-profile.png)
 ### Parameters:
 
 - **Name**: The name of the AI profile.
@@ -70,6 +71,8 @@ Adjust temperature based on your needs: lower for consistency, higher for creati
 1. Navigate to **Administration** -> **Entity Manager** -> **Select Entity Type**.
 2. In the **AI Profile** field, select the AI profile you want to use for the entity type.
 3. Click **Save**.
+
+![Select Default AI Profile](../../../_static/images/espocrm-extensions/ai/setup/select-default-profile.png)
 
 !!! important
 
