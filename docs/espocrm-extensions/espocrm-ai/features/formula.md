@@ -98,3 +98,117 @@ Each placeholder is replaced with the actual value of the corresponding field fr
 !!! note
 
     `eblaAi\getPrompt` only renders the prompt text — it does not call the AI. Pass the result to `eblaAi\textGenerate` to get an AI response.
+
+---
+
+## eblaAi\generateImage
+
+Generates an image using AI and saves it as an EspoCRM Attachment. Returns the attachment ID.
+
+### Syntax
+
+```
+eblaAi\generateImage(PROMPT, SIZE, PROFILE_ID)
+```
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `PROMPT` | string | Yes | Text description of the image to generate |
+| `SIZE` | string | No | Image size: `'square'` (default), `'landscape'`, or `'portrait'` |
+| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+
+**Returns:** The ID of the created Attachment record, or a string starting with `"Error:"` on failure.
+
+!!! example
+
+    ```
+    $imageId = eblaAi\generateImage(
+        'A professional headshot photo of a business executive',
+        'square',
+        $profileId
+    );
+
+    photoId = $imageId;
+    ```
+
+!!! note "Provider support"
+
+    Image generation is supported by **OpenAI** (DALL-E 3) and **Google Gemini** (Imagen 3). Anthropic and Ollama do not support image generation.
+
+---
+
+## eblaAi\generateSpeech
+
+Converts text to speech audio and saves it as an EspoCRM Attachment. Returns the attachment ID.
+
+### Syntax
+
+```
+eblaAi\generateSpeech(TEXT, VOICE, SPEED, PROFILE_ID)
+```
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `TEXT` | string | Yes | The text to convert to speech (max 4096 characters) |
+| `VOICE` | string | No | Voice name. OpenAI: alloy, ash, coral, echo, fable, onyx, nova, shimmer. Gemini: Aoede, Charon, Fenrir, Kore, Puck |
+| `SPEED` | float | No | Speech speed multiplier (default 1.0) |
+| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+
+**Returns:** The ID of the created Attachment record (MP3 or WAV), or a string starting with `"Error:"` on failure.
+
+!!! example
+
+    ```
+    $audioId = eblaAi\generateSpeech(
+        'Welcome to our company. We are glad to have you.',
+        'nova',
+        1.0,
+        $profileId
+    );
+    ```
+
+!!! note "Provider support"
+
+    Voice generation is supported by **OpenAI** (TTS-1, MP3 output) and **Google Gemini** (TTS Preview, WAV output). Anthropic and Ollama do not support voice generation.
+
+---
+
+## eblaAi\generateVideo
+
+Generates a short video from a text prompt and saves it as an EspoCRM Attachment. Returns the attachment ID.
+
+### Syntax
+
+```
+eblaAi\generateVideo(PROMPT, ASPECT_RATIO, DURATION, PROFILE_ID)
+```
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `PROMPT` | string | Yes | Text description of the video to generate |
+| `ASPECT_RATIO` | string | No | Aspect ratio: `'16:9'` (default), `'9:16'`, or `'1:1'` |
+| `DURATION` | int | No | Duration in seconds (5-8) |
+| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+
+**Returns:** The ID of the created Attachment record (MP4), or a string starting with `"Error:"` on failure.
+
+!!! example
+
+    ```
+    $videoId = eblaAi\generateVideo(
+        'A timelapse of a sunset over the ocean',
+        '16:9',
+        8,
+        $profileId
+    );
+    ```
+
+!!! warning "Provider support"
+
+    Video generation is currently only supported by **Google Gemini** (Veo 2). OpenAI, Anthropic, and Ollama do not support video generation. Video generation may take up to 5 minutes due to the asynchronous processing pipeline.

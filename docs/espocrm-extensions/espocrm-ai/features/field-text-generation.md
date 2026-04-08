@@ -49,6 +49,30 @@ Every AI action performed on a field (improve, grammar, shorter, longer, transla
 - The undo button is hidden until at least one AI action has been performed.
 - The undo stack is only available during the current editing session and is not persisted across page refreshes.
 
+## WYSIWYG Fields
+
+AI actions are also available on **WYSIWYG** (rich text) fields via an embedded Summernote toolbar group.
+
+### Available Actions
+
+When editing a WYSIWYG field, the AI toolbar group (`aiCommon`) appears in the Summernote toolbar with the following buttons:
+
+| Button | Description |
+|--------|-------------|
+| **Undo** | Restores the previous field content. Disabled until the first AI action is performed. |
+| **Improve Writing** | Rewrites the content for clarity and flow. |
+| **Fix Grammar** | Corrects grammar and spelling. |
+| **Make Shorter** | Condenses the content. |
+| **Make Longer** | Expands the content with more detail. |
+| **Translate** | Translates the content. Shown as a single button (1 language) or a dropdown (multiple languages). Hidden if no languages are configured. |
+| **Custom Prompt** | Opens the AI Generate modal for a custom instruction or predefined prompt. |
+
+All actions POST to the `EblaAi/fieldAction` backend endpoint — the same backend used by text and varchar fields.
+
+### Undo Behavior
+
+The Undo button in the WYSIWYG toolbar starts disabled and becomes active after the first AI action. Clicking it restores the content to the previous state. It follows the same session-only, single-step undo pattern as the other field types.
+
 ## Translate Behavior
 
 The Translate option adapts its appearance based on how many languages are configured in the AI settings:

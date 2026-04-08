@@ -18,7 +18,7 @@ Each AI feature has its own permission scope that can be toggled on/off per Role
 | `AiEmailComposer` | AI toolbar in email compose window (Draft, Polish, Grammar, Tone) |
 | `AiFieldAction` | AI dropdown on text/varchar fields (Improve, Shorter, Translate, Generate) |
 | `AiSmartPaste` | Smart Paste clipboard feature on record edit forms |
-| `AiFormula` | Formula functions (`eblaAi\textGenerate`, `eblaAi\runPrompt`, `eblaAi\analyzeImage`) |
+| `AiFormula` | Formula functions (`eblaAi\textGenerate`, `eblaAi\runPrompt`, `eblaAi\analyzeImage`, `eblaAi\generateImage`, `eblaAi\generateSpeech`, `eblaAi\generateVideo`) |
 | `AiVision` | Image & attachment analysis (vision AI) |
 
 !!! tip "Granting access"

@@ -31,6 +31,9 @@ Enhances communication, lead management, and workflow automation.
 - [AI Summary Panel](features/ai-summary.md)
 - [AI Create from List View](features/ai-create.md)
 - [AI Formula Functions](features/formula.md)
+- [AI Image Generation](features/image-generation.md)
+- [AI Voice Generation (TTS)](features/voice-generation.md)
+- [AI Video Generation](features/video-generation.md)
 - [AI Sandbox](features/sandbox.md)
 
 ### Setup and Configuration
