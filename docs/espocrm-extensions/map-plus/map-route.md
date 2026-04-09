@@ -8,7 +8,11 @@ description: Add a route planning field to EspoCRM entities to calculate travel 
 
 The **Map Route** field type plots a route between multiple points and stores the calculated **distance** and **duration** on the record. It is designed to work with local address fields, fixed coordinates, the user's current location, and manually selected related records.
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/gc3Sxb4rPWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/WN1Y0WT97Ks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 ![Map Route field displaying a route with distance and duration](../../_static/images/espocrm-extensions/map-plus/map-route.png)
 
