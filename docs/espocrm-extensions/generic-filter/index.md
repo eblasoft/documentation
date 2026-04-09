@@ -10,7 +10,7 @@ description: A powerful global filter in the navbar that applies to all EspoCRM 
 
 ---
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/P-LBd3PhjZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/GsgfhxNQDUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
