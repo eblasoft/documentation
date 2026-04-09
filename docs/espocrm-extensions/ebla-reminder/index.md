@@ -15,6 +15,10 @@ This extension simplifies reminder creation and provides a centralized and intui
 
 ---
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/uYaBeH9r2r4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Options & Features
 * **Calendar Integration**: Create and view reminders directly inside the Calendar.
 * **Activity Panel Integration**: Reminders linked to a record appear automatically in its Activity panel.
