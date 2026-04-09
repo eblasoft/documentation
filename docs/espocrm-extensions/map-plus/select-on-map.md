@@ -10,6 +10,12 @@ description: Extend EspoCRM link fields with a map button so users can choose re
 
 This is useful for assigning the nearest branch, location, warehouse, partner, or parent record.
 
+---
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/RTkjNLVZrZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ![Select on Map button](../../_static/images/espocrm-extensions/map-plus/select-on-map-button.png)
 ![Select on Map modal](../../_static/images/espocrm-extensions/map-plus/select-on-map-modal.png)
 ---
