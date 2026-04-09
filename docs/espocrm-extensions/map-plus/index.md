@@ -19,7 +19,7 @@ description: Add Google Maps integration to EspoCRM address, link, list, and rou
 
 ## Extension Video
 
-<iframe width="650" height="315" src="https://www.youtube.com/watch?v=U8L9uUl87m8&list=PLXFF-U5Ks8sMwy2nWNBNSsahDij3DYGEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/U8L9uUl87m8?list=PLXFF-U5Ks8sMwy2nWNBNSsahDij3DYGEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
