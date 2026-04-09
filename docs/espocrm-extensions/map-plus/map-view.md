@@ -8,6 +8,12 @@ description: Display EspoCRM entity records as interactive map pins from the lis
 
 Map View adds an interactive Google Map mode to entity list views. Records are shown as markers, grouped with clustering, and can be opened through quick detail popups directly from the map.
 
+---
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/OW0f7vV0zxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ![Map View](../../_static/images/espocrm-extensions/map-plus/map-view.jpg)
 
 ---
