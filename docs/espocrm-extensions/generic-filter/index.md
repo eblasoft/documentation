@@ -16,7 +16,7 @@ description: A powerful filter in navbar that apply to whole Espocrm records, us
 
 ---
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/P-LBd3PhjZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/f5bUcDc_qRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 --- 
 
