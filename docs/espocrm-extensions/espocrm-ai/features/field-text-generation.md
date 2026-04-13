@@ -64,6 +64,7 @@ When editing a WYSIWYG field, the AI toolbar group (`aiCommon`) appears in the S
 | **Fix Grammar** | Corrects grammar and spelling. |
 | **Make Shorter** | Condenses the content. |
 | **Make Longer** | Expands the content with more detail. |
+| **Adjust Tone** | Rewrites the content in a selected tone (Formal, Casual, Friendly, Professional, Empathetic, Urgent, Concise). Appears as a submenu between the main actions and Translate. |
 | **Translate** | Translates the content. Shown as a single button (1 language) or a dropdown (multiple languages). Hidden if no languages are configured. |
 | **Custom Prompt** | Opens the AI Generate modal for a custom instruction or predefined prompt. |
 
@@ -72,6 +73,30 @@ All actions POST to the `EblaAi/fieldAction` backend endpoint — the same backe
 ### Undo Behavior
 
 The Undo button in the WYSIWYG toolbar starts disabled and becomes active after the first AI action. Clicking it restores the content to the previous state. It follows the same session-only, single-step undo pattern as the other field types.
+
+## Adjust Tone
+
+The **Adjust Tone** action rewrites the field content in a specific tone. It is available on `text`, `varchar`, and `wysiwyg` fields and appears as a submenu between the main actions (Improve, Grammar, Shorter, Longer) and the Translate option.
+
+### Available Tones
+
+| Tone | Description |
+|------|-------------|
+| **Formal** | Structured, professional language suited for official communication |
+| **Casual** | Relaxed, conversational language for informal contexts |
+| **Friendly** | Warm, approachable language that builds rapport |
+| **Professional** | Clear, business-appropriate language |
+| **Empathetic** | Compassionate language that acknowledges feelings |
+| **Urgent** | Direct, action-oriented language conveying time sensitivity |
+| **Concise** | Stripped-down language that says more with less |
+
+### Usage
+
+1. Edit a `text`, `varchar`, or `wysiwyg` field that has AI text generation enabled.
+2. Open the AI actions menu (bolt icon or Summernote toolbar group).
+3. Hover over **Adjust Tone** to expand the submenu.
+4. Select the desired tone — the field content is rewritten immediately.
+5. Use **Undo** if you want to revert.
 
 ## Translate Behavior
 

@@ -298,12 +298,17 @@ These fields should be set manually after using Smart Paste.
 
 ### Smart Paste Button Not Visible
 
-**Cause**: User lacks AI scope access or entity permissions.
+**Cause**: User lacks AI scope access, entity permissions, or the button failed to inject on initial render.
 
 **Solution**:
 - Check user role has **Ai** scope enabled
 - Verify user has **Create** or **Edit** permission for the entity
 - Ensure AI provider is configured in Administration
+- If opening an existing record in edit mode (detail → edit transition), the button is injected via an `afterRender` fallback that targets the `.actions-btn-group` container — no page reload is needed
+
+!!! note
+
+    The Smart Paste button is only shown in **create** and **edit** modes. It is not visible in detail (read-only) view.
 
 ### Extracted Data Is Inaccurate
 

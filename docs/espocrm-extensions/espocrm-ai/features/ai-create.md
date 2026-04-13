@@ -9,33 +9,36 @@ The AI Create feature lets you create new CRM records by describing what you wan
 3. Select the entity types for which you want to show the **Create with AI** button.
 4. Save.
 
-Once configured, the **Create with AI** button appears in the list view header for each selected entity.
+Once configured, the **Create with AI** button appears in the list view page header (alongside the standard **Create** button) for each selected entity.
 
 ## Creating a Record with AI
 
 1. Navigate to the list view of an entity that has AI Create enabled.
-2. Click **Create with AI** in the list view header.
-3. A modal opens with a description field.
-4. Describe the record you want to create in natural language.
+2. Click **Create with AI** in the page header.
+3. A modal opens with a description textarea.
+4. Describe the record you want to create in natural language (minimum 20 characters — a live character counter is shown below the textarea).
 
 !!! example
 
     "A new contact named Sarah Johnson, senior buyer at Acme Corp in New York, interested in our enterprise plan. Met at the trade show last week."
 
 5. Click **Generate**.
+   - The textarea, **Cancel**, and **Generate** buttons are disabled while the AI is working.
 6. The AI analyzes the entity's available fields and suggests values based on your description.
 7. A preview of the suggested field values is displayed.
-8. Review the suggested values. You can proceed or go back to adjust your description.
+8. Review the suggested values. You can click **Regenerate** to try again — your description text is preserved.
 9. Click **Continue** to open the standard EspoCRM create/edit form pre-filled with the AI-generated values.
 10. Make any final adjustments and click **Save**.
 
 ## Notes
 
+- The **Create with AI** button is rendered as a proper `menu.buttons` entry in the list view header — no DOM injection is used.
 - The AI only suggests values for fields that exist on the entity. It will not invent field names.
 - The preview step lets you see exactly what will be pre-filled before any record is created.
 - Nothing is saved automatically — the final save always goes through the standard EspoCRM create form.
 - The quality of suggestions improves with more specific descriptions.
+- Descriptions must be at least **20 characters**; the Generate button is disabled until this minimum is met.
 
 !!! note
 
-    If the AI does not fill a field you expected, try including that information more explicitly in your description and generate again.
+    If the AI does not fill a field you expected, try including that information more explicitly in your description and click Regenerate.

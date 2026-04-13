@@ -8,7 +8,7 @@ stream activity to produce relevant, well-written replies.
 1. Navigate to the record you want to comment on.
 2. Click on the **Stream** section and focus the **Write your comment here** textarea.
 3. Type your draft text (optional — can also start empty for generation).
-4. Click the **bolt icon** dropdown button next to the comment area.
+4. Click the **bolt icon** button next to the comment area. The AI button sits inline alongside the **Post** and attachment buttons, styled consistently with the attachment button.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_8.png)
 
@@ -21,6 +21,7 @@ stream activity to produce relevant, well-written replies.
 | **Fix Grammar** | Corrects grammar and spelling without changing the meaning. |
 | **Make Shorter** | Condenses the comment to its essential points. |
 | **Make Longer** | Expands the comment with more detail and context. |
+| **Adjust Tone** | Rewrites the comment in a selected tone. Expands into a sub-menu with 7 options: Formal, Casual, Friendly, Professional, Empathetic, Urgent, Concise. |
 | **Translate** | Translates the comment. Shows a single button if one language is configured, or a sub-menu if multiple languages are configured. Hidden if no translation languages are set. |
 | **Custom Prompt...** | Opens the AI Generate modal where you can enter a custom instruction or select a predefined prompt. |
 
@@ -30,6 +31,28 @@ stream activity to produce relevant, well-written replies.
 !!! important
 
     If the output is not as expected, you can run the action again or use **Custom Prompt...** for more specific instructions.
+
+## Dropdown Rendering
+
+The AI actions dropdown is rendered via a **portal pattern** — it is appended to `<body>` and positioned with `position: fixed`. This ensures the menu is never clipped by parent containers with `overflow: hidden` or low z-index stacking contexts.
+
+Additional scroll behavior:
+- While the menu is open, it repositions itself on scroll to stay aligned with the trigger button.
+- If the trigger button scrolls out of the viewport, the menu closes automatically.
+
+## Adjust Tone
+
+Selecting **Adjust Tone** opens a sub-menu with the following tones:
+
+| Tone | Description |
+|------|-------------|
+| **Formal** | Structured, professional language |
+| **Casual** | Relaxed, conversational language |
+| **Friendly** | Warm, approachable language |
+| **Professional** | Clear, business-appropriate language |
+| **Empathetic** | Compassionate language that acknowledges feelings |
+| **Urgent** | Direct, action-oriented language |
+| **Concise** | Stripped-down language that says more with less |
 
 ## Undo
 

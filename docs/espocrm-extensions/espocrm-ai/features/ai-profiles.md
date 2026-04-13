@@ -7,17 +7,17 @@ profile for the Lead entity type that defines the behavior of the AI engine when
 
 ## Default Profile Templates
 
-Upon installation, Ebla AI automatically creates seven pre-configured profile templates optimized for common use cases:
+Upon installation, Ebla AI automatically seeds seven pre-configured AI profiles optimized for common CRM use cases:
 
-1. **Email Reply Assistant** - Crafts professional email responses matching sender's tone
-2. **Professional Translator** - Accurate business and technical translation
-3. **Technical Documentation Writer** - Clear, precise technical content
-4. **Sales & Marketing Writer** - Persuasive, engaging copy with compelling CTAs
-5. **Legal & Formal Correspondence** - Precise legal language for official documents
-6. **Customer Support Assistant** - Friendly, helpful customer service responses
-7. **Data Extraction Specialist** - Accurate data extraction for Smart Paste operations
+1. **General CRM Assistant** - Broad-purpose assistant for everyday CRM tasks
+2. **Email Reply Assistant** - Crafts professional email responses matching sender's tone
+3. **Sales Assistant** - Focused on sales workflows, lead qualification, and opportunity management
+4. **Support Assistant** - Friendly, helpful responses for customer support interactions
+5. **Record Summarizer** - Concise summaries of CRM records and activity streams
+6. **Content Writer** - Persuasive, engaging copy for marketing and outreach
+7. **Data Analyst** - Structured data extraction and analysis for Smart Paste and reporting
 
-These templates provide a solid starting point and demonstrate best practices for creating custom profiles. You can use them as-is or duplicate and modify them for your specific needs.
+These profiles provide a solid starting point and demonstrate best practices for creating custom profiles. You can use them as-is or duplicate and modify them for your specific needs.
 
 
 ## Creating an AI Profile
@@ -48,17 +48,17 @@ These templates provide a solid starting point and demonstrate best practices fo
 The default profile templates use optimized temperature settings for their use cases:
 
 - **0.2 - 0.3** (Low) - For formal, factual content requiring precision
-  - Legal & Formal Correspondence (0.2)
-  - Professional Translator (0.3)
-  - Data Extraction Specialist (0.3)
+  - Record Summarizer (0.2)
+  - Data Analyst (0.3)
 
 - **0.4 - 0.6** (Medium) - For balanced, professional content
-  - Technical Documentation Writer (0.4)
-  - Customer Support Assistant (0.6)
+  - General CRM Assistant (0.5)
+  - Support Assistant (0.5)
 
 - **0.7 - 0.8** (High) - For creative, engaging content
   - Email Reply Assistant (0.7)
-  - Sales & Marketing Writer (0.8)
+  - Sales Assistant (0.7)
+  - Content Writer (0.8)
 
 Adjust temperature based on your needs: lower for consistency, higher for creativity.
 
