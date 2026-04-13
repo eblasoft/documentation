@@ -1,4 +1,4 @@
-# Ebla Share Extension
+# Ebla Share Extension <a href="https:https://www.eblasoft.com.tr/espocrm-extension-page/ebla-share" target="_blank" id="ext-version"  data-id="63904ba2cf8d2c9fd"></a>
 
 ## Overview
 The **Ebla Share** extension for EspoCRM provides enhanced sharing capabilities for your CRM records and files. It enables rich social media previews for shared links and offers a secure way to share files publicly with expiration dates and access logging.
@@ -60,3 +60,6 @@ Track engagement with your shared files. The extension automatically logs every 
     - IP Address of the downloader.
 
 ![Ebla Share - Access Logs](../../_static/images/espocrm-extensions/ebla-share/access-logs.png)
+
+## Change Log
+<div class="change-log-wrapper" data-id="63904ba2cf8d2c9fd"></div>
