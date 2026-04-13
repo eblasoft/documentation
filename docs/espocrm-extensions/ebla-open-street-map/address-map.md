@@ -14,8 +14,8 @@ The draggable marker and polygon options are configured on the address field's c
 
 Example:
 
-- Address field: `billingAddress`
-- Related map field: `billingAddressMap`
+- Address field: `Billing Address`
+- Related map field: `Billing Address (Map)`
 
 ## What the Address Map Can Do
 
@@ -27,26 +27,16 @@ Example:
 
 ## Added Map Parameters
 
-| Parameter | Description |
-| --- | --- |
-| `markerDraggable` | Allows the marker to be dragged in edit mode. |
-| `enablePolygon` | Enables polygon drawing on the map. |
-| `strokeWeight` | Sets the polygon border width. |
-| `strokeColor` | Sets the polygon border color. |
-| `fillColor` | Sets the polygon fill color. |
-| `fillOpacity` | Sets the polygon fill opacity. |
+| Parameter          | Description |
+|--------------------| --- |
+| `Marker Draggable` | Allows the marker to be dragged in edit mode. |
+| `Enable Polygon`   | Enables polygon drawing on the map. |
+| `Stroke Weight`    | Sets the polygon border width. |
+| `Stroke Color`     | Sets the polygon border color. |
+| `Fill Color`       | Sets the polygon fill color. |
+| `Fill Opacity`     | Sets the polygon fill opacity. |
 
 ![Address map parameters](../../_static/images/espocrm-extensions/ebla-open-street-map/address-map-params.png)
-
-## How to Enable These Features
-
-1. Open **Administration -> Entity Manager**.
-2. Open the target entity.
-3. Go to **Fields**.
-4. Open the related map field, for example `billingAddressMap`.
-5. Enable **Marker Draggable** and or **Enable Polygon** as needed.
-6. If polygon is enabled, configure the style parameters.
-7. Save.
 
 When **Enable Polygon** is turned on, the polygon style fields become visible.
 

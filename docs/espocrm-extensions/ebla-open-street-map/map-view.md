@@ -12,24 +12,16 @@ The extension adds a **Map** view mode to entity list views.
 
 ## Added Entity Parameters
 
-| Parameter | Description |
-| --- | --- |
-| `listMapViewEnabled` | Enables the map view mode for the entity. |
-| `listMapAddressField` | Selects which address field is used to place markers. |
-| `listMapLayout` | Selects which list layout is used with the map view. |
-
-## How to Enable Map View
-
-1. Open **Administration -> Entity Manager**.
-2. Open the entity you want to configure.
-3. Turn on **List Map View**.
-4. Choose **List Map Address Field**.
-5. Choose **List Map Layout**.
-6. Save.
+| Parameter                | Description |
+|--------------------------| --- |
+| `List Map View Enabled`  | Enables the map view mode for the entity. |
+| `List Map Address Field` | Selects which address field is used to place markers. |
+| `List Map Layout`        | Selects which list layout is used with the map view. |
 
 When **List Map View** is turned on, the other two settings become visible.
 
 ![Enable Map List](../../_static/images/espocrm-extensions/ebla-open-street-map/enable-map-list.png)
+
 ## How It Works
 
 - The entity list gets a new **Map** view mode.
@@ -37,11 +29,7 @@ When **List Map View** is turned on, the other two settings become visible.
 - Clicking a marker opens the record.
 - Hovering a marker shows the record name.
 - The map automatically fits the visible markers.
-
-## Practical Notes
-
 - If the selected address field does not have coordinates, the record will not appear on the map.
-- The view uses OpenStreetMap tiles through Leaflet.
 
 ## See Also
 

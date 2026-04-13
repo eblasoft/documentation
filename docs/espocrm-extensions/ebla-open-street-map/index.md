@@ -12,6 +12,12 @@ description: OpenStreetMap integration for EspoCRM with settings, address search
 
 ---
 
+## Extension video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OgxLuARS5U4" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Main Features
 
 - **OpenStreetMap Provider**: Switch EspoCRM to `OpenStreetMap` from the settings page.
@@ -32,11 +38,12 @@ After installation, the most important first step is to activate the provider:
 3. Optionally choose **Measurement Format**.
 4. Save.
 
-After that:
+## Settings
 
-- enhanced address features are available on address fields
-- automatic OpenStreetMap geocoding can run on changed addresses
-- route distance display follows the selected measurement format
+| Setting              | Description |
+|----------------------| --- |
+| `Map Provider`       | Selects the active map provider. For this extension, choose `OpenStreetMap`. |
+| `Measurement Format` | Controls how route distance is displayed: `Kilometers` or `Miles`. |
 
 
 ![Map Provider](../../_static/images/espocrm-extensions/ebla-open-street-map/setting-map-provider.png)
@@ -44,10 +51,6 @@ After that:
 ---
 
 ## Documentation
-
-### [Settings](settings.md)
-
-Where to enable the provider and what each global setting does.
 
 ### [Address Field Features](address-field.md)
 
@@ -64,21 +67,6 @@ How to enable map list view from Entity Manager.
 ### [Map Route](map-route.md)
 
 How to add a route field, configure its parameters, and use it.
-
----
-
-## Extension Video
-
-<iframe width="650" height="315" src="https://www.youtube.com/embed/OgxLuARS5U4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
-## Notes
-
-- The extension uses **OpenStreetMap tiles** and **Leaflet** for map rendering.
-- Address search in edit view uses **Photon**.
-- Automatic address geocoding on save uses **Nominatim** when the active provider is `OpenStreetMap`.
-- Route calculation uses **OSRM**.
 
 ---
 
