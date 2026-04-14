@@ -16,6 +16,7 @@ The extension enhances standard EspoCRM **address** fields with address search, 
   Type in the search box and select a Photon result to fill street, city, state, country, postal code, latitude, and longitude.
 
 ![Address Search](../../_static/images/espocrm-extensions/ebla-open-street-map/address-search.png)
+
 - **Locate Current Position**
   Uses browser geolocation and Photon reverse lookup to fill the address from the user's current location.
 - **Get Coordinates**
@@ -26,6 +27,7 @@ The extension enhances standard EspoCRM **address** fields with address search, 
 ![Address actions](../../_static/images/espocrm-extensions/ebla-open-street-map/address-actions.png)
 
 ![Address latitude and longitude](../../_static/images/espocrm-extensions/ebla-open-street-map/address-subfields.png)
+
 ### Added address field parameters
 
 | Parameter             | Description |
