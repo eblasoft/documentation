@@ -1,0 +1,191 @@
+:root {
+/ / --md-link-color: #537898;
+    --md-accent-fg-color: #af4d73;
+    --md-accent-fg-color-light: #cc95aa;
+}
+
+.md-typeset .admonition {
+    border-style: none;
+}
+
+label.md-nav__link:not(.md-nav__container):focus,
+label.md-nav__link:not(.md-nav__container):hover {
+    color: var(--md-typeset-color);
+}
+
+label.md-nav__link:not(.md-nav__container):hover {
+    text-decoration: underline;
+}
+
+a.md-nav__link:not(.md-nav__container):hover {
+    color: var(--md-typeset-a-color);
+}
+
+.md-nav--secondary a.md-nav__link:not(.md-nav__container):hover {
+    color: var(--md-typeset-color)
+}
+
+.md-typeset h1 {
+    font-weight: 400 !important;
+    color: var(--md-default-fg-color);
+    font-size: 1.62rem;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.14em;
+}
+
+.md-typeset h2 {
+    font-weight: 400 !important;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.09em;
+}
+
+.md-main .md-nav__item .md-nav__link--active {
+    color: var(--md-accent-fg-color-light);
+}
+
+.md-main a:focus,
+.md-main a:hover,
+.md-main a:visited,
+.md-main a {
+    color: var(--md-typeset-a-color);
+}
+
+.md-main a:focus,
+.md-main a:hover {
+    text-decoration: underline !important;
+    color: var(--md-typeset-a-color);
+}
+
+.md-nav--secondary a:focus,
+.md-nav--secondary a:hover,
+.md-nav--secondary a:visited,
+.md-nav--secondary a {
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset ul li,
+.md-typeset ol li {
+    margin-bottom: 0.3em;
+}
+
+.md-typeset h4 {
+    margin-top: 1.2rem;
+}
+
+.md-typeset img {
+    max-width: 81%;
+}
+
+.md-nav--primary .md-nav__title {
+    display: none;
+}
+
+.md-nav--primary a.md-nav__link--active {
+    pointer-events: none;
+}
+
+.md-nav__list {
+    user-select: none;
+}
+
+iframe.changelog {
+    width: 100%;
+    height: calc(100% - 260px);
+    border: none;
+}
+
+/* change log table */
+.change-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.change-log-table th,
+.change-log-table td {
+    padding: 8px;
+    border: 1px solid #dee2e6; /* Border color for table cells */
+}
+
+.change-log-table th {
+    background-color: #00000008; /* Header background color */
+    font-weight: bold;
+    text-align: left;
+}
+
+.change-log-table tbody tr:nth-of-type(odd) {
+    background-color: #0000000f; /* Stripe color for odd rows */
+}
+
+.change-log-table td ul {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .change-log-table thead {
+        display: none;
+    }
+
+    .change-log-table tr {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .change-log-table td {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        font-size: 14px;
+    }
+
+    .change-log-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+/* badges */
+img.ext-badge {
+    height: 22px;
+}
+
+/* general */
+h2 {
+    clear: both;
+}
+
+a.glightbox img {
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+.see-in-website-btn {
+    margin-bottom: 15px;
+    background: #E65100;
+    padding: 15px 30px;
+    display: block;
+    font-weight: bold;
+    color: #fff !important;
+    text-align: center;
+    transition: opacity 1s;
+    opacity: 0;
+    font-size: 1.4em;
+}
+
+.see-in-website-btn.enabled {
+    opacity: 1;
+}
+
+
+/* status icons */
+
+:root {
+    --md-status--featured: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>');
+}
+
+.md-status--featured:after {
+    -webkit-mask-image: var(--md-status--featured);
+    mask-image: var(--md-status--featured);
+    background-color: #f579a3;
+}
