@@ -117,6 +117,7 @@ Set custom site meta tags from the settings panel. This controls how your CRM ap
 The **Look and Feel** feature lets you create multiple style profiles and assign them to specific themes.
 
 - Create a profile with custom colors and assign it to one or more themes.
+- Add profile-level custom CSS directly on each Look and Feel record.
 - Set a **default profile per theme** from **Administration → User Interface**.
 - Users can switch between available profiles using the **palette icon** in the top navigation.
 - If only one profile is available for the active theme, the switcher is hidden automatically.
