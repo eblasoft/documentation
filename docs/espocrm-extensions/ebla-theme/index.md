@@ -33,6 +33,8 @@ You can configure all key login branding elements from settings:
 - **Login Form Panel Background** (supports RGBA/alpha)
 - **Login Side Welcome Text** (WYSIWYG)
 
+The left panel uses a two-block layout: a top message area and a side image area that fills the remaining height.
+
 The login side welcome message supports placeholders:
 
 - `{applicationName}`
@@ -69,6 +71,8 @@ You can customize:
 - **Background color**
 - **Brand Primary** - buttons, links, highlights
 - **Brand Success / Danger / Warning / Info** - status and alert colors
+
+Color fields support alpha values using 8-digit HEXA format: `#RRGGBBAA`.
 
 ![Ebla Theme Colors](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-custom-colors.png)
 
