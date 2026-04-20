@@ -71,8 +71,15 @@ You can customize:
 - **Background color**
 - **Brand Primary** - buttons, links, highlights
 - **Brand Success / Danger / Warning / Info** - status and alert colors
+- **Panel Background** - reused by panel/table/well/login heading surfaces
+- **Default & Panel Borders** - reused by dropdown, calendar, code and panel borders
+- **Default Button Background & Border** - hover and active shades are generated automatically
+- **Popover Background** - reused by dropdown and collapsed modal surfaces
+- **Text Gray / Gray / Gray Light** - reused by disabled text, icons, footer and neutral UI tones
 
 Color fields support alpha values using 8-digit HEXA format: `#RRGGBBAA`.
+
+EblaTheme applies a **driver-based palette**: when you tune a base color, related CSS root variables are generated automatically (for example, changing Panel Background also updates `--login-panel-heading-bg`).
 
 ![Ebla Theme Colors](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-custom-colors.png)
 
