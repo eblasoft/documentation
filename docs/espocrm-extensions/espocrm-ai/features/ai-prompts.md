@@ -11,7 +11,7 @@ of prompts.
 4. Select Entity Type.
 5. Enter the prompt context.
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_15.png)
+![Create AI Prompt](../../../_static/images/espocrm-extensions/ai/setup/create-prompt.png)
 
 !!! important
 
