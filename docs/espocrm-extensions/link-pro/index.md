@@ -5,6 +5,14 @@ title: Ebla Link Pro - EspoCRM
 description: Ebla Link Pro for Espocrm to let link multiple fields show as full inline list view in detail views. make your custom Invoice entity easily.
 ---
 
+---
+
+## Extension Video
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/a-WviVKpBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Overview
 
 **Ebla Link Pro** upgrades standard "Link Multiple" and "Link One" fields by rendering them as interactive lists inside the record view. Instead of simple tags, linked records appear in a full grid supporting inline editing, custom layouts, footer calculations, and direct record creation.
