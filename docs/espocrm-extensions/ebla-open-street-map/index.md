@@ -10,10 +10,6 @@ description: OpenStreetMap integration for EspoCRM with settings, address search
 
 **Ebla Open Street Map** adds an OpenStreetMap-based map provider to EspoCRM. It replaces Google Maps usage with Leaflet and OpenStreetMap tools and adds address search, coordinate filling, draggable markers, polygon drawing, map list view, and route calculation.
 
-## Extension video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OgxLuARS5U4" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Main Features
 
 - **OpenStreetMap Provider**: Switch EspoCRM to `OpenStreetMap` from the settings page.

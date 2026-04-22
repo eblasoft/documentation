@@ -8,6 +8,13 @@ description: Address search, current location, coordinates, automatic geocoding,
 
 The extension enhances standard EspoCRM **address** fields with address search, current-position lookup, coordinates, and automatic geocoding.
 
+---
+## Extension video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/el8ii8bN9pY" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## What Is Added to Address Fields
 
 ### Added actions
