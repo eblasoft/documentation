@@ -8,6 +8,13 @@ description: Draggable markers, polygon drawing, and address map parameters in E
 
 The extension also enhances the **Map** field that belongs to an address field.
 
+---
+## Extension video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/el8ii8bN9pY" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Important
 
 The draggable marker and polygon options are configured on the address field's companion **Map** field, not on the address field itself.
