@@ -21,6 +21,10 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
    - Configure a custom tracking domain for CRM instances behind a VPN or proxy
 ![Email Open Tracking](../../_static/images/espocrm-extensions/email-plus/email_open_tracking.png)
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/5qyo3SOMqag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 2. ### Global Email Styles
    - Define CSS styles that are automatically injected into every outgoing HTML email (regular and mass)
    - Ensure consistent branding and formatting across all email communications
