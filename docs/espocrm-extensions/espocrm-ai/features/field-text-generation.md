@@ -64,8 +64,7 @@ When editing a WYSIWYG field, the AI toolbar group (`aiCommon`) appears in the S
 | **Fix Grammar** | Corrects grammar and spelling. |
 | **Make Shorter** | Condenses the content. |
 | **Make Longer** | Expands the content with more detail. |
-| **Adjust Tone** | Rewrites the content in a selected tone (Formal, Casual, Friendly, Professional, Empathetic, Urgent, Concise). Appears as a submenu between the main actions and Translate. |
-| **Translate** | Translates the content. Shown as a single button (1 language) or a dropdown (multiple languages). Hidden if no languages are configured. |
+| **Adjust Tone** | Rewrites the content in a selected tone (Formal, Casual, Friendly, Professional, Empathetic, Urgent, Concise). |
 | **Custom Prompt** | Opens the AI Generate modal for a custom instruction or predefined prompt. |
 
 All actions POST to the `EblaAi/fieldAction` backend endpoint — the same backend used by text and varchar fields.
@@ -98,10 +97,3 @@ The **Adjust Tone** action rewrites the field content in a specific tone. It is 
 4. Select the desired tone — the field content is rewritten immediately.
 5. Use **Undo** if you want to revert.
 
-## Translate Behavior
-
-The Translate option adapts its appearance based on how many languages are configured in the AI settings:
-
-- **0 languages configured** — the Translate option is hidden entirely from the AI actions menu.
-- **1 language configured** — a single **Translate** button is shown directly in the menu. Clicking it translates the field content immediately without a submenu.
-- **2 or more languages configured** — a **Translate** sub-menu appears. Hover or click it to expand the list of available languages and select the target language.

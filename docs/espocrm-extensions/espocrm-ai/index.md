@@ -25,16 +25,21 @@ Enhances communication, lead management, and workflow automation.
 - [AI Email Composer](features/email-reply.md)
 - [AI Email Template Generation](features/email-template.md)
 - [AI Email Analysis Panel](features/email-analysis.md)
+- [AI Email Thread Analysis](features/email-thread-analysis.md)
+- [AI Email Translation](features/email-translation.md)
 - [AI Stream Comment Generation](features/stream-comment.md)
 - [AI Field Text Generation](features/field-text-generation.md)
 - [AI Chat Panel](features/ai-chat.md)
 - [AI Summary Panel](features/ai-summary.md)
 - [AI Create from List View](features/ai-create.md)
-- [AI Formula Functions](features/formula.md)
+- [AI Smart Paste](features/smart-paste.md)
+- [AI Image Analysis](features/image-analysis.md)
 - [AI Image Generation](features/image-generation.md)
 - [AI Voice Generation (TTS)](features/voice-generation.md)
 - [AI Video Generation](features/video-generation.md)
+- [AI Formula Functions](features/formula.md)
 - [AI Sandbox](features/sandbox.md)
+- [Token Usage & Limits](features/token-usage.md)
 
 ### Setup and Configuration
 

@@ -1,56 +1,60 @@
 # Email Thread Analysis
 
-The Email Thread Analysis feature analyzes a full email thread and returns a structured breakdown — including a summary, action items, key decisions, and a ready-to-use suggested reply.
+The Email Thread Analysis panel appears on every email detail view and automatically analyzes the full email thread — delivering a summary, action items, a suggested reply, and recommended CRM actions without any manual trigger.
 
-## Analyzing a Thread
+## How It Works
 
-1. Open the email you want to analyze.
-2. Click the **Analyze Thread** button in the email detail view.
+When you open an email detail view, the AI Analysis panel loads automatically in the background. The analysis is cached server-side, so repeat views of the same thread are instant and consume no additional AI tokens.
 
-   ![Analyze Thread button](../../../_static/images/espocrm-extensions/ai/features/img_24.png)
-
-3. Wait for the AI to process the thread.
-4. The analysis modal will appear with the results.
-
-   ![Thread analysis modal](../../../_static/images/espocrm-extensions/ai/features/img_25.png)
+To **re-analyze** after a new reply arrives in the thread, click the **↻ refresh** button in the panel header.
 
 ## Analysis Sections
 
-The analysis modal contains four sections:
-
 ### Summary
-A concise overview of the full email conversation — what was discussed and the current status.
+
+A concise markdown overview of the full email conversation — what was discussed, key decisions, and current status.
 
 ### Action Items
-A list of tasks identified in the thread, with who they are assigned to where possible.
 
-### Key Decisions
-Important decisions or agreements made during the conversation.
+A list of tasks identified in the thread, including who they are assigned to and any deadlines mentioned.
 
 ### Suggested Reply
+
 A draft reply generated based on the thread context, ready to use or edit.
 
-## Thread Stats
+#### Use Reply
 
-At the top of the modal you will see:
+Click **Use Reply** to open the compose modal pre-filled with the suggested reply. You can edit it before sending.
 
-- **Total emails in thread** — how many emails are in the full conversation
-- **Replies after this email** — how many responses came after the current email
-
-!!! note
-
-    The analysis includes both previous emails (parents) and replies that came after the current email — giving full context of the entire conversation.
-
-## Using the Suggested Reply
-
-### Reply with this
-
-Click **Reply with this** to open the compose modal pre-filled with the suggested reply. You can edit it before sending.
-
-### Copy
+#### Copy
 
 Click **Copy** to copy the suggested reply text to your clipboard.
 
 !!! tip
 
     The suggested reply is a starting point. Always review and personalize it before sending.
+
+### Suggested CRM Actions
+
+2–4 recommended CRM actions based on the email content — for example, scheduling a follow-up meeting, creating a task, or posting a note to the activity stream. Click any card or its action button to execute it immediately.
+
+| Action type | What happens |
+|-------------|-------------|
+| **Create** | Opens a pre-filled quick-create modal for the suggested entity |
+| **Edit** | Opens the existing record for editing with pre-filled attributes |
+| **Post Note** | Posts a note directly to the email's activity stream |
+
+## Thread Stats
+
+The analysis covers the full thread:
+
+- **Parents** — emails this message was replying to (walked back to the root)
+- **Replies** — emails that came after the current one (walked forward)
+
+!!! note
+
+    Up to 20 emails in either direction are included to keep the analysis fast and focused.
+
+## Caching
+
+Analysis results are cached by content hash. Opening the same email again returns the cached result immediately — no AI call is made and no tokens are consumed. The cache respects the global **Response Cache TTL** setting (Administration → AI Providers → Response Cache).

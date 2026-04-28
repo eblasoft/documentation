@@ -30,7 +30,7 @@ context and the prompt you provide.
 
 ## Undo Stack
 
-Every AI action performed in the email composer (draft, reply, polish, grammar, tone) saves the previous email body before making changes. This allows you to step back through multiple AI edits without losing your original content.
+Every AI action performed in the email composer (draft, reply, polish) saves the previous email body before making changes. This allows you to step back through multiple AI edits without losing your original content.
 
 ### Using Undo
 

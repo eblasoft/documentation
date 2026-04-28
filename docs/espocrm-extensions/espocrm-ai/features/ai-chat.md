@@ -37,6 +37,14 @@ The AI Chat panel maintains full conversation history across multiple messages. 
 
 Conversation history is stored per user per record and persists across page refreshes. When you return to a record, the previous conversation is automatically loaded.
 
+### Long Conversation Compression
+
+When a conversation grows beyond 20 exchange pairs, the extension automatically compresses older messages into a concise summary. The AI retains full context of the conversation while only the most recent 20 messages are kept verbatim. This keeps token usage predictable in long-running conversations without losing context.
+
+!!! note
+
+    Compression happens in the background after your message is saved. It does not affect your current response. You will not notice any change in behaviour.
+
 ### Clearing the Conversation
 
 Click the **Clear** (trash) button in the panel header to remove all messages from the current conversation. This cannot be undone.

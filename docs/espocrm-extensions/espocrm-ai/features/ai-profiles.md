@@ -33,7 +33,7 @@ These profiles provide a solid starting point and demonstrate best practices for
 
 - **Name**: The name of the AI profile.
 - **Provider**: The provider to use for the AI profile. (Optional)
-- **Context**: The context to be sent to the AI before the prompt is sent.
+- **Context**: The persona or behaviour instructions sent to the AI before the service-specific prompt. Supports `{varName}` variable substitution (see below).
 - **Model**: The model which will generate the completion. Some models are suitable for natural language tasks, others
   specialize in code.
 - **Max Tokens**: The maximum number of tokens to generate shared between the prompt and completion. The exact limit
@@ -41,6 +41,20 @@ These profiles provide a solid starting point and demonstrate best practices for
 - **Temperature**: Controls randomness: Lowering results in less random completions.
   As the temperature approaches zero, the model will become deterministic and repetitive.
 - **Top K**: Controls diversity via nucleus sampling: 0.5 means half of all likelihood-weighted options are considered.
+
+### Variable Substitution in Context
+
+The **Context** field supports `{varName}` placeholders that are replaced with live values before the message is sent to the AI. The same variables available in [Global AI Instructions](admin-settings.md#variable-substitution) are available here.
+
+**Example:**
+
+```
+You are a CRM assistant for {companyName}.
+You are helping {userName} ({userRole}).
+Always respond in {language}.
+```
+
+When this profile is used, the placeholders are automatically replaced with the current user's name, role, and language.
 
 
 ### Temperature Guidelines

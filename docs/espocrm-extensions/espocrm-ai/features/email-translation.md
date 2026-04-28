@@ -78,52 +78,44 @@ You can configure a custom AI profile for translations to handle specific scenar
 
 ### Enable Email Translation
 
-1. Navigate to **Administration** → **Settings** → **AI Settings** section.
-2. Ensure **Default AI Provider** is configured (OpenAI, Gemini, Anthropic, Ollama, or OpenRouter).
-3. Enable the **Enable Email Translate** option.
+1. Navigate to **Administration** → **AI Providers** → **Translate** tab.
+2. Enable the **Enable Email Translate** toggle.
+3. Save.
 
-   ![Enable Email Translation](../../../_static/images/espocrm-extensions/ai/features/email-translate-config.png)
+!!! note
 
-4. Save the settings.
-
+    The **Translate** tab and its profile/prompt selectors are only visible when **Enable Email Translate** is turned on.
 
 ### Custom Translation Profile (Optional)
 
 To use a specialized AI profile for translations:
 
-1. Create an AI Profile with translation-specific context:
-   - Navigate to **AI Profiles** (in AI admin panel)
-   - Create a new profile with appropriate context, for example:
-     ```
-     You are a professional translator specializing in business communications.
-     Translate emails maintaining formal tone and preserving technical terms.
-     Ensure accuracy and cultural appropriateness.
-     Respond only with the translated text, no explanations.
-     ```
+1. Create an AI Profile with translation-specific context — for example:
+   ```
+   You are a professional translator specializing in business communications.
+   Translate emails maintaining formal tone and preserving technical terms.
+   Ensure accuracy and cultural appropriateness.
+   Respond only with the translated text, no explanations.
+   ```
 
-2. Set the custom profile in **Administration** → **Settings**:
-   - Locate **Custom AI Profile** field
-   - Select your translation profile
-   - Save
+2. Navigate to **Administration** → **AI Providers** → **Translate** tab.
+3. Set the **AI Email Translate Default Profile** (`aiEmailTranslateDefaultProfileId`) to your new profile.
+4. Save.
 
-When a custom profile is set, it overrides the default translation context.
+When set, this profile overrides the default translation context.
 
 
 ### Custom Translation Prompt (Optional)
 
 For advanced control over translation instructions:
 
-1. Create an AI Prompt in **AI Prompts** admin panel.
-2. Define your translation instructions with variables:
-   ```
-   Translate the following email to {targetLanguage}.
-   Maintain {tone} tone and preserve formatting.
-   
-   Email content:
-   {emailBody}
-   ```
+1. Create an AI Prompt in the **AI Prompts** admin panel.
+2. Define your translation instructions.
+3. Navigate to **Administration** → **AI Providers** → **Translate** tab.
+4. Set the **AI Email Translate Default Prompt** (`aiEmailTranslateDefaultPromptId`) to your prompt.
+5. Save.
 
-3. Set the prompt in **Administration** → **Settings** → **Custom AI Prompt** field.
+When a custom prompt is configured, its content is used as the system prompt for translation, overriding the built-in default.
 
 
 ## Access Control
@@ -203,7 +195,7 @@ Assistants managing executive inboxes can:
 **Cause**: User lacks required permissions or feature is disabled.
 
 **Solution**:
-- Verify **Enable Email Translate** is enabled in Administration → Settings
+- Verify **Enable Email Translate** is enabled in **Administration → AI Providers → Translate** tab
 - Check user role has **Ai** scope access enabled
 - Ensure a default AI provider is configured
 

@@ -23,6 +23,16 @@ AI Image Generation adds a **Generate with AI** button to image fields and attac
 
     Anthropic and Ollama do not support image generation. Ensure the selected AI profile uses a supported provider.
 
+## Enabling the Generate Button on a Field
+
+The AI image generation button is **opt-in per field**. It is hidden by default and must be explicitly enabled in Entity Manager.
+
+1. Navigate to **Administration → Entity Manager → {Entity} → Fields → {field}**.
+2. Check **Enable AI Image Generation**.
+3. Save, then clear the cache.
+
+This works for both **image** and **attachment-multiple** field types.
+
 ## Using Image Generation
 
 ### On Image Fields

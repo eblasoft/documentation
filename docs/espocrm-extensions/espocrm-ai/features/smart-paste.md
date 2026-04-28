@@ -329,6 +329,17 @@ These fields should be set manually after using Smart Paste.
 - Ensure field types are appropriate (e.g., enum options match expected values)
 - Manually fill in missing fields after applying
 
+### AI Service Error (e.g. "temporarily unavailable")
+
+**Cause**: The AI provider returned an error — for example, the API key is invalid, the service is down, or a token limit was reached.
+
+**What happens**: An error notification is shown with the provider's error message. The create modal does **not** open.
+
+**Solution**:
+- Wait a moment and try again if it's a temporary outage
+- Check the AI provider status or API key in Administration → AI Providers
+- Try switching to a different AI profile or provider
+
 ### Error: "Invalid parameters"
 
 **Cause**: Missing entity type or text content.
