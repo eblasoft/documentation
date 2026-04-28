@@ -63,7 +63,7 @@ The Boolean field can be controlled manually or automatically using workflows, f
 - Simple entity-level configuration.
 - Supports both standard and custom entities.
 - No workflow required.
-- Lightweight and performance friendly.
+- Lightweight and performance-friendly.
 
 ---
 
