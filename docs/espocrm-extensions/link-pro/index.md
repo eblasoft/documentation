@@ -1,3 +1,10 @@
+---
+status: featured
+icon: material/link-box-variant
+title: Ebla Link Pro - EspoCRM
+description: Ebla Link Pro for Espocrm to let link multiple fields show as full inline list view in detail views. make your custom Invoice entity easily.
+---
+
 # Ebla Multiple Link Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-link-pro" target="_blank" id="ext-version" data-id="65eab79bd308f0633"></a>
 
 ## Overview
@@ -11,7 +18,15 @@ The extension adapts its features based on the link type:
 * **One-to-Many:** This is the most feature-rich mode. All options are available, including **Enable Form**, **Row Actions**, **Copy Fields**, **Footer Sum Fields**, and **Mapping**. Crucially, **this relationship type supports the "Middle Entity" configuration**, making it ideal for managing complex relationships that require extra attributes (like "Order Items" in an Order).
 
 ![link-pro-Overview](../../_static/images/espocrm-extensions/link-pro/overview.png)
+
 ---
+
+## Extension Video
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/a-WviVKpBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Key Features
 
 ### Inline List View & Editing
@@ -66,7 +81,13 @@ The extension adapts its features based on the link type:
 
 * **Custom Columns:** Define which fields appear in the list.
 * **Row Actions:** Configure actions (`view`, `edit`, `unlink`, `remove`) for each row.
-* **Display Modes:** Inline list, modal popup, or full-page list.
+* **List Display Mode:** Choose how to display link-multiple fields in list view:
+  * **(Empty):** Default behavior — shows linked record names as simple labels
+  * **Modal List:** Displays a link that opens the related records in a modal popup list
+  * **Full Page List:** Displays a link that navigates to a full filtered list page of the related records
+
+![link-pro-list-display-mode-params](../../_static/images/espocrm-extensions/link-pro/list-display-mode-params.png)
+![link-pro-list-display-mode-2](../../_static/images/espocrm-extensions/link-pro/list-display-mode.png)
 
 ### Direct Record Creation & Selection
 
