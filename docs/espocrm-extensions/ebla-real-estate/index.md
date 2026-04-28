@@ -10,6 +10,12 @@ and provide rich visual experiences across property listings.
 
 ---
 
+## Extension Video
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/Bse-l_FVbwo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Key Features
 
 ### 1. Advanced Image Management

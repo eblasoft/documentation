@@ -19,10 +19,13 @@ description: Internal real-time chat system embedded inside EspoCRM for faster c
     
     ![Ebla Chats List](../../_static/images/espocrm-extensions/chat/espocrm-chats-list.png)
 
-<!-- DOC:OVERVIEW END -->
+---
 
-<!-- DOC:FEATURES START -->
+## Extension Video
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/dmwlW_qhs3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## Key Features
 
 - **Real-Time Updates**: Instant message delivery via WebSocket when enabled, with polling fallback every 15 seconds when WebSocket is disabled.

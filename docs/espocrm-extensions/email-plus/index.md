@@ -1,122 +1,123 @@
 ---
 status: featured
 icon: material/email-plus
-title: Espocrm | Ebla Email Plus Documentation
-description: Ebla Email Plus for EspoCRM enhances email functionality with advanced filtering, folder management, and tracking capabilities.
+title: EspoCRM | Ebla Email Plus Documentation
+description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filters, enhanced mass email, entity creation, and productivity tools.
 ---
 
 # Ebla Email Plus
 
 ## Overview
 
-**Ebla Email Plus** for EspoCRM enhances email functionality with advanced filtering, folder management, and tracking capabilities.
+**Ebla Email Plus** supercharges EspoCRM's native email capabilities with open tracking, global styling, signature templates, advanced filtering, enhanced mass email, and a suite of productivity tools — all configurable from a dedicated admin panel.
 
 ![Ebla Email Plus](../../_static/images/espocrm-extensions/email-plus/email_plus.png)
 
 ## Key Features
 
-
 1. ### Email Open Tracking
-    - Track when recipients open your emails
-    - Mark emails as read when opened by recipients
-    - Enable tracking by default or on a per-email basis
-    - Custom tracking domain -when CRM behind VPN- 
+   - Embed a tracking pixel in outgoing HTML emails to detect when recipients open them
+   - Enable tracking globally by default or toggle it per email at compose time
+   - Configure a custom tracking domain for CRM instances behind a VPN or proxy
+![Email Open Tracking](../../_static/images/espocrm-extensions/email-plus/email_open_tracking.png)
 
-2. ### Header & Footer Email Templates
-   - Add headers and footers templates to all outgoing emails
-   - Configure templates for both regular and mass emails
+<iframe width="650" height="315" src="https://www.youtube.com/embed/ijmrhYaNrHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-3. ### Enhanced Email Bool Filters
-   - **Excluding Folders**: Exclude emails from specific folders
-   - **External Only**: Show only emails from outside your CRM
-   - **Hide Cc**: Hide all CC emails
-   - **Internal Only**: Show only emails sent within your CRM
-   - **Personal And Private**: Display emails with no teams or parent
-   - **Show Unassigned**: View unassigned emails
-   - **Unread**: Show only unread emails
+---
 
-4. ### Advanced Email Folder Management
-   - **My Inbox**: Displays emails sent to your personal email account
-   - **Shared Inbox**: Shows emails sent to your teams
-   - **Urgent**: Displays important emails
-   - **Following**: Shows emails you're following
-   - **Draft**: Contains draft emails
-   - **Sent by Me**: Shows emails you've sent
-   - **Sent by Team**: Displays emails sent by your team members
-   - **Archive**: Contains archived emails
+2. ### Global Email Styles
+   - Define CSS styles that are automatically injected into every outgoing HTML email (regular and mass)
+   - Ensure consistent branding and formatting across all email communications
+![Global Email Styles](../../_static/images/espocrm-extensions/email-plus/global_email_styles.png)
 
-5. ### Additional Email Tools
-    - Download emails as EML files
+3. ### Signature Templates
+   - Create reusable email templates marked as **Signature Templates**
+   - Optionally bind a signature template to a specific sender domain so it is applied automatically based on the "From" address
+   - Signature content and attachments are appended to outgoing emails during send
+![Signature Templates](../../_static/images/espocrm-extensions/email-plus/signature_templates.png)
 
+4. ### Enhanced Email Filters (Bool Filters)
+   - **Excluding Folders** — exclude emails belonging to specific folders
+   - **Unread** — show only unread emails
+   - **Hide Cc & Bcc** — hide emails where you are only in CC or BCC
+   - **Show Unassigned** — display emails with no assigned user
+   - **Internal Only** — show emails exchanged within the CRM
+   - **External Only** — show emails from external addresses only
+   - **Personal & Private** — display emails with no teams or parent record
+![Enhanced Email Filters](../../_static/images/espocrm-extensions/email-plus/email_filters.png)
+
+5. ### Enhanced Mass Email
+   - **Header & Footer Templates** — select Email Templates to be automatically injected at the beginning (**Header**) and end (**Footer**) of the mass email content
+   - **Sending User** — a link field to a User record that defines who the email is sent from and is used to resolve template placeholders
+   - **Template Types** — choose how to compose the mass email using the `templateType` field:
+      - **Email Template (`emailTemplate`)** — select an existing Email Template via a link field; the template defines the subject and body
+      - **HTML (`html`)** — compose the email manually using HTML with:
+         - Subject field
+         - HTML body editor
+         - Insert Placeholder functionality (same as Email Templates) to quickly populate fields without creating a template
+      - **Plain Text (`plain`)** — same as HTML mode, but the body is plain text instead of HTML
+![Enhanced Mass Email](../../_static/images/espocrm-extensions/email-plus/mass_email.png)
+
+6. ### Email Productivity Tools
+   - **Download as EML** — export any email as a standard `.eml` file that can be opened in any email client
+   - **Convert Email to Template** — instantly create a reusable Email Template from any existing email
+   - **Create Contacts from Recipients** — auto-generate Contact records for unknown email addresses found in an email's From, To, CC, and BCC fields
+   - **Reply to All** — a dedicated "Reply to All" button on the email detail view that includes full original-message metadata (From, Date, Subject, To, CC)
+![Email Productivity Tools](../../_static/images/espocrm-extensions/email-plus/email_productivity_tools.png)
+
+7. ### Configurable Entity Actions from Email
+   - **Create Scopes** — configure which entity types (e.g., Contact, Lead, Account) can be created directly from an email via the Entity Manager
+   - **Relate Scopes** — configure which entity types an email can be related to via the Entity Manager
+   - Both settings are managed through the standard EspoCRM Entity Manager for the Email entity
+
+8. ### Mass Send Email Action
+   - A **Send Email** mass action available on any entity list view that has an email address field
+   - Select multiple records and compose a single email to all selected recipients
+![Mass Send Email Action](../../_static/images/espocrm-extensions/email-plus/mass_send_email.png)
+
+9. ### Enhanced Activity History
+   - The email history panel on entity detail views displays an icon indicating the open status of each email — red if the email has not been opened, and green if it has been opened — alongside date, status, and attachment indicators
+![Enhanced Activity History](../../_static/images/espocrm-extensions/email-plus/activity_history.png)
+
+## Admin Configuration
+
+All extension settings are accessible via **Administration → Ebla Extensions → Ebla Email Plus**.
+
+| Setting | Description |
+|---|---|
+| **Allow Email Tracking** | Enable or disable email open tracking globally |
+| **Enable Email Tracking by Default** | Automatically enable tracking on every new email compose (visible only when tracking is allowed) |
+| **Email Tracking Domain** | Custom domain for tracking pixel URLs (e.g., `track.example.com`) |
+| **Mass Email Site URL** | Base URL used in mass email opt-out and tracking links |
+| **Global Email Styles** | CSS styles injected into all outgoing HTML emails |
+
+### Entity Manager Configuration
+
+Navigate to **Administration → Entity Manager → Email** to configure:
+
+- **Create Scopes** — entity types available in the "Create" dropdown on email detail view
+- **Relate Scopes** — entity types available in the "Relate to" dropdown on email detail view
+![Entity Manager Configuration](../../_static/images/espocrm-extensions/email-plus/entity_manager_configuration.png)
 ## Use Cases
 
-1. **Team Email Collaboration** <br>
-   Improve team coordination with shared folders and better email organization.
+1. **Email Marketing Performance**
+   Track open rates with per-email and campaign-level open tracking. Use header/footer templates for consistent branding across mass emails.
 
-2. **Email Marketing Performance** <br>
-   Track open rates and engagement with tracking features.
+2. **Team Email Collaboration**
+   Filter emails by internal/external origin, unread status, or assignment. Use the folder sidebar to quickly navigate shared and personal inboxes.
 
-3. **Customer Communication Management** <br>
-   Filter and organize external communications more effectively.
+3. **Lead Generation & CRM Enrichment**
+   Convert unknown email recipients into Contact records with a single click. Add recognized recipients to target lists for future campaigns.
 
-4. **Lead Generation** <br>
-   Convert email recipients to contacts and add them to target lists.
+4. **Customer Communication Management**
+   Relate emails to any entity type, download emails as EML for archival, and convert frequently-used emails into reusable templates.
 
-## Configuration
-
-### Email Tracking Configuration
-
-![Ebla Email Plus](../../_static/images/espocrm-extensions/email-plus/email_tracking.png)
-
-### Enhanced Folders Configuration
-
-![Ebla Email Plus](../../_static/images/espocrm-extensions/email-plus/advanced_folders.png)
-
-## How To Use
-
-### Using Advanced Email Filters
-
-1. Go to **Emails** list view
-2. Use the filter dropdown to select specialized filters like:
-   - "Internal Only" to see only internal emails
-   - "External Only" to see emails from outside your organization
-   - "Unread" to view only unread messages
-3. Save the filter as a preset for quick access
-
-
-![Using Filters](../../_static/images/espocrm-extensions/email-plus/bool_filters.png)
-
-### Navigating Enhanced Folders
-
-1. In the email sidebar, locate the enhanced folders section
-2. Click on folders like "My Inbox," "Shared Inbox," or "Urgent" to quickly access relevant emails
-3. Use the "Sent by Team" folder to monitor all outgoing team communications
-
-![Enhanced Folders](../../_static/images/espocrm-extensions/email-plus/advaned-folders.png)
-
-### Enabling Email Tracking
-
-1. When composing a new email, check the "Track Enable" option
-2. After sending, view the email in your "Sent" folder
-3. The tracking information will show when the recipient opened the email
-
-![Ebla Email Plus](../../_static/images/espocrm-extensions/email-plus/email_tracking_2.png)
-
-### Downloading Email as EML
-
-1. Open an email in detail view
-2. Look for the "Download" option in the dropdown menu
-3. Click to download the email in EML format, which can be opened in most email clients
-
-![Download EML](../../_static/images/espocrm-extensions/email-plus/download_eml.png)
+5. **Consistent Email Branding**
+   Apply global CSS styles and domain-specific signature templates to ensure every outgoing email matches your brand guidelines.
 
 ## Support and Feedback
 
-For any inquiries, support, or feedback regarding the "Ebla Email Plus" extension, please reach out to our portal to create a ticket. We are committed to ensuring a seamless experience and are here to assist you with any questions or concerns you may have.
-
-## Conclusion
-
-With the "Ebla Email Plus" extension, EspoCRM users can enhance their email management capabilities, improve team collaboration, and gain insights into email communications. This extension streamlines email workflows and helps you stay organized with advanced filtering and folder management features.
+For inquiries, support, or feedback regarding the "Ebla Email Plus" extension, please reach out through our portal to create a support ticket.
 
 ## Change Log
 

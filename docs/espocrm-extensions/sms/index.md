@@ -12,6 +12,11 @@ description: Send SMS messages directly from records detail & list views using i
 !!! note
     Read more about [EspoCRM SMS Sending](https://docs.espocrm.com/administration/sms-sending/).
 
+---
+## Extension video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3h33dL8lhZM" title="Eblasoft | Espocrm Stream plus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 
 ## Features
 

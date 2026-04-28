@@ -12,6 +12,14 @@ description: Generate secure, time-limited public links to share EspoCRM records
 
 The extension generates unique URLs that allow contacts or other parties to view designated record information in a clean, read-only interface that automatically expires after a specified time period.
 
+---
+
+## Extension Video
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/744GZ5PNOUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Use Cases
 
 1. **Job Application Tracking**
