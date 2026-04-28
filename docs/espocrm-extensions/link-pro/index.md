@@ -5,17 +5,11 @@ title: Ebla Link Pro - EspoCRM
 description: Ebla Link Pro for Espocrm to let link multiple fields show as full inline list view in detail views. make your custom Invoice entity easily.
 ---
 
----
-
-## Extension Video
-
-<iframe width="650" height="315" src="https://www.youtube.com/embed/a-WviVKpBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
+# Ebla Multiple Link Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-link-pro" target="_blank" id="ext-version" data-id="65eab79bd308f0633"></a>
 
 ## Overview
 
-**Ebla Link Pro** upgrades standard "Link Multiple" and "Link One" fields by rendering them as interactive lists inside the record view. Instead of simple tags, linked records appear in a full grid supporting inline editing, custom layouts, footer calculations, and direct record creation.
+**Ebla Multiple Link Pro** upgrades standard "Link Multiple" and "Link One" fields by rendering them as interactive lists inside the record view. Instead of simple tags, linked records appear in a full grid supporting inline editing, custom layouts, footer calculations, and direct record creation.
 
 The extension adapts its features based on the link type:
 
@@ -24,7 +18,15 @@ The extension adapts its features based on the link type:
 * **One-to-Many:** This is the most feature-rich mode. All options are available, including **Enable Form**, **Row Actions**, **Copy Fields**, **Footer Sum Fields**, and **Mapping**. Crucially, **this relationship type supports the "Middle Entity" configuration**, making it ideal for managing complex relationships that require extra attributes (like "Order Items" in an Order).
 
 ![link-pro-Overview](../../_static/images/espocrm-extensions/link-pro/overview.png)
+
 ---
+
+## Extension Video
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/a-WviVKpBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Key Features
 
 ### Inline List View & Editing
