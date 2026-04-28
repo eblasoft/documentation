@@ -4,7 +4,7 @@ title: Ebla Mass Action - EspoCRM
 description: Add powerful mass actions to run workflows or execute formulas on multiple records at once.
 ---
 
-# Ebla Mass Action <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-mass-action" target="_blank" id="ext-version" data-id=""></a>
+# Ebla Mass Action <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-mass-action" target="_blank" id="ext-version" data-id="68528f4ea7c9489db"></a>
 
 > Add two powerful mass actions to EspoCRM lists that allow executing workflows or formulas on multiple selected records in a single click.  
 > Available in [Ebla Mass Action](https://www.eblasoft.com.tr/espocrm-extension-page/ebla-mass-action).
