@@ -21,7 +21,7 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
    - Configure a custom tracking domain for CRM instances behind a VPN or proxy
 ![Email Open Tracking](../../_static/images/espocrm-extensions/email-plus/email_open_tracking.png)
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/5qyo3SOMqag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/ijmrhYaNrHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
