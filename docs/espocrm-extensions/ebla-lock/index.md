@@ -4,7 +4,7 @@ title: Ebla Lock - EspoCRM
 description: Control record editing in EspoCRM by locking records automatically based on a Boolean field value.
 ---
 
-# Ebla Lock <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-lock" target="_blank" id="ext-version" data-id=""></a>
+# Ebla Lock <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-lock" target="_blank" id="ext-version" data-id="67165e10476795b1d"></a>
 
 > Smart record locking for EspoCRM based on a Boolean field.  
 > Automatically switch records to **Read-Only mode** when a defined condition is met.
