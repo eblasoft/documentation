@@ -31,7 +31,7 @@ This extension works with:
 1. Create (or use) an existing **Boolean field** in your entity.
 2. Go to **Administration > Entity Manager**.
 3. Open the desired entity.
-4. In 'Record Locked Field Name' Select the Boolean field that will act as the lock controller.
+4. In 'Record Locked Field Name', select the Boolean field that will act as the lock controller.
 5. Save and rebuild the system.
 
 ![img.png](../../_static/images/espocrm-extensions/ebla-lock/img.png)
