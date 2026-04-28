@@ -26,7 +26,7 @@ This extension is ideal for data updates, mass corrections, bulk assignments, an
 ---
 
 ## Extension video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nJ5LH-tbKTQ" title="Eblasoft | Espocrm Nav Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nJ5LH-tbKTQ" title="Eblasoft | EspoCRM Mass Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
