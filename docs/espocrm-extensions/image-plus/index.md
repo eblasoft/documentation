@@ -18,7 +18,6 @@ If you work with a lot of images in EspoCRM and need better metadata control, **
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MZvQ2UdnBAw?si=wUJ5Xphbk5aMZFco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ## Key Features
 
 ### EXIF & IPTC Metadata Extraction
@@ -49,6 +48,26 @@ Automatic Updates: When you edit a mapped field within EspoCRM, the extension au
 Data Integrity: Ensures that your image files carry the most up-to-date information (like descriptions, copyright, or tags) even when downloaded or shared outside the CRM.
 
 ![Ebla Image Plus](../../_static/images/espocrm-extensions/image-plus/metadata-mapping.png)
+
+---
+### Direct Camera Capture for Image Fields
+For image fields, **Ebla Image Plus** can show a dedicated **Capture** button next to the standard **Select** button.
+
+This makes mobile image entry more practical, especially for workflows where users need to take a photo directly from a smartphone or tablet instead of selecting an existing file.
+
+Key benefits:
+- Separate **Select** and **Capture** actions for better usability
+- Faster photo entry on mobile devices
+- Useful for before/after workflows, inspections, field service, property visits, and similar use cases
+- Can be enabled per field with the field parameter `enableCameraCapture`
+
+When enabled, supported devices and browsers can open the camera directly using the device’s rear camera.
+
+!!! note "Android 16+ Compatibility"
+This feature was added to address the camera-selection issue on Android 16 and later, where some devices show only the photo picker for single image fields instead of offering direct camera access.
+
+![Ebla Image Plus](../../_static/images/espocrm-extensions/image-plus/camera-capture.png)
+![Ebla Image Plus Enabled](../../_static/images/espocrm-extensions/image-plus/camera-capture-enabled.png)
 
 ---
 
@@ -158,6 +177,7 @@ Ebla Image Plus is especially useful for:
 - 🗂 Digital asset management
 - 📸 Photography workflows
 - 🏢 Documentation-heavy businesses
+- 🛠 Inspection and field-service processes
 
 ---
 
@@ -165,6 +185,12 @@ Ebla Image Plus is especially useful for:
 
 !!! note "Permissions & Access"
 Metadata visibility respects EspoCRM field permissions and ACL rules.
+
+!!! note "Camera Capture"
+The **Capture** button is available for image fields when the field parameter `enableCameraCapture` is enabled.
+
+!!! warning "Browser & Device Support"
+Camera capture behavior depends on the browser and mobile operating system. On supported devices, the capture action can open the camera directly.
 
 !!! warning "Source Dependency"
 Metadata availability depends on the image file itself. If the image does not contain EXIF or IPTC data, those fields will remain empty.
