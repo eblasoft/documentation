@@ -158,16 +158,6 @@ Perfect for:
 
 ---
 
-### Improved Module Naming & Descriptions
-Better naming and clearer descriptions have been added across the module to improve:
-
-- Usability
-- Discoverability
-- Admin configuration clarity
-- User understanding
-
----
-
 ## Ideal For
 
 Ebla Image Plus is especially useful for:
