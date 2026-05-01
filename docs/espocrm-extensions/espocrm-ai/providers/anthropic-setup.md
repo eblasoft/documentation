@@ -15,3 +15,21 @@
 3. Choose the default model you want to use.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/providers/anthropic/setup-2.png)
+
+## Final Step in AI Settings
+
+After saving the integration:
+
+1. Navigate to **Administration** -> **AI Settings**.
+2. Open the **General** tab.
+3. Set **Default AI Provider** to **Anthropic**.
+4. Save.
+
+## Capability Notes
+
+Anthropic is suitable for:
+
+- Chat and text generation
+- Vision analysis on supported models
+
+It is not used by the current extension flows for image generation or speech generation.

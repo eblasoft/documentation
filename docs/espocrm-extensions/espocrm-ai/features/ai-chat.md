@@ -1,89 +1,120 @@
 # AI Chat Panel
 
-The AI Chat Panel provides an interactive assistant directly on any entity detail view. You can ask questions in natural language and the AI will respond with access to your CRM data, making it possible to query records, count results, and explore relationships without leaving the page.
+The AI Chat Panel adds a conversational assistant to supported record detail views. It lets users ask questions about the current record, related records, and CRM data without leaving the page.
+
+The chat can use AI tools, persist conversation history per user and record, and continue across refreshes.
+
+![AI Chat Panel](../../../_static/images/espocrm-extensions/ai/features/ai-chat-panel.png)
+
+## Requirements
+
+Users need:
+
+- `Ai` access
+- `AiChat` access
+- Read access to the current record
+- A configured default AI provider
 
 ## Enabling AI Chat for an Entity
 
-To show the AI Chat panel on a specific entity:
+1. Navigate to **Administration → Entity Manager**.
+2. Open the entity you want to configure.
+3. Enable **AI Chat**.
+4. Optionally set **AI Chat Profile**.
+5. Save.
 
-1. Navigate to **Administration** -> **Entity Manager** -> select the entity.
-2. Ensure the entity has `aiChat` enabled in its scope configuration.
-
-!!! note
-
-    This is typically configured by your administrator or during extension setup. Once enabled, the panel appears automatically on the entity's detail view.
+![AI Chat Entity Manager](../../../_static/images/espocrm-extensions/ai/features/ai-chat-entity-manager.png)
 
 ## Using the AI Chat Panel
 
-1. Open any record detail view for an entity that has AI Chat enabled.
-2. Locate the **AI Chat** panel on the side of the record.
-3. Type your message in the input field at the bottom of the panel.
-4. Press **Send** or hit Enter to submit your message.
-5. The AI will respond below your message, using live CRM data where relevant.
+1. Open a record detail view for an entity with AI Chat enabled.
+2. Find the **AI Chat** side panel.
+3. Type your message.
+4. Press **Enter** to send, or **Shift+Enter** for a new line.
+5. Review the response.
 
-### Context Awareness
+## Current Record Context
 
-When you open the AI Chat panel on a record, the AI automatically knows:
+When the panel is used on a record, the AI automatically receives the current record context, including:
 
-- The current entity type (e.g. Contact, Lead, Account)
-- The record ID
-- The record name
+- Entity type
+- Record ID
+- Record name
 
-You do not need to tell the AI which record you are looking at — it already has that context.
+This lets the user ask questions such as:
 
-### Multi-Turn Conversations
+- "What is the current stage of this opportunity?"
+- "How many open tasks are related to this account?"
+- "Summarize the recent activity on this contact."
 
-The AI Chat panel maintains full conversation history across multiple messages. You can ask follow-up questions and the AI will remember what was said earlier in the same conversation.
+## Prompt Shortcuts
 
-Conversation history is stored per user per record and persists across page refreshes. When you return to a record, the previous conversation is automatically loaded.
+If AI Prompts exist for the current entity or as global prompts, the chat panel shows a prompt shortcut button.
 
-### Long Conversation Compression
+The prompt menu combines:
 
-When a conversation grows beyond 20 exchange pairs, the extension automatically compresses older messages into a concise summary. The AI retains full context of the conversation while only the most recent 20 messages are kept verbatim. This keeps token usage predictable in long-running conversations without losing context.
+- Global prompts
+- Entity-specific prompts for the current record type
 
-!!! note
+Selecting one inserts and sends that prompt immediately.
 
-    Compression happens in the background after your message is saved. It does not affect your current response. You will not notice any change in behaviour.
+![AI Chat Prompt Shortcuts](../../../_static/images/espocrm-extensions/ai/features/ai-chat-prompts.png)
 
-### Clearing the Conversation
+## Conversation Persistence
 
-Click the **Clear** (trash) button in the panel header to remove all messages from the current conversation. This cannot be undone.
+Conversation history is stored per:
 
-## What the AI Can Access
+- User
+- Entity type
+- Record
 
-The AI has read access to your CRM data and can answer questions such as:
+This means:
 
-- "How many open opportunities does this account have?"
-- "What was the last activity on this contact?"
-- "List the related cases for this record."
-- "How many leads came from the Web Site source this month?"
+- Different users have separate chat history on the same record
+- Refreshing the page reloads the existing conversation
+- The **Clear** button deletes the stored conversation for that record and user
 
-The level of data access is controlled by the **Tool Tier** setting on the AI Profile assigned to the entity. A tier of `read` or higher is required for the AI to query records.
+## Long Conversation Compression
 
-### Available Tools
+When a conversation becomes long, older messages are automatically compressed into a summary so the chat can continue without carrying the entire raw history forever.
 
-The AI can use the following data tools internally to answer your questions:
+Current behavior:
 
-| Tool | Description |
-|------|-------------|
-| `record__count` | Count records matching a filter |
-| `record__findOne` | Find a single record by filter |
-| `record__findMany` | Find multiple records by filter |
-| `record__attribute` | Read a specific field value from a record |
-| `record__fetch` | Fetch a full record by ID |
-| `record__findRelatedOne` | Find one related record |
-| `record__findRelatedMany` | Find multiple related records |
-| `entity__attribute` | Read entity-level metadata |
-| `entity__countRelated` | Count related records |
-| `metadata__entityFields` | Inspect entity field definitions |
-| `metadata__scopes` | Inspect available entity types |
+- Compression starts after long multi-turn history
+- A summary of earlier messages is kept
+- The most recent raw messages remain available in full
 
-!!! important
+This reduces token usage while preserving the main context of the conversation.
 
-    The AI uses these tools automatically based on your question. You do not need to reference them directly.
+## Tool Access and AI Profile Tier
 
-## Configuration Notes
+The chat panel can use internal tools to answer CRM-aware questions.
 
-- The AI Profile assigned to the entity determines the model, temperature, and tool access level.
-- Conversation history is stored as JSON files on the server under `data/ebla-ai/conversations/`.
-- History is scoped per user per record — different users have separate conversation threads for the same record.
+Tool availability depends on the **Formula Tier** of the resolved AI Profile:
+
+- **read** - Query CRM data
+- **write** - Read and write supported CRM data
+- **admin** - Administrative tools
+
+For normal record chat, `read` is the typical and safest choice.
+
+## Common Use Cases
+
+- Asking about the current record status
+- Reviewing related items
+- Counting related records
+- Exploring entity metadata
+- Asking for next-step guidance based on the visible CRM context
+
+## Notes
+
+- The AI uses the configured chat profile if one is assigned to the entity
+- If no entity-specific profile is set, the feature falls back to the **AI Chat Default Profile**, then the global default profile
+- Assistant messages can be copied directly from the panel
+
+## Related Features
+
+- [AI Summary Panel](ai-summary.md)
+- [AI Prompts](ai-prompts.md)
+- [AI Profiles](ai-profiles.md)
+- [AI Admin Assistant](admin-assistant.md)

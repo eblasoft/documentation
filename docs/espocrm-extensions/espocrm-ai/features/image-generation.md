@@ -1,79 +1,92 @@
 # AI Image Generation
 
-Generate images using AI directly from EspoCRM record fields. The generated image is saved as an Attachment and can be linked to any image or attachment-multiple field.
+AI Image Generation creates new images from a text prompt and saves them as EspoCRM attachments.
 
-## Overview
+The generated image can then be attached to an `image` field or appended to an `attachment-multiple` field.
 
-AI Image Generation adds a **Generate with AI** button to image fields and attachment-multiple fields in edit mode. Clicking it opens a modal where you describe the image you want, choose a size, and preview the result before attaching it to the record.
+## Requirements
 
-## Access Control
+Users need:
 
-!!! info
+- `Ai` access
+- `AiVision` access
+- A configured default AI provider
+- A provider or profile that supports image generation
 
-    Users must have both the **Ai** and **AiVision** scopes enabled in their Role.
+## Enabling It on a Field
 
-## Supported Providers
+Image generation is opt-in per field.
 
-| Provider | Model | Output |
-|----------|-------|--------|
-| OpenAI | DALL-E 3 | 1024x1024 (square), 1792x1024 (landscape), 1024x1792 (portrait) |
-| Google Gemini | Imagen 3 | 1:1 (square), 16:9 (landscape), 9:16 (portrait) |
+1. Navigate to **Administration -> Entity Manager -> {Entity} -> Fields -> {Field}**.
+2. Enable **AI Image Generation**.
+3. Save.
 
-!!! warning
+This works for:
 
-    Anthropic and Ollama do not support image generation. Ensure the selected AI profile uses a supported provider.
+- `image`
+- `attachment-multiple`
 
-## Enabling the Generate Button on a Field
+## Where the Button Appears
 
-The AI image generation button is **opt-in per field**. It is hidden by default and must be explicitly enabled in Entity Manager.
+In the current UI:
 
-1. Navigate to **Administration → Entity Manager → {Entity} → Fields → {field}**.
-2. Check **Enable AI Image Generation**.
-3. Save, then clear the cache.
+- `image` fields show the button in edit mode
+- `attachment-multiple` fields show an icon button in edit mode
 
-This works for both **image** and **attachment-multiple** field types.
+![Image Generation Field Button](../../../_static/images/espocrm-extensions/ai/features/image-generation-field-button.png)
 
 ## Using Image Generation
 
-### On Image Fields
+1. Open the record in edit mode.
+2. Click the image-generation button.
+3. Enter a prompt describing the image you want.
+4. Select a size.
+5. Click **Generate**.
+6. Review the preview.
+7. Click **Use Image**.
 
-1. Open a record in **edit** mode.
-2. Click the **Generate with AI** button on the image field.
-3. In the modal, enter a text prompt describing the desired image.
-4. Select a size: **Square**, **Landscape**, or **Portrait**.
-5. Click **Generate**. A preview of the generated image appears.
-6. Click **Use Image** to attach it to the field.
+![Image Generation Modal](../../../_static/images/espocrm-extensions/ai/features/image-generation-modal.png)
 
-### On Attachment-Multiple Fields
+## Available Sizes
 
-1. Open a record in **edit** mode.
-2. Click the **Generate Image** button on the attachment-multiple field.
-3. Follow the same prompt, size, and preview flow as above.
-4. The generated image is appended to the attachment list.
+The current modal offers:
 
-## The Image Generation Modal
+- `square`
+- `landscape`
+- `portrait`
 
-The modal provides:
+Provider-specific output dimensions depend on the selected provider and model.
 
-- A **prompt textarea** for describing the image.
-- **Size radio buttons**: Square, Landscape, Portrait.
-- A **Generate** button to submit the request.
-- An **image preview** area showing the generated result.
-- A **Use Image** button to attach the generated image to the record field.
+## Field Behavior
 
-## Formula Function
+### Image Field
 
-Image generation can be used in Workflows and BPM via formula:
+For a single image field, the generated attachment replaces the current image reference.
 
-```
+### Attachment-Multiple Field
+
+For an attachment-multiple field, the generated image is appended to the existing attachment list.
+
+## Formula Support
+
+Image generation is also available in formula:
+
+```text
 eblaAi\generateImage(PROMPT, SIZE, PROFILE_ID)
 ```
 
-See [Formula Functions](formula.md#eblaaigenerateimage) for full documentation.
+The function returns the generated attachment ID.
+
+See [Formula](formula.md).
+
+## Notes
+
+- Anthropic and Ollama do not provide image generation in the current extension flows
+- A provider that supports vision is not always the same as one that supports image generation, so choose the profile carefully
+- Prompt quality has a large effect on output quality
 
 ## Related Features
 
-- [Image & Attachment Analysis](image-analysis.md) — Analyze existing images with AI vision.
-- [AI Voice Generation](voice-generation.md) — Generate speech audio from text.
-- [AI Video Generation](video-generation.md) — Generate short videos from text prompts.
-- [Formula Functions](formula.md) — Use AI operations in workflows.
+- [Image Analysis](image-analysis.md)
+- [Formula](formula.md)
+- [AI Profiles](ai-profiles.md)

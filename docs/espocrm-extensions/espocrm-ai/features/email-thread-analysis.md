@@ -1,60 +1,75 @@
 # Email Thread Analysis
 
-The Email Thread Analysis panel appears on every email detail view and automatically analyzes the full email thread — delivering a summary, action items, a suggested reply, and recommended CRM actions without any manual trigger.
+Email Thread Analysis is the larger modal-based analysis view available from the Email detail page dropdown menu.
 
-## How It Works
+It uses the same backend analysis as the side panel, but presents the result in a dedicated modal with additional thread coverage details.
 
-When you open an email detail view, the AI Analysis panel loads automatically in the background. The analysis is cached server-side, so repeat views of the same thread are instant and consume no additional AI tokens.
+## How to Open It
 
-To **re-analyze** after a new reply arrives in the thread, click the **↻ refresh** button in the panel header.
+1. Open an Email record.
+2. Open the detail-view dropdown menu.
+3. Click **Analyze Thread with AI**.
 
-## Analysis Sections
+![Email Detail View Dropdown](../../../_static/images/espocrm-extensions/ai/features/email-detail-dropdown.png)
+![Email Thread Analysis Modal](../../../_static/images/espocrm-extensions/ai/features/email-thread-analysis-modal.png)
 
-### Summary
+## Requirements
 
-A concise markdown overview of the full email conversation — what was discussed, key decisions, and current status.
+Users need:
 
-### Action Items
+- `Ai` access
+- Read access to Email
+- A configured default AI provider
 
-A list of tasks identified in the thread, including who they are assigned to and any deadlines mentioned.
+## What the Modal Shows
 
-### Suggested Reply
+The modal can include:
 
-A draft reply generated based on the thread context, ready to use or edit.
+- **Summary**
+- **Action Items**
+- **Suggested Reply**
+- **Suggested Actions**
+- Thread coverage counts
 
-#### Use Reply
+## Suggested Reply Actions
 
-Click **Use Reply** to open the compose modal pre-filled with the suggested reply. You can edit it before sending.
+The reply section lets users:
 
-#### Copy
+- **Use Reply**
+- **Copy**
 
-Click **Copy** to copy the suggested reply text to your clipboard.
+Using the reply opens the compose modal with the generated text inserted into the reply draft.
 
-!!! tip
+## Suggested CRM Actions
 
-    The suggested reply is a starting point. Always review and personalize it before sending.
+The suggested action cards can trigger:
 
-### Suggested CRM Actions
+- Create flows
+- Update flows
+- Stream-note posting
 
-2–4 recommended CRM actions based on the email content — for example, scheduling a follow-up meeting, creating a task, or posting a note to the activity stream. Click any card or its action button to execute it immediately.
+This is useful for quickly converting email intent into CRM activity.
 
-| Action type | What happens |
-|-------------|-------------|
-| **Create** | Opens a pre-filled quick-create modal for the suggested entity |
-| **Edit** | Opens the existing record for editing with pre-filled attributes |
-| **Post Note** | Posts a note directly to the email's activity stream |
+## Thread Coverage Details
 
-## Thread Stats
+The modal includes additional thread metadata such as:
 
-The analysis covers the full thread:
+- Total analyzed thread count
+- Reply count after the current email
 
-- **Parents** — emails this message was replying to (walked back to the root)
-- **Replies** — emails that came after the current one (walked forward)
+This makes it easier to understand how much of the conversation was included.
 
-!!! note
+## Refresh Behavior
 
-    Up to 20 emails in either direction are included to keep the analysis fast and focused.
+The modal supports refresh so users can re-run the analysis after thread changes.
 
-## Caching
+## Notes
 
-Analysis results are cached by content hash. Opening the same email again returns the cached result immediately — no AI call is made and no tokens are consumed. The cache respects the global **Response Cache TTL** setting (Administration → AI Providers → Response Cache).
+- The client keeps a lightweight in-memory cache for already opened thread-analysis results during the current session
+- The server-side response cache still applies behind the scenes
+- The modal is best when you want a larger working area than the side panel provides
+
+## Related Features
+
+- [Email Analysis Panel](email-analysis.md)
+- [Email Reply](email-reply.md)

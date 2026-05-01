@@ -1,57 +1,112 @@
 # Smart Paste
 
-Automatically extract and populate structured data from unstructured text using AI. Smart Paste saves time by intelligently parsing copied text (like business cards, email signatures, or document excerpts) and filling in the appropriate entity fields.
+Smart Paste reads copied text from the clipboard, extracts structured values with AI, and fills the matching EspoCRM fields for the target entity.
 
+It is useful for turning business cards, email signatures, copied messages, meeting notes, or other semi-structured text into CRM data quickly.
 
-## Overview
+## Requirements
 
-Smart Paste leverages AI to understand unstructured text and map it to your entity fields. Instead of manually copying information field by field, paste the entire text block and let the AI extract relevant data points, matching them to appropriate fields based on context and field types.
+Users need:
 
+- `Ai` access
+- `AiSmartPaste` access
+- A configured default AI provider
+- Create access for new-record Smart Paste
+- Edit access when filling an already opened new form
 
-## How It Works
+Administrators also need to configure visibility in **Administration -> AI Settings -> General -> Smart Paste Scopes**.
 
-The Smart Paste feature:
+## Where Smart Paste Appears
 
-1. Analyzes your entity's field structure and types
-2. Generates a schema including field names, types, constraints, and descriptions
-3. Sends the schema and pasted text to the AI
-4. Receives structured data matching your field definitions
-5. Populates fields automatically while preserving data integrity
+The current build can show Smart Paste in three places:
 
+- Main list view headers
+- Relationship panel lists
+- New-record forms
 
-## Using Smart Paste
+![Smart Paste List Button](../../../_static/images/espocrm-extensions/ai/features/smart-paste-list-button.png)
+![Smart Paste New Form](../../../_static/images/espocrm-extensions/ai/features/smart-paste-new-form.png)
 
-### Basic Usage
+## Current Workflow
 
-1. Copy text containing information you want to capture (e.g., from an email, website, or document).
+Smart Paste does not open a text-entry modal in the current implementation.
 
-2. Navigate to the entity record you want to populate:
-   - **For new records**: Click **Create {Entity}** button
-   - **For existing records**: Open the record in edit mode
+Instead, the feature works like this:
 
-3. Look for the **Smart Paste** icon or button (typically near the form header).
+1. Copy text to your clipboard.
+2. Click **Smart Paste**.
+3. Confirm that the feature should read the clipboard.
+4. Ebla AI reads the clipboard text and analyzes it against the target entity fields.
+5. The result is applied directly to the form, or used to open a pre-filled create form.
 
-4. Click **Smart Paste**.
+## Behavior by Location
 
-5. Paste your copied text into the text area that appears.
+### Main List Views
 
-   ![Smart Paste Modal](../../../_static/images/espocrm-extensions/ai/features/smart-paste-modal.png)
+From a main list page, Smart Paste:
 
-6. Click **Parse** or **Generate**.
+1. Reads clipboard text
+2. Extracts values for the current entity type
+3. Opens the standard create form with the extracted values pre-filled
 
-7. Review the extracted data shown in the confirmation dialog.
+### Relationship Panels
 
-   ![Smart Paste Preview](../../../_static/images/espocrm-extensions/ai/features/smart-paste-preview.png)
+From a relationship panel list, Smart Paste follows the same flow:
 
-8. Click **Apply** to populate the fields, or **Cancel** to discard.
+1. Reads clipboard text
+2. Extracts values for the panel entity type
+3. Opens a create form with pre-filled values
 
-9. Review and adjust any fields as needed, then save the record.
+### New-Record Forms
 
+When used inside a new-record form, Smart Paste applies the extracted values directly into the current unsaved record instead of opening another form.
 
-### Example: Creating a Contact from Business Card
+There is also a keyboard shortcut:
 
-Given this copied text:
-```
+- `Ctrl+Alt+V`
+
+## Scope Visibility Rules
+
+The `smartPasteScopes` setting controls where the button is shown.
+
+Current behavior:
+
+- On main list pages and new-record forms, an empty scope list means Smart Paste is available on all customizable entities
+- On relationship panels, Smart Paste appears only for explicitly listed scopes
+
+!!! note
+
+    For the most predictable behavior across all locations, explicitly select the entities you want in **Smart Paste Scopes**.
+
+## What Smart Paste Can Fill
+
+Smart Paste works best with standard storable fields such as:
+
+- Text and varchar fields
+- Email and phone fields
+- Numeric fields
+- Date and datetime fields
+- Enum and boolean fields
+- Address-style fields
+
+The field labels and tooltips are used as part of the AI context, so clear field naming improves extraction quality.
+
+## What Smart Paste Does Not Fill Well
+
+The current implementation is not intended for:
+
+- File uploads
+- Complex relationship linking
+- Advanced multi-record logic
+- Guaranteed exact matching for ambiguous input
+
+You should still review the result before saving.
+
+## Example
+
+Copied text:
+
+```text
 John Smith
 Senior Sales Manager
 Acme Corporation
@@ -61,333 +116,49 @@ john.smith@acme.com
 New York, NY 10001
 ```
 
-Smart Paste will extract:
-
-- **First Name**: John
-- **Last Name**: Smith
-- **Job Title**: Senior Sales Manager
-- **Account Name**: Acme Corporation
-- **Email**: john.smith@acme.com
-- **Phone**: +1 (555) 123-4567
-- **Address Street**: 123 Business Ave, Suite 100
-- **Address City**: New York
-- **Address State**: NY
-- **Address Postal Code**: 10001
-
-
-### Example: Opportunity from Email
-
-Given this email excerpt:
-```
-We're interested in purchasing your Enterprise Software Solution.
-Our budget is $50,000 and we'd like to close by Q2 2025.
-We expect this will increase our efficiency by 40%.
-Decision maker: Sarah Johnson, CTO
-```
-
-Smart Paste will extract:
-
-- **Name**: Enterprise Software Solution
-- **Amount**: 50000
-- **Close Date**: 2025-06-30 (interprets Q2 2025)
-- **Description**: Increase efficiency by 40%
-- **Stage**: (Uses most appropriate based on context)
-
-
-## Supported Field Types
-
-Smart Paste intelligently handles various field types:
-
-### Text & String Fields
-
-- **Text**: Extracts multi-line content, respects maxLength
-- **Varchar**: Single-line strings with length constraints
-- **Email**: Validates email format
-- **Phone**: Extracts phone numbers in various formats
-
-### Numeric Fields
-
-- **Int**: Whole numbers (quantities, counts)
-- **Float**: Decimal numbers (amounts, percentages, measurements)
-
-### Date & Time
-
-- **Date**: Parses various date formats (MM/DD/YYYY, DD-MM-YYYY, etc.)
-- **DateTime**: Parses date and time combinations
-
-### Structured Fields
-
-- **Enum**: Matches text to predefined options (intelligently selects closest match)
-- **Address**: Parses address components (street, city, state, country, postal code)
-- **Bool**: Interprets yes/no, true/false, enabled/disabled
-
-### Rich Content
-
-- **Wysiwyg**: HTML content preservation
-- **Markdown**: Markdown-formatted text
-
-
-## Field Matching Intelligence
-
-### Enum Field Matching
-
-For enum fields with predefined options, the AI:
-
-- Analyzes the context of the pasted text
-- Compares against available enum options
-- Selects the most appropriate match
-- Falls back to the first option if uncertain
-
-Example: For an Opportunity Stage field with options [Prospecting, Qualification, Proposal, Negotiation, Closed Won], the text "They're interested and asked for a quote" would likely map to "Proposal".
-
-
-### Smart Field Descriptions
-
-The AI uses field tooltips and labels to understand context:
-
-- Field labels provide basic naming context
-- Tooltips (if defined) offer additional guidance
-- Entity type provides domain context
-
-
-### Handling Ambiguity
-
-When data is ambiguous:
-
-- The AI attempts best-guess matching based on context
-- You can review and correct in the preview step
-- Empty fields remain empty if no clear match exists
-
-
-## Configuration
-
-Smart Paste works out-of-the-box with minimal configuration:
-
-
-### Entity-Level Setup
-
-No specific configuration required. Smart Paste automatically:
-
-- Discovers all fields in the entity
-- Excludes system fields (id, createdAt, modifiedAt, etc.)
-- Skips non-storable fields
-- Generates appropriate schema for each field type
-
-
-### AI Profile Selection
-
-Smart Paste uses the default AI profile unless overridden:
-
-1. **Default behavior**: Uses system default AI profile
-2. **Custom profile**: Set entity-specific AI profile in entity metadata (advanced)
-
-The AI profile's context should emphasize accuracy and structured data extraction.
-
-
-### Excluded Fields
-
-The following field types are automatically excluded:
-
-- System fields: id, createdAt, modifiedAt, createdBy, modifiedBy, deleted
-- Flag fields: isFollowed, isStarred
-- Relationship fields: link, linkMultiple, linkParent (currently not supported)
-- Non-storable fields marked in entity definitions
-
-
-## Access Control
-
-### Required Permissions
-
-Users must have:
-
-- **Create** or **Edit** access to the entity (depending on whether creating or editing)
-- **Access** permission to Ai scope in their role
-
-### Configuring Access
-
-1. Navigate to **Administration** → **Roles** → Select role.
-2. Ensure entity has appropriate **Create** or **Edit** permission.
-3. In **Scope** section, ensure **Ai** is enabled.
-4. Save.
-
-
-## Use Cases
-
-### Sales Team: Quick Lead Capture
-
-Sales representatives receiving business cards or contact information via email can:
-
-- Copy contact details from any source
-- Create a lead or contact record in seconds
-- Focus on relationship building instead of data entry
-
-### Support: Fast Case Creation
-
-Support agents can:
-
-- Copy issue descriptions from emails or chat
-- Extract key details (customer name, issue type, severity)
-- Create cases with accurate information instantly
-
-### Data Migration: Bulk Import Preparation
-
-When importing data from external sources:
-
-- Copy records from spreadsheets or documents
-- Create structured records quickly
-- Validate data before bulk import
-
-
-### Event Management: Attendee Registration
-
-Event coordinators can:
-
-- Copy attendee information from registration forms
-- Quickly create contact records
-- Associate attendees with events
-
-
-## Best Practices
-
-1. **Provide Context**: Include descriptive field tooltips in entity definitions to improve AI accuracy.
-
-2. **Review Before Saving**: Always review the extracted data in the preview step before applying.
-
-3. **Structured Input Works Best**: While Smart Paste handles unstructured text, semi-structured input (like business cards or email signatures) yields best results.
-
-4. **Use for Initial Population**: Smart Paste is ideal for initial data capture. Fine-tune details manually after applying.
-
-5. **Test with Your Data**: Try Smart Paste with typical data formats you encounter to understand its behavior with your entity structure.
-
-
-## Limitations
-
-### Unsupported Field Types
-
-Currently, Smart Paste does not extract:
-
-- **Link fields**: Relationships to other entities (e.g., assigned user, account)
-- **LinkMultiple**: Multiple relationships (e.g., teams, contacts)
-- **LinkParent**: Polymorphic relationships
-- **Attachments**: File uploads
-
-These fields should be set manually after using Smart Paste.
-
-
-### Data Accuracy
-
-- AI interpretation may not be 100% accurate for complex or ambiguous text
-- Always review extracted data before saving
-- Specialized terminology may require custom AI profiles for better accuracy
-
-
-### Text Length Limits
-
-- Very large text blocks may be truncated based on AI model token limits
-- Best results with focused, relevant text (under 2000 words)
-
-
-### Language Support
-
-- Extraction quality depends on the AI model's language capabilities
-- English text generally yields best results
-- Non-English text accuracy varies by AI provider and model
-
+Typical result:
+
+- First name
+- Last name
+- Job title
+- Company
+- Email
+- Phone
+- Address details
+
+## Tips
+
+- Copy the cleanest version of the source text you can
+- Semi-structured input usually performs better than noisy paragraphs
+- Add helpful field tooltips in Entity Manager for better matching
+- Review enum, relationship, and date values carefully before saving
 
 ## Troubleshooting
 
-### Smart Paste Button Not Visible
+### Button Not Visible
 
-**Cause**: User lacks AI scope access, entity permissions, or the button failed to inject on initial render.
+Check:
 
-**Solution**:
-- Check user role has **Ai** scope enabled
-- Verify user has **Create** or **Edit** permission for the entity
-- Ensure AI provider is configured in Administration
-- If opening an existing record in edit mode (detail → edit transition), the button is injected via an `afterRender` fallback that targets the `.actions-btn-group` container — no page reload is needed
+- The role has `Ai` and `AiSmartPaste`
+- A default AI provider is configured
+- The entity is included in **Smart Paste Scopes**
+- The user has create or edit access for the target entity
 
-!!! note
+### Clipboard Error
 
-    The Smart Paste button is only shown in **create** and **edit** modes. It is not visible in detail (read-only) view.
+If the browser blocks clipboard access, Smart Paste cannot read the copied text. Allow clipboard access and try again.
 
-### Extracted Data Is Inaccurate
+### Inaccurate Results
 
-**Cause**: Ambiguous text or unclear field context.
+If the extracted values are incomplete or wrong:
 
-**Solution**:
-- Add descriptive tooltips to entity fields (Administration → Entity Manager → {Entity} → Fields)
-- Provide more structured input text
-- Consider creating a custom AI profile with entity-specific context
-- Review and correct data in preview step before applying
-
-### Some Fields Not Populated
-
-**Cause**: AI couldn't confidently match text to fields.
-
-**Solution**:
-- Check if the information exists in the pasted text
-- Ensure field types are appropriate (e.g., enum options match expected values)
-- Manually fill in missing fields after applying
-
-### AI Service Error (e.g. "temporarily unavailable")
-
-**Cause**: The AI provider returned an error — for example, the API key is invalid, the service is down, or a token limit was reached.
-
-**What happens**: An error notification is shown with the provider's error message. The create modal does **not** open.
-
-**Solution**:
-- Wait a moment and try again if it's a temporary outage
-- Check the AI provider status or API key in Administration → AI Providers
-- Try switching to a different AI profile or provider
-
-### Error: "Invalid parameters"
-
-**Cause**: Missing entity type or text content.
-
-**Solution**:
-- Ensure text is pasted in the Smart Paste dialog
-- Try with a different entity type
-- Check browser console for detailed errors
-
-### Timeout or Slow Response
-
-**Cause**: Large text or slow AI provider response.
-
-**Solution**:
-- Reduce the amount of pasted text
-- Check AI provider API status
-- Try a different AI model with faster response times
-
-
-## Advanced Usage
-
-### Custom Schema Generation
-
-Developers can extend Smart Paste by modifying the schema generation logic in:
-```
-custom/Espo/Modules/EblaAi/Tools/Ai/Service.php
-```
-
-The `convert()` and `convertField()` methods define how entity fields map to JSON schema.
-
-
-### Entity-Specific AI Profiles
-
-For entities requiring specialized extraction logic, configure custom AI profiles with enhanced context:
-
-```
-You are a data extraction specialist for CRM systems.
-Extract information from unstructured text and map it accurately to the provided JSON schema.
-Pay special attention to:
-- Industry-specific terminology
-- Date formats (prefer ISO 8601)
-- Currency amounts (extract numbers only)
-Respond only with valid JSON matching the schema.
-```
-
+- Try cleaner source text
+- Include more context in the copied text
+- Improve field labels and tooltips
+- Review the form manually before saving
 
 ## Related Features
 
-- [Field Text Generation](field-text-generation.md) - Generate content for individual fields
-- [AI Profiles](ai-profiles.md) - Configure custom AI behavior
-- [AI Sandbox](sandbox.md) - Test Smart Paste logic
+- [AI Create](ai-create.md)
+- [Field Text Generation](field-text-generation.md)
+- [AI Profiles](ai-profiles.md)

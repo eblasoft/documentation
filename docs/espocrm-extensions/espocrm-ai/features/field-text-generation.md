@@ -1,99 +1,143 @@
 # Field Text Generation
 
-By using this feature you can generate text for a field based on the context you provide.
+Field Text Generation adds AI actions directly to supported editable text fields.
 
-## Enable Field Text Generation
+It can generate new text, improve existing wording, shorten or expand content, translate it, or rewrite it in a selected tone.
 
-1. Navigate to Administration -> Entity Manager -> {Scope} -> fields -> {field}.
-2. Check **Enable AI text generation** option.
-3. (Optional) Select predefined prompt to enable Quick Text Generation.
+## Requirements
 
-   ![img.png](../../../_static/images/espocrm-extensions/ai/features/img_11.png)
+Users need:
 
+- `Ai` access
+- `AiFieldAction` access
+- A configured default AI provider
+
+The field itself must also have **Enable AI text generation** enabled in Entity Manager.
+
+## Enabling It for a Field
+
+1. Navigate to **Administration -> Entity Manager -> {Entity} -> Fields -> {Field}**.
+2. Enable **AI text generation**.
+3. Optionally choose an **AI Prompt** for quick generation.
 4. Save.
 
-## Generate Text
+![Field AI Setup](../../../_static/images/espocrm-extensions/ai/features/field-ai-setup.png)
 
-1. Navigate to the record view of the entity.
-2. Click on field edit icon.
-3. Click on **Generate** icon button.
+## Supported Field Types
 
-   ![img_12.png](../../../_static/images/espocrm-extensions/ai/features/img_12.png)
-   ![img_14.png](../../../_static/images/espocrm-extensions/ai/features/img_14.png)
-4. If you have predefined prompt selected, the text will be generated automatically, otherwise AI Generate Modal will be
-   appearing.
-5. Enter prompt text or select predefined prompt and click send.
+The current UI supports:
 
-   ![img_13.png](../../../_static/images/espocrm-extensions/ai/features/img_13.png)
+- `text`
+- `varchar`
+- `wysiwyg`
 
-6. Click Insert to insert generated text into field.
+Each field type has a slightly different action set.
 
-!!! important
+## Text Fields
 
-    If output is not as expected, you can click on **Send** button to regenerate the output.
+When editing a `text` field, the UI shows:
 
-## Multi-Level Undo
+- A dropdown AI actions button
+- A separate **Custom Prompt** button
 
-Every AI action performed on a field (improve, grammar, shorter, longer, translate, generate) saves the previous field value before applying changes. This allows you to step back through multiple AI edits.
+Available actions:
 
-### Using Undo
+- **Generate from Context**
+- **Improve Writing**
+- **Fix Grammar**
+- **Make Shorter**
+- **Make Longer**
+- **Adjust Tone**
+- **Translate** or **Translate To**
+- Quick prompt action when an AI Prompt is assigned
+- **Custom Prompt**
+- **Undo Last Change**
 
-- After the first AI action, an **Undo** button appears with a count label, for example: "Undo (2 steps)".
-- Click the button to restore the previous value.
-- Continue clicking to step back through all saved versions.
-- The count in the label decreases with each undo until there are no more steps.
+![Text Field AI Menu](../../../_static/images/espocrm-extensions/ai/features/field-ai-text-menu.png)
+![Text Field Custom Prompt](../../../_static/images/espocrm-extensions/ai/features/field-ai-text-custom-prompt.png)
 
-### Notes
+## Varchar Fields
 
-- The undo stack supports unlimited steps — every AI action adds a new entry.
-- The undo button is hidden until at least one AI action has been performed.
-- The undo stack is only available during the current editing session and is not persisted across page refreshes.
+`varchar` fields use the same pattern as `text` fields, with one important difference:
+
+- `varchar` fields do not show **Make Longer**
+
+This keeps the output better aligned with shorter single-line field usage.
 
 ## WYSIWYG Fields
 
-AI actions are also available on **WYSIWYG** (rich text) fields via an embedded Summernote toolbar group.
+WYSIWYG fields add AI actions directly into the Summernote toolbar.
 
-### Available Actions
+Available actions:
 
-When editing a WYSIWYG field, the AI toolbar group (`aiCommon`) appears in the Summernote toolbar with the following buttons:
+- **Undo**
+- **Improve Writing**
+- **Fix Grammar**
+- **Make Shorter**
+- **Make Longer**
+- **Adjust Tone**
+- **Custom Prompt**
 
-| Button | Description |
-|--------|-------------|
-| **Undo** | Restores the previous field content. Disabled until the first AI action is performed. |
-| **Improve Writing** | Rewrites the content for clarity and flow. |
-| **Fix Grammar** | Corrects grammar and spelling. |
-| **Make Shorter** | Condenses the content. |
-| **Make Longer** | Expands the content with more detail. |
-| **Adjust Tone** | Rewrites the content in a selected tone (Formal, Casual, Friendly, Professional, Empathetic, Urgent, Concise). |
-| **Custom Prompt** | Opens the AI Generate modal for a custom instruction or predefined prompt. |
+![WYSIWYG AI Toolbar](../../../_static/images/espocrm-extensions/ai/features/field-ai-wysiwyg-toolbar.png)
 
-All actions POST to the `EblaAi/fieldAction` backend endpoint — the same backend used by text and varchar fields.
+## Quick Prompt vs Custom Prompt
 
-### Undo Behavior
+If a field has an AI Prompt assigned in Entity Manager:
 
-The Undo button in the WYSIWYG toolbar starts disabled and becomes active after the first AI action. Clicking it restores the content to the previous state. It follows the same session-only, single-step undo pattern as the other field types.
+- The prompt appears as a quick action in the field menu
+- Selecting it runs the prepared prompt immediately against the current record context
+
+The **Custom Prompt** button opens the general AI Generate modal, where the user can:
+
+- Select a prompt
+- Write their own prompt
+- Choose additional fields when needed
+- Review the output before inserting it
+
+## Translation Behavior
+
+Field translation uses the languages configured in **Administration -> AI Settings -> Translate -> AI Translate Languages**.
+
+Current behavior:
+
+- If one language is configured, the menu shows **Translate**
+- If multiple languages are configured, the menu shows **Translate To** with one entry per language
 
 ## Adjust Tone
 
-The **Adjust Tone** action rewrites the field content in a specific tone. It is available on `text`, `varchar`, and `wysiwyg` fields and appears as a submenu between the main actions (Improve, Grammar, Shorter, Longer) and the Translate option.
+Available tones:
 
-### Available Tones
+- **Formal**
+- **Casual**
+- **Friendly**
+- **Professional**
+- **Empathetic**
+- **Urgent**
+- **Concise**
 
-| Tone | Description |
-|------|-------------|
-| **Formal** | Structured, professional language suited for official communication |
-| **Casual** | Relaxed, conversational language for informal contexts |
-| **Friendly** | Warm, approachable language that builds rapport |
-| **Professional** | Clear, business-appropriate language |
-| **Empathetic** | Compassionate language that acknowledges feelings |
-| **Urgent** | Direct, action-oriented language conveying time sensitivity |
-| **Concise** | Stripped-down language that says more with less |
+The selected tone is applied immediately to the current field content.
 
-### Usage
+## Undo Stack
 
-1. Edit a `text`, `varchar`, or `wysiwyg` field that has AI text generation enabled.
-2. Open the AI actions menu (bolt icon or Summernote toolbar group).
-3. Hover over **Adjust Tone** to expand the submenu.
-4. Select the desired tone — the field content is rewritten immediately.
-5. Use **Undo** if you want to revert.
+Every successful AI action stores the previous value in a session-only undo stack.
+
+Current behavior:
+
+- Undo appears only after the first successful AI action
+- Multiple undo steps are supported
+- The undo count is shown for text and varchar fields
+- Undo history is not preserved across page refreshes
+
+## Tips
+
+- Use quick prompts for repeatable tasks on the same field
+- Use custom prompts when you need record-specific instructions
+- Translate after refining the content if you want the best final wording
+- Review generated output before saving, especially on required or customer-facing fields
+
+## Related Features
+
+- [AI Prompts](ai-prompts.md)
+- [Stream Comment](stream-comment.md)
+- [Email Composer AI Toolbar](email-composer.md)
 

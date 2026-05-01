@@ -1,42 +1,73 @@
 # Email Template Generation
 
-Ebla AI can generate complete email templates from a plain-language description. Instead of writing the template manually, you describe what you want and the AI produces the name, subject line, and full HTML body with EspoCRM placeholders already inserted.
+This page covers the list-view AI flow for creating a new Email Template from a description.
 
-## Generating an Email Template with AI
+## Requirements
 
-1. Navigate to **Email Templates** in the navigation menu.
-2. Click **Create with AI** in the list view header.
-3. The AI generation modal opens.
+Users need:
 
-### Modal Options
+- `Ai` access
+- Create access to `EmailTemplate`
+- A configured default AI provider
 
-Fill in the following fields:
+## Where to Find It
 
-- **Description** — Describe the purpose and content of the email template. Be specific about the tone, audience, and what the email should accomplish.
-- **Entity Type** — Select the entity this template will be used with (e.g. Contact, Lead, Account). The AI uses this to insert the correct field placeholders.
-- **Format** — Choose whether to generate plain text or HTML output.
-- **Style** — Select a visual style for the generated HTML:
+1. Open **Email Templates**.
+2. Click **Generate Email Template** in the list view.
 
-| Style | Description |
-|-------|-------------|
-| Plain | No styling, plain text layout |
-| Simple | Minimal formatting with basic structure |
-| Professional | Clean business layout with header and footer |
-| Rich | Detailed layout with sections and visual hierarchy |
-| Newsletter | Multi-column newsletter-style layout |
+## Modal Fields
 
-4. Click **Generate**.
-5. The AI generates the template name, subject line, and full body.
-6. A preview of the generated content is shown in the modal.
-7. Click **Continue** to open the standard Email Template create form pre-filled with the AI-generated values.
-8. Review and adjust any fields as needed, then click **Save**.
+The current list-view modal includes:
 
-## Tips for Better Results
+- **Description**
+- **Entity Type**
+- **Style**
 
-- Be specific in your description. For example: "A follow-up email sent three days after a demo, addressed to the contact by first name, reminding them of key benefits and including a call to action to schedule a next meeting."
-- Specify the tone if it matters: formal, friendly, urgent, etc.
-- The AI inserts EspoCRM placeholders (e.g. `{firstName}`, `{accountName}`) based on the entity type you select. Always review the generated placeholders before saving.
+The style selector is used for HTML template generation.
 
-!!! note
+Available styles:
 
-    The AI-generated template opens in the standard create form, where you can make any adjustments before saving. Nothing is saved automatically.
+- `plain`
+- `simple`
+- `professional`
+- `rich`
+- `newsletter`
+
+## Current Flow
+
+1. Open the modal from the Email Template list.
+2. Enter a description.
+3. Optionally choose an entity type.
+4. Choose a style.
+5. Click **Generate**.
+6. Review the preview.
+7. Click **Accept**.
+8. Ebla AI opens the Email Template create form pre-filled with:
+   - Name
+   - Subject
+   - Body
+
+![Email Template Modal](../../../_static/images/espocrm-extensions/ai/features/email-template-modal.png)
+
+## Important Note
+
+The list-view flow creates a new HTML template draft.
+
+It does not expose a profile selector in the current modal.
+
+## Placeholder Behavior
+
+The selected entity type helps the AI use the correct EspoCRM placeholders for the template.
+
+Always review the final placeholders before saving.
+
+## Tips
+
+- Be specific about audience, purpose, tone, and call to action
+- Choose the entity type that matches how the template will be used
+- Use the preview to verify layout and placeholder usage before accepting
+
+## Related Features
+
+- [AI Email Template Generator](email-template-generator.md)
+- [Email Composer AI Toolbar](email-composer.md)

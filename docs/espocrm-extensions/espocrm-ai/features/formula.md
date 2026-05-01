@@ -1,41 +1,88 @@
 # Formula
 
-The Formula feature in Ebla AI allows you to create custom formula functions that can be used in various parts of the
-CRM. These functions can be used to perform calculations, manipulate data, and automate tasks. Which enables you to
-create complex and intelligent formulas that can be used to enhance your CRM operations.
+Ebla AI adds AI-oriented formula functions that can be used in workflows, before-save formulas, and other automation scenarios inside EspoCRM.
 
-## Using Formula
+## Access Control
 
-Format of function use: `eblaAi\textGenerate([propmt], profileId)`.
+To use these functions, the user or process context must have access to the **AiFormula** scope.
 
-!!! example
+## Available Formula Functions
 
-    ```
-        $prompt = string\concatenate('Calculate score of this profile,',
-        ' name is: ', name,
-        ' email is: ', emailAddress,
-        ' industry is: ', industry,
-        ' source is: ' , source,
-        ' country is: ' , addressCountry,
-        '. Provide result as number between 0-4 without explainations'
-        );
-        
-        $profileId = '65d6f98d3d0f9f5f9';
-        
-        score = eblaAi\textGenerate($prompt, $profileId);
-    ```
+The current build exposes the following functions:
 
-`Output Example: Calculate score of this profile, name is: Marry Coch email is: marry@gmail.com industry is: Banking source is: Web Site country is: Germany. Provide result as number between 0-4 without explainations`
+- `eblaAi\textGenerate`
+- `eblaAi\runPrompt`
+- `eblaAi\getPrompt`
+- `eblaAi\analyzeImage`
+- `eblaAi\generateImage`
+- `eblaAi\generateSpeech`
 
-!!! important
+!!! note
 
-    If output is not as expected, you can click on **Send** button to regenerate the output.
+    Video generation is not exposed as a working formula function in the current build.
+
+---
+
+## eblaAi\textGenerate
+
+Generates text from a prompt using the AI service.
+
+### Syntax
+
+```
+eblaAi\textGenerate(PROMPT, PROFILE_ID)
+```
+
+### Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `PROMPT` | The prompt text to send to AI |
+| `PROFILE_ID` | Optional AI Profile ID |
+
+### Example
+
+```text
+$prompt = string\concatenate(
+    'Create a short lead summary for: ',
+    name,
+    ', industry: ',
+    industry,
+    ', source: ',
+    source
+);
+
+description = eblaAi\textGenerate($prompt, $profileId);
+```
+
+---
+
+## eblaAi\runPrompt
+
+Runs a saved **AI Prompt** by ID. If the prompt is linked to a profile, that profile can be used during execution.
+
+### Syntax
+
+```
+eblaAi\runPrompt(PROMPT_ID)
+```
+
+### Example
+
+```text
+notes = eblaAi\runPrompt('65d6f98d3d0f9f5f9');
+```
+
+### Notes
+
+- The current entity is used as the target context when the formula runs on a saved record
+- This is a practical way to reuse prompt templates in formulas
 
 ---
 
 ## eblaAi\getPrompt
 
-`eblaAi\getPrompt` fetches an AI Prompt record by its ID and renders its template with field values substituted in. This is useful in workflows, before-save hooks, and other formula contexts where you want to dynamically build a prompt from a saved template rather than constructing the string manually.
+Returns a rendered prompt string from a saved prompt template so it can be reused in formula logic.
 
 ### Syntax
 
@@ -43,67 +90,61 @@ Format of function use: `eblaAi\textGenerate([propmt], profileId)`.
 eblaAi\getPrompt(PROMPT_ID)
 ```
 
-Renders the prompt template using the field values of the **current record** (the record the formula is running on).
+or
 
 ```
 eblaAi\getPrompt(PROMPT_ID, SCOPE, RECORD_ID)
 ```
 
-Renders the prompt template using the field values of a **specific record** identified by its entity type and ID.
+### Example
 
-### Placeholder Formats
+```text
+$prompt = eblaAi\getPrompt($promptId, 'Contact', contactId);
+description = eblaAi\textGenerate($prompt, $profileId);
+```
 
-The AI Prompt template supports two placeholder formats — both are supported and can be mixed:
+### Notes
 
-- `{{fieldName}}` — double curly braces
-- `{fieldName}` — single curly braces
+- This function returns prompt text only
+- It does not call the AI by itself
+- If the prompt cannot be resolved, the function returns an empty string
 
-Each placeholder is replaced with the actual value of the corresponding field from the target record.
+---
+
+## eblaAi\analyzeImage
+
+Analyzes an image attachment using a vision-capable provider and returns the result as text.
+
+### Syntax
+
+```
+eblaAi\analyzeImage(ATTACHMENT_ID, PROMPT, PROFILE_ID)
+```
 
 ### Parameters
 
 | Parameter | Description |
 |-----------|-------------|
-| `PROMPT_ID` | The ID of the AiPrompt record to use |
-| `SCOPE` | The entity type of the target record (e.g. `'Contact'`) |
-| `RECORD_ID` | The ID of the target record |
+| `ATTACHMENT_ID` | Attachment record ID |
+| `PROMPT` | Optional custom analysis prompt |
+| `PROFILE_ID` | Optional vision-capable AI Profile |
 
 ### Example
 
-!!! example
+```text
+$result = eblaAi\analyzeImage(contractScanId, 'Extract the contract dates.');
+```
 
-    Fetch a prompt template and use it as input to `eblaAi\textGenerate` in a before-save formula:
+### Notes
 
-    ```
-    $promptId = '65d6f98d3d0f9f5f9';
-
-    $prompt = eblaAi\getPrompt($promptId);
-
-    description = eblaAi\textGenerate($prompt, $profileId);
-    ```
-
-!!! example
-
-    Use the three-argument form to render a prompt against a related record:
-
-    ```
-    $promptId = '65d6f98d3d0f9f5f9';
-    $relatedId = relatedContactId;
-
-    $prompt = eblaAi\getPrompt($promptId, 'Contact', $relatedId);
-
-    notes = eblaAi\textGenerate($prompt, $profileId);
-    ```
-
-!!! note
-
-    `eblaAi\getPrompt` only renders the prompt text — it does not call the AI. Pass the result to `eblaAi\textGenerate` to get an AI response.
+- Returns a string
+- On failure, returns a string starting with `Error:`
 
 ---
 
 ## eblaAi\generateImage
 
-Generates an image using AI and saves it as an EspoCRM Attachment. Returns the attachment ID.
+Generates an image and saves it as an Attachment record.
 
 ### Syntax
 
@@ -113,35 +154,34 @@ eblaAi\generateImage(PROMPT, SIZE, PROFILE_ID)
 
 ### Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `PROMPT` | string | Yes | Text description of the image to generate |
-| `SIZE` | string | No | Image size: `'square'` (default), `'landscape'`, or `'portrait'` |
-| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+| Parameter | Description |
+|-----------|-------------|
+| `PROMPT` | Image description |
+| `SIZE` | `square`, `landscape`, or `portrait` |
+| `PROFILE_ID` | Optional AI Profile |
 
-**Returns:** The ID of the created Attachment record, or a string starting with `"Error:"` on failure.
+### Example
 
-!!! example
+```text
+photoId = eblaAi\generateImage(
+    'Professional product image on a white background',
+    'square',
+    $profileId
+);
+```
 
-    ```
-    $imageId = eblaAi\generateImage(
-        'A professional headshot photo of a business executive',
-        'square',
-        $profileId
-    );
+### Provider Support
 
-    photoId = $imageId;
-    ```
+Image generation is currently supported by:
 
-!!! note "Provider support"
-
-    Image generation is supported by **OpenAI** (DALL-E 3) and **Google Gemini** (Imagen 3). Anthropic and Ollama do not support image generation.
+- **OpenAI**
+- **Google Gemini**
 
 ---
 
 ## eblaAi\generateSpeech
 
-Converts text to speech audio and saves it as an EspoCRM Attachment. Returns the attachment ID.
+Converts text to speech and saves the result as an Attachment record.
 
 ### Syntax
 
@@ -151,64 +191,33 @@ eblaAi\generateSpeech(TEXT, VOICE, SPEED, PROFILE_ID)
 
 ### Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `TEXT` | string | Yes | The text to convert to speech (max 4096 characters) |
-| `VOICE` | string | No | Voice name. OpenAI: alloy, ash, coral, echo, fable, onyx, nova, shimmer. Gemini: Aoede, Charon, Fenrir, Kore, Puck |
-| `SPEED` | float | No | Speech speed multiplier (default 1.0) |
-| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+| Parameter | Description |
+|-----------|-------------|
+| `TEXT` | Text to convert |
+| `VOICE` | Optional provider-specific voice |
+| `SPEED` | Optional speed multiplier |
+| `PROFILE_ID` | Optional AI Profile |
 
-**Returns:** The ID of the created Attachment record (MP3 or WAV), or a string starting with `"Error:"` on failure.
+### Example
 
-!!! example
-
-    ```
-    $audioId = eblaAi\generateSpeech(
-        'Welcome to our company. We are glad to have you.',
-        'nova',
-        1.0,
-        $profileId
-    );
-    ```
-
-!!! note "Provider support"
-
-    Voice generation is supported by **OpenAI** (TTS-1, MP3 output) and **Google Gemini** (TTS Preview, WAV output). Anthropic and Ollama do not support voice generation.
-
----
-
-## eblaAi\generateVideo
-
-Generates a short video from a text prompt and saves it as an EspoCRM Attachment. Returns the attachment ID.
-
-### Syntax
-
-```
-eblaAi\generateVideo(PROMPT, ASPECT_RATIO, DURATION, PROFILE_ID)
+```text
+$audioId = eblaAi\generateSpeech(
+    'Welcome to our company.',
+    'nova',
+    1.0,
+    $profileId
+);
 ```
 
-### Parameters
+### Notes
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `PROMPT` | string | Yes | Text description of the video to generate |
-| `ASPECT_RATIO` | string | No | Aspect ratio: `'16:9'` (default), `'9:16'`, or `'1:1'` |
-| `DURATION` | int | No | Duration in seconds (5-8) |
-| `PROFILE_ID` | string | No | AI Profile ID. Uses system default if omitted |
+- OpenAI produces MP3 output
+- Gemini produces WAV output
+- Maximum text length is limited by the API endpoint used by the service
 
-**Returns:** The ID of the created Attachment record (MP4), or a string starting with `"Error:"` on failure.
+## Related Features
 
-!!! example
-
-    ```
-    $videoId = eblaAi\generateVideo(
-        'A timelapse of a sunset over the ocean',
-        '16:9',
-        8,
-        $profileId
-    );
-    ```
-
-!!! warning "Provider support"
-
-    Video generation is currently only supported by **Google Gemini** (Veo 2). OpenAI, Anthropic, and Ollama do not support video generation. Video generation may take up to 5 minutes due to the asynchronous processing pipeline.
+- [AI Prompts](ai-prompts.md)
+- [Image Analysis](image-analysis.md)
+- [Image Generation](image-generation.md)
+- [Voice Generation](voice-generation.md)

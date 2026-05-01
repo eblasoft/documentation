@@ -1,70 +1,145 @@
 # AI Prompts
 
-AI Prompts is a feature of Ebla AI that allows users to create and manage AI prompts. AI prompts are used as templates
-of prompts.
+AI Prompts are reusable prompt templates stored in EspoCRM. They can be used by several Ebla AI features, including quick field generation, custom prompt dialogs, email translation, AI Summary configuration, formula-based prompt execution, and chat prompt shortcuts.
 
 ## Default Prompts
 
-Upon installation, Ebla AI seeds **13 ready-to-use prompts** across common entity types and general scopes:
+On a fresh installation, Ebla AI seeds 13 prompts across general and entity-specific use cases.
 
-| Scope | Examples |
-|-------|---------|
-| **Email** | Write a professional reply, Summarize this email thread, Draft a follow-up |
-| **Lead** | Qualify this lead, Write a lead outreach message |
-| **Opportunity** | Summarize opportunity status, Draft a proposal intro |
-| **Contact** | Write a contact introduction, Summarize contact activity |
-| **Account** | Write an account summary, Draft an account update |
-| **General** | Improve writing, Fix grammar |
+Examples include:
 
-These prompts are immediately available and can be used as-is or edited to suit your workflow.
+- **Brief Comment**
+- **Record Summary**
+- **Follow-up Email**
+- **Meeting Preparation**
+- **Approve Reply**
+- **Decline Reply**
+- **Email Summary**
+- **Lead Qualification**
+- **Lead Introduction Email**
+- **Deal Strategy**
+- **Proposal Draft**
+- **Contact Bio**
+- **Account Review**
 
 ## Creating an AI Prompt
 
-1. Navigate to **Administration** -> **AI Prompts**.
+1. Navigate to **Administration → AI Prompts**.
 2. Click **Create**.
-3. Enter a name for the AI prompt.
-4. Select Entity Type.
-5. Enter the prompt context.
+3. Enter:
+   - **Name**
+   - **Profile** (optional)
+   - **Entity Type** (optional)
+   - **Context**
 
 ![Create AI Prompt](../../../_static/images/espocrm-extensions/ai/setup/create-prompt.png)
 
-!!! important
+## Main Fields
 
-    If output is not as expected, you can click on **Send** button to regenerate the output.
+### Name
 
-## Examples
+The label shown in prompt selectors and prompt shortcut menus.
 
-### Email Reply
+### Profile
+
+Optional linked AI Profile. When set, features that run this prompt can use that profile as the prompt's preferred execution profile.
+
+### Entity Type
+
+Optional. Use it when the prompt is meant for a specific record type such as:
+
+- `Email`
+- `Lead`
+- `Opportunity`
+- `Contact`
+- `Account`
+
+Entity-specific prompts can also appear in the AI Chat prompt shortcut menu for that entity.
+
+### Context
+
+The actual prompt template text.
+
+## Where AI Prompts Are Used
+
+Depending on the feature, AI Prompts can be used in different ways:
+
+- **Field quick prompts** on text and varchar fields
+- **Custom AI Generate** dialogs
+- **Record AI Chat** prompt shortcut menu
+- **Email translation** default prompt
+- **AI Summary** entity-specific prompt assignment
+- **Formula** execution via `eblaAi\runPrompt`
+
+## Placeholder and Variable Support
+
+Prompt preparation supports a mix of variable styles depending on where the prompt is used.
+
+Common patterns include:
+
+- `{{name}}`
+- `{{description}}`
+- `{Contact.firstName}`
+- `{Account.name}`
+- `%all%`
+- `%value%`
+
+### `%all%`
+
+In supported prompt contexts, `%all%` inserts the full available data payload for the current record.
+
+### `%value%`
+
+In supported stream or field-generation contexts, `%value%` represents the current text value being refined.
+
+### Prompt Variable Helper
+
+The AI Prompt form includes a **Variables** helper field so you can browse and copy placeholder tokens more easily.
+
+![AI Prompt Variables](../../../_static/images/espocrm-extensions/ai/features/ai-prompt-variables.png)
+
+## Prompt Scope Strategy
+
+A practical structure is:
+
+- Use **global prompts** for reusable generic instructions
+- Use **entity-specific prompts** for prompts that depend on record fields or business context
+- Link a **profile** only when the prompt needs a dedicated model or behavior
+
+## Example Prompts
+
+### Quick Comment
 
 ```
-Write decline reply for: {{name}}
+Write a concise one-line professional comment for this record.
 ```
 
-```
-Write approve reply for: {{name}}
-```
-
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_2.png)
-
-### Stream Comment
+### Lead Qualification
 
 ```
-Write a one line brief comment to ADD_COMMENT_HERE
+Analyze this lead and provide a short qualification summary.
+Highlight budget signals, urgency, likely next step, and whether the lead is Hot, Warm, or Cold.
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_3.png)
-
-### Improve Stream Comment for Case entity
+### Stream Comment Improvement
 
 ```
-I have a case with the following body:
-{{{description}}}
+Improve the following stream comment while keeping the meaning unchanged:
 
-My reply is:
-
-MY_REPLAY
-
-Improve my reply above
+%value%
 ```
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_4.png)
+## Best Practices
+
+- Keep prompts focused on one task
+- Use entity-specific prompts when record data matters
+- Test prompts in the relevant feature flow, not only in isolation
+- Use linked profiles only when necessary
+
+## Related Features
+
+- [AI Profiles](ai-profiles.md)
+- [AI Chat Panel](ai-chat.md)
+- [AI Summary Panel](ai-summary.md)
+- [Email Translation](email-translation.md)
+- [Formula Functions](formula.md)

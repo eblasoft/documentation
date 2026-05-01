@@ -1,145 +1,199 @@
 # Admin Settings
 
-Global AI settings are managed from **Administration** -> **AI Providers**. These settings affect all AI features across the extension.
+Global AI settings are managed from **Administration → AI Settings**. These settings control provider selection, feature defaults, token limits, response caching, translation behavior, Smart Paste visibility, and Create with AI visibility.
 
-## Global AI Instructions
+![AI Settings Tabs](../../../_static/images/espocrm-extensions/ai/features/admin-settings-tabs.png)
 
-The **Global AI Instructions** field (`aiSystemInstructions`) lets you define a block of text that is automatically prepended to the system prompt for every AI request, across all features.
+## General Tab
 
-Use this to set company-wide rules that should apply to all AI responses, such as:
+The **General** tab contains the core extension-wide settings.
 
-- Writing language or locale (e.g. "Always respond in formal English.")
-- Tone and style guidelines (e.g. "Be concise and professional.")
-- Formatting preferences (e.g. "Use bullet points where appropriate.")
-- Restrictions (e.g. "Do not make assumptions about pricing.")
+### Default AI Provider
+
+The **Default AI Provider** setting determines which configured provider is used when a feature does not explicitly resolve another provider from an AI Profile.
+
+Most UI-based AI actions also expect a default provider to be set before their buttons become visible.
+
+### Default AI Profile
+
+The **Default AI Profile** is the fallback profile used when a feature does not have:
+
+- An entity-specific profile
+- A feature-specific default profile
+- A prompt-linked profile
+
+### Global AI Instructions
+
+The **Global AI Instructions** field (`aiSystemInstructions`) lets you define text that is prepended to every AI request across the extension.
+
+Use this for:
+
+- Company-wide response rules
+- Tone and formatting guidance
+- Language instructions
+- Restrictions or compliance reminders
 
 !!! note
 
-    Global AI Instructions are combined with the system prompt defined on each individual AI Profile. Both are sent to the AI for every request — global instructions first, then the profile context, then the service-specific prompt.
+    Global AI Instructions are combined with the selected AI Profile context and the feature-specific prompt. The global instructions are applied first.
 
 ### Variable Substitution
 
-Global AI Instructions (and AI Profile context fields) support `{varName}` placeholders that are replaced with live values before the message is sent to the AI.
+Global AI Instructions and AI Profile context fields support `{varName}` placeholders.
 
 **Always available:**
 
 | Variable | Replaced with |
 |----------|---------------|
-| `{userName}` | The current user's full name |
+| `{userName}` | Current user's full name |
 | `{userRole}` | `Administrator` or `User` |
-| `{companyName}` | The CRM company name (from Settings) |
-| `{today}` | Today's date in `YYYY-MM-DD` format |
-| `{language}` | The current user's language code |
+| `{companyName}` | Company name from Settings |
+| `{today}` | Current date in `YYYY-MM-DD` format |
+| `{language}` | Current user's language code |
 
-**Available when chatting on a record:**
+**Available when a feature runs against a record context:**
 
 | Variable | Replaced with |
 |----------|---------------|
-| `{entityType}` | The entity type (e.g. `Contact`, `Opportunity`) |
-| `{entityName}` | The record's name field value |
-| `{entityId}` | The record's ID |
+| `{entityType}` | Entity type, such as `Contact` or `Opportunity` |
+| `{entityName}` | The record name |
+| `{entityId}` | The record ID |
 
-**Example usage:**
+Unknown placeholders are left unchanged.
 
-```
-You are an AI assistant for {companyName}.
-You are talking to {userName}, a {userRole}.
-Today is {today}. Always respond in a tone appropriate for a {userRole}.
-```
+## Translate Tab
 
-Unknown placeholders (e.g. `{nonExistent}`) are left as-is.
+The **Translate** tab contains language and email-translation settings.
 
-## Token Limits
+### AI Translate Languages
+
+`aiTranslateLanguages` controls the language list shown by translation actions in text fields, varchar fields, WYSIWYG fields, and stream comments.
+
+Behavior:
+
+- If one language is configured, the UI shows a single **Translate** action
+- If multiple languages are configured, the UI shows a **Translate To** sub-menu
+
+### Enable Email Translate
+
+Enable **Email Translate** to show the **Translate** button on Email detail views.
+
+### AI Email Translate Default Profile
+
+Set a dedicated profile if you want email translations to use a different model or context than the global default.
+
+### AI Email Translate Default Prompt
+
+Set the prompt used for the email translation request.
+
+!!! important
+
+    In the current implementation, email translation expects a translation prompt to be configured. For reliable use, set **AI Email Translate Default Prompt** explicitly.
+
+## Token Limits Tab
 
 ### Default Token Limit
 
-The **Default Token Limit** (`aiDefaultTokenLimit`) sets a system-wide token quota that applies to all users who do not have a personal override. Set to `0` for no global default (unlimited).
+The **Default Token Limit** (`aiDefaultTokenLimit`) sets the fallback system-wide token quota for non-admin users.
+
+- `0` means unlimited
+- Applies only when the user does not have a personal override
 
 ### Token Limit Period
 
-The **Token Limit Period** (`aiTokenLimitPeriod`) controls the rolling window used when enforcing token usage limits. Available options:
+The **Token Limit Period** (`aiTokenLimitPeriod`) defines the enforcement window:
 
-- **Daily** — resets at midnight each day
-- **Weekly** — resets at the start of each week
-- **Monthly** — resets at the start of each month
+- **Daily**
+- **Weekly**
+- **Monthly**
 
-**Resolution order for non-admin users:**
+### Per-User Override
 
-1. User's own **AI Monthly Token Limit** (if > 0) — personal override
-2. System **Default Token Limit** (if > 0) — global fallback
-3. Both are `0` — unlimited
-
-!!! note
-
-    Administrators are never blocked by token limits, regardless of the values set.
+Each user record has an **AI Monthly Token Limit** field. Even though the label says *Monthly*, the value acts as that user's personal override for the currently configured period.
 
 ### Max Tool-Call Iterations
 
-The **Max Tool-Call Iterations** (`aiMaxToolIterations`, default `10`, max `50`) limits how many consecutive tool calls the AI Chat assistant can make in a single response. Increase this for complex agentic tasks; lower it to reduce API cost.
+`aiMaxToolIterations` limits how many consecutive tool-call rounds the AI Chat engine can perform in one request.
+
+Use cases:
+
+- Lower values reduce cost and keep tool usage tight
+- Higher values help with more complex multi-step chat tasks
+
+## Response Cache Tab
+
+The response cache reuses identical AI responses for selected features.
+
+### Settings
+
+- **Response Cache** (`aiCacheEnabled`)
+- **Cache TTL** in days (`aiCacheTtlDays`)
+
+### What Is Cached
+
+The current implementation uses response caching for several feature APIs, including:
+
+- Email composer actions
+- Email thread analysis
+- Email template generation
+- PDF template generation
+- Field text actions
+
+Some AI interactions are intentionally excluded, especially tool-using chat flows.
+
+### Cache Notes
+
+- Cached responses return faster
+- Cached responses do not consume new tokens on the cache-hit request
+- Cache hits are visible in **AI Log**
+
+## AI Features Tab
+
+This tab lets you assign default profiles per feature.
+
+| Setting | Used By |
+|---------|---------|
+| **Default AI Profile** | Global fallback for all features |
+| **AI Chat Default Profile** | Record-level AI Chat |
+| **AI Summary Default Profile** | AI Summary |
+| **AI Email Composer Default Profile** | Draft, reply, polish, grammar, tone |
+| **AI Field Action Default Profile** | Text field and stream comment AI actions |
+| **AI Smart Paste Default Profile** | Smart Paste |
+| **AI Vision Default Profile** | Image analysis and image generation |
+| **AI Admin Assistant Default Profile** | Admin Assistant |
+| **AI Email Translate Default Profile** | Email translation |
+
+## Smart Paste Scopes
+
+The **Smart Paste Scopes** field controls where Smart Paste buttons appear.
+
+Recommended configuration:
+
+1. Open **Administration → AI Settings → General**.
+2. Select the entity types you want to support.
+3. Save.
 
 !!! tip
 
-    Most conversational queries complete in 1–3 tool calls. Only raise this limit if you use the AI Admin Assistant for complex multi-step CRM changes.
-
-## Response Cache
-
-The response cache avoids redundant AI calls by storing and reusing responses to identical requests.
-
-### Enabling the Cache
-
-1. Navigate to **Administration** -> **AI Providers**.
-2. Enable the **Response Cache** toggle (`aiCacheEnabled`).
-3. Set the **Cache TTL** in days (`aiCacheTtlDays`). The default is 7 days.
-4. Save.
-
-### How Caching Works
-
-When caching is enabled:
-
-- Each request is identified by a SHA-256 hash of the provider, model, system prompt, and user message.
-- If an identical request was made recently (within the TTL), the cached response is returned immediately without calling the AI.
-- Cache hits are recorded in the AI Log with a `cacheHit` flag and 0 tokens consumed.
-
-### Cache Exclusions
-
-The following requests are never cached:
-
-- Requests that use AI tools (e.g. AI Chat panel with CRM data access)
-
-### Cache Benefits
-
-- Reduces token consumption for repeated or similar requests.
-- Speeds up response time for cached queries.
-- Particularly useful for AI Summary panels where many users view the same records.
-
-## AI Features
-
-The **AI Features** tab in Administration → AI Providers lets you set the default AI Profile for each individual feature. These override the global default profile for that specific feature only.
-
-| Setting | Feature |
-|---------|---------|
-| AI Chat Default Profile | AI Chat panel on records |
-| AI Summary Default Profile | Record Summary panel |
-| AI Email Composer Default Profile | Email reply/compose AI |
-| AI Field Action Default Profile | Field text generation |
-| AI Smart Paste Default Profile | Smart Paste |
-| AI Vision Default Profile | Image analysis |
-| AI Email Translate Default Profile | Email translation |
-| AI Admin Assistant Default Profile | Admin AI Assistant |
-
-### Enable AI Admin Assistant
-
-The **Enable AI Admin Assistant** toggle (`enableAdminAssistant`, default enabled) controls whether the Admin AI Assistant is available. When disabled, any attempt to open the assistant returns a Forbidden error even for admin users.
+    Explicitly selecting the scopes gives the most predictable button visibility across main list views, relationship panels, and new-record forms.
 
 ## AI Create Scopes
 
-The **AI Create Scopes** field (`aiCreateScopes`) is a multi-select list of entity types. Any entity selected here will display a **Create with AI** button in its list view header.
+The **AI Create Scopes** field controls where **Create with AI** appears.
 
-To configure:
+1. Open **Administration → AI Settings → General**.
+2. Select the entity types that should show **Create with AI**.
+3. Save.
 
-1. Navigate to **Administration** -> **AI Providers**.
-2. Locate the **AI Create Scopes** field.
-3. Select the entity types you want to enable.
-4. Save.
+The button then appears:
 
-See [AI Create from List View](ai-create.md) for details on how this feature works.
+- In the main list view header
+- In supported relationship panel lists
+
+## Related Features
+
+- [AI Profiles](ai-profiles.md)
+- [AI Prompts](ai-prompts.md)
+- [AI Smart Paste](smart-paste.md)
+- [AI Create from List View](ai-create.md)
+- [Token Usage & Limits](token-usage.md)

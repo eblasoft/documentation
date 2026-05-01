@@ -18,4 +18,25 @@
 3. Choose the default model you want to use.
 
    ![setup-0.png](../../../_static/images/espocrm-extensions/ai/providers/ollama/setup-0.png)
-   
+
+## Final Step in AI Settings
+
+After saving the integration:
+
+1. Navigate to **Administration** -> **AI Settings**.
+2. Open the **General** tab.
+3. Set **Default AI Provider** to **Ollama**.
+4. Save.
+
+## Capability Notes
+
+Ollama is mainly useful for local text-generation and chat scenarios.
+
+Feature support depends on the model you run locally.
+
+In the current extension documentation set, Ollama should not be assumed to support:
+
+- Image generation
+- Speech generation
+
+Test the selected local model before enabling more advanced AI workflows.

@@ -1,182 +1,103 @@
-# Image & Attachment Analysis
+# Image Analysis
 
-Analyze images and attachments directly inside EspoCRM using AI vision capabilities. The AI can describe image content, extract visible text, identify objects and colors, and answer specific questions about an attachment — all without leaving the record view.
+Image Analysis lets users ask AI questions about uploaded images directly inside EspoCRM.
 
-## Overview
+It is intended for image-based attachments such as screenshots, scans, photos, and similar visual files.
 
-The Image & Attachment Analysis feature (also referred to as **AI Vision**) works on two types of fields:
+## Requirements
 
-- **Image fields** — a single uploaded image attached to a record.
-- **Attachment Multiple fields** — one or more files attached to a record.
+Users need:
 
-When vision analysis is available on a field, an **Analyze** button appears in the UI. Clicking it opens the Attachment Analysis modal where you can optionally provide a prompt and receive an AI-generated response about the file.
+- `Ai` access
+- `AiVision` access
+- A configured default AI provider
+- A vision-capable provider or profile
 
-## Access Control
+## Where It Appears
 
-!!! info
+The current implementation exposes analysis in two places:
 
-    Users must have the **AiVision** scope enabled in their Role to use this feature. By default, regular and portal users do not have access.
+- On `image` fields in detail view
+- In the image preview modal
 
-To grant access:
-
-1. Navigate to **Administration** → **Roles** → select the relevant role.
-2. In the **Scope** section, find **AiVision** and set it to **Enabled**.
-3. Save.
-
-## Supported File Types
-
-| Format | MIME Type         |
-|--------|-------------------|
-| JPEG   | `image/jpeg`      |
-| PNG    | `image/png`       |
-| GIF    | `image/gif`       |
-| WebP   | `image/webp`      |
+![Image Analysis Field Button](../../../_static/images/espocrm-extensions/ai/features/image-analysis-field-button.png)
 
 !!! note
 
-    The maximum supported file size is **10 MB**. Files exceeding this limit cannot be analyzed.
-
-## Compatible AI Providers
-
-Vision analysis requires an AI provider that supports image input. The following providers and models are supported:
-
-| Provider  | Supported Models              |
-|-----------|-------------------------------|
-| OpenAI    | GPT-4V, GPT-4o                |
-| Anthropic | Claude 3.x (all variants)     |
-| Google    | Gemini (vision-capable models)|
-
-!!! warning
-
-    If the configured AI profile uses a provider or model that does not support vision, the analysis will return an error. Make sure the selected AI profile is backed by a vision-capable model.
+    The current UI does not add per-file Analyze buttons to attachment-multiple lists.
 
 ## Using Image Analysis
 
-### On Image Fields
+1. Open a record with an image field.
+2. Click **Analyze**.
+3. Enter an optional prompt.
+4. Click **Analyze** in the modal.
+5. Review the result.
+6. Use **Copy** if you want to reuse the output elsewhere.
 
-In **detail** or **edit** mode, image fields with vision enabled display a camera / analyze button overlaid on the image thumbnail.
+![Image Analysis Modal](../../../_static/images/espocrm-extensions/ai/features/image-analysis-modal.png)
 
-1. Open a record containing an image field.
-2. Click the **Analyze** button (camera icon) on the image.
-3. The Attachment Analysis modal opens.
-4. Optionally enter a custom prompt (e.g., *"Does this document contain a signature?"*).
-5. Click **Analyze**.
-6. The AI result appears in the modal. Click **Copy** to copy the response to the clipboard.
+## Supported File Types
 
-### On Attachment Multiple Fields
+The backend accepts image attachments only.
 
-In **detail** mode, each individual file listed in an attachment-multiple field gets its own **Analyze** button.
+Supported formats:
 
-1. Open a record containing an attachment-multiple field.
-2. Find the attachment you want to analyze in the list.
-3. Click the **Analyze** button next to that attachment.
-4. Follow steps 3–6 from the image field workflow above.
+- `JPEG`
+- `PNG`
+- `GIF`
+- `WebP`
 
-!!! tip
+Maximum file size:
 
-    You can analyze each attachment independently. Use different prompts per attachment to ask targeted questions about each file.
+- `10 MB`
 
-## The Attachment Analysis Modal
+## Prompt Usage
 
-The modal provides:
+If you leave the prompt empty, the feature uses a default general image-analysis prompt.
 
-- A **prompt input** — optional; leave blank to use the default prompt.
-- An **Analyze** button — sends the request to the AI.
-- A **result area** — displays the AI response after analysis.
-- A **Copy** button — copies the AI response to the clipboard.
+Examples of useful prompts:
 
-### Default Prompt
+- "Extract the visible text from this image."
+- "Summarize the key information in this screenshot."
+- "Does this image contain a signature?"
+- "List the line items visible in this receipt."
 
-If no prompt is entered, the following prompt is used automatically:
+## Formula Support
 
-> Analyze this image and describe what you see in detail. Include any text, objects, colors, and notable details.
+Image analysis is also available in formula:
 
-!!! tip
+```text
+eblaAi\analyzeImage(ATTACHMENT_ID, PROMPT, PROFILE_ID)
+```
 
-    Provide a specific prompt to get more focused answers. For example: *"List all line items and totals visible in this invoice."* or *"What language is this document written in?"*
+It returns the analysis text, or an error string starting with `Error:`.
 
-## Formula Function
-
-Image analysis can be triggered programmatically in **Workflows** and **BPM processes** using the following formula function:
-
-**Format:** `eblaAi\analyzeImage(attachmentId, prompt, profileId)`
-
-| Parameter      | Type   | Required | Description                                                                 |
-|----------------|--------|----------|-----------------------------------------------------------------------------|
-| `attachmentId` | string | Yes      | The ID of the attachment to analyze.                                        |
-| `prompt`       | string | No       | A custom prompt. Uses the default description prompt if omitted or empty.   |
-| `profileId`    | string | No       | ID of the AI Profile to use. Uses the system default if omitted.            |
-
-**Returns:** The AI-generated analysis as a string. On failure, returns a string starting with `"Error:"`.
-
-!!! example
-
-    ```
-    $attachmentId = contractScanId;
-    $prompt = 'Extract the contract start date and end date from this document.';
-
-    $result = eblaAi\analyzeImage($attachmentId, $prompt);
-
-    if (string\startsWith($result, 'Error:')) {
-        description = 'Analysis failed';
-    } else {
-        description = $result;
-    }
-    ```
-
-!!! tip
-
-    Because errors are returned as plain strings starting with `"Error:"`, you can safely use `string\startsWith($result, 'Error:')` to branch your formula logic on failure without throwing exceptions.
-
-## Error Handling
-
-| Situation                              | Error Message Returned                                      |
-|----------------------------------------|-------------------------------------------------------------|
-| File type not supported                | `Error: Unsupported file type for vision analysis.`         |
-| AI provider does not support vision    | `Error: The selected AI provider does not support vision.`  |
-| Attachment not found                   | `Error: Attachment not found.`                              |
-
-All errors are returned as plain strings, making them safe to handle in both the UI and formula contexts.
+See [Formula](formula.md) for examples.
 
 ## Limitations
 
-- Only **image** files can be analyzed. PDF, Word, Excel, and other non-image attachment types are not supported.
-- Files larger than **10 MB** will not be processed.
-- Analysis quality depends on image resolution and the capabilities of the configured AI model.
-- GIF files are analyzed as a still image (first frame); animated content is not processed frame-by-frame.
+- Only image files are supported
+- PDF and document attachments are not analyzed by this feature
+- Results depend on image quality and model capability
+- A text-only provider or model will fail for vision requests
 
 ## Troubleshooting
 
 ### Analyze Button Not Visible
 
-**Cause:** The user's role does not have the **AiVision** scope enabled.
+Check:
 
-**Solution:** Grant **AiVision** scope access in **Administration** → **Roles** → select role → Scope section.
+- The role has `Ai` and `AiVision`
+- A default AI provider is configured
+- The record actually has an image attached
 
-### Error: Unsupported File Type
+### Vision Error
 
-**Cause:** The attachment is not a JPEG, PNG, GIF, or WebP image.
-
-**Solution:** Convert the file to a supported format before uploading, or use a different AI feature (such as Smart Paste) for text-based documents.
-
-### Error: Provider Does Not Support Vision
-
-**Cause:** The AI profile in use is backed by a text-only model.
-
-**Solution:** Switch to an AI profile that uses a vision-capable model (e.g., GPT-4o, Claude 3 Opus, or Gemini).
-
-### Analysis Result Is Inaccurate or Incomplete
-
-**Cause:** Low image quality, complex layout, or a vague prompt.
-
-**Solution:**
-- Use a higher-resolution image.
-- Provide a specific, targeted prompt instead of relying on the default.
-- Try a different AI profile with a more capable vision model.
+If the provider does not support image input, assign a vision-capable profile or change the default provider.
 
 ## Related Features
 
-- [Formula Functions](formula.md) — Use AI operations in workflows and BPM.
-- [Field Text Generation](field-text-generation.md) — Generate text for any field using AI.
-- [AI Profiles](ai-profiles.md) — Configure which AI provider and model is used.
-- [Access Control](access-control.md) — Manage user permissions for AI features.
+- [Image Generation](image-generation.md)
+- [Formula](formula.md)
+- [Access Control](access-control.md)

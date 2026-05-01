@@ -1,36 +1,74 @@
 # Email Analysis Panel
 
-The Email Analysis Panel provides an AI-powered analysis of an email thread directly on the Email detail view. It breaks down the conversation into structured sections to help you quickly understand the situation and decide on next steps.
+The Email Analysis panel appears on Email detail views and shows an AI-generated breakdown of the email thread.
 
-## Using the Email Analysis Panel
+## Requirements
 
-1. Open any Email record detail view.
-2. Locate the **AI Analysis** panel on the side of the record.
-3. Click the **Analyze** button in the panel header.
-4. The AI will process the full email thread and return a structured analysis.
+Users need:
 
-## Analysis Sections
+- `Ai` access
+- Read access to Email
+- A configured default AI provider
 
-The panel displays the analysis in the following sections:
+## How It Loads
 
-**Summary**
-A concise overview of the email thread, including the main topic and the parties involved.
+In the current implementation, the panel loads analysis automatically when the Email detail view is opened.
 
-**Key Insights**
-Important observations extracted from the thread, such as deadlines mentioned, commitments made, or open questions.
+Current behavior:
 
-**Suggested Actions**
-A set of recommended next steps displayed as icon cards. Each action card includes a colored icon that indicates the action type (e.g. reply, follow up, escalate, schedule meeting). Click an action card to use it as a starting point for your response.
+- No initial **Analyze** button is required to fetch the first result
+- Cached analysis can appear immediately on repeat views
+- The panel header includes a refresh button for re-analysis
 
-**Sentiment**
-An assessment of the overall tone and sentiment of the thread (e.g. positive, neutral, concerned, urgent).
+![Email Analysis Panel](../../../_static/images/espocrm-extensions/ai/features/email-analysis-panel.png)
+
+## Sections Shown in the Panel
+
+The panel currently shows up to four sections:
+
+### Summary
+
+A concise overview of the thread.
+
+### Action Items
+
+Structured action items extracted from the conversation.
+
+### Suggested Reply
+
+A ready-to-edit reply draft with:
+
+- **Use Reply**
+- **Copy**
+
+### Suggested Actions
+
+Suggested CRM actions presented as clickable cards, such as:
+
+- Create a related record
+- Update a related record
+- Post a note to the stream
+
+## What It Analyzes
+
+The analysis is based on the full thread context, not just the currently opened email body.
+
+## Re-analyzing
+
+Use the refresh icon in the panel header when:
+
+- A new reply has arrived
+- The thread changed
+- You want to regenerate the analysis
 
 ## Notes
 
-- The analysis covers the full email thread, not just the most recent message.
-- Each click of the **Analyze** button generates a fresh analysis by calling the AI.
-- Analysis results are not cached — running it again may produce slightly different results depending on the model's temperature setting.
+- The current panel does not expose separate **Sentiment** or **Key Insights** sections
+- Cached responses help the panel load faster and avoid unnecessary repeat token usage
+- **Use Reply** opens the compose modal with the suggested reply inserted above the original thread
 
-!!! important
+## Related Features
 
-    Make sure the AI Profile assigned to the Email entity has sufficient context defined to produce accurate analysis for your use case.
+- [Email Thread Analysis](email-thread-analysis.md)
+- [Email Reply](email-reply.md)
+- [AI Log](ai-log.md)

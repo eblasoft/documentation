@@ -1,56 +1,89 @@
 # Email Composer AI Toolbar
 
-The Email Composer AI Toolbar adds AI-powered action buttons directly inside the email compose and reply editor. These buttons help you draft, improve, and refine email content without leaving the composer.
+The Email Composer AI Toolbar adds AI actions directly inside the email editor for compose and reply workflows.
+
+In the current UI, the toolbar exposes three main actions:
+
+- **AI Draft**
+- **AI Reply**
+- **AI Polish**
 
 ## Requirements
 
-The AI toolbar buttons are visible when:
+Users need:
 
-- The user has **Ai** scope access (set in Roles)
-- A default AI provider is configured in Administration
+- `Ai` access
+- `AiEmailComposer` access
+- A configured default AI provider
 
-## Toolbar Buttons
+The buttons can appear in both HTML and plain-text composer modes.
 
-| Button | Icon | Action |
-|--------|------|--------|
-| AI Draft | ✨ Wand (purple) | Generate a full email draft from a short description |
-| AI Reply | ↩ Reply (blue) | Instantly generate a reply based on the current email body |
-| AI Polish | 💎 Gem (orange) | Improve writing quality of your draft |
+![Email Composer Toolbar](../../../_static/images/espocrm-extensions/ai/features/email-composer-toolbar.png)
 
 ## AI Draft
 
-Use this when you want to write an email from scratch.
+**AI Draft** is the guided drafting flow for writing a new email from scratch.
 
-1. Click the **AI Draft** button (✨ wand icon).
-2. A dialog will appear asking: *"What should the email be about?"*
-3. Enter a short description of your email.
+1. Click **AI Draft**.
+2. Enter what the email should be about.
+3. Optionally choose:
+   - **Tone**
+   - **Length**
 4. Click **Generate**.
-5. The AI will write the full email body for you.
+5. Review the generated preview.
+6. Click **Use This** to insert it into the editor.
+
+![AI Draft Modal](../../../_static/images/espocrm-extensions/ai/features/email-draft-modal.png)
 
 ## AI Reply
 
-Generates a reply automatically based on the email content currently in the body — no prompt needed.
+**AI Reply** generates a reply directly from the current email context.
 
-1. Click the **AI Reply** button (↩ reply icon).
-2. The AI reads the existing email body and generates an appropriate reply immediately.
-3. The reply is inserted above the quoted thread.
+Current behavior:
 
-!!! tip
+- No prompt dialog is shown
+- The action reads the current body and sender context
+- The generated reply is inserted above the existing thread
 
-    Use **AI Reply** when you want a quick first draft. The AI uses the sender information and email content as context — no additional input is required.
+This makes it useful for quick first-pass replies.
 
 ## AI Polish
 
-Improves the clarity, flow, and professionalism of your draft.
+**AI Polish** improves the user's draft text.
 
-1. Type your draft in the email body.
-2. Click the **AI Polish** button (💎 gem icon).
-3. The AI will rewrite your draft with improved phrasing and structure.
+Important behavior:
 
-!!! important
+- It rewrites only the draft portion
+- It does not rewrite the quoted thread below the reply
+- The quoted thread is preserved and re-appended automatically
 
-    **Polish** only processes your typed draft — it does not modify the quoted reply thread below your message. The quoted thread is preserved and re-appended automatically.
+## Undo
 
-!!! tip
+The composer keeps an undo stack for AI actions.
 
-    The AI writes in your CRM system language or your user language preference by default.
+Current behavior:
+
+- The previous body is stored before each successful AI action
+- Undo works across draft, reply, and polish
+- Undo is session-only and is not saved across refreshes
+
+## Plain-Text Mode
+
+When the email is not HTML, Ebla AI adds a small button row above the textarea with the same main actions:
+
+- **AI Draft**
+- **AI Reply**
+- **AI Polish**
+- **Undo**
+
+## Notes
+
+- The backend currently supports additional internal email actions, but the composer UI in this build exposes only Draft, Reply, and Polish
+- The language used by generated output follows the resolved user or system language context
+- The profile used is the configured **AI Email Composer Default Profile** when set
+
+## Related Features
+
+- [Email Reply](email-reply.md)
+- [Email Translation](email-translation.md)
+- [AI Profiles](ai-profiles.md)
