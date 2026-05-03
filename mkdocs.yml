@@ -123,6 +123,7 @@ nav:
   - Ebla Gantt: 'espocrm-extensions/gantt/index.md'
 
   - Ebla Number Pro: 'espocrm-extensions/number-pro/index.md'
+  - Ebla Units: 'espocrm-extensions/ebla-units/index.md'
   - Ebla Mask Field: 'espocrm-extensions/mask-field/index.md'
   - Ebla Rate Star Field: 'espocrm-extensions/rate/index.md'
   - Ebla Dynamic Logic Plus: 'espocrm-extensions/dynamic-logic-plus/index.md'
