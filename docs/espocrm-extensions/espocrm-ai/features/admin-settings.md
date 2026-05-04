@@ -2,11 +2,12 @@
 
 Global AI settings are managed from **Administration → AI Settings**. These settings control provider selection, feature defaults, token limits, response caching, translation behavior, Smart Paste visibility, and Create with AI visibility.
 
-![AI Settings Tabs](../../../_static/images/espocrm-extensions/ai/features/admin-settings-tabs.png)
 
 ## General Tab
 
 The **General** tab contains the core extension-wide settings.
+
+![AI Settings General Tap](../../../_static/images/espocrm-extensions/ai/features/admin-settings-general-tap.png)
 
 ### Default AI Provider
 
@@ -65,6 +66,7 @@ Unknown placeholders are left unchanged.
 
 The **Translate** tab contains language and email-translation settings.
 
+![AI Settings Translate Tab](../../../_static/images/espocrm-extensions/ai/features/admin-settings-translate-tab.png)
 ### AI Translate Languages
 
 It controls the language list shown by translation actions in text fields, varchar fields, WYSIWYG fields, and stream comments.
@@ -91,6 +93,8 @@ Set the prompt used for the email translation request.
     Email translation expects a translation prompt to be configured. For reliable use, set **AI Email Translate Default Prompt** explicitly.
 
 ## Token Limits Tab
+
+![AI Settings Token Limits Tab](../../../_static/images/espocrm-extensions/ai/features/admin-settings-token-limits-tab.png)
 
 ### Default Token Limit
 
@@ -124,6 +128,7 @@ Use cases:
 
 The response cache reuses identical AI responses for selected features.
 
+![AI Settings Response Cache Tab](../../../_static/images/espocrm-extensions/ai/features/admin-settings-response-cache-tab.png)
 ### Settings
 
 - **Response Cache** 
@@ -162,6 +167,7 @@ This tab lets you assign default profiles per feature.
 | **AI Admin Assistant Default Profile** | Admin Assistant |
 | **AI Email Translate Default Profile** | Email translation |
 
+![AI Settings AI Features Tab](../../../_static/images/espocrm-extensions/ai/features/admin-settings-ai-features-tab.png)
 ## Smart Paste Scopes
 
 The **Smart Paste Scopes** field controls where Smart Paste buttons appear.
