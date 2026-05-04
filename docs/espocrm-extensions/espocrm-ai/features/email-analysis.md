@@ -64,4 +64,3 @@ Use the refresh icon in the panel header when:
 
 - [AI Email Composer](email-compose.md)
 - [Email Reply](email-reply.md)
-- [AI Log](ai-log.md)

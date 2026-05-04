@@ -91,6 +91,5 @@ Use **AI Log** together with **AI Token Usage** when you need to answer question
 
 ## Related Features
 
-- [AI Log](ai-log.md)
 - [Access Control](access-control.md)
 - [Admin Settings](admin-settings.md)

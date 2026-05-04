@@ -24,7 +24,7 @@ The **Default AI Profile** is the fallback profile used when a feature does not 
 
 ### Global AI Instructions
 
-The **Global AI Instructions** field (`aiSystemInstructions`) lets you define text that is prepended to every AI request across the extension.
+The **Global AI Instructions** field lets you define text that is prepended to every AI request across the extension.
 
 Use this for:
 
@@ -67,7 +67,7 @@ The **Translate** tab contains language and email-translation settings.
 
 ### AI Translate Languages
 
-`aiTranslateLanguages` controls the language list shown by translation actions in text fields, varchar fields, WYSIWYG fields, and stream comments.
+It controls the language list shown by translation actions in text fields, varchar fields, WYSIWYG fields, and stream comments.
 
 Behavior:
 
@@ -88,20 +88,20 @@ Set the prompt used for the email translation request.
 
 !!! important
 
-    In the current implementation, email translation expects a translation prompt to be configured. For reliable use, set **AI Email Translate Default Prompt** explicitly.
+    Email translation expects a translation prompt to be configured. For reliable use, set **AI Email Translate Default Prompt** explicitly.
 
 ## Token Limits Tab
 
 ### Default Token Limit
 
-The **Default Token Limit** (`aiDefaultTokenLimit`) sets the fallback system-wide token quota for non-admin users.
+The **Default Token Limit** sets the fallback system-wide token quota for non-admin users.
 
 - `0` means unlimited
 - Applies only when the user does not have a personal override
 
 ### Token Limit Period
 
-The **Token Limit Period** (`aiTokenLimitPeriod`) defines the enforcement window:
+The **Token Limit Period** defines the enforcement window:
 
 - **Daily**
 - **Weekly**
@@ -113,7 +113,7 @@ Each user record has an **AI Monthly Token Limit** field. Even though the label 
 
 ### Max Tool-Call Iterations
 
-`aiMaxToolIterations` limits how many consecutive tool-call rounds the AI Chat engine can perform in one request.
+It limits how many consecutive tool-call rounds the AI Chat engine can perform in one request.
 
 Use cases:
 
@@ -126,8 +126,8 @@ The response cache reuses identical AI responses for selected features.
 
 ### Settings
 
-- **Response Cache** (`aiCacheEnabled`)
-- **Cache TTL** in days (`aiCacheTtlDays`)
+- **Response Cache** 
+- **Cache TTL** in days
 
 ### What Is Cached
 

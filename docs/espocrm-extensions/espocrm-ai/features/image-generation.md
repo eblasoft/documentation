@@ -2,14 +2,14 @@
 
 AI Image Generation creates new images from a text prompt and saves them as EspoCRM attachments.
 
-The generated image can then be attached to an `image` field or appended to an `attachment-multiple` field.
+The generated image can then be attached to an `Image` field or appended to an `Attachment Multiple` field.
 
 ## Requirements
 
 Users need:
 
 - `Ai` access
-- `AiVision` access
+- `Ai Vision` access
 - A configured default AI provider
 - A provider or profile that supports image generation
 
@@ -23,15 +23,15 @@ Image generation is opt-in per field.
 
 This works for:
 
-- `image`
-- `attachment-multiple`
+- `Image`
+- `Attachment Multiple`
 
 ## Where the Button Appears
 
 In the current UI:
 
-- `image` fields show the button in edit mode
-- `attachment-multiple` fields show an icon button in edit mode
+- `Image` fields show the button in edit mode
+- `Attachment Multiple` fields show an icon button in edit mode
 
 ![Image Generation Field Button](../../../_static/images/espocrm-extensions/ai/features/image-generation-field-button.png)
 
@@ -51,9 +51,9 @@ In the current UI:
 
 The current modal offers:
 
-- `square`
-- `landscape`
-- `portrait`
+- `Square`
+- `Landscape`
+- `Portrait`
 
 Provider-specific output dimensions depend on the selected provider and model.
 

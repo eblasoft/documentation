@@ -76,4 +76,3 @@ Typical output includes:
 
 - [AI Email Template Generatior](email-template-generator.md) - Generate email templates with placeholders
 - [AI Profiles](ai-profiles.md) - Configure provider, model, and behavior
-- [AI Log](ai-log.md) - Inspect the generated request and response

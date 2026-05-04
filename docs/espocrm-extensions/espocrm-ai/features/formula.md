@@ -17,10 +17,6 @@ The current build exposes the following functions:
 - `eblaAi\generateImage`
 - `eblaAi\generateSpeech`
 
-!!! note
-
-    Video generation is not exposed as a working formula function in the current build.
-
 ---
 
 ## eblaAi\textGenerate

@@ -103,4 +103,3 @@ Summary generation follows this priority:
 - [AI Profiles](ai-profiles.md)
 - [AI Prompts](ai-prompts.md)
 - [AI Chat Panel](ai-chat.md)
-- [AI Log](ai-log.md)

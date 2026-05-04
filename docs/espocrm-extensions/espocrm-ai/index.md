@@ -18,7 +18,7 @@ The extension includes:
 - Smart Paste and Create with AI for faster data entry
 - AI tools for text fields, stream comments, images, and speech
 - Formula functions for workflows and automations
-- Admin-facing tools such as AI Sandbox, AI Assistant, AI Log, and token usage monitoring
+- Admin tools such as AI Sandbox, AI Assistant, AI Log, and token usage monitoring
 
 ## Extension Video
 
@@ -47,7 +47,6 @@ The extension includes:
 - [AI Voice Generation (TTS)](features/voice-generation.md)
 - [AI Formula Functions](features/formula.md)
 - [AI Sandbox](features/sandbox.md)
-- [AI Log](features/ai-log.md)
 - [Token Usage & Limits](features/token-usage.md)
 
 ### Setup and Configuration

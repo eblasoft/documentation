@@ -86,12 +86,6 @@ In tool-enabled mode, this section shows:
 - Iteration count
 - Input and output token totals
 
-## Notes
-
-- The sandbox remembers the last selected target type, target record, profile, and prompt for convenience during the same browser session
-- It is intended for testing and experimentation
-- It does not directly replace admin confirmation and review for actual CRM changes
-
 ## Related Features
 
 - [AI Admin Assistant](admin-assistant.md)

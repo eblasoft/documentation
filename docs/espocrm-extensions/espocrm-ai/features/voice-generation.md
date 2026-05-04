@@ -1,12 +1,6 @@
 # AI Voice Generation
 
-Voice Generation is currently available as an API and formula capability, not as a user-facing field action in the installed build.
-
-In other words:
-
-- The backend can generate speech attachments
-- Formula can call speech generation
-- There is no current text-field or modal UI for end users
+Voice Generation is currently available as a formula capability only.
 
 ## Current Availability
 
@@ -30,13 +24,9 @@ See [Formula](formula.md) for usage examples.
 
 ## Provider Notes
 
-The current extension includes provider-specific speech generation support for selected providers such as OpenAI and Gemini.
+The extension includes provider-specific speech generation support for selected providers such as OpenAI and Gemini.
 
 Actual voice names and audio formats depend on the provider behind the resolved profile.
-
-## Important Note
-
-The older documentation flow that described a built-in **Text to Speech** button in field menus does not match the current UI and should not be relied on.
 
 ## Related Features
 
