@@ -63,6 +63,10 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
    - **Convert Email to Template** — instantly create a reusable Email Template from any existing email
    - **Create Contacts from Recipients** — auto-generate Contact records for unknown email addresses found in an email's From, To, CC, and BCC fields
    - **Reply to All** — a dedicated "Reply to All" button on the email detail view that includes full original-message metadata (From, Date, Subject, To, CC)
+
+<iframe width="650" height="315" src="https://www.youtube.com/embed/VJdLzVMDJ4E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ![Email Productivity Tools](../../_static/images/espocrm-extensions/email-plus/email_productivity_tools.png)
 
 7. ### Configurable Entity Actions from Email
