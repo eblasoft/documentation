@@ -134,7 +134,6 @@ The response cache reuses identical AI responses for selected features.
 The current implementation uses response caching for several feature APIs, including:
 
 - Email composer actions
-- Email thread analysis
 - Email template generation
 - PDF template generation
 - Field text actions

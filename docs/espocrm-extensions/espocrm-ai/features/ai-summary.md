@@ -4,13 +4,15 @@ The AI Summary Panel shows an AI-generated summary of the current record in the 
 
 The panel is designed to surface a concise overview of the record using the record fields, recent activity, selected relationships, and recent related communication.
 
+The generated summary is cached in the database.
+
 ![AI Summary Panel](../../../_static/images/espocrm-extensions/ai/features/ai-summary-panel.png)
 
 ## Requirements
 
 Users need:
 
-- `AiRecordSummary` access
+- `Ai Summary` access
 - Read access to the current record
 
 ## Enabling AI Summary for an Entity
@@ -33,11 +35,7 @@ When the panel opens, it first checks for an existing cached summary.
 Current behavior:
 
 - If a cached summary exists, it is displayed immediately
-- If no cached summary exists, the panel stays empty until the user generates the first summary
-
-!!! note
-
-    The current implementation does not auto-generate the first summary on initial panel open.
+- If no cached summary exists, the panel stays empty until the user clicks the generate button
 
 ## Generating and Regenerating
 
@@ -93,12 +91,6 @@ Summary generation follows this priority:
 1. Entity-specific **AI Summary Prompt**
 2. Admin-level fallback summary prompt if configured
 3. Built-in default summary prompt
-
-## Summary Storage
-
-The generated summary is cached in the **AiSummary** entity for that record.
-
-The generation request is also logged in **AI Log**.
 
 ## Tips
 

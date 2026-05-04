@@ -7,7 +7,7 @@ Email Translation translates an email into the current user's language using AI.
 Users need:
 
 - `Ai` access
-- `AiEmailComposer` access
+- `Ai Email Composer` access
 - Read access to Email
 - A configured default AI provider
 
@@ -16,13 +16,9 @@ Administrators also need:
 - **Enable Email Translate** turned on in **AI Settings -> Translate**
 - A configured **AI Email Translate Default Prompt**
 
-!!! important
-
-    In the current build, the translation prompt is required. If no prompt is configured, the translation request fails with a prompt-not-found error.
-
 ## Translating an Email
 
-1. Open an Email detail view.
+1. Open an Email.
 2. Click **Translate**.
 3. Wait for the translation to complete.
 4. Review the translated text in the modal.
@@ -62,29 +58,6 @@ This makes it possible to create translation prompts that preserve tone or forma
 You can assign **AI Email Translate Default Profile** if you want translations to use a dedicated provider or model.
 
 If no translation profile is assigned, the feature falls back to the normal default profile behavior.
-
-## Troubleshooting
-
-### Translate Button Not Visible
-
-Check:
-
-- `Ai` and `AiEmailComposer` are enabled for the role
-- The user can read Email
-- **Enable Email Translate** is turned on
-- A default AI provider is configured
-
-### Prompt Not Found
-
-Set **AI Email Translate Default Prompt** in **Administration -> AI Settings -> Translate**.
-
-### Translation Fails
-
-Check:
-
-- Provider configuration
-- Token limits
-- The assigned translation profile, if one is configured
 
 ## Related Features
 

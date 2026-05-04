@@ -9,10 +9,9 @@ It is useful for turning business cards, email signatures, copied messages, meet
 Users need:
 
 - `Ai` access
-- `AiSmartPaste` access
+- `Ai Smart Paste` access
 - A configured default AI provider
 - Create access for new-record Smart Paste
-- Edit access when filling an already opened new form
 
 Administrators also need to configure visibility in **Administration -> AI Settings -> General -> Smart Paste Scopes**.
 
@@ -64,19 +63,6 @@ When used inside a new-record form, Smart Paste applies the extracted values dir
 There is also a keyboard shortcut:
 
 - `Ctrl+Alt+V`
-
-## Scope Visibility Rules
-
-The `smartPasteScopes` setting controls where the button is shown.
-
-Current behavior:
-
-- On main list pages and new-record forms, an empty scope list means Smart Paste is available on all customizable entities
-- On relationship panels, Smart Paste appears only for explicitly listed scopes
-
-!!! note
-
-    For the most predictable behavior across all locations, explicitly select the entities you want in **Smart Paste Scopes**.
 
 ## What Smart Paste Can Fill
 
@@ -132,30 +118,6 @@ Typical result:
 - Semi-structured input usually performs better than noisy paragraphs
 - Add helpful field tooltips in Entity Manager for better matching
 - Review enum, relationship, and date values carefully before saving
-
-## Troubleshooting
-
-### Button Not Visible
-
-Check:
-
-- The role has `Ai` and `AiSmartPaste`
-- A default AI provider is configured
-- The entity is included in **Smart Paste Scopes**
-- The user has create or edit access for the target entity
-
-### Clipboard Error
-
-If the browser blocks clipboard access, Smart Paste cannot read the copied text. Allow clipboard access and try again.
-
-### Inaccurate Results
-
-If the extracted values are incomplete or wrong:
-
-- Try cleaner source text
-- Include more context in the copied text
-- Improve field labels and tooltips
-- Review the form manually before saving
 
 ## Related Features
 

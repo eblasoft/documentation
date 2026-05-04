@@ -9,7 +9,7 @@ It can generate new text, improve existing wording, shorten or expand content, t
 Users need:
 
 - `Ai` access
-- `AiFieldAction` access
+- `Ai Field Action` access
 - A configured default AI provider
 
 The field itself must also have **Enable AI text generation** enabled in Entity Manager.
