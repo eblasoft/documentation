@@ -65,6 +65,7 @@ The panel compares:
 
 If the record was modified after the summary was generated, the panel marks the summary as **outdated**.
 
+![Outdated Summary Indicator](../../../_static/images/espocrm-extensions/ai/features/ai-summary-outdated-indicator.png)
 ## What Data Is Included in the Summary Context
 
 The current implementation can include:
