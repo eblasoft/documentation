@@ -64,7 +64,6 @@ If the AI cannot confidently map the description to specific fields, the modal s
 
 - Mention names, companies, dates, priorities, and statuses explicitly
 - If an important field is missing, refine the description and click **Regenerate**
-- Use AI Create for first-pass data entry, then finalize the record in the standard form
 
 ## Related Features
 

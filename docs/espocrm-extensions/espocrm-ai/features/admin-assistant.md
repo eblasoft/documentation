@@ -6,7 +6,7 @@ Unlike the record-level **AI Chat** panel, this feature runs in **admin mode** a
 
 !!! note
 
-    Experimental Feature — The AI Admin Assistant may use significant tokens and can produce incorrect answers. Always verify critical changes before applying them.
+    Experimental Feature — The AI Admin Assistant may use significant tokens and can produce incorrect answers. Always verify critical changes before applying them. Use it in a Sandbox environment only.
 
 ![AI Admin Assistant](../../../_static/images/espocrm-extensions/ai/features/ai-admin-assistant-page.png)
 

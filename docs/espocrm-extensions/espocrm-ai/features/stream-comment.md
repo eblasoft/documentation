@@ -9,7 +9,7 @@ It helps users refine, translate, or rewrite comments before posting them to the
 Users need:
 
 - `Ai` access
-- `AiFieldAction` access
+- `Ai Field Action` access
 - A configured default AI provider
 
 ## Using AI in the Stream

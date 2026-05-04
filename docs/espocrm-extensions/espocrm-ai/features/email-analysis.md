@@ -12,13 +12,12 @@ Users need:
 
 ## How It Loads
 
-In the current implementation, the panel loads analysis automatically when the Email detail view is opened.
+When the panel opens, it first checks for an existing cached analysis.
 
 Current behavior:
 
-- No initial **Analyze** button is required to fetch the first result
-- Cached analysis can appear immediately on repeat views
-- The panel header includes a refresh button for re-analysis
+- If a cached analysis exists, it is displayed immediately
+- If no cached analysis exists, the panel stays empty until the user clicks the Analyze Email button
 
 ![Email Analysis Panel](../../../_static/images/espocrm-extensions/ai/features/email-analysis-panel.png)
 
@@ -38,7 +37,7 @@ Structured action items extracted from the conversation.
 
 A ready-to-edit reply draft with:
 
-- **Use Reply**
+- **Use Reply** opens the compose modal with the suggested reply inserted above the original thread
 - **Copy**
 
 ### Suggested Actions
@@ -61,14 +60,8 @@ Use the refresh icon in the panel header when:
 - The thread changed
 - You want to regenerate the analysis
 
-## Notes
-
-- The current panel does not expose separate **Sentiment** or **Key Insights** sections
-- Cached responses help the panel load faster and avoid unnecessary repeat token usage
-- **Use Reply** opens the compose modal with the suggested reply inserted above the original thread
-
 ## Related Features
 
-- [Email Thread Analysis](email-thread-analysis.md)
+- [AI Email Composer](email-compose.md)
 - [Email Reply](email-reply.md)
 - [AI Log](ai-log.md)

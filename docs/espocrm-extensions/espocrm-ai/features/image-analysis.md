@@ -9,7 +9,7 @@ It is intended for image-based attachments such as screenshots, scans, photos, a
 Users need:
 
 - `Ai` access
-- `AiVision` access
+- `Ai Vision` access
 - A configured default AI provider
 - A vision-capable provider or profile
 
@@ -17,14 +17,10 @@ Users need:
 
 The current implementation exposes analysis in two places:
 
-- On `image` fields in detail view
+- On `Image` fields in detail view
 - In the image preview modal
 
 ![Image Analysis Field Button](../../../_static/images/espocrm-extensions/ai/features/image-analysis-field-button.png)
-
-!!! note
-
-    The current UI does not add per-file Analyze buttons to attachment-multiple lists.
 
 ## Using Image Analysis
 
@@ -81,20 +77,6 @@ See [Formula](formula.md) for examples.
 - PDF and document attachments are not analyzed by this feature
 - Results depend on image quality and model capability
 - A text-only provider or model will fail for vision requests
-
-## Troubleshooting
-
-### Analyze Button Not Visible
-
-Check:
-
-- The role has `Ai` and `AiVision`
-- A default AI provider is configured
-- The record actually has an image attached
-
-### Vision Error
-
-If the provider does not support image input, assign a vision-capable profile or change the default provider.
 
 ## Related Features
 

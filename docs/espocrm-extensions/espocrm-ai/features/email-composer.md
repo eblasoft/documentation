@@ -13,7 +13,7 @@ In the current UI, the toolbar exposes three main actions:
 Users need:
 
 - `Ai` access
-- `AiEmailComposer` access
+- `Ai Email Composer` access
 - A configured default AI provider
 
 The buttons can appear in both HTML and plain-text composer modes.
@@ -78,7 +78,6 @@ When the email is not HTML, Ebla AI adds a small button row above the textarea w
 
 ## Notes
 
-- The backend currently supports additional internal email actions, but the composer UI in this build exposes only Draft, Reply, and Polish
 - The language used by generated output follows the resolved user or system language context
 - The profile used is the configured **AI Email Composer Default Profile** when set
 

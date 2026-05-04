@@ -7,6 +7,7 @@ This page covers the AI generation flow inside the Email Template form itself.
 Users need:
 
 - `Ai` access
+- Create access to `EmailTemplate`
 - A configured default AI provider
 
 ## Where to Find It
@@ -15,6 +16,11 @@ Users need:
 2. Click the **AI Generate** button in the form dropdown list.
 
 ![Email Template Form Button](../../../_static/images/espocrm-extensions/ai/features/email-template-form-button.png)
+
+OR
+
+1. Open **Email Templates**.
+2. Click **Generate Email Template** in the list view.
 
 ## Modal Behavior
 
@@ -69,14 +75,8 @@ Current actions:
 
 ![Email Template Body Toolbar](../../../_static/images/espocrm-extensions/ai/features/email-template-body-toolbar.png)
 
-## Notes
-
-- The list-view generator and form-level generator are related but slightly different entry points
-- The list-view flow always starts a new template creation flow
-- The form-level flow is better when you are already editing a template and want the AI result inserted directly
-
 ## Related Features
 
-- [Email Template Generation](email-template.md)
+- [Email Template Generatior](email-template-generator.md)
 - [AI Prompts](ai-prompts.md)
 - [AI Profiles](ai-profiles.md)
