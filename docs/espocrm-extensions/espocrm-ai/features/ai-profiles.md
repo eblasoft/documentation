@@ -122,6 +122,8 @@ Navigate to **Administration → AI Settings → AI Features** and assign:
 - Admin Assistant profile
 - Email translation profile
 
+![Per-Feature](../../../_static/images/espocrm-extensions/ai/setup/per-feature-profiles.png)
+
 ### Per Entity in Entity Manager
 
 For record-level features, you can assign profiles per entity:
