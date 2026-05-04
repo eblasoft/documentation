@@ -10,6 +10,13 @@ The extension adds a **Map** view mode to entity list views.
 
 ![Map view example](../../_static/images/espocrm-extensions/ebla-open-street-map/map-list.png)
 
+---
+## Extension video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TCAQxWudWcg" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Added Entity Parameters
 
 | Parameter                | Description |
