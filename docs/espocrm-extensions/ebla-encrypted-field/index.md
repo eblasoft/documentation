@@ -1,15 +1,15 @@
 ---
 status: new
 icon: material/shield-lock
-title: Encrypted Fields - EspoCRM
+title: Encrypted Field - EspoCRM
 description: Add encrypted custom fields to EspoCRM with masked values and optional decrypt or export access for authorized users.
 ---
 
-# Encrypted Fields <a href="https://www.eblasoft.com.tr/espocrm-extension-page/encrypted-fields" target="_blank" id="ext-version" data-id="6388827c850db1334"></a>
+# Encrypted Field <a href="https://www.eblasoft.com.tr/espocrm-extension-page/encrypted-field" target="_blank" id="ext-version" data-id="6388827c850db1334"></a>
 
 ## Overview
 
-**Encrypted Fields** adds an **Encrypted** field type to EspoCRM for storing sensitive text safely.
+**Encrypted Field** adds an **Encrypted** field type to EspoCRM for storing sensitive text safely.
 
 It is designed for values that should not appear in normal record views, API reads, or standard exports.
 
@@ -20,9 +20,11 @@ By default:
 - normal record reads do not reveal plaintext,
 - standard export does not include the encrypted value.
 
+![espocrm-encrypted-field-new-field-type.png](../../_static/images/espocrm-extensions/encrypted-field/espocrm-encrypted-field-new-field-type.png)
+
 ## What This Extension Helps With
 
-Use **Encrypted Fields** when you need to store information such as:
+Use **Encrypted Field** when you need to store information such as:
 
 - API keys,
 - passwords or access tokens,
@@ -41,7 +43,7 @@ Use **Encrypted Fields** when you need to store information such as:
 
 After installation, open:
 
-`Administration → Encrypted Fields`
+`Administration → Encrypted Field`
 
 ### Default Encryption Profile
 
@@ -73,7 +75,7 @@ The extension manages encryption keys from the same administration page.
 
 Each available encryption profile has its own key field.
 
-![Encrypted Fields Settings](../../_static/images/espocrm-extensions/encrypted-fields/espocrm-encrypted-fields-settings.png)
+![Encrypted Field Settings](../../_static/images/espocrm-extensions/encrypted-field/espocrm-encrypted-field-settings.png)
 !!! warning
     Changing an existing key without a controlled migration can make previously saved values unreadable.
 
@@ -111,7 +113,7 @@ Optional.
 - Leave it empty to use the default encryption profile.
 - Choose a specific profile only when that field needs a different encryption setup.
 
-![Field Options](../../_static/images/espocrm-extensions/encrypted-fields/espocrm-encrypted-fields-options.png)
+![Field Options](../../_static/images/espocrm-extensions/encrypted-field/espocrm-encrypted-field-options.png)
 
 #### Allow Privileged Decrypt
 
@@ -139,7 +141,7 @@ When enabled, authorized users can export the field value using the dedicated pr
 - Users with the correct permission see a **Privileged Export** mass action.
 - This action can export decrypted values only for fields that explicitly allow it.
 
-![Privileged Export](../../_static/images/espocrm-extensions/encrypted-fields/espocrm-encrypted-fields-privileged-export.png)
+![Privileged Export](../../_static/images/espocrm-extensions/encrypted-field/espocrm-encrypted-field-privileged-export.png)
 
 ## Permissions
 
@@ -151,7 +153,6 @@ To use **Decrypt**, all of the following must be true:
 2. **Allow Privileged Decrypt** is enabled for that field.
 3. The user has **Encrypted Field Decrypt Permission** in their role.
 4. The user has read access to the record.
-5. The user has read access to the field.
 
 ### Privileged Export
 
@@ -162,6 +163,25 @@ To use privileged export, all of the following must be true:
 3. The user can read the target records.
 4. The user can read the target field.
 5. **Allow Privileged Export** is enabled for that field.
+
+## Troubleshooting
+
+### Role does not show Encrypted Field permissions
+
+If you do not see **Encrypted Field Decrypt Permission** or **Encrypted Field Export Permission** in Role create/edit:
+
+1. Run the module after-install hook again.
+2. Rebuild and clear cache.
+3. Refresh the browser and open Role edit again.
+
+After-install patches `Role.detail` layout and writes a custom layout snapshot when needed.
+
+```zsh
+cd /Users/eymenelkum/Work/CRMProjects/crm-extensions
+node ext-build-new.js --after-install --module=ebla-encrypted-field
+php rebuild.php
+php clear_cache.php
+```
 
 ## Important Notes
 

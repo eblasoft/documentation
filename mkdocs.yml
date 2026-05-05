@@ -124,7 +124,7 @@ nav:
 
   - Ebla Number Pro: 'espocrm-extensions/number-pro/index.md'
   - Ebla Units: 'espocrm-extensions/ebla-units/index.md'
-  - Encrypted Fields: 'espocrm-extensions/encrypted-fields/index.md'
+  - Encrypted Field: 'espocrm-extensions/ebla-encrypted-field/index.md'
   - Ebla Mask Field: 'espocrm-extensions/mask-field/index.md'
   - Ebla Rate Star Field: 'espocrm-extensions/rate/index.md'
   - Ebla Dynamic Logic Plus: 'espocrm-extensions/dynamic-logic-plus/index.md'

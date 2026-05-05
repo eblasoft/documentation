@@ -34,7 +34,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 <div class="grid cards minimal" markdown>
 - :material-pound: **[Ebla Number Pro](espocrm-extensions/number-pro/index.md)**
 - :material-ruler: **[Ebla Units](espocrm-extensions/ebla-units/index.md)**
-- :material-shield-lock: **[Encrypted Fields](espocrm-extensions/encrypted-fields/index.md)**
+- :material-shield-lock: **[Encrypted Field](espocrm-extensions/ebla-encrypted-field/index.md)**
 - :material-form-textbox-password: **[Ebla Mask Field](espocrm-extensions/mask-field/index.md)**
 - :material-star: **[Ebla Rate Star Field](espocrm-extensions/rate/index.md)**
 - :material-function-variant: **[Ebla Dynamic Logic Plus](espocrm-extensions/dynamic-logic-plus/index.md)**

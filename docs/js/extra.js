@@ -29,7 +29,7 @@ function updateWebLink() {
         'work-log': 'espocrm-work-log',
         'event-plus': 'espocrm-event-plus',
         'mask-field': 'espocrm-mask-field',
-        'encrypted-fields': 'encrypted-fields',
+        'ebla-encrypted-field': 'ebla-encrypted-field',
         'admin-pro': 'espocrm-admin-pro',
         'generic-filter': 'espocrm-generic-filter',
         'kanban-multiple': 'espocrm-kanban-multiple',
