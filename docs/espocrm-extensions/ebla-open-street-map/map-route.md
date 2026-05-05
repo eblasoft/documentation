@@ -10,6 +10,13 @@ The extension adds a **Map Route** field type that builds a route from multiple 
 
 ![Route field example](../../_static/images/espocrm-extensions/ebla-open-street-map/route-field.jpg)
 
+---
+## Extension video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kzlR_BCxxko" title="Eblasoft | AI Module for Espocrm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ## Generated Route Fields
 
 When a route field is created, it also creates related fields:
