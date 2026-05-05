@@ -49,6 +49,24 @@ This is the default encryption option used when a field does not choose a specif
 
 In most cases, you only need to choose the default once and keep using it.
 
+### Encryption Methods
+
+The extension includes multiple encryption methods. For most clients, the practical difference is about environment preference, not day-to-day usage.
+
+- **Default (AES-256-GCM)**
+  - Recommended for most clients.
+  - Modern, widely supported, and secure for new encrypted values.
+
+- **ChaCha20-Poly1305**
+  - Also modern and secure.
+  - Can be a good alternative profile when you want a non-AES method.
+
+- **AES-256-CBC + HMAC-SHA256**
+  - Secure when combined with HMAC integrity protection.
+  - Useful mainly for compatibility requirements in some environments.
+
+In short: use **Default (AES-256-GCM)** unless you have a specific reason to select another supported profile.
+
 ### Encryption Keys
 
 The extension manages encryption keys from the same administration page.
@@ -69,6 +87,8 @@ It shows:
 - whether its key is available,
 - whether it can be used for encryption and decryption,
 - any warnings that require administrator attention.
+
+If no default profile is explicitly selected yet, the extension uses **Default (AES-256-GCM)** as the effective default.
 
 ## Creating an Encrypted Field
 
@@ -149,6 +169,8 @@ To use privileged export, all of the following must be true:
 - Normal record reads do not reveal plaintext values.
 - Decrypt and export access are always controlled by role permission and field settings.
 - If you plan to change encryption keys, do so carefully and with a migration plan.
+- If you are unsure which encryption method to choose, keep **Default (AES-256-GCM)**.
+- This first release does not include a legacy compatibility profile.
 
 ## Change Log
 
