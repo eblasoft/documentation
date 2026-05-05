@@ -30,6 +30,10 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
    - Ensure consistent branding and formatting across all email communications
 ![Global Email Styles](../../_static/images/espocrm-extensions/email-plus/global_email_styles.png)
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/-4AhiJg6JJs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 3. ### Signature Templates
    - Create reusable email templates marked as **Signature Templates**
    - Optionally bind a signature template to a specific sender domain so it is applied automatically based on the "From" address
@@ -58,6 +62,9 @@ description: Ebla Email Plus for EspoCRM — advanced email tracking, smart filt
       - **Plain Text (`plain`)** — same as HTML mode, but the body is plain text instead of HTML
 ![Enhanced Mass Email](../../_static/images/espocrm-extensions/email-plus/mass_email.png)
 
+<iframe width="650" height="315" src="https://www.youtube.com/embed/sK1k31-JqUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 6. ### Email Productivity Tools
    - **Download as EML** — export any email as a standard `.eml` file that can be opened in any email client
    - **Convert Email to Template** — instantly create a reusable Email Template from any existing email
