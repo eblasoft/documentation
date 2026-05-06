@@ -41,7 +41,9 @@ These workflows are controlled from `Administration => Internal Chat`.
 
 Record previews respect ACL. Users without access do not see the record details.
 
-[Image placeholder: Record and link previews]
+
+<img width="451" height="727" alt="Image" src="https://github.com/user-attachments/assets/acb2a98c-79b7-485f-b000-d8528423fd56" />
+
 
 ---
 
