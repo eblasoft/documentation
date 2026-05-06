@@ -27,7 +27,9 @@ This keeps side discussions attached to the original message without filling the
 
 These workflows are controlled from `Administration => Internal Chat`.
 
-[Image placeholder: Threads polls and scheduled messages]
+
+<img width="447" height="727" alt="Image" src="https://github.com/user-attachments/assets/f10f8bcd-73a3-4657-9a4b-600be088b018" />
+
 
 ---
 
