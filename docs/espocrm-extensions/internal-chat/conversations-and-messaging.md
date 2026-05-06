@@ -23,7 +23,9 @@ Internal Chat uses the same room model in both the floating widget and the full-
 
 Most conversation controls are managed from `Administration => Internal Chat`.
 
-[Image placeholder: New conversation and group creation]
+
+<img width="448" height="728" alt="Image" src="https://github.com/user-attachments/assets/726f13c1-4e68-4b4e-9ad3-86b5c44743bd" />
+
 
 ---
 
