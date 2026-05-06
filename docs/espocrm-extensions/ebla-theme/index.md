@@ -11,9 +11,34 @@ description: Ebla Theme is a new theme for EspoCRM. Change colors, add backgroun
 
 **Ebla Theme** gives your EspoCRM a fresh, professional look with full control over colors, branding, and visual styles. You can customize the interface to match your company identity without touching any code.
 
+It also supports per-theme visual profiles with **Look And Feel**, plus quick navbar switchers for theme and language.
+
 > Go to **Administration** → **Ebla Theme** to get started.
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/UJX262flBZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![ebla-theme-language-settings](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-language-settings.png)
+
+---
+
+## Look and Feel Profiles
+
+The **Look and Feel** feature lets you create multiple style profiles and assign them to specific themes.
+
+> **Best practice:** Use Look And Feel profiles for theme-specific colors. Keep global color fields in Ebla Theme settings empty unless you need the same color overrides across all themes.
+
+- Create a profile with custom colors and assign it to one or more themes.
+- Add profile-level custom CSS directly on each Look and Feel record.
+- Set a **default profile per theme** from **Administration → User Interface**.
+- Users can switch between available profiles using the **palette icon** in the top navigation.
+- If only one profile is available for the active theme, the switcher is hidden automatically.
+- Profiles with no theme assigned apply to **all themes**.
+- On fresh installs with no Look And Feel records, starter profiles are created automatically (one per theme) and mapped as defaults per theme.
+- Existing environments are not overwritten; starter mapping runs only when no Look And Feel profiles exist.
+- In switcher dropdowns, the active option is shown with brand color + bold text (no left-side check icon spacing).
+
+![Look and Feel](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-login-screen-look-and-feel.png)
+
+The system resolves profile names from their IDs at runtime, so renaming a profile is always reflected correctly without any manual updates.
+
 ---
 
 ## Key Features
@@ -50,6 +75,7 @@ Responsive behavior:
 You can still add a **footer** to the login page for extra information or links.
 
 ![ebla-theme-login-screen.png](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-login-screen.png)
+
 ### 2. Favicon
 
 Upload a custom favicon (browser tab icon) in both standard and large sizes. The favicon is displayed in the browser tab and bookmarks, keeping your brand consistent everywhere.
@@ -107,34 +133,30 @@ Choose between the standard **Font Awesome** icon set and **Font Awesome Pro** f
 
 Enable a language switcher in the top navigation bar so users can change their interface language directly without going into preferences.
 
+- Controlled by **Active Languages** in Ebla Theme settings.
+- If **Active Languages** is empty, the language switcher is hidden.
+- The dropdown order follows your **Active Languages** setting order.
+
+The selected language is highlighted using your active brand primary color and bold text for better visibility.
+
 ![Ebla Theme Language Switcher](../../_static/images/espocrm-extensions/ebla-theme/ebla-theme-language-switcher.png)
 
-### 9. Admin LTE Elements
+### 9. Theme Switcher
+
+Enable theme switching from the top navigation bar. Admins can control available themes and their order with **Active Themes** in Ebla Theme settings.
+
+- Includes a **Default** option (uses the system theme).
+- Hidden automatically when no active themes are configured.
+- The dropdown order follows your **Active Themes** setting order.
+- Selected item is highlighted with brand color and bold style.
+
+### 10. Admin LTE Elements
 
 Ebla Theme includes styling support for Admin LTE elements such as info boxes, stat cards, and chat widgets. This is useful when building custom dashlets or portal pages that rely on Admin LTE components.
 
-### 10. Site Meta Tags
+### 11. Site Meta Tags
 
 Set custom site meta tags from the settings panel. This controls how your CRM appears in browser tabs, search engines, and link previews.
-
----
-
-## Look and Feel Profiles
-
-The **Look and Feel** feature lets you create multiple style profiles and assign them to specific themes.
-
-- Create a profile with custom colors and assign it to one or more themes.
-- Add profile-level custom CSS directly on each Look and Feel record.
-- Set a **default profile per theme** from **Administration → User Interface**.
-- Users can switch between available profiles using the **palette icon** in the top navigation.
-- If only one profile is available for the active theme, the switcher is hidden automatically.
-- Profiles with no theme assigned apply to **all themes**.
-
-![Look and Feel](../../_static/images/espocrm-extensions/ebla-theme/look-and-feel.png)
-
-The system resolves profile names from their IDs at runtime, so renaming a profile is always reflected correctly without any manual updates.
-
----
 
 ## Change Log
 
