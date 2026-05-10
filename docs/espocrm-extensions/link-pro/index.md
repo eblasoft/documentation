@@ -2,22 +2,158 @@
 status: featured
 icon: material/link-box-variant
 title: Ebla Link Pro - EspoCRM
-description: Ebla Link Pro for Espocrm to let link multiple fields show as full inline list view in detail views. make your custom Invoice entity easily.
+description: Ebla Link Pro for EspoCRM displays Link Multiple and Link One fields as embedded record forms and inline related lists.
 ---
 
-# Ebla Multiple Link Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-link-pro" target="_blank" id="ext-version" data-id="65eab79bd308f0633"></a>
+# Ebla Link Pro <a href="https://www.eblasoft.com.tr/espocrm-extension-page/espocrm-link-multiple-inline-form" target="_blank" id="ext-version" data-id="63495a03a945d438f"></a>
 
 ## Overview
 
-**Ebla Multiple Link Pro** upgrades standard "Link Multiple" and "Link One" fields by rendering them as interactive lists inside the record view. Instead of simple tags, linked records appear in a full grid supporting inline editing, custom layouts, footer calculations, and direct record creation.
+**Ebla Link Pro** turns standard EspoCRM relationship fields into richer record screens. Link Multiple fields can be shown as inline lists with configurable columns, row actions, inline editing, footer totals, quick creation, and selection buttons. Link One fields can be shown as an embedded form for the linked record.
 
-The extension adapts its features based on the link type:
+Use it when users need to work with related records without leaving the parent record. Common examples include order items on an order, invoice lines on an invoice, products on a quote, or any child records that should be created and maintained inside the parent detail view.
 
-* **Link-One:** Only **Enable Form** and layout options are shown. The field displays the full linked record with all its fields.
-* **Many-to-Many:** Shows Enable Form, Row Action Items, and both the parent and layout fields.
-* **One-to-Many:** This is the most feature-rich mode. All options are available, including **Enable Form**, **Row Actions**, **Copy Fields**, **Footer Sum Fields**, and **Mapping**. Crucially, **this relationship type supports the "Middle Entity" configuration**, making it ideal for managing complex relationships that require extra attributes (like "Order Items" in an Order).
+![Ebla Link Pro overview](../../_static/images/espocrm-extensions/link-pro/overview.png)
 
-![link-pro-Overview](../../_static/images/espocrm-extensions/link-pro/overview.png)
+---
+
+## Requirements
+
+* EspoCRM 9.3 or later.
+* PHP 8.1 or later.
+* The field must be configured in **Administration** > **Entity Manager** > the target entity > **Fields**.
+
+After changing field settings, rebuild EspoCRM metadata if the system does not apply the change immediately.
+
+---
+
+## Relationship Support
+
+### Link One
+
+For Link One fields, enable the form to display the linked record directly inside the parent record. You can choose the detail layout and edit layout used for the embedded record.
+
+This is useful for one-to-one details where the linked record should feel like part of the parent form.
+
+### One-to-Many
+
+One-to-Many relationships provide the full inline list experience:
+
+* Add rows directly from the parent record.
+* Edit child record fields inline.
+* Select existing records when enabled.
+* Create records in a modal when enabled.
+* Configure row actions such as view, edit, unlink, and remove.
+* Calculate footer totals and map them back to parent fields.
+* Use a manual custom order field for drag-and-drop sorting.
+
+![Inline form list](../../_static/images/espocrm-extensions/link-pro/form-list.png)
+
+### Many-to-Many
+
+Many-to-Many fields can be displayed as a related list and can use available actions such as view, edit, unlink, and remove. Inline editing is not supported for Many-to-Many fields; users open the linked record or the related middle record to edit its data.
+
+---
+
+## Middle Entity Setup
+
+Use **Middle Link** when a One-to-Many child entity acts as the junction between the parent record and another target record.
+
+Example:
+
+* **Order** has many **Order Items**.
+* **Order Item** links to **Product**.
+* The Order record displays Order Items inline, while each row can point to a Product.
+
+This pattern is useful when the relationship needs its own fields, such as quantity, price, discount, notes, or custom status.
+
+![Middle entity example](../../_static/images/espocrm-extensions/link-pro/middle-entity.png)
+![Middle entity settings](../../_static/images/espocrm-extensions/link-pro/middle-entity-setting.png)
+
+Middle Entity options:
+
+* **Middle Link** selects the field on the child entity that points to the target record.
+* **Is Middle Link Unique** prevents selecting the same target record more than once.
+* **Open Middle Entity** controls whether row clicks open the child record or the target record.
+* **Copy Fields** copies selected values from the target record into the child record when selecting.
+
+### Parent Link Middle Fields
+
+If the selected middle field is a Parent field, Link Pro detects the allowed parent entity types and shows separate select buttons for each type, such as **Select Account**, **Select Contact**, or **Select Opportunity**.
+
+![Parent link middle entity](../../_static/images/espocrm-extensions/link-pro/middle-entity-parent-link.png)
+
+---
+
+## Footer Totals
+
+Footer totals calculate numeric fields in the inline list. You can show totals under the list and map a total into a field on the parent record.
+
+Example:
+
+* Sum **Order Item > Amount**.
+* Map the result to **Order > Total Amount**.
+* The parent field updates while users edit rows.
+
+![Footer calculations](../../_static/images/espocrm-extensions/link-pro/footer-calculations.png)
+![Footer calculation settings](../../_static/images/espocrm-extensions/link-pro/footer-calculations-setting.png)
+
+---
+
+## List Display Mode
+
+For Link Multiple fields shown in list views, choose how related records are represented:
+
+* **Default** shows linked record names.
+* **Modal List** shows a link that opens related records in a modal list.
+* **Full Page List** opens the standard related-record list page.
+
+![List display mode settings](../../_static/images/espocrm-extensions/link-pro/list-display-mode-params.png)
+![List display mode result](../../_static/images/espocrm-extensions/link-pro/list-display-mode.png)
+
+---
+
+## Field Settings
+
+Open **Administration** > **Entity Manager** > your entity > **Fields**, then edit the Link One or Link Multiple field.
+
+### Basic Settings
+
+* **Enable Form** activates Link Pro behavior for the field.
+* **Detail Layout** selects the layout used in detail mode.
+* **Edit Layout** selects the layout used in edit mode.
+* **Custom Layout** lets you define the displayed columns for the inline list.
+
+### Buttons
+
+* **Enable Select Button** lets users select existing records.
+* **Enable Add Row Button** lets users add a new inline row.
+* **Enable Create In Modal Button** opens a create form in a modal.
+* **Enable Add Multiple Button** lets users add more than one record from the selector.
+* **Buttons Position** places add and select buttons at the top or bottom of the field.
+
+![Select button](../../_static/images/espocrm-extensions/link-pro/select-button.png)
+![Add multiple](../../_static/images/espocrm-extensions/link-pro/add-multiple.png)
+
+### Row Behavior
+
+* **Row Action Items** controls available actions: view, edit, unlink, and remove.
+* **Readonly Fields** keeps selected child fields visible but not editable inline.
+* **No Child Edit Access Required for Link/Unlink** allows unlinking without edit access to the child record.
+* **Order By** and **Order Direction** set default list sorting.
+* **Custom Order** uses an integer, float, or autoincrement field for manual drag-and-drop order. When enabled, it replaces Order By and Order Direction.
+
+### Data Mapping
+
+* **Copy Fields** copies values from selected target records into the inline child row.
+* **Footer Sum Fields** selects numeric fields to total.
+* **Footer Sum Fields Map** maps calculated totals into parent record fields.
+
+---
+
+## Dynamic Logic
+
+Inline rows respect field dynamic logic for visibility, required state, and read-only state. This lets each row react to its own values while users edit the parent record.
 
 ---
 
@@ -27,99 +163,6 @@ The extension adapts its features based on the link type:
 
 ---
 
-## Key Features
+## ChangeLog
 
-### Inline List View & Editing
-
-* Replace default link view with a detailed list.
-* Edit linked record fields directly in the list without opening the target entity.
-* Supports Link-One, One-to-Many, and Many-to-Many.
-
-!!! note
-
-     Many-to-Many relationships do not support inline editing. they display linked records as a list with available actions (e.g., view, edit, unlink) but require users to open the linked record or the middle entity for editing.
-
-![link-pro-form-list](../../_static/images/espocrm-extensions/link-pro/form-list.png)
-### Middle Entity Support (Via One-to-Many)
-
-* **Advanced Relationship Handling:** Utilize a **One-to-Many** relationship to function as a Middle Entity (Junction) between two other records.
-* **Attributes Support:** Perfect for scenarios requiring extra data on the link (e.g., Quantity, Price, Discount).
-* **Parent Link (Polymorphic) Support:**
-  * Supports "Parent" fields (fields that can relate to multiple entity types like Account, Contact, Opportunity).
-  * If the Middle Link is a Parent field, the extension automatically detects all allowed entity types.
-* **Transparent Navigation:** Configure whether clicking a row opens the Middle Entity or the Target Entity.
-* **Unique Links:** Prevent duplicate pairs of linked records.
-
-**Example (Standard):**
-* **Order** has a One-to-Many with **Order Item**.
-* **Product** has a One-to-Many with **Order Item**.
-* **Order Item** acts as the Middle Entity linking Orders and Products.
-
-![link-pro-middle-entity](../../_static/images/espocrm-extensions/link-pro/middle-entity.png)
-![link-pro-middle-entity-2](../../_static/images/espocrm-extensions/link-pro/middle-entity-setting.png)
-
-**Example (Parent Link):**
-* **Order** has a One-to-Many with **Task**.
-* **Task** has a `Parent` field (related to Account, Contact, Opportunity, etc.).
-* Configuring the Task's `Parent` field as the Middle Link will automatically generate separate buttons: **Select Account**, **Select Contact**, **Select Opportunity**.
-
-![link-pro-middle-entity-parent-link](../../_static/images/espocrm-extensions/link-pro/middle-entity-parent-link.png)
-### Dynamic Field Logic
-
-* Apply rules for visibility, required status, or read-only state per row based on other field values.
-
-### Footer Calculations
-
-* Automatically sum numeric fields at the bottom of the list.
-* Map totals to parent entity fields (e.g., Order Item.Total → Order.Total).
-* Ideal for financial or quantity tracking.
-
-![link-pro-footer-calculations](../../_static/images/espocrm-extensions/link-pro/footer-calculations.png)
-![link-pro-footer-calculations-2](../../_static/images/espocrm-extensions/link-pro/footer-calculations-setting.png)
-
-### Flexible Layouts & Actions
-
-* **Custom Columns:** Define which fields appear in the list.
-* **Row Actions:** Configure actions (`view`, `edit`, `unlink`, `remove`) for each row.
-* **List Display Mode:** Choose how to display link-multiple fields in list view:
-  * **(Empty):** Default behavior — shows linked record names as simple labels
-  * **Modal List:** Displays a link that opens the related records in a modal popup list
-  * **Full Page List:** Displays a link that navigates to a full filtered list page of the related records
-
-![link-pro-list-display-mode-params](../../_static/images/espocrm-extensions/link-pro/list-display-mode-params.png)
-![link-pro-list-display-mode-2](../../_static/images/espocrm-extensions/link-pro/list-display-mode.png)
-
-### Direct Record Creation & Selection
-
-* **Enable Select:** Link existing records.
-* **Multi-Entity Select:** When using a **Parent Link** as a Middle Entity, distinct "Select" buttons appear for each allowed entity type (e.g., *Select Account*, *Select Lead*).
-* **Enable Add:** Create new linked records directly from the parent record.
-* **Enable Add Multiple:** Select multiple records at once.
-* **Link-One Direct Creation:** Create Link-One records without leaving the parent record.
-* **Create in Modal:** Open forms in a popup instead of a new page.
----
-## Field Settings
-
-### General Settings
-
-* **Enable Form:** Activate Ebla Link Pro for the field.
-* **Layout / Edit Layout / Custom Layout:** Configure display and inline editing layouts.
-
-### Relationship Settings
-
-* **Middle Entity:** Select the junction entity (available when configuring One-to-Many relationships).
-* **Parent Link Support:** If the selected Middle Entity field is a `Parent` type, dynamic selection buttons are enabled automatically.
-* **Open Middle Entity:** Configure navigation when clicking a row.
-* **No Edit Access Required for Unlink:** Allow unlinking without edit permission.
-
-### Data & Calculations
-
-* **Copy Fields:** Copy fields from linked record to junction or parent entity.
-* **Read-Only Fields:** Fields that cannot be edited inline.
-* **Footer Sum Fields & Map:** Sum numeric fields and map totals to parent entity fields.
-
-### Display & Actions
-
-* **Row Action Items:** Select available actions per row.
-* **Buttons Position:** Top or bottom.
-* **Order By / Order:** Default sorting field and direction.
+<div class="change-log-wrapper" data-id="63495a03a945d438f"></div>
