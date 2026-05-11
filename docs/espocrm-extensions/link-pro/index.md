@@ -72,10 +72,10 @@ This pattern is useful when the relationship needs its own fields, such as quant
 
 Middle Entity options:
 
-* **Middle Link** selects the field on the child entity that points to the target record.
-* **Is Middle Link Unique** prevents selecting the same target record more than once.
-* **Open Middle Entity** controls whether row clicks open the child record or the target record.
-* **Copy Fields** copies selected values from the target record into the child record when selecting.
+* **Middle Link**: Select the field on the child entity that points to the target record.
+* **Is Middle Link Unique**: Prevents selecting the same target record more than once in the list.
+* **Open Middle Entity**: Controls whether row click/view actions open the middle child record or the final target record.
+* **Copy Fields**: Automatically copy values from the target record into the child record fields upon selection.
 
 ### Parent Link Middle Fields
 
@@ -119,35 +119,32 @@ Open **Administration** > **Entity Manager** > your entity > **Fields**, then ed
 
 ### Basic Settings
 
-* **Enable Form** activates Link Pro behavior for the field.
-* **Detail Layout** selects the layout used in detail mode.
-* **Edit Layout** selects the layout used in edit mode.
-* **Custom Layout** lets you define the displayed columns for the inline list.
+* **Enable Form**: Activates the Ebla Link Pro interface (inline list or embedded form) for this field.
+* **Layout**: Determines which fields/layout are displayed when viewing the parent record (detail mode).
+* **Edit Layout**: Determines which fields/layout are displayed when the user is editing the inline forms.
+* **Custom Layout**: Manually define and arrange the exact columns to be displayed in the inline list.
 
 ### Buttons
 
-* **Enable Select Button** lets users select existing records.
-* **Enable Add Row Button** lets users add a new inline row.
-* **Enable Create In Modal Button** opens a create form in a modal.
-* **Enable Add Multiple Button** lets users add more than one record from the selector.
-* **Buttons Position** places add and select buttons at the top or bottom of the field.
-
-![Select button](../../_static/images/espocrm-extensions/link-pro/select-button.png)
-![Add multiple](../../_static/images/espocrm-extensions/link-pro/add-multiple.png)
+* **Enable Select**: Displays the button allowing users to select and link existing records.
+* **Enable Add**: Displays the button allowing users to create new inline records.
+* **Enable Create In Modal**: Changes action to open standard create form in a popup modal.
+* **Enable Add Multiple**: Allows selecting and adding multiple existing records at once.
+* **Buttons Position**: Place the 'Add' and 'Select' buttons at the **top** or **bottom** of the field container.
 
 ### Row Behavior
 
-* **Row Action Items** controls available actions: view, edit, unlink, and remove.
-* **Readonly Fields** keeps selected child fields visible but not editable inline.
-* **No Child Edit Access Required for Link/Unlink** allows unlinking without edit access to the child record.
-* **Order By** and **Order Direction** set default list sorting.
-* **Custom Order** uses an integer, float, or autoincrement field for manual drag-and-drop order. When enabled, it replaces Order By and Order Direction.
+* **Row Action Items**: Multi-select actions available on each row (`view`, `edit`, `unlink`, `remove`). Select what the users are permitted to do.
+* **Read-only Fields**: Multi-select list of fields that are visible but not editable inline.
+* **No Edit Access Required For Unlink**: Allows unlinking a child record without requiring edit permission on the child record itself.
+* **Order By** & **Order Direction**: Sets the default sorting column and direction (`asc` or `desc`) for the records in the list.
+* **Custom Order**: Select an integer, float, or auto-increment field to enable manual drag-and-drop ordering. When enabled, it replaces ‘Order By’ and ‘Order Direction’.
 
-### Data Mapping
+### Data Mapping & Calculations
 
-* **Copy Fields** copies values from selected target records into the inline child row.
-* **Footer Sum Fields** selects numeric fields to total.
-* **Footer Sum Fields Map** maps calculated totals into parent record fields.
+* **Copy Fields**: Automatically copy values from selected records into the inline row fields.
+* **Footer Sum Fields**: Select numeric fields to be aggregated/summed in the footer area.
+* **Footer Sum Fields Map**: Map the calculated footer totals back into a designated parent record field to keep it synchronized.
 
 ---
 
