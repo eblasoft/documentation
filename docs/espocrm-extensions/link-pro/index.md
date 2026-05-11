@@ -119,10 +119,10 @@ Open **Administration** > **Entity Manager** > your entity > **Fields**, then ed
 
 ### Basic Settings
 
-* **Enable Form**: Activates the Ebla Link Pro interface (inline list or embedded form) for this field.
-* **Layout**: Determines which fields/layout are displayed when viewing the parent record (detail mode).
-* **Edit Layout**: Determines which fields/layout are displayed when the user is editing the inline forms.
-* **Custom Layout**: Manually define and arrange the exact columns to be displayed in the inline list.
+* **Enable Form**: Activates the Ebla Link Pro interface (inline list for Link Multiple, or embedded form for Link One).
+* **Layout**: Determines which layout configuration is rendered when viewing the parent record. For Link One, this selects the exact layout block used for the embedded record view.
+* **Edit Layout**: Determines which layout configuration is used when the user is editing the inline list rows or the embedded Link One record.
+* **Custom Layout** *(Link Multiple Only)*: Manually define and arrange the exact columns to be displayed in the inline list.
 
 ### Buttons
 
