@@ -8,7 +8,8 @@ description: Access modes, feature toggles, limits, integrations, and user setti
 
 Most extension behavior is controlled from `Administration => Internal Chat`.
 
-[Image placeholder: Administration settings]
+![Image placeholder: Internal Chat administration screen 1](../../_static/images/espocrm-extensions/internal-chat/admin-1.png)
+![Image placeholder: Internal Chat administration screen 2](../../_static/images/espocrm-extensions/internal-chat/admin-2.png)
 
 ---
 
@@ -57,6 +58,7 @@ The lookup settings also matter for how the new conversation screen behaves:
 
 These options determine whether chat selection follows normal EspoCRM ACL visibility or uses the extension's ignore-ACL lookup mode.
 
+![Image placeholder: Access mode settings](../../_static/images/espocrm-extensions/internal-chat/access-modes.png)
 ---
 
 ## User Settings
@@ -72,6 +74,7 @@ Users can open the chat settings screen and adjust:
 
 These are personal preferences, separate from the admin feature toggles.
 
+![Image placeholder: User settings screen](../../_static/images/espocrm-extensions/internal-chat/user-settings.png)
 ---
 
 ## Integrations and Operational Notes
@@ -81,6 +84,7 @@ These are personal preferences, separate from the admin feature toggles.
 - Scheduled jobs must be running if you want scheduled messages and automatic custom-status expiry to work.
 - The Event action depends on both the chat setting and the user's calendar create permission.
 
+![Image placeholder: Klipy integration settings](../../_static/images/espocrm-extensions/internal-chat/klipy-settings.png)
 ---
 
 ## See Also

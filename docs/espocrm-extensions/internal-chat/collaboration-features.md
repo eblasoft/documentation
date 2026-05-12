@@ -27,9 +27,8 @@ This keeps side discussions attached to the original message without filling the
 
 These workflows are controlled from `Administration => Internal Chat`.
 
-
-<img width="447" height="727" alt="Image" src="https://github.com/user-attachments/assets/f10f8bcd-73a3-4657-9a4b-600be088b018" />
-
+![Image placeholder: Poll creation 1](../../_static/images/espocrm-extensions/internal-chat/poll-creation1.png)
+![Image placeholder: Poll creation 2](../../_static/images/espocrm-extensions/internal-chat/poll-creation2.png)
 
 ---
 
@@ -41,10 +40,7 @@ These workflows are controlled from `Administration => Internal Chat`.
 
 Record previews respect ACL. Users without access do not see the record details.
 
-
-<img width="451" height="727" alt="Image" src="https://github.com/user-attachments/assets/acb2a98c-79b7-485f-b000-d8528423fd56" />
-
-
+![Image placeholder: Record preview card](../../_static/images/espocrm-extensions/internal-chat/record-preview.png)
 ---
 
 ## Presence and Notifications
@@ -59,8 +55,8 @@ Record previews respect ACL. Users without access do not see the record details.
 
 Users can also adjust floating-widget visibility, badge animation, list density, popup mode, and emoji skin tone from the chat settings screen.
 
-[Image placeholder: Presence and notification settings]
-
+![Image placeholder: Popup notification example](../../_static/images/espocrm-extensions/internal-chat/popup-notification.png)
+![Image placeholder: Custom status example](../../_static/images/espocrm-extensions/internal-chat/custom-status.png)
 ---
 
 ## Portal Support and Notes

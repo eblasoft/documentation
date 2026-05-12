@@ -14,7 +14,8 @@ description: Add direct and group chat, attachments, threads, polls, scheduled m
 
 The extension works without an external chat service. Klipy is optional and only used for GIF search. The package also includes translations for 26 languages.
 
-[Image placeholder: Internal Chat overview]
+![Image placeholder: Internal Chat Create Group screen](../../_static/images/espocrm-extensions/internal-chat/create-group.png)
+![Image placeholder: Internal Chat main screen](../../_static/images/espocrm-extensions/internal-chat/main-view.png)
 
 <!-- DOC:OVERVIEW END -->
 

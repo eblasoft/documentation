@@ -8,7 +8,7 @@ description: Direct chat, group chat, composer tools, attachments, message actio
 
 Internal Chat uses the same room model in both the floating widget and the full-page `/#InternalChat` view, so users can move between quick chat and full-screen work without changing context.
 
-[Image placeholder: Main chat room]
+![Image placeholder: Internal Chat floating widget and main view](../../_static/images/espocrm-extensions/internal-chat/floating-and-main.png)
 
 ---
 
@@ -23,9 +23,7 @@ Internal Chat uses the same room model in both the floating widget and the full-
 
 Most conversation controls are managed from `Administration => Internal Chat`.
 
-
-<img width="448" height="728" alt="Image" src="https://github.com/user-attachments/assets/726f13c1-4e68-4b4e-9ad3-86b5c44743bd" />
-
+![Image placeholder: Internal Chat Create Group screen](../../_static/images/espocrm-extensions/internal-chat/create-group.png)
 
 ---
 
@@ -40,6 +38,10 @@ Most conversation controls are managed from `Administration => Internal Chat`.
 
 Attachment limits, allowed file types, and related toggles are configured from `Administration => Internal Chat`.
 
+![Image placeholder: Internal Chat Rich Text Composer](../../_static/images/espocrm-extensions/internal-chat/composer.png)
+![Image placeholder: Internal Chat message search](../../_static/images/espocrm-extensions/internal-chat/message-search.png)
+![Image placeholder: Internal Emoji picker](../../_static/images/espocrm-extensions/internal-chat/emoji-picker.png)
+![Image placeholder: Internal Chat Attachment options](../../_static/images/espocrm-extensions/internal-chat/attachment-options.png)
 ---
 
 ## Message Actions
@@ -54,6 +56,7 @@ Attachment limits, allowed file types, and related toggles are configured from `
 
 These actions can be enabled or disabled from `Administration => Internal Chat`, and edit or delete limits are enforced by the backend.
 
+![Image placeholder: Internal Chat message actions](../../_static/images/espocrm-extensions/internal-chat/message-actions.png)
 ---
 
 ## Room List
@@ -62,6 +65,7 @@ The room list supports shortcut views for **Mentions**, **Starred**, **Unread**,
 
 Pinned conversations are limited per user, and the code currently enforces a maximum of 3 pinned rooms.
 
+![Image placeholder: Internal Chat room list shortcuts](../../_static/images/espocrm-extensions/internal-chat/room-list-shortcuts.png)
 ---
 
 ## See Also
