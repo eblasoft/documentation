@@ -62,5 +62,5 @@ Use the refresh icon in the panel header when:
 
 ## Related Features
 
-- [AI Email Composer](email-compose.md)
-- [Email Reply](email-reply.md)
+- [AI Email Composer](email-composer.md)
+- [Email Translation](email-translation.md)

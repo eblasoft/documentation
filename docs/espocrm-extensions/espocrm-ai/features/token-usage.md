@@ -21,7 +21,7 @@ Per-request details are stored in `AiLog`.
 
 1. Navigate to **{{siteUrl}}/#AiTokenUsage**.
 2. Review usage by user and date.
-3. Open **AI Token Usage** when you need call-level detail.
+3. Open **AI Log** when you need call-level detail.
 
 ## Token Limits
 
