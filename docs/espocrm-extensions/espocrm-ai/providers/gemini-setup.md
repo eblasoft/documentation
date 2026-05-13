@@ -15,3 +15,21 @@
 3. Choose the default model you want to use.
 
    ![img.png](../../../_static/images/espocrm-extensions/ai/providers/gemini/setup-1.png)
+
+## Final Step in AI Settings
+
+After saving the integration:
+
+1. Navigate to **Administration** -> **AI Settings**.
+2. Open the **General** tab.
+3. Set **Default AI Provider** to **Gemini**.
+4. Save.
+
+## Capability Notes
+
+Gemini is commonly used in the extension for:
+
+- Chat and text generation
+- Vision analysis
+- Image generation
+- Speech generation

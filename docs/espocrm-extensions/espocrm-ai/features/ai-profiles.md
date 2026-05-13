@@ -1,76 +1,163 @@
 # AI Profiles (Contexts)
 
-AI Profiles is a feature of Ebla AI that allows users to create and manage AI profiles. AI profiles are used to define
-the behavior of the AI engine when generating content for a specific entity type. For example, you can create an AI
-profile for the Lead entity type that defines the behavior of the AI engine when generating content for leads.
+AI Profiles define how Ebla AI behaves for different use cases. A profile can specify the provider, model, tone, token settings, and AI tool access level used by a feature.
+
+Profiles are reusable and can be assigned:
+
+- As the global default profile
+- As a per-feature default profile
+- As an entity-specific AI Chat or AI Summary profile
+- Directly on an AI Prompt
+
+## Default Profile Templates
+
+On a fresh installation, Ebla AI seeds seven ready-to-use profiles:
+
+1. **General CRM Assistant**
+2. **Email Reply Assistant**
+3. **Sales Assistant**
+4. **Support Assistant**
+5. **Record Summarizer**
+6. **Content Writer**
+7. **Data Analyst**
+
+These provide practical starting points for common CRM use cases.
 
 ## Creating an AI Profile
 
-1. Navigate to **Administration** -> **AI Profiles**.
+1. Navigate to **Administration → AI Profiles**.
 2. Click **Create**.
-3. Enter a name for the AI profile.
-4. Select the provider (Gemini - OpenAI - Ollama - Anthropic - OpenRouter). (Optional)
-5. Enter the context to be sent to the AI before the prompt is sent.
+3. Enter the profile details.
 
-### Parameters:
+![Create AI Profile](../../../_static/images/espocrm-extensions/ai/setup/create-profile.png)
 
-- **Name**: The name of the AI profile.
-- **Provider**: The provider to use for the AI profile. (Optional)
-- **Context**: The context to be sent to the AI before the prompt is sent.
-- **Model**: The model which will generate the completion. Some models are suitable for natural language tasks, others
-  specialize in code.
-- **Max Tokens**: The maximum number of tokens to generate shared between the prompt and completion. The exact limit
-  varies by model. (One token is roughly 4 characters for standard English text).
-- **Temperature**: Controls randomness: Lowering results in less random completions.
-  As the temperature approaches zero, the model will become deterministic and repetitive.
-- **Top K**: Controls diversity via nucleus sampling: 0.5 means half of all likelihood-weighted options are considered.
+### Main Fields
+
+- **Name** - Profile name shown throughout the extension
+- **Provider** - Optional. Leave empty to use the current default AI provider
+- **Context** - System-style instructions for the AI
+- **Model** - Selected dynamically from the chosen provider
+- **Max Tokens** - Token budget used by the request
+- **Temperature** - Controls randomness
+- **Top K** - Additional sampling control
+- **Formula Tier** - Controls what AI Chat tools are available
+
+## Provider and Model Behavior
+
+### Provider
+
+If **Provider** is left empty, the profile inherits the configured **Default AI Provider** from AI Settings.
+
+### Model
+
+The **Model** field is populated dynamically based on the selected provider using the provider's available model list.
+
+This means the model choices can differ across:
+
+- OpenAI
+- Gemini
+- Anthropic
+- OpenRouter
+- Ollama
+
+## Context Field
+
+The **Context** field contains the reusable instructions sent with requests that use the profile.
+
+Typical examples:
+
+- "You are a concise CRM sales assistant."
+- "Always respond in professional British English."
+- "Focus on structured data extraction and return clean results."
+
+## Variable Substitution in Context
+
+The Context field supports `{varName}` placeholders. The same variables available in [Global AI Instructions](admin-settings.md#variable-substitution) can be used here.
+
+Example:
+
+```
+You are a CRM assistant for {companyName}.
+You are helping {userName} ({userRole}).
+Always respond in {language}.
+```
+
+## Formula Tier
+
+The **Formula Tier** field is especially important for AI Chat and the Admin Assistant.
+
+Available values:
+
+- **read** - Read-only data tools
+- **write** - Read and write data tools
+- **admin** - Administrative tools such as entity, field, layout, translation, and formula helpers
 
 !!! important
 
-    If output is not as expected, you can click on **Send** button to regenerate the output.
+    Use `admin` only for carefully controlled administrative profiles. Record-level AI chat usually only needs `read`.
 
-### Select default profile per Entity Type
+## Default Usage Patterns
 
-1. Navigate to **Administration** -> **Entity Manager** -> **Select Entity Type**.
-2. In the **AI Profile** field, select the AI profile you want to use for the entity type.
-3. Click **Save**.
+Common profile strategies:
 
-!!! important
+- **General CRM Assistant** for chat and general AI features
+- **Record Summarizer** for AI Summary
+- **Email Reply Assistant** for compose and reply workflows
+- **Data Analyst** for Smart Paste or structured extraction
 
-    The selected AI profile will be used by default for the entity type.
+## Assigning Profiles to Features
 
-## Examples
+Profiles can be assigned in several places.
 
-### Leads Score Calculation
+### Global or Per-Feature Defaults
 
-```
-Please use this person’s profile data to create lead scores.
+Navigate to **Administration → AI Settings → AI Features** and assign:
 
-{{targetData}}
+- Chat profile
+- Summary profile
+- Email composer profile
+- Field action profile
+- Smart Paste profile
+- Vision profile
+- Admin Assistant profile
+- Email translation profile
 
-The maximum value is 4. The minimum value is 0.
+![Per-Feature](../../../_static/images/espocrm-extensions/ai/setup/per-feature-profiles.png)
 
-Please assign 1 point to profiles that have come from a campaign.
+### Per Entity in Entity Manager
 
-Please assign 1 point to profiles that from industry most likely go to trips.
+For record-level features, you can assign profiles per entity:
 
-Please assign 1 point to profiles that lives on Europe.
+1. Navigate to **Administration → Entity Manager**.
+2. Open an entity.
+3. Configure:
+   - **AI Chat Profile**
+   - **AI Summary Profile**
 
-Please assign 1 point to profiles that have enterprise email.
+### On AI Prompts
 
-Add the total of these points, to deliver a final lead score between 0—4 for each of these profiles.
-```
+An AI Prompt can optionally link to a profile. This is useful when a specific prompt should always use a specific model or behavior.
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img_1.png)
+## Teams and Ownership
 
-### Email Reply Assistant
+AI Profiles support:
 
-```
-You are a specialized assistant for crafting professional email responses. You expects users to paste an email they've received into the chat.
-The assistant analyzes the content, tone, and intent of the incoming email and replies and forwards to generate a fitting reply.
-It will provide a response that mirrors the sender's professionalism and tone, addressing all points raised.
-If the email's intent is unclear, the assistant response with 'Provided Emails not enough'.
-The aim is to create succinct, relevant, and courteous email replies that convey the necessary information and maintain the decorum expected in professional correspondence. The email subject is {{subject}} and the email body is {{bodyPlain}}.
-```
+- **Assigned User**
+- **Teams**
 
-![img.png](../../../_static/images/espocrm-extensions/ai/features/img.png)
+Use this when you want profile ownership or team-level organization inside the admin UI.
+
+## Temperature Guidelines
+
+Useful starting ranges:
+
+- **0.2 - 0.4** for deterministic tasks such as summaries and extraction
+- **0.5 - 0.7** for balanced CRM assistant behavior
+- **0.7 - 0.8** for more creative drafting tasks
+
+## Related Features
+
+- [Admin Settings](admin-settings.md)
+- [AI Prompts](ai-prompts.md)
+- [AI Chat Panel](ai-chat.md)
+- [AI Summary Panel](ai-summary.md)
