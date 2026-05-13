@@ -11,7 +11,7 @@ description: Send single, list, and campaign SMS messages from EspoCRM with temp
 
 **Ebla SMS** adds practical SMS flows directly into EspoCRM records and lists. Users can send from a single record, send in bulk from list views, send to Target Lists, and run SMS campaigns from Campaign records.
 
-The extension also adds reply actions for inbound SMS records and supports template-based message bodies.
+The extension also adds reply actions for inbound SMS records and supports template-based message bodies. SMS template selection now supports channel classification, so administrators can mark templates for **SMS** usage and operators see the SMS-focused filter by default in the compose dialog.
 
 !!! note
     For platform-level behavior, see the official EspoCRM guide: [SMS Sending](https://docs.espocrm.com/administration/sms-sending/).
@@ -30,6 +30,8 @@ The extension also adds reply actions for inbound SMS records and supports templ
 - **SMS entity quick create**: The SMS list includes a custom **Create** action that opens a lightweight `compose` form.
 - **Reply actions for inbound SMS**: Reply from SMS detail and list row actions when the sender number exists.
 - **Template-based content**: Pick an Email Template as an SMS template and inject parsed content into the body.
+- **SMS template classification**: Email Templates can be classified by channel using **Template Types** (`Email`, `SMS`).
+- **SMS-first template picker**: The SMS compose modal opens with an SMS preset filter active by default so SMS-ready templates are easier to find.
 - **Campaign type `Sms`**: Campaigns support SMS setup with target lists, excluding target lists, template selection, and optional sent-SMS storage.
 
 <!-- DOC:FEATURES END -->
@@ -48,6 +50,20 @@ The extension also adds reply actions for inbound SMS records and supports templ
    - Set **Outbound SMS From Number** (`outboundSmsFromNumber`) if your provider requires a default sender number.
 
 If no provider is configured, SMS sending will fail at runtime.
+
+### 1.1) Prepare SMS templates
+
+1. Open **Administration -> Email Templates**.
+2. Edit or create the template you want to use for SMS sending.
+3. Set **Template Types** to include **SMS**.
+4. Save the template.
+
+!!! note
+    Existing older templates without any **Template Types** value can still appear in the SMS compose selector for compatibility until they are categorized.
+
+### 1.2) Email Template layout updates
+
+After installation, the extension updates `EmailTemplate` layouts so the new **Template Types** field is available in common admin screens, including detail, small detail, list, small list, filters, and mass update layouts.
 
 ### 2) Supported providers in this branch
 
@@ -120,7 +136,7 @@ If no numbers are found, the UI shows a warning.
 
 1. Open a **Target List** record.
 2. Use the **Send SMS** detail action.
-3. Select template/body and send.
+3. Select an SMS template or enter the message body manually, then send.
 
 ### Reply to incoming SMS
 
@@ -132,6 +148,9 @@ Reply is shown only when the inbound sender number is available on the SMS recor
 ### Use template mode in compose
 
 - Choose **Select Template** to inject processed template content.
+- The selector opens with the SMS preset filter active by default.
+- Templates marked with **Template Types = SMS** are intended for SMS compose.
+- Older uncategorized templates may still appear until they are updated.
 - When a template is selected, the body is locked to prevent accidental edits.
 - Clearing the template unlocks the body again.
 
