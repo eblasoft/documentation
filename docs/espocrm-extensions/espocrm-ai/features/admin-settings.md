@@ -163,7 +163,9 @@ This tab lets you assign default profiles per feature.
 | **AI Email Composer Default Profile** | Draft, reply, polish, grammar, tone |
 | **AI Field Action Default Profile** | Text field and stream comment AI actions |
 | **AI Smart Paste Default Profile** | Smart Paste |
-| **AI Vision Default Profile** | Image analysis and image generation |
+| **AI Vision Default Profile** | Image analysis |
+| **AI Image Generation Default Profile** | AI image generation |
+| **AI Speech Generation Default Profile** | Speech generation |
 | **AI Admin Assistant Default Profile** | Admin Assistant |
 | **AI Email Translate Default Profile** | Email translation |
 
