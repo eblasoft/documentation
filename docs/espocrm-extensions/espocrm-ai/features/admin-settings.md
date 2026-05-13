@@ -223,7 +223,7 @@ The table below maps every key from `custom/Espo/Modules/EblaAi/Resources/metada
 | `aiAdminAssistantDefaultProfileId` | Admin Assistant | AI Features | Default profile for admin assistant chat requests. |
 | `aiEmailTranslateDefaultProfileId` | Email Translate | AI Features | Default profile for email translation flow. |
 | `aiImageGenerateDefaultProfileId` | Image Generation | AI Features | Default profile for AI image generation. |
-| `aiSpeechDefaultProfileId` | Speech Generation | AI Features | Default profile for speech generation (`eblaAi\\generateSpeech`). |
+| `aiSpeechDefaultProfileId` | Speech Generation | AI Features | Default profile for speech generation (`eblaAi\generateSpeech`). |
 
 ### Option values with explicit enums
 
