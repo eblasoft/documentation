@@ -25,6 +25,7 @@ Welcome to the Eblasoft documentation site. Here you'll find clear, structured d
 - :material-view-grid-plus: **[Ebla Layout Pro](espocrm-extensions/layout-pro/index.md)**
 - :material-view-dashboard: **[Ebla Kanban Multiple](espocrm-extensions/kanban-multiple/index.md)**
 - :fontawesome-solid-chart-gantt: **[Ebla Gantt](espocrm-extensions/gantt/index.md)**
+- :fontawesome-solid-share-nodes: **[Ebla Diagram](espocrm-extensions/ebla-diagram/index.md)**
 </div>
 
 ---
