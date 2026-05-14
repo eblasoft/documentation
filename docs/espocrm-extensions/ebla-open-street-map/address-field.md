@@ -63,4 +63,4 @@ The extension enhances standard EspoCRM **address** fields with address search, 
 ## See Also
 
 - [Address Map Features](address-map.md)
-- [Settings](settings.md)
+- [Settings](index.md#settings)

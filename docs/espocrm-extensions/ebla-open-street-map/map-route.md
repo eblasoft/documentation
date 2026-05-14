@@ -62,5 +62,5 @@ The extension builds the final list of valid points and then requests the route.
 
 ## See Also
 
-- [Settings](settings.md)
+- [Settings](index.md#settings)
 - [Address Field Features](address-field.md)
