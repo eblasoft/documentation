@@ -13,7 +13,12 @@ Users need:
 - A configured default AI provider
 - Create access for new-record Smart Paste
 
-Administrators also need to configure visibility in **Administration -> AI Settings -> General -> Smart Paste Scopes**.
+Administrators configure visibility in **Administration -> AI Settings -> General -> Smart Paste Scopes**.
+
+Current scope behavior:
+
+- Empty `Smart Paste Scopes` is treated as enabled for all customizable entities in main list and new-record flows.
+- Relationship-panel behavior may differ if no scopes are explicitly selected.
 
 ## Where Smart Paste Appears
 

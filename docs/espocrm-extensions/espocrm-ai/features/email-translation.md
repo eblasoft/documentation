@@ -14,7 +14,7 @@ Users need:
 Administrators also need:
 
 - **Enable Email Translate** turned on in **AI Settings -> Translate**
-- A configured **AI Email Translate Default Prompt**
+- A configured **AI Email Translate Default Prompt** (recommended for consistent output)
 
 ## Translating an Email
 
@@ -63,4 +63,4 @@ If no translation profile is assigned, the feature falls back to the normal defa
 
 - [AI Prompts](ai-prompts.md)
 - [AI Profiles](ai-profiles.md)
-- [Email Reply](email-reply.md)
+- [AI Email Composer](email-composer.md)

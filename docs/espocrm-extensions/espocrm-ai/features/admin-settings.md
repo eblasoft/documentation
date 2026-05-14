@@ -131,7 +131,7 @@ The response cache reuses identical AI responses for selected features.
 ![AI Settings Response Cache Tab](../../../_static/images/espocrm-extensions/ai/features/admin-settings-response-cache-tab.png)
 ### Settings
 
-- **Response Cache** 
+- **Response Cache**
 - **Cache TTL** in days
 
 ### What Is Cached
@@ -163,7 +163,9 @@ This tab lets you assign default profiles per feature.
 | **AI Email Composer Default Profile** | Draft, reply, polish, grammar, tone |
 | **AI Field Action Default Profile** | Text field and stream comment AI actions |
 | **AI Smart Paste Default Profile** | Smart Paste |
-| **AI Vision Default Profile** | Image analysis and image generation |
+| **AI Vision Default Profile** | Image analysis |
+| **AI Image Generation Default Profile** | AI image generation |
+| **AI Speech Generation Default Profile** | Speech generation |
 | **AI Admin Assistant Default Profile** | Admin Assistant |
 | **AI Email Translate Default Profile** | Email translation |
 

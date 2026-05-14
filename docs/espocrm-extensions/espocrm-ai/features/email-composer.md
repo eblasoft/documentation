@@ -83,6 +83,6 @@ When the email is not HTML, Ebla AI adds a small button row above the textarea w
 
 ## Related Features
 
-- [Email Reply](email-reply.md)
+- [Email Analysis Panel](email-analysis.md)
 - [Email Translation](email-translation.md)
 - [AI Profiles](ai-profiles.md)

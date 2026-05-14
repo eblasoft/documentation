@@ -13,6 +13,11 @@ Users need:
 - A configured default AI provider
 - A provider or profile that supports image generation
 
+Recommended admin setting:
+
+- **AI Settings -> AI Features -> Image Generation**
+  for a dedicated image-capable profile.
+
 ## Enabling It on a Field
 
 Image generation is opt-in per field.
