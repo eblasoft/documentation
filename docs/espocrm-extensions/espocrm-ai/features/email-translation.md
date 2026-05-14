@@ -7,6 +7,7 @@ Email Translation translates an email into the current user's language using AI.
 Users need:
 
 - `Ai` access
+- `Ai Email Composer` access
 - Read access to Email
 - A configured default AI provider
 

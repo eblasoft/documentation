@@ -28,7 +28,7 @@ The extension includes provider-specific speech generation support for selected 
 
 Recommended admin setting:
 
-- **AI Settings -> AI Features -> Speech Generation** (`aiSpeechDefaultProfileId`)
+- **AI Settings -> AI Features -> Speech Generation**
   to bind speech generation to a compatible profile.
 
 Actual voice names and audio formats depend on the provider behind the resolved profile.

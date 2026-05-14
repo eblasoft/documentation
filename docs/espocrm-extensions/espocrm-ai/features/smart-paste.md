@@ -8,7 +8,8 @@ It is useful for turning business cards, email signatures, copied messages, meet
 
 Users need:
 
-- `Ai` access and `AiSmartPaste` access
+- `Ai` access
+- `Ai Smart Paste` access
 - A configured default AI provider
 - Create access for new-record Smart Paste
 

@@ -15,7 +15,7 @@ Users need:
 
 Recommended admin setting:
 
-- **AI Settings -> AI Features -> Image Generation** (`aiImageGenerateDefaultProfileId`)
+- **AI Settings -> AI Features -> Image Generation**
   for a dedicated image-capable profile.
 
 ## Enabling It on a Field
