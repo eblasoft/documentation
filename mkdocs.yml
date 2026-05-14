@@ -109,7 +109,11 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Mobile PWA: 'espocrm-extensions/mobile-app/index.md'
+  - Mobile PWA:
+    - Overview: 'espocrm-extensions/mobile-app/index.md'
+    - PWA: 'espocrm-extensions/mobile-app/pwa.md'
+    - WebPush: 'espocrm-extensions/mobile-app/providers/webpush/overview.md'
+    - Telegram: 'espocrm-extensions/mobile-app/providers/telegram/overview.md'
   - Ebla Theme: 'espocrm-extensions/ebla-theme/index.md'
   - Ebla Nav Pro: 'espocrm-extensions/nav-pro/index.md'
   - Ebla Dash Pro: 'espocrm-extensions/dashlet-pro/index.md'
@@ -152,7 +156,37 @@ nav:
   - Ebla Stream Plus: 'espocrm-extensions/stream-plus/index.md'
   - Ebla Reactions: 'espocrm-extensions/reactions/index.md'
 
-  - Ebla AI: 'espocrm-extensions/espocrm-ai/index.md'
+  - Ebla AI:
+    - Overview: 'espocrm-extensions/espocrm-ai/index.md'
+    - Features:
+      - Access Control: 'espocrm-extensions/espocrm-ai/features/access-control.md'
+      - Admin Assistant: 'espocrm-extensions/espocrm-ai/features/admin-assistant.md'
+      - Admin Settings: 'espocrm-extensions/espocrm-ai/features/admin-settings.md'
+      - AI Chat: 'espocrm-extensions/espocrm-ai/features/ai-chat.md'
+      - AI Create: 'espocrm-extensions/espocrm-ai/features/ai-create.md'
+      - AI Profiles: 'espocrm-extensions/espocrm-ai/features/ai-profiles.md'
+      - AI Prompts: 'espocrm-extensions/espocrm-ai/features/ai-prompts.md'
+      - AI Summary: 'espocrm-extensions/espocrm-ai/features/ai-summary.md'
+      - Email Analysis: 'espocrm-extensions/espocrm-ai/features/email-analysis.md'
+      - Email Composer: 'espocrm-extensions/espocrm-ai/features/email-composer.md'
+      - Email Template Generator: 'espocrm-extensions/espocrm-ai/features/email-template-generator.md'
+      - Email Translation: 'espocrm-extensions/espocrm-ai/features/email-translation.md'
+      - Field Text Generation: 'espocrm-extensions/espocrm-ai/features/field-text-generation.md'
+      - Formula: 'espocrm-extensions/espocrm-ai/features/formula.md'
+      - Image Analysis: 'espocrm-extensions/espocrm-ai/features/image-analysis.md'
+      - Image Generation: 'espocrm-extensions/espocrm-ai/features/image-generation.md'
+      - PDF Template: 'espocrm-extensions/espocrm-ai/features/pdf-template.md'
+      - Sandbox: 'espocrm-extensions/espocrm-ai/features/sandbox.md'
+      - Smart Paste: 'espocrm-extensions/espocrm-ai/features/smart-paste.md'
+      - Stream Comment: 'espocrm-extensions/espocrm-ai/features/stream-comment.md'
+      - Token Usage: 'espocrm-extensions/espocrm-ai/features/token-usage.md'
+      - Voice Generation: 'espocrm-extensions/espocrm-ai/features/voice-generation.md'
+    - Providers:
+      - Anthropic: 'espocrm-extensions/espocrm-ai/providers/anthropic-setup.md'
+      - Gemini: 'espocrm-extensions/espocrm-ai/providers/gemini-setup.md'
+      - Ollama: 'espocrm-extensions/espocrm-ai/providers/ollama-setup.md'
+      - Open Router: 'espocrm-extensions/espocrm-ai/providers/open-router-setup.md'
+      - OpenAI: 'espocrm-extensions/espocrm-ai/providers/openai-setup.md'
   - Ebla Admin Pro: 'espocrm-extensions/admin-pro/index.md'
   - Ebla Print: 'espocrm-extensions/print/index.md'
   - Ebla Category Tree: 'espocrm-extensions/category-tree/index.md'
