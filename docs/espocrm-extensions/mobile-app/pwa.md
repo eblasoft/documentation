@@ -1,84 +1,110 @@
-# Progressive Web App (PWA) Overview
+# Progressive Web App (PWA)
 
-The Progressive Web App (PWA) feature in the Mobile App extension for EspoCRM enhances user experience by enabling the
-application to function as a native-like app on supported devices.
+The PWA part of **Ebla Mobile App** lets supported browsers install your EspoCRM instance like an app on mobile and desktop devices.
 
-## What is a Progressive Web App (PWA)?
+It focuses on **branding**, **installability**, and **quick access**. It does **not** promise a separate native mobile app package.
 
-A Progressive Web App (PWA) is a type of web application that utilizes modern web technologies to provide a native
-app-like experience to users. PWAs offer features such as offline access (not implemented), push notifications, and device hardware
-access, all while being accessible through a web browser. They provide a responsive and engaging user experience,
-similar to that of native mobile apps.
+![PWA install example](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-0.jpg)
 
-![img.jpg](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-0.jpg)
+---
 
-## Key Features of PWA Integration
+## What you can control
 
-### 1. Theme Color and Background Color Customization
+Open **Administration** → **Mobile App** and use the **Mobile App Settings** section.
 
-- Customize the theme color and background color of the PWA to match your brand identity or design preferences.
+| Setting | Purpose |
+| --- | --- |
+| **PWA Application Name** | The app name shown in the install experience and manifest. |
+| **PWA Application Description** | Description used by the manifest. |
+| **PWA Theme Color** | Brand color used by supported browsers in install and app UI surfaces. |
+| **PWA Background Color** | Background color used during supported launch and splash experiences. |
+| **PWA Orientation** | Preferred screen orientation for the installed app. |
+| **PWA Display** | Display mode for the installed app: **fullscreen**, **standalone**, **minimal-ui**, or **browser**. |
+| **PWA Logo 196** | Smaller application icon. |
+| **PWA Logo 512** | Larger application icon. |
+| **PWA Quick Create List** | Creates application shortcuts that open record creation directly from the installed app menu. |
 
-### 2. Orientation Control
+![PWA admin settings](../../_static/images/espocrm-extensions/mobile-app/pwa/setup-0.png)
 
-- Control the orientation of the PWA, allowing users to experience the app in their preferred orientation (landscape or
-  portrait).
+### Display modes
 
-### 3. Logo Customization
+- **Fullscreen**: hides almost all browser chrome.
+- **Standalone**: app-like window with minimal browser framing.
+- **Minimal-UI**: similar to standalone, but browsers may keep a small navigation UI.
+- **Browser**: opens like a normal browser tab.
 
-- Upload custom logos for the PWA in different sizes (196x196 and 512x512) to ensure brand consistency and recognition.
+### Quick Create shortcuts
 
-### 4. Display Mode Options
+The **PWA Quick Create List** is useful when users often create the same record types from mobile devices. Each selected entity becomes a shortcut in browsers that support app shortcuts.
 
-- Choose from different display modes for the PWA, such as fullscreen, standalone, minimal-ui, or browser mode, to
-  provide the best user experience based on device and browser capabilities.
+![Quick Create shortcuts](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-1.jpg)
 
-### 5. Quick Create List Configuration
+---
 
-- Configure the quick create list for the PWA, allowing users to easily access and create records directly from the PWA
-  interface.
+## Installability checklist
 
-  ![img.jpg](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-1.jpg)
+The side panel **Requirements for Mobile App** checks whether your current environment is ready for installation.
 
-## Setting Up the Progressive Web App (PWA)
+![Requirements checklist](../../_static/images/espocrm-extensions/mobile-app/check-list-panel.png)
 
-To set up the Progressive Web App (PWA) feature in EspoCRM, follow the steps below:
+The checklist evaluates these items:
 
-- Navigate to the `Administration` panel and click on `Mobile App` in the `Ebla Extensions` section.
+| Requirement | What it means |
+| --- | --- |
+| **Service Worker** | The current browser supports service workers. |
+| **Push Notifications** | The current browser supports the push API. |
+| **HTTPS** | The CRM is served over `https://`. |
+| **Start URL** | The configured site URL matches the current origin well enough for installation. |
+| **Icon** | A valid app icon is available from your uploaded PWA logos or the company logo fallback. |
+| **Installable** | The basic installation conditions are satisfied. |
 
-- Setup Mobile App theme & preferences as per your requirements.
+> The checklist is browser-aware. A requirement can pass on one device and fail on another if the browser does not support the needed PWA features.
 
-  ![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/setup-0.png)
+---
 
-### Settings
+## Recommended setup flow
 
-- **Theme Color**: Choose the theme color for the PWA (Navbar and splashscreen etc).
-- **Background Color**: Choose the background color for the PWA.
-- **Orientation**: Choose the orientation for the PWA (landscape or portrait).
-- **Display Mode**: Choose the display mode for the PWA:
-    - **Fullscreen**: The PWA will open in fullscreen mode.
-    - **Standalone**: The PWA will open in standalone mode.
-    - **Minimal-UI**: The PWA will open in minimal-ui mode.
-    - **Browser**: The PWA will open in browser mode.
-- **Quick Create List**: Configure the quick create list for the PWA.
-- **PWA Logo**: Upload custom logos for the PWA in different sizes (196x196 and 512x512).
+1. Open **Administration** → **Mobile App**.
+2. Fill in the branding fields:
+   - application name,
+   - application description,
+   - theme color,
+   - background color.
+3. Choose the preferred **orientation** and **display** mode.
+4. Upload at least one usable icon, ideally both **196** and **512** sizes.
+5. Configure the **Quick Create List** if you want installed-app shortcuts.
+6. Review the **Requirements for Mobile App** side panel and fix any failed checks.
 
-## Requirements Checklist
+---
 
-To help you check if you have met all the requirements for setting up the Progressive Web App (PWA) feature, you can see the checklist panel
-It will show you the status of each requirement.
+## How users install the app
 
-![img.png](../../_static/images/espocrm-extensions/mobile-app/check-list-panel.png)
+Once the environment is ready, users can:
 
-## Accessing the Progressive Web App (PWA)
+1. Open the CRM URL in a supported browser.
+2. Use the browser's **Install App** or **Add to Home Screen** action.
+3. Launch EspoCRM from the installed icon like an app.
 
-Once the PWA feature is set up, users can access the PWA by following the steps below:
+![Install prompt example](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-2.jpg)
 
-- Open the web browser on your device and navigate to the EspoCRM URL.
+After installation, the CRM opens using the configured display mode and branding.
 
-- Click on the `Install App` option in the browser menu to add the PWA to your device.
+![Installed PWA example](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-3.jpg)
 
-![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-2.jpg)
+---
 
-- The PWA will be added to your device's home screen, allowing you to access EspoCRM as a native-like app.
+## Good practices
 
-![img.png](../../_static/images/espocrm-extensions/mobile-app/pwa/pwa-3.jpg)
+- Use **HTTPS** for production.
+- Upload clear square icons for the best install experience.
+- Keep the **PWA Application Name** short enough to display nicely on smaller screens.
+- Add only the most useful entities to **PWA Quick Create List**.
+- Test installation on the browsers and devices your team actually uses.
+
+---
+
+## Related guides
+
+- [Mobile App overview](index.md)
+- [WebPush guide](providers/webpush/overview.md)
+- [Telegram guide](providers/telegram/overview.md)
