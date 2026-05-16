@@ -53,21 +53,38 @@ Data Integrity: Ensures that your image files carry the most up-to-date informat
 ### Direct Camera Capture for Image Fields
 For image fields, **Ebla Image Plus** can show a dedicated **Capture** button next to the standard **Select** button.
 
-This makes mobile image entry more practical, especially for workflows where users need to take a photo directly from a smartphone or tablet instead of selecting an existing file.
+This makes image entry more practical on both mobile devices and desktop browsers, especially for workflows where users need to capture a new photo directly instead of selecting an existing file.
 
 Key benefits:
 - Separate **Select** and **Capture** actions for better usability
 - Faster photo entry on mobile devices
+- Desktop browser support with live camera preview
 - Useful for before/after workflows, inspections, field service, property visits, and similar use cases
 - Can be enabled per field with the field parameter `enableCameraCapture`
 
-When enabled, supported devices and browsers can open the camera directly using the device’s rear camera.
+When enabled on mobile devices, supported browsers can still open the device camera directly, typically using the rear camera.
+
+When the **Capture** button is used from a desktop browser, **Ebla Image Plus** opens a camera modal instead of going directly to the file picker.
+
+The desktop camera modal:
+- Detects cameras connected to the computer
+- Selects the camera automatically when only one camera is available
+- Lets the user choose which camera to use when multiple cameras are available
+- Shows a live preview before the photo is taken
+- Lets the user **Capture**, **Retake**, and **Use Photo**
+- Uploads the captured photo directly to the current image field
+
+If no camera is available, permission is denied, or the browser does not support camera access, users can still select and upload an image file manually.
 
 !!! note "Android 16+ Compatibility"
 This feature was added to address the camera-selection issue on Android 16 and later, where some devices show only the photo picker for single image fields instead of offering direct camera access.
 
 ![Ebla Image Plus](../../_static/images/espocrm-extensions/image-plus/camera-capture.png)
 ![Ebla Image Plus Enabled](../../_static/images/espocrm-extensions/image-plus/camera-capture-enabled.png)
+![Desktop Camera Capture](../../_static/images/espocrm-extensions/image-plus/desktop-camera-capture.png)
+
+!!! note "Nikon / Canon and Other Digital Cameras"
+Desktop browser capture can use Nikon, Canon, or other digital cameras only when the operating system and browser expose the camera as a standard webcam or virtual camera. Direct tethered DSLR or mirrorless capture is not supported by standard browser APIs without native drivers or additional desktop bridge software.
 
 ---
 
