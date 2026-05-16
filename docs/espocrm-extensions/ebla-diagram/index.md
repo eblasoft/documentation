@@ -4,13 +4,15 @@ title: Ebla Diagram - EspoCRM
 description: View record relationships as an interactive diagram in EspoCRM.
 ---
 
-# Ebla Diagram
+# Ebla Diagram  <a href="https://www.eblasoft.com.tr/espocrm-extension-page/ebla-dash-pro" target="_blank" id="ext-version" data-id="64c0c1ce30fb5439f"></a>
 
 ## Overview
 
 **Ebla Diagram** adds a Diagram mode to record detail pages so users can understand configured relationship paths visually.
 
 From a record, users can switch between **Detail** and **Diagram** and review a pre-expanded relationship tree defined by the administrator.
+
+![Diagram Result Overview](../../_static/images/espocrm-extensions/ebla-diagram/ebla-diagram-result.png)
 
 ---
 
@@ -21,6 +23,7 @@ From a record, users can switch between **Detail** and **Diagram** and review a 
 - Review all configured branches already expanded when the diagram opens.
 - Pan and zoom the diagram.
 - Change layout direction, including radial mode, for readability.
+- Open related data directly from diagram nodes.
 - Print the current diagram.
 
 ---
@@ -41,11 +44,15 @@ From a record, users can switch between **Detail** and **Diagram** and review a 
 2. Open the entity you want to configure.
 3. Click **Diagram**.
 
+![Entity Manager Diagram Button](../../_static/images/espocrm-extensions/ebla-diagram/ebla-diagram-entity-manager.png)
+
 ### Settings
 
 #### Diagram Enabled
 
 Turn this on to allow Diagram mode for the entity.
+
+![Diagram Settings](../../_static/images/espocrm-extensions/ebla-diagram/ebla-diagram-settings.png)
 
 #### Diagram Links
 
@@ -56,7 +63,7 @@ Examples:
 - `Company → Offices → Employees`
 - `Company → Owners`
 
-Only the selected links are rendered. Empty branches are skipped automatically.
+Only the selected links are rendered. Administrators can choose whether empty links are hidden or shown as `(empty)` placeholders.
 
 ### Recommended setup
 
@@ -89,9 +96,17 @@ The diagram renders as a hierarchical tree starting from the current record:
 
 The default direction is **left-to-right (LR)**.
 
+For `LR`, `RL`, `TB`, and `BT`, spacing follows a deterministic tree layout so level gaps stay consistent across direction changes.
+
 Your last selected direction is remembered per entity in your browser, so for example **Account** and **Contact** can keep different preferred directions.
 
-There are no node click actions at this stage. The diagram is intended as a focused visual map of the configured relationship structure.
+Node actions:
+
+- Clicking a **record node** opens that record in a modal detail view.
+- Clicking a **link node** opens a modal related-list for that relationship.
+- Empty link placeholders use a dashed outline for quick visual identification.
+
+Visual style (node colours and text sizing) stays consistent across all directions.
 
 ### Pan and zoom
 
@@ -108,8 +123,8 @@ Cycle through five orientations to improve readability:
 |-----------|-------------|
 | LR (default) | Left → Right |
 | RL | Right → Left |
-| UD | Top → Bottom |
-| DU | Bottom → Top |
+| TB | Top → Bottom |
+| BT | Bottom → Top |
 | RADIAL | Circular radial tree |
 
 #### Print
@@ -151,5 +166,5 @@ The diagram supports configured links based on supported entity relationships. `
 
 ## Changelog
 
-<div class="change-log-wrapper" data-id="65c5dc38694d1da71"></div>
+<div class="change-log-wrapper" data-id="64c0c1ce30fb5439f"></div>
 
